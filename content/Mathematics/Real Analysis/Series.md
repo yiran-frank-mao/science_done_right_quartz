@@ -1,0 +1,2 @@
+**Def**  <i><u>Series Convergence</u></i>
+Let $\{a_j\}\in\R^n$ and $S_n=\sum_{j=1}^{n}a_j$. We say that the terms $S_n$ are the partial sums of the series $\sum_{j=1}^{\infty}a_j$. We say the series $\sum_{j=1}^{\infty}a_j$ converges if $\lim_{n\to\infty}S_{n}$ exists, and diverges otherwise.

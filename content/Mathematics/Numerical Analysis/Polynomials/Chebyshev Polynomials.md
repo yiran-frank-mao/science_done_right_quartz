@@ -1,0 +1,2 @@
+**Def**  <i><u>Chebyshev Polynomials</u></i>
+The Chebyshev polynomials are two sequences of polynomials related to the cosine and sine functions, notated as $T_n(x)$ and $U_{n}(x)$:$$T_n(\cos\theta)=\cos(n\theta),\quad U_n\left(\cos\theta\right)\sin\theta=\sin\left((n+1)\theta\right)$$Equivalently, we have the following explicit form:$$T_n(x)=\left\{\begin{array}{ll}\cos(n\arccos x)&\quad\mathrm{for}&-1\leq x\leq1\\\cosh(n\operatorname{arcosh}x)&\quad\mathrm{for}&1\leq x\\(-1)^n\cosh\left(n\operatorname{arcosh}(-x)\right)&\quad\mathrm{for}&x\leq-1\end{array}\right.$$
