@@ -33,7 +33,7 @@ completed: true
 <u><b>e.g.</b></u>  Consider $z\mapsto e^{z}$. Cleary $e^{x+iy}=e^{x}(\cos y + i \sin y)$ is  $\R$-differentiable. Now check that the Cauchy-Riemann equation holds: $$\frac{\partial (e^{x}\cos y)}{\partial x}= e^{x}\cos y=\frac{\partial (e^{x}\sin y)}{\partial y},\quad \frac{\partial (e^{x}\sin y)}{\partial x}=e^{x}\sin y=-\frac{\partial (e^{x}\cos y)}{\partial y}$$So $z\mapsto e^{z}$ is $\C$-differentiable everywhere.
 
 > [!corollary]
-> $\C$-differentiable functions are [[Continuity on Metric Space#^d3351a|continuous]].
+> $\C$-differentiable functions are [[Continuity on Metric Spaces#^d3351a|continuous]].
 
 *Proof*  $\C$-differentiability implies $\R$-differentiability, and $\R$-differentiability implies continuity. $\square$
 

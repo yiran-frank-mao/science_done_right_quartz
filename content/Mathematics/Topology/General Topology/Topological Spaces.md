@@ -5,19 +5,17 @@ updated: 2024-09-26
 ## Topology
 
 >[!definition] Topological Space
->A topology $\mathcal{T}$ on a set $T$ is a collection of subsets of $T$ , which we agree to call the “open sets”, such that 
+>A *topology* $\mathcal{T}$ on a set $T$ is a collection of subsets of $T$ , which we agree to call the “open sets”, such that 
 >1. $T$ and $\emptyset$ are open
 >2. the intersection of finitely many open sets is open
 >3. arbitrary unions of open sets are open.
 >
->The pair $(T , \mathcal{T})$ is called a topological space. ^65c94a
+>The pair $(T , \mathcal{T})$ is called a *topological space*. ^65c94a
 
 <b><u>e.g.</u></b>  The topology induced by a metric: in any metric space $(X,d)$ the collection of all open sets forms a topology.
 
 > [!definition] Closed Sets
-> In a topological space $(T , \mathcal{T})$, a set $C$ is called closed if $T\setminus C$ is open. i.e. $T\setminus C\in \mathcal{T}$.
-
-^0849a0
+> In a topological space $(T , \mathcal{T})$, a set $C$ is called closed if $T\setminus C$ is open. i.e. $T\setminus C\in \mathcal{T}$. ^0849a0
 
 >[!definition] Discrete Topology & Trivial Topology
 >A topology is said to be discrete if all subsets are open. It is indiscrete or trivial if the only open sets are $T$ and $\emptyset$.

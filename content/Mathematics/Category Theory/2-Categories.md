@@ -2,7 +2,7 @@
 
 >[!definition] 
 >**Def**  <i><u>Pasting Diagram</u></i>
->Given a category $\require{mhchem}\newcommand{\obj}{\operatorname{\textbf{obj}}}\newcommand{\mor}{\operatorname{\textbf{mor}}}\newcommand{\Hom}{\mathrm{Hom}}\mathbf{C}$, a pasting diagram in $\mathbf{C}$ is a sequence of composable morphisms:
+>Given a category $\newcommand{\obj}{\operatorname{\textbf{obj}}}\newcommand{\mor}{\operatorname{\textbf{mor}}}\newcommand{\Hom}{\mathrm{Hom}}\mathbf{C}$, a pasting diagram in $\mathbf{C}$ is a sequence of composable morphisms:
 >![|330](https://i.imgur.com/v92Naw3.png)
 
 >[!definition] Horizontal Composition

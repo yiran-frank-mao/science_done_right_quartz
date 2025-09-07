@@ -6,3 +6,6 @@
 
 > [!definition] Alternating
 > A sequence $\{a_{n}\}$ over $\R$ is alternating if $a_{n}\cdot a_{n+1}<0$ for all $n\in \N$.
+
+> [!theorem] Monotone Convergence of Sequences
+> If a sequence $a_{n}$ is bounded and ultimately monotone, then it converges.

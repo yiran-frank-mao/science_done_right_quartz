@@ -10,13 +10,13 @@
 [[Real Continuous Functions]]
 [[Differentiation of Real Functions]]
 [[Integral]]
-[[The Intermediate Value Theorem]]
 [[Series]]
 
 ### Multi-variable
 [[Directional Derivative, Gradient and Jacobian]]
 [[Matrix and Vector Calculus]]
 [[Multivariable Integration]]
+
 
 
 ## More ...

@@ -13,9 +13,7 @@
 > $\bar{A}$ is always closed.
 
 >[!definition] Interior
->The interior of $A$, written as $A^\circ$ or $\interior A$, is the union of all open subsets of $A$. It is the largest open subset of $A$.
-
-^871863
+>The interior of $A$, written as $A^\circ$ or $\interior A$, is the union of all open subsets of $A$. It is the largest open subset of $A$. ^871863
 
 >[!proposition] 
 > $\bar{A} = (\interior(A^{c}))^{c}$.

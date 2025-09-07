@@ -1,6 +1,5 @@
 
->[!definition] 
->**Def**  <i><u>Bicategory</u></i>
+>[!definition] Bicategory
 >A bicategory or weak $2$-category is a tuple $\require{mhchem}\newcommand{\dom}{\operatorname{\textbf{dom}}}\newcommand{\cod}{\operatorname{\textbf{cod}}}\newcommand{\obj}{\operatorname{\textbf{obj}}}\newcommand{\mor}{\operatorname{\textbf{mor}}}\newcommand{\Hom}{\mathrm{Hom}}(\mathsf{B}, 1, c, a, l, r)$ consisting of
 >- A [[Structure of Categories#^2f5c3a|category]] $\mathsf{B}$;
 >- **Hom Categories**: for each pair of objects ($0$-cells) $X,Y ∈ \obj \mathsf{B}=\mathsf{B}_{0}$, $\mathsf{B}$ is equipped with a category $\mathsf{B}(X,Y)$, called a hom category.

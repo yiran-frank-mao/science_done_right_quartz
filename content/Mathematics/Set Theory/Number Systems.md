@@ -6,7 +6,7 @@ completed: true
 ## Naturals and Integers
 
 >[!definition] Natural Numbers
->We define the set of natural numbers $\require{mhchem}\newcommand{\R}{\mathbb{R}}\newcommand{\N}{\mathbb{N}}\newcommand{\Z}{\mathbb{Z}}\newcommand{\Q}{\mathbb{Q}} \N$ by the following Peano axioms with successor function $S\colon \N \to \N$.
+>We define the set of natural numbers $\newcommand{\R}{\mathbb{R}}\newcommand{\N}{\mathbb{N}}\newcommand{\Z}{\mathbb{Z}}\newcommand{\Q}{\mathbb{Q}} \N$ by the following Peano axioms with successor function $S\colon \N \to \N$.
 >- $0$ is a natural number.
 >- For every natural number $n$, $S(n)$ is a natural number. That is, the natural numbers are closed under $S$.
 >- For all natural numbers $m$ and $n$, if $S(m) = S(n)$, then $m = n$. That is, $S$ is injective.

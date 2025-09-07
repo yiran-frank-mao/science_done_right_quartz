@@ -32,9 +32,7 @@ updated: 2024-10-29
 >Let $(X,d)$ be a metric space and $A⊂X$. A collection of sets $\{U_α\}$ is called a covering of $A$ if $A⊂\bigcup_{\alpha\in I}U_\alpha$ . If in addition, each $U$ is open, then $\{U _\alpha\}$ is called an open covering of $A$.
 
 >[!definition] Compactness
-> Let $(X,d)$ be a metric space. A set $K ⊂ X$ is called compact if for every open covering $\{U_α\}$ of $K$ there exists a finite subcollection $\{U_{i}\}_{i=1}^{n}$ of $\{U_α\}$ such that $$K\subset\bigcup_{i=1}^nU_i$$
-
-^8c1327
+> Let $(X,d)$ be a metric space. A set $K ⊂ X$ is called compact if for every open covering $\{U_α\}$ of $K$ there exists a finite subcollection $\{U_{i}\}_{i=1}^{n}$ of $\{U_α\}$ such that $$K\subset\bigcup_{i=1}^nU_i$$ ^8c1327
 
 >[!theorem]
 > Let $(X,d)$ be a metric space. Then a set $K ⊂ X$ is compact iff it is sequentially compact.

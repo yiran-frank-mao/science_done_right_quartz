@@ -36,7 +36,7 @@
 <u><b>e.g.</b></u>  In $\mathbb{Z}$ every ideal is principal and takes the form $n\mathbb{Z} = (n)$. (Proof see [[Factorization#^22b06c|theorem]]).
 
 > [!definition] Product Ideal
-> For $I,J\triangleleft R$, define the product ideal $IJ$ as $$IJ=\left\{ \sum_{i=1}^n x_iy_i \mid n\in \mathbb{N}, x_i\in I,y_i\in J  \right\}$$
+> For $I,J\triangleleft R$, define the product ideal $IJ$ as $$IJ=\left\{ \sum_{i=1}^n x_iy_i \mid n\in \mathbb{N}, x_i\in I,y_i\in J  \right\}.$$
 
 > [!proposition]
 > If $I,J\triangleleft R$ are ideals so are $I\cap J$ and $IJ$.

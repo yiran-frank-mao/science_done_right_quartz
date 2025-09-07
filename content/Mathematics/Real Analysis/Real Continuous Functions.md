@@ -4,8 +4,10 @@ A function $f\colon X \to Y$ on $\R$ is continuous at $x_0$ if for every $\{a_{n
 
 ## Continuous Functions Theorems
 
-**Thrm**  If $f\colon [a,b] \to \R$ is continuous, then $f$ is bounded, and attains its bounds.
+> [!theorem]
+> If $f\colon [a,b]\to \R$ is continuous, then $f$ is bounded, and both maximum and minimum exist.
 
-**Thrm**  <i><u>Intermediate Value Theorem</u></i>
-If $f\colon [a,b] \to \R$ is continuous, then for any real $\gamma$ such that $\min(f(a),f(b)) \leq \gamma \leq \max(f(a),f(b))$, there exists $c \in [a,b]$ such that $f(c) = \gamma$.
+> [!theorem] Intermediate Value Theorem
+> If $f\colon [a,b]\to \R$ is continuous, then for any $\min(f(a),f(b))\leq y \leq\max (f(a),f(b))$, there exists $c\in (a,b)$ such that $f(c)=y$.
+
 **Proof**  Without loss of generality, assume $f(a)<f(b)$. Let $A = \{x\in [a,b]:f(x)\leq \gamma\}$. As $A\subset[a,b]$, $A$ is bounded. Let $M= \sup (A)$. By lemma, there exists a sequence $\{a_{n}\} \subset A$ such that $a_{n} \to M$. As for all $n$, $f(a_{n})\leq \gamma$, we have $f(M)\leq \gamma$. So $M\in A$. Now because 
