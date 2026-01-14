@@ -32,7 +32,7 @@ In fact, the second option would imply that $f'$ is zero on $\Delta(z_{0}, r)\ca
 >Attention that the above is not generally true in real analysi. Consider real function $f(x)=x^3$, it satisfies $f'(0)=0$ but $f$ is injective.
 
 > [!theorem]
-> Let $f ∈H(D)$ be injective. Then $G= f(D)$ is a domain and $f \colon D→G$ is biholomorphic. ^2ea31f
+> Let $f ∈H(D)$ be [[Relations and Functions#^042daf|injective]]. Then $G= f(D)$ is a domain and $f \colon D→G$ is biholomorphic. ^2ea31f
 
 *Proof*  By the [[The Open Mapping Theorem#^6df1f8|open mapping theorem]], $G$ is open. $G$ is connected since $f$ is continuous. So $G$ is a domain. By the above corollary, as $f$ is injective, $f'(z)\neq 0$ for all $z\in D$. Hence the Jacobian of $f$ is non-zero: $$J_{f}(z)=\begin{pmatrix}a & -b \\ b & a\end{pmatrix}$$with $a,b$ not both zeroes. And thus $\det(J_{f}(z))=a^2+b^2>0$, which indicates that the Jacobian is invertible at every $z\in D$. Thus by the [inverse function theorem](https://en.m.wikipedia.org/wiki/Inverse_function_theorem), we know that $f^{-1}$ is $\R$-differentiable, and $$J_{f^{-1}}(f(z))=J^{-1}_{f}(z)=\frac{1}{a^2 +b ^2}\begin{pmatrix}a & b \\ -b & a\end{pmatrix}$$Thus $f^{-1}$ also satisfies the [[Complex Differentiability#^cf170c|Cauchy-Riemann equations]], therefore [[Holomorphic and Conformal Maps#^c7e434|holomorphic]]. $\square$
 

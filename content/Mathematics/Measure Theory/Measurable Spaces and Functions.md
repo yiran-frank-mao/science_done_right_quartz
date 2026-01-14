@@ -6,10 +6,10 @@ tags: []
 ## $\sigma$-Algebra and Measurable Spaces
 
 >[!definition] $\sigma$-Algebra
->Suppose $X$ is a set and $\mathcal{S}$ is a set of subsets of $X$. Then $\mathcal{S}$ is called a $\sigma$-algebra on $X$ if it is closed under countable unions, countable intersections, and complements:
->- $\emptyset \in \mathcal{S}$;
->- if $Y\in \mathcal{S}$, then $X\setminus Y\in \mathcal{S}$;
->- if $Y_{1}, Y_{2}, \dots \in \mathcal{S}$, then $\bigcup_{i=1}^{\infty} Y_{i}\in\mathcal{S}$.
+>Suppose $X$ is a set and $\mathcal{S}$ is a set of subsets of $X$. Then $\mathcal{S}$ is called a *$\sigma$-algebra* on $X$ if it is closed under countable unions, countable intersections, and complements:
+>1. $\emptyset \in \mathcal{S}$;
+>2. if $Y\in \mathcal{S}$, then $X\setminus Y\in \mathcal{S}$;
+>3. if $Y_{1}, Y_{2}, \dots \in \mathcal{S}$, then $\bigcup_{i=1}^{\infty} Y_{i}\in\mathcal{S}$.
 >
 > Note that the closedness on countable intersections comes freely from (2) and (3).  ^60a516
 
@@ -17,9 +17,9 @@ tags: []
 >A measurable space is an ordered pair of a set and an associated $\sigma$-algebra $(X, \mathcal{S})$. An element of $\mathcal{S}$ is called an $\mathcal{S}$-measurable set, or just a measurable set. ^0bddf6
 
 > [!proposition]
-> Suppose $X$ is a set and $\mathcal{A}$ is a set of subsets of $X$. Then the intersection of all $σ$-algebras on $X$ that contain $\mathcal{A}$ is a $σ$-algebra on $X$.
+> Suppose $X$ is a set and $\mathcal{A}$ is a set of subsets of $X$. Then the intersection of all $\sigma$-algebras on $X$ that contain $\mathcal{A}$ is a $\sigma$-algebra on $X$.
 
-*Proof*  
+*Proof*  Suppose $\mathcal{S}$ is the intersection of all $\sigma$-algebras on $X$ that contain $\mathcal{A}$. Clearly $\emptyset\in \mathcal{S}$. Now for any $Y_{1},Y_{2},\cdots \in\mathcal{S}$, $Y_{1},Y_{2},\cdots$ are in every $\sigma$-algebra that contains $\mathcal{A}$, thus $X\setminus Y_{i}$ and $\bigcup_{i=1}^{\infty} Y_{i}$ are also in every such $\sigma$-algebra. Therefore, $X\setminus Y_{i}\in \mathcal{S}$ and $\bigcup_{i=1}^{\infty} Y_{i}\in \mathcal{S}$. $\square$
 
 ## Measurable Functions
 
@@ -44,7 +44,7 @@ tags: []
 *Proof*  Observe that for any $E\subset F$, $E$ and $F\setminus E$ are disjoint, and $F=E\cup (F\setminus E)$, thus $$\mu(F)=\mu(E)+\mu(F\setminus E)\geq \mu(E).$$For subadditivity, we can divide the union into disjoint sets. Suppose $G_{n}=\bigcup_{i=1}^{n} E_{i}$, let $F_{1}:=E_{1}$, and $F_{i}:=E_{i}\setminus G_{i-1}$ for $i\geq 2$. Then each $F_{i}$ is disjoint, and we have $$\mu\left(\bigcup_{i=1}^{\infty} E_{i}\right)=\mu\left(\bigcup_{i=1}^{\infty} F_{i}\right)= \sum_{i=1}^{\infty} \mu(F_{i})\leq \sum_{i=1}^{\infty}\mu(E_{i}),$$where the last inequality follows from monotonicity. $\square$
 
 > [!definition] $\sigma$-Finite Measure
-> A measure space $(X, \mathcal{S},\mu)$ is $\sigma$-finite if there exists a countable collection $\{A_{i}\}_{i=1}^{\infty}$ of measurable sets such that $$X=\bigcup_{i=1}^{\infty} A_{i},$$ and $\mu(A_{i})<\infty$ for all $i$. ^0bddf6
+> A measure space $(X, \mathcal{S},\mu)$ is $\sigma$-finite if there exists a countable collection $\{A_{i}\}_{i=1}^{\infty}$ of measurable sets such that $$X=\bigcup_{i=1}^{\infty} A_{i},$$ and $\mu(A_{i})<\infty$ for all $i$.
 
 <u><b>e.g.</b></u>  
 - The Lebesgue measure on $\R$ is $\sigma$-finite because $\R=\bigcup_{i=1}^{\infty} [-i,i]$.

@@ -26,9 +26,12 @@ Our next topic in the course is based on the idea of using isolated singularitie
 ## Residue Computation
 
 > [!proposition]
-> Suppose $f$ and $g$ are holomorphic on a neighborhood $∆(a,r)$ of $a$, with $f(a) \neq 0$ and $g(a) = 0$ of order $1$. Then $$\res_{a}\frac{f}{g}=\frac{f(a)}{g'(a)}$$ ^789b12
+> Suppose $f$ and $g$ are holomorphic on a neighborhood $∆(a,r)$ of $a$, with $f(a) \neq 0$ and $g(a) = 0$ of order $1$. Then $$\res_{a}\frac{f}{g}=\frac{f(a)}{g'(a)}.$$
+> In general, the residue for a function $f$ at a pole $z_{0}$​ of order $m$ is given by:
+> $$\newcommand{\d}{\mathrm{d}}\res_{z_0}f=\frac1{(m-1)!}\lim_{z\to z_0}\frac{\d^{m-1}}{\d z^{m-1}}\left((z-z_0)^mf(z)\right).$$
+>  ^789b12
 
-*Proof*  Since $f,g\in H(\Delta(a,r))$ and $g$ has a simple zero at $a$, we can write the Taylor expansions: $$f(z)=c_{0}+c_{1}(z-a)+\cdots,\quad g(z)=(z-a)p(z)$$with $p(a)\neq 0$. $\frac{1}{p}$ is holomorphic on $\Delta(a,r)$, so we can write$$\frac{1}{p(z)}=e_{0}+e_{1}(z-a)+\cdots$$Then we have $$\begin{aligned} \frac{f(z)}{g(z)}=\left(c_{0}+c_1(z-a)+\cdots\right)\cdot\frac1{z-a}\cdot\left(e_{0}+e_1(z-a)+\cdots\right) \end{aligned}$$Note that the residue of $\frac{f}{g}$ at $a$ is the coefficient of $\frac{1}{z-a}$, that is $c_{0}e_{0}$. Since $c_{0} =f(a)$ and $e_{0}=\frac{1}{p(a)}=\frac{1}{g'(a)}$, the result follows. $\square$
+*Proof*  We shall just prove the first formula as the second follows similarly. Since $f,g\in H(\Delta(a,r))$ and $g$ has a simple zero at $a$, we can write the Taylor expansions: $$f(z)=c_{0}+c_{1}(z-a)+\cdots,\quad g(z)=(z-a)p(z)$$with $p(a)\neq 0$. $\frac{1}{p}$ is holomorphic on $\Delta(a,r)$, so we can write$$\frac{1}{p(z)}=e_{0}+e_{1}(z-a)+\cdots$$Then we have $$\begin{aligned} \frac{f(z)}{g(z)}=\left(c_{0}+c_1(z-a)+\cdots\right)\cdot\frac1{z-a}\cdot\left(e_{0}+e_1(z-a)+\cdots\right) \end{aligned}$$Note that the residue of $\frac{f}{g}$ at $a$ is the coefficient of $\frac{1}{z-a}$, that is $c_{0}e_{0}$. Since $c_{0} =f(a)$ and $e_{0}=\frac{1}{p(a)}=\frac{1}{g'(a)}$, the result follows. $\square$
 
 <u><b>e.g.</b></u>  
 - Let $f(z)=1$ and $g(z)=z^{2}+1$. $g$ has a simple zero at $i$, apply the proposition, we have $$\res_{i}\frac{1}{z^{2}+1}=\frac{1}{2i}$$Furthermore, by the residue theorem, we have $$\int_{|z-i|=\frac12}\frac{1}{z^{2}+1}\dd{z}=2\pi i\res_{i}\frac{1}{z^{2}+1}=\pi$$

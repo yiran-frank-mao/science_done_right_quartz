@@ -5,8 +5,8 @@ updated: 2025-09-01
 ## The Symplectic Form
 
 > [!definition] Symplectic Manifold
-> Let $M$ be an even dimensional [[Manifolds and Atlases#^6ef2ef|smooth manifold]]. A symplectic structure on $M$ is a closed non-degenerate [[Differential Forms#^c6c1be|differential 2-form]] $\omega \in \Omega^{2}(M)$, called the symplectic form, such that $\newcommand{\d}{\mathrm{d}}\newcommand{\R}{\mathbb{R}}\d\omega=0$, and for all nonzero $v\in T_{p}M$, there exists $u\in T_{p}M$ so that $\omega(v,u)\neq 0$. The pair $(M,\omega)$ is called a symplectic manifold.
-> We call a symplectic manifold exact if the symplectic form is [[Differential Forms#^c1760d|exact]]. ^b558c2
+> Let $M$ be an even dimensional [[Manifolds and Atlases#^6ef2ef|smooth manifold]]. A symplectic structure on $M$ is a closed non-degenerate [[Differential Forms#^c6c1be|differential 2-form]] $\omega \in \Omega^{2}(M)$, called the *symplectic form*, such that $\newcommand{\d}{\mathrm{d}}\newcommand{\R}{\mathbb{R}}\d\omega=0$, and for all nonzero $v\in T_{p}M$, there exists $u\in T_{p}M$ so that $\omega(v,u)\neq 0$. The pair $(M,\omega)$ is called a *symplectic manifold*.
+> We call a symplectic manifold *exact* if the symplectic form is [[Differential Forms#^c1760d|exact]]. ^b558c2
 
 <u><b>e.g.</b></u>  
 - Suppose $(x^{1},\dots,x^n,y^1,\dots,y^n)$ is a coordinate of $\R^{2n}$. Then $\omega=\sum_{i} \d x^{i}\wedge\d y^{i}$ is the standard symplectic form on $\R^{2n}$, with exact form $\lambda=\sum_{i} x^{i}\d y^{i}$. Clearly, $\d\omega=0$ by definition of the [[Differential Forms#^825b86|exterior derivative]].
@@ -14,7 +14,7 @@ updated: 2025-09-01
 $\quad$
 
 > [!definition] Symplectomorphism
-> A symplectomorphism is a [[Smooth Functions and Maps#^39ce42|diffeomorphism]] $f\colon M\to N$ between symplectic manifolds $(M,\omega_{M})$ and $(N,\omega_{N})$ such that $f^{*}\omega_{N}=\omega_{M}$. ^2dbbf4
+> A *symplectomorphism* is a [[Smooth Functions and Maps#^39ce42|diffeomorphism]] $f\colon M\to N$ between symplectic manifolds $(M,\omega_{M})$ and $(N,\omega_{N})$ such that $f^{*}\omega_{N}=\omega_{M}$. ^2dbbf4
 
 > [!proposition]
 > Given a diffeomorphism $f\colon M\to N$, there is a canonical diffeomorphism $F\colon T^{*}M\to T^{*}N$ such that $F^{*}\lambda_{N}=\lambda_{M}$, where $\lambda_{M}$ and $\lambda_{N}$ are the canonical 1-forms on $T^{*}M$ and $T^{*}N$ respectively. Thus $F$ is a symplectomorphism.

@@ -22,14 +22,13 @@ The fundamental concepts in point-set topology are **continuity**, **compactness
 [[Compactness of Metric Space]]
 [[Complete Metric Space]]
 [[Continuity on Metric Spaces]]
-[[Uniform Convergence of Functions]]
-[[Ordinary Differential Equations]]
+[[Convergence of Functions]]
 [[Totally Bounbdedness]]
 
 ### Topological Spaces
 [[Topological Spaces]]
 [[Closure, Interior and Boundary]]
-[[Hausdorff Space]]
+[[Separation and Hausdorff Spaces]]
 [[Compactness of Topological Space]]
 [[Continuous Functions on Topological Spaces]]
 [[Connectedness and Paths]]

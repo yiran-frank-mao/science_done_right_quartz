@@ -16,7 +16,7 @@
 *Proof*  For a symmetric operator $T$, $T^{*}$ is an extension of $T$, and $T^{*}$ is closed, hence $T$ is closable, and $T\subset T^{**} \subset T^{*}$ by [[Unbounded Operators#^113ce9|the theorem]]. $\square$
 
 > [!definition] Essentially Self-adjoint Operator
-> A symmetric operator $T$ is *essentially self-adjoint* if its closure $\bar{T}$ is self-adjoint. 
+> A symmetric operator $T$ is *essentially self-adjoint* if its closure $\bar{T}$ is self-adjoint. ^e5fbca
 
 > [!definition] Core
 > The *core* of an essentially self-adjoint operator refers to a dense subset of its domain on which the operator remains essentially self-adjoint when restricted to it.

@@ -10,7 +10,9 @@ updated: 2024-09-17
 <u><b>e.g.</b></u>  A [[Relations and Functions#^862dba|function]] $f\colon A\to B$ is monic if and only if it is [[Relations and Functions#^042daf|injective]].
 
 >[!definition] Epimorphisim
->In any category $\mathbf{C}$, an morphism $f\colon A\to B$ is called an epimorphism (epic) if given any $i, j \colon B \to D$, $i\circ f = j\circ f$ implies $i = j$. Write $f \colon A\twoheadrightarrow B$ if $f$ is a monomorphism.
+>In any category $\mathbf{C}$, an morphism $f\colon A\to B$ is called an epimorphism (epic) if given any $i, j \colon B \to D$, $i\circ f = j\circ f$ implies $i = j$. Write $f \colon A\twoheadrightarrow B$ if $f$ is an epimorphism.
+
+^09ba17
 
 <u><b>e.g.</b></u>  
 - A [[Relations and Functions#^862dba|function]] $f\colon A\to B$ is epic if and only if it is [[Relations and Functions#^042daf|surjective]].
@@ -43,9 +45,7 @@ We shall check the inverse is unique. Suppose $g$ and $h$ are both inverse of $f
 
 >[!definition] Endomorphism & Automorphism
 >An endomorphism is a morphism whose domain equals its codomain.
-> An endomorphism that is an isomorphism is called an automorphism.
-
-^9a350e
+> An endomorphism that is an isomorphism is called an automorphism. ^9a350e
 
 >[!definition] Groupoid
 >A groupoid is a [[Structure of Categories#^2f5c3a|category]] in which every morphism is an isomorphism.
@@ -77,13 +77,13 @@ A split monomorphism (epimorphism) is an arrow with a left (right) inverse.
 <u><b>e.g.</b></u>  In $\mathbf{Set}$, every monomorphism splits except those with domain $\emptyset$.
 
 **Def**  <i><u>Section</u></i> and <i><u>Retraction</u></i>
-Given arrows $e \colon X \to A$ and $s \colon A \to X$ such that $es = 1_{A}$, then $s$ is called a section or splitting of $e$, and e is called a retraction of $s$. The object $A$ is called a retract of $X$.
+Given arrows $e \colon X \to A$ and $s \colon A \to X$ such that $es = 1_{A}$, then $s$ is called a *section* or *splitting* of $e$, and e is called a retraction of $s$. The object $A$ is called a retract of $X$.
 
 **Prop**  Functors also preserve split epimorphisms and split monomorphisms.
 **Proof**  
 
 **Def**  <i><u>Projective Objects</u></i>
-An object $P$ is called projective if for any epimorphism $e\colon E\twoheadrightarrow X$ and morphism $f\colon P\to X$ there is some morphism $\bar{f}\colon P\to E$ such that $e\circ \bar{f}=f$:
+An object $P$ is called *projective* if for any epimorphism $e\colon E\twoheadrightarrow X$ and morphism $f\colon P\to X$ there is some morphism $\bar{f}\colon P\to E$ such that $e\circ \bar{f}=f$:
 ![projobj|200](https://svgshare.com/i/13n_.svg)
 
 **Prop**  In any category, any retract of a projective object is also projective.
@@ -105,7 +105,8 @@ The (covariant) representable functor of $A\in\obj \mathbf{C}$ is$$\mathrm{Hom}(
 
 >[!definition] Preserve Binary Products
 >Let $\mathbf{C}$, $\mathbf{D}$ be categories with binary products. A functor $F \colon \mathbf{C} \to \mathbf{D}$ is said to preserve binary products if
->![presbprod|800](https://i.imgur.com/04Xt07Y.png)That is $\langle F(p_{1}),F(p_{2})\rangle\colon F(A\times B)\to F(A)\times F(B)$ is an isomorphism.
+>![presbprod|800](https://i.imgur.com/04Xt07Y.png)
+>That is $\langle F(p_{1}),F(p_{2})\rangle\colon F(A\times B)\to F(A)\times F(B)$ is an isomorphism.
 
 <u><b>e.g.</b></u>  The forgetful functor $U \colon\mathbf{Mon} \to \mathbf{Set}$ preserves binary products.
 

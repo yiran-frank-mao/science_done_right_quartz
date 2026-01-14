@@ -17,7 +17,7 @@
 ## Ideals
 
 > [!definition] Ideal
-> An ideal in a ring $R$ is a subset $I$ of $R$ such that 
+> A *left ideal* in a ring $R$ is a subset $I$ of $R$ such that 
 > - $0\in R$
 > - $I$ is closed under addition
 > - If $a\in I$ then $ra\in I$ for all $r\in R$.
@@ -44,7 +44,7 @@
 ## Quotient rings
 
 > [!definition] Quotient Ring
-> Let $R$ be a ring and $I$ an ideal. Then, as an additive subgroup, $I$ is [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal]] in $R$ and we can form the quotient $$ R/I=\{ a+I \mid a\in R \} $$with addition $(a + I ) + (b + I ) = a + b + I$ , zero $I$ , and inverse $−(a + I ) = −a + I$. There is a unique way to upgrade this abelian group to a ring. Define $$ (a+I)\cdot(b+I):=ab+I $$
+> Let $R$ be a ring and $I$ an ideal. Then, as an additive subgroup, $I$ is [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal]] in $R$ and we can form the quotient $$ R/I=\{ a+I \mid a\in R \} $$with addition $(a + I ) + (b + I ) = a + b + I$ , zero $I$ , and inverse $−(a + I ) = −a + I$. There is a unique way to upgrade this abelian group to a ring, called the *quotient ring*. Define $$ (a+I)\cdot(b+I):=ab+I. $$
 
 **Def** _Canonical Map_
 There is a unique ring structure on $R/I$ such that the map $π : R → R/I$ given by $a \mapsto a +I$ is a ring homomorphism. The kernel of $π$ is $I$.
@@ -85,6 +85,8 @@ If the ideal $I$ corresponds to the ideal $I^\prime$ then $R/I \cong R^\prime/I^
 
 > [!theorem] Chinese Remainder Theorem
 > Let $I, J \triangleleft R$ such that $I + J = R$. then $I J =I \cap J$ and $R/I J\cong R/I ×R/J$. 
+
+^27e653
 
 *Proof*  We first show that $IJ=I\cap J$. It is clear that $IJ\subseteq I\cap J$. Conversely, for all $a\in I\cap J$, note that since $R=I+J$, we have $1=x_{0}+y_{0}$ for some $x_{0}\in I,y_{0}\in J$. Then $a=x_{0}a + y_{0}a \in IJ$. Thus $I\cap J\subseteq IJ$.
 

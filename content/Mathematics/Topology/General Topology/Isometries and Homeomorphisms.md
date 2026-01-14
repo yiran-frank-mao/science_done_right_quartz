@@ -21,11 +21,17 @@ $\quad$
 
 >[!definition] Topological Property
 >If some property $P$ of a metric space is such that if $(X,d)$ has property $P$ then so does every metric space that is homeomorphic to $(X,d)$ we say that $P$ is a topological property. More colloquially, these are properties that are only concerned with set-theoretic notions and/or open sets, rather than distances.
-><b><u>e.g.</u></b>  Topological properties:
->- $X$ is open in $X$.
->- $X$ is finite; countably infinite; or uncountable.
->- $X$ has a point such that $\{x\}$ is open in $X$ (an ‘isolated point’)
->- every continuous real-valued function on $X$ is bounded.
->Properties that are not topological:
->- $X$ is bounded.
->$\quad$
+
+<b><u>e.g.</u></b>  Topological properties:
+- $X$ is open in $X$.
+- $X$ is finite; countably infinite; or uncountable.
+- $X$ has a point such that $\{x\}$ is open in $X$ (an ‘isolated point’)
+- every continuous real-valued function on $X$ is bounded.
+
+Properties that are not topological:
+- $X$ is bounded.
+$\quad$
+
+> [!proposition]
+> If $f\colon X\to Y$ is a continuous bijection, and $X$ is compact, $Y$ is Hausdorff, then $f$ is a homeomorphism. 
+> 

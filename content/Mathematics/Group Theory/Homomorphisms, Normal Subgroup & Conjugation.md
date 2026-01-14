@@ -5,7 +5,7 @@ updated: 2024-10-28
 ## Homomorphisms
 
 >[!definition] Group Homomorphism
->Let $G$ and $H$ be groups. A homomorphism $\varphi: G \to H$ is a map that satisfies $\varphi (ab) = \varphi (a) \varphi (b)$ for all $a,b \in G$. ^homo
+>Let $G$ and $H$ be groups. A *homomorphism* $\varphi: G \to H$ is a map that satisfies $\varphi (ab) = \varphi (a) \varphi (b)$ for all $a,b \in G$. ^homo
 
 >[!proposition] 
 >If $\varphi: G \to H$ is a group homomorphism, then the identity of $G$ is mapped to the identity of $H$.
@@ -23,8 +23,9 @@ updated: 2024-10-28
 >[!definition] Conjugate
 >Let $G$ be a group. For any $a,b\in G$, we say $a$ and $b$ and conjugate if there exists $g\in G$ such that $a=gbg^{-1}$.
 
->[!definition] Normal Subgroup
->Let $G$ be a group. A subgroup $N \leq G$ is called normal if $gN g^{−1} \subset N$ for every $g \in G$. We denote a normal subgroup by $N \triangleleft G$. ^normal
+>[!definition] Normal Subgroup & Simple Group
+> Let $G$ be a group. A subgroup $N \leq G$ is called *normal* if $gN g^{−1} \subset N$ for every $g \in G$. We denote a normal subgroup by $N \triangleleft G$. 
+> A group is *simple* if there’s no non-trivial normal subgroups. ^normal
 
 <u><b>e.g.</b></u>  Let $\varphi : G \to H$ be a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]], then $\ker(\varphi) \triangleleft G$. Fix some $x\in \ker(\varphi)$, then for all $g\in G$ we have $\varphi(g x g^{-1})=\varphi(g)\varphi(x)\varphi(g^{-1})=\varphi(g)\varphi(g)^{-1}=e$.
 
@@ -34,10 +35,6 @@ updated: 2024-10-28
 >2. We required in the definition that $gN g^{−1} \subset N$ , but it follows that $gN g^{−1} = N$.
 >3. Every subgroup of an abelian group is normal.
 >$\quad$
-
->[!definition] 
->**Def**  <i><u>Simple Group</u></i>
->A group is simple if there’s no non-trivial normal subgroups.
 
 >[!definition] Normaliser
 >Let $G$ be a group and $H\leq G$. The normaliser is the subgroup of $G$ that
@@ -86,10 +83,10 @@ updated: 2024-10-28
 
 ## Conjugation
 
->[!definition] 
->**Def**  <i><u>Conjugation</u></i>
->Let $G$ be a group and $g \in G$. The map$$ \gamma_g: G \to G, \quad a \mapsto gag^{-1} $$is called conjugation by $g$. We say that the elements $a$ and $gag^{-1}$ are conjugate.
+>[!definition] Conjugation
+>Let $G$ be a group and $g \in G$. The map$$ \gamma_{g}\colon G \to G, \quad a \mapsto gag^{-1} $$is called conjugation by $g$. We say that the elements $a$ and $gag^{-1}$ are conjugate.
 
 >[!proposition] 
->**Prop** Let $G$ be a group and $g \in G$. Then $\gamma_g :G \to G$ is an isomorphism.
->**Proof**  We first check that $\gamma_g$ is a homomorphism:$$ \gamma_g(ab) = gabg^{-1} = ga(g^{-1}g)bg^{-1} = (gag^{-1})(gbg^{-1})=\gamma_g(a)\gamma_g(b) $$The map is injective because $\gamma_g(a) = e \implies gag^{-1}=e \implies ga=g \implies a=e$. And is surjective since for all $a \in G$, we have $\gamma_g(g^{-1}ag)=a$.
+> Let $G$ be a [[Groups, Order and Subgroups#^6e0960|group]] and $g \in G$. Then $\gamma_{g}\colon G \to G$ is an isomorphism.
+
+*Proof*  We first check that $\gamma_g$ is a homomorphism:$$ \gamma_g(ab) = gabg^{-1} = ga(g^{-1}g)bg^{-1} = (gag^{-1})(gbg^{-1})=\gamma_g(a)\gamma_g(b) $$The map is injective because $\gamma_g(a) = e \implies gag^{-1}=e \implies ga=g \implies a=e$. And is surjective since for all $a \in G$, we have $\gamma_g(g^{-1}ag)=a$. $\square$

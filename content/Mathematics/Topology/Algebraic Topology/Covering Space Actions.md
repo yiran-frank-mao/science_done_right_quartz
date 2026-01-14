@@ -4,7 +4,7 @@ updated: 2025-08-21
 cssclasses:
   - img-grid
   - img-zoom
-completed: false
+completed: true
 tags:
   - covering-spaces
 ---
@@ -17,15 +17,15 @@ Recall the definition of a group action:
 We can treat it as a group homomorphism $\rho\colon G \to \mathrm{Homeo}(X)$. We usually assume the action is [[Group Actions#^f7c6a0|faithful]] (i.e., $\rho$ is injective). If not, we can replace $G$ with the quotient group $G/\ker(\rho)$.
 
 > [!definition] Covering Space Action
-> A $G$-action on a space $Y$ is called a *covering space action* if for any point $y \in Y$, there exists an open neighborhood $U$ of $y$ such that for any two distinct elements $g_1, g_2 \in G$, the sets $g_1U$ and $g_2U$ are disjoint.
+> A $G$-action on a [[Topological Spaces#^65c94a|space]] $Y$ is called a *covering space action* if for any point $y \in Y$, there exists an open neighborhood $U$ of $y$ such that for any two distinct elements $g_1, g_2 \in G$, the sets $g_1U$ and $g_2U$ are disjoint.
 > $$g_1 \neq g_2 \implies g_1U \cap g_2U = \emptyset$$
 > When a group $G$ acts on a space $Y$, we can form the (quotient) [[Group Actions#^705c54|orbit space]] $X = Y/G$. The points of $X$ are the orbits of points in $Y$ under the action of $G$.
 
 ## Properties of Covering Space Actions
 
 > [!theorem]
-> If a group $G$ acts on a space $Y$ via a covering space action, and $X = Y/G$ with projection $p\colon Y \to X$, then:
-> 1. $p\colon Y \to X$ is a normal covering space.
+> If a group $G$ acts on a [[Topological Spaces#^65c94a|space]] $Y$ via a covering space action, and $X = Y/G$ with projection $p\colon Y \to X$, then:
+> 1. $p\colon Y \to X$ is a [[Deck Transformations and Normal Covers#^aaf7ba|normal covering space]].
 > 2. If $Y$ is also [[Connectedness and Paths#^946cc4|connected]], then the group of [[Deck Transformations and Normal Covers#^988018|deck transformations]] is isomorphic to the group $G$, i.e., $\text{Aut}_X(Y) \cong G$.
 > 3. If $Y$ is also [[Connectedness and Paths#^630354|path-connected]] and [[Connectedness and Paths#^ba4f32|locally path-connected]], then the group of deck transformations is isomorphic to the quotient of the fundamental groups: $G \cong \pi_1(X, [y_0]) / p_*(\pi_1(Y, y_0))$.
 > $\quad$

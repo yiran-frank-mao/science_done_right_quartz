@@ -28,14 +28,10 @@ completed: true
 > A homogeneous relation $R$ on a set $X$ is connected if for all $x,y\in X$: $$x\neq y \implies xRy \text{ or } yRx$$It is called strongly connected if $xRy$ or $yRx$ for all $x,y\in X$ no matter if they are equal. ^f0a2cd
 
 > [!definition] Univalent
-> For all $x ∈ X$ and $y_{1},y_{2}\in Y$ with relation $R$, if $xRy_{1}$ and $xRy_{2}$ implies $y_1 = y_2$, we say $R$ is univalent.
-
-^70f956
+> For all $x ∈ X$ and $y_{1},y_{2}\in Y$ with relation $R$, if $xRy_{1}$ and $xRy_{2}$ implies $y_1 = y_2$, we say $R$ is univalent. ^70f956
 
 > [!definition] Serial
-> We say $R$ defined on $X$ and $Y$ is serial or total if for all $x ∈ X$, there exists some $y ∈ Y$ such that $xRy$.
-
-^d97ac1
+> We say $R$ defined on $X$ and $Y$ is serial or total if for all $x ∈ X$, there exists some $y ∈ Y$ such that $xRy$. ^d97ac1
 
 ## Equivalence Relation
 
@@ -104,7 +100,7 @@ completed: true
 >$\quad$ ^042daf
 
 > [!proposition]
-> If a set $X$ is finite, then a function $f \colon X \to X$ is injective if and only if it is surjective. ^9109dc
+> If a set $X$ is finite, then a function $f \colon X \to X$ is injective if and only if it is [[Relations and Functions#^042daf|surjective]]. ^9109dc
 
 *Proof*  Suppose $f\colon X\to X$ is injective. Assume $f$ is not surjective, then there exists $y\in X$ such that $y\notin f(X)$. Because $X$ is finite, by the pigeonhole  $\square$
 

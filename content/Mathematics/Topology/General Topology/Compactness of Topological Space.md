@@ -19,14 +19,12 @@ updated: 2025-05-19
 > If $T$ is a topological space and $S ⊂ T$ then $S$ is compact in the $T$ if and only if $(S,\mathcal{T}_S)$ is compact.
 
 >[!theorem] 
-> Let $X$ be a compact topological space and $K$ a closed [[Topological Spaces#^a942da|subspace]] of $X$. Then $K$ is compact.
-
-^f5bb06
+> Let $X$ be a compact topological space and $K$ a closed [[Topological Spaces#^a942da|subspace]] of $X$. Then $K$ is compact. ^f5bb06
 
 *Proof*  Let $K ⊂X$ be closed and let $\{U_{α}\}_{α∈\Lambda}$ be an open covering of $K$. Then $\{K^{c}\cup U_{α}\}_{α∈\Lambda}$ is an open covering of $X$. Since $X$ is compact, there exist $α_{1},\dots,α_{n} ∈ \Lambda$ such that $$X=K^{c}\bigcup\left(\bigcup_{i=1}^{n}U_{\alpha_i}\right)$$It follows that $K \subset \bigcup_{i=1}^{n}U_{\alpha_{i}}$, therefore $K$ is compact. $\square$
 
 > [!proposition]
-> Any compact subset $K$ of a [[Hausdorff Space#^f7bcc8|Hausdorff space]] $T$ is closed.
+> Any compact subset $K$ of a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]] $T$ is closed.
 
 ## Tikhonov Theorem
 

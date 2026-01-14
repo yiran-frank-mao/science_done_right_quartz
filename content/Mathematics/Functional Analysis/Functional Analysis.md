@@ -15,20 +15,14 @@ Functional Analysis is the study of [[Vector Spaces#^f4b63e|vector spaces]] endo
 [[Symmetric and Self-Adjoint Operators]]
 [[The Spectral Theorem of Unbounded Operators]]
 [[Stone's Theorem]]
-
+[[Nelson's Counterexample]]
+[[Nelson's Commutator Theorem]]
 ### Banach Spaces
 [[Banach Spaces]]
 [[The Implicit Function Theorem]]
+[[The Hahn-Banach Theorem]]
 [[The Baire Category Theorem]]
-
 ### Topological Vector Spaces
 [[Topological Vector Spaces]]
 [[Generalized Functions]]
 
-### Operator Algebras
-[[Normed and Banach Algebras]]
-[[Gelfand Representation]]
-[[C*-Algebras]]
-[[The Gelfand Theorem for Commutative C*-Algebras]]
-[[Positive Elements in C*-Algebras]]
-[[Nelson's Counterexample]]

@@ -9,7 +9,7 @@ completed: false
 > Let $S$ be a set, $(Y,ρ)$ a [[Metric Spaces#^0eacc7|metric space]], and $f \colon S →Y$ a [[Relations and Functions#^862dba|function]]. Consider a sequence of functions $(f_{n})$ from $S$ to $Y$. We say $f_{n} → f$ pointwise if for all $x ∈ S$ there holds $$ρ(f_{n}(x),f (x)) → 0 \quad \text{as}\quad n\to\infty $$ ^6eed8e
 
 > [!definition] Uniform Convergence
-> Let $S$ be a set, $(Y,ρ)$ a [[Metric Spaces#^0eacc7|metric space]], and $f \colon S →Y$ a [[Relations and Functions#^862dba|function]]. Consider a sequence of functions $(f_{n})$ from $S$ to $Y$. we say $f_{n} → f$ uniformly on $S$ if for any $ε >0$ there exists $N\in\N$ such that for all $n>N$ there holds $$\rho(f_n(x),f(x))<\varepsilon\quad\text{ for all }x\in S$$Equivalently, $$\sup_{x\in S}\rho(f_{n}(x), f(x))\to 0 \quad \text{as} \quad n\to \infty$$ ^a59a2d
+> Let $S$ be a set, $(Y,ρ)$ a [[Metric Spaces#^0eacc7|metric space]], and $f \colon S →Y$ a [[Relations and Functions#^862dba|function]]. Consider a sequence of functions $(f_{n})$ from $S$ to $Y$. we say $f_{n} → f$ uniformly on $S$ if for any $ε >0$ there exists $N\in\N$ such that for all $n>N$ there holds $$\rho(f_n(x),f(x))<\varepsilon\quad\text{ for all }x\in S.$$Equivalently, $$\sup_{x\in S}\rho(f_{n}(x), f(x))\to 0 \quad \text{as} \quad n\to \infty.$$ ^a59a2d
 
 > [!proposition]
 >Uniform convergence implies pointwise convergence.

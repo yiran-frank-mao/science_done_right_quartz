@@ -4,19 +4,29 @@ Rings are algebraic structures that generalize fields: multiplication need not b
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/rings.png" alt="knot_unfolding" style="width:45%;">
 
 ## Contents
+
+### Commutative Rings
 [[Ring, Field and Integral Domain]]
 [[Polynomial Rings]]
 [[Homomorphisms and Ideals]]
 [[Principle Ideal Domains]]
 [[Relations and Maximal Ideals]]
 [[Factorization]]
+
+### Fields
 [[Fields and Field Extensions]]
 [[Fields Construction]]
 [[Finite Fields]]
+
+### Non-Commutative Rings and Algebras
 [[Non-Commutative Rings]]
-[[Modules]]
-[[Presentation of Finitely Generated Modules]]
 [[Grading and Filtration]]
+
+### Modules
+[[Modules]]
+[[Tensor Products of Modules]]
+[[Presentation of Finitely Generated Modules]]
+
 
 ## More ...
 [[Galois Theory]]

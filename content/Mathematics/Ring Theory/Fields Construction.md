@@ -1,7 +1,7 @@
 ## Adjoining Roots
 
 > [!proposition]
-> Any ring homomorphism between two fields is injective.
+> Any ring homomorphism between two fields is [[Relations and Functions#^042daf|injective]].
 > 
 
 *Proof*  Suppose that $\newcommand{\Z}{\mathbb{Z}}\phi: F \to K$ is a ring homomorphism between two fields $F$ and $K$ such that $\phi(a) = \phi(b)$ for some $a,b\in F$. Then, we have $\phi(a-b) = 0$, which implies that $a-b = 0$ since $F$ is a field. Thus, $a = b$, and hence $\phi$ is injective. $\square$

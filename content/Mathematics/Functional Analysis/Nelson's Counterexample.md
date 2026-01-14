@@ -24,12 +24,12 @@ To show $X$ is essentially skew-adjoint, it suffices to show that its [[Unbounde
 ## Nelson's Counterexample
 
 Now, we construct the counterexample. Consider a genus-4 [[Manifolds and Atlases#^6ef2ef|smooth manifold]] $M$, defined by the following diagram:
-<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Nelson's_counterexample_construction.svg" alt="Nelson's_counterexample_construction" style="width:27%;"/>
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Nelson's_counterexample_construction.svg" alt="https://gist.github.com/yiran-frank-mao/ed3fe79488445de8fa5dc92babf4c3ab" style="width:27%;"/>
 That is, a band bounded by two concentric squares, where each point is identified with its opposite, the four vertices are also identified, and the 12 marked points in the above diagram are removed. Finally, we obtain a two-dimensional surface resembling a bunch of bananas, except that each “banana” is a torus:
 
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Nelson's_counterexample_banana.svg" alt="Nelson's_counterexample_banana" style="width:23%;"/>
 
-Let's define an abelian Lie algebra of vector fields on $M$: $$ \mathfrak{g} = \left\{ a\frac{\partial}{\partial x} + b\frac{\partial}{\partial y} \middle| a, b \in \mathbb{R} \right\}. $$These are skew-symmetric operators on the common invariant domain $C_{0}^{\infty}(M)$. For any $X \in \mathfrak{g}$, the flow is not defined on only 7 discrete line segments, i.e., once fixed the "slop", there are only 7 possible ways to hit the hole:
+Let's define an abelian Lie algebra of vector fields on $M$: $$ \mathfrak{g} = \left\{ a\frac{\partial}{\partial x} + b\frac{\partial}{\partial y} \middle| a, b \in \mathbb{R} \right\}. $$These are skew-symmetric operators on the common invariant domain $C_{0}^{\infty}(M)$. For any $X \in \mathfrak{g}$, the flow is not defined on only 7 discrete line segments, i.e., once fixed the slope, there are only 7 possible ways to hit the hole:
 
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Nelson's_counterexample_flow.svg" alt="Nelson's_counterexample_flow" style="width:24%;"/>
 

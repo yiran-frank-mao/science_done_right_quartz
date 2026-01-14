@@ -24,7 +24,7 @@ updated: 2025-07-28
 ## Properties of Finite Fields & The Frobenius Automorphism
 
 > [!definition] Frobenius Automorphism
-> The Frobenius automorphism of a field $F$ of characteristic $p$ is the map $\phi: F \to F$ defined by $\phi(x) = x^{p}$ for all $x \in F$.
+> The Frobenius automorphism of a field $F$ of characteristic $p$ is the map $\phi\colon F \to F$ defined by $\phi(x) = x^{p}$ for all $x \in F$.
 
 Note that this is NOT a well-defined homomorphism for rings. But it is a well-defined homomorphism for finite fields, which we will show next.
 

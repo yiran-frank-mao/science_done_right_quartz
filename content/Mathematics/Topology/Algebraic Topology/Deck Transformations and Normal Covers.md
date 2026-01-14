@@ -1,3 +1,9 @@
+---
+completed: true
+tags:
+  - covering-spaces
+  - algebraic-topology
+---
 ## Deck Transformations
 
 > [!definition] Deck Transformation
@@ -25,7 +31,7 @@ $\quad$
 A key question is when the deck transformation group is "large enough" to connect any two points in the same fiber. That is, for $\tilde{x}_0, \tilde{x}_1 \in p^{-1}(x_0)$, when does there exist a deck transformation $f$ with $f(\tilde{x}_0) = \tilde{x}_1$?
 
 > [!definition] Normal Covering Space
-> $p\colon \widetilde{X}\to X$ is *normal* if for any $\tilde{x}_{1},\tilde{x}_{2}\in\widetilde{X}$ with $p(\tilde{x}_{1})=p(\tilde{x}_{2})$, there exists a deck transformation $f\in \Aut_{X}(\widetilde{X})$ such that $f(\tilde{x}_{1})=\tilde{x}_{2}$.
+> $p\colon \widetilde{X}\to X$ is *normal* if for any $\tilde{x}_{1},\tilde{x}_{2}\in\widetilde{X}$ with $p(\tilde{x}_{1})=p(\tilde{x}_{2})$, there exists a deck transformation $f\in \Aut_{X}(\widetilde{X})$ such that $f(\tilde{x}_{1})=\tilde{x}_{2}$. ^aaf7ba
 
 > [!remark]+ Topological Interpretation of Normal Covering Spaces
 > This means the covering space must "look the same" from the perspective of any two points in the fiber.
@@ -42,7 +48,5 @@ A key question is when the deck transformation group is "large enough" to connec
 > [!remark]
 > For $X$ [[Connectedness and Paths#^630354|path-connected]],  to check if $p\colon \widetilde{X}\to X$ is normal, it suffices to fix some $x_{0}\in X$ and $\tilde{x}_{0}\in \widetilde{X}$, and check if for any $\tilde{x}_{1}\in p^{-1}(x_{0})$, there exists a deck transformation $f\in \Aut_{X}(\widetilde{X})$ with $f(\tilde{x}_{0})=\tilde{x}_{1}$.
 > 
-
-*Proof*  
 
 <u><b>e.g.</b></u>  We can use this to compute the fundamental group of $\RP^{2}$. The antipodal map $S^{2}\to \RP^{2}$ is a 2-sheeted universal cover. Hence $\pi_{1}(\RP^{2})\cong  \pi_{1}(\RP^{2})/\pi_{1}(S^{2}) \cong  \Aut_{\RP^{2}}(S^{2})\cong \mathbb{Z}/2$ (ref. [[Deck Transformations and Normal Covers#^80fb30|example]]). In fact, $\pi_{1}(\RP^{n})=\Z/2$ for all $n\geq 2$, because $S^{n}\to \RP^{n}$ is still the double universal cover.

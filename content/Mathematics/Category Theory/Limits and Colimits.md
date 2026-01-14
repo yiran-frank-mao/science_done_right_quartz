@@ -52,7 +52,5 @@
 > [!definition] Inverse Limit
 > Suppose $\left(\{X_{i}\}_{i\in I},\{f_{ij}\}_{i\leq j\in I}\right)$ is an [[Limits and Colimits#^938e99|inverse system]] of objects and morphisms in a category $\mathbf{C}$. The inverse limit of this system is an object $X$ in $\mathbf{C}$ with morphisms $\{\pi_{i}\colon X\to X_{i}\}$, called projections, such that the following diagram commutes for all $i\leq j$, and for all $Y$:
 > ![inverse_limit.svg|350](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/inverse_limit.svg)
-> The inverse limit is denoted by $\varprojlim X_{i}$.
-
-^24df42
+> The inverse limit is denoted by $\varprojlim X_{i}$. ^24df42
 

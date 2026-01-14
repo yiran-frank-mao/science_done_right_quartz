@@ -8,7 +8,7 @@ tags:
 At the moment, the only examples of holomorphic functions that we have are polynomials, exponentials, and functions that we can build out of these using sums, products, and composites. Having a small supply of examples can make it challenging to construct holomorphic functions with certain specific behaviors. One way to expand our supply of examples of holomorphic functions is to think about when the limit of a sequence of holomorphic functions is again holomorphic.
 
 > [!definition] Normal Convergence
-> Let $\newcommand{\dd}{\:\mathrm{d}} \newcommand{\C}{\mathbb{C}} D\subset \C$ be a [[Holomorphic and Conformal Maps#^08ef59|domain]], and let $(f_{n})$ be a sequence of [[Relations and Functions#^862dba|functions]] on $D$. We say that the sequence $(f_{n})$ converges normally to $f\colon D\to \C$ or uniformly inside $D$ if for every [[Compactness of Metric Space#^f1fb8b|compact]] subset $K\subset D$, the sequence $(f_{n})$ [[Uniform Convergence of Functions#^a59a2d|converges uniformly]] on $K$ to $f$. ^dd2ac8
+> Let $\newcommand{\dd}{\:\mathrm{d}} \newcommand{\C}{\mathbb{C}} D\subset \C$ be a [[Holomorphic and Conformal Maps#^08ef59|domain]], and let $(f_{n})$ be a sequence of [[Relations and Functions#^862dba|functions]] on $D$. We say that the sequence $(f_{n})$ converges normally to $f\colon D\to \C$ or uniformly inside $D$ if for every [[Compactness of Metric Space#^f1fb8b|compact]] subset $K\subset D$, the sequence $(f_{n})$ [[Convergence of Functions#^a59a2d|converges uniformly]] on $K$ to $f$. ^dd2ac8
 
 > [!theorem]
 > $f_{n}\to f$ normally on a domain $D\subset \C$ is equivalent to for every $z\in D$, there is an open set $U\subset D$ such that $f_{n}\to f$ uniformly on $U$. ^f32fe1
@@ -16,7 +16,7 @@ At the moment, the only examples of holomorphic functions that we have are polyn
 *Proof*  First prove that local uniform convergence implies normal convergence. Let $K\subset D$ be compact. For each $z\in K$, there is an open set $U_{z}\subset D$ such that $f_{n}\to f$ uniformly on $U_{z}$. Then the collection $\{U_{z}\}_{z\in K}$ forms an open cover for $K$. By compactness, there is a finite subcover $\{U_{z_{1}},\ldots,U_{z_{m}}\}$. Let $U=\bigcup_{i=1}^{m}U_{z_{i}}$. Then $f_{n}\to f$ uniformly on $U$, and hence on $K$. Conversely, if $f_{n}\to f$ normally, then for each $z\in D$, since $D$ is open, there is some $\Delta(z,\epsilon)\subset D$. Notice that $\overline{\Delta(z,\epsilon/2)}\subset D$ is compact, so $f_{n}\to f$ uniformly on $\overline{\Delta(z,\epsilon/2)}$. Thus, $f_{n}\to f$ locally uniformly on the open neighbourhood $\Delta(z,\epsilon/2)$. $\square$
 
 > [!proposition]
-> Normal convergence implies [[Uniform Convergence of Functions#^6eed8e|pointwise convergence]].
+> Normal convergence implies [[Convergence of Functions#^6eed8e|pointwise convergence]].
 
 > [!proposition]
 > Let $(f_n)$ be a sequence of continuous functions on a domain $D\subset \C$ that converges normally to $f\colon D\to \C$. Then $f$ is continuous.
@@ -29,7 +29,7 @@ At the moment, the only examples of holomorphic functions that we have are polyn
 *Proof*  We utilize ML estimate: $$\begin{aligned}\left|\int_{\gamma}f(z)\dd z-\int_{\gamma}f_{n}(z)\dd z\right|&=\left|\int_{\gamma}f(z)-f_{n}(z)\dd z\right|\\&\leq|\gamma|\sup_{z\in\gamma([0,1])}|f(z)-f_n(z)|\to0\end{aligned}$$since $f_{n}\to f$ uniformly on the compact set $\gamma([0,1])\subset D$. $\square$
 
 >[!remark]
->The above arguments are just similar to the [[Uniform Convergence of Functions#^cd69c1|proposition]] in real analysis.
+>The above arguments are just similar to the [[Convergence of Functions#^cd69c1|proposition]] in real analysis.
 
 > [!theorem]
 > Let $D$ be a domain, let $f_{n}\in H(D)$ for all $n\in\N$, and let $f\colon D \to \C$ be a function. If $f_{n}\to f$ normally on $D$, then $f\in H(D)$ and we have normal convergence of the derivatives: $f^{(k)}_{n}\to f^{(k)}$ normally on $D$.

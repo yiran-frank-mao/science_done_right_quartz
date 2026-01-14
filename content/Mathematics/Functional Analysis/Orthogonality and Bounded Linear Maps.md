@@ -35,8 +35,8 @@ Thus $(U^{\perp})^{\perp}$ is closed, and $\bar{U}\subset (U^{\perp})^{\perp}$. 
 
 ## Bounded Linear Operators
 
-> [!definition] Bounded Linear Operator
-> Suppose $V$ and $W$ are [[Normed Spaces#^345fd3|normed spaces]], then a linear operator $T\colon V\to W$ is bounded if there exists $M>0$ such that $$\|T(v)\|_{W}\leq M \|v\|_{V},\quad \text{for all }v\in V.$$In such case, the operator norm of $T$ is defined as $$\newcommand{\op}{\text{op}}\|T\|_{\op}:=\sup_{\|f\|_{V}= 1}\|T(f)\|_{W}.$$ ^f95b62
+> [!definition] Bounded Linear Map
+> Suppose $V$ and $W$ are [[Normed Spaces#^345fd3|normed spaces]], then a linear map $T\colon V\to W$ is *bounded* if there exists $M>0$ such that $$\|T(v)\|_{W}\leq M \|v\|_{V},\quad \text{for all }v\in V.$$In such case, the operator norm of $T$ is defined as $$\newcommand{\op}{\text{op}}\|T\|_{\op}:=\sup_{\|f\|_{V}= 1}\|T(f)\|_{W}.$$ ^f95b62
 
 > [!lemma]
 > For any bounded linear map $T\colon \H_{1}\to\H_{2}$ between two Hilbert spaces, we have $$\|T\|_{\op} = \sup_{\|f\|=1,\|g\|=1}|\langle Tf,g\rangle|.$$ ^f6c4d5

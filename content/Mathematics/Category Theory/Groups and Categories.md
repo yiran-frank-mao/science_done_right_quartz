@@ -4,26 +4,27 @@ updated: 2024-09-17
 ---
 ## Groups in a Category
 
-**Def**  <i><u>Group in Category</u></i>
-Let $\mathbf{C}$ be a category with finite products. A *group* in $\mathbf{C}$ consists of objects and arrows as: 
-<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/groupinc.svg" alt="group_inc" style="width:45%;">
-satisfying the following conditions:
-- $m$ is associative, that is the following commutes: ![|350](https://svgshare.com/i/14CS.svg)
-  where $\cong$ is the canonical associativity isomorphism for products.
-- $u$ is a unit for $m$, that is both triangles in the following commute: ![|300](https://svgshare.com/i/14Bn.svg)
-- $i$ is an inverse with respect to $m$, that is both sides of this commute:
+> [!definition] Group Object
+> Let $\mathsf{C}$ be a category with finite products. A *group object* in $\mathsf{C}$ consists of objects and arrows as: 
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/groupinc.svg" alt="group_inc" style="width:40%;">
+> satisfying the following conditions:
+> - $m$ is associative, that is the following commutes: ![|350](https://svgshare.com/i/14CS.svg)
+>   where $\cong$ is the canonical associativity isomorphism for products.
+> - $u$ is a unit for $m$, that is both triangles in the following commute: ![|300](https://svgshare.com/i/14Bn.svg)
+> - $i$ is an inverse with respect to $m$, that is both sides of this commute:
+> 
+> $\quad$^6ff745
 
-**Def**  <i><u>Homomorphism</u></i>
-A morphism $h \colon G → H$ of groups in $\mathbf{C}$ is called homomorphism if
-- $h$ preserves $m$
-- $h$ preserves $u$
-- $h$ preserves $i$
+> [!definition] Homomorphism
+> A morphism $h \colon G → H$ of groups in $\mathbf{C}$ is called homomorphism if
+> - $h$ preserves $m$
+> - $h$ preserves $u$
+> - $h$ preserves $i$
 
->[!example] Comment
->The idea of a group in a category captures the familiar notion
-of a group with additional structure:
-> - A group in the usual sense is a group in the category $\mathbf{Sets}$.
-> - A topological group is a group in $\mathbf{Top}$, the category of topological spaces.
+<u><b>e.g.</b></u> The idea of a group in a category captures the familiar notion of a group with additional structure:
+ - A [[Groups, Order and Subgroups#^6e0960|group]] in the usual sense is a group in the category $\mathsf{Set}$.
+ - A [[Topological Groups#^a4f93a|topological group]] is a group in $\mathsf{Top}$, the category of topological spaces.
+$\quad$
 
 ## Category of Groups
 

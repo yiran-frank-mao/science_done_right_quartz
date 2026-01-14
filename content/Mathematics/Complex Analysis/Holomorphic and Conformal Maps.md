@@ -1,6 +1,6 @@
 ---
 created: 2024-07-28
-updated: 2024-10-21
+updated: 2025-12-11
 completed: true
 ---
 ## Holomorphic Functions
@@ -9,7 +9,7 @@ completed: true
 > A domain $D$ is a [[Connectedness and Paths#^946cc4|connected]] open subset of $\newcommand{\C}{\mathbb{C}}\C$. ^08ef59
 
 > [!definition] Holomorphic Function
-> A function $f \colon D → \C$ is called holomorphic on domain $D$ if it is $\C$-differentiable at every point in $D$. We write $H(D)$ for the set of functions that are holomorphic on $D$. We call a function $f ∈ H(\C)$ an entire function. ^c7e434
+> A function $f \colon D → \C$ is called *holomorphic* on domain $D$ if it is $\C$-differentiable at every point in $D$. We write $H(D)$ for the set of functions that are holomorphic on $D$. We call a function $f ∈ H(\C)$ an *entire* function. ^c7e434
 
 <u><b>e.g.</b></u>  The function $f(z)=e^{z}$ is entire. Polynomials and $\sin$, $\cos$ are also entire functions. 
 
@@ -19,7 +19,7 @@ completed: true
 *Proof*  For all $f,g \in H(D)$, $f+g$ and $f\cdot g$ are also holomorphic. The additive identity is the zero function. The associative and distributive properties can be checked directly from the definition. $\square$
 
 > [!definition] Biholomorphism and Conformally Equivalence
-> Let $D, G ⊂ \C$ be domains. A function $f \colon D → G$ is called biholomorphic (or a conformal equivalence) if $f$ is a [[Relations and Functions#^042daf|bijection]], and both $f$ and $f^{-1}$ are holomorphic. Two domains are called conformally equivalent if there exists a conformal equivalence between them. ^3dad2a
+> Let $D, G ⊂ \C$ be domains. A function $f \colon D \to G$ is called *biholomorphic* (or a *conformal equivalence*) if $f$ is a [[Relations and Functions#^042daf|bijection]], and both $f$ and $f^{-1}$ are holomorphic. Two domains are called conformally equivalent if there exists a conformal equivalence between them. ^3dad2a
 
 > [!proposition]
 > Conformal equivalence is an [[Relations and Functions#^14741d|equivalence relation]] on the set of domains.
@@ -54,8 +54,7 @@ Now we show 3 implies 2. Suppose $M\in\R^{2\times 2}$ preserves angles. Let $e_{
 If $v$ is any non-zero vector in $\R^{2}$, the angle from $R_{-\theta}Mv$ to $\lambda e_{1}$ is the same as the angle from $v$ to $e_{1}$, which means that $R_{-\theta}Mv$ is on the same ray as $v$, i.e. $v$ is an eigenvector of $M$.
 As the above holds for any non-zero vector $v$, $R_{-\theta}M$ is a scaling matrix $\lambda I$, so $M=\lambda R_{\theta}$. $\square$
 
-> [!comment]+
-> So the matrices corresponding to the Cauchy-Riemann equations are exactly the angle-preserving linear transformations. Now it is necessary to talk about angle-preserving maps that are not linear.
+So the matrices corresponding to the Cauchy-Riemann equations are exactly the angle-preserving linear transformations. Now it is necessary to talk about angle-preserving maps that are not linear.
 
 > [!definition] Path and Angle
 > A path in a domain $D$ is a continuous function $\gamma\colon[0,1]\to D$. If $\gamma_{1}$ and $\gamma_{2}$ are two paths in $D$ and $z=\gamma_{1}(t_{1})=\gamma_{2}(t_{2})$, then we say that $(\gamma_{1},t_{1})$ and $(\gamma_{2},t_{2})$ cross at $z$. 

@@ -58,7 +58,7 @@ The following lemma allows us to define the integral for bounded functions suppo
 > Consequently,  
 > $$\int f_n \to \int f \quad \text{as } n \to \infty.$$ ^098e7e
 
-*Proof*  Fix any $\varepsilon>0$, by [[Littlewood’s Three Principles#^4b1ce2|Egorov's theorem]], we can find a closed set $A_{\varepsilon}\subset E$ such that $m(E\setminus A_{\varepsilon})\leq\varepsilon$ and $f_{n}\to f$ [[Uniform Convergence of Functions#^a59a2d|uniformly]] on $A_{\varepsilon}$, so there exists $N$ such that $|f_{n}(x)-f(x)|\leq \varepsilon$ for all $n\geq N$ and $x\in A_{\varepsilon}$. Then we have $$\begin{aligned}\int |f_{n}-f|&\leq\int_{A_{\varepsilon}}|f_{n}-f|+\int_{E\setminus A_{\varepsilon}}|f_{n}-f|\\&\leq \varepsilon m(A_{\varepsilon})+2Mm(E\setminus A_{\varepsilon})\\&\leq(2M+m(E))\varepsilon\end{aligned}$$for all $n\geq N$. Since $\varepsilon$ is arbitrary, we have $\int |f_{n}-f|\to 0$. $\square$
+*Proof*  Fix any $\varepsilon>0$, by [[Littlewood’s Three Principles#^4b1ce2|Egorov's theorem]], we can find a closed set $A_{\varepsilon}\subset E$ such that $m(E\setminus A_{\varepsilon})\leq\varepsilon$ and $f_{n}\to f$ [[Convergence of Functions#^a59a2d|uniformly]] on $A_{\varepsilon}$, so there exists $N$ such that $|f_{n}(x)-f(x)|\leq \varepsilon$ for all $n\geq N$ and $x\in A_{\varepsilon}$. Then we have $$\begin{aligned}\int |f_{n}-f|&\leq\int_{A_{\varepsilon}}|f_{n}-f|+\int_{E\setminus A_{\varepsilon}}|f_{n}-f|\\&\leq \varepsilon m(A_{\varepsilon})+2Mm(E\setminus A_{\varepsilon})\\&\leq(2M+m(E))\varepsilon\end{aligned}$$for all $n\geq N$. Since $\varepsilon$ is arbitrary, we have $\int |f_{n}-f|\to 0$. $\square$
 
 > [!remark]
 > The Bounded Convergence Theorem is about interchange of limits and integrals. It says, under certain conditions, we can interchange the limit and the integral: 
@@ -143,7 +143,6 @@ Note that $f_{n}(x)\geq 0$ and $f_{n}(x)\to f(x)$ for a.e. $x$ not necessarily i
 >  
 > 2. **Absolute continuity of the integral**: There exists a $\delta > 0$ such that  
 >    $$\int_E |f| < \epsilon \quad \text{whenever } m(E) < \delta.$$
-> 
 > $\quad$
 
 > [!theorem] Dominated Convergence Theorem
@@ -154,5 +153,6 @@ Note that $f_{n}(x)\geq 0$ and $f_{n}(x)\to f(x)$ for a.e. $x$ not necessarily i
 
 *Proof*  For each $N\geq 0$, let $E_{N}:=\{x\in\R^{d}\mid |x|\leq N, g(x)\leq N\}$. Fix $\epsilon>0$, by the previous lemma, 
 
-> [!corollary]
-> 
+
+
+<u><b>e.g.</b></u>  Consider functions $f_{n}(x)=\frac{x^n}{1+x^{n}}$. Clearly $\{f_{n}\}$ [[Convergence of Functions#^6eed8e|converges pointwise]]. However, it does not converge uniformly. But we can still say that $\lim_{n\to \infty}\int^{0}_{1} \lim_{n\to \infty}f_{n}(x)\dd x = \int^{0}_{1} f_{n}(x)\dd x$ by the dominated convergence theorem since $|f_{n}(x)|\leq 1$ and the constant function is integrable on $[0,1]$.

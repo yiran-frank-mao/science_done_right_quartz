@@ -14,8 +14,6 @@ We immediately have the following characterization of solutions to linear equati
 > If $x_{0}$ is a particular solution to $Ax=b$, then the complete solution set is $x_{0}+\null(A)$.
 > 
 
-
-
 ## Rank
 
 > [!theorem]

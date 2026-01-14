@@ -1,8 +1,10 @@
+## Matrix Linear Groups
+
 >[!definition] General Linear Group
-Claim that the set of all linear operators together with operation of ordinary matrix multiplication is a group. We write it as $\newcommand{\GL}{\mathrm{GL}}\GL_n(\mathbb{F})$, where $n$ denotes the dimension of the corresponding square matrix. That is:$$ \text{GL}_n(\mathbb{F})= \{ A\in\mathbb{F}^{n\times n} \mid \text{$A$ is invertible} \} $$ ^264ff5
+Claim that the set of all linear operators together with operation of ordinary matrix multiplication is a group. We write it as $\newcommand{\GL}{\mathrm{GL}}\GL_n(\mathbb{F})$, where $n$ denotes the dimension of the corresponding square matrix. That is:$$ \text{GL}_n(\mathbb{F})= \{ A\in\mathbb{F}^{n\times n} \mid \text{$A$ is invertible} \}. $$ ^264ff5
 
 >[!definition] Special Linear Group
-> Claim that the set of all linear operators such that determinant is $1$ is a group. Write it as $\text{SL}_n(\mathbb{F})$where $n$ denotes the dimension of the corresponding square matrix.
+> Claim that the set of all linear operators such that determinant is $1$ is a group. Write it as $\mathrm{SL}_n(\mathbb{F})$where $n$ denotes the dimension of the corresponding square matrix. ^e54947
 
 > [!definition] Orthogonal Group
 > The orthogonal group, often denoted $\mathrm{O}_{n}$, is the [[Groups, Order and Subgroups#^6e0960|group]] of all [[Inner Products#^f76c1a|orthogonal transformations]] of $n$-dimensional real space $\R^{n}$ under the operation of composition.

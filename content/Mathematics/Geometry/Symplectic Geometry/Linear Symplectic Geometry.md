@@ -1,17 +1,22 @@
+---
+updated: 2025-10-12
+tags:
+  - symplectic_geometry
+---
 ## Symplectic Vector Space
 
 > [!definition] Symplectic Vector Space
-> A symplectic vector space is a finite dimensional real [[Vector Spaces#^f4b63e|vector space]] furnished with a symplectic form, that is, a closed non-degenerate [[Exterior Forms#^794521|2-form]].
+> A *symplectic vector space* is a finite dimensional real [[Vector Spaces#^f4b63e|vector space]] furnished with a [[Symplectic Structures#^b558c2}|symplectic form]], that is, a closed non-degenerate [[Exterior Forms#^794521|2-form]].
 
 > [!definition] Symplectic Complement
 > Let $(V,\omega)$ be a symplectic vector space. The symplectic complement of a subspace $W\subset V$ is the subspace $$W^{\omega}=\{v\in V\mid \omega(v,w)=0, \text{ for all } w\in W\}.$$
 
 > [!definition] Classification of Subspaces
 > Let $(V,\omega)$ be a symplectic vector space. A subspace $W\subset V$ is called
-> - isotropic if $W\subset W^{\omega}$, i.e. $\omega|_{W}=0$,
-> - coisotropic if $W^{\omega}\subset W$,
-> - symplectic if $W \cap W^{\omega} = \{0\}$, i.e. $\omega|_{W}$ is non-degenerate.
-> - Lagrangian if $W=W^{\omega}$.
+> - *isotropic* if $W\subset W^{\omega}$, i.e. $\omega|_{W}=0$,
+> - *coisotropic* if $W^{\omega}\subset W$,
+> - *symplectic* if $W \cap W^{\omega} = \{0\}$, i.e. $\omega|_{W}$ is non-degenerate.
+> - *Lagrangian* if $W=W^{\omega}$.
 > $\quad$
 
 > [!lemma]
@@ -34,8 +39,7 @@
 - $\omega=2\d x^{1}\wedge\d x^{3} + 2\d x^{2}\wedge\d x^{4}+\d x^{1}\wedge\d x^{4}$ is a symplectic form on $\R^{4}$, then $u_{1}=\frac{1}{2}\partial_{x^{1}}$, $u_{2}=\partial_{x^{2}}$, $v_{1}=\partial_{x^{3}}$, and $v_{2}=\frac{1}{4}(2\partial_{x^{4}}-\partial_{x^{3}})$ forms a symplectic basis.
 
 > [!proposition]
-> Every symplectic vector space has a symplectic basis. Moreover, there exists a vector space isomorphism $\Psi\colon \R^{2n} \to V$ such that $\Psi^{*}\omega = \omega_{0}$, for which $\omega_{0}$ is the standard symplectic form on $\R^{2n}$. i.e. all symplectic vector spaces of the same dimension are linearly symplectomorphic.
-> 
+> Every symplectic vector space has a symplectic basis. Moreover, there exists a vector space isomorphism $\Psi\colon \R^{2n} \to V$ such that $\Psi^{*}\omega = \omega_{0}$, for which $\omega_{0}$ is the standard symplectic form on $\R^{2n}$. i.e. all symplectic vector spaces of the same dimension are linearly symplectomorphic. ^b9c753
 
 *Proof*  We prove by induction on the dimension. Since $\omega$ is nondegenerate, there exists vectors $u_{1},v_{1}\in V$ such that $\omega(u_{1},v_{1})=1$. Hence the subspace spanned by $u_{1}$ and $v_{1}$ is symplectic. Let $W$ be its symplectic complement, then $W$ is symplectic as well and $\dim W=\dim V-2$. By the induction hypothesis, there exists a symplectic basis $u_{2},\dots,u_{n},v_{2},\dots,v_{n}$ of $W$. Then $u_{1},\dots,u_{n},v_{1},\dots,v_{n}$ is a symplectic basis of $V$. The linear map $\Psi\colon \R^{2n}\to V$ is defined by $$\Psi((x_{1},\dots,x_{n},y_{1},\dots,y_{n})):=\sum_{j=1}^{n} x_{j}u_{j}+ \sum_{j=1}^{n}y_{j}v_{j},$$which satisfies $\Psi^{*}\omega=\omega_{0}$. $\square$
 

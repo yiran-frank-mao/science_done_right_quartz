@@ -41,7 +41,7 @@ Without loss of generality, assume that $f_{1}\neq 0$. First set $e_{1}:=f_{1}/\
 > [!remark]+ Same Gram-Schmidt Procedure in Linear Algebra
 > This is actually the same Gram-Schmidt procedure in linear algebra.
 
-<u><b>e.g.</b></u>  Consider the space $L^{2}(S^{1})$, the set $\{e^{in\theta}\}_{n\in\Z}$ is an orthonormal basis, and for each function $f\in L^{2}(S^{1})$, the corresponding $n$th coefficient is the $n$th Fourier coefficient: $$a_{n}(f)=\frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)e^{-inx}\dd x.$$This can be seen by the following two facts:
+<u><b>e.g.</b></u>  Consider the space $L^{2}(S^{1})$, the set $\{z\mapsto z^{n}\}_{n\in\Z}$ is an orthonormal basis, and for each function $f\in L^{2}(S^{1})$, the corresponding $n$th coefficient is the $n$th Fourier coefficient: $$a_{n}(f)=\frac{1}{2\pi}\int_{-\pi}^{\pi}f(x)e^{-inx}\dd x.$$This can be seen by the following two facts:
  - The Parseval's identity holds for $L^{2}(S^{1})$: $$\sum_{n=-\infty}^{\infty}|a_{n}(f)|^{2}=\frac{1}{2\pi}\int^{\pi}_{-\pi} |f(x)|^{2}\dd x.$$
  - The Fourier series converges to $f$ in the $L^{2}$ norm: $$\lim_{N\to 0}\frac{1}{2\pi}\int^{\pi}_{-\pi}\left|f(x)-\sum_{n\leq N}a_{n}e^{inx}\right|^{2}\dd x =0$$
  

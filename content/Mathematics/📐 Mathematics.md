@@ -42,3 +42,4 @@ $\quad$
 	- ![measure_theory.svg](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/measure_theory.svg)
 - [[Probability Theory]]
 	- ![probability_theory.svg](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/probability_theory.svg)
+- [[Representation Theory]]

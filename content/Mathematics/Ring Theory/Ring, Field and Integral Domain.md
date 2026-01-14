@@ -6,15 +6,13 @@ tags:
 ## Rings
 
 >[!definition] Ring
->A ring $R$ is a set equipped with two laws of composition $+$ and $\cdot$, called addition and multiplication, satisfying the following axioms:
+>A *ring* $R$ is a set equipped with two laws of composition $+$ and $\cdot$, called addition and multiplication, satisfying the following axioms:
 >- $(R,+)$ is an abelian group with identity $0$, called zero.
 >- The multiplication is associative: $a(bc)=(ab)c$  for all $a,b,c \in R$.
 >- Distributivity: $(a+b)c = ac+bc$ for all $a,b,c \in R$.
 >
-> If $R$ has identity $1$ with respect to multiplication we say that $R$ is unital. ^178485
-
->[!definition] Commutative Ring
->A ring $R$ is commutative if the multiplication is commutative.
+> If $R$ has identity $1$ with respect to multiplication we say that $R$ is *unital*.
+> A ring $R$ is *commutative* if the multiplication is commutative. ^178485
 
 <b><u>e.g.</u></b>  The integers $\mathbb{Z}$ is a commutative unital ring.
 
@@ -63,12 +61,10 @@ tags:
 >- if $a∈P$, then $−a\notin P$.
 >- if $a,b∈P$, then $a+b∈P$ and $ab∈P$.
 >
-Equivalently, a field $F$ together with a [[Order#^a8688d|total order]] $\leq$ on $F$ is an ordered field if the order satisfies the following properties for all $a,b,c\in F$:
+> Equivalently, a field $F$ together with a [[Order#^a8688d|total order]] $\leq$ on $F$ is an ordered field if the order satisfies the following properties for all $a,b,c\in F$:
 >- $a\leq b \implies a+c \leq b+c$.
 >- $0\leq a,0\leq b \implies 0\leq ab$.
->$\quad$
-
-^43843e
+>$\quad$ ^43843e
 
 > [!proposition]
 > The positive subset $P$ is closed under multiplicative inverse. i.e. Suppose $F$ is an ordered field with positive subset $P$. Then $1∈P$ and $a^{-1}\in P$ for all $a\in F$.

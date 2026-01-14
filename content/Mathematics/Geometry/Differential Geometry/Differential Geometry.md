@@ -35,6 +35,7 @@ Differential Geometry is a fascinating field of mathematics that studies the geo
 [[Hyperbolic Geometry]]
 
 ## References and Useful Resources
-- [Ben Andrews, Lectures on Differential Geometry](https://maths-people.anu.edu.au/andrews/DG/)
-- [Manfredo P. do Carmo, Differential Geometry of Curves and Surfaces](http://home.ustc.edu.cn/~huangty0407/DGNotes/Do%20Carmo%20-%20Differential%20Geometry%20of%20Curves%20and%20Surfaces.pdf).
-- [Introduction to Differential Geometry](https://people.math.ethz.ch/~salamon/PREPRINTS/diffgeo.pdf).
+
+ [Ben Andrews, Lectures on Differential Geometry](https://maths-people.anu.edu.au/andrews/DG/)
+[Manfredo P. do Carmo, Differential Geometry of Curves and Surfaces](http://home.ustc.edu.cn/~huangty0407/DGNotes/Do%20Carmo%20-%20Differential%20Geometry%20of%20Curves%20and%20Surfaces.pdf).
+[Introduction to Differential Geometry](https://people.math.ethz.ch/~salamon/PREPRINTS/diffgeo.pdf).

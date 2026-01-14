@@ -5,7 +5,7 @@ updated: 2024-10-29
 ## Sequential Compactness
 
 >[!theorem]
->Let $S$ be a subset in $\R^{k}$. Then $S$ is closed and [[Open and Closed Sets#^7012df|bounded]] iff every sequence in $S$ has a subsequence that converges to a point in $S$.
+> Let $S$ be a subset in $\R^{k}$. Then $S$ is closed and [[Open and Closed Sets#^7012df|bounded]] iff every sequence in $S$ has a subsequence that converges to a point in $S$.
 
 >[!definition] Sequential Compactness
 >Let $(X , d )$ be a metric space. A set $S ⊂ X$ is called sequentially compact if every sequence in $S$ has a subsequence that converges to a point in $S$. ^f1fb8b

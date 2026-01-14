@@ -13,13 +13,13 @@
 
 > [!theorem] Spectral Theorem - Functional Calculus Form
 > Let $T$ be a self-adjoint operator on a separable Hilbert space $\H$. Then there exists a unique map $\Phi\colon B_{b}(\R)\to B(\H)$ such that 
-> - $\Phi$ is a [$\ast$-homomorphism](C*-Algebras#^1a6445);
+> - $\Phi$ is a [$\ast$-homomorphism](C*-Algebras.md#^1a6445);
 > - $\Phi$ is norm continuous. i.e., $\|\Phi(h)\|_{B(\H)}\leq \|h\|_{\infty}$;
 > - If $\{h_{n}\}_{n=0}^{\infty}\subset B_{b}(\R)$ is a sequence of bounded Borel functions with $h_{n}(x)\to x$ for each $x$ and $|h_n(x)| \leq |x|$ for all $x$ and $n$. Then, for any $\psi \in D(T)$, $\lim_{n\to\infty} \Phi(h_{n})\psi = T\psi$.
 > - If $h_n(x) \to h(x)$ pointwise and if the sequence $\|h_n\|_{\infty}$ is bounded, then $\Phi(h_n) \to \Phi(h)$ strongly.
-> $\quad$
+> $\quad$ ^bb27f4
 
-^bb27f4
+<u><b>e.g.</b></u>  If $A$ is an unbounded positive self-adjoint operator on $\H$. Then 
 
 ## The Projection Valued Measure Form
 

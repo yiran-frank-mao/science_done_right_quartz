@@ -29,9 +29,19 @@ updated: 2024-10-03
 > [!lemma]
 > For prime number $p$,  $p\nmid a \implies \gcd(p,a)=1$.
 
-
 > [!algorithm] Euclidean Algorithm
+> The Euclidean algorithm is an efficient method for computing the greatest common divisor of two integers $a$ and $b$.
+> 1. Given two integers $a\geq b >0$.
+> 2. Apply the division algorithm to obtain $a = bq_{1} + r_{1}$, where $0\leq r_{1} < b$.
+> 3. If $r_{1} = 0$, then $\gcd(a,b) = b$. Otherwise, replace $a$ by $b$ and $b$ by $r_{1}$, and repeat step 2.
+> $\quad$
 
+<u><b>e.g.</b></u>  To compute $(56,12)$, we have the following steps:
+1. $56 = 12 \cdot 4 + 8$;
+2. $12 = 8 \cdot 1 + 4$;
+3. $8 = 4 \cdot 2 + 0$.
+
+Thus, $\gcd(56,12) = 4$.
 
 > [!theorem] Fermat’s Little Theorem
 > For every two integers $n,a$ that are coprime, then we have $a^{\varphi(n)} \equiv 1 \pmod{n}$, where $\varphi$ is the [[Arithmetic Functions#^d3f605|Euler's totient function]]. In particular if $n = p$ is a prime number then $a^p ≡ a \pmod{p}$. ^5214dc

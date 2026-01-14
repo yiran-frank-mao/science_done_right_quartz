@@ -66,8 +66,9 @@ The order of a zero is telling you how quickly $f(z)$ approaches $0$ as $z → a
 > 1. If $f$ has a zero of order $N$ at $a$ and $g$ has a zero of order $M$ at $a$, then $f(z)g(z)$ has a zero of order $N + M$ at $a$.
 > 2. Similarly, if $f$ has a pole of order $N$ at $a$ and $g$ has a pole of order $M$ at $a$, then $f(z)g(z)$ has a pole of order $N + M$ at $a$.
 > 3. If $f$ has a zero of order $N$ at $a$ and $g$ has a pole of order $M$ at $a$, then
-> 	1. If $M >N$, then $f(z)g(z)$ has a pole of order $M−N$ at $a$.
-> 	2. If $N ≥M$, then $f(z)g(z)$ has a removable singularity at $a$, and if $N >M$ then (once we remove the singularity) it becomes a zero of order $N−M$.
+> 	- If $M >N$, then $f(z)g(z)$ has a pole of order $M−N$ at $a$.
+> 	- If $N ≥M$, then $f(z)g(z)$ has a removable singularity at $a$, and if $N >M$ then (once we remove the singularity) it becomes a zero of order $N−M$.
+> $\quad$
 
 > [!definition] Meromorphic Function
 > A function $f$ is called *meromorphic* on $D$ if $f$ is holomorphic on $D$ except for some isolated singularities which are poles.

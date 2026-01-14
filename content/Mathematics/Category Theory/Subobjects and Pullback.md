@@ -1,7 +1,7 @@
 ## Subobjects
 
 >[!definition] Subobject
->A subobject of an object $X$ in a category $\mathbf{C}$ is a [[Morphisms#^4e0259|monomorphism]] $$m\colon M\rightarrowtail X$$Given subobjects $m, m^{\prime}$ of $X$, a morphism $f \colon m \to m^{\prime}$ is an morphism in $\mathbf{C}/X$. Thus we have a category $\mathrm{Sub}_{\mathbf{C}}(X)$ of subobjects of $X$ in $\mathbf{C}$. ^c9da67
+>A *subobject* of an object $X$ in a category $\mathbf{C}$ is a [[Morphisms#^4e0259|monomorphism]] $$m\colon M\rightarrowtail X$$Given subobjects $m, m^{\prime}$ of $X$, a morphism $f \colon m \to m^{\prime}$ is an morphism in $\mathbf{C}/X$. Thus we have a category $\mathrm{Sub}_{\mathbf{C}}(X)$ of subobjects of $X$ in $\mathbf{C}$. ^c9da67
 
 >[!definition] Inclusion of Subobjects
 >We define the relation of inclusion of subobjects by: $$m \subseteq m^{\prime} \iff\exists f\colon m\to m^{\prime}\in\mor(\mathbf{C}/X)\iff\exists\phi\colon M\to M^{\prime}.m=m^{\prime} \circ \phi$$
@@ -12,13 +12,12 @@
 >[!proposition] 
 > Equivalent subobjects have isomorphic domains.
 
-*Proof*  Observe that, if $m\equiv m^{\prime}$ then $m = m^{\prime}f = mf^{\prime}f$, and since $m$ is [[Morphisms#^4e0259|monic]], $f^{\prime}f = 1_{M}$ and similarly $ff^{\prime} = 1_{M^{\prime}}$. So $M \cong M^{\prime}$ via $f$.
+*Proof*  Observe that, if $m\equiv m^{\prime}$ then $m = m^{\prime}f = mf^{\prime}f$, and since $m$ is [[Morphisms#^4e0259|monic]], $f^{\prime}f = 1_{M}$ and similarly $ff^{\prime} = 1_{M^{\prime}}$. So $M \cong M^{\prime}$ via $f$. $\square$
 
->[!example] Comment
+>[!remark]
 > We sometimes abuse notation and language by calling $M$ the subobject when the [[Morphisms#^4e0259|monomorphism]] $m \colon M\to X$ is clear.
 
->[!definition] 
->**Def**  <i><u>Local Membership</u></i>
+>[!definition] Local Membership
 >In terms of generalized elements $z \colon Z\to X$ of an object $X$, we define the local membership relation as $$z\in_{X}M$$
 
 ## Pullback

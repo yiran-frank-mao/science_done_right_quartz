@@ -1,6 +1,6 @@
-Recall that a unitary group consists of all unitary operators on a complex [[Vector Spaces#^f4b63e|vector space]]. 
-
-
+> [!definition] Unitary Group
+> A *unitary group* consists of all unitary operators on a complex [[Vector Spaces#^f4b63e|vector space]]: $$\newcommand{\U}{\mathrm{U}}\U_{n}:=\{A\in\GL_{n}(\C)\mid A^{*}A=I_{n}\},$$where $^{*}$ denotes the conjugate transpose.
+> The *special unitary group* is $\newcommand{\SL}{\mathrm{SL}}\newcommand{\SU}{\mathrm{SU}}\SU_{n}=\SL_{n}(\C)\cap\U_{n}$. ^f61f3c
 
 ## Projective Unitary Group
 
@@ -17,4 +17,5 @@ Recall that a unitary group consists of all unitary operators on a complex [[Vec
 
 
 ## Other Useful Resources
+
 [Handwiki, Projective Unitary Groups](https://handwiki.org/wiki/Projective_unitary_group)

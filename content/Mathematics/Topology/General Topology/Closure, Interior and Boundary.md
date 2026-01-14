@@ -45,7 +45,7 @@
 >Let $X$ be a topological space and $A ⊂ X$ . Then $$\bar{A} = A \cup \{\text{limit points of } A\}$$
 
 >[!definition] Dense, Nowhere Dense and Meagre
->A subset $A$ of $T$ is dense in $T$ if $\bar{A}=T$, is nowhere dense in $T$ if ${(\bar{A})}^\circ = \emptyset$, is meagre in $T$ if it is a union of a countable number of nowhere dense sets. ^b560bf
+>A subset $A$ of $T$ is *dense* in $T$ if $\bar{A}=T$, is *nowhere dense* in $T$ if ${(\bar{A})}^\circ = \emptyset$, is *meagre* if it is a union of a countable number of nowhere dense sets. ^b560bf
 
 <u><b>e.g.</b></u>  $\Q$ is dense in $\R$ (as is $\R \setminus\Q$). In $\R$, one-point sets are nowhere dense; so $\Q$ is meagre in $\R$.
 

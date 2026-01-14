@@ -27,8 +27,8 @@
 ## Further Classification of Maps
 
 > [!definition] Diffeomorphism
-> A map $F\colon M \to N$ between smooth manifolds is a diffeomorphism if it is smooth, and has a smooth inverse. 
-> $F$ is a local diffeomorphism about $x\in M$ if for every $x\in M$ there is a neighborhood $U$ of $x$ such that $F|_{U}$ is a diffeomorphism to an open subset of $N$. ^39ce42
+> A map $F\colon M \to N$ between smooth manifolds is a *diffeomorphism* if it is smooth, and has a smooth inverse. 
+> $F$ is a *local diffeomorphism* about $x\in M$ if for every $x\in M$ there is a neighborhood $U$ of $x$ such that $F|_{U}$ is a diffeomorphism to an open subset of $N$. ^39ce42
 > 
 
 > [!definition] Immersion

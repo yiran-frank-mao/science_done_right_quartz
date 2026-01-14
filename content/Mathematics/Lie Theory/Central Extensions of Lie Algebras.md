@@ -6,11 +6,10 @@
 > In particular, if $\a$ happens to be abelian, i.e., its Lie bracket is trivial, then we call it an *abelian extension*.
 
 > [!definition] Center of a Lie Algebra
-> The *center* of a [[Lie Algebra#^5007ba|Lie algebra]] $L$ is an abelian Lie subalgebra $Z(L)$, consisting of all elements $z\in L$ such that $[a,z]=0$ for all $a\in L$.
-> 
+> The *center* of a [[Lie Algebra#^5007ba|Lie algebra]] $L$ is an abelian Lie subalgebra $Z(L)$, consisting of all elements $z\in L$ such that $[a,z]=0$ for all $a\in L$. ^e35973
 
 > [!definition] Central Extension
-> An abelian Lie algebra extension $\a \hookrightarrow \hat{\g} \to \g$ is called a *central extension* if the Lie bracket of $\hat{\g}$ vanishes as soon as already one of its arguments is in $\a$. That is, $\mathfrak{a}$ lies in the center of $\hat{\g}$.
+> An abelian extension $\a \hookrightarrow \hat{\g} \twoheadrightarrow \g$ is called a *central extension* if the Lie bracket of $\hat{\g}$ vanishes as soon as already one of its arguments is in $\a$. That is, $\mathfrak{a}$ lies in the center of $\hat{\g}$. ^c4c058
 
 ## The Projective Representation
 

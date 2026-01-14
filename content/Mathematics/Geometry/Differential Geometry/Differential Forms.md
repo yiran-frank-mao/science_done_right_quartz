@@ -3,7 +3,7 @@ Exterior differential forms arise when concepts such as the work of a field alon
 ## Differential Forms
 
 > [!definition] Differential Forms
-> A differential $k$-form on a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] $M$ of dimension $n$ is a smooth map $$\newcommand{\R}{\mathbb{R}}\omega:TM\to \R,$$that is an [[Exterior Forms#^794521|exterior form]] restricted to each [[Tangent Vectors and Spaces#^76649d|tangent space]] $T_{p}M$ at each point $p\in M$. 
+> A differential $k$-form on a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] $M$ of dimension $n$ is a smooth map $$\newcommand{\R}{\mathbb{R}}\omega\colon TM\to \R,$$that is an [[Exterior Forms#^794521|exterior form]] restricted to each [[Tangent Vectors and Spaces#^76649d|tangent space]] $T_{p}M$ at each point $p\in M$. 
 > The exterior and interior product of differential forms inherits from the exterior and interior product of exterior forms respectively. ^c6c1be
 
 <u><b>e.g.</b></u> 
@@ -23,8 +23,7 @@ $\quad$
 *Proof*  The canonical evaluation is given by $$\omega(X_{1},\dots,X_{k})(p) := \omega_{p}(X_{1}(p),\dots,X_{k}(p)),$$where $\omega_{p}$ is the $k$-form at point $p$. The skew-symmetry follows from the skew symmetry of $\omega_{p}$. The evaluation respects the multiplication by smooth functions because $\omega_{p}$ is $k$-linear: $$\begin{aligned}\omega(fX_{1},\dots,X_{k})(p)&= \omega_{p}(f(p)\cdot X_{1}(p),\dots,X_{k}(p))\\ &= f(p)\cdot\omega_{p}(X_{1}(p),\dots,X_{k}(p)).\end{aligned}$$ $\square$
 
 > [!proposition]
-> Differential forms on a smooth manifold $M$ forms a super-commutative [[Grading and Filtration#^9b78c3|graded algebra]] over the ring of smooth functions on $M$ with the exterior product $\wedge$ as multiplication.
-> 
+> [[Differential Forms#^c6c1be|Differential forms]] on a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] $M$ forms a super-commutative [[Grading and Filtration#^9b78c3|graded algebra]] over the ring of smooth functions on $M$ with the exterior product $\wedge$ as multiplication. ^143f20
 
 ## Pullback Invariance
 

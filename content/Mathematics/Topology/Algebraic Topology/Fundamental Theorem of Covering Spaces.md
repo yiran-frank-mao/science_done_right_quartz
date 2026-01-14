@@ -1,13 +1,17 @@
 ---
 updated: 2025-08-20
 completed: true
+tags:
+  - covering-spaces
+  - fundamental-group
+  - algebraic-topology
 ---
 ## The Lifting Criterion
 
 A central question in the theory of covering spaces is determining when a map $f\colon Y \to X$ can be "lifted" to a map $\tilde{f}: Y \to \widetilde{X}$ such that $p \circ \tilde{f} = f$. The answer is purely algebraic.
 
 > [!theorem] Lifting Criterion
-> Let $p\colon (\widetilde{X}, \tilde{x}_0) \to (X, x_0)$ be a covering space. If $Y$ is a [[Connectedness and Paths#^630354|path-connected]] and [[Connectedness and Paths#^ba4f32|locally path-connected]] space, a continuous map $f\colon (Y, y_0) \to (X, x_0)$ can be lifted to a map $\tilde{f}\colon (Y, y_0) \to (\widetilde{X}, \tilde{x}_0)$ if and only if the image of its induced [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]] is a [[Groups, Order and Subgroups#^1ccb07|subgroup]] of the image of $p_*$:
+> Let $p\colon (\widetilde{X}, \tilde{x}_0) \to (X, x_0)$ be a [[Covering Spaces#^b33205|covering space]]. If $Y$ is a [[Connectedness and Paths#^630354|path-connected]] and [[Connectedness and Paths#^ba4f32|locally path-connected]] space, a continuous map $f\colon (Y, y_0) \to (X, x_0)$ can be lifted to a map $\tilde{f}\colon (Y, y_0) \to (\widetilde{X}, \tilde{x}_0)$ if and only if the image of its induced [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]] is a [[Groups, Order and Subgroups#^1ccb07|subgroup]] of the image of $p_*$:
 > $$f_*(\pi_1(Y, y_0)) \leq p_*(\pi_1(\widetilde{X}, \tilde{x}_0)).$$ ^35ad1a
 
 *Proof Sketch*  **Necessity ($\Rightarrow$)**: If a lift $\tilde{f}$ exists, then $f = p \circ \tilde{f}$. Applying the fundamental group functor gives $f_* = p_* \circ \tilde{f}_*$, which directly implies that $\newcommand{\im}{\mathrm{im}}\im(f_*) \leq \im(p_*)$.

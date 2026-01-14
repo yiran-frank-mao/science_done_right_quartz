@@ -1,6 +1,6 @@
 >[!definition] Limit Point & Isolated Point
->Let $\newcommand{\R}{\mathbb{R}}\newcommand{\interior}{\operatorname{\text{int}}}\newcommand{\exterior}{\operatorname{\text{ext}}}(X,d)$ be a metric space and $A ⊂ X$. $x ∈ X$ is called a limit point of $A$ if every open ball $B_{r} (x)$ contains a point of $A$ other than $x$. 
->Conversely, $x ∈ A$ is called an isolated point of $A$ if there is an open ball $B_{r} (x)$ that contains no elements of $A$ other than $x$.
+>Let $\newcommand{\R}{\mathbb{R}}\newcommand{\interior}{\operatorname{\text{int}}}\newcommand{\exterior}{\operatorname{\text{ext}}}(X,d)$ be a metric space and $A ⊂ X$. $x ∈ X$ is called a *limit point* of $A$ if every open ball $B_{r} (x)$ contains a point of $A$ other than $x$. 
+>Conversely, $x ∈ A$ is called an *isolated point* of $A$ if there is an open ball $B_{r} (x)$ that contains no elements of $A$ other than $x$.
 
 <u><b>e.g.</b></u>  
 - Consider $A = (0, 1) ∪ \{2\}$ in $\R$ with Euclidean metric. Then $2$ is an isolated point of $A$, every point in $[0,1]$ is a limit point of $A$ and the closure of $A$ is $[0,1]∪\{2\}$.
@@ -9,7 +9,7 @@
 $\quad$
 
 >[!definition] Closure
->The closure of $A$ is defined as $$\overline{A}=A\cup\{\text{all limit points of }A\}$$
+>The closure of $A$ is defined as $$\overline{A}:=A\cup\{\text{all limit points of }A\}.$$
 
 >[!theorem] 
 >Let $(X,d)$ be a metric space and $A ⊂ X$. If $x ∈ X$ is a limit point of $A$, then every open ball $B_{r} (x)$ contains infinitely many points of $A$.

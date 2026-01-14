@@ -3,13 +3,13 @@ created: 2023-11-22
 updated: 2024-10-28
 ---
 > [!definition] Group Action
-> Let $G$ be a group and $X$ a set. An action of $G$ on $X$ is a function
+> Let $G$ be a group and $X$ a set. An *action* of $G$ on $X$ is a function
 > $$ G \times X \to X, \quad (g,x) \mapsto g\cdot x $$
 > satisfying
 > - $1 \cdot x = x$ for all $x \in X$, and
 > - $(gh) \cdot x = g \cdot (h \cdot x)$ for all $x \in X$ and $g,h \in G$
 >
-> A set $X$ equipped with an action of $G$ is called a $G$-set. ^4047e8
+> A set $X$ equipped with an action of $G$ is called a *$G$-set*. ^4047e8
 
 <b><u>e.g.</u></b>
 - $G$ (the group) acts on $G$ (the set) by left multiplication.
@@ -72,3 +72,11 @@ $\quad$
 > If $p$ is a prime dividing the order of a finite group $G$ then $G$ contains an element of order $p$.
 
 *Proof*
+
+
+## Semidirect Products
+
+> [!definition] Semidirect Product
+> Given groups $G$ and $H$, and an $H$-action on $G$ by automorphisms, say $\varphi\colon H\to \mathrm{Aut}(G)$, the semidirect product $G \rtimes_{\varphi} H$ is the set $G\times H$, with multiplication defined by: $$(g_1,h_1)(g_2,h_2) = (g_1 \varphi_{h_1}(g_2), h_1 h_2). $$
+
+<u><b>e.g.</b></u> If $\varphi$ is the trivial action then this construction reduces to the usual direct product $G\times H$.

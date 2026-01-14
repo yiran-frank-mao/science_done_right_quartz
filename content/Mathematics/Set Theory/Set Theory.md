@@ -7,7 +7,9 @@ Set theory is a branch of mathematics that deals with the properties of well-def
 ![set|330](https://svgshare.com/i/13Yc.svg)
 
 ## Content
-[[Sets]]
+
+### Sets and Relations
+[[Sets and Axioms]]
 [[Construction of Sets]]
 [[Relations and Functions]]
 [[Composition Laws]]
@@ -16,9 +18,12 @@ Set theory is a branch of mathematics that deals with the properties of well-def
 [[Cantor Set]]
 [[Number Systems]]
 
+### Order Theory
+[[Order]]
+[[Preorder and Posets]]
+
 ## More ...
 [[General Topology]]
-[[Order Theory]]
 
 ## Acknowledgement
 This part is mainly based on the ANU course [MATH1005](https://programsandcourses.anu.edu.au/2022/course/MATH1005) in 2022 and [MATH2320](https://programsandcourses.anu.edu.au/2024/course/MATH2320) in 2024.

@@ -5,7 +5,7 @@ updated: 2024-09-17
 ## Norm
 
 >[!definition] Norm
->A norm on a [[Vector Spaces#^f4b63e|vector space]] $X$ is a map $\newcommand{\R}{\mathbb{R}}\|\cdot\|: X \to \R$ such that
+>A norm on a [[Vector Spaces#^f4b63e|vector space]] $X$ is a map $\newcommand{\R}{\mathbb{R}}\|\cdot\|\colon X \to \R$ such that
 >1. $\|x\|=0$ if and only if $x=0$.
 >2. $\|\lambda x\|=|\lambda|\|x\|$ for every $\lambda\in \mathbb{C}$ and $x\in X$, we call this homogeneity .
 >3. $\|x+y\| \leq \|x\|+\|y\|$ for every $x,y\in X$, we call this triangle inequality.
@@ -20,8 +20,7 @@ updated: 2024-09-17
 > [!proposition]
 > If $(X, \|\cdot\|)$ is a normed space and $Y$ is a subspace of $X$, then $(Y, \|\cdot\|)$ is also a normed space.
 
->[!definition] 
->**Def**  <i><u>Euclidean Norm</u></i>
+>[!definition] Euclidean Norm
 >For $x ∈ \R^n$, we define the Euclidean ($L_{2}$) norm as $$\|x\|_2=\sqrt{x_1^2+\cdots+x_n^2}=\sqrt{\tr{x}x}$$
 
 >[!definition] $L_p$ Norm
@@ -35,17 +34,18 @@ updated: 2024-09-17
 **Def**  <i><u>Closed Unit Ball</u></i>
 The closed unit ball in a normed space $(X, \|\cdot\|)$ is the set $$\mathfrak{B}_{X}=\{x\in X \mid \|x\|\leq 1\}$$
 
-**Lemma**  In any normed space $(X, \|\cdot \|)$, the closed unit ball $\mathfrak{B}_X$ is [[Convex Sets#^3a9d82|convex]].
-**Proof**  For all $x,y \in X$, we have$$
-\|\lambda x + (1-\lambda )y\|\leq |\lambda|\|x\|+|1-\lambda|\|y\|\leq \lambda + (1-\lambda)=1
-$$ Hence $\lambda x + (1-\lambda )y \in \mathfrak{B}_X$.
+> [!lemma]
+> In any normed space $(X, \|\cdot \|)$, the closed unit ball $\mathfrak{B}_X$ is [[Convex Sets#^3a9d82|convex]].
 
-**Lemma**  Suppose a function $N:X \to \R^+$ satisfies first and second properties of the definition of a norm and the set $\mathfrak{B}=\{x\in X \mid N(x)\leq 1\}$ is [[Convex Sets#^3a9d82|convex]] then $N$ satisfies the triangle inequality:$$
-N(x+y) \leq N(x) + N(y)
-$$ and so defines a norm on $X$.
-**Proof**  Clearly if $x=0$ then we have $N(x+y)=N(y)+0=N(y)+N(x)$, satisfies the triangle inequality. So we can assume that $N(x)>0$ and $N(y)>0$. As $\mathcal{B}$ is [[Convex Sets#^3a9d82|convex]], we have$$\frac{N(x)}{N(x)+N(y)}\left(\frac x{N(x)}\right)+\frac{N(y)}{N(x)+N(y)}\left(\frac y{N(y)}\right)\in\mathfrak{B}$$ So $\frac{x+y}{N(x)+N(y)}\in\mathfrak{B}$, it follows that $$
+*Proof*  For all $x,y \in X$, we have $$\|\lambda x + (1-\lambda )y\|\leq |\lambda|\|x\|+|1-\lambda|\|y\|\leq \lambda + (1-\lambda)=1$$ Hence $\lambda x + (1-\lambda )y \in \mathfrak{B}_X$. $\square$
+
+> [!lemma]
+> Suppose a function $N\colon X \to \R^+$ satisfies first and second properties of the definition of a norm and the set $\mathfrak{B}=\{x\in X \mid N(x)\leq 1\}$ is [[Convex Sets#^3a9d82|convex]] then $N$ satisfies the triangle inequality:$$N(x+y) \leq N(x) + N(y)$$ and so defines a norm on $X$.
+
+*Proof*  Clearly if $x=0$ then we have $N(x+y)=N(y)+0=N(y)+N(x)$, satisfies the triangle inequality. So we can assume that $N(x)>0$ and $N(y)>0$. As $\mathcal{B}$ is [[Convex Sets#^3a9d82|convex]], we have$$\frac{N(x)}{N(x)+N(y)}\left(\frac x{N(x)}\right)+\frac{N(y)}{N(x)+N(y)}\left(\frac y{N(y)}\right)\in\mathfrak{B}$$ So $\frac{x+y}{N(x)+N(y)}\in\mathfrak{B}$, it follows that $$
 N\left( \frac{x+y}{N(x)+N(y)} \right) \leq 1
 $$ Hence by property of function $N$: $$N\left( \frac{x+y}{N(x)+N(y)} \right)=\frac{N(x+y)}{N(x)+N(y)} \leq 1 \implies N(x+y)\leq N(x)+N(y)$$
+$\square$
 ## Equivalence Relation of Norms
 
 > [!definition] Comparable Norms

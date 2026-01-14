@@ -1,6 +1,6 @@
 ---
 created: 2023-11-03
-updated: 2024-09-26
+updated: 2025-09-07
 ---
 ## Introduction
 Linear Algebra is a fundamental area of mathematics concerned with vectors, vector spaces, linear mappings, and systems of linear equations. It is essential for various applications in science, engineering, computer science, economics, and more.

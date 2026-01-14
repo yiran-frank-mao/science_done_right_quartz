@@ -1,6 +1,9 @@
 ---
 updated: 2025-08-23
 completed: true
+tags:
+  - homotopy
+  - algebraic-topology
 ---
 ## Homotopy
 

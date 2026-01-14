@@ -3,7 +3,7 @@ created: 2024-01-08
 updated: 2024-10-20
 ---
 >[!definition] Manifold
->An $n$-dimensional manifold, or $n$-manifold for short, is a [[Hausdorff Space#^f7bcc8|Hausdorff]] and paracompact [[Topological Spaces#^65c94a|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $n$-dimensional Euclidean space $\R^n$. ^3407e4
+>An $n$-dimensional manifold, or $n$-manifold for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and paracompact [[Topological Spaces#^65c94a|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $n$-dimensional Euclidean space $\R^n$. ^3407e4
 
 Clearly, on a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
 

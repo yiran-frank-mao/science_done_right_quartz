@@ -1,5 +1,5 @@
 > [!definition] Quotient
-> Let $G$ be a group and $N \triangleleft G$ a [normal subgroup](Homomorphisms,%20Normal%20Subgroup%20&%20Conjugation.md#^normal). Let $G /N$ denote the set of cosets (left or right, they are the same) $$ G/N=\{g N\mid g\in G\}. $$
+> Let $G$ be a group and $N \triangleleft G$ a [normal subgroup](Homomorphisms,%20Normal%20Subgroup%20&%20Conjugation.md#^normal). Let $G /N$ denote the set of cosets (left or right, they are the same) $$ G/N=\{g N\mid g\in G\}. $$ ^6d4873
 
 > [!proposition]
 > $(G/N, \cdot)$ is a group with composition that $gN\cdot hN:=ghN$ for all $g,h \in G$. And the identity is $N$, while the inverse is given by $g^{-1}N$ for any $gN \in G/N$.

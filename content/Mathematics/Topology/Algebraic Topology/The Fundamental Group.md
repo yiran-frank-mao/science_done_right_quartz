@@ -1,3 +1,9 @@
+---
+completed: true
+tags:
+  - fundamental-group
+  - algebraic-topology
+---
 ## Group Structure on Loops
 
 > [!definition] Fundamental Group
@@ -34,9 +40,9 @@ Secondly, it is a homomorphism because $$\beta_{h}([f][g])=\beta_{h}([f\cdot g])
 Fundamental groups are powerful in many (other) realms of mathematics. 
 - It can even be used to prove the [[Fields Construction#^4e12b7|fundamental theorem of algebra]]: 
   *Proof*   For the sake of contradiction, suppose some non-constant polynomial $p(z)=z^{n}+a_{n-1}z^{n-1}+\cdots+a_{0}$ has no roots. Then for each $r\geq 0$, $$f_{r}(s)=\frac{p(re^{2\pi is})/p(r)}{|p(re^{2\pi is})|/|p(r)|}$$is a loop in $S^{1}$ based at $1$. Now fix some large $R>\max(1,|a_{0}|+\cdots+|a_{n-1}|)$. Then $f_{r}$ is a homotopy from $f_{0}=w_{0}$ to $f_{R}$. Let $p_{t}(z)=z^{n}+(1-t)(a_{n-1}z^{n-1}+\cdots+a_{0})$. Define $$g_{t}(s):=\frac{p_{t}(Re^{2\pi is})/p_{t}(R)}{|p_{t}(Re^{2\pi is})|/|p_{t}(R)|}.$$Note that since $R$ is sufficiently large $p_{t}(Re^{2\pi is})$ is never zero, $g_{t}$ is a valid homotopy from $f_{R}$ to $w_{n}$. Therefore, $$w_{0}=f_{0}\simeq f_{R}=g_{0}\simeq g_{1}=w_{n},$$which implies $n=0$ since $\pi_{1}(S^{1},1)\cong \Z$. This contradicts the assumption that $p$ is non-constant. $\square$ ^dfc77e
-- We can also show Brouwer's fixed-point theorem by the fundamental group. It states that any continuous $h\colon D^{2}\to D^{2}$ has a fixed point, where $D^{2}$ is the closed disk in $\C$.
+- We can also show the 2-dimensional Brouwer's fixed-point theorem by the fundamental group. It states that any continuous $h\colon D^{2}\to D^{2}$ has a fixed point, where $D^{2}$ is the closed disk in $\C$.
   *Proof*  Suppose $h$ has no fixed points. Then we can define $r\colon D^{2}\to S^{1}$ by sending $x\in D^{2}$ to the intersect point of $S^{1}$ and the ray from $h(x)$ to $x$. Note that $r(x)=x$ for $x\in S^{1}$. Consider the inclusion $i\colon S^{1}\hookrightarrow D^{2}$, we have $i\circ w_{1}\simeq c_{1}$ via some homotopy $f_{t}$. Then $w_{1}=r\circ i \circ w_{1} \simeq c_{1}$ via $r\circ f_{t}$, yielding a contradiction. $\square$
-$\quad$
+$\quad$ ^01b5b9
 
 > [!proposition]
 > Suppose $X$ and $Y$ are topological spaces, then the fundamental group $\pi_{1}(X\times Y,x_{0}\times y_{0})$ is isomorphic to $\pi_{1}(X,x_{0})\times \pi_{1}(Y,y_{0})$.

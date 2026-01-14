@@ -1,6 +1,7 @@
 ---
 tags:
   - covering-spaces
+  - algebraic-topology
 updated: 2025-08-21
 completed: true
 ---
@@ -27,11 +28,11 @@ completed: true
 $\quad$
 
 > [!definition] Universal Cover
-> A universal cover of a topological space $X$ is a covering space $\widetilde{X}$ with a covering map $p\colon \widetilde{X}\to X$ such that $\widetilde{X}$ is [[The Fundamental Group#^3b18ee|simply connected]].
-> 
+> A *universal cover* of a topological space $X$ is a covering space $\widetilde{X}$ with a covering map $p\colon \widetilde{X}\to X$ such that $\widetilde{X}$ is [[The Fundamental Group#^3b18ee|simply connected]]. ^06336e
 
 <u><b>e.g.</b></u>
-* The map $p: \mathbb{R} \to S^1$ is a universal cover, since $\mathbb{R}$ is simply-connected.
+* The map $p\colon \mathbb{R} \to S^1$ is a universal cover, since $\mathbb{R}$ is simply-connected.
+* The universal cover of a torus $T$ is $\R^{2}$.
 * For $n \ge 2$, the map $p\colon S^n \to \RP^n$ is a universal cover because $S^n$ is simply-connected.
 * The universal cover of $X = S^1 \lor S^1$ is an infinite 4-valent tree, which is the Cayley graph of the free group on two generators.
 $\quad$

@@ -20,7 +20,6 @@
 
 *Proof*  These are direct consequences of the arithmetic of logical connectives. $\square$
 
-
 ## Cartesian Product
 
 > [!definition] Cartesian Product

@@ -100,8 +100,6 @@ Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreduci
 > A unique factorization domain is a principle ideal domain if and only if all nonzero [[Relations and Maximal Ideals#^da4561|prime ideals]] are [[Relations and Maximal Ideals#^ee0592|maximal]].
 > 
 
-*Proof*  In a PID, 
-
 > [!definition] Primitive Polynomial
 > Suppose $R$ is a unique factorization domain. $f\in R[x]$ is primitive if one of (thus all) the following equivalent conditions hold:
 > - the greatest common divisor of its coefficients is $1$ (thus any units). 

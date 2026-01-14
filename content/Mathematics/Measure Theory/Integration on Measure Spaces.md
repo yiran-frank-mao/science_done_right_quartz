@@ -30,9 +30,7 @@ The basic limit theorems also hold:
 > If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of non-negative measurable functions with $f_n\nearrow f$ on $(X,\mathcal{S},\mu)$, then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$
 
 > [!theorem] Bounded Convergence Theorem
-> If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of measurable functions on $(X,\mathcal{S},\mu)$ with $\mu(X)<\infty$ and $\|f_{n}\|_{\infty}\leq M$ for all $n$. If $f_{n}\to f$ a.e., then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$
-
-^f80aa2
+> If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of measurable functions on $(X,\mathcal{S},\mu)$ with $\mu(X)<\infty$ and $\|f_{n}\|_{\infty}\leq M$ for all $n$. If $f_{n}\to f$ a.e., then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$ ^f80aa2
 
 > [!theorem] Dominated Convergence Theorem
 > If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of measurable functions with $f_n\to f$ pointwise a.e. on $(X,\mathcal{S},\mu)$, and $|f_{n}|<g$ for some integrable $g$, then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$

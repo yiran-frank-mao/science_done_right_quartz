@@ -6,7 +6,7 @@ completed: true
 ## Algebraic Structures
 
 > [!definition] Möbius Transformations
-> The set of Möbius transformations is given by $$\newcommand{\C}{\mathbb{C}}\newcommand{\hC}{\hat{\C}}\newcommand{\mob}{\mathrm{Möb}}\mob=\{\lambda_X\colon\hat{\mathbb{C}}\to\hat{\mathbb{C}}\mid X\in \mathrm{GL}_2(\mathbb{C})\}$$where for any $X=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\in \mathrm{GL}_{2}(\C)$, $$\lambda_X(z)=\begin{cases}\frac{az+b}{cz+d}&z\neq\infty,-d/c\\\infty&z=-d/c\\a/c&z=\infty\end{cases}$$where $\mathrm{GL}_{2}(\C)$ is the [[Linear Groups#^264ff5|general linear group]] over $\C$. We will often write $\lambda_{X}(z)=\frac{az+b}{cz+d}$, since the other two cases are compatible with the limits of the fraction. ^da9a62
+> The set of *Möbius transformations* is given by $$\newcommand{\C}{\mathbb{C}}\newcommand{\hC}{\hat{\C}}\newcommand{\mob}{\mathrm{Möb}}\mob=\{\lambda_X\colon\hat{\mathbb{C}}\to\hat{\mathbb{C}}\mid X\in \mathrm{GL}_2(\mathbb{C})\}$$where for any $X=\begin{pmatrix}a&b\\ c&d\end{pmatrix}\in \mathrm{GL}_{2}(\C)$, $$\lambda_X(z)=\begin{cases}\frac{az+b}{cz+d}&z\neq\infty,-d/c\\\infty&z=-d/c\\a/c&z=\infty\end{cases}$$where $\mathrm{GL}_{2}(\C)$ is the [[Linear Groups#^264ff5|general linear group]] over $\C$. We will often write $\lambda_{X}(z)=\frac{az+b}{cz+d}$, since the other two cases are compatible with the limits of the fraction. ^da9a62
 
 > [!lemma]
 > Any Möbius transformation is a composite of translations, dilations, and inversions. ^57c4fc
