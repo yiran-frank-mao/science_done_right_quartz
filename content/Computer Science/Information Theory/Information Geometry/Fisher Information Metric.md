@@ -8,7 +8,8 @@ completed: true
 ## Tensorial Representation of Random Variables
 
 > [!definition] Tensor Product of Vector Valued Random Variables
-> Suppose $\newcommand{\var}{\mathrm{Var}}\newcommand{\cov}{\mathrm{Cov}}\newcommand{\R}{\mathbb{R}}\newcommand{\E}{\mathbb{E}} X$ is a finite [[Random Variable and Probability Space#^9cf9be|sample space]]. The tensor product of two [[Random Variable and Probability Space#^a0b9ff|random variables]] $v\colon X\to V$ and $w\colon X\to W$ with $V$ and $W$ being vector spaces is defined as $$v\otimes w \colon X\to V^{*}\otimes W,\quad x\mapsto v(x)\otimes w(x)$$
+> Suppose $\newcommand{\var}{\mathrm{Var}}\newcommand{\cov}{\mathrm{Cov}}\newcommand{\R}{\mathbb{R}}\newcommand{\E}{\mathbb{E}} X$ is a finite [[Random Variable and Probability Space#^9cf9be|sample space]]. The tensor product of two [[Random Variable and Probability Space#^a0b9ff|random variables]] $v\colon X\to V$ and $w\colon X\to W$ with $V$ and $W$ being vector spaces is defined as $$v\otimes w \colon X\to V^{*}\otimes W,\quad x\mapsto v(x)\otimes w(x),$$
+> where $V^{*}\otimes W$ is the [[Tensors and Tensor Products#^732917|tensor product]] of the [[Mathematics/Linear Algebra/Duality#^6c7627|dual space]] of $V$ and $W$. Notice that $v\otimes w$ is also a random variable.
 
 > [!definition] General Expected Value
 > Suppose $X$ is a finite sample space and $V$ is a vector space over $\R$. The expected value of a random variable $v\colon X\to V$ is defined as $$\E_{\mu}[v]:=\sum_{x\in X} \mu(x)v(x)\in V$$Naturally, if fixing some $v\colon X\to V$, then $\E[v]\colon \Omega\to V$ forms a map from the space of probability measures to $V$.
@@ -64,8 +65,5 @@ Hence by [[Fisher Information Metric#^32d6c3|lemma]],  we can write: $$\var[t]=\
 
 ## Maximum Likelihood Estimation
 
-If the maximum likely hood estimate achieves the Cramer-Rao lower bound on $X$ and $Y$, then it also achieves the Cramer-Rao lower bound on $X\times Y$.
-**Proof**
-
-
-Then, show that the MLE achieves the Cramer-Rao lower bound on the space of all probability measures on a finite space.
+> [!proposition]
+> If the maximum likely hood estimate achieves the Cramer-Rao lower bound on $X$ and $Y$, then it also achieves the Cramer-Rao lower bound on $X\times Y$.

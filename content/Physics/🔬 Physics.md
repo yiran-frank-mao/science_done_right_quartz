@@ -10,3 +10,7 @@ Physics is the natural science of matter, involving the study of matter, its fun
 [[Mechanics]]
 [[Electromagnetism]]
 [[Optics]]
+
+## Useful Resources
+
+[Notes by Physics with Elliot](https://www.physicswithelliot.com/all-notes)

@@ -13,7 +13,8 @@ The Heisenberg algebra exists by the following construction:
 
 *Proof*  Let us denote the standard basis elements as $e_{n}=x\mapsto x^{n}$. Then $$[e_{m},e_{n}]=\frac{1}{2\pi}\int_{0}^{2\pi} e^{i(m+n)t}im\dd t \cdot z = im\delta_{m,-n}z.$$Setting $a_{n}\mapsto e_{n}$ and $1_{\H}\mapsto z$ gives the desired isomorphism. $\square$
 
-Introduce the [[The Fock Space#^ecdf5b|bosonic Fock space]] $\newcommand{\F}{\mathcal{F}}\F=\C[x_{1},x_{2},\dots]$, the space of polynomials in infinitely many variables. Given $\lambda\in\C$, define the representation $(\rho_{\lambda},\F)$ of $\H$ through $$\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}\rho_{\lambda}(a_{n})=\varepsilon(n)\pddf{}{x_{n}},\quad \rho_{\lambda}(a_{-n})=f\mapsto \varepsilon(n)^{-1}nx_{n}f,\quad \rho_{\lambda}(a_{0})=\lambda I,\quad \rho_{\lambda}(1_{\H})=I, $$for all $n>0$ and some $\varepsilon\colon \Z\to \R$. Usually we set $\varepsilon(n)=n$ for all $n\in\Z$.
+> [!definition] Fock Space Representation of $\H$
+> Introduce the [[The Fock Space#^ecdf5b|bosonic Fock space]] $\newcommand{\F}{\mathcal{F}}\F=\C[x_{1},x_{2},\dots]$, the space of polynomials in infinitely many variables. Given $\lambda\in\C$, define the representation $(\rho_{\lambda},\F)$ of $\H$ through $$\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}\rho_{\lambda}(a_{n})=\varepsilon(n)\pddf{}{x_{n}},\quad \rho_{\lambda}(a_{-n})=f\mapsto \varepsilon(n)^{-1}nx_{n}f,\quad \rho_{\lambda}(a_{0})=\lambda I,\quad \rho_{\lambda}(1_{\H})=I, $$for all $n>0$ and some $\varepsilon\colon \Z\to \R$. Usually we set $\varepsilon(n)=n$ for all $n\in\Z$.
 
 > [!proposition]
 > The representation $(\rho_{\lambda},\F)$ is irreducible for all $\lambda\in\R$ and $\varepsilon\colon \Z\to \R$ such that $\varepsilon(n)\neq0$ for all $n\in\Z$.

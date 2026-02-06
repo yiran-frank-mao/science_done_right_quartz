@@ -19,6 +19,8 @@ tags:
 > - *Lagrangian* if $W=W^{\omega}$.
 > $\quad$
 
+^651b51
+
 > [!lemma]
 > For any subspace $W\subset (V, \omega)$, there holds $$\dim W+\dim W^{\omega} = \dim V, \quad W^{\omega\omega}=W.$$
 

@@ -26,10 +26,11 @@ The spin ladder operators are defined as: $$\hat{S}_{+}=\hat{S}_{x}+i\hat{S}_{y}
 >[!definition] 
 >**Def**  <i><u>Eigenspinors</u></i>
 >The eigenfunctions of the spin operator $\hat{S}_{z}$ are called eigenspinors. The eigenspinors of the spin angular momentum operators are denoted by $\chi_{s}^{m_{s}}$.
-><u><b>e.g.</b></u>  In matrix representation, $\chi_{\frac{1}{2}}^{+\frac{1}{2}}=\begin{pmatrix}1 \\ 0\end{pmatrix}$ and $\chi_{\frac{1}{2}}^{-\frac{1}{2}}=\begin{pmatrix}0 \\ 1\end{pmatrix}$. Thus an arbitrary spin state for such a particle can then be represented by $\chi = a\chi_{\frac{1}{2}}^{+\frac{1}{2}}+b\chi_{\frac{1}{2}}^{-\frac{1}{2}}=\begin{pmatrix}a \\ b\end{pmatrix}$.
+
+<u><b>e.g.</b></u>  In matrix representation, $\chi_{\frac{1}{2}}^{+\frac{1}{2}}=\begin{pmatrix}1 \\ 0\end{pmatrix}$ and $\chi_{\frac{1}{2}}^{-\frac{1}{2}}=\begin{pmatrix}0 \\ 1\end{pmatrix}$. Thus an arbitrary spin state for such a particle can then be represented by $\chi = a\chi_{\frac{1}{2}}^{+\frac{1}{2}}+b\chi_{\frac{1}{2}}^{-\frac{1}{2}}=\begin{pmatrix}a \\ b\end{pmatrix}$.
 
 >[!definition] Pauli Spin Matrices
->The Pauli spin matrices are defined as: $$\sigma_{x}=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad \sigma_{y}=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\quad \sigma_{z}=\begin{pmatrix}1&0\\0&-1\end{pmatrix}$$
+>The *Pauli spin matrices* are $2\times 2$ complex matrices defined as: $$\sigma_{x}=\begin{pmatrix}0&1\\1&0\end{pmatrix},\quad \sigma_{y}=\begin{pmatrix}0&-i\\i&0\end{pmatrix},\quad \sigma_{z}=\begin{pmatrix}1&0\\0&-1\end{pmatrix}.$$ ^773ff2
 
 <u><b>e.g</b></u>  If a particle has intrinsic spin $s = 1/2$, then the spin operator can be represented by the Pauli matrices: $$\hat{S}_{x}=\frac{\hbar}{2}\sigma_{x},\quad \hat{S}_{y}=\frac{\hbar}{2}\sigma_{y},\quad \hat{S}_{z}=\frac{\hbar}{2}\sigma_{z}$$
 

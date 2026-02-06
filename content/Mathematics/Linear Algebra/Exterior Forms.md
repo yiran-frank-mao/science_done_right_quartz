@@ -1,7 +1,7 @@
 ## $k$-Forms
 
 > [!definition] $k$-form 
-> An exterior $k$-form on a [[Vector Spaces#^f4b63e|vector space]] $V$ is a skew-symmetric [[Tensors and Tensor Products#^da894d|multilinear map]] $\newcommand{\d}{\mathrm{d}}\newcommand{\Z}{\mathbb{Z}}\newcommand{\R}{\mathbb{R}}\newcommand{\D}{\mathrm{D}}\omega:V^{k}\to \R$. Skew-symmetric means that $\newcommand{\sgn}{\mathrm{sgn}}\omega(v_{1},\dots,v_{k})=\sgn(\sigma)\omega(v_{\sigma(1)},\dots,v_{\sigma(k)})$ for any [[Symmetric Group#^caba60|permutation]] $\sigma\in S_{k}$, where $\sgn(\sigma)$ is $1$ or $-1$, depending on whether the permutation is [[Symmetric Group#^c116d4|even]] or [[Symmetric Group#^c116d4|odd]]. 
+> An exterior $k$-form on a [[Vector Spaces#^f4b63e|vector space]] $V$ is a skew-symmetric [[Tensors and Tensor Products#^da894d|multilinear map]] $\newcommand{\d}{\mathrm{d}}\newcommand{\Z}{\mathbb{Z}}\newcommand{\R}{\mathbb{R}}\newcommand{\D}{\mathrm{D}}\omega\colon V^{k}\to \R$. Skew-symmetric means that $\newcommand{\sgn}{\mathrm{sgn}}\omega(v_{1},\dots,v_{k})=\sgn(\sigma)\omega(v_{\sigma(1)},\dots,v_{\sigma(k)})$ for any [[Symmetric Group#^caba60|permutation]] $\sigma\in S_{k}$, where $\sgn(\sigma)$ is $1$ or $-1$, depending on whether the permutation is [[Symmetric Group#^c116d4|even]] or [[Symmetric Group#^c116d4|odd]]. 
 > The set of all $k$-forms on $V$ is denoted by $\Lambda^{k}(V)$. ^794521
 
 <u><b>e.g.</b></u>  

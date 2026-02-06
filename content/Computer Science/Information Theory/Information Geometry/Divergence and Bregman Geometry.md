@@ -36,7 +36,7 @@ C_{ijk}^{D}&=\Gamma^{D}_{ijk}-\Gamma^{D^*}_{ijk}
 ## Bregman Geometry
 
 >[!definition] Bregman Divergence
->Suppose $M$ is a smooth manifold. Let $U\subset M$ be a neighbourhood of some point homeomorphic to some Euclidean space under local [[Manifolds and Atlases#^441ce2|chart]] (coordinate) $\theta$. Given a [[Convex Functions#^0aeb33|strictly convex]] smooth function $F \colon \Theta \to \R$ called a potential function, where $\Theta\subset \theta(U)$ is an open convex domain. The Bregman divergence corresponding to this $F$ and coordinate $\theta$ is defined to be: $$B_{F}(p:q)=F(\theta(p))-F(\theta(q))-\langle (\theta(p)-\theta(q)), \nabla F(\theta(q))\rangle$$
+>Suppose $M$ is a [[Manifolds and Atlases#^6ef2ef|smooth manifold]]. Let $U\subset M$ be a neighbourhood of some point homeomorphic to some Euclidean space under local [[Manifolds and Atlases#^441ce2|chart]] (coordinate) $\theta$. Given a [[Convex Functions#^c53709|strictly convex]] smooth function $F \colon \Theta \to \R$ called a potential function, where $\Theta\subset \theta(U)$ is an open convex domain. The Bregman divergence corresponding to this $F$ and coordinate $\theta$ is defined to be: $$B_{F}(p:q)=F(\theta(p))-F(\theta(q))-\langle (\theta(p)-\theta(q)), \nabla F(\theta(q))\rangle$$
 
 >[!proposition]
 >The Bregman divergence with negative [[Information Content and Entropy#^d1821a|Shanon entropy]] as potential function is the [[Information Content and Entropy#^b73be4|Kullback-Leibler divergence]].

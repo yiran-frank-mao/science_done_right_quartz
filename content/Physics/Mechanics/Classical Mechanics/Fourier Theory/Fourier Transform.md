@@ -11,7 +11,7 @@ $$
 
 **Prop**  $\mathcal{F}[cf(x)] = c\mathcal{F}[f(x)]$
 
-## Tophat, **Dirac**Delta and Shah Function
+## Tophat, Dirac Delta and Shah Function
 
 **Def**  <i><u>Tophat Function</u></i>
 Define the tophat function as:
@@ -105,6 +105,7 @@ $$
 ## Convolution
 
 Recall that convolution is the integral of the product of two functions after one is reversed and shifted:
+
 ![[The Space of Integrable Functions#^472754]]
 
 It has the following properties:

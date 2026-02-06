@@ -34,5 +34,6 @@ Classical mechanics is the branch of physics that deals with the motion and forc
 [[Surface Tension]]
 [[Waves in Fluids]]
 [[Viscosity and Turbulence]]
+### Classical Field Theory
 ## Acknowledgement
 This part is mainly based on the ANU course [PHYS2201](https://programsandcourses.anu.edu.au/2023/course/PHYS2201) in 2023, convened by Dr. Ben Buchler and Prof. Vince Craig.

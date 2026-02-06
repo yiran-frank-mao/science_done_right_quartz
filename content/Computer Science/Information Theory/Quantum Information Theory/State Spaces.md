@@ -1,5 +1,4 @@
->[!comment]
->Classical computer science often considers systems to have a finite set of states. An important simple system is the bit, with state space given by the set $\{0, 1\}$. Quantum information theory instead assumes that systems have [[Quantum State Space#^00f394|state spaces]] given by finite-dimensional [[Hilbert Spaces|Hilbert spaces]]. The quantum version of the bit is the qubit.
+Classical computer science often considers systems to have a finite set of states. An important simple system is the bit, with state space given by the set $\{0, 1\}$. Quantum information theory instead assumes that systems have [[Quantum State Space#^00f394|state spaces]] given by finite-dimensional [[Hilbert Spaces|Hilbert spaces]]. The quantum version of the bit is the qubit.
 
 >[!definition] 
 >**Def**  <i><u>Qubit</u></i>

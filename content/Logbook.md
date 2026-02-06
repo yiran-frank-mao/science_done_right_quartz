@@ -3,6 +3,42 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 21 Jan 2026
+- Updates: [[Conformal Welding Problem]], [[Manifolds and Atlases]], [[The Semigroup of Annuli]].
+
+## 7 Dec 2025
+- Updates: [[The Principles of Relativity and Determinacy]], [[Postulates of Special Relativity]].
+
+## 29 Oct 2025
+- Updates: [[Positive Elements and Ideals in C*-Algebras]], [[Gelfand Representation]], [[The Gelfand-Naimark Theorem]], [[C*-Algebras]], [[The Argument Principle]], [[Fredholm Operators]], [[Toeplitz Operators]].
+
+## 23 Oct 2025
+- Updates: [[Projective Resolution of Modules]], [[Universal Coefficient Theorem]].
+
+## 22 Oct 2025
+Updates: [[Constructions on Categories]].
+
+## 18 Oct 2025
+- Updates: [[Engel's Theorem]], [[Ideals, Simple and Semisimple Lie Algebras]], [[Killing Forms and Cartan's Criteria]].
+
+## 2 Oct 2025
+- New page: [[Degree and Local Homology]], [[Lie Group Cohomology]].
+
+## 30 Sep 2025
+- Updates: [[Cellular Homology]], [[The Verma Module]], [[Unitary Highest Weight Representations]].
+
+## 28 Sep 2025
+- Updates: [[Ideals, Simple and Semisimple Lie Algebras]].
+
+## 22 Sep 2025
+- Updates: [[Witt Algebra and Virasoro Algebra]], [[Reduced Homology]], [[Singular Homology]], [[Exact Sequences and Relative Homology]], [[Newton's Laws]], [[Waves in Fluids]].
+
+## 15 Sep 2025
+- New pages: [[The Hahn-Banach Theorem]], [[The Gelfand-Naimark Theorem]].
+
+## 7 Sep 2025
+- Updates: [[Continuity on Metric Spaces]], [[Series]], [[Differentiation of Real Functions]].
+
 ## 5 Sep 2025
 - Updates: [[Nelson's Counterexample]], [[Nelson's Commutator Theorem]].
 
@@ -240,7 +276,7 @@ completed: true
 - Updates: [[Topological Spaces]], [[Series Expansion of Holomorphic Functions]], [[Connectedness and Paths]], [[Series of Complex Functions]], [[Shannon-Fano-Elias and Interval Coding]].
 
 ## 25 Sep 2024
-- Updates: [[Series of Complex Functions]], [[Uniform Convergence of Functions]], [[Complete Metric Space]]
+- Updates: [[Series of Complex Functions]], [[Convergence of Functions]], [[Complete Metric Space]]
 
 ## 24 Sep 2024
 - Updates: [[Random Variable and Probability Space]], [[Tangent Vectors and Spaces]], [[Tensors and Tensor Products]].
@@ -256,7 +292,7 @@ completed: true
 
 ## 17 Sep 2024
 - New page: [[Shannon-Fano-Elias and Interval Coding]].
-- Updates: [[Huffman Coding]], [[Uniform Convergence of Functions]], [[Compactness of Metric Space]], [[Normal Convergence of Holomorphisms]], [[Convex Functions]], [[Complex Numbers]], [[Relations and Functions]].
+- Updates: [[Huffman Coding]], [[Convergence of Functions]], [[Compactness of Metric Space]], [[Normal Convergence of Holomorphisms]], [[Convex Functions]], [[Complex Numbers]], [[Relations and Functions]].
 
 ## 16 Sep 2024
 - New page: [[Normal Convergence of Holomorphisms]].
@@ -381,17 +417,17 @@ completed: true
 
 ## 28 Apr 2024
 - New page: [[Basics of Information]].
-- Update: [[Dispersion]], [[Metric Spaces]], [[Continuity on Metric Space]], [[Adjunction]].
+- Update: [[Dispersion]], [[Metric Spaces]], [[Continuity on Metric Spaces]], [[Adjunction]].
 
 ## 27 Apr 2024
-- New page: [[Continuity on Metric Space]].
+- New page: [[Continuity on Metric Spaces]].
 - Update: [[Complete Metric Space]], [[Compactness of Metric Space]], [[Metric Spaces]], [[Image Processing]], [[Isomorphism Theorems]].
 - Merge ~~[[Colour Spaces]]~~ into [[Digital Image Representation]].
 - Merge ~~[[Corner Detection]]~~ into [[Image Filtering]].
 - Interface updates: Now every future definition/proposition is a callout block. Hover preview can now show the whole block: ![|370](https://i.imgur.com/7uIqJef.png)
 
 ## 26 Apr 2024
-- New page: [[Uniform Convergence of Functions]], [[Newtonian Mechanics]], [[Ordinary Differential Equations]], [[Line Fitting]].
+- New page: [[Convergence of Functions]], [[Newtonian Mechanics]], [[Ordinary Differential Equations]], [[Line Fitting]].
 - Update: [[Ring, Field and Integral Domain]], [[Integral]].
 
 ## 25 Apr 2024

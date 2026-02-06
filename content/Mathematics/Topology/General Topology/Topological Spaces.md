@@ -42,13 +42,13 @@ updated: 2024-09-26
 
 ## Bases and Sub-bases
 
->[!definition] Basis for a Topology
+>[!definition] Base for a Topology
 >A basis for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$. ^2fc468
 
 <u><b>e.g.</b></u>  Let $(X,d)$ be a metric space. Then $$\mathcal{B}=\{B_r(x):x\in X\mathrm{~and~}r>0\}$$ is a basis for the metric topology on $X$.
 
 > [!theorem]
-> Let $(X,\mathcal{T})$ be a topological space. Then $\mathcal{B}⊂\mathcal{T}$ is a basis for $\mathcal{T}$ iff for any $x\in X$ and any $U ∈ \mathcal{T}$ with $x ∈ U$ there is $B ∈ \mathcal{B}$ such that $x \in B ⊂ U$.
+> Let $(X,\mathcal{T})$ be a topological space. Then $\mathcal{B}⊂\mathcal{T}$ is a base for $\mathcal{T}$ iff for any $x\in X$ and any $U ∈ \mathcal{T}$ with $x ∈ U$ there is $B ∈ \mathcal{B}$ such that $x \in B ⊂ U$.
 
 > [!proposition]
 > A collection of sets cannot be basis for two distinct topologies.
@@ -74,6 +74,9 @@ updated: 2024-09-26
 
 >[!definition] Sub-basis
 >A sub-basis for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset \mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$. ^02668a
+
+> [!definition] Second-Countable
+> A topological space $(T,\mathcal{T})$ is second-countable if there is a countable base for $\mathcal{T}$. ^a8abf4
 
 ## Subspaces and Finite Product Spaces
 

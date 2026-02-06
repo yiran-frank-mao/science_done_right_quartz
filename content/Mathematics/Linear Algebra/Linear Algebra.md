@@ -23,6 +23,7 @@ Linear Algebra is a fundamental area of mathematics concerned with vectors, vect
 [[Eigenvalues and Eigenvectors]]
 [[Similarity and Generalized Eigenspaces]]
 [[Inner Products]]
+[[Sesquilinear Forms]]
 [[Normed Spaces]]
 [[Singular Value Decomposition]]
 [[Jordan Normal Form]]

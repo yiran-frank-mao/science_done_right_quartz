@@ -8,7 +8,7 @@ tags:
 At the moment, the only examples of holomorphic functions that we have are polynomials, exponentials, and functions that we can build out of these using sums, products, and composites. Having a small supply of examples can make it challenging to construct holomorphic functions with certain specific behaviors. One way to expand our supply of examples of holomorphic functions is to think about when the limit of a sequence of holomorphic functions is again holomorphic.
 
 > [!definition] Normal Convergence
-> Let $\newcommand{\dd}{\:\mathrm{d}} \newcommand{\C}{\mathbb{C}} D\subset \C$ be a [[Holomorphic and Conformal Maps#^08ef59|domain]], and let $(f_{n})$ be a sequence of [[Relations and Functions#^862dba|functions]] on $D$. We say that the sequence $(f_{n})$ converges normally to $f\colon D\to \C$ or uniformly inside $D$ if for every [[Compactness of Metric Space#^f1fb8b|compact]] subset $K\subset D$, the sequence $(f_{n})$ [[Convergence of Functions#^a59a2d|converges uniformly]] on $K$ to $f$. ^dd2ac8
+> Let $\newcommand{\dd}{\:\mathrm{d}} \newcommand{\C}{\mathbb{C}} D\subset \C$ be a [[Holomorphic and Conformal Maps#^08ef59|domain]], and let $(f_{n})$ be a sequence of [[Relations and Functions#^862dba|functions]] on $D$. We say that the sequence $(f_{n})$ *converges normally* to $f\colon D\to \C$ or uniformly inside $D$ if for every [[Compactness of Metric Space#^f1fb8b|compact]] subset $K\subset D$, the sequence $(f_{n})$ [[Convergence of Functions#^a59a2d|converges uniformly]] on $K$ to $f$. ^dd2ac8
 
 > [!theorem]
 > $f_{n}\to f$ normally on a domain $D\subset \C$ is equivalent to for every $z\in D$, there is an open set $U\subset D$ such that $f_{n}\to f$ uniformly on $U$. ^f32fe1

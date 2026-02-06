@@ -15,7 +15,7 @@ updated: 2025-03-05
 > The Lagrangian of a mechanical system is defined as $L = T - U$, which is the difference between kinetic energy and potential energy.
 
 > [!definition] Action
-> The action of  a mechanical system is a functional: $$ S[q] = \int_{t_1}^{t_2} L(q,\dot q,t) \mathrm{d}t $$
+> The action of  a mechanical system is a functional: $$ S[q] = \int_{t_1}^{t_2} L(q,\dot q,t) \mathrm{d}t. $$
 
 > [!theorem] Hamilton’s Principle
 > The motion of a mechanical system (from Newton's equation) $q(t)$ described by $k$ generalized coordinates $q = (q_1, q_2, ..., q_k)$ between two specified states $q_1 = q(t_1)$ and $q_2 = q(t_2)$ at two specified times $t_1$ and $t_2$ is an [[Variational Calculus#^aa327b|extremal]] of the action functional. That is, $$\frac{\dd }{\dd t} \left( \frac{\partial L}{\partial \dot{\gamma}(t)} \right) - \frac{\partial L}{\partial \gamma(t)}=0.$$

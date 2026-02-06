@@ -1,7 +1,7 @@
 ## Sampling
 
 **Def**  <i><u>Nyquist Frequency</u></i>
-To pick out a frequency $f$, then your sampling frequency must be at least $2f$. Alternatively, for a sampling frequency $f$, the highest frequency you can correctly identify is $f/2$. This highest frequency (i.e. half the sampling frequency), is known as the Nyquist frequency.
+To pick out a frequency $f$, then your sampling frequency must be at least $2f$. Alternatively, for a sampling frequency $f$, the highest frequency you can correctly identify is $f/2$. This highest frequency (i.e. half the sampling frequency), is known as the *Nyquist frequency*.
 
 **Def**  <i><u>Aliasing</u></i>
 Aliasing is the overlapping of frequency components resulting from a sample rate below the Nyquist frequency. This overlap results in distortion or artifacts when the signal is reconstructed from samples which causes the reconstructed signal to differ from the original continuous signal.

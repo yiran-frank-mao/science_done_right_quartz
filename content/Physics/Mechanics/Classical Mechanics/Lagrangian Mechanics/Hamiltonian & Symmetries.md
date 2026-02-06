@@ -1,7 +1,7 @@
 ## Hamilton's Equations
 
 > [!definition] Hamiltonian
-> Recall that the [[Principle of Least Action#^5e80a1|canonical momentum]] is defined as $\newcommand{\dd}{\:\mathrm{d}}\newcommand{\ddf}[2]{\frac{\dd #1}{\dd #2}}\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}p_{j}=\pddf{L}{\dot{q_{j}}}$, we define the hamiltonian as the [[Convex Functions#^745078|Legendre transform]] of the Lagrangian, viewed as a function of $\mathbf{\dot{q}}$: $$ H (\mathbf{q},\mathbf{p},t)=\mathbf{\dot q}\cdot\mathbf{p}-L(\mathbf{q},\mathbf{\dot{q}},t)$$
+> Recall that the [[Principle of Least Action#^5e80a1|canonical momentum]] is defined as $\newcommand{\d}{\mathrm{d}}\newcommand{\dd}{\:\mathrm{d}}\newcommand{\ddf}[2]{\frac{\d #1}{\d #2}}\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}p_{j}=\pddf{L}{\dot{q_{j}}}$, we define the hamiltonian as the [[Convex Functions#^745078|Legendre transform]] of the Lagrangian, viewed as a function of $\mathbf{\dot{q}}$: $$ H (\mathbf{q},\mathbf{p},t)=\mathbf{\dot q}\cdot\mathbf{p}-L(\mathbf{q},\mathbf{\dot{q}},t).$$
 
 > [!definition] Hamilton’s Equations
 > We can easily derive the following Hamilton’s equations from the [[Principle of Least Action#^9d2a0d|Euler-Lagrange equation]]: $$\dot p_j = - \frac{\partial H}{\partial q_{j}},\quad \dot q_j = \frac{\partial H}{\partial p_{j}},\quad - \frac{\partial L}{\partial t}= \frac{\partial H}{\partial t}.$$ ^5ef3ed

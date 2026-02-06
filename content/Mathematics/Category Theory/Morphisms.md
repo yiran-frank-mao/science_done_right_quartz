@@ -48,7 +48,7 @@ We shall check the inverse is unique. Suppose $g$ and $h$ are both inverse of $f
 > An endomorphism that is an isomorphism is called an automorphism. ^9a350e
 
 >[!definition] Groupoid
->A groupoid is a [[Structure of Categories#^2f5c3a|category]] in which every morphism is an isomorphism.
+>A *groupoid* is a [[Structure of Categories#^2f5c3a|category]] in which every morphism is an isomorphism.
 
 >[!proposition] 
 > A group $G$ is a groupoid with one object $G$.

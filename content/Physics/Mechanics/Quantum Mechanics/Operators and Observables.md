@@ -4,15 +4,12 @@ updated: 2024-10-29
 ---
 ## Operators and Observables
 
->[!definition]
->**Def**  <i><u>Operator</u></i>
-Operators are mathematical entities used to represent physical processes that result in the change of the state vector of the system, such as the evolution of these states with time.
-
->[!definition] Observable
->An observable is a physical property or physical quantity that can be measured. Observables manifest as linear [[Quantum State Space#^cd6aa6|Hermitian operators]] in the [[Quantum State Space#^00f394|quantum state space]].
+>[!definition] Operator & Observable
+> Operators are mathematical entities used to represent physical processes that result in the change of the state vector of the system, such as the evolution of these states with time.
+> An observable is a physical property or physical quantity that can be measured. Observables manifest as linear [[Quantum State Space#^cd6aa6|Hermitian operators]] in the [[Quantum State Space#^00f394|quantum state space]].
 
 >[!proposition] Expectation Value of Operator
->Given some operator $\hat{A}$, the expectation value is then given by $$\langle A\rangle = \int_{-\infty}^{\infty}\Psi ^{*}\hat{A} \Psi \dd z$$
+>Given some operator $\hat{A}$, the expectation value is then given by $$\langle A\rangle = \int_{-\infty}^{\infty}\Psi ^{*}\hat{A} \Psi \dd z.$$
 
 >[!definition] Hamiltonian Operator
 >The Hamiltonian operator is $$\hat{H}=-\frac{\hbar^{2}}{2m}\frac{\partial^{2}}{\partial z^{2}}+V(z)$$Thus the TISE reduces to $$\hat{H}\psi_{n}=E_{n}\psi_{n}$$

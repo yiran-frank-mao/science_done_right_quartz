@@ -9,7 +9,7 @@ Goodman and Wallach proved the following theorem in 1984, which was originally c
 > Every unitary highest weight projective representation of $\mathfrak{X}(S^{1})$ integrates to a continuous projective representation of $\newcommand{\Diffgroup}{\mathrm{Diff}^{+}(S^{1})}\Diffgroup$.
 > 
 
-*Proof*  Since every UHW projective representation can be completely reduced to irreducible submodules isomorphic to $L(h,c)$, once every $L(h,c)$ integrates, we can integrate an arbitrary module by taking the (Hilbert) direct sum of the implementers on its irreducible summands. Now we show every unitary $L(h,c)$ is integrable step by step using the phase-shift condition.
+*Proof*  Since every UHW projective representation can be completely reduced to irreducible submodules isomorphic to $L(h,c)$, once every $L(h,c)$ integrates, we can integrate an arbitrary module by taking the (Hilbert) direct sum of the implementers on its irreducible summands. Now we show every unitary $L(h,c)$ is integrable step by step using the phase-shift condition:
 1. $L(h,1)$ is integrable. 
 2. $(\pi, V)$ satisfies the phase-shift condition iff $(\pi^{\otimes n}, V^{\otimes n})$ satisfies for some $n\in\Z_{\geq 0}$.
 3. If $r\in\Q$ is positive, $L(h,c)$ satisfies the phase-shift condition iff $L(rh,rc)$ satisfies.

@@ -5,7 +5,7 @@ updated: 2024-09-17
 ## Norm
 
 >[!definition] Norm
->A norm on a [[Vector Spaces#^f4b63e|vector space]] $X$ is a map $\newcommand{\R}{\mathbb{R}}\|\cdot\|\colon X \to \R$ such that
+>A *norm* on a [[Vector Spaces#^f4b63e|vector space]] $X$ is a map $\newcommand{\R}{\mathbb{R}}\|\cdot\|\colon X \to \R$ such that
 >1. $\|x\|=0$ if and only if $x=0$.
 >2. $\|\lambda x\|=|\lambda|\|x\|$ for every $\lambda\in \mathbb{C}$ and $x\in X$, we call this homogeneity .
 >3. $\|x+y\| \leq \|x\|+\|y\|$ for every $x,y\in X$, we call this triangle inequality.

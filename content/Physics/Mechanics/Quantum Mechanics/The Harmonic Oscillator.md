@@ -3,7 +3,7 @@ The harmonic oscillator model is so important in physics. Consider the Taylor se
 ## The Analytical Method
 
 >[!lemma] 
->**Lemma**  The Hamiltonian for a harmonic oscillator is given by $$\hat{H}=\frac{1}{2m}\Bigg(-ih\frac{\partial}{\partial x}\Bigg)^{2}+\frac{1}{2}m\omega^{2}x^{2}$$
+> The Hamiltonian for a harmonic oscillator is given by $$\hat{H}=\frac{1}{2m}\Bigg(-ih\frac{\partial}{\partial x}\Bigg)^{2}+\frac{1}{2}m\omega^{2}x^{2}$$
 
 *Proof*  Simply by $\hat{H}=\hat{T}+\hat{V}$ and the potential operator of a harmonic oscillator is $\hat{V}=\frac{1}{2}k\hat{x}^{2}$ with $\omega=\sqrt{k/m}$.
 
@@ -11,15 +11,16 @@ The harmonic oscillator model is so important in physics. Consider the Taylor se
 > The energy eigenstates of a harmonic oscillator is given by $$\Psi_{n}(x)=\sqrt{\frac{1}{\sqrt{\pi}2^{n}n!x_{0}}}e^{-\frac12 (x/x_{0})^2}H_{n}\left(\frac{x}{x_{0}}\right)$$with corresponding energy eigenvalues: $$E_{n}= (n+\frac{1}{2})\hbar\omega,\quad n=0,1,2\dots$$where $H_{n}$ is the [[Hermite Polynomials#^a81ecc|Hermite polynomial]], and $x_0=\sqrt{\frac{\hbar}{m\omega}}$.
 
 >[!proposition] 
->**Prop**  The $n$-th excited state of a harmonic oscillator has $n$ nodes.
+> The $n$-th excited state of a harmonic oscillator has $n$ nodes.
 
 >[!proposition] 
->**Prop**  On average, the energy is split evenly between the potential and the kinetic energy.
+> On average, the energy is split evenly between the potential and the kinetic energy.
 
 ## The Algebraic Method
 
 >[!definition] Creation Operator & Annihilation Operator
->The creation and annihilation operators are defined as: $$\begin{aligned} \hat{a}_{-}=\frac{1}{\sqrt{2m\hbar\omega}}(m\omega\hat{x}+i\hat{p})\\ \hat{a}_{+}=\frac{1}{\sqrt{2m\hbar\omega}}(m\omega\hat{x}-i\hat{p}) \end{aligned}$$
+> The *creation* and *annihilation* operators are defined as: $$\begin{aligned} \hat{a}_{-}=\frac{1}{\sqrt{2m\hbar\omega}}(m\omega\hat{x}+i\hat{p}),\\ \hat{a}_{+}=\frac{1}{\sqrt{2m\hbar\omega}}(m\omega\hat{x}-i\hat{p}). \end{aligned}$$
+> Clearly $\hat{a}_{+}=\hat{a}_{-}^{\dagger}$.
 
 >[!proposition] 
 > We have the following equations hold:
@@ -31,19 +32,31 @@ The harmonic oscillator model is so important in physics. Consider the Taylor se
 >$\quad$
 
 >[!theorem] 
-> The creation and annihilation operators act on quantum states as follows: $$\begin{aligned}&\hat{a}_-|n\rangle=\sqrt{n}|n-1\rangle\\\\&\hat{a}_+|n\rangle=\sqrt{n+1}|n+1\rangle\end{aligned}$$
+> The creation and annihilation operators act on quantum states as follows: $$\hat{a}_-|n\rangle=\sqrt{n}|n-1\rangle,\quad\hat{a}_+|n\rangle=\sqrt{n+1}|n+1\rangle$$
+
+Here is a summary of the roles of these operators:
+
+| Harmonic Oscillator Operator                      | Role                 |
+| ------------------------------------------------- | -------------------- |
+| Number operator $\hat{N}=\hat{a}_{+} \hat{a}_{-}$ | Counts energy levels |
+| Creation (raising) operator $\hat{a}_{+}$         | Raises energy level  |
+| Annihilation (lowering) operator $\hat{a}_-$      | Lowers energy level  |
+
+From these operators, one forms quadratic combinations:$$M_{+}:=\hat{a}_{+}^{2},\quad M_{-}:=\hat{a}_{-}^{2},\quad M_{0}:=\hat{a}_{+}\hat{a}_{-}+\hat{a}_{-}\hat{a}_{+}. $$These quadratic combinations satisfy the commutation relations of the Lie algebra [$\mathfrak{sl}_{2}(\C)$](General%20and%20Special%20Linear%20Groups#^4c1fe6). i.e., $$[M_0,M_+]=2M_+,\quad[M_0,M_-]=-2M_-,\quad[M_+,M_-]=M_0.$$
 
 ## Non-Stationary States
 
 >[!proposition] 
 > All energy eigenstates of the harmonic oscillator in 1D have no time dependent observables, thus are stationary states.
 
->[!definition] 
->**Def**  <i><u>Coherent State</u></i>
+>[!definition] Coherent State
 >A coherent state is a specific quantum state of a quantum harmonic oscillator, often described as a state that has dynamics most closely resembling the oscillatory behavior of a classical harmonic oscillator. Mathematically, we have $$\Psi(x,t)_{\text{coherent}}=\sum_{n}c_{n}\psi_{n}(x)e^{-iE_{n}t/\hbar},\quad\text{where }|c_{n}|^{2}=\frac{\langle n \rangle^{n}}{n!}e^{-\langle n \rangle}$$with $\langle n \rangle$ the mean of the quantum numbers $n$ and $\langle n \rangle \gg  1$.
 
 >[!proposition] 
->**Prop**  The probability distribution of a coherent state forms a [[Poisson Distribution#^83c8e2|Poisson distribution]]. Thus it has mean $\langle n \rangle$ and standard deviation $\langle n \rangle^{1/2}$. The expectation value of the energy of a such state is $$\begin{aligned}\langle E\rangle&=\sum_{n}|c_{n}|^{2}E_{n}=\sum_{n}|c_{n}|^{2}(n+1/2)\hbar\omega\\&=(\langle n\rangle+1/2)\hbar\omega\end{aligned}$$and the uncertainty is $$\Delta E=\langle n\rangle^{1/2}\hbar\omega $$If $\langle n \rangle$ is large, then observe that $$\begin{aligned}\frac{\Delta E}{\langle E\rangle}& =\frac{\langle n\rangle^{1/2}\hbar\omega}{(\langle n\rangle+1/2)\hbar\omega} \approx\frac1{\langle n\rangle^{1/2}}\end{aligned}$$So the energy uncertainty becomes less important. The position and momentum uncertainties become "less important" as well, and therefore the motion of the particle described by the wavefunction $\Psi(x,t)_{\text{coherent}}$ approaches classical harmonic oscillation.
+> The probability distribution of a coherent state forms a [[Poisson Distribution#^83c8e2|Poisson distribution]]. Thus it has mean $\langle n \rangle$ and standard deviation $\langle n \rangle^{1/2}$. The expectation value of the energy of a such state is $$\begin{aligned}\langle E\rangle&=\sum_{n}|c_{n}|^{2}E_{n}=\sum_{n}|c_{n}|^{2}(n+1/2)\hbar\omega\\&=(\langle n\rangle+1/2)\hbar\omega\end{aligned}$$and the uncertainty is $$\Delta E=\langle n\rangle^{1/2}\hbar\omega $$If $\langle n \rangle$ is large, then observe that $$\begin{aligned}\frac{\Delta E}{\langle E\rangle}& =\frac{\langle n\rangle^{1/2}\hbar\omega}{(\langle n\rangle+1/2)\hbar\omega} \approx\frac1{\langle n\rangle^{1/2}}\end{aligned}$$
+
+> [!remark]
+> So the energy uncertainty becomes less important. The position and momentum uncertainties become "less important" as well, and therefore the motion of the particle described by the wavefunction $\Psi(x,t)_{\text{coherent}}$ approaches classical harmonic oscillation.
 
 ## 3D Harmonic Oscillator
 

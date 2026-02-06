@@ -5,7 +5,7 @@
 > 
 
 > [!definition] Hilbert-Schmidt Operator
-> An integral operator $T_{K}$ is called a Hilbert-Schmidt operator if the associated kernel $K$ is an element of $L^{2}(\R^{d}\times \R^{d})$. ^5bb53a
+> An integral operator $T_{K}$ is called a *Hilbert-Schmidt operator* if the associated kernel $K$ is an element of $L^{2}(\R^{d}\times \R^{d})$. ^5bb53a
 
 > [!proposition]
 > Let $T$ be a Hilbert-Schmidt operator on $L^{2}(\R^{d})$ with kernel $K$. Then 

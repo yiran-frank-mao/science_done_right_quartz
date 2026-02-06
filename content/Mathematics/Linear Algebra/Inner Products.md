@@ -1,13 +1,13 @@
-Inner products generalize the idea of the dot product in $\R^{n}$ to more general vector spaces. They are useful in defining angles and lengths of vectors.
+Inner products generalize the idea of the dot product in $\R^{n}$ to more general vector spaces. They are useful in defining angles and lengths of vectors. ^ad5686
 
 >[!definition] Inner Product
-> Let $X$ be a vector space on $F\in \{\R,\C\}$. A function $⟨\cdot,\cdot⟩\colon X\times X\to F$ is called an *inner product* on $X$ if it satisfies the following properties:
+> Let $X$ be a [[Vector Spaces#^f4b63e|vector space]] on $F\in \{\R,\C\}$. A function $⟨\cdot,\cdot⟩\colon X\times X\to F$ is called an *inner product* on $X$ if it satisfies the following properties:
 >1. Positivity: $⟨x,x⟩≥0$ for all $x ∈X$, and $⟨x,x⟩=0 \iff x =0$.
 >2. Symmetry: $⟨x,y⟩ = \overline{⟨y,x⟩}$ for all $x,y ∈ X$.
->3. Sequilinearity: for all $x,y,z ∈ X$ and $α,β,\lambda ∈ F$ there holds $$⟨αx +βy,z⟩ = α⟨x,z⟩+β⟨y,z⟩,\quad \langle u,\lambda v \rangle = \overline{\lambda}\langle u, v \rangle.$$
+>3. Sesquilinearity: for all $x,y,z ∈ X$ and $α,β,\lambda ∈ F$ there holds $$⟨αx +βy,z⟩ = α⟨x,z⟩+β⟨y,z⟩,\quad \langle u,\lambda v \rangle = \overline{\lambda}\langle u, v \rangle.$$
 > 4. Induced Norm: inner product induces a [[Normed Spaces#^345fd3|norm]] $\|x\|:=\sqrt{\langle x,x\rangle}$.
 > 
-> A [[Vector Spaces#^f4b63e|vector space]] endowed with an inner product is called an *inner product space*. Sometimes, an inner product on a complex vector space is called a *Hermitian form*. ^f0c22c
+> A [[Vector Spaces#^f4b63e|vector space]] endowed with an inner product is called an *inner product space*. ^f0c22c
 
 We shall verify that the induced norm is indeed a norm. Since $\overline{\langle x,x\rangle}=\langle x,x\rangle$, $\langle x,x\rangle$ is always real. So the norm is real as expected. The triangle inequality follows from the [[Inner Products#^aec3f8|Cauchy-Schwarz inequality]], which we will prove later. The homogeneity property follows from the linearity of the inner product. The positivity property follows from the definition of the inner product.
 

@@ -8,10 +8,11 @@ cssclasses:
 ![Surface Gravity Waves](https://i.imgur.com/xle9M6n.png)
 ![Surface Gravity Waves2](https://i.imgur.com/NZ2RYyY.png)
 
-**Thrm**  <i><u>Surface Gravity Waves Dispersion Relation</u></i>
-For a flow of depth $H$, the dispersion relation of surface gravity waves is$$w=\sqrt{gk\tanh(kH)}$$In shallow water ($kH\ll1 \implies \tanh(kH)\approx kH$), it is non-dispersive, we have $$v_g=v_p=\sqrt{gH}$$
 
-![surface_gravity_waves_dispersion.png](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/surface_gravity_waves_dispersion.png)
+> [!theorem] Surface Gravity Waves Dispersion Relation
+> For a flow of depth $H$, the dispersion relation of surface gravity waves is$$w=\sqrt{gk\tanh(kH)}.$$In shallow water ($kH\ll1 \implies \tanh(kH)\approx kH$), it is non-dispersive, we have $$v_g=v_p=\sqrt{gH}.$$
+
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/surface_gravity_waves_dispersion.png" alt="surface_gravity_waves_dispersion" style="width:70%;">
 
 
 ## Interfacial Waves

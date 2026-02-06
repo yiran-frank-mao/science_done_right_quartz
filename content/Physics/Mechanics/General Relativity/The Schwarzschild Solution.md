@@ -1,5 +1,7 @@
 An important solution to the vacuum Einstein equations is given by the Schwarzschild metric, which in so-called Schwarzschild coordinates.
 
+##  Schwarzschild Spacetime
+
 > [!definition] Schwarzschild Spacetime
 > The Schwarzschild spacetime is a static, spherically symmetric vacuum solution $\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}\newcommand{\R}{\mathbb{R}}\newcommand{\d}{\mathrm{d}}\newcommand{\Sch}{\mathrm{Sch}}(M_{\Sch},g_{\Sch})$ with $M_{\Sch} \cong \R \times \R_{>0}\times S^2$, where in the standard global coordinates $(t,r,\theta,\phi)$, the Schwarzschild metric takes the form
 > $$g_{\Sch} = -\left(1 - \frac{2\mathbf{G}\mathbf{M}}{r\mathbf{c}^{2}}\right)\mathbf{c}^{2} \d t^2 + \left(1 - \frac{2\mathbf{G}\mathbf{M}}{r\mathbf{c}^{2}}\right)^{-1} \d r^{2} + r^{2} \d\theta^{2} + r^2 \sin^2\theta \d\phi^{2},$$
@@ -39,4 +41,5 @@ An important solution to the vacuum Einstein equations is given by the Schwarzsc
 
 
 ## References
-- [Willem van Oosterhout, Birkhoff’s theorem in general relativity](https://annegretburtscher.wordpress.com/wp-content/uploads/2019/11/willemvanoosterhout_bscthesis_2019.pdf) ^c8a38a
+
+[Willem van Oosterhout, Birkhoff’s theorem in general relativity](https://annegretburtscher.wordpress.com/wp-content/uploads/2019/11/willemvanoosterhout_bscthesis_2019.pdf) ^c8a38a

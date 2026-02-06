@@ -4,19 +4,17 @@ updated: 2024-09-17
 ---
 ## Convex Functions
 
-**Def**  <i><u>Convex Function</u></i>
-A function $\require{mhchem}\newcommand{\R}{\mathbb{R}} f\colon A \to \R$ is convex if $A$ is a convex set and $$ f(\theta x + (1-\theta)y)\leq \theta f(x) + (1-\theta)f(y) $$for all $x,y \in \textbf{dom}f,0\leq \theta \leq 1$ ^c53709
+> [!definition] Convex Function
+> A function $\newcommand{\R}{\mathbb{R}} f\colon A \to \R$ is *convex* if $A\subset \R^{n}$ is convex and $$ f(\theta x + (1-\theta)y)\leq \theta f(x) + (1-\theta)f(y) $$for all $x,y \in A$ and $0\leq \theta \leq 1$. It is *strictly convex* if the above inequality is strict. ^c53709
 
-**Def**  <i><u>Strictly Convex</u></i>
-A function $f\colon A \to \R$ is strictly convex if $A$ is a convex set and $$ f(\theta x + (1-\theta)y) < \theta f(x) + (1-\theta)f(y) $$for all $x,y \in \textbf{dom}f, x \neq y, 0\ < \theta < 1$ ^0aeb33
+> [!definition] Strongly Convex
+> A convex function $f$ is *strongly convex* if it has minimum positive curvature everywhere. That is $f$ is strongly convex on $S$ if there exists an $m > 0$ such that $$ \nabla^2f(x) \succeq mI\quad \text{for all $x\in S$} $$
 
-**Def**  <i><u>Strongly Convex</u></i>
-A convex function $f$ is strongly convex if it has minimum positive curvature everywhere. That is $f$ is strongly convex on $S$ if there exists an $m > 0$ such that $$ \nabla^2f(x) \succeq mI\quad \text{for all $x\in S$} $$
+> [!definition] Concave Function
+> A function $f\colon A \to \R$ is concave if $−f$ is convex.
+> 
 
-**Def**  <i><u>Concave Function</u></i>
-A function $f:\R^n \to \R$ is concave if $−f$ is convex.
-
-**Prop** Affine functions are convex and concave; All norms are convex.
+<u><b>e.g.</b></u> Affine functions are convex and concave; All norms are convex.
 
 **Thrm** A function $f : \R^n \to \R$ is convex if and only if the function $g : \R \to \R$ that
 $$ g(t) = f(x+tv), \quad \textbf{dom}g=\{ t \mid x+tv \in \textbf{dom} f \} $$
@@ -31,8 +29,7 @@ $$ \tilde{f}(x)= \begin{cases} f(x) , & x\in \textbf{dom}f \\ \infty, & x\notin 
 **Thrm** $f:\R^n \to \R$ is differentiable if $\textbf{dom}f$ is open and the gradient $\nabla f(x)$ exists at each $x \in \textbf{dom}f$.
 
 **Thrm** <i><u>First-Order Condition</u></i>
-A differentiable $f$ with convex domain is convex iff:
-$$ f(y) \geq f(x) + \nabla f(x)^{\top}(y-x) \text{ for all } x,y \in \textbf{dom} f $$
+A differentiable $f$ with convex domain is convex iff: $$ f(y) \geq f(x) + \nabla f(x)^{\top}(y-x) \text{ for all } x,y \in \textbf{dom} f $$
 
 **Thrm** $f$ is twice differentiable if $\textbf{dom}f$ is open and the Hessian $\nabla^2f(x) \in\mathbb{S}^n$ exists at each $x \in \textbf{dom}f$
 
@@ -41,12 +38,11 @@ For twice differentiable $f$ with convex domain, $f$ is convex if and only if $\
 
 ## Operations that Preserve Convexity
 
->[!comment]
->Practical methods for establishing convexity of a function
->1. Verify definition (often simplified by restricting to a line).
->2. For twice differentiable functions, show $\nabla^2f(x) \succeq 0$.
->3. Show that $f$ is obtained from simple convex functions by operations that preserve convexity.
->$\quad$
+Here are some practical methods for establishing convexity of a function:
+1. Verify definition (often simplified by restricting to a line).
+2. For twice differentiable functions, show $\nabla^2f(x) \succeq 0$.
+3. Show that $f$ is obtained from simple convex functions by operations that preserve convexity.
+$\quad$
 
 **Def**  <i><u>Perspective</u></i>
 The perspective of a function $f : \R^n \to \R$ is the function $g : \R^n × \R \to \R$ such that $$ g(x,t)=tf(\frac{x}{t}), \quad \textbf{dom}g=\{(x,t)\mid x/t \in \textbf{dom}f, t>0 \} $$
@@ -65,28 +61,23 @@ The perspective of a function $f : \R^n \to \R$ is the function $g : \R^n × \R 
 > [!lemma]
 > The values of a quadratic form $f$ and of its Legendre transformation $f^{*}$ coincide at corresponding points: $f(\mathbf{x})=f^{*}(\nabla f(\mathbf{x}))$ ^30a07a
 
-*Proof*
 
-
-
-**Prop**  <i><u>Operations that Preserve Convexity</u></i>
-- **Nonnegative Multiple**: $\alpha f$ is convex if $f$ is convex and $\alpha \geq 0$
-- **Sum**: $f_1 + f_2$ is convex if $f_1, f_2$ convex (extends to infinite sums, integrals)
-- **Composition with Affine Function**: $f(Ax+b)$ is convex if $f$ is convex.
-- **Pointwise Maximum**: if $f_1,f_2,\dots,f_n$ are convex, then $f(x)=\max\{ f_1(x), f_2(x), \dots, f_n(x) \}$ is convex.
-- **Pointwise Supremum**: if $f(x,y)$ is convex in $X$ for each $y\in \mathcal{A}$, then $g(x)=\sup_{y \in \mathcal{A}} f(x,y)$ is convex.
-- **Composition with Scalar Map**: Suppose $g: \R^{n}\to \R$ and $h: \R \to \R$ and $f = h \circ g$, then $f$ is convex if either
-    - $g$ convex, $h$ convex, $\tilde{h}$ nondecreasing
-    - $g$ concave, $h$ convex, $\tilde{h}$ nonincreasing
-- **Composition with Vector Map**: Suppose $g: \R^{n}\to \R^{k}$ and $h: \R \to \R$ and $f = h \circ g$, then $f$ is convex if either
-    - $g$ convex, $h$ convex, $\tilde{h}$ nondecreasing
-    - $g$ concave, $h$ convex, $\tilde{h}$ nonincreasing
-- **Perspective Transformation**: The perspective of $f : \R^n \to \R$ is convex if $f$ is convex.
-- **Conjugate**: The [conjugate](Convex%20Functions.md#^745078) of a function is always convex.
-
-
-
-
+> [!proposition] Operations that Preserve Convexity
+> The following operations preserve convexity:
+> - **Nonnegative Multiple**: $\alpha f$ is convex if $f$ is convex and $\alpha \geq 0$
+> - **Sum**: $f_1 + f_2$ is convex if $f_1, f_2$ convex (extends to infinite sums, integrals)
+> - **Composition with Affine Function**: $f(Ax+b)$ is convex if $f$ is convex.
+> - **Pointwise Maximum**: if $f_1,f_2,\dots,f_n$ are convex, then $f(x)=\max\{ f_1(x), f_2(x), \dots, f_n(x) \}$ is convex.
+> - **Pointwise Supremum**: if $f(x,y)$ is convex in $X$ for each $y\in \mathcal{A}$, then $g(x)=\sup_{y \in \mathcal{A}} f(x,y)$ is convex.
+> - **Composition with Scalar Map**: Suppose $g: \R^{n}\to \R$ and $h: \R \to \R$ and $f = h \circ g$, then $f$ is convex if either
+>     - $g$ convex, $h$ convex, $\tilde{h}$ nondecreasing
+>     - $g$ concave, $h$ convex, $\tilde{h}$ nonincreasing
+> - **Composition with Vector Map**: Suppose $g: \R^{n}\to \R^{k}$ and $h: \R \to \R$ and $f = h \circ g$, then $f$ is convex if either
+>     - $g$ convex, $h$ convex, $\tilde{h}$ nondecreasing
+>     - $g$ concave, $h$ convex, $\tilde{h}$ nonincreasing
+> - **Perspective Transformation**: The perspective of $f : \R^n \to \R$ is convex if $f$ is convex.
+> - **Conjugate**: The [conjugate](Convex%20Functions.md#^745078) of a function is always convex.
+> $\quad$
 
 ## Epigraph and Sublevel Set
 
