@@ -50,4 +50,3 @@ Category theory is a branch of mathematics that studies the abstract patterns an
 
 ## Acknowledgement
 This part is mainly based on the ANU ASC [SCNC3101](https://programsandcourses.anu.edu.au/2024/course/SCNC3101) in 2024, supervised by Dr Ranald Clouston.
-$\require{mhchem}\newcommand{\dom}{\operatorname{\textbf{dom}}}\newcommand{\cod}{\operatorname{\textbf{cod}}}\newcommand{\obj}{\operatorname{\textbf{obj}}}\newcommand{\mor}{\operatorname{\textbf{mor}}}\newcommand{\Hom}{\mathrm{Hom}}$

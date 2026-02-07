@@ -1,6 +1,0 @@
-
-
-
-
-## References
-[@goodmanProjectiveUnitaryPositiveenergy1985]
