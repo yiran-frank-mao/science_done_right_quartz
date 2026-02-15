@@ -20,16 +20,16 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > where $A^{*}$ is the adjoint of $A$ w.r.t the inner product $\llangle\cdot,\cdot\rrangle$.
 
 > [!definition] Correct Subspace
-> A subspace $W\subset \H \oplus \G$ is *correct* if it is the graph of an operator $$\Omega_{W}\colon \H^{+} \oplus \G^{-} \to \H^{-}\oplus \G^{+},\quad \Omega_{W}=\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix}$$
+> Given a symplectic Hilbert space $\H$, an operator $$T \colon \H^{+} \oplus \H^{-} \to \H^{-}\oplus \H^{+},\quad T=\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix}$$
 > such that 
 > 1. $K^{\top} =K$, $M^{\top}= M$;
 > 2. $\|\Omega\|_{\text{op}}<1$, $\|K\|_{\text{op}}<1$, $\|M\|_{\text{op}}<1$;
-> 3. $K$ and $M$ are Hilbert-Schmidt.
+> 3. $K$ and $M$ are Hilbert-Schmidt,
 > 
-> 
+> is called a *correct operator*. The collection of correct operators forms a semigroup $\CSP(\H)$.
 
 > [!proposition]
-> A correct subspace is always Lagrangian. In fact, $W$ is Lagrangian if and only if $(1)$ holds.
+> The graph of a correct operator is always Lagrangian. In fact, $W$ is Lagrangian if and only if $(1)$ holds.
 
 *Proof*  
 
