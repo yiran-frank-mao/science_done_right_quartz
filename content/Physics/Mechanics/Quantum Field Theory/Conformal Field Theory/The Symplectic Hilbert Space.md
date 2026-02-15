@@ -26,7 +26,7 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > 2. $\|\Omega\|_{\text{op}}<1$, $\|K\|_{\text{op}}<1$, $\|M\|_{\text{op}}<1$;
 > 3. $K$ and $M$ are Hilbert-Schmidt,
 > 
-> is called a *correct operator*. The collection of correct operators forms a semigroup $\CSP(\H)$.
+> is called a *correct operator*. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$, under the multiplication defined by $$\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix}$$
 
 > [!proposition]
 > The graph of a correct operator is always Lagrangian. In fact, $W$ is Lagrangian if and only if $(1)$ holds.
