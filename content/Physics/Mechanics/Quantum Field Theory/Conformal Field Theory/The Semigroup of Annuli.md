@@ -33,3 +33,12 @@ An algebraic description of elements in $\Ann$ is via formal products of maps. F
 > There is an involution $*\colon \Ann \to \Ann$ that turns an annulus inside out, so that the incoming and outgoing circles are exchanged, but their parametrizations remain the same
 > 
 
+## Alternative Realization of $\Ann$
+
+We shall introduce two more realizations of elements in $\Ann$ here, and see how $\Diff^{+}(S^{1})$ can be embedded as the boundary of $\Ann$, so that $\overline{\Ann}:=\Ann \cup \Diff^{+}(S^{1})$ is a complex manifold with boundary and a monoid.
+
+> [!proposition] 
+> Every annulus can be uniquely (up to some normalization) identified as a tuple $(S, \Phi^{-}, \Phi^{+})$, where $S$ is a Riemann surface conformally equivalent to the Riemann sphere, and $\Phi^{-}\colon D_{-}\to S\setminus \Phi^{+}(D_{+})$ and $\Phi^{+}\colon D_{+}\to S\setminus \Phi^{-}(D_{-})$ are holomorphic embeddings of the unit disk $D_{-}=\{z\in \C: |z|<1\}$ and $D_{+}=\{z\in \C: |z|>1\}$.
+>  
+ 
+*Proof*  This is a direct result of the conformal welding. For each annulus $(\Sigma, \gamma_{-}, \gamma_{+})$, we can weld an upper disk to its inner boundary and a lower disk to its outer boundary, so that the resulting Riemann surface is conformally equivalent to the Riemann sphere. The holomorphic embeddings $\Phi^{-}$ and $\Phi^{+}$ are given by the $\gamma_{-}$-welding and $\gamma_{+}$-welding respectively. $\square$

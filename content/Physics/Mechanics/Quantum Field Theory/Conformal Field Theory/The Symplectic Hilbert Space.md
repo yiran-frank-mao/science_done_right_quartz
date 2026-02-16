@@ -24,7 +24,7 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > such that 
 > 1. $K^{\top} =K$, $M^{\top}= M$;
 > 2. $\|\Omega\|_{\text{op}}<1$, $\|K\|_{\text{op}}<1$, $\|M\|_{\text{op}}<1$;
-> 3. $K$ and $M$ are Hilbert-Schmidt,
+> 3. $K$ and $M$ are [[Compact Operators#^5bb53a|Hilbert-Schmidt]],
 > 
 > is called a *correct operator*. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$, under the multiplication defined by $$\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix}$$
 
@@ -36,7 +36,7 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 ## The Symplectic Semigroup
 
 > [!definition] Restricted Symplectic Semigroup
-> Suppose $\G$ is a real symplectic Hilbert space, then we write $\newcommand{\RSP}{\mathrm{Sp}_{\text{res}}}\RSP(\G)$ for the *restricted symplectic group*, that is, a [[Groups, Order and Subgroups#^1ccb07|subgroup]] of $\mathrm{Sp}(\G)$ such that the operators can be written as $U(1+T_{\mathrm{HS}})$ for some unitary operator $U$ and some Hilbert-Schmidt operator $T_{\mathrm{HS}}$.
+> Suppose $\G$ is a real symplectic Hilbert space, then we write $\newcommand{\RSP}{\mathrm{Sp}_{\text{res}}}\RSP(\G)$ for the *restricted symplectic group*, that is, a [[Groups, Order and Subgroups#^1ccb07|subgroup]] of $\mathrm{Sp}(\G)$ such that the operators can be written as $U(1+T_{\mathrm{HS}})$ for some unitary operator $U$ and some [[Compact Operators#^5bb53a|Hilbert-Schmidt]] operator $T_{\mathrm{HS}}$.
 
 ## Application: Embed $\newcommand{\Diff}{\mathrm{Diff}}\Diff^+(S^1)$ into $\RSP(\H)$
 
