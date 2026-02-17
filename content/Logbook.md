@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 18 Feb 2026
+- Updates: [[The Symplectic Hilbert Space]], [[The Semigroup of Annuli]].
+
 ## 21 Jan 2026
 - Updates: [[Conformal Welding Problem]], [[Manifolds and Atlases]], [[The Semigroup of Annuli]].
 
