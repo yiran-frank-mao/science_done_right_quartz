@@ -11,10 +11,12 @@ In [[The Integrability Theorem|the integrability theorem]], we demonstrated that
 ## The Semigroup of Annuli
 
 > [!definition] Semigroup of Annuli
-> The *semigroup of annuli*, denoted $\newcommand{\Ann}{\mathrm{Ann}}\Ann$, consists of equivalence classes of triples $\newcommand{\phiin}{\gamma_{\text{in}}}\newcommand{\phiout}{\gamma_{\text{out}}}(\Sigma, \phiin, \phiout)$ where $\Sigma$ is a Riemann surface biholomorphic to an annulus, and $\phiin\colon S^{1}\to \partial_{\text{in}} \Sigma$, $\phiout\colon S^{1}\to \partial_{\text{out}} \Sigma$ are parametrizations of the inner and outer boundary components of $\Sigma$, respectively. Both $\phiin$ and $\phiout$ are orientation-preserving smooth diffeomorphisms onto their images.
+> The *semigroup of annuli*, denoted $\newcommand{\Ann}{\mathrm{Ann}}\Ann$, consists of equivalence classes of triples $\newcommand{\phiin}{\gamma_{-}}\newcommand{\phiout}{\gamma_{+}}(\Sigma, \phiin, \phiout)$ where $\Sigma$ is a Riemann surface biholomorphic to an annulus, and $\phiin\colon S^{1}\to \partial_{-}\Sigma$, $\phiout\colon S^{1}\to \partial_{+} \Sigma$ are parametrizations of the inner and outer boundary components of $\Sigma$, respectively. Both $\phiin$ and $\phiout$ are orientation-preserving smooth diffeomorphisms onto their images.
 > Two annuli $(\Sigma, \phiin, \phiout)$ and $(\Sigma', \phiin', \phiout')$ are considered equivalent if there exists a biholomorphic map $f\colon \Sigma\to \Sigma'$ such that $f\circ \phiin = \phiin'$ and $f\circ \phiout = \phiout'$.
 > The semigroup operation is defined by sewing annuli along their boundaries. Given two annuli $(\Sigma, \phiin, \phiout)$ and $(\Sigma', \phiin', \phiout')$, their product is obtained by identifying the outer boundary of $\Sigma$ with the inner boundary of $\Sigma'$ via the parametrizations $\phiout$ and $\phiin'$. The resulting annulus is $(\Sigma\sqcup \Sigma' / \phiin'(e^{i\theta})\sim\phiout(e^{i\theta}), \phiin,\phiout')$, and we shall simply denote it by $\Sigma\cdot \Sigma'$.
 > 
+
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Round_annulus.svg" alt="Round_annulus" style="width:55%;"/>
 
 > [!remark]+
 > What we really care about here is not the plain annuli, but the rigged annuli that including the parametrisation information of the boundaries (riggings). If you forget the boundary parametrisations and look only at conformal isomorphism classes of annuli, then every annulus is conformally equivalent to a round annulus $\Sigma_{r}​=\{r<∣z∣<1\}$ $(0<r<1)$, and its conformal type is determined by a single real number $r$. 
