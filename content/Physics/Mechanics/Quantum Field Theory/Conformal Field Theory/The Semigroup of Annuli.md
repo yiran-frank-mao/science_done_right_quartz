@@ -16,7 +16,7 @@ In [[The Integrability Theorem|the integrability theorem]], we demonstrated that
 > The semigroup operation is defined by sewing annuli along their boundaries. Given two annuli $(\Sigma, \phiin, \phiout)$ and $(\Sigma', \phiin', \phiout')$, their product is obtained by identifying the outer boundary of $\Sigma$ with the inner boundary of $\Sigma'$ via the parametrizations $\phiout$ and $\phiin'$. The resulting annulus is $(\Sigma\sqcup \Sigma' / \phiin'(e^{i\theta})\sim\phiout(e^{i\theta}), \phiin,\phiout')$, and we shall simply denote it by $\Sigma\cdot \Sigma'$.
 > 
 
-<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Round_annulus.svg" alt="Round_annulus" style="width:55%;"/>
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/some_annulus.svg" alt="some_annulus" style="width:50%;"/> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Round_annulus.svg" alt="Round_annulus" style="width:55%;"/>
 
 > [!remark]+
 > What we really care about here is not the plain annuli, but the rigged annuli that including the parametrisation information of the boundaries (riggings). If you forget the boundary parametrisations and look only at conformal isomorphism classes of annuli, then every annulus is conformally equivalent to a round annulus $\Sigma_{r}​=\{r<∣z∣<1\}$ $(0<r<1)$, and its conformal type is determined by a single real number $r$. 
