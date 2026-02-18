@@ -1,20 +1,20 @@
 ## The Heisenberg Algebra
 
 > [!definition] Heisenberg (Oscillator) Algebra
-> The *Heisenberg algebra* or *Oscillator Algebra* $\newcommand{\vir}{\mathfrak{vir}}\newcommand{\H}{\mathfrak{H}}\H$ is a [[Complex Numbers#^a81924|complex]] [[Lie Algebra#^5007ba|Lie algebra]] with a basis $\newcommand{\R}{\mathbb{R}}\newcommand{\Z}{\mathbb{Z}}\{\hbar 1_{\H}\}\cup\{a_{n}\}_{n\in\Z}$ and Lie bracket defined by $$[\hbar 1_{\H}, a_{n}]=0,\quad [a_{m},a_{n}]=m\delta_{m,-n}\hbar 1_{\H}.$$
+> The *Heisenberg algebra* or *Oscillator Algebra* $\newcommand{\vir}{\mathfrak{vir}}\newcommand{\Hei}{\mathfrak{H}}\Hei$ is a [[Complex Numbers#^a81924|complex]] [[Lie Algebra#^5007ba|Lie algebra]] with a basis $\newcommand{\R}{\mathbb{R}}\newcommand{\Z}{\mathbb{Z}}\{\hbar 1_{\Hei}\}\cup\{a_{n}\}_{n\in\Z}$ and Lie bracket defined by $$[\hbar 1_{\Hei}, a_{n}]=0,\quad [a_{m},a_{n}]=m\delta_{m,-n}\hbar 1_{\Hei}.$$
 > Here $\hbar$ is the reduced Planck constant, and is often set to $\newcommand{\C}{\mathbb{C}}1\in\C$ in mathematical treatments.
 
 The Heisenberg algebra exists by the following construction:
 
 > [!proposition]
-> A [[Central Extensions of Lie Algebras#^c4c058|central extension]] of the abelian algebra of trigonometric polynomials on the circle, i.e., functions $S^{1}\to \C$ with finite Fourier series, forms a Heisenberg algebra through the Lie bracket $$[f,g]:=\left(\frac{1}{2\pi}\int_{0}^{2\pi}f'(t)g(t)\dd t \right) \cdot z,$$
+> A [[Central Extensions of Lie Algebras#^c4c058|central extension]] of the abelian algebra of trigonometric polynomials on the circle, i.e., functions $S^{1}\to \C$ with finite Fourier series, forms a Heisenberg algebra through the Lie bracket $$\newcommand{\dd}{\,\mathrm{d}} [f,g]:=\left(\frac{1}{2\pi}\int_{0}^{2\pi}f'(t)g(t)\dd t \right) \cdot z,$$
 > where $z$ is a central element.
 > 
 
-*Proof*  Let us denote the standard basis elements as $e_{n}=x\mapsto x^{n}$. Then $$[e_{m},e_{n}]=\frac{1}{2\pi}\int_{0}^{2\pi} e^{i(m+n)t}im\dd t \cdot z = im\delta_{m,-n}z.$$Setting $a_{n}\mapsto e_{n}$ and $1_{\H}\mapsto z$ gives the desired isomorphism. $\square$
+*Proof*  Let us denote the standard basis elements as $e_{n}=x\mapsto x^{n}$. Then $$[e_{m},e_{n}]=\frac{1}{2\pi}\int_{0}^{2\pi} e^{i(m+n)t}im\dd t \cdot z = im\delta_{m,-n}z.$$Setting $a_{n}\mapsto e_{n}$ and $1_{\Hei}\mapsto z$ gives the desired isomorphism. $\square$
 
-> [!definition] Fock Space Representation of $\H$
-> Introduce the [[The Fock Space#^ecdf5b|bosonic Fock space]] $\newcommand{\F}{\mathcal{F}}\F=\C[x_{1},x_{2},\dots]$, the space of polynomials in infinitely many variables. Given $\lambda\in\C$, define the representation $(\rho_{\lambda},\F)$ of $\H$ through $$\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}\rho_{\lambda}(a_{n})=\varepsilon(n)\pddf{}{x_{n}},\quad \rho_{\lambda}(a_{-n})=f\mapsto \varepsilon(n)^{-1}nx_{n}f,\quad \rho_{\lambda}(a_{0})=\lambda I,\quad \rho_{\lambda}(1_{\H})=I, $$for all $n>0$ and some $\varepsilon\colon \Z\to \R$. Usually we set $\varepsilon(n)=n$ for all $n\in\Z$.
+> [!definition] Fock Space Representation of $\Hei$
+> Introduce the [[The Fock Space#^ecdf5b|bosonic Fock space]] $\newcommand{\F}{\mathcal{F}}\F=\C[x_{1},x_{2},\dots]$, the space of polynomials in infinitely many variables. Given $\lambda\in\C$, define the representation $(\rho_{\lambda},\F)$ of $\Hei$ through $$\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}\rho_{\lambda}(a_{n})=\varepsilon(n)\pddf{}{x_{n}},\quad \rho_{\lambda}(a_{-n})=f\mapsto \varepsilon(n)^{-1}nx_{n}f,\quad \rho_{\lambda}(a_{0})=\lambda I,\quad \rho_{\lambda}(1_{\Hei})=I, $$for all $n>0$ and some $\varepsilon\colon \Z\to \R$. Usually (and here) we set $\varepsilon(n)=n$ for all $n\in\Z$.
 
 > [!proposition]
 > The representation $(\rho_{\lambda},\F)$ is irreducible for all $\lambda\in\R$ and $\varepsilon\colon \Z\to \R$ such that $\varepsilon(n)\neq0$ for all $n\in\Z$.
@@ -24,9 +24,9 @@ The Heisenberg algebra exists by the following construction:
 
 ## Oscillator Representation of $\vir$
 
-> [!proposition] $\vir$ Subalgebra in $U(\H)$
-> In [$U(\H)$](Universal%20Enveloping%20Algebra#%5E3bf4c7.md), we can define a subalgebra $\mathfrak{v}$ which is spanned by $$d_{n}:=\frac{1}{2}\sum_{m\in\Z} \colon a_{n-m}a_{m}\colon$$where $\colon a_{m}a_{n}\colon =a_{m}a_{n}$ if $m\leq n$ and $\colon a_{m}a_{n}\colon =a_{n}a_{m}$ otherwise (this is called the *normal ordering*). 
-> Then this subalgebra is isomorphic to the [[Witt Algebra and Virasoro Algebra#^61c2ec|Virasoro algebra]] $\vir$ through the map $\theta\colon \vir \to \mathfrak{v}$, $L_{n}\mapsto d_{n}$ and $\kappa\mapsto 1_{\H}$.
+> [!proposition] $\vir$ Subalgebra in $U(\Hei)$
+> In [$U(\Hei)$](Universal%20Enveloping%20Algebra#%5E3bf4c7.md), we can define a subalgebra $\mathfrak{v}$ which is spanned by $$d_{n}:=\frac{1}{2}\sum_{m\in\Z} \colon a_{n-m}a_{m}\colon$$where $\colon a_{m}a_{n}\colon =a_{m}a_{n}$ if $m\leq n$ and $\colon a_{m}a_{n}\colon =a_{n}a_{m}$ otherwise (this is called the *normal ordering*). 
+> Then this subalgebra is isomorphic to the [[Witt Algebra and Virasoro Algebra#^61c2ec|Virasoro algebra]] $\vir$ through the map $\theta\colon \vir \to \mathfrak{v}$, $L_{n}\mapsto d_{n}$ and $\kappa\mapsto 1_{\Hei}$.
 > 
 
 > [!definition] Oscillator Representation of $\vir$
@@ -36,7 +36,7 @@ The Heisenberg algebra exists by the following construction:
 
 > [!proposition]
 > The operators $\{\Phi_{\lambda,\mu}(L_{n})\}_{n\in\Z}$ satisfy 
-> 1. $\Phi_{\lambda,\mu}(L_{0})\cdot 1 = \frac{1}{2}(\lambda^{2}+\mu^{2})$;
+> 1. $\Phi_{\lambda,\mu}(L_{0})\cdot 1_{\F} = \frac{1}{2}(\lambda^{2}+\mu^{2})$;
 > 2. $[\Phi_{\lambda,\mu}(L_{n}),\Phi_{\lambda,\mu}(L_{m})]=(n-m)\Phi_{\lambda,\mu}(L_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}(1+12\mu^{2})I$;
 > 3. If $f,g\in\F$ and $x\in \vir$, then $\langle \Phi_{\lambda,\mu}(x)f,g \rangle=\langle f, \Phi_{\bar{\lambda},\bar{\mu}}(x^{*})g \rangle$.
 > 
@@ -44,7 +44,7 @@ The Heisenberg algebra exists by the following construction:
 > 
 
 *Proof*
-1. $$\begin{aligned}\Phi_{\lambda,\mu}(L_{0})\cdot 1 &= \rho_{\lambda}\left(\frac{1}{2}\sum_{j\in\Z} \colon a_{-j}a_{j}\colon\right)\cdot 1 + in^{2}\mu \pddf{}{x_{n}} 1 + \frac{1}{2}\mu^{2}\\&= \sum_{j\in\Z_{\geq_{0}}} \rho_{\lambda}(a_{-j}a_{j}) \cdot 1+ \frac{1}{2}\rho_{\lambda}(a_{0}a_{0})\cdot 1 +  \frac{1}{2}\mu^{2} \\&= \sum_{j\in\Z_{\geq_{0}}}x_{j} n \pddf{}{x_{j}}\cdot 1 + \frac{1}{2}\lambda^{2}+\frac{1}{2}\mu^{2} \\ &= \frac{1}{2}(\lambda^{2}+\mu^{2}).\end{aligned}$$
+1. $$\begin{aligned}\Phi_{\lambda,\mu}(L_{0})\cdot 1 &= \rho_{\lambda}\left(\frac{1}{2}\sum_{j\in\Z} \colon a_{-j}a_{j}\colon\right)\cdot 1 + \frac{1}{2}\mu^{2}\\&= \sum_{j\in\Z_{\geq_{0}}} \rho_{\lambda}(a_{-j}a_{j}) \cdot 1+ \frac{1}{2}\rho_{\lambda}(a_{0}a_{0})\cdot 1 +  \frac{1}{2}\mu^{2} \\&= \sum_{j\in\Z_{\geq_{0}}}x_{j} n \pddf{}{x_{j}}\cdot 1 + \frac{1}{2}\lambda^{2}+\frac{1}{2}\mu^{2} \\ &= \frac{1}{2}(\lambda^{2}+\mu^{2}).\end{aligned}$$
 2. $$\begin{aligned}[][\Phi_{\lambda,\mu}(L_{n}),\Phi_{\lambda,\mu}(L_{m})]&=[\rho_{\lambda}(d_{n}),\rho_{\lambda}(d_{m})]+im\mu[\rho_{\lambda}(d_{n}),\rho_{\lambda}(a_{m})]\\&\quad+in\mu[\rho_{\lambda}(a_{n}),\rho_{\lambda}(d_{m})]-mn\mu^{2}[\rho_{\lambda}(a_{n}),\rho_{\lambda}(a_{m})]\\&= (n-m)\rho_{\lambda}(d_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}I\\&\quad+i\mu(n^{2}-m^{2})\rho_{\lambda}(a_{m+n})-mn\mu^{2}n\delta_{m,-n}I\\&=(n-m)\Phi_{\lambda,\mu}(L_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}(1+12\mu^{2})I.\end{aligned}$$
 
 $\square$
@@ -58,4 +58,4 @@ $\square$
 
  > [!remark]
  > In fact, the irreducible highest representation $L(h,c)$ is also unitarizable for $c\geq 1$ and $0\leq h<(c-1)/24$, but we do not have an explicit oscillator construction yet. This is still an open problem in mathematics.
-> 
+>
