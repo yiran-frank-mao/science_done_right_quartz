@@ -52,7 +52,7 @@ $\quad$
 ## The Trace Class Operators
 
 > [!definition] Trace Class Operator
-> A bounded linear operator $T$ on a separable Hilbert space $\H$ is called a *trace class operator* if $$\sum_{i=1}^{\infty}\langle s_{i}(T) <\infty,$$where the positive operator $|T|:=\sqrt{T^{*}T}$, and $s_{i}(T)$ are the singular values of $T$. In this case, the trace norm is defined as $$\|T\|_{\mathrm{tr}}:=\sum_{i=1}^{\infty}s_{i}(T).$$ ^3f3e2e
+> A bounded linear operator $T$ on a separable Hilbert space $\H$ is called a *trace class operator* if $$\sum_{i=1}^{\infty} s_{i}(T) <\infty,$$where the positive operator $|T|:=\sqrt{T^{*}T}$, and $s_{i}(T)$ are the singular values of $T$. In this case, the trace norm is defined as $$\|T\|_{\mathrm{tr}}:=\sum_{i=1}^{\infty}s_{i}(T).$$ ^3f3e2e
 
 > [!proposition]
 > The products of Hilbert–Schmidt operators are trace class.
