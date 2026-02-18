@@ -14,16 +14,15 @@ In [[The Integrability Theorem|the integrability theorem]], we demonstrated that
 > The *semigroup of annuli*, denoted $\newcommand{\Ann}{\mathrm{Ann}}\Ann$, consists of equivalence classes of triples $\newcommand{\phiin}{\gamma_{-}}\newcommand{\phiout}{\gamma_{+}}(\Sigma, \phiin, \phiout)$ where $\Sigma$ is a Riemann surface biholomorphic to an annulus, and $\phiin\colon S^{1}\to \partial_{-}\Sigma$, $\phiout\colon S^{1}\to \partial_{+} \Sigma$ are parametrizations of the inner and outer boundary components of $\Sigma$, respectively. Both $\phiin$ and $\phiout$ are orientation-preserving smooth diffeomorphisms onto their images.
 > Two annuli $(\Sigma, \phiin, \phiout)$ and $(\Sigma', \phiin', \phiout')$ are considered equivalent if there exists a biholomorphic map $f\colon \Sigma\to \Sigma'$ such that $f\circ \phiin = \phiin'$ and $f\circ \phiout = \phiout'$.
 > The semigroup operation is defined by sewing annuli along their boundaries. Given two annuli $(\Sigma, \phiin, \phiout)$ and $(\Sigma', \phiin', \phiout')$, their product is obtained by identifying the outer boundary of $\Sigma$ with the inner boundary of $\Sigma'$ via the parametrizations $\phiout$ and $\phiin'$. The resulting annulus is $(\Sigma\sqcup \Sigma' / \phiin'(e^{i\theta})\sim\phiout(e^{i\theta}), \phiin,\phiout')$, and we shall simply denote it by $\Sigma\cdot \Sigma'$.
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/some_annulus.svg" alt="some_annulus" style="width:55%;"/> 
 > 
-
-<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/some_annulus.svg" alt="some_annulus" style="width:50%;"/> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Round_annulus.svg" alt="Round_annulus" style="width:55%;"/>
 
 > [!remark]+
 > What we really care about here is not the plain annuli, but the rigged annuli that including the parametrisation information of the boundaries (riggings). If you forget the boundary parametrisations and look only at conformal isomorphism classes of annuli, then every annulus is conformally equivalent to a round annulus $\Sigma_{r}​=\{r<∣z∣<1\}$ $(0<r<1)$, and its conformal type is determined by a single real number $r$. 
 
 Clearly, the welding of two annuli remains an annulus topologically, we need to verify that the resulting annulus can be given a complex structure. This is discussed in [[Conformal Welding Problem|conformal welding problem]].
 Once we checked that $\Ann$ is a well-defined semigroup, for any element in $\Ann$, we can pick a standard representative, i.e., a round annulus $(\Sigma_{e^{-t}}, \phiin,\phiout)​$ $(t>0)$ such that $\phiin(1)=1$ and $\phiout(1)=1$.
-
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Round_annulus.svg" alt="Round_annulus" style="width:50%;"/>
 
 and represent it by a formal product $$\phiin \circ \sigma_{t} \circ \phiout^{-1}\colon S^{1}\to S^{1}$$where $\sigma_{t}(z)=e^{-t}z$ is the contraction map. For example, if we have two annuli represented by $r_{\alpha}\sigma_{t}r_{\beta}$ and $r_{\alpha'}\sigma_{s}r_{\beta'}$, then their product is represented by $$\phi_{1}^{-1}\circ \sigma_{t_{1}+t_{2}} \circ \psi_{2}.$$
 
