@@ -3,7 +3,7 @@ Given a complex [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\C}{\mathb
 2. An [[Inner Products#^ad5686|inner product]] $\newcommand{\llangle}{\left\langle\!\left\langle}\newcommand{\rrangle}{\right\rangle\!\right\rangle}\llangle \cdot, \cdot \rrangle$, extending the real part of $\langle\cdot,\cdot\rangle$ sesquilinearly, makes $\H$ a Hilbert space: $$\llangle \lambda x,\eta y\rrangle := \lambda \overline{\eta}  \Re\langle x,y \rangle.$$
 3. A [[Symplectic Structures#^b558c2|symplectic form]] $\omega$, extending the imaginary part of $\langle\cdot,\cdot\rangle$ bilinearly: $$\omega(\lambda x,\eta y):= \lambda \eta \Im \langle x,y\rangle.$$
 4. A [[Sesquilinear Forms#^5a2a7f|skew Hermitian form]] $\Lambda$, extending the imaginary part of $\langle\cdot,\cdot\rangle$ sesquilinearly: $$\Lambda(\lambda x,\eta y) := \lambda \overline{\eta} \Im \langle x, y\rangle.$$
-5. Extend $J$ to $\H$ linearly, so it becomes a complex structure on $\H$: $$J(\lambda x)=\lambda J(x).$$
+5. Extend $J$ to $\H$ linearly, so it becomes a [[Almost Complex Structures#^5f4098|complex structure]] on $\H$: $$J(\lambda x)=\lambda J(x).$$
 
 > [!proposition]
 > Let $\H^{\pm}:=\ker (i \pm J)$, then $\H=\H^{+}\oplus\H^{-}$, and $\H^{\pm}$ are [[Linear Symplectic Geometry#^651b51|Lagrangian]].
