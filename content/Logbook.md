@@ -3,6 +3,10 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 19 Feb 2026
+- Updates: [[Heisenberg Algebra and Fock Models]], [[The Fock Space]], [[The Symplectic Hilbert Space]].
+
+
 ## 18 Feb 2026
 - Updates: [[The Symplectic Hilbert Space]], [[The Semigroup of Annuli]].
 
