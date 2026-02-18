@@ -18,13 +18,11 @@ In [[The Integrability Theorem|the integrability theorem]], we demonstrated that
 > 
 
 > [!remark]+
-> What we really care about here is not the plain annuli, but the rigged annuli that including the parametrisation information of the boundaries (riggings). If you forget the boundary parametrisations and look only at conformal isomorphism classes of annuli, then every annulus is conformally equivalent to a round annulus $\Sigma_{r}​=\{r<∣z∣<1\}$ $(0<r<1)$, and its conformal type is determined by a single real number $r$. 
+> What we really care about here is not the plain annuli, but the rigged annuli that including the parametrisation information of the boundaries (riggings). If you forget the boundary parametrisations and look only at conformal isomorphism classes of annuli, then every annulus is conformally equivalent to a round annulus $A_{t}=\{z:e^{-t}<∣z∣<1\}$, and its conformal type is determined by a single real number $t$. 
 
 Clearly, the welding of two annuli remains an annulus topologically, we need to verify that the resulting annulus can be given a complex structure. This is discussed in [[Conformal Welding Problem|conformal welding problem]].
-Once we checked that $\Ann$ is a well-defined semigroup, for any element in $\Ann$, we can pick a standard representative, i.e., a round annulus $(\Sigma_{e^{-t}}, \phiin,\phiout)​$ $(t>0)$ such that $\phiin(1)=1$ and $\phiout(1)=1$.
+Once we checked that $\Ann$ is a well-defined semigroup, for any $[(\Sigma,\gamma_{-},\gamma_{+})]\in \Ann$, we can pick a standard representative, i.e., a round annulus $(A_{t}, \bgamma_{-},\bgamma_{+})​$ $(t>0)$ such that $\bgamma_{-}(1)=1$ and $\bgamma_{+}(1)=1$.
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/Round_annulus.svg" alt="Round_annulus" style="width:50%;"/>
-
-and represent it by a formal product $$\phiin \circ \sigma_{t} \circ \phiout^{-1}\colon S^{1}\to S^{1}$$where $\sigma_{t}(z)=e^{-t}z$ is the contraction map. For example, if we have two annuli represented by $r_{\alpha}\sigma_{t}r_{\beta}$ and $r_{\alpha'}\sigma_{s}r_{\beta'}$, then their product is represented by $$\phi_{1}^{-1}\circ \sigma_{t_{1}+t_{2}} \circ \psi_{2}.$$
 
 > [!proposition]
 > $\Ann$ is an complex Fréchet manifold, inheriting the complex structure from $C^{\infty}(S^{1})\oplus C^{\infty}(S^{1})$.
