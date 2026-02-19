@@ -4,7 +4,7 @@ updated: 2024-10-21
 completed: true
 ---
 ## 19 Feb 2026
-- Updates: [[Heisenberg Algebra and Fock Models]], [[The Fock Space]], [[The Symplectic Hilbert Space]].
+- Updates: [[Heisenberg Algebra and Fock Models]], [[The Fock Space]], [[The Symplectic Hilbert Space]], [[Compact Operators]].
 
 
 ## 18 Feb 2026
