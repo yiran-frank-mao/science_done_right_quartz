@@ -74,16 +74,5 @@ The conditions for the Hahn-Banach theorem are met. Therefore, there exists a li
 *Proof Sketch of the Hahn-Banach Theorem*
 The full proof requires [[Order#^11e467|Zorn's Lemma]] to extend the functional from a subspace to the whole space by considering a partially ordered set of all valid extensions.  The key step, however, is to show that a functional can be extended by just one dimension.
 Let $L: Y \to \R$ be the functional satisfying the theorem's hypotheses. Pick an element $x_0 \in X \setminus Y$.  We want to extend $L$ to the subspace $Y_1 = \text{span}\{Y, x_0\}$.  Any element in $Y_1$ can be uniquely written as $y + tx_0$ for $y \in Y$ and $t \in \R$.
-For the extension, which we'll also call $L$, to be linear, it must have the form:
-$$ L(y + tx_0) = L(y) + t \cdot L(x_0) $$
-We need to define the value $L(x_0)$. Let's call this value $\gamma \in \R$.  Our task is to choose a $\gamma$ such that the extension condition $L(y + tx_0) \le p(y + tx_0)$ holds for all $y \in Y, t \in \R$.
-
-By considering cases for $t>0$ and $t<0$ and rearranging, we find that $\gamma$ must satisfy for all $y, z \in Y$:
-$$ L(z) - p(z-x_0) \le \gamma \le p(y+x_0) - L(y) $$
-Such a $\gamma$ exists if and only if the supremum of the left side is less than or equal to the infimum of the right side.  This is equivalent to showing that for all $y, z \in Y$:
-$$ L(z) - p(z-x_0) \le p(y+x_0) - L(y) \iff L(y+z) \le p(y+x_0) + p(z-x_0) $$
-We know that $y+z \in Y$, so $L(y+z) \le p(y+z)$.  Also, by the subadditivity of $p$:
-$$ p(y+z) = p((y+x_0) + (z-x_0)) \le p(y+x_0) + p(z-x_0) $$
-Putting these together:
-$$ L(y+z) \le p(y+z) \le p(y+x_0) + p(z-x_0) $$
-The inequality holds, so a valid choice for $\gamma$ exists.  This completes the one-step extension. Zorn's Lemma is then invoked to show this process can be continued to cover the entire space $X$. $\square$
+For the extension, which we'll also call $L$, to be linear, it must have the form:$$ L(y + tx_0) = L(y) + t \cdot L(x_0) $$We need to define the value $L(x_0)$. Let's call this value $\gamma \in \R$.  Our task is to choose a $\gamma$ such that the extension condition $L(y + tx_0) \le p(y + tx_0)$ holds for all $y \in Y, t \in \R$.
+By considering cases for $t>0$ and $t<0$ and rearranging, we find that $\gamma$ must satisfy for all $y, z \in Y$: $$ L(z) - p(z-x_0) \le \gamma \le p(y+x_0) - L(y). $$Such a $\gamma$ exists if and only if the supremum of the left side is less than or equal to the infimum of the right side.  This is equivalent to showing that for all $y, z \in Y$: $$ L(z) - p(z-x_0) \le p(y+x_0) - L(y) \iff L(y+z) \le p(y+x_0) + p(z-x_0). $$We know that $y+z \in Y$, so $L(y+z) \le p(y+z)$.  Also, by the subadditivity of $p$: $$ p(y+z) = p((y+x_0) + (z-x_0)) \le p(y+x_0) + p(z-x_0). $$Putting these together: $$ L(y+z) \le p(y+z) \le p(y+x_0) + p(z-x_0). $$The inequality holds, so a valid choice for $\gamma$ exists.  This completes the one-step extension. Zorn's Lemma is then invoked to show this process can be continued to cover the entire space $X$. $\square$
