@@ -24,7 +24,7 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > where
 > 1. $K^{\top} =K$, $M^{\top}= M$;
 > 2. $\newcommand{\op}{\text{op}}\|\Omega\|_{\op}\leq 1$, $\|K\|_{\op}<1$, $\|M\|_{\text{op}}<1$;
-> 3. $K$ and $M$ are [[Compact Operators#^5bb53a|Hilbert-Schmidt]],
+> 3. $K$ and $M$ are [[Hilbert-Schmidt Operators#^5bb53a|Hilbert-Schmidt]],
 > 
 > then $T$ is called a *correct operator*. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$, under the multiplication defined by $$\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix}$$
 
