@@ -9,6 +9,7 @@ Functional Analysis is the study of [[Vector Spaces#^f4b63e|vector spaces]] endo
 #### Bounded Operators
 [[Orthogonality and Bounded Linear Maps]]
 [[Adjoints and Riesz Representation Theorem]]
+[[Hilbert-Schmidt Operators]]
 [[Compact Operators]]
 #### Unbounded Operators
 [[Unbounded Operators]]

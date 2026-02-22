@@ -16,7 +16,9 @@
 > [!definition] Bosonic Fock Space
 > The *bosonic Fock space* over a Hilbert space $\H$ is the [[Hilbert Spaces#^ae0212|Hilbert space]] completion defined as the direct sum of the symmetric powers of $\H$: $$\newcommand{\F}{\mathcal{F}}\F_{+}(\H):=\bigoplus_{i=0}^{\infty}S^{i} \H,$$
 > with inner product $$\langle x^{\otimes n}, y^{\otimes m} \rangle = \delta_{m,n} n! \langle x,y\rangle^{n}. $$
-> In other words, it is the full Fock space modulo the commutation relations $x\otimes y = y\otimes x$ for all $x,y\in \H$. ^ecdf5b
+> In other words, it is the full Fock space modulo the commutation relations $x\otimes y = y\otimes x$ for all $x,y\in \H$. 
+> On the bosonic Fock space, we can define annihilator $\hat{a}$ and creator $\hat{a}^{\dagger}$ as follows: $$\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}} \hat{a}_{n}=\varepsilon(n)\pddf{}{x_{n}},\quad \hat{a}^{\dagger}_{n}=f\mapsto \varepsilon(n)^{-1}nx_{n}f, $$ for all $n>0$ and some $\varepsilon\colon \Z\to \R$. Usually (and here) we set $\varepsilon(n)=n$ for all $n\in\Z$.
+> ^ecdf5b
 
 > [!definition] Segal–Bargmann Space
 > The *Segal–Bargmann space* is the space of holomorphic functions 
