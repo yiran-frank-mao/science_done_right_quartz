@@ -21,7 +21,7 @@ tags:
 <u><b>e.g.</b></u>
 1. The [complex numbers $\mathbb{C}$](Complex%20Numbers#^a81924) with the involution being [[Complex Numbers#^50b19e|conjugation]] is a C\*-algebra.
 2. For a locally compact Hausdorff space $X$, the algebra $C_0(X)$ of continuous complex-valued functions vanishing at infinity is a C\*-algebra with pointwise operations and the involution $f^*(x) = \overline{f(x)}$. The norm is the supremum norm.
-3. For a Hilbert space $H$, the algebra $B(H)$ of bounded linear operators on $H$ is a unital C\*-algebra, where the involution is the [[Adjoints and Riesz Representation Theorem#^671f74|operator adjoint]].
+3. For a Hilbert space $\H$, the algebra $B(\H)$ of bounded linear operators on $H$ is a unital C\*-algebra, where the involution is the [[Adjoints and Riesz Representation Theorem#^671f74|operator adjoint]].
 $\quad$
  
 > [!definition] $\ast$-Subalgebra & C*-Subalgebra
