@@ -41,8 +41,9 @@ Here is a summary of the roles of these operators:
 | Number operator $\hat{N}=\hat{a}_{+} \hat{a}_{-}$ | Counts energy levels |
 | Creation (raising) operator $\hat{a}_{+}$         | Raises energy level  |
 | Annihilation (lowering) operator $\hat{a}_-$      | Lowers energy level  |
+|                                                   |                      |
 
-From these operators, one forms quadratic combinations:$$M_{+}:=\hat{a}_{+}^{2},\quad M_{-}:=\hat{a}_{-}^{2},\quad M_{0}:=\hat{a}_{+}\hat{a}_{-}+\hat{a}_{-}\hat{a}_{+}. $$These quadratic combinations satisfy the commutation relations of the Lie algebra [$\mathfrak{sl}_{2}(\C)$](General%20and%20Special%20Linear%20Groups#^4c1fe6). i.e., $$[M_0,M_+]=2M_+,\quad[M_0,M_-]=-2M_-,\quad[M_+,M_-]=M_0.$$
+From these operators, one forms quadratic combinations:$$M_{+}:=\hat{a}_{+}^{2},\quad M_{-}:=\hat{a}_{-}^{2},\quad M_{0}:=\hat{a}_{+}\hat{a}_{-}+\hat{a}_{-}\hat{a}_{+}. $$These quadratic combinations satisfy the commutation relations of the Lie algebra [$\newcommand{\C}{\mathbb{C}}\mathfrak{sl}_{2}(\C)$](General%20and%20Special%20Linear%20Groups#^4c1fe6). i.e., $$[M_0,M_+]=2M_+,\quad[M_0,M_-]=-2M_-,\quad[M_+,M_-]=M_0.$$
 
 ## Non-Stationary States
 

@@ -13,8 +13,6 @@ e.g.
 > The space of all Hilbert-Schmidt operators, denoted $B_{\HS}(\H)$ or $S_{2}(\H)$, is an two-sided $*$-ideal in the [[Normed and Banach Algebras#^040470|Banach algebra]] $B(\H)$. Moreover, $B_{\HS}(\H)$ is isometrically isomorphic to the [[Hilbert Spaces#^ae0212|Hilbert space]] tensor product $\overline{\H} \otimes \H$, where $\overline{\H}$ is the conjugate Hilbert space of $\H$.
 > 
 
-
-
 > [!definition] Integral Operator
 > On $\newcommand{\R}{\mathbb{R}}L^{2}(\R^d)$, we can define an operator $\newcommand{\dd}{\,\mathrm{d}}T_{K}\colon L^{2}(\R^{d})\to L^{2}(\R^{d})$ by the formula $$T_{K}(f):=\int_{\R^{d}} K(x,y)f(y)\dd y,$$ we call it an *integral operator* with associated *kernel* $K\colon \R^{d}\times\R^{d}\to\R$, where $K$ is a measurable function such that $\int_{\R^{d}}|K(x,y)|^{2}\dd y<\infty$ for almost every $x\in\R^{d}$.
 > 

@@ -31,22 +31,22 @@ The Heisenberg algebra exists by the following construction:
 > 
 
 > [!definition] Oscillator Representation of $\vir$
-> We now define a family of representations $(\Phi_{\lambda,\mu},\F)$ of $\vir$ for $\lambda,\mu\in\C$ by
->  $$\Phi_{\lambda,\mu}(L_{n}):=\frac{1}{2}(\rho_{\lambda}\circ \theta )(L_{n}) + i\mu n \rho_{\lambda}(a_{n}) + \frac{\mu^{2}}{2}\delta_{n,0}I, \quad \Phi_{\lambda,\mu}(\kappa)=I,$$for all $n\in\Z$. This is called the *oscillator representation* of $\vir$.
+> We now define a family of representations $(\varphi_{\lambda,\mu},\F)$ of $\vir$ for $\lambda,\mu\in\C$ by
+>  $$\varphi_{\lambda,\mu}(L_{n}):=\frac{1}{2}(\rho_{\lambda}\circ \theta )(L_{n}) + i\mu n \rho_{\lambda}(a_{n}) + \frac{\mu^{2}}{2}\delta_{n,0}I, \quad \varphi_{\lambda,\mu}(\kappa)=I,$$for all $n\in\Z$. This is called the *oscillator representation* of $\vir$.
 > 
 
 > [!proposition]
-> The operators $\{\Phi_{\lambda,\mu}(L_{n})\}_{n\in\Z}$ satisfy 
-> 1. $\Phi_{\lambda,\mu}(L_{0})\cdot 1_{\F} = \frac{1}{2}(\lambda^{2}+\mu^{2})$;
-> 2. $[\Phi_{\lambda,\mu}(L_{n}),\Phi_{\lambda,\mu}(L_{m})]=(n-m)\Phi_{\lambda,\mu}(L_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}(1+12\mu^{2})I$;
-> 3. If $f,g\in\F$ and $x\in \vir$, then $\langle \Phi_{\lambda,\mu}(x)f,g \rangle=\langle f, \Phi_{\bar{\lambda},\bar{\mu}}(x^{*})g \rangle$.
+> The operators $\{\varphi_{\lambda,\mu}(L_{n})\}_{n\in\Z}$ satisfy 
+> 1. $\varphi_{\lambda,\mu}(L_{0})\cdot 1_{\F} = \frac{1}{2}(\lambda^{2}+\mu^{2})$;
+> 2. $[\varphi_{\lambda,\mu}(L_{n}),\varphi_{\lambda,\mu}(L_{m})]=(n-m)\varphi_{\lambda,\mu}(L_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}(1+12\mu^{2})I$;
+> 3. If $f,g\in\F$ and $x\in \vir$, then $\langle \varphi_{\lambda,\mu}(x)f,g \rangle=\langle f, \varphi_{\bar{\lambda},\bar{\mu}}(x^{*})g \rangle$.
 > 
-> Therefore $(\Phi_{\lambda,\mu},\F)$ is a highest weight representation of $\vir$ with central charge $1+12\mu^{2}$ and highest weight $\frac{1}{2}(\lambda^{2}+\mu^{2})$. Moreover, it is unitary if $\lambda,\mu\in\R$.
+> Therefore $(\varphi_{\lambda,\mu},\F)$ is a highest weight representation of $\vir$ with central charge $1+12\mu^{2}$ and highest weight $\frac{1}{2}(\lambda^{2}+\mu^{2})$. Moreover, it is unitary if $\lambda,\mu\in\R$.
 > 
 
 *Proof*
-1. $$\begin{aligned}\Phi_{\lambda,\mu}(L_{0})\cdot 1 &= \rho_{\lambda}\left(\frac{1}{2}\sum_{j\in\Z} \colon a_{-j}a_{j}\colon\right)\cdot 1 + \frac{1}{2}\mu^{2}\\&= \sum_{j\in\Z_{\geq_{0}}} \rho_{\lambda}(a_{-j}a_{j}) \cdot 1+ \frac{1}{2}\rho_{\lambda}(a_{0}a_{0})\cdot 1 +  \frac{1}{2}\mu^{2} \\&= \sum_{j\in\Z_{\geq_{0}}}x_{j} n \pddf{}{x_{j}}\cdot 1 + \frac{1}{2}\lambda^{2}+\frac{1}{2}\mu^{2} \\ &= \frac{1}{2}(\lambda^{2}+\mu^{2}).\end{aligned}$$
-2. $$\begin{aligned}[][\Phi_{\lambda,\mu}(L_{n}),\Phi_{\lambda,\mu}(L_{m})]&=[\rho_{\lambda}(d_{n}),\rho_{\lambda}(d_{m})]+im\mu[\rho_{\lambda}(d_{n}),\rho_{\lambda}(a_{m})]\\&\quad+in\mu[\rho_{\lambda}(a_{n}),\rho_{\lambda}(d_{m})]-mn\mu^{2}[\rho_{\lambda}(a_{n}),\rho_{\lambda}(a_{m})]\\&= (n-m)\rho_{\lambda}(d_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}I\\&\quad+i\mu(n^{2}-m^{2})\rho_{\lambda}(a_{m+n})-mn\mu^{2}n\delta_{m,-n}I\\&=(n-m)\Phi_{\lambda,\mu}(L_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}(1+12\mu^{2})I.\end{aligned}$$
+1. $$\begin{aligned}\varphi_{\lambda,\mu}(L_{0})\cdot 1 &= \rho_{\lambda}\left(\frac{1}{2}\sum_{j\in\Z} \colon a_{-j}a_{j}\colon\right)\cdot 1 + \frac{1}{2}\mu^{2}\\&= \sum_{j\in\Z_{\geq_{0}}} \rho_{\lambda}(a_{-j}a_{j}) \cdot 1+ \frac{1}{2}\rho_{\lambda}(a_{0}a_{0})\cdot 1 +  \frac{1}{2}\mu^{2} \\&= \sum_{j\in\Z_{\geq_{0}}}x_{j} n \pddf{}{x_{j}}\cdot 1 + \frac{1}{2}\lambda^{2}+\frac{1}{2}\mu^{2} \\ &= \frac{1}{2}(\lambda^{2}+\mu^{2}).\end{aligned}$$
+2. $$\begin{aligned}[][\varphi_{\lambda,\mu}(L_{n}),\varphi_{\lambda,\mu}(L_{m})]&=[\rho_{\lambda}(d_{n}),\rho_{\lambda}(d_{m})]+im\mu[\rho_{\lambda}(d_{n}),\rho_{\lambda}(a_{m})]\\&\quad+in\mu[\rho_{\lambda}(a_{n}),\rho_{\lambda}(d_{m})]-mn\mu^{2}[\rho_{\lambda}(a_{n}),\rho_{\lambda}(a_{m})]\\&= (n-m)\rho_{\lambda}(d_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}I\\&\quad+i\mu(n^{2}-m^{2})\rho_{\lambda}(a_{m+n})-mn\mu^{2}n\delta_{m,-n}I\\&=(n-m)\varphi_{\lambda,\mu}(L_{n+m})+\delta_{m,-n}\frac{n^{3}-n}{12}(1+12\mu^{2})I.\end{aligned}$$
 
 $\square$
 
@@ -55,7 +55,7 @@ $\square$
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/region_c%3E%3Dn%2Ch%3E%3D(c-n)24.svg" alt="https://colab.research.google.com/drive/1VS1hO6PE_BWg3OOqn4JPkUYy8bahirjr?usp=drive_link" style="width:80%;"/>
 > 
 
-*Proof*  Since $L(nh,nc)\cong L(h,c)^{\otimes n}$ is unitarizable for all $n\in\Z_{> 0}$, given $nc=c'\geq n$ and $nh=h'\geq (c'-n)/24$, let $\mu=\sqrt{(c'-n)/12n}$ and $\lambda=\sqrt{2h'/n-\mu^{2}}$. Then $\lambda,\mu\in\R$ and $(\Phi_{\lambda,\mu},\F)\cong L(h',c')$ is a unitary highest weight representation of $\vir$ with central charge $nc$ and highest weight $nh$. $\square$
+*Proof*  Since $L(nh,nc)\cong L(h,c)^{\otimes n}$ is unitarizable for all $n\in\Z_{> 0}$, given $nc=c'\geq n$ and $nh=h'\geq (c'-n)/24$, let $\mu=\sqrt{(c'-n)/12n}$ and $\lambda=\sqrt{2h'/n-\mu^{2}}$. Then $\lambda,\mu\in\R$ and $(\varphi_{\lambda,\mu},\F)\cong L(h',c')$ is a unitary highest weight representation of $\vir$ with central charge $nc$ and highest weight $nh$. $\square$
 
  > [!remark]
  > In fact, the irreducible highest representation $L(h,c)$ is also unitarizable for $c\geq 1$ and $0\leq h<(c-1)/24$, but we do not have an explicit oscillator construction yet. This is still an open problem in mathematics.
