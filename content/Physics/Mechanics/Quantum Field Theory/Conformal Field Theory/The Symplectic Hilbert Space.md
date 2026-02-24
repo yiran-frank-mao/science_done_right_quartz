@@ -26,12 +26,20 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > 2. $\newcommand{\op}{\text{op}}\|\Omega\|_{\op}\leq 1$, $\|K\|_{\op}<1$, $\|M\|_{\text{op}}<1$;
 > 3. $K$ and $M$ are [[Hilbert-Schmidt Operators#^5bb53a|Hilbert-Schmidt]],
 > 
-> then $T$ is called a *correct operator*. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$, under the multiplication defined by $$\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix}$$
+> then $T$ is called a *correct operator*, and the above matrix is called the *associated matrix*, denoted as $\Omega_{T}$. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$ under the usual composition of operators.
+
+We can use the associated matrix to describe these operators in $\CSP(\H)$. Concretely, if $L$ is invertible, we can write 
+
 
 > [!proposition]
 > The graph of a correct operator is always Lagrangian. In fact, $W$ is Lagrangian if and only if $(1)$ holds.
 
 *Proof*  
+
+> [!proposition]
+> For some $T\in \CSP(\H)$, if $\Omega_{T}^{*}\Omega_{T}=1$, then $T\in\RSP(\H)$.
+> 
+
 
 ## The Symplectic Semigroup
 
