@@ -28,7 +28,11 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > 
 > then $T$ is called a *correct operator*, and the above matrix is called the *associated matrix*, denoted as $\Omega_{T}$. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$ under the usual composition of operators.
 
-We can use the associated matrix to describe these operators in $\CSP(\H)$. Concretely, if $L$ is invertible, we can write 
+%% TODO: What is the norm of \Omega? %%
+
+We can use the associated matrix to describe these operators in $\CSP(\H)$. Given an operator $T\in\CSP(\H)$ with the matrix presentation $$\begin{pmatrix} T_{+}^{+} & T_{+}^{-} \\ T_{-}^{+} & T_{-}^{-}  \end{pmatrix}$$with respect to the decomposition $\H=\H^{+} \oplus \H^{-}$, we have $$\begin{cases} T_{+}^{+} f_{+} + T_{+}^{-} f_{-}= (Tf)_{+}, \\ T_{-}^{+} f_{+} + T_{-}^{-} f_{-}= (Tf)_{-}.\end{cases}$$If $T_{-}^{-}$ is invertible, then we can rearrange the above equation to get $$\Omega_{T}=\begin{pmatrix} -(T_{-}^{-})^{-1} T_{-}^{+} & (T_{-}^{-})^{-1} \\   \end{pmatrix}$$
+
+Concretely, if $L$ is invertible, we can
 
 
 > [!proposition]
@@ -37,8 +41,15 @@ We can use the associated matrix to describe these operators in $\CSP(\H)$. Conc
 *Proof*  
 
 > [!proposition]
-> For some $T\in \CSP(\H)$, if $\Omega_{T}^{*}\Omega_{T}=1$, then $T\in\RSP(\H)$.
-> 
+> For some $T\in \CSP(\H)$, the followings are equivalent:
+> 1. $T\in \RSP(\H)$;
+> 2. 
+> 3. $\Omega_{T}^{*}\Omega_{T}=1$.
+> $\quad$
+
+*Proof*  
+
+For some $T\in \RSP(\H)$, we can write $T=U(1+T_{\HS})$ for some unitary $U$ and some Hilbert-Schmidt operator $T_{\HS}$. Then we have $$\Omega_{T}^{*}\Omega_{T}=\Omega_{1+T_{\HS}}^{*}\Omega_{1+T_{\HS}}=1,$$where the first equality follows from the fact that $\Omega_{U}$ is unitary, and the second equality follows from the fact that $\Omega_{1+T_{\HS}}$ is a Hilbert-Schmidt perturbation of the identity. $\square$
 
 
 ## The Symplectic Semigroup
@@ -51,7 +62,7 @@ We can use the associated matrix to describe these operators in $\CSP(\H)$. Conc
 Consider the real vector space $C^{\infty}(S^{1},\R)/\R$ of smooth real-valued functions on the circle modulo constants (i.e. mean-zero functions on the ), equipped with the (real) inner product $$\newcommand{\pv}{{\small{\operatorname{p.v.}}}}\newcommand{\dd}{\,\mathrm{d}} \langle f,g\rangle=\frac{1}{4\pi^{2}} \int_{0}^{2\pi} \pv \int^{2\pi}_{0} \cot\left(\frac{\theta-\zeta}{2}\right) f(\theta) g'(\zeta) \dd\theta \dd\zeta = \sum_{n\neq 0} |n|f_{n} g_{-n}.$$Let $\H_{\R}=\overline{C^{\infty}(S^{1},\R)/\R}$ be the completion of $C^{\infty}(S^{1},\R)/\R$ with respect to the above inner product. The Hilbert transform $$\newcommand{\sgn}{\operatorname{sgn}}(J f)(\theta) = \frac{1}{2\pi} \int^{2\pi}_{0} \cot\left(\frac{\theta-\zeta}{2}\right) f(\zeta) \dd\zeta=\sum_{n\neq 0} i\sgn(n) f_{n}e^{in \theta}$$forms a complex structure on $\H_{\R}$. Now, let us apply the procedure described at the beginning of this section to construct a symplectic Hilbert space $\H$ from $\H_{\R}$. Then the underlying set of $\H$ is $\overline{C^{\infty}(S^{1})/\C}$, the orthogonal subspaces $\H^{+}$ and $\H^{-}$ consists of functions that can extend holomorphically to $D_{+}$ and $D_{-}$ respectively. The symplectic form is given by $$\omega(f,g)=\langle f, g\rangle = i\sum_{n\neq 0} n f_{-n}g_{n} = \frac{1}{2\pi} \oint_{S^{1}} f(z)\dd g(z).$$Note that $i\sum_{n\neq 0} n f_{-n}g_{n}$ is real for real functions $f$ and $g$.
 
 > [!proposition]
-> Suppose $\phi\in\Diff^{+}(S^{1})$, then the operator $V_{\phi}\in \RSP(\H_{\R})$.  
+> Suppose $\phi\in\Diff^{+}(S^{1})$, then the operator $V_{\phi}\colon f \mapsto f\circ \phi^{-1} \in \RSP(\H)$.  
 > 
 
 *Proof*  $V_{\phi}$ is symplectic, because $$\omega(V_{\phi} f, V_{\phi} g)=\frac{1}{2\pi}\oint_{S^{1}} f(\phi(z))\dd g(\phi(z))=\omega(f,g).$$To show that $V_{\phi}$ is in $\RSP(\H)$, it suffices to show that $V_{\phi}^{*}V_{\phi}$ can be written as a Hilbert-Schmidt perturbation of the identity. Once we can write $\newcommand{\HS}{\text{HS}}V_{\phi}^{*}V_{\phi}=1+T_{\HS}$, we can apply the polar decomposition and functional calculus to write $V_{\phi}=U(1+T_{\HS})$ for some unitary $U$.
