@@ -46,7 +46,7 @@ $\quad$
 > 1. If $a \in \mathcal{A}$ is invertible, then $a^*$ is invertible and $(a^*)^{-1} = (a^{-1})^*$.
 > 2. For any $a \in \mathcal{A}$, the spectrum of its adjoint is given by $\sigma(a^*) = \{\bar{\lambda} \mid \lambda \in \sigma(a)\}$.
 > 3. Any $a \in \mathcal{A}$ can be uniquely written as $a = \text{Re}(a) + i\,\text{Im}(a)$, where $\text{Re}(a) = \frac{a+a^*}{2}$ and $\text{Im}(a) = \frac{a-a^*}{2i}$ are self-adjoint.
-> 4. If $a$ is self-adjoint ($a=a^*$), then its spectrum $\sigma(a)$ is a subset of the real numbers $\mathbb{R}$, and $r(a) = \|a\|$.
+> 4. If $a$ is self-adjoint ($a=a^{*}$), then its spectrum $\sigma(a)$ is a subset of the real numbers $\mathbb{R}$, and $r(a) = \|a\|$.
 > 5. If $u$ is unitary, then $\|u\|=1$ and its spectrum $\sigma(u)$ is a subset of the unit circle $\{z \in \mathbb{C} \mid |z|=1\}$.
 > $\quad$
 

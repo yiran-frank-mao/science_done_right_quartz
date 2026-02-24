@@ -19,7 +19,7 @@ updated: 2024-10-03
 *Proof*  Clearly $2$ is a prime. Assume all integers less than or equal to $n$ are primes or a product of prime numbers. Suppose $n+1$ is not prime. Then there exists $1<k\leq n$ that divides $n+1$. Thus $n+1$ is a product of primes. Therefore, by principle of induction, we have all integers are either prime or a product of prime numbers. $\square$
 
 > [!corollary]
-> There are infinitely many primes.
+> There are infinitely many primes. ^1e1100
 
 *Proof*  Assume there are only finitely many primes, say $p_{1},p_{2}\dots p_{n}$. Let $N=p_{1}p_{2}\dots p_{n}+1$. Clearly $N$ is not a member of $p_{1},p_{2}\dots p_{n}$ thus not prime. Hence $N$ is a product of primes. Therefore there exists prime $p_{j}$ such that $p_{j}\mid p_{1}p_{2}\dots p_{n}+1$, it follows that $p_{j}\mid 1$, yielding a contradiction. $\square$
 
