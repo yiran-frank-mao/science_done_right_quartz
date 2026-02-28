@@ -7,6 +7,6 @@
 > 
 
 > [!definition] Cobordism Equivalence
-> Given two oriented cobordisms $(M, \gamma_{-}, \gamma_{+})$ and $(M', \gamma_{-}', \gamma_{+}')$ between $\Sigma_{-}$ and $\Sigma_{+}$, 
+> Two oriented cobordisms $(M, \gamma_{-}, \gamma_{+})$ and $(M', \gamma_{-}', \gamma_{+}')$ from $\Sigma_{-}$ to $\Sigma_{+}$ are *equivalent* if there is an orientation-preserving diffeomorphism $\phi\colon M\to M'$ such that the following diagram commutes:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/equivalent_cobordisms.svg" alt="equivalent_cobordisms" style="width:30%;"/>
 > 
