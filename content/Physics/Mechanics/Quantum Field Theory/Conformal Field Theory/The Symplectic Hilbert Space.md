@@ -19,14 +19,19 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > Moreover, for an operator $A\in B(\H)$, the transpose of $A$ is defined as $$A^{\top}x:= \overline{A^{*}\overline{x}},$$
 > where $A^{*}$ is the adjoint of $A$ w.r.t the inner product $\llangle\cdot,\cdot\rrangle$.
 
-> [!definition] Correct Operator
+## The Symplectic Semigroup
+
+> [!definition] Restricted Symplectic Semigroup
+> Suppose $\G$ is a real symplectic Hilbert space, then we write $\newcommand{\RSP}{\mathrm{RSp}}\RSP(\G)$ for the *restricted symplectic group*, that is, a [[Groups, Order and Subgroups#^1ccb07|subgroup]] of $\mathrm{Sp}(\G)$ such that the operators can be written as $U(1+T_{\mathrm{HS}})$ for some unitary operator $U$ and some [[Compact Operators#^5bb53a|Hilbert-Schmidt]] operator $T_{\mathrm{HS}}\newcommand{\Diff}{\mathrm{Diff}}$.
+
+> [!definition] Correct Operator & Potapov–Ginzburg Matrix
 > Given a symplectic Hilbert space $\H$, suppose $T\colon D(T)\to \H$ is an (possibly unbounded) operator on $\H$. If $T$ satisfies $$\begin{pmatrix} f_{-} \\ (Tf)_{+} \end{pmatrix}=\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix} \begin{pmatrix} f_{+} \\ (Tf)_{-} \end{pmatrix} \text{ for all } f\in D(T),$$
 > where
 > 1. $K^{\top} =K$, $M^{\top}= M$;
 > 2. $\newcommand{\op}{\text{op}}\|\Omega\|_{\op}\leq 1$, $\|K\|_{\op}<1$, $\|M\|_{\text{op}}<1$;
 > 3. $K$ and $M$ are [[Hilbert-Schmidt Operators#^5bb53a|Hilbert-Schmidt]],
 > 
-> then $T$ is called a *correct operator*, and the above matrix is called the *associated matrix*, denoted as $\Omega_{T}$. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$ under the usual composition of operators.
+> then $T$ is called a *correct operator*, and the above matrix is called the *Potapov–Ginzburg matrix*, denoted as $\Omega_{T}$. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$ under the usual composition of operators.
 
 %% TODO: What is the norm of \Omega? %%
 
@@ -50,12 +55,6 @@ Concretely, if $L$ is invertible, we can
 *Proof*  
 
 For some $T\in \RSP(\H)$, we can write $T=U(1+T_{\HS})$ for some unitary $U$ and some Hilbert-Schmidt operator $T_{\HS}$. Then we have $$\Omega_{T}^{*}\Omega_{T}=\Omega_{1+T_{\HS}}^{*}\Omega_{1+T_{\HS}}=1,$$where the first equality follows from the fact that $\Omega_{U}$ is unitary, and the second equality follows from the fact that $\Omega_{1+T_{\HS}}$ is a Hilbert-Schmidt perturbation of the identity. $\square$
-
-
-## The Symplectic Semigroup
-
-> [!definition] Restricted Symplectic Semigroup
-> Suppose $\G$ is a real symplectic Hilbert space, then we write $\newcommand{\RSP}{\mathrm{RSp}}\RSP(\G)$ for the *restricted symplectic group*, that is, a [[Groups, Order and Subgroups#^1ccb07|subgroup]] of $\mathrm{Sp}(\G)$ such that the operators can be written as $U(1+T_{\mathrm{HS}})$ for some unitary operator $U$ and some [[Compact Operators#^5bb53a|Hilbert-Schmidt]] operator $T_{\mathrm{HS}}\newcommand{\Diff}{\mathrm{Diff}}$.
 
 ## Application: Embed $\Diff^+(S^1)$ into $\RSP(\H)$
 

@@ -2,8 +2,10 @@
 created: 2024-01-08
 updated: 2024-10-20
 ---
->[!definition] Manifold
->An $n$-dimensional manifold, or $n$-manifold for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Topological Spaces#^a8abf4|second-countable]] [[Topological Spaces#^65c94a|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $n$-dimensional Euclidean space $\R^{n}$. ^3407e4
+>[!definition] Manifold & Manifold with Boundary
+> An *$n$-dimensional manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Topological Spaces#^a8abf4|second-countable]] [[Topological Spaces#^65c94a|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $n$-dimensional Euclidean space $\R^{n}$. 
+> A *manifold with boundary* is a Hausdorff and second-countable topological space $M$ such that each point has a neighbourhood homeomorphic to an open subset of the closed half-space $H^{n}=\{(x_{1},\dots,x_{n})\in \R^{n}: x_{n}\geq 0\}$. The *boundary* of $M$ is the set of points that correspond to points in $H^{n}$ with $x_{n}=0$.
+> A *closed manifold* is a [[Compactness of Topological Space#^da2511|compact]] manifold with no boundary. ^3407e4
 
 Clearly, on a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
 
@@ -16,6 +18,7 @@ Clearly, on a manifold, there might be different collections of homeomorphisms t
 <b><u>e.g.</u></b>
 - Consider the set $M=\R$ with the usual topology. $\mathcal{A}=\{ x\mapsto x\colon\R\to \R\}$ and $\mathcal{B}=\{ x \mapsto x^{3} \colon \R \to \R \}$ are both differentiable atlases. They are not compatible since the union $\{ x\mapsto x, x\mapsto x^{3} \}$ is not differentiable.
 - The sphere $S^{n}=\{ x\in \R^{n+1}:\|x \| =1\}$ is a closed subset of Euclidean space, thus the topological requirements are satisfied. Define the following two maps: $$\varphi_{+}\colon S^{n}\setminus \{ N \}\to\R^{n}, \quad \varphi_{-}\colon S^{n}\setminus \{ S \} \to \R^{n}$$as follows: We write $x\in \R^{n+1}$ as $(y,z)$ where $y\in \R^{n}$ and $z\in \R$, we take $\varphi_{+}(y,z)=\frac{y}{1-z}$ and $\varphi_{-}(y,z)=\frac{y}{1+z}$. Then we have 
+$\quad$
 
 > [!definition] Differentiable (Smooth) Atlas
 > Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *differentiable* or *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}\circ \varphi_{\alpha}^{-1}$ is smooth, thus a diffeomorphism, as a map between open subsets of $\R^n$.
