@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 2 Mar 2026
+- Updates: [[Witt Algebra and Virasoro Algebra]], [[Heisenberg Algebra and Fock Models]], [[The Symplectic Hilbert Space]].
+
 ## 25 Feb 2026
 - New: [[Topological Quantum Field Theory]].
 - Updates: [[Knots and Links]].
