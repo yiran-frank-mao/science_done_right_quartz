@@ -9,10 +9,10 @@ What makes an algorithm good?
 ### Two Fundamental Problems
 
 > [!definition] Sorting
-> A sorting problem is to input a sequence of $n$ numbers $[a_1,a_2,…,a_n]$ and output a reordering sequence $[a_1^\prime, a_2^\prime,...,a_n^\prime]$ such that $a_1^\prime, a_2^\prime,...,a_n^\prime$ is in ascending order.
+> A *sorting problem* is to input a sequence of $n$ numbers $[a_1,a_2,…,a_n]$ and output a reordering sequence $[a_1^\prime, a_2^\prime,...,a_n^\prime]$ such that $a_1^\prime, a_2^\prime,...,a_n^\prime$ is in ascending order.
 
 > [!definition] Searching
-> A searching problem is to input a bounded set $X$ with relation $R$ among its elements, and a solution criteria $C$, while output an element $x\in X$ that satisfies the criteria $C$ if any.
+> A *searching problem* is to input a bounded set $X$ with relation $R$ among its elements, and a solution criteria $C$, while output an element $x\in X$ that satisfies the criteria $C$ if any.
 
 ### Problem Formulation
 
