@@ -1,17 +1,17 @@
 ## Functoriality
 
 >[!definition] Functor
->A (covariant) functor between categories $\mathbf{C}$ and $\mathbf{D}$ is a mapping of objects to objects and morphisms to morphisms such that for all $\mathbf{C}$-objects $A$ and $B$:
+>A *(covariant) functor* between [[Structure of Categories#^2f5c3a|categories]] $\mathsf{C}$ and $\mathsf{D}$ is a mapping of objects to objects and morphisms to morphisms such that for all $\mathsf{C}$-objects $A$ and $B$:
 >- $F(f \colon A\to B)=F(f)\colon F(A)\to F(B)$
 >- $F(g\circ f)=F(g)\circ F(f)$
 >- $F(1_{A})=1_{F(A)}$
 > 
-> A contravariant functor is a similar mapping $\mathbf{C}\to\mathbf{D}$, but reverses the direction of morphisms:
+> A contravariant functor is a similar mapping $\mathsf{C}\to\mathsf{D}$, but reverses the direction of morphisms:
 > - $F(f \colon A\to B)=F(f)\colon F(B)\to F(A)$,
 > - $F(g\circ f)=F(f)\circ F(g)$,
 > - $F(1_{A})=1_{F(A)}$.
 > 
-> Equivalently, a contravariant functor is a (covariant) functor from the opposite category $\mathbf{C}^{\text{op}}$ to $\mathbf{D}$. ^653948
+> Equivalently, a contravariant functor is a (covariant) functor from the opposite category $\mathsf{C}^{\text{op}}$ to $\mathsf{D}$. ^653948
 
 <u><b>e.g.</b></u>  
 - Every category $\mathbf{C}$ has an identity functor $1_{\mathbf{C}} \colon \mathbf{C} \to \mathbf{C}$. 
@@ -48,8 +48,7 @@ $\quad$
 >**Def**  <i><u>Generator</u></i>
 >A generator for category $\mathbf{C}$ is an object $C$ has the property that for any objects $X$ and $Y$ and morphisms f$,g \colon X \to Y$, if $f \neq g$ then there is an arrow $x \colon C → X$ such that $fx\neq gx$. That is, the arrows in the category are distinguished by their effect on generalized elements based at $C$.
 
->[!definition] 
->**Def**  <i><u>Contravariant Representable Functors</u></i>
+>[!definition] Contravariant Representable Functors
 >Let $\mathbf{C}$ be a locally small category, we have the contravariant representable functors: $$\Hom_\mathbf{C}(-,C)\colon \mathbf{C}^\text{op} \to \mathbf{Sets}$$taking $f \colon A → B$ to $f^{*} \colon \Hom_\mathbf{C}(B,C) → \Hom_\mathbf{C}(A,C)$ by $f^{*}(h) = h\circ f$ for $h \colon B → C$.
 
 ## Naturality
@@ -91,8 +90,7 @@ $\quad$
 
 ## Equivalence of Categories
 
->[!definition] 
->**Def**  <i><u>Equivalent Categories</u></i>
+>[!definition] Equivalent Categories
 >An equivalence of categories consists of a pair of functors $E\colon \mathbf{C}\to\mathbf{D}$ and $F\colon \mathbf{D}\to\mathbf{C}$ and a pair of natural isomorphisms $$\alpha\colon 1_\mathbf{C} \to F \circ E, \quad \beta\colon1_\mathbf{D}\to E\circ F$$In this situation, the functor $F$ is called a pseudo-inverse of $E$. The categories $\mathbf{C}$ and $\mathbf{D}$ are then said to be equivalent, written $\mathbf{C} ≃ \mathbf{D}$.
 
 >[!proposition] 

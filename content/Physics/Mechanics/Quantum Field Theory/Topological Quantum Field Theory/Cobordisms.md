@@ -13,4 +13,18 @@
 
 ## Axiomatic TQFTs
 
-Atiyah first gave a set of axioms for a topological quantum field theory in 1988, 
+Atiyah first gave a set of axioms for a topological quantum field theory in 1988, for which is now characterized as a symmetric monoidal functor. The following is a modernized version of Atiyah’s original axioms:
+
+An $n$-dimensional *topological quantum field theory* (TQFT) is a rule $\mathscr{A}$ that assigns to each closed $(n-1)$-dimensional manifold $\Sigma$ a vector space $\mathscr{A}(\Sigma)$, and to each $n$-dimensional cobordism $M\colon \Sigma_{-}\to \Sigma_{+}$ a linear map $\mathscr{A}(M)\colon \mathscr{A}(\Sigma_{-})\to \mathscr{A}(\Sigma_{+})$, such that the following five axioms hold: 
+1. Two equivalent cobordisms must have the same image;
+2. The cylinder $\Sigma\times [0,1]$ must be sent to the identity map on $\mathscr{A}(\Sigma)$;
+3. $\mathscr{A}$ preserves the decomposition of cobordisms;
+4. Disjoint union of manifolds must be sent to the tensor product of vector spaces, and disjoint union of cobordisms must be sent to the tensor product of linear maps;
+5. The empty manifold must be sent to the ground field $\mathbb{K}$.
+
+The first two axioms guarantee that the theory is "topological", in the sense that it does not depend on any additional structure like metric or curvature. The fourth axiom is a standard principle of quantum mechanics that the state space of two independent systems is the tensor product of the two state spaces.
+
+> [!proposition]
+> The state space $\mathscr{A}(\Sigma)$ assigned to a closed $(n-1)$-manifold $\Sigma$ is always finite-dimensional.
+
+ *Proof*  To show that 

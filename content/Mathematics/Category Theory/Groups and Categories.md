@@ -5,7 +5,7 @@ updated: 2024-09-17
 ## Groups in a Category
 
 > [!definition] Group Object
-> Let $\mathsf{C}$ be a category with finite products. A *group object* in $\mathsf{C}$ consists of objects and arrows as: 
+> Let $\mathsf{C}$ be a [[Structure of Categories#^2f5c3a|category]] with finite products. A *group object* in $\mathsf{C}$ consists of objects and arrows as: 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/groupinc.svg" alt="group_inc" style="width:40%;">
 > satisfying the following conditions:
 > - $m$ is associative, that is the following commutes: ![|350](https://svgshare.com/i/14CS.svg)
