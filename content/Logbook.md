@@ -4,7 +4,7 @@ updated: 2024-10-21
 completed: true
 ---
 ## 5 Mar 2026
-- Updates: [[Cobordisms]], [[Functoriality and Naturality]], [[Yoneda Lemma]].
+- Updates: [[Cobordisms]], [[Functoriality and Naturality]], [[Yoneda Lemma]], [[Recurrence Analysis]].
 
 ## 2 Mar 2026
 - Updates: [[Witt Algebra and Virasoro Algebra]], [[Heisenberg Algebra and Fock Models]], [[The Symplectic Hilbert Space]].

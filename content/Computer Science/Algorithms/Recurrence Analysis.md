@@ -18,7 +18,7 @@ We will now introduce the last two methods.
 
 <b><u>e.g.</u></b> For the recurrence $T(n)=T(\frac{n}{3})+T(\frac{2n}{3})+cn$ where $c$ is a constant and $T(1)=1$:
 ![recurrence|450](https://i.imgur.com/3DPRnCE.png)
-Note that not all leaves are in the last level, hence the total cost is at most $$\# \text{𝑙𝑒𝑣𝑒𝑙𝑠} \times 𝑐𝑛=cn(\log_{\frac{3}{2}}n+1) \in O(n\log n).$$
+Note that not all leaves are in the last level, hence the total cost is at most $$\# \text{levels} \times 𝑐𝑛=cn(\log_{\frac{3}{2}}n+1) \in O(n\log n).$$
 
 ## Master Theorem
 
