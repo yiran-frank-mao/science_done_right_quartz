@@ -1,8 +1,9 @@
 >[!definition] Product Category
->The product of two categories $\mathsf{C}$ and $\mathsf{D}$, written $\mathsf{C}\times \mathsf{D}$, has objects of the form $(C,D)$ for $C\in\obj \mathsf{C}$ and $D\in\obj\mathsf{D}$, and morphisms of the form $(f,g)\colon(C,D)\to(C^{\prime}, D^{\prime})$ for $f\colon C\to C^{\prime}$ and $g\colon D\to D^{\prime}$. Composition and units are defined componentwise. That is$$(f^{\prime},g^{\prime})\circ(f,g)=(f^\prime\circ f,g^\prime\circ g),\quad1_{(C,D)}=(1_C,1_D)$$There are two obvious projection functors:$$\mathsf{C}\xleftarrow{\pi_1}\mathsf{C}\times\mathsf{D}\xrightarrow{\pi_2}\mathsf{D}$$defined by $π_1(C,D) = C$ and $π_1(f,g) = f$, and similarly for $π_2$.
+>The *product* of two categories $\mathsf{C}$ and $\mathsf{D}$, written $\mathsf{C}\times \mathsf{D}$, has objects of the form $(C,D)$ for $C\in\obj \mathsf{C}$ and $D\in\obj\mathsf{D}$, and morphisms of the form $(f,g)\colon(C,D)\to(C^{\prime}, D^{\prime})$ for $f\colon C\to C^{\prime}$ and $g\colon D\to D^{\prime}$. Composition and units are defined componentwise. That is$$(f^{\prime},g^{\prime})\circ(f,g)=(f^\prime\circ f,g^\prime\circ g),\quad1_{(C,D)}=(1_C,1_D)$$There are two obvious projection [[Functoriality and Naturality#^653948|functors]]:$$\mathsf{C}\xleftarrow{\pi_1}\mathsf{C}\times\mathsf{D}\xrightarrow{\pi_2}\mathsf{D}$$defined by $π_1(C,D) = C$ and $π_1(f,g) = f$, and similarly for $π_2$.
 
 >[!definition] Diagonal Functor
->Define the diagonal functor $\Delta\colon \mathsf{C} \to\mathsf{C}\times\mathsf{C}$ such that $$\Delta(X)=( X,X ),\quad \Delta(f\colon X\to Y)=f\times f \colon X\times X \to Y\times Y$$
+> The *diagonal functor* $\Delta\colon \mathsf{C} \to\mathsf{C}\times\mathsf{C}$ is defined as its name tells: 
+> $$\Delta(X)=( X,X ),\quad \Delta(f\colon X\to Y)=f\times f \colon X\times X \to Y\times Y.$$
 
 **Prop**  For any $A\times B$ and $C \times D$ in $\mathsf{C}$,
 
@@ -27,9 +28,8 @@ $\quad$
 ><img src="https://i.imgur.com/muDP5Da.png" alt="" style="width:25%;"/>
 >with identity arrow $1_{f}=1_{X}$ and composition law inherits from $\mathsf{C}$. ^8b8420
 
->[!definition]
->**Def**  <i><u>Coslice Category</u></i>
->The coslice category $C/\mathsf{C}$ of a category $\mathsf{C}$ under an object $C\in\obj \mathsf{C}$ has as objects all arrows $f$ of $\mathsf{C}$ such that $\dom (f) =C$, and an arrow from $f \colon C \to X$ to $f^{\prime} \colon C \to X^{\prime}$ is an arrow $h \colon X \to X^{\prime}$ such that $h\circ f = f^{\prime}$:
+>[!definition] Coslice Category
+>The *coslice category* $C/\mathsf{C}$ of a category $\mathsf{C}$ under an object $C\in\obj \mathsf{C}$ has as objects all arrows $f$ of $\mathsf{C}$ such that $\dom (f) =C$, and an arrow from $f \colon C \to X$ to $f^{\prime} \colon C \to X^{\prime}$ is an arrow $h \colon X \to X^{\prime}$ such that $h\circ f = f^{\prime}$:
 >![|250](https://i.imgur.com/6MQcyjP.png)
 >We have identity arrow $1_{f}=1_{X}$ and composition law inherits from $\mathsf{C}$.
 ><u><b>e.g.</b></u>  Consider the category $\mathbf{Sets_*}$ of pointed sets consists of sets $A$ with a distinguished element $a ∈ A$, and arrows $f \colon (A,a) \to (B,b)$ are functions $f \colon A \to B$ that preserves the points, $f(a) = b$. This is isomorphic to the coslice category:$$\mathbf{Sets}_{*}\cong\{*\}/\mathbf{Sets}$$where $\{*\}$ is the singleton. Indeed the functor $$F\colon \{*\}\to A, \quad (f\colon\{*\}\to X)\mapsto(X,f(*))$$is an isomorphism.

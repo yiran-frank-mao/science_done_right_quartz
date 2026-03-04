@@ -27,4 +27,4 @@ The first two axioms guarantee that the theory is "topological", in the sense th
 > [!proposition]
 > The state space $\mathscr{A}(\Sigma)$ assigned to a closed $(n-1)$-manifold $\Sigma$ is always finite-dimensional.
 
- *Proof*  To show that 
+ *Proof*  To show $V:=\mathscr{A}(\Sigma)$ is finite dimensional, it suffices to find a spanning set for $V$. Note that we have the following diagram commutes: 
