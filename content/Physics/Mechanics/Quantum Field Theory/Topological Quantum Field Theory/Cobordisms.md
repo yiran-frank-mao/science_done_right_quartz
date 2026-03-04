@@ -20,7 +20,7 @@ An $n$-dimensional *topological quantum field theory* (TQFT) is a rule $\mathscr
 2. The cylinder $\Sigma\times [0,1]$ must be sent to the identity map on $\mathscr{A}(\Sigma)$;
 3. $\mathscr{A}$ preserves the decomposition of cobordisms;
 4. Disjoint union of manifolds must be sent to the tensor product of vector spaces, and disjoint union of cobordisms must be sent to the tensor product of linear maps;
-5. The empty manifold must be sent to the ground field $\mathbb{K}$.
+5. The empty manifold must be sent to the ground field $\newcommand{\K}{\mathbb{K}}\K$.
 
 The first two axioms guarantee that the theory is "topological", in the sense that it does not depend on any additional structure like metric or curvature. The fourth axiom is a standard principle of quantum mechanics that the state space of two independent systems is the tensor product of the two state spaces.
 
@@ -28,3 +28,5 @@ The first two axioms guarantee that the theory is "topological", in the sense th
 > The state space $\mathscr{A}(\Sigma)$ assigned to a closed $(n-1)$-manifold $\Sigma$ is always finite-dimensional.
 
  *Proof*  To show $V:=\mathscr{A}(\Sigma)$ is finite dimensional, it suffices to find a spanning set for $V$. Note that we have the following diagram commutes: 
+ <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/state_space_of_TQFT_finite_dim.svg" alt="state_space_of_TQFT_finite_dim" style="width:35%;"/>
+$\gamma$ is a copairing $\K\to W \otimes V$, suppose that $\gamma(1_{\K})$ is the finite sum $\sum_{i} c_i w_{i}\otimes v_{i}$, then for each $u\in V$, there holds $$u= (\beta\otimes 1_{V}) (1_{V}\otimes \gamma)(u)=(\beta\otimes 1_{V}) \left(\sum_{i} c_{i} u\otimes w_{i} \otimes v_{i} \right)= \sum_{i}c_{i} \beta(u\otimes w_{i}) v_{i}.$$This means $\{v_{i}\}_{i}$ forms a spanning set for $V$. $\square$
