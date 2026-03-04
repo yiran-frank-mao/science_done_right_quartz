@@ -42,7 +42,7 @@ Now let us see properties of the orientation-preserving diffeomorphisms:
 > For each $t\geq0$, we can define a [[Normed Spaces#^345fd3|norm]] on $\mathfrak{X}_{\C}(S^{1})$ by $$\left\|\sum_{n\in\Z} a_{n}L_{n}\right\|_{t}:=\sum_{n\in\Z}(1+|n|)^{t}|a_{n}|.$$ 
 
 > [!proposition]
-> For all $X,Y\in\mathfrak{d}_{\infty}$ and $t\geq0$, there holds $$\|[X,Y]\|_{t}\leq \|X\|_{t+1}\|Y\|_{t+1}.$$
+> For all $X,Y\in\mathfrak{X}_{\C}(S^{1})$ and $t\geq0$, there holds $$\|[X,Y]\|_{t}\leq \|X\|_{t+1}\|Y\|_{t+1}.$$
 > 
 
 > [!definition] Witt Algebra
