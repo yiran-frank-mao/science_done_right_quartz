@@ -31,13 +31,13 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > 2. $\newcommand{\op}{\text{op}}\|\Omega\|_{\op}\leq 1$, $\|K\|_{\op}<1$, $\|M\|_{\text{op}}<1$;
 > 3. $K$ and $M$ are [[Hilbert-Schmidt Operators#^5bb53a|Hilbert-Schmidt]],
 > 
-> then $T$ is called a *correct operator*, and the above matrix is called the *Potapov–Ginzburg matrix*, denoted as $\Omega_{T}$. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$ under the usual composition of operators.
+> then $T$ is called a *correct operator*, and the above matrix is called the *Potapov–Ginzburg matrix* of $T$, denoted as $\Omega_{T}$. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$ under the usual composition of operators.
 
 %% TODO: What is the norm of \Omega? %%
 
 We can use the associated matrix to describe these operators in $\CSP(\H)$. Given an operator $T\in\CSP(\H)$ with the matrix presentation $$\begin{pmatrix} T_{+}^{+} & T_{+}^{-} \\ T_{-}^{+} & T_{-}^{-}  \end{pmatrix}$$with respect to the decomposition $\H=\H^{+} \oplus \H^{-}$, we have $$\begin{cases} T_{+}^{+} f_{+} + T_{+}^{-} f_{-}= (Tf)_{+}, \\ T_{-}^{+} f_{+} + T_{-}^{-} f_{-}= (Tf)_{-}.\end{cases}$$If $T_{-}^{-}$ is invertible, then we can rearrange the above equation to get $$\Omega_{T}=\begin{pmatrix} -(T_{-}^{-})^{-1} T_{-}^{+} & (T_{-}^{-})^{-1} \\ T^{+}_{+}-T_{+}^{-}(T^{-}_{-})^{-1} T_{-}^{+} & T_{+}^{-}(T_{-}^{-})^{-1} \end{pmatrix}$$
 
-Concretely, if $L$ is invertible, we can 
+Conversely, if $\begin{pmatrix}K&L\\L^{\top}&M\end{pmatrix}$is the Potapov–Ginzburg matrix of $T$ and $L$ is invertible, we can express the matrix of $T$ (w.r.t the decomposition $\H=\H^{+} \oplus \H^{-}$) using $K$, $L$ and $M$: $$$$ 
 
 
 > [!proposition]
@@ -49,13 +49,13 @@ Concretely, if $L$ is invertible, we can
 > For some $T\in \CSP(\H)$, the followings are equivalent:
 > 1. $T\in \RSP(\H)$;
 > 2. 
-> 3. $\Omega_{T}^{*}\Omega_{T}=1$.
+> 3. $\Omega_{T}^{*}\Omega_{T}=1_{\H}$.
 > 
 > Therefore, $\RSP(\H)$ is a subsemigroup of $\CSP(\H)$, and in fact, it is the Shilov boundary of $\CSP(\H)$.
 
 *Proof*  
 
-Suppose $\Omega^{*}_{T}\Omega_{T}=1$, that is , $$\begin{pmatrix} K^{*}K + L^{\top*} L^{\top} & K^{*}L + L^{\top*}M\\L^{*}K+M^{*}L^{\top} & L^{*}L + M^{*}M\end{pmatrix} = 1_{\H}$$
+Suppose $\Omega^{*}_{T}\Omega_{T}=1_{\H}$, that is , $$\begin{pmatrix} K^{*}K + L^{\top*} L^{\top} & K^{*}L + L^{\top*}M\\L^{*}K+M^{*}L^{\top} & L^{*}L + M^{*}M\end{pmatrix} = 1_{\H}.$$
 
 
 > [!definition] The Weyl Representation
