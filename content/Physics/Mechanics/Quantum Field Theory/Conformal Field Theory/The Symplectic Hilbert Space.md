@@ -55,8 +55,7 @@ Conversely, if $\begin{pmatrix}K&L\\L^{\top}&M\end{pmatrix}$is the Potapov–Gin
 
 *Proof*  
 
-Suppose $\Omega^{*}_{T}\Omega_{T}=1_{\H}$, that is , $$\begin{pmatrix} K^{*}K + L^{\top*} L^{\top} & K^{*}L + L^{\top*}M\\L^{*}K+M^{*}L^{\top} & L^{*}L + M^{*}M\end{pmatrix} = 1_{\H}.$$
-
+$3\implies 1$:  Suppose $\Omega^{*}_{T}\Omega_{T}=1_{\H}$, that is , $$\begin{pmatrix} K^{*}K + L^{\top*} L^{\top} & K^{*}L + L^{\top*}M\\L^{*}K+M^{*}L^{\top} & L^{*}L + M^{*}M\end{pmatrix} = 1_{\H}.\tag{1}$$We can express the block matrix of $T^{*}T$ using $K$, $L$ and $M$: $$T^{*}T=\begin{pmatrix}(L^{\top*}-K^{*}L^{-*}M^{*})(L^{\top}-ML^{-1}K)+K^{*}L^{*}L^{-1}K & (L^{\top*}-K^{*}L^{-*}M^{*})ML^{-1}-K^{*}L^{-*}L^{-1} \\ L^{-*}M^{*}(L^{\top}-ML^{-1}K)-L^{-*}L^{-1}K & L^{-*}M^{*}ML^{-1}+L^{-*}L^{-1}\end{pmatrix}.$$To show that $T\in \RSP(\H)$, it is sufficient to show that $T^{*}T$ is a Hilbert-Schmidt perturbation of the identity. By $(1)$, we can simplify $T^{*}T$ to $$T^{*}T=\begin{pmatrix}K^{*}L^{-*}L^{-1}K+1 & -2K^{*}L^{-*}L^{-1} \\ -2L^{-*}L^{-1}K & 2L^{-*}L^{-1}-1\end{pmatrix}=1_{\H}+\begin{pmatrix}K^{*}L^{-*}L^{-1}K & -2K^{*}L^{-*}L^{-1} \\ -2L^{-*}L^{-1}K & 2L^{-*}L^{-1}-2\end{pmatrix}.$$Note that $K$ is [[Hilbert-Schmidt Operators#^2facfd|Hilbert-Schmidt]], so all of $K^{*}L^{-*}L^{-1}K$, $-2K^{*}L^{-*}L^{-1}$ and $-2L^{-*}L^{-1}K$ are Hilbert-Schmidt. Additionally, for the right-bottom entry, we have $$2L^{-*}L^{-1}-2=2((LL^{*})^{-1}-1)=2\left(L(1-M^{*}M)^{-1}L^{-1}-1\right)=2L\left((1-M^{*}M)^{-1}-1\right)L^{-1}.$$Now use the resolvent identity $$(1-M^{*}M)^{-1}-1=(1-M^{*}M)^{-1}M^{*}M,$$and the fact that $M^{*}M$ is a trace-class, so the right-bottom entry is Hilbert-Schmidt as well. $\square$
 
 > [!definition] The Weyl Representation
 > For some $T\in S(\H)$, define the *Weyl representation* of $S(\H)$ on the Fock space:

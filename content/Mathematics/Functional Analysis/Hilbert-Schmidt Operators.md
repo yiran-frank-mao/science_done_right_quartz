@@ -1,6 +1,6 @@
 ## Abstract Hilbert-Schmidt Operators
 
-Hilbert-Schmidt operators are a special class of compact operators that play an important role in functional analysis and quantum mechanics. They can be thought of as infinite-dimensional analogues of matrices with finite Frobenius norm.
+Hilbert-Schmidt operators are a special class of compact operators that play an important role in functional analysis and quantum mechanics. They can be thought of as infinite-dimensional analogues of matrices with finite Frobenius norm. ^2facfd
 
 > [!definition] Hilbert-Schmidt Operator
 > An operator $T$ on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}$ is called *Hilbert-Schmidt* if its *Hilbert-Schmidt* norm $$\newcommand{\HS}{\text{HS}}\|T\|^{2}_{\HS} := \sum_{j}\|Te_{j}\|^{2}<\infty. $$  ^5bb53a

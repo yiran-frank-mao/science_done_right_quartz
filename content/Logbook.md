@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 6 Mar 2026
+- Updates: [[The Symplectic Hilbert Space]].
+
 ## 5 Mar 2026
 - Updates: [[Cobordisms]], [[Functoriality and Naturality]], [[Yoneda Lemma]], [[Recurrence Analysis]].
 
