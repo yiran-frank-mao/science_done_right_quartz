@@ -60,5 +60,6 @@ Suppose $\Omega^{*}_{T}\Omega_{T}=1_{\H}$, that is , $$\begin{pmatrix} K^{*}K + 
 
 > [!definition] The Weyl Representation
 > For some $T\in S(\H)$, define the *Weyl representation* of $S(\H)$ on the Fock space:
-> $$W(T):=c(T)\exp\left(\frac12 \hat{a}^*(K)\hat{a}^* + \hat{a}^*(\lambda)\right)\Gamma(L)\exp\left(\frac12 \hat{a}(M)\hat{a} + \hat{a}(\mu)\right).$$
+> $$W(T):=c(T)\exp\left(\frac12 \hat{a}^*(K)\hat{a}^* + \hat{a}^*(\lambda)\right)\Gamma(L)\exp\left(\frac12 \hat{a}(M)\hat{a} + \hat{a}(\mu)\right),$$
+> where $c(T)$ is some normalization constant, $\Gamma(L)$ is the second quantization of $L$, and $\hat{a}^*(K)\hat{a}^*$ and $\hat{a}(M)\hat{a}$ are defined as follows: $$\hat{a}^*(K)\hat{a}^*:=\sum_{i,j} K_{ij}\hat{a}_{i}^{\dagger}\hat{a}_{j}^{\dagger},\quad \hat{a}(M)\hat{a}:=\sum_{i,j} M_{ij}\hat{a}_{i}\hat{a}_{j},$$for some orthonormal basis $\{\ket{i}\}$ of $\H^{+}$, and $K_{ij}$, $M_{ij}$ are the matrix elements of $K$ and $M$ w.r.t this basis.
 > 

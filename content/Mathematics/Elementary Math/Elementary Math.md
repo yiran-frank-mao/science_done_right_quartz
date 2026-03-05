@@ -1,2 +1,0 @@
-[[Elementary Geometry]]
-[[Inequalities]]
