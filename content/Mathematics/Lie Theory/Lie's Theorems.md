@@ -2,6 +2,16 @@
 
 > [!theorem] Baker-Campbell-Hausdorff Formula
 > Suppose $\newcommand{\[}{\left[\!\left[}\newcommand{\]}{\right]\!\right]}$
+> Specially, in the Lie algebra case, we have $$e^{X}e^{Y}=e^{X+Y+[X,Y]/2+[X,[X,Y]]/12+\cdots}$$
+
+> [!corollary]
+> Suppose $X,Y\in\g$, then $$e^{X}Ye^{-X}=Y + [X,Y] + \frac{1}{2}[X,[X,Y]] + \cdots =\sum_{n\in \N} \frac{1}{n!} [\overbrace{A,[A, \dots [A}^{n\text{ } A\text{'s}} ,B]\dots]]. $$
+> 
+
+*Proof*  This is a consequence 
+
+
+## Lie's Theorems
 
 > [!theorem] Ado's Theorem
 > Every finite‑dimensional Lie algebra admits a faithful finite‑dimensional representation, so it embeds as a Lie subalgebra of matrices $\gl(V)$ for some finite‑dimensional vector space $V$.
