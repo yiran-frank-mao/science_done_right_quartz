@@ -10,9 +10,7 @@ updated: 2024-09-17
 <u><b>e.g.</b></u>  A [[Relations and Functions#^862dba|function]] $f\colon A\to B$ is monic if and only if it is [[Relations and Functions#^042daf|injective]].
 
 >[!definition] Epimorphisim
->In any category $\mathbf{C}$, an morphism $f\colon A\to B$ is called an epimorphism (epic) if given any $i, j \colon B \to D$, $i\circ f = j\circ f$ implies $i = j$. Write $f \colon A\twoheadrightarrow B$ if $f$ is an epimorphism.
-
-^09ba17
+>In any category $\mathbf{C}$, an morphism $f\colon A\to B$ is called an epimorphism (epic) if given any $i, j \colon B \to D$, $i\circ f = j\circ f$ implies $i = j$. Write $f \colon A\twoheadrightarrow B$ if $f$ is an epimorphism. ^09ba17
 
 <u><b>e.g.</b></u>  
 - A [[Relations and Functions#^862dba|function]] $f\colon A\to B$ is epic if and only if it is [[Relations and Functions#^042daf|surjective]].
@@ -34,7 +32,7 @@ $\quad$
 ## Isomorphisms
 
 >[!definition] Isomorphism
->In any category $\mathbf{C}$, an arrow $f \colon A \to B$ is called an isomorphism if there is an arrow $g \colon B \to A$ in $\mathbf{C}$ such that$$f\circ g = 1_{A}\text{ and } g\circ f =1_{B}$$Since inverses are unique, we write $g = f^{-1}$. We say that $A$ is isomorphic to $B$, written $A\cong B$, if there exists an isomorphism between them.  ^8927b3
+>In any category $\mathsf{C}$, an arrow $f \colon A \to B$ is called an *isomorphism* if there is an arrow $g \colon B \to A$ in $\mathbf{C}$ such that$$f\circ g = 1_{A}\text{ and } g\circ f =1_{B}$$Since inverses are unique, we write $g = f^{-1}$. We say that $A$ is isomorphic to $B$, written $A\cong B$, if there exists an isomorphism between them.  ^8927b3
 
 We shall check the inverse is unique. Suppose $g$ and $h$ are both inverse of $f$. Then we have:$$h = h\circ 1_{A}=h\circ(f\circ g)=(h\circ f)\circ g=1_{B} \circ g = g$$
 

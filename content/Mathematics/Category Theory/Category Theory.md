@@ -12,8 +12,8 @@ Category theory is a branch of mathematics that studies the abstract patterns an
 
 ### Constructions on Objects
 [[Products of Objects]]
-[[Equalizers]]
-[[Subobjects and Pullback]]
+[[Equalizers and Coequalizers]]
+[[Pullback and Pushout]]
 [[Limits and Colimits]]
 [[Exponential]]
 [[Groups and Categories]]

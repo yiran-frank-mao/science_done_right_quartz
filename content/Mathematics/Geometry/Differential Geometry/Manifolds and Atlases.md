@@ -10,10 +10,11 @@ updated: 2024-10-20
 Clearly, on a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
 
 >[!definition] Chart and Atlas
->A chart for a manifold $M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $φ\colon U →V$ where $U$ is open in $M$ and $V$ is open in $\R^n$. A collection of charts $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ is called an atlas for $M$ if $\cup_{\alpha\in I}U_{\alpha}=M$. ^441ce2
+>A *chart* for a manifold $M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $φ\colon U \to V$ where $U$ is open in $M$ and $V$ is open in $\R^n$. A collection of charts $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ is called an *atlas* for $M$ if $\cup_{\alpha\in I}U_{\alpha}=M$.
+>A manifold equipped with an atlas is called a *topological manifold*. ^441ce2
 
 >[!definition] Compatible Chart
->Two charts $\varphi$ and $\eta$ are compatible if $\varphi\circ \eta^{-1}$ is a diffeomorphism
+> Two charts $\varphi$ and $\eta$ are compatible if $\varphi\circ \eta^{-1}$ is a diffeomorphism.
 
 <b><u>e.g.</u></b>
 - Consider the set $M=\R$ with the usual topology. $\mathcal{A}=\{ x\mapsto x\colon\R\to \R\}$ and $\mathcal{B}=\{ x \mapsto x^{3} \colon \R \to \R \}$ are both differentiable atlases. They are not compatible since the union $\{ x\mapsto x, x\mapsto x^{3} \}$ is not differentiable.
@@ -24,7 +25,7 @@ $\quad$
 > Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *differentiable* or *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}\circ \varphi_{\alpha}^{-1}$ is smooth, thus a diffeomorphism, as a map between open subsets of $\R^n$.
 
 > [!definition] Compatible Atlases
-> Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are compatible if their union is also a differentiable atlas.
+> Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are *compatible* if their union is also a differentiable atlas.
 
 > [!proposition]
 > Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are compatible if and only if for every chart $\phi$ in $\mathcal{A}$ and $\eta$ in $\mathcal{B}$, both $\phi \circ \eta^{-1}$ and $\eta \circ \phi^{-1}$ are smooth.
@@ -33,11 +34,12 @@ $\quad$
 > A $C^{k}$ structure on a manifold $M$ is an [[Relations and Functions#^973688|equivalence class]] of differentiable atlases, where two atlases are deemed equivalent if they are compatible.
 > A *smooth manifold* is a manifold $M$ together with a smooth ($C^{\infty}$) structure on $M$. ^6ef2ef
 
-> [!remark]
-> A given topological space can carry many different differentiable structures: For example, if $M=\R$ we can take two charts $\phi_{1}(x) = x$ and $\phi_{2}(x) = x^{3}$. Then both ${\phi_{1}}$ and $\{\phi_{2}\}$ are smooth atlases for $M$, but they define different smooth structures.
-> 
+<u><b>e.g.</b></u>  
+- A given manifold can carry many different atlases: For example, if $M=\R$ we can take two charts $\phi_{1}(x) = x$ and $\phi_{2}(x) = x^{3}$. Then both $\{\phi_{1}\}$ and $\{\phi_{2}\}$ are smooth atlases for $M$, they define different smooth atlases, while they are compatible.
+- The 4-manifold [$E_{8}$](https://en.wikipedia.org/wiki/E8_manifold) is a topological manifold, but not smooth.
+$\quad$
 
-<u><b>e.g.</b></u>  $\{v\in\R^{n} \mid  v\}$ is a smooth manifold.
+In fact, dimension 4 is particularly special and exotic in the theory of smooth manifolds, there are smooth 4-manifolds which are [[Isometries and Homeomorphisms#^85034b|homeomorphic]] but not diffeomorphic. We have the following theorem:
 
 > [!theorem]
 > $\R^{n}$ for all $n\neq 4$ has a unique smooth structure. $\R^{4}$ has uncountably many smooth structures.

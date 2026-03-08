@@ -4,7 +4,7 @@
 In any category $\mathbf{C}$, given parallel morphisms $f,g \colon A\to B$, an equalizer of $f$ and $g$ consists of $E$ and $e \colon E \to A$, universal such that:$$f\circ e=g\circ e$$That is, given $z \colon Z \to A$ with $f \circ z = g \circ z$ there is a unique $u \colon Z \to E$ with $e \circ u = z$ all as in the diagram:
 ![eqlizer|300](https://svgshare.com/i/14BP.svg)
 <u><b>e.g.</b></u> 
-- In $\mathbf{Sets}$, given functions $f, g \colon A \to B$, their equalizer is the injection into $A$ of the equationally defined subset $e\colon E=\{x\in A\mid f(x)=g(x)\}\hookrightarrow A$. Since if $fh(z) = gh(z)$ for some $h \colon Z \to A$, then $h(z) ∈ E$ for all $z\in Z$. Then there is a unique $u \colon Z \to E$ with $z \mapsto b$ such that $e(b)=h(z)$ as $e$ is [[Morphisms#^4e0259|monic]].
+- In $\mathsf{Set}$, given functions $f, g \colon A \to B$, their equalizer is the injection into $A$ of the equationally defined subset $e\colon E=\{x\in A\mid f(x)=g(x)\}\hookrightarrow A$. Since if $fh(z) = gh(z)$ for some $h \colon Z \to A$, then $h(z) ∈ E$ for all $z\in Z$. Then there is a unique $u \colon Z \to E$ with $z \mapsto b$ such that $e(b)=h(z)$ as $e$ is [[Morphisms#^4e0259|monic]].
 
 **Prop**  In any category $\mathbf{C}$, if $e \colon E \to A$ is an equalizer of some pair of morphisms, then $e$ is [[Morphisms#^4e0259|monic]].
 **Prop**  

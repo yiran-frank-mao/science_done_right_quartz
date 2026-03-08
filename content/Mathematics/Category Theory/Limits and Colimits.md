@@ -1,7 +1,6 @@
 ## Cones and Limits
 
->[!definition] 
->**Def**  <i><u>Diagram</u></i>
+>[!definition] Diagram
 >Suppose $\mathbf{C}$ is a category and $\mathbf{J}$ is a [[Structure of Categories#^20e64e|small category]]. A diagram of type $\mathbf{J}$ in $\mathbf{C}$ is a functor $D\colon \mathbf{J}\to\mathbf{C}$. We write the objects in the index category $\mathbf{J}$ lower case, $i, j, \dots$ and the values of the functor $D \colon \mathbf{J} → \mathbf{C}$ in the form $D_{i},D_{j},\dots$ etc.
 
 >[!definition] Cone

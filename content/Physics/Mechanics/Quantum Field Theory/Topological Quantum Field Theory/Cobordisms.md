@@ -31,5 +31,3 @@ The first two axioms guarantee that the theory is "topological", in the sense th
  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/state_space_of_TQFT_finite_dim.svg" alt="state_space_of_TQFT_finite_dim" style="width:35%;"/>
 $\gamma$ is a copairing $\K\to W \otimes V$, suppose that $\gamma(1_{\K})$ is the finite sum $\sum_{i} c_i w_{i}\otimes v_{i}$, then for each $u\in V$, there holds $$u= (\beta\otimes 1_{V}) (1_{V}\otimes \gamma)(u)=(\beta\otimes 1_{V}) \left(\sum_{i} c_{i} u\otimes w_{i} \otimes v_{i} \right)= \sum_{i}c_{i} \beta(u\otimes w_{i}) v_{i}.$$This means $\{v_{i}\}_{i}$ forms a spanning set for $V$. $\square$
 
-## The Category of Cobordisms
-
