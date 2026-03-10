@@ -4,7 +4,7 @@
 >Suppose $\mathbf{C}$ is a category and $\mathbf{J}$ is a [[Structure of Categories#^20e64e|small category]]. A diagram of type $\mathbf{J}$ in $\mathbf{C}$ is a functor $D\colon \mathbf{J}\to\mathbf{C}$. We write the objects in the index category $\mathbf{J}$ lower case, $i, j, \dots$ and the values of the functor $D \colon \mathbf{J} → \mathbf{C}$ in the form $D_{i},D_{j},\dots$ etc.
 
 >[!definition] Cone
->A cone over a diagram $D \colon \mathbf{J} \to \mathbf{C}$ with summit or apex $C ∈ \obj \mathbf{C}$ is a [[Functoriality and Naturality#^d73db0|natural transformation]] $λ\colon \mathcal{C} \Rightarrow D$ whose domain $\mathcal{C}\colon \mathbf{J}\to\mathbf{C}$ is the constant functor at $C$. The components $λ_j \colon C \to D_{j}$ are called the legs of the cone. Explicitly:
+>A *cone* over a diagram $D \colon \mathbf{J} \to \mathbf{C}$ with summit or apex $C ∈ \obj \mathbf{C}$ is a [[Functoriality and Naturality#^d73db0|natural transformation]] $λ\colon \mathcal{C} \Rightarrow D$ whose domain $\mathcal{C}\colon \mathbf{J}\to\mathbf{C}$ is the constant functor at $C$. The components $λ_j \colon C \to D_{j}$ are called the legs of the cone. Explicitly:
 >- The data of a cone over $D\colon \mathbf{J} → \mathbf{C}$ with summit $C$ is a collection of morphisms $λ_j \colon C \to D_{j}$, indexed by the objects $j ∈ \obj\mathbf{J}$.
 >- A family of morphisms $(λ_j \colon C → D_{j})_{j∈\obj\mathbf{J}}$ defines a cone over $D$ if and only if, for each morphism $f \colon k → j$ in $\mathbf{J}$, the following triangle commutes in $\mathbf{C}$:![|200](https://svgshare.com/i/15kz.svg)
 >$\quad$

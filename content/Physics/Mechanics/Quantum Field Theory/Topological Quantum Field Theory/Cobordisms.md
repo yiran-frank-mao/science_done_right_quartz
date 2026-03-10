@@ -1,6 +1,8 @@
 > [!definition] Cobordism
 > Suppose $\Sigma_{-}$ and $\Sigma_{+}$ are two [[Manifolds and Atlases#^3407e4|closed manifolds]] of dimension $n-1$, then a *cobordism* between $\Sigma_{-}$ and $\Sigma_{+}$ is a [[Compactness of Topological Space#^da2511|compact]] $n$-manifold $M$ whose boundary is $\Sigma_{-}\sqcup \Sigma_{+}$. If such $M$ exists, we say $\Sigma_{-}$ and $\Sigma_{+}$ are *cobordant* to each other.
 
+^4998ff
+
 > [!definition] Oriented Cobordism
 > Let $\Sigma_{-}$ and $\Sigma_{+}$ be two oriented [[Manifolds and Atlases#^3407e4|closed manifolds]] of dimension $n-1$. An oriented cobordism from $\Sigma_{-}$ to $\Sigma_{+}$ is a [[Compactness of Topological Space#^da2511|compact]] oriented manifold $M$ together with orientation-preserving smooth maps $\gamma_{\pm}\colon \Sigma_{\pm} \to M$ such that $\Sigma_{\pm}$ maps diffeomorphically onto the in/out-boundary of $M$.
 > 

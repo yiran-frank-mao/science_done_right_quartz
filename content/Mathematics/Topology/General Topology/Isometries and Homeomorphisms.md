@@ -6,7 +6,7 @@ updated: 2024-10-17
 > Suppose $X$ and $Y$ are metric spaces. Suppose that $f \colon X \to Y$ is a [[Relations and Functions#^042daf|bijection]] such that $$ d_Y(f(x),f(y))=d_X(x,y)\quad\text{ for all }x,y\in X$$Then $f$ is called an isometry between $X$ and $Y$. It preserves the distance between points. And we say that $X$ and $Y$ are isometric.
 
 >[!definition] Homeomorphism
-> Suppose $X$ and $Y$ are topological spaces. If $f \colon X \to Y$ is a [[Relations and Functions#^042daf|bijection]] and both $f$ and $f^{-1}$ are continuous we say that $f$ is a homeomorphism and that $X$ and $Y$ are homeomorphic. ^85034b
+> Suppose $X$ and $Y$ are [[Topological Spaces#^65c94a|topological spaces]]. If $f \colon X \to Y$ is a [[Relations and Functions#^042daf|bijection]] and both $f$ and $f^{-1}$ are continuous we say that $f$ is a *homeomorphism* and that $X$ and $Y$ are *homeomorphic*. ^85034b
 >
 
 <u><b>e.g.</b></u>

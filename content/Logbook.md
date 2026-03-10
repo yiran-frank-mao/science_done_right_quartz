@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 9 Mar 2026
+- Updates: [[Manifolds and Atlases]], [[Morse Functions and Critical Points]], [[Topological Gluing]].
+
 ## 8 Mar 2026
 - Updates: [[Pullback and Pushout]], [[Products of Objects]], [[Morphisms]].
 

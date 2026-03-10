@@ -1,6 +1,8 @@
 ---
 created: 2024-01-08
 updated: 2024-10-20
+tags:
+  - differential-geometry
 ---
 >[!definition] Manifold & Manifold with Boundary
 > An *$n$-dimensional manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Topological Spaces#^a8abf4|second-countable]] [[Topological Spaces#^65c94a|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $n$-dimensional Euclidean space $\R^{n}$. 
@@ -13,19 +15,19 @@ Clearly, on a manifold, there might be different collections of homeomorphisms t
 >A *chart* for a manifold $M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $φ\colon U \to V$ where $U$ is open in $M$ and $V$ is open in $\R^n$. A collection of charts $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ is called an *atlas* for $M$ if $\cup_{\alpha\in I}U_{\alpha}=M$.
 >A manifold equipped with an atlas is called a *topological manifold*. ^441ce2
 
->[!definition] Compatible Chart
-> Two charts $\varphi$ and $\eta$ are compatible if $\varphi\circ \eta^{-1}$ is a diffeomorphism.
-
 <b><u>e.g.</u></b>
 - Consider the set $M=\R$ with the usual topology. $\mathcal{A}=\{ x\mapsto x\colon\R\to \R\}$ and $\mathcal{B}=\{ x \mapsto x^{3} \colon \R \to \R \}$ are both differentiable atlases. They are not compatible since the union $\{ x\mapsto x, x\mapsto x^{3} \}$ is not differentiable.
 - The sphere $S^{n}=\{ x\in \R^{n+1}:\|x \| =1\}$ is a closed subset of Euclidean space, thus the topological requirements are satisfied. Define the following two maps: $$\varphi_{+}\colon S^{n}\setminus \{ N \}\to\R^{n}, \quad \varphi_{-}\colon S^{n}\setminus \{ S \} \to \R^{n}$$as follows: We write $x\in \R^{n+1}$ as $(y,z)$ where $y\in \R^{n}$ and $z\in \R$, we take $\varphi_{+}(y,z)=\frac{y}{1-z}$ and $\varphi_{-}(y,z)=\frac{y}{1+z}$. Then we have 
 $\quad$
 
-> [!definition] Differentiable (Smooth) Atlas
-> Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *differentiable* or *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}\circ \varphi_{\alpha}^{-1}$ is smooth, thus a diffeomorphism, as a map between open subsets of $\R^n$.
+> [!definition] Compatible Charts & Smooth Atlas
+> Two charts $\varphi$ and $\eta$ are *compatible* if $\varphi\circ \eta^{-1}$ is a diffeomorphism.
+> Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *differentiable* or *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}$ and $\varphi_{\alpha}$ are compatible.
+> 
 
-> [!definition] Compatible Atlases
+> [!definition] Compatible Atlases & Maximal Atlas
 > Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are *compatible* if their union is also a differentiable atlas.
+> A smooth atlas is called *maximal* if it is not contained in any other atlas. In other words, a maximal atlas $\mathcal{A}_{\text{max}}$ is the one that contains all charts of $M$ that are compatible with $\mathcal{A}_{\text{max}}$.
 
 > [!proposition]
 > Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are compatible if and only if for every chart $\phi$ in $\mathcal{A}$ and $\eta$ in $\mathcal{B}$, both $\phi \circ \eta^{-1}$ and $\eta \circ \phi^{-1}$ are smooth.
