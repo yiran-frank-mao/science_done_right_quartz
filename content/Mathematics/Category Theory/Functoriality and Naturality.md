@@ -14,87 +14,85 @@
 > Equivalently, a contravariant functor is a (covariant) functor from the opposite category $\mathsf{C}^{\text{op}}$ to $\mathsf{D}$. ^653948
 
 <u><b>e.g.</b></u>  
-- Every category $\mathbf{C}$ has an identity functor $1_{\mathbf{C}} \colon \mathbf{C} \to \mathbf{C}$. 
+- Every category $\mathsf{C}$ has an identity functor $1_{\mathsf{C}} \colon \mathsf{C} \to \mathsf{C}$. 
 - The mapping sends any [[Vector Spaces#^f4b63e|vector space]] $V$ to its [[Mathematics/Linear Algebra/Duality#^6c7627|dual space]] $V^{*}$, and any linear map $f \colon V \to W$ to its dual map (i.e. the pullback) $f^{*} \colon W^{*} \to V^{*}$ is a contravariant functor from the category of vector spaces to itself.
-- Let $\mathbf{C}$ be the category of finite sets, and $\mathbf{D}$ be the category of commutative The functor $F \colon \mathbf{C} \to \mathbf{D}$ that sends each finite set to its power set and each function to the corresponding function on the power sets is a contravariant functor.
+- Let $\mathsf{FiniteSet}$ be the category of finite sets, and $\mathsf{D}$ be the category of commutative The functor $F \colon \mathsf{C} \to \mathsf{D}$ that sends each finite set to its power set and each function to the corresponding function on the power sets is a contravariant functor.
 $\quad$
 
 > [!remark]+ The Category of Small Categories
-> We have another example of a category, namely $\mathbf{Cat}$, the category of all [[Structure of Categories#^20e64e|small categories]] and corresponding functors.
+> We now have another example of a category, namely $\mathsf{Cat}$, the category of all [[Structure of Categories#^20e64e|small categories]] and corresponding functors.
 > 
 
 >[!definition] Injective  and Surjective Functor
->A functor $\newcommand{\obj}{\operatorname{\textbf{obj}}}\newcommand{\mor}{\operatorname{\textbf{mor}}}\newcommand{\Hom}{\mathrm{Hom}} F \colon \mathbf{C} → \mathbf{D}$ is said to be injective on objects if the object part $F_0 \colon \obj\mathbf{C} → \obj\mathbf{D}$ is injective, it is surjective on objects if $F_{0}$ is surjective. Similarly, $F$ is injective or surjective on morphisms if the morphism part $F_{1} \colon \mor\mathbf{C} → \mor\mathbf{D}$ is injective or surjective.
+>A functor $\newcommand{\obj}{\operatorname{\textbf{obj}}}\newcommand{\mor}{\operatorname{\textbf{mor}}}\newcommand{\Hom}{\mathrm{Hom}} F \colon \mathsf{C} → \mathsf{D}$ is said to be *injective on objects* if the object part $F_0 \colon \obj\mathsf{C} → \obj\mathsf{D}$ is injective, it is surjective on objects if $F_{0}$ is surjective. Similarly, $F$ is injective or surjective on morphisms if the morphism part $F_{1} \colon \mor\mathsf{C} → \mor\mathsf{D}$ is injective or surjective.
 
 >[!definition] Faithful Functor
->Functor $F$ is faithful if for all $A,B ∈ \obj\mathbf{C}$, the map $$F_{A,B}\colon\Hom_\mathbf{C}(A,B)\to \Hom_\mathbf{D}(F(A),F(B)),\quad f\mapsto F(f)$$is injective.
+>Functor $F$ is faithful if for all $A,B ∈ \obj\mathsf{C}$, the map $$F_{A,B}\colon\Hom_\mathsf{C}(A,B)\to \Hom_\mathsf{D}(F(A),F(B)),\quad f\mapsto F(f)$$is injective.
 
 >[!definition] Full Functor
->Functor $F$ is full if for all $A,B ∈ \obj\mathbf{C}$, the map $$F_{A,B}\colon\Hom_\mathbf{C}(A,B)\to \Hom_\mathbf{D}(F(A),F(B)),\quad f\mapsto F(f)$$is surjective.
+>Functor $F$ is full if for all $A,B ∈ \obj\mathsf{C}$, the map $$F_{A,B}\colon\Hom_\mathsf{C}(A,B)\to \Hom_\mathsf{D}(F(A),F(B)),\quad f\mapsto F(f)$$is surjective.
 
 >[!definition] Embedding
->A functor $F \colon \mathbf{C} → \mathbf{D}$ is called an embedding if it is full, faithful, and injective on objects.
+>A functor $F \colon \mathsf{C} → \mathsf{D}$ is called an embedding if it is full, faithful, and injective on objects.
 
->[!definition] 
->**Def**  <i><u>Full Subcategory</u></i>
->A full subcategory $\mathbf{U}\rightarrowtail\mathbf{C}$ consists of some objects of $\mathbf{C}$ and all of the morphisms between them.
+>[!definition] Full Subcategory
+>A full subcategory $\mathsf{U}\rightarrowtail\mathsf{C}$ consists of some objects of $\mathsf{C}$ and all of the morphisms between them.
 
 ## Representable Structure
 
 >[!definition] Representable Functor
->Let $\mathbf{C}$ be a locally small category, we have the representable functors: $$\Hom_\mathbf{C}(C,-)\colon \mathbf{C} \to \mathbf{Sets}$$for all objects $C ∈ \mor \mathbf{C}$.
+>Let $\mathsf{C}$ be a locally small category, we have the representable functors: $$\Hom_\mathsf{C}(C,-)\colon \mathsf{C} \to \mathsf{Set}$$for all objects $C \in \mathsf{C}_{0}$.
 
->[!definition] 
->**Def**  <i><u>Generator</u></i>
->A generator for category $\mathbf{C}$ is an object $C$ has the property that for any objects $X$ and $Y$ and morphisms f$,g \colon X \to Y$, if $f \neq g$ then there is an arrow $x \colon C → X$ such that $fx\neq gx$. That is, the arrows in the category are distinguished by their effect on generalized elements based at $C$.
+>[!definition] Generator
+>A *generator* for category $\mathsf{C}$ is an object $C$ has the property that for any objects $X$ and $Y$ and morphisms f$,g \colon X \to Y$, if $f \neq g$ then there is an arrow $x \colon C → X$ such that $fx\neq gx$. That is, the arrows in the category are distinguished by their effect on generalized elements based at $C$.
 
 >[!definition] Contravariant Representable Functors
->Let $\mathbf{C}$ be a locally small category, we have the contravariant representable functors: $$\Hom_\mathbf{C}(-,C)\colon \mathsf{C}^\text{op} \to \mathsf{Set}$$taking $f \colon A → B$ to $f^{*} \colon \Hom_\mathbf{C}(B,C) → \Hom_\mathbf{C}(A,C)$ by $f^{*}(h) = h\circ f$ for $h \colon B → C$.
+>Let $\mathsf{C}$ be a locally small category, we have the contravariant representable functors: $$\Hom_\mathsf{C}(-,C)\colon \mathsf{C}^\text{op} \to \mathsf{Set}$$taking $f \colon A → B$ to $f^{*} \colon \Hom_\mathsf{C}(B,C) → \Hom_\mathsf{C}(A,C)$ by $f^{*}(h) = h\circ f$ for $h \colon B → C$.
 
 ## Naturality
 
 >[!definition] Natural Transformation
->Given categories $\mathsf{C}$ and $\mathsf{D}$ and [[Functoriality and Naturality#^653948|covariant functors]] $F,G\colon\mathsf{C}\to\mathsf{D}$, a natural transformation $\alpha\colon F \Rightarrow G$ consists of:
->- morphisms $\alpha_{X}\colon F(X) \to G(X)$, is called the component of $\alpha$ at $X$.
+>Given categories $\mathsf{C}$ and $\mathsf{D}$ and [[Functoriality and Naturality#^653948|covariant functors]] $F,G\colon\mathsf{C}\to\mathsf{D}$, a *natural transformation* $\alpha\colon F \Rightarrow G$ consists of:
+>- morphisms $\alpha_{X}\colon F(X) \to G(X)$, is called the *component of $\alpha$ at $X$*.
 >- and components must be such that for every morphism $f\colon X\to Y$ in $\mathsf{C}$ we have:$$\alpha_{Y}\circ F(f)=G(f)\circ\alpha_{X}$$
 >
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/natural_transformation.png" alt="natural_transformation" style="width:60%;"/> ^d73db0
 
 >[!definition] Vertical Composition
->Suppose $α\colon F \to G$ and $β\colon G \to H$ are natural transformations between parallel functors $F, G, H \colon \mathsf{C} \to \mathsf{D}$. Then there is a natural transformation $β \circα \colon F \to H$ whose components $$(\beta \circ \alpha)_{C}=\beta_{C}\circ \alpha_{C}$$which is defined to be the vertical composition of the components of $\alpha$ and $\beta$.
+>Suppose $α\colon F \Rightarrow G$ and $β\colon G \Rightarrow H$ are natural transformations between parallel functors $F, G, H \colon \mathsf{C} \Rightarrow \mathsf{D}$. Then there is a natural transformation $β \circ α \colon F \to H$ whose components $$(\beta \circ \alpha)_{C}=\beta_{C}\circ \alpha_{C}.$$Such $β \circ α$ is called the *vertical composition* of $\alpha$ and $\beta$. ^70ad46
 
 *Proof*  Naturality of $α$ and $β$ implies that for any $f \colon C → C^{\prime}$ in the domain category, each square, and thus also the composite rectangle, commutes:
 ![|420](https://i.imgur.com/GJHeWk8.png)
 
+>[!definition] Natural Isomorphism
+>A *natural isomorphism* is a natural transformation $\alpha\colon F\Rightarrow G$ in which every component $\alpha_{X}$ is an [[Morphisms#^8927b3|isomorphism]]. In this case, the natural isomorphism may be depicted as $$\alpha \colon F \cong G$$ ^b8c1fd
+
 >[!definition] Functor Category
->Define the category of functors $\text{Fun}(\mathbf{C},\mathbf{D})$ having functors $F\colon\mathbf{C}\to\mathbf{D}$ as objects and natural transformations $\alpha \colon F → G$ as arrows. And for each functor object $F$, the natural transformation $1_{F}$ has components $$(1_{F})_{C}=1_{F(C)}\colon F(C)\to F(C)$$And the composite natural transformation of $\theta\colon F → G$ and $\phi\colon G → H$ is the vertical composition.
+> Define the *category of functors* $\mathrm{Fun}(\mathsf{C},\mathsf{D})$ having [[Functoriality and Naturality#^653948|functors]] $F\colon\mathsf{C}\to\mathsf{D}$ as objects and [[Functoriality and Naturality#^d73db0|natural transformations]] $\alpha \colon F \Rightarrow G$ as arrows. And for each functor object $F$, the natural transformation $1_{F}$ has components $$(1_{F})_{C}=1_{F(C)}\colon F(C)\to F(C)$$And the composite natural transformation of $\theta\colon F \Rightarrow G$ and $\phi\colon G \Rightarrow H$ is the [[Functoriality and Naturality#^70ad46|vertical composition]].
 
 >[!proposition]
->If categories $\mathbf{C}$ and $\mathbf{D}$ are small, then $\text{Fun}(\mathbf{C},\mathbf{D})$ is again a small category, but if $\mathbf{C}$ and $\mathbf{D}$ are locally small, then $\text{Fun}(\mathbf{C},\mathbf{D})$ need not be. This is only guaranteed if $\mathbf{D}$ is locally small and $\mathbf{C}$ is small.
-
->[!definition] Natural Isomorphism
->A natural isomorphism is a natural transformation $\alpha\colon F\to G$ in which every component $\alpha_{X}$ is an isomorphism. In this case, the natural isomorphism may be depicted as $$\alpha \colon F \cong G$$ ^b8c1fd
+>If categories $\mathsf{C}$ and $\mathsf{D}$ are small, then $\text{Fun}(\mathsf{C},\mathsf{D})$ is again a small category, but if $\mathsf{C}$ and $\mathsf{D}$ are locally small, then $\text{Fun}(\mathsf{C},\mathsf{D})$ need not be. This is only guaranteed if $\mathsf{D}$ is locally small and $\mathsf{C}$ is small.
 
 >[!lemma] 
-> A natural transformation is a natural isomorphism if and only if it forms an isomorphism in the functor category.
+> A [[Functoriality and Naturality#^d73db0|natural transformation]] is a natural isomorphism if and only if it forms an isomorphism in the functor category.
 
 >[!lemma] 
->**Lemma**  Given locally small categories $\mathbf{A}$, $\mathbf{B}$, and $\mathbf{C}$, a map of arrows and objects, $$F_{0}\colon \obj \mathbf{A} \times \obj \mathbf{B} \to \obj \mathbf{C},\quad F_{1}\colon \mor \mathbf{A}\times \mor \mathbf{B} \to \mor\mathbf{C}$$forms a functor $F \colon \mathbf{A} \times \mathbf{B} \to \mathbf{C}$ iff 
->- $F$ is functorial in each argument: $F(A,−) \colon \mathbf{B} → \mathbf{C}$ and $F(−,B) \colon \mathbf{A} → \mathbf{C}$ are functors for all $A∈\obj\mathbf{A}$ and $B∈\obj \mathbf{B}$.
->- $F$ satisfies the following interchange law. Given $α \colon A → A^{\prime} ∈ \mor\mathbf{A}$ and $β : B → B^{\prime} ∈ \mor B$, $F(A^{\prime},β)\circ F(α,B)=F(α,B^{\prime})\circ F(A,β)$.
+>**Lemma**  Given locally small categories $\mathsf{A}$, $\mathsf{B}$, and $\mathsf{C}$, a map of arrows and objects, $$F_{0}\colon \obj \mathsf{A} \times \obj \mathsf{B} \to \obj \mathsf{C},\quad F_{1}\colon \mor \mathsf{A}\times \mor \mathsf{B} \to \mor\mathsf{C}$$forms a functor $F \colon \mathsf{A} \times \mathsf{B} \to \mathsf{C}$ iff 
+>- $F$ is functorial in each argument: $F(A,−) \colon \mathsf{B} → \mathsf{C}$ and $F(−,B) \colon \mathsf{A} → \mathsf{C}$ are functors for all $A∈\obj\mathsf{A}$ and $B∈\obj \mathsf{B}$.
+>- $F$ satisfies the following interchange law. Given $α \colon A → A^{\prime} ∈ \mor\mathsf{A}$ and $β : B → B^{\prime} ∈ \mor B$, $F(A^{\prime},β)\circ F(α,B)=F(α,B^{\prime})\circ F(A,β)$.
 >$\quad$
 
 >[!proposition] 
->**Prop**  $\mathbf{Cat}$ is cartesian closed, with the exponentials $\mathbf{D}^{\mathbf{C}}=\text{Func}(\mathbf{C},\mathbf{D})$.
+>**Prop**  $\mathsf{Cat}$ is cartesian closed, with the exponentials $\mathsf{D}^{\mathsf{C}}=\text{Func}(\mathsf{C},\mathsf{D})$.
 >**Proof**  
 
 ## Equivalence of Categories
 
 >[!definition] Equivalent Categories
->An equivalence of categories consists of a pair of functors $E\colon \mathbf{C}\to\mathbf{D}$ and $F\colon \mathbf{D}\to\mathbf{C}$ and a pair of natural isomorphisms $$\alpha\colon 1_\mathbf{C} \to F \circ E, \quad \beta\colon1_\mathbf{D}\to E\circ F$$In this situation, the functor $F$ is called a pseudo-inverse of $E$. The categories $\mathbf{C}$ and $\mathbf{D}$ are then said to be equivalent, written $\mathbf{C} ≃ \mathbf{D}$.
+>An equivalence of categories consists of a pair of functors $E\colon \mathsf{C}\to\mathsf{D}$ and $F\colon \mathsf{D}\to\mathsf{C}$ and a pair of natural isomorphisms $$\alpha\colon 1_\mathsf{C} \to F \circ E, \quad \beta\colon1_\mathsf{D}\to E\circ F$$In this situation, the functor $F$ is called a pseudo-inverse of $E$. The categories $\mathsf{C}$ and $\mathsf{D}$ are then said to be equivalent, written $\mathsf{C} ≃ \mathsf{D}$.
 
 >[!proposition] 
->**Prop**  The following conditions on a functor $F \colon \mathbf{C} → \mathbf{D}$ are equivalent:
+>**Prop**  The following conditions on a functor $F \colon \mathsf{C} → \mathsf{D}$ are equivalent:
 >- $F$ is part of an equivalence of categories.
->- $F$ is full and faithful and “essentially surjective” on objects: for every $D ∈ \obj \mathbf{D}$ there is some $C ∈\obj \mathbf{C}$ such that $F(C)\cong D$.
+>- $F$ is full and faithful and “essentially surjective” on objects: for every $D ∈ \obj \mathsf{D}$ there is some $C ∈\obj \mathsf{C}$ such that $F(C)\cong D$.
 >$\quad$

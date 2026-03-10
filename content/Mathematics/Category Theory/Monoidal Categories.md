@@ -1,4 +1,3 @@
-
 > [!definition] Monoidal Category
 > A *monoidal category* is a tuple $\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ where 
 > - $\mathsf{C}$ is a [[Structure of Categories#^2f5c3a|category]];
