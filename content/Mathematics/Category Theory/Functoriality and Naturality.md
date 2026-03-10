@@ -49,7 +49,7 @@ $\quad$
 >A generator for category $\mathbf{C}$ is an object $C$ has the property that for any objects $X$ and $Y$ and morphisms f$,g \colon X \to Y$, if $f \neq g$ then there is an arrow $x \colon C → X$ such that $fx\neq gx$. That is, the arrows in the category are distinguished by their effect on generalized elements based at $C$.
 
 >[!definition] Contravariant Representable Functors
->Let $\mathbf{C}$ be a locally small category, we have the contravariant representable functors: $$\Hom_\mathbf{C}(-,C)\colon \mathbf{C}^\text{op} \to \mathbf{Sets}$$taking $f \colon A → B$ to $f^{*} \colon \Hom_\mathbf{C}(B,C) → \Hom_\mathbf{C}(A,C)$ by $f^{*}(h) = h\circ f$ for $h \colon B → C$.
+>Let $\mathbf{C}$ be a locally small category, we have the contravariant representable functors: $$\Hom_\mathbf{C}(-,C)\colon \mathsf{C}^\text{op} \to \mathsf{Set}$$taking $f \colon A → B$ to $f^{*} \colon \Hom_\mathbf{C}(B,C) → \Hom_\mathbf{C}(A,C)$ by $f^{*}(h) = h\circ f$ for $h \colon B → C$.
 
 ## Naturality
 

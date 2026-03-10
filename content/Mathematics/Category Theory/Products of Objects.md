@@ -46,7 +46,7 @@ A category $\mathbf{C}$ is said to have all finite products if it has a terminal
 >
 
 <u><b>e.g.</b></u>  
-- In $\mathsf{Set}$, the coproduct $A+B$ of two sets is their disjoint union $A+B=\{(a,A)\mid a\in A\}\cup\{(b,B)\mid b\in B\}$ with evident coproduct injections $i_{1}(a)=(a,A)$ and $i_{2}(b)=(b,B)$. And we we have $$[z_{1},z_{2}](x,\delta)=\begin{cases}z_{1}(x)&\delta=1,\\z_{2}(x)&\delta=2.\end{cases}$$
+- In $\mathsf{Set}$, the coproduct $A+B$ of two sets is their disjoint union $A+B=\{(a,A)\mid a\in A\}\cup\{(b,B)\mid b\in B\}$ with evident coproduct injections $i_{1}(a)=(a,A)$ and $i_{2}(b)=(b,B)$. And we we have $$[z_{1},z_{2}](x,\delta)=\begin{cases}z_{1}(x)&\delta=A,\\z_{2}(x)&\delta=B.\end{cases}$$
 - In $\mathsf{Set}$, every finite set $A$ is a coproduct: $$A\cong 1+1+\dots+1 \quad \left(\car{A} \text{ times}\right)$$This is because a function $f \colon A \to Z$ is uniquely determined by its values $f(a)$ for all $a ∈ A$.
 - If $M(A)$ and $M(B)$ are free [[Free Groups and Relations#^587eee|monoids]] on sets $A$ and $B$, then in $\mathsf{Mon}$ we can construct their coproduct as $M(A)+M(B)\cong M(A+B)$.
 - In a fixed poset $\mathsf{Pos}$, a coproduct of two elements $p, q$ is the supremum of $p$ and $q$.

@@ -48,3 +48,8 @@ Let us define $$\eta\colon \Sigma_{0}\times I \to \Sigma_{1}\times I,\quad (x,t)
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/homotopic_diffeomorphisms_give_same_cobordism_class_2.svg" alt="homotopic_diffeomorphisms_give_same_cobordism_class_2" style="width:35%;"/>
 commute. This shows that the induced cobordisms are equivalent. The other implication follows by composing $\eta\colon \Sigma_{0}\times I \to \Sigma_{1}\times I$ with the projection $\Sigma_{1}\times I \to \Sigma_{1}$, we get a homotopy from $\phi_{0}$ to $\phi_{1}$. $\square$
 
+## Disjoint Union and Twists
+
+> [!definition] Twist Map
+> 
+> 
