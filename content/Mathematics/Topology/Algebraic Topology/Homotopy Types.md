@@ -14,8 +14,9 @@ tags:
 > Retraction is the topological analogue of a projection in linear algebra. In general, they are the maps that "project" the space onto a subspace while preserving the structure of the space.
 
 > [!definition] Homotopy
-> A homotopy is a continuous deformation of one function into another. Formally, given two [[Continuous Functions on Topological Spaces#^33ee5a|continuous functions]] $f,g\colon X \to Y$, where $X,Y$ are [[Topological Spaces#^65c94a|topological spaces]], a homotopy between $f$ and $g$ is a continuous function $H\colon X \times [0,1] \to Y$ such that $H(-,0)=f$ and $H(-,1)=g$.
-> One says that two maps $f$ and $g$ are homotopic, if there exists a homotopy $H$ from $f$ to $g$, and denoted $f\simeq g$. ^2c10b4
+> A *homotopy* is a continuous deformation of one function into another. Formally, given two [[Continuous Functions on Topological Spaces#^33ee5a|continuous functions]] $f,g\colon X \to Y$, where $X,Y$ are [[Topological Spaces#^65c94a|topological spaces]], a homotopy between $f$ and $g$ is a continuous function $H\colon X \times [0,1] \to Y$ such that $H(-,0)=f$ and $H(-,1)=g$.
+> One says that two maps $f$ and $g$ are *homotopic*, if there exists a homotopy $H$ from $f$ to $g$, and denoted $f\simeq g$.
+> For [$C^{k}$-manifolds](Manifolds%20and%20Atlases.md#%5E6ef2ef), we can also define *$C^{k}$-homotopy* by requiring the homotopy $H$ to be $C^{k}$-smooth. ^2c10b4
 > 
 
 <u><b>e.g.</b></u>  A deformation retraction of $X$ onto a subspace $A$ is a homotopy from the identity map of $X$ to a retraction of $X$ onto $A$, that is, a map $r\colon X\to X$ such that $r(X)=A$ and $\newcommand{\id}{\mathrm{id}} r|_{A}=\id$. ^05414e

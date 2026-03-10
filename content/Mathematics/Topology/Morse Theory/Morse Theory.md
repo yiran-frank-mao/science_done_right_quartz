@@ -4,6 +4,8 @@ Morse theory is a central tool in differential topology that studies the global 
 <img src="https://bastian.rieck.me/images/morse_theory_example_2D_Reeb_graph.svg" alt="morse" style="width:20%;"/>
 
 ## Contents
+
+[[Manifolds and Atlases]]
 [[Morse Functions and Critical Points]]
 [[Morse Inequalities and Homology]]
 [[Handle Decompositions and Cobordisms]]

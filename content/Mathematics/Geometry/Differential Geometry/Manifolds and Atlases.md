@@ -33,7 +33,7 @@ $\quad$
 > Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are compatible if and only if for every chart $\phi$ in $\mathcal{A}$ and $\eta$ in $\mathcal{B}$, both $\phi \circ \eta^{-1}$ and $\eta \circ \phi^{-1}$ are smooth.
 
 > [!definition] Smooth Manifold
-> A $C^{k}$ structure on a manifold $M$ is an [[Relations and Functions#^973688|equivalence class]] of differentiable atlases, where two atlases are deemed equivalent if they are compatible.
+> A *$C^{k}$-structure* on a manifold $M$ is an [[Relations and Functions#^973688|equivalence class]] of differentiable atlases, where two atlases are deemed equivalent if they are *$C^{k}$-compatible.
 > A *smooth manifold* is a manifold $M$ together with a smooth ($C^{\infty}$) structure on $M$. ^6ef2ef
 
 <u><b>e.g.</b></u>  
