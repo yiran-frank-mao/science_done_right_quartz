@@ -1,5 +1,5 @@
 > [!definition] Pure Braid
-> A pure braid is a braid that each of its strands joins the top and bottom disks at the same points. Given braid group $B_{n}$, the set of pure braids is denoted as $K_{n}$.
+> A *pure braid* is a braid that each of its strands joins the top and bottom disks at the same points. Given braid group $B_{n}$, the set of pure braids is denoted as $K_{n}$.
 
 > [!remark] $K_{n}$ is the kernel of $\alpha$
 > Notice that $K_{n}=\ker \alpha$ where $\alpha$ is the canonical homomorphism from $B_{n}$ to the symmetric group $S_{n}$. Because every pure braid is mapped to the identity permutation.
