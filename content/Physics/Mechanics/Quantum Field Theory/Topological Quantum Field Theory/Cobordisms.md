@@ -53,3 +53,10 @@ commute. This shows that the induced cobordisms are equivalent. The other implic
 > [!definition] Twist Map
 > 
 > 
+
+
+## Functorial TQFTs
+
+> [!definition] Topological Quantum Field
+> An *$n$-dimensional topological quantum field* is a symmetric monoidal functor from $(n\mathsf{Cob}, \sqcup, \emptyset, T)$ to $(\mathsf{V}_{\mathbb{K}}, \otimes, \mathbb{K}, \sigma)$.
+> 

@@ -30,14 +30,8 @@ tags:
 
 ## The Category of Tangles
 
-> [!definition] Braided Monoidal Category
-> A braided monoidal category is a [[Monoidal Categories#^bc017c|monoidal category]] with an additional structure, a braiding, which is a [[Functoriality and Naturality#^b8c1fd|natural isomorphism]] $\tau_{A,B}\colon A\otimes B \to B\otimes A$ that is compatible with the associativity and unit constraints. ^2361b7
-
-> [!definition] Symmetric Monoidal Category
-> A symmetric monoidal category is a braided monoidal category with the braiding satisfying the symmetry axiom: $\tau_{A,B}=\tau_{B,A}^{-1}$.
-
 > [!definition] Tangle Category
-> The category of tangles, denoted by $\mathsf{Tangle}$, is a [[Tangles and Categories of Tangles#^2361b7|braided monoidal category]] consists of non-negative integers as objects, and tangles as morphisms, such that 
+> The category of tangles, denoted by $\mathsf{Tangle}$, is a [[Monoidal Categories#^2361b7|braided monoidal category]] consists of non-negative integers as objects, and tangles as morphisms, such that 
 > - $T_{m,n}\in\Hom(m,n)$,
 > - the composition of morphisms is tangle composition,
 > - the tensor product of morphisms is (horizontal) stacking, 
@@ -62,7 +56,7 @@ tags:
 > A oriented tangle is a tangle with a fixed orientation on each strand, denoted as $\vec{T}_{{m,n}}$.
 
 > [!definition] Oriented Tangle Category
-> The category of oriented tangles, denoted by $\mathsf{OTangle}$, is a [[Tangles and Categories of Tangles#^2361b7|braided monoidal category]] consists of
+> The category of oriented tangles, denoted by $\mathsf{OTangle}$, is a [[Monoidal Categories#^2361b7|braided monoidal category]] consists of
 > - words in $\{\uparrow,\downarrow\}$ as objects, (<u><b>e.g.</b></u>  $\uparrow\uparrow\downarrow$)
 > - oriented tangles as morphisms, such that the orientation of the tangle is compatible with the "orientation" of the objects.
 > - the composition of morphisms is tangle composition when the words match
