@@ -54,14 +54,14 @@ $\quad$
 ## Naturality
 
 >[!definition] Natural Transformation
->Given categories $\mathbf{C}$ and $\mathbf{D}$ and [[Functoriality and Naturality#^653948|covariant functors]] $F,G\colon\mathbf{C}\to\mathbf{D}$, a natural transformation $\alpha\colon F \Rightarrow G$ consists of:
+>Given categories $\mathsf{C}$ and $\mathsf{D}$ and [[Functoriality and Naturality#^653948|covariant functors]] $F,G\colon\mathsf{C}\to\mathsf{D}$, a natural transformation $\alpha\colon F \Rightarrow G$ consists of:
 >- morphisms $\alpha_{X}\colon F(X) \to G(X)$, is called the component of $\alpha$ at $X$.
->- and components must be such that for every morphism $f\colon X\to Y$ in $\mathbf{C}$ we have:$$\alpha_{Y}\circ F(f)=G(f)\circ\alpha_X$$
+>- and components must be such that for every morphism $f\colon X\to Y$ in $\mathsf{C}$ we have:$$\alpha_{Y}\circ F(f)=G(f)\circ\alpha_{X}$$
 >
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/natural_transformation.png" alt="natural_transformation" style="width:60%;"/> ^d73db0
 
 >[!definition] Vertical Composition
->Suppose $α\colon F \to G$ and $β\colon G \to H$ are natural transformations between parallel functors $F, G, H \colon \mathbf{C}→ \mathbf{D}$. Then there is a natural transformation $β \circα \colon F \to H$ whose components $$(\beta \circ \alpha)_{C}=\beta_{C}\circ \alpha_{C}$$which is defined to be the vertical composition of the components of $α$ and $β$.
+>Suppose $α\colon F \to G$ and $β\colon G \to H$ are natural transformations between parallel functors $F, G, H \colon \mathsf{C} \to \mathsf{D}$. Then there is a natural transformation $β \circα \colon F \to H$ whose components $$(\beta \circ \alpha)_{C}=\beta_{C}\circ \alpha_{C}$$which is defined to be the vertical composition of the components of $\alpha$ and $\beta$.
 
 *Proof*  Naturality of $α$ and $β$ implies that for any $f \colon C → C^{\prime}$ in the domain category, each square, and thus also the composite rectangle, commutes:
 ![|420](https://i.imgur.com/GJHeWk8.png)

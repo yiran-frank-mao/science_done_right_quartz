@@ -42,4 +42,9 @@ $\gamma$ is a copairing $\K\to W \otimes V$, suppose that $\gamma(1_{\K})$ is th
 > Two diffeomorphisms $\phi_{0},\phi_{1}\colon \Sigma_{0} \to \Sigma_{1}$ induce the same cobordism class if and only if they are [[Homotopy Types#^2c10b4|smoothly homotopic]].
 > 
 
-*Proof*  
+*Proof*  We have the following diagram commute as $\phi_{0}$, $\phi_{1}$ are homotopic:
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/homotopic_diffeomorphisms_give_same_cobordism_class.svg" alt="homotopic_diffeomorphisms_give_same_cobordism_class" style="width:35%;"/>
+Let us define $$\eta\colon \Sigma_{0}\times I \to \Sigma_{1}\times I,\quad (x,t)\mapsto (\phi(x,t),t),$$so that the diagram 
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/homotopic_diffeomorphisms_give_same_cobordism_class_2.svg" alt="homotopic_diffeomorphisms_give_same_cobordism_class_2" style="width:35%;"/>
+commute. This shows that the induced cobordisms are equivalent. The other implication follows by composing $\eta\colon \Sigma_{0}\times I \to \Sigma_{1}\times I$ with the projection $\Sigma_{1}\times I \to \Sigma_{1}$, we get a homotopy from $\phi_{0}$ to $\phi_{1}$. $\square$
+
