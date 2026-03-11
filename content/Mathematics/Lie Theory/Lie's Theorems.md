@@ -5,8 +5,7 @@
 > Specially, in the Lie algebra case, we have $$e^{X}e^{Y}=e^{X+Y+[X,Y]/2+[X,[X,Y]]/12+\cdots}$$
 
 > [!corollary]
-> Suppose $X,Y\in\g$, then $$e^{X}Ye^{-X}=Y + [X,Y] + \frac{1}{2}[X,[X,Y]] + \cdots =\sum_{n\in \N} \frac{1}{n!} [\overbrace{A,[A, \dots [A}^{n\text{ } A\text{'s}} ,B]\dots]]. $$
-> 
+> Suppose $X,Y\in\g$, then $$e^{X}Ye^{-X}=Y + [X,Y] + \frac{1}{2}[X,[X,Y]] + \cdots =\sum_{n\in \N} \frac{1}{n!} [\overbrace{X,[X, \dots [X}^{n\text{ } X\text{'s}} ,Y]\dots]]. $$ ^5314e4
 
 *Proof*  This is a consequence 
 

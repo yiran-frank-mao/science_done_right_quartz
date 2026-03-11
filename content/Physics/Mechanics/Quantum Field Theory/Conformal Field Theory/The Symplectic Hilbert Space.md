@@ -66,5 +66,15 @@ $3\implies 1$:  Suppose $\Omega^{*}_{T}\Omega_{T}=1_{\H}$, that is , $$\begin{pm
 > 
 
 > [!proposition]
+> For any $T\in \RSP(\H)$, we have the following intertwining property holds:  $$ W(T) \hat{A}(u)= \hat{A}(Tu) W(T). $$
 > 
-> 
+
+*Proof*  It is equivalent to show that  $$ W(T) \hat{A}(u)W(T)^{-1}= \hat{A}(Tu) .$$Since we assume that $T\in \RSP(\H)$, there are no shifting terms (i.e., ) To compute the left hand side, we need to compute the following six conjugates for any $u\in\F_{+}(\H^{+})$:
+1. $\exp\left(\frac12 \hat{a}^*(K)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(K)\hat{a}^* \right)$;
+2. $\exp\left(\frac12 \hat{a}^*(K)\hat{a}^*\right)\hat{a}^{*}(u)\exp\left(-\frac12 \hat{a}^*(K)\hat{a}^* \right)$;
+3. $\Gamma(L)\hat{a}(u)\Gamma(L)^{-1}$;
+4. $\Gamma(L)\hat{a}^{*}(u)\Gamma(L)^{-1}$;
+5. $\exp\left(\frac12 \hat{a}^*(M)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(M)\hat{a}^* \right)$;
+6. 5. $\exp\left(\frac12 \hat{a}^*(M)\hat{a}^*\right)\hat{a}^{*}(u)\exp\left(-\frac12 \hat{a}^*(M)\hat{a}^* \right)$.
+
+First consider $\exp\left(\frac12 \hat{a}^*(K)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(K)\hat{a}^* \right)$. By the [[Lie's Theorems#^5314e4|BCH formula]], we know that $$\begin{aligned}&\exp\left(\frac12 \hat{a}^*(K)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(K)\hat{a}^* \right)\\=\,&\hat{a}(u)+\left[\frac12 \hat{a}^*(K)\hat{a}^*,\hat{a}(u)\right]+\frac{1}{2}\left[ \frac12 \hat{a}^*(K)\hat{a}^*, \left[\frac12 \hat{a}^*(K)\hat{a}^*,\hat{a}(u)\right]  \right]+\cdots\end{aligned}$$

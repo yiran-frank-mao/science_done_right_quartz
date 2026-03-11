@@ -4,7 +4,7 @@ updated: 2024-10-21
 completed: true
 ---
 ## 11 Mar 2026
-- Updates: [[Functoriality and Naturality]], [[Monoidal Categories]], [[Cobordisms]].
+- Updates: [[Functoriality and Naturality]], [[Monoidal Categories]], [[Cobordisms]], [[Structure of Categories]].
 
 ## 9 Mar 2026
 - Updates: [[Manifolds and Atlases]], [[Morse Functions and Critical Points]], [[Topological Gluing]].

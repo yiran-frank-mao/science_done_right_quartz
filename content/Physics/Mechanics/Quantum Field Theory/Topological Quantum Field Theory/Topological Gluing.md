@@ -12,7 +12,5 @@
 ## Gluing of General Cobordisms
 
 > [!theorem]
-> Suppose $M\colon \Sigma_{0}\to \Sigma_{1}$ and $N\colon \Sigma_{1}\to \Sigma_{2}$ are [[Cobordisms#^4998ff|cobordisms]], then there always exists a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] $NM$ which is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to $M\sqcup_{\Sigma_{1}}N$ and whose smooth structure agrees with both $M$ and $N$.
-
-^a3afdb
+> Suppose $M\colon \Sigma_{0}\to \Sigma_{1}$ and $N\colon \Sigma_{1}\to \Sigma_{2}$ are [[Cobordisms#^4998ff|cobordisms]], then there always exists a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] $NM$ which is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to $M\sqcup_{\Sigma_{1}}N$ and whose smooth structure agrees with both $M$ and $N$. ^a3afdb
 
