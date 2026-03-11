@@ -60,7 +60,7 @@ $3\implies 1$:  Suppose $\Omega^{*}_{T}\Omega_{T}=1_{\H}$, that is , $$\begin{pm
 ## The Weyl Representation
 
 > [!definition] The Weyl Representation
-> For some $T\in S(\H)$, define the *Weyl representation* of $S(\H)$ on the Fock space:
+> For some $T\in S(\H)$, define the *Weyl representation* of $S(\H)$ on the [[The Fock Space#^ecdf5b|bosonic Fock space]] $\newcommand{\F}{\mathcal{F}}\F_{+}(\H^{+})$:
 > $$W(T):=c(T)\exp\left(\frac12 \hat{a}^*(K)\hat{a}^* + \hat{a}^*(\lambda)\right)\Gamma(L)\exp\left(\frac12 \hat{a}(M)\hat{a} + \hat{a}(\mu)\right),$$
 > where $c(T)$ is some normalization constant, $\Gamma(L)$ is the second quantization of $L$, and $\hat{a}^*(K)\hat{a}^*$ and $\hat{a}(M)\hat{a}$ are defined as follows: $$\hat{a}^*(K)\hat{a}^*:=\sum_{i,j} K_{ij}\hat{a}_{i}^{\dagger}\hat{a}_{j}^{\dagger},\quad \hat{a}(M)\hat{a}:=\sum_{i,j} M_{ij}\hat{a}_{i}\hat{a}_{j},$$for some orthonormal basis $\{\ket{i}\}$ of $\H^{+}$, and $K_{ij}$, $M_{ij}$ are the matrix elements of $K$ and $M$ w.r.t this basis.
 > 
@@ -77,4 +77,6 @@ $3\implies 1$:  Suppose $\Omega^{*}_{T}\Omega_{T}=1_{\H}$, that is , $$\begin{pm
 5. $\exp\left(\frac12 \hat{a}^*(M)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(M)\hat{a}^* \right)$;
 6. 5. $\exp\left(\frac12 \hat{a}^*(M)\hat{a}^*\right)\hat{a}^{*}(u)\exp\left(-\frac12 \hat{a}^*(M)\hat{a}^* \right)$.
 
-First consider $\exp\left(\frac12 \hat{a}^*(K)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(K)\hat{a}^* \right)$. By the [[Lie's Theorems#^5314e4|BCH formula]], we know that $$\begin{aligned}&\exp\left(\frac12 \hat{a}^*(K)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(K)\hat{a}^* \right)\\=\,&\hat{a}(u)+\left[\frac12 \hat{a}^*(K)\hat{a}^*,\hat{a}(u)\right]+\frac{1}{2}\left[ \frac12 \hat{a}^*(K)\hat{a}^*, \left[\frac12 \hat{a}^*(K)\hat{a}^*,\hat{a}(u)\right]  \right]+\cdots\end{aligned}$$
+First consider $\exp\left(\frac12 \hat{a}^*(K)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(K)\hat{a}^* \right)$. By the [[Lie's Theorems#^5314e4|BCH formula]], we know that $$\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}m\begin{aligned}&\exp\left(\frac12 \hat{a}^*(K)\hat{a}^*\right)\hat{a}(u)\exp\left(-\frac12 \hat{a}^*(K)\hat{a}^* \right)\\=\,&\hat{a}(u)+\left[\frac12 \hat{a}^*(K)\hat{a}^*,\hat{a}(u)\right]+\frac{1}{2}\left[ \frac12 \hat{a}^*(K)\hat{a}^*, \left[\frac12 \hat{a}^*(K)\hat{a}^*,\hat{a}(u)\right]  \right]+\cdots\end{aligned}$$Consider the commutator $\left[\frac12 \hat{a}^*(K)\hat{a}^*,\hat{a}(u)\right]$, for any $f\in\F_{+}(\H^{+})$ there holds $$\left[\frac12 \hat{a}^{*}(K)\hat{a}^{*},\hat{a}(u)\right] f =\frac{1}{2}\sum_{j,k} K_{j,k} \hat{a}^{*}_{j}\hat{a}^{*}_{k} \hat{a}(u)f - \frac{1}{2}\hat{a}(u)\sum_{j,k} K_{j,k} \hat{a}^{*}_{j}\hat{a}^{*}_{k} f.$$Let $u=x_{l}$ for some $l\in\N$, then we have $$\begin{aligned}
+\left[\frac12 \hat{a}^{*}(K)\hat{a}^{*},\hat{a}(x_{l})\right] f &= \frac{1}{2}\sum_{j,k}K_{j,k}x_{j}x_{k}l\pddf{f}{x_{l}} - \frac{l}{2} \pddf{}{x_{l}} \left( \sum_{j,k}K_{j,k}x_{j}x_{k} f \right) \\ &= \frac{l}{2}\sum_{j,k}K_{j,k}x_{j}x_{k}\pddf{f}{x_{l}} - \frac{l}{2}\left(  \right)
+\end{aligned}$$
