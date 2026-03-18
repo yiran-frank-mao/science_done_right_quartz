@@ -32,7 +32,8 @@ completed: true
 ## Rationals
 
 >[!definition] Rational Numbers
->We define the *rational numbers $\Q$* as a [[Ring, Field and Integral Domain#^575174|field]] of equivalence classes:$$\Q = (\Z \times \Z) / \mathord{\sim}$$where $\sim$ is an [[Relations and Functions#^14741d|equivalence relation]] defined on $\Z \times \Z$ as $$(a,b)\sim (c,d) \iff ad=bc$$We write $[(a,b)]_{\Q}$ as the corresponding equivalence class. And thus define $$\begin{aligned}[] [(a,b)]_{\Q}+[(c,d)]_{\Q}=[(ad+bc,bd)]_{\Q} \\[(a,b)]_{\Q} \cdot [(c,d)]_{\Q}=[(ac,bd)]_{\Q}\\ 0_{\Q} = [(0,1)]_{\Q}\\ 1_{\Q} = [(1,1)]_{\Q}\\ [(a,b)]_{\Q} \leq [(c,d)]_{\Q} \text{ if }  (bc-ad)bd \geq 0 \end{aligned}$$ ^e8a24a
+>We define the *rational numbers $\Q$* as a [[Ring, Field and Integral Domain#^575174|field]] of equivalence classes:$$\Q = (\Z \times \Z) / \mathord{\sim}$$where $\sim$ is an [[Relations and Functions#^14741d|equivalence relation]] defined on $\Z \times \Z$ as $$(a,b)\sim (c,d) \iff ad=bc$$ We write $[(a,b)]_{\Q}$ as the corresponding equivalence class. And thus define 
+>$$\begin{aligned} [(a,b)]_{\Q}+[(c,d)]_{\Q}=[(ad+bc,bd)]_{\Q} \\[(a,b)]_{\Q} \cdot [(c,d)]_{\Q}=[(ac,bd)]_{\Q}\\ 0_{\Q} = [(0,1)]_{\Q}\\ 1_{\Q} = [(1,1)]_{\Q}\\ [(a,b)]_{\Q} \leq [(c,d)]_{\Q} \text{ if }  (bc-ad)bd \geq 0 \end{aligned}$$ ^e8a24a
 
 ## Reals
 
