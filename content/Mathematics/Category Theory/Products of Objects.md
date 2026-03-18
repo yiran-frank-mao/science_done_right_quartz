@@ -8,15 +8,15 @@
 >We write such product $P$ as $A\times B$, and write $\langle x_{1},x_{2}\rangle$ for $u\colon X\to A\times B$.
 
 <u><b>e.g.</b></u> 
-- Products in $\mathbf{Set}$ is [[Construction of Sets#^bd02ce|Cartesian products]].
-- Products in $\mathbf{Pos}$ is the greatest lower bound (infimum) as we require that $p\times p\leq p$, $p\times q\leq q$ and $x\leq p,x\leq q\implies x\leq p\times q$.
-- Products in $\mathbf{Top}$ is the [[Topological Spaces#^fbf303|product topology]].
+- Products in $\mathsf{Set}$ is [[Construction of Sets#^bd02ce|Cartesian products]].
+- Products in $\mathsf{Pos}$ is the meet (i.e., greatest lower bound) as we require that $p\times p\leq p$, $p\times q\leq q$ and $x\leq p,x\leq q\implies x\leq p\times q$.
+- Products in $\mathsf{Top}$ is the [[Topological Spaces#^fbf303|product topology]].
 $\quad$
 
 >[!proposition] 
 > Products are unique up to [[Morphisms#^8927b3|isomorphism]].
 
-**Proof**  Suppose we have $P$ and $Q$ are products of $A,B\in\obj\mathbf{C}$:
+**Proof**  Suppose we have $P$ and $Q$ are products of $A,B\in\mathsf{C}_{0}$:
 ![|250](https://svgshare.com/i/13p9.svg)
 Then there is unique $u\colon P\to Q$ such that $q_{2}\circ u=p_{2}$ and $q_{1}\circ u = p_1$. Similarly, exists unique $w\colon Q\to P$ such that $p_{1}\circ w = q_{1}$ and $p_{2}\circ w = q_{2}$. Therefore,$$q_{1}\circ u\circ w=q_{1},\quad p_{1}\circ w\circ u = p_{1} $$It follows that $u\circ w= 1_{Q}$ and $w\circ u=1_{P}$, thus $P\cong Q$.  $\square$
 
@@ -46,10 +46,9 @@ A category $\mathbf{C}$ is said to have all finite products if it has a terminal
 >
 
 <u><b>e.g.</b></u>  
-- In $\mathsf{Set}$, the coproduct $A+B$ of two sets is their disjoint union $A+B=\{(a,A)\mid a\in A\}\cup\{(b,B)\mid b\in B\}$ with evident coproduct injections $i_{1}(a)=(a,A)$ and $i_{2}(b)=(b,B)$. And we we have $$[z_{1},z_{2}](x,\delta)=\begin{cases}z_{1}(x)&\delta=A,\\z_{2}(x)&\delta=B.\end{cases}$$
-- In $\mathsf{Set}$, every finite set $A$ is a coproduct: $$A\cong 1+1+\dots+1 \quad \left(\car{A} \text{ times}\right)$$This is because a function $f \colon A \to Z$ is uniquely determined by its values $f(a)$ for all $a ∈ A$.
+- In $\mathsf{Set}$, the coproduct $A+B$ of two sets is their disjoint union $A+B=\{(a,A)\mid a\in A\}\cup\{(b,B)\mid b\in B\}$ with evident coproduct injections $i_{1}(a)=(a,A)$ and $i_{2}(b)=(b,B)$. And we we have $$[z_{1},z_{2}](x,\delta)=\begin{cases}z_{1}(x)&\delta=A,\\z_{2}(x)&\delta=B.\end{cases}$$So every finite set $A$ is a coproduct: $$A\cong 1+1+\dots+1 \quad \left(\car{A} \text{ times}\right)$$This is because a function $f \colon A \to Z$ is uniquely determined by its values $f(a)$ for all $a ∈ A$.
 - If $M(A)$ and $M(B)$ are free [[Free Groups and Relations#^587eee|monoids]] on sets $A$ and $B$, then in $\mathsf{Mon}$ we can construct their coproduct as $M(A)+M(B)\cong M(A+B)$.
-- In a fixed poset $\mathsf{Pos}$, a coproduct of two elements $p, q$ is the supremum of $p$ and $q$.
+- In a fixed poset $\mathsf{Pos}$, a coproduct of two elements $p, q$ is the join (i.e., supremum) of $p$ and $q$.
 - In $\mathsf{Group}$, given groups $A$ and $B$, the [[Free Groups and Relations#^f3b924|free group]] of [[Free Groups and Relations#^dc7a31|words]] $G(|A|+|B|)/{\sim}$ is usually called the free product of  $A$ and $B$, written $A \oplus B$ or $A \ast B$. The free product is actually a coproduct.
 - In the category $\mathsf{Ab}$ of [[Groups, Order and Subgroups#^6d511a|abelian groups]], the coproduct of $A$ and $B$ is the Cartesian product of the underlying sets $A$ and $B$.
 - The tensor product of [[Non-Commutative Rings#^2c3d07|algebras]] is the coproduct in the category of commutative algebras $\mathsf{CAlg}$.

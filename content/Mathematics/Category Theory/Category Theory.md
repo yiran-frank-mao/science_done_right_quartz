@@ -26,6 +26,9 @@ Category theory is a branch of mathematics that studies the abstract patterns an
 [[Adjunction]]
 
 ### Higher Categories
+
+^f2a96d
+
 [[Bicategories]]
 [[2-Categories]]
 

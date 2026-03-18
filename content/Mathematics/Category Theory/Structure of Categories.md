@@ -11,13 +11,18 @@
 >The composition law is subject to the following axioms:
 >- Unital with identity morphisms: For any $f \colon X \to Y$, the composites $1_{Y}\circ f$ and $f\circ 1_{X}$ are both equal to $f$.
 >- Associativity: $h\circ(g\circ f)=(h\circ g) \circ f$.
->$\quad$ ^2f5c3a
+>
+> We shall denote the collection of objects as $\newcommand{\obj}{\operatorname{obj}}\obj \mathsf{C}$ or $\mathsf{C}_{0}$, and the collection of morphisms as $\newcommand{\mor}{\operatorname{mor}} \mor\mathsf{C}$ or $\mathsf{C}_{1}$. ^2f5c3a
 
 <u><b>e.g.</b></u> 
 - The [[Number Systems#^5fea5c|real numbers]] $\R$ and continuous functions $\R \to \R$.
 - [[Topological Spaces#^65c94a|Topological spaces]] and [[Continuous Functions on Topological Spaces#^33ee5a|continuous mappings]].
 - [[Manifolds and Atlases#^6ef2ef|Smooth manifolds]] and [[Smooth Functions and Maps#^4fb5f6|smooth mappings]].
-$\quad$ 
+$\quad$
+
+> [!remark]- Why $\mathsf{C}_{0}$ and $\mathsf{C}_{1}$?
+> There is a reason why objects are denoted $\mathsf{C}_{0}$ and morphisms are denoted $\mathsf{C}_{1}$. We will have a unified way to treat objects and morphisms where they are called *cells*. Specifically, objects are $0$-cells, and morphisms are $1$-cells, and "potential" morphisms between morphisms will be called  as $2$-cells. This will be discussed in detail in [[Category Theory#^f2a96d|higher categories]].
+> 
 
 >[!definition] Commutative Diagram
 >A commutative diagram is a diagram such that all directed paths in the diagram with the same start and endpoints lead to the same result. A commutative diagram often consists of three parts:
@@ -32,12 +37,12 @@ $\quad$
 ## Foundations, Large and Small
 
 >[!definition] Small and Large
->A category $\require{mhchem}\newcommand{\obj}{\operatorname{\textbf{obj}}}\newcommand{\mor}{\operatorname{\textbf{mor}}}\newcommand{\Hom}{\mathrm{Hom}}\mathsf{C}$ is called small if both the collection $\obj(\mathsf{C})$ of objects of $\mathsf{C}$ and the collection $\mor(\mathsf{C})$ of arrows of $\mathsf{C}$ are sets. Otherwise, $\mathsf{C}$ is called large. ^20e64e
+>A category $\mathsf{C}$ is called small if both the collection $\obj(\mathsf{C})$ of objects of $\mathsf{C}$ and the collection $\mor(\mathsf{C})$ of arrows of $\mathsf{C}$ are sets. Otherwise, $\mathsf{C}$ is called large. ^20e64e
 
 <u><b>e.g.</b></u>  All finite categories are clearly small, the category $\mathsf{Group}$ of groups, and the category $\mathsf{Set}$ of sets are all large. 
 
 >[!definition] Locally-Small
->A category $\mathsf{C}$ is called *locally small* if for any objects $X, Y$ in $\mathsf{C}$, the collection $\mathrm{Hom}_\mathsf{C} (X,Y)=\{f\in\mor(\mathsf{C})\mid f\colon X\to Y \}$ is a set (called a hom-set). ^d0fa66
+>A category $\mathsf{C}$ is called *locally small* if for any objects $X, Y$ in $\mathsf{C}$, the collection $\newcommand{\Hom}{\operatorname{Hom}} \Hom_\mathsf{C} (X,Y)=\{f\in\mor(\mathsf{C})\mid f\colon X\to Y \}$ is a set (called a hom-set). ^d0fa66
 
 <u><b>e.g.</b></u>  Many of the large categories we want to consider are in fact locally small. $\mathsf{Set}$ is locally small since $\text{Hom}_\mathsf{Set} (X,Y)=Y^{X}$, the set of all functions from $X$ to $Y$. Similarly, $\mathsf{Pos}$, $\mathsf{Top}$, and $\mathsf{Group}$ are all locally small.
 
