@@ -1,9 +1,6 @@
 
 > [!definition] Complex Manifold
-> A *complex manifold* is a manifold with a *complex structure*, that is, an atlas of charts whose transition maps are all [[Holomorphic and Conformal Maps#^c7e434|holomorphic]].
-> 
-
-^98caa8
+> A *complex manifold* is a manifold with a *complex structure*, that is, an atlas of charts whose transition maps are all [[Holomorphic and Conformal Maps#^c7e434|holomorphic]]. ^98caa8
 
 > [!definition] Riemann Surface
 > A *Riemann surface* is a [[Connectedness and Paths#^946cc4|connected]] one‑dimensional complex manifold. Equivalently, it is a connected oriented [[Manifolds and Atlases#^3407e4|real 2‑manifold]] endowed with a conformal structure that determines the same holomorphic coordinates in complex dimension one.
