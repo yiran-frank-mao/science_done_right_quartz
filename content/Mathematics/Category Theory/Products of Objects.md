@@ -51,7 +51,7 @@ A category $\mathbf{C}$ is said to have all finite products if it has a terminal
 - In a fixed poset $\mathsf{Pos}$, a coproduct of two elements $p, q$ is the join (i.e., supremum) of $p$ and $q$.
 - In $\mathsf{Group}$, given groups $A$ and $B$, the [[Free Groups and Relations#^f3b924|free group]] of [[Free Groups and Relations#^dc7a31|words]] $G(|A|+|B|)/{\sim}$ is usually called the free product of  $A$ and $B$, written $A \oplus B$ or $A \ast B$. The free product is actually a coproduct.
 - In the category $\mathsf{Ab}$ of [[Groups, Order and Subgroups#^6d511a|abelian groups]], the coproduct of $A$ and $B$ is the Cartesian product of the underlying sets $A$ and $B$.
-- The tensor product of [[Non-Commutative Rings#^2c3d07|algebras]] is the coproduct in the category of commutative algebras $\mathsf{CAlg}$.
+- The tensor product of [[Noncommutative Rings#^2c3d07|algebras]] is the coproduct in the category of commutative algebras $\mathsf{CAlg}$.
 $\quad$
 
 > [!proposition]

@@ -7,7 +7,7 @@ tags:
 ## C*-Algebras: Definitions and Examples
 
 > [!definition] $\ast$-Algebra & $\ast$-Homomorphism
-> A $\ast$-algebra $\newcommand{\A}{\mathcal{A}}\A$ is an [[Non-Commutative Rings#^2c3d07|algebra]] over $\newcommand{\C}{\mathbb{C}}\C$ equipped with an *involution* $\ast \colon \A \to \A$ such that $a^{**}=a$, $(ab)^{*}=b^{*}a^{*}$, $(a+b)^{*}=a^{*}+b^{*}$, $(\lambda a)^{*}=\bar{\lambda}a^{*}$ for all $a,b\in A$ and $\lambda\in \C$.
+> A $\ast$-algebra $\newcommand{\A}{\mathcal{A}}\A$ is an [[Noncommutative Rings#^2c3d07|algebra]] over $\newcommand{\C}{\mathbb{C}}\C$ equipped with an *involution* $\ast \colon \A \to \A$ such that $a^{**}=a$, $(ab)^{*}=b^{*}a^{*}$, $(a+b)^{*}=a^{*}+b^{*}$, $(\lambda a)^{*}=\bar{\lambda}a^{*}$ for all $a,b\in A$ and $\lambda\in \C$.
 > A *$\ast$-homomorphism* between $\ast$-algebras is an algebra homomorphism also preserving the involution. A [[Relations and Functions#^042daf|bijective]] $*$-homomorphism is called a *$\ast$-isomorphism*. ^1a6445
 
 > [!definition] Banach $\ast$-Algebra & C*-Algebra

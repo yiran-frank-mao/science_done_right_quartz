@@ -3,8 +3,8 @@
 > [!definition] Hilbert Space
 > A *Hilbert space* is a [[Number Systems#^5fea5c|real]] or [[Complex Numbers#^a81924|complex]] [[Inner Products#^f0c22c|inner product space]] that is also [[Complete Metric Space#^67b510|complete]] with respect to the [[Metric Spaces#^0eacc7|metric]] induced by the [[Inner Products#^f0c22c|inner product]]. ^ae0212
 
-> [!definition] Separable Nomed Space
-> A [[Normed Spaces#^345fd3|normed space]] is separable if it has a [[Equinumerous and Countability#^79eb6c|countable]] [[Closure, Interior and Boundary#^b560bf|dense]] subset. i.e. it contains a countable subset whose closure is the entire space. ^acb78f
+> [!definition] Separable Normed Space
+> A [[Normed Spaces#^345fd3|normed space]] is *separable* if it has a [[Equinumerous and Countability#^79eb6c|countable]] [[Closure, Interior and Boundary#^b560bf|dense]] subset. i.e. it contains a countable subset whose closure is the entire space. ^acb78f
 
 <u><b>e.g.</b></u>
 - The finite dimensional complex spaces $\newcommand{\H}{\mathcal{H}}\C^{n}$ are separable Hilbert spaces, with the inner product being $$\langle (a_{1},\dots,a_{n}),(b_{1},\dots,b_{n})\rangle=\sum_{i=1}^{n}a_{i}\bar{b}_{i}.$$

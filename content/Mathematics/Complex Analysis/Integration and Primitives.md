@@ -62,7 +62,7 @@ Recall the definition of a reversed path:
 >[!definition] Closed Path
 >A path $γ \colon [0,1] → \C$ is called closed if $γ(0) = γ(1)$. A pair of paths $γ, \tilde{\gamma} \colon [0, 1] → \C$ are said to have common endpoints if $γ(0) = \tilde{\gamma}(0)$ and $γ(1) = \tilde{\gamma}(1)$. ^3a89f0
 
->[!theorem]
+>[!theorem] Morera's Theorem
 >Let $f\in C(D)$, the following are equivalent: ^0e998c
 >- $\int_\gamma f(z)\dd z=0$ whenever $\gamma$ is a piecewise $C^{1}$ closed path in $D$.
 >- $\int_{\gamma}f(z)\dd z=\int_{\tilde{\gamma}}f(z)\dd z$ whenever $\gamma$ and $\tilde{\gamma}$ are piecewise $C^{1}$ paths with common endpoints. That is the integral is path independent.

@@ -6,7 +6,7 @@
 >[!definition] Bra and Ket
 > A ket is of the form $|v\rangle$, it denotes a vector $v$ in a [[Complex Numbers#^a81924|complex]] [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$, and physically it represents a state of some quantum system.
 > A bra is of the form $\langle f |$, it denotes a linear map $\newcommand{\C}{\mathbb{C}}\newcommand{\R}{\mathbb{R}}f\colon \H \to \C$. 
-> Letting the linear functional $\langle f|$ act on a vector $|v\rangle$ is written as $\langle f|v\rangle \in \C$. ^9686b5
+> Letting the linear functional $\bra{f}$ act on a vector $\ket{v}$ is written as $\langle f|v\rangle \in \C$. ^9686b5
 
 >[!definition] Quantum State
 > A quantum state is a quantum wavefunction $\Psi$, represented by a ket $| \Psi \rangle$. The inner product $\int\Psi_{1}^{*}\Psi_{2}\dd x$ is then written as $\langle \Psi_{1}|\Psi_{2}\rangle$. And the expectation value of some observable $\langle A\rangle = \langle\Psi | \hat{A}| \Psi \rangle$. The Schrödinger equation becomes $$i\hbar\frac{\dd}{\dd t}|\Psi\rangle = \hat{H}|\Psi\rangle$$

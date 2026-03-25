@@ -34,7 +34,6 @@ In summary, we have the data $(\H=\H^{+}\oplus \H^{-}, \llangle\cdot,\cdot\rrang
 > then $T$ is called a *correct operator*, and the above matrix is called the *Potapov–Ginzburg matrix* of $T$, denoted as $\Omega_{T}$. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$ under the usual composition of operators.
 
 %% TODO: What is the norm of \Omega? %%
-
 We can use the associated matrix to describe these operators in $\CSP(\H)$. Given an operator $T\in\CSP(\H)$ with the matrix presentation $$\begin{pmatrix} T_{+}^{+} & T_{+}^{-} \\ T_{-}^{+} & T_{-}^{-}  \end{pmatrix}$$with respect to the decomposition $\H=\H^{+} \oplus \H^{-}$, we have $$\begin{cases} T_{+}^{+} f_{+} + T_{+}^{-} f_{-}= (Tf)_{+}, \\ T_{-}^{+} f_{+} + T_{-}^{-} f_{-}= (Tf)_{-}.\end{cases}$$If $T_{-}^{-}$ is invertible, then we can rearrange the above equation to get $$\Omega_{T}=\begin{pmatrix} -(T_{-}^{-})^{-1} T_{-}^{+} & (T_{-}^{-})^{-1} \\ T^{+}_{+}-T_{+}^{-}(T^{-}_{-})^{-1} T_{-}^{+} & T_{+}^{-}(T_{-}^{-})^{-1} \end{pmatrix}$$
 
 Conversely, if $\begin{pmatrix}K&L\\L^{\top}&M\end{pmatrix}$is the Potapov–Ginzburg matrix of $T$ and $L$ is invertible, we can express the block matrix of $T$ (w.r.t the decomposition $\H=\H^{+} \oplus \H^{-}$) using $K$, $L$ and $M$: $$T=\begin{pmatrix}L^{\top}-ML^{-1}K & ML^{-1} \\ -L^{-1}K & L^{-1}\end{pmatrix}.$$ 

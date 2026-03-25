@@ -7,7 +7,7 @@ completed: true
 ## Graded Algebra and Filtered Algebra
 
 > [!definition] Graded Algebra
-> A *graded algebra* is an [[Non-Commutative Rings#^2c3d07|algebra]] $A$ with a linear decomposition $A=\bigoplus_{n=0}^{\infty} A_{n}$ such that
+> A *graded algebra* is an [[Noncommutative Rings#^2c3d07|algebra]] $A$ with a linear decomposition $A=\bigoplus_{n=0}^{\infty} A_{n}$ such that
 > - each $A_{n}$ is a subspace of $A$,
 > - $a\in A_{k}$, $b\in A_{l}$ implies $ab \in A_{k+l}$,
 >
@@ -35,7 +35,7 @@ completed: true
 >$\quad$
 
 > [!definition] Filtered Algebra
-> A *filtered algebra* is an [[Non-Commutative Rings#^2c3d07|algebra]] $A$ with a sequence of nested [[Homomorphisms and Ideals#^395472|ideals]]: $$A=F_{0} \supseteq F_{1} \supseteq F_{2} \supseteq F_{3} \supseteq \dots$$such that $a\in F_{i}$, $b\in F_{j}$ implies $ab\in F_{i+j}$.
+> A *filtered algebra* is an [[Noncommutative Rings#^2c3d07|algebra]] $A$ with a sequence of nested [[Homomorphisms and Ideals#^395472|ideals]]: $$A=F_{0} \supseteq F_{1} \supseteq F_{2} \supseteq F_{3} \supseteq \dots$$such that $a\in F_{i}$, $b\in F_{j}$ implies $ab\in F_{i+j}$.
 > Suppose $A=F_{0} \supseteq F_{1} \supseteq F_{2} \supseteq \dots$ and $B=G_{0} \supseteq G_{1} \supseteq G_{2} \supseteq \dots$ are filtered algebras, then an algebra homomorphism $f\colon A\to B$ between filtered algebras is a filtered homomorphism if $f(F_{i})\subseteq G_{i}$.
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/filtered_algebra.svg" alt="graded_algebra" style="width:30%;">
 > Hence we have a [[Structure of Categories#^2f5c3a|category]] of filtered algebras $\mathsf{FiltAlg}$.
@@ -63,7 +63,7 @@ completed: true
 
 ## The Pro-Unipotent Filtration
 
-In this section we define a famous filtration on the [[Non-Commutative Rings#^a15722|group algebra]] $\newcommand{\F}{\mathbb{F}}\F G$, called the pro-unipotent filtration, studied extensively in group theory and algebraic geometry.
+In this section we define a famous filtration on the [[Noncommutative Rings#^a15722|group algebra]] $\newcommand{\F}{\mathbb{F}}\F G$, called the pro-unipotent filtration, studied extensively in group theory and algebraic geometry.
 
 > [!definition] Augmentation Map
 > The augmentation map $\iota\colon \F G\to \F$ is defined by sending each group element to $1$: $$ \iota \left( \sum_{g\in G} c_{g} g \right) = \sum_{g\in G} c_{g} $$where $c_{g}\in \F$ and $g\in G$.

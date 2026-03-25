@@ -19,7 +19,7 @@ Rings are algebraic structures that generalize fields: multiplication need not b
 [[Finite Fields]]
 
 ### Non-Commutative Rings and Algebras
-[[Non-Commutative Rings]]
+[[Noncommutative Rings]]
 [[Grading and Filtration]]
 
 ### Modules

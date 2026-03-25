@@ -7,7 +7,7 @@
 <u><b>e.g.</b></u>  The closure of $\beta=\sigma_{1} \sigma_2^{-1} \sigma_1 \sigma_3$: ![braid_closure.svg|250](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braid_closure.svg)
 
 > [!theorem] Alexander's Theorem
-> Any knot or link can be represented as a closed braid. i.e. $\hat{}$ is surjective.
+> Any knot or link can be represented as a closed braid. i.e. $\beta\mapsto\hat{\beta}$ is [[Relations and Functions#^042daf|surjective]].
 
 *Proof*  
 

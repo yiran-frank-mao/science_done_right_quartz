@@ -2,7 +2,7 @@
 > A [[Normed Spaces#^345fd3|norm]] over a [[Vector Spaces#^f4b63e|vector space]] $X$ is *submultiplicative* if $\|ab\|\leq \|a\| \|b\|$ for all $a,b\in X$.
 
 > [!definition] Normed Algebra & Banach Algebra
-> Let $\newcommand{\A}{\mathcal{A}}\A$ be an [[Non-Commutative Rings#^2c3d07|algebra]] (over $\newcommand{\C}{\mathbb{C}}\C$) equipped with a submultiplicative norm, then $\A$ is called a *normed algebra*. 
+> Let $\newcommand{\A}{\mathcal{A}}\A$ be an [[Noncommutative Rings#^2c3d07|algebra]] (over $\newcommand{\C}{\mathbb{C}}\C$) equipped with a submultiplicative norm, then $\A$ is called a *normed algebra*. 
 > If $\A$ admits a unit $1_{\A}$ such that $\|1_{\A}\|=1$, then it is called a *unital normed algebra*.
 > If it is also a [[Banach Spaces#^7196a5|Banach space]] (i.e. [[Complete Metric Space#^67b510|complete]]), then it is called a *Banach algebra*. ^040470
 

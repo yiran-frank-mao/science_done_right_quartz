@@ -27,7 +27,10 @@ Linear Algebra is a fundamental area of mathematics concerned with vectors, vect
 [[Normed Spaces]]
 [[Singular Value Decomposition]]
 [[Jordan Normal Form]]
+
+### Tensor Products and Algebras
 [[Tensors and Tensor Products]]
+[[Pairings and Copairings]]
 [[Exterior Forms]]
 
 ## More ...

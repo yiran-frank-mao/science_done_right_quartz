@@ -39,7 +39,7 @@ $\gamma$ is a copairing $\K\to W \otimes V$, suppose that $\gamma(1_{\K})$ is th
 ## Cobordism Classes Induced by Diffeomorphisms
 
 > [!proposition]
-> Two diffeomorphisms $\phi_{0},\phi_{1}\colon \Sigma_{0} \to \Sigma_{1}$ induce the same cobordism class if and only if they are [[Homotopy Types#^2c10b4|smoothly homotopic]].
+> Two diffeomorphisms $\phi_{0},\phi_{1}\colon \Sigma_{0} \to \Sigma_{1}$ induce the same cylinder cobordism class if and only if they are [[Homotopy Types#^2c10b4|smoothly homotopic]].
 > 
 
 *Proof*  We have the following diagram commute as $\phi_{0}$, $\phi_{1}$ are homotopic:

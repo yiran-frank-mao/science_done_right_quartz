@@ -16,14 +16,17 @@
 >
 > Moreover, a *strict monoidal category* is a monoidal category in which the components of $\alpha$, $\lambda$ and $\rho$ are all identity morphisms. ^bc017c
 
-> [!remark]
-> The triangle diagram and the pentagon diagram are somewhat to define the behavior of the tensor product morphisms $1_{X} \otimes \lambda_{Y}$ etc.
+> [!definition] Monoid Object
+> A *monoid object* in a monoidal category is an object such that 
+> 
+
 
 <u><b>e.g.</b></u>  
 - It is called monoidal because the structure is “monoid-like”. Any monoid $(M, \cdot, 1)$ forms a small monoidal category with object set $M$, $\cdot$ as monoidal product and the identity of $M$ as its identity object.
-- The category of [[Groups, Order and Subgroups#^6d511a|abelian groups]] $(\mathsf{Ab},\otimes,\mathbb{Z})$ is a monoidal category with the usual tensor product of abelian groups and the group of integers $\mathbb{Z}$ as the monoidal unit.
+- The category of [[Groups, Order and Subgroups#^6d511a|abelian groups]] $(\mathsf{Ab},\otimes,\mathbb{Z})$ is a monoidal category with the usual tensor product of abelian groups and the group of integers $\mathbb{Z}$ as the monoidal unit. Rings are monoid objects.
 - The category of sets $(\mathsf{Set}, \sqcup, \emptyset)$ is a monoidal category. The monoidal product is the disjoint union of sets, and the monoidal unit is the empty set.
-- 
+- The category sets can carry another monoidal category $(\mathsf{Set}, \times, \{*\})$, where the monoidal product is the Cartesian product of sets, and the monoidal unit is the singleton set $\{*\}$. Monoids are monoid objects.
+- The category of vector spaces over a field $\newcommand{\K}{\mathbb{K}}\K$ $(\mathsf{Vect}_{\K}, \otimes_{\K}, \K)$ is a monoidal category with the usual tensor product of vector spaces and the field $\K$ as the monoidal unit. Algebras are monoid objects.
 $\quad$
 
 > [!definition] Braided Monoidal Category
@@ -33,7 +36,6 @@ $\quad$
 > [!definition] Monoidal Functor
 > A *monoidal functor* between monoidal categories $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ and $(\mathsf{D},\otimes',\mathbb{1}',\alpha',\lambda',\rho')$ is a functor $F \colon \mathsf{C} \to \mathsf{D}$ together with a morphism $F_{0}\colon \mathbb{1}' \to F(\mathbb{1})$ in $\mathsf{D}$ and a natural transformation $F_{2}\colon F(-)\otimes' F(-) \Rightarrow F(-\otimes -)$ such that the following diagrams commute for all objects $X,Y,Z$ in $\mathsf{C}$:
 > 
-
 
 ## Enriched Categories
 

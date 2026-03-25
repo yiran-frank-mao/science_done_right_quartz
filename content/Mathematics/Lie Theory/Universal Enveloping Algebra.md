@@ -1,7 +1,7 @@
 ## Poincaré–Birkhoff–Witt Theorem
 
 > [!definition] Universal Enveloping Algebra
-> A *universal enveloping algebra* of a [[Lie Algebra#^5007ba|Lie algebra]] $\newcommand{\g}{\mathfrak{g}}\g$ is a pair $(U(\g),i)$ where $U(\g)$ is a Lie algebra that is also a [[Non-Commutative Rings#^2c3d07|unital associative algebra]] with the standard Lie bracket (i.e. commutator of multiplication), and $i\colon \g\to U(\g)$ is a Lie algebra homomorphism. 
+> A *universal enveloping algebra* of a [[Lie Algebra#^5007ba|Lie algebra]] $\newcommand{\g}{\mathfrak{g}}\g$ is a pair $(U(\g),i)$ where $U(\g)$ is a Lie algebra that is also a [[Noncommutative Rings#^2c3d07|unital associative algebra]] with the standard Lie bracket (i.e. commutator of multiplication), and $i\colon \g\to U(\g)$ is a Lie algebra homomorphism. 
 > It satisfies the following universal property: for any associative algebra $A$ with the standard Lie  bracket and any Lie algebra homomorphism $\phi\colon \g\to A$, there exists a unique associative algebra homomorphism $\tilde{\phi}\colon U(\g)\to A$ such that the following diagram commutes:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/universal_enveloping_algebra.svg" alt="https://q.uiver.app/#q=WzAsMyxbMCwwLCJVKFxcbWF0aGZyYWt7Z30pIl0sWzAsMiwiXFxtYXRoZnJha3tnfSJdLFsyLDIsIkEiXSxbMSwwXSxbMCwyLCIhXFx0aWxkZXtcXHBoaX0iLDAseyJzdHlsZSI6eyJib2R5Ijp7Im5hbWUiOiJkYXNoZWQifX19XSxbMSwyLCJcXHBoaSIsMl1d" style="width:20%;"/>
 > In other words, $U(\g)$ is the "most general" associative algebra that $\g$ can map to via Lie algebra homomorphisms. ^3bf4c7

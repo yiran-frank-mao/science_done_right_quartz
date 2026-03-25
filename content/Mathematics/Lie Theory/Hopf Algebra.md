@@ -4,7 +4,7 @@ updated: 2025-09-05
 ## Coalgebras, Bialgebras and Hopf Algebras
 
 > [!definition] Coalgebra
-> A *coalgebra* is just like a [[Non-Commutative Rings#^2c3d07|unital algebra]], but with all the structure maps reversed. Precisely, a coalgebra $A$ is a [[Vector Spaces#^f4b63e|vector space]] over a [[Ring, Field and Integral Domain#^575174|field]] $F$, equipped with a comultiplication $\Delta\colon A\to A\otimes A$ and a counit $e\colon A \to F$, satisfying the following left/right co-unitality laws
+> A *coalgebra* is just like a [[Noncommutative Rings#^2c3d07|unital algebra]], but with all the structure maps reversed. Precisely, a coalgebra $A$ is a [[Vector Spaces#^f4b63e|vector space]] over a [[Ring, Field and Integral Domain#^575174|field]] $F$, equipped with a comultiplication $\Delta\colon A\to A\otimes A$ and a counit $e\colon A \to F$, satisfying the following left/right co-unitality laws
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/coalgebra_counitality.svg" alt="coalgebra_counitality" style="width:80%;"/>
 > and co-associativity laws
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/coalgebra_coassociativity.svg" alt="https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzIsMCwiQVxcb3RpbWVzIEEiXSxbMCwxLCJBXFxvdGltZXMgQSJdLFsyLDEsIkFcXG90aW1lcyBBXFxvdGltZXMgQSJdLFswLDEsIlxcRGVsdGEiXSxbMCwyLCJcXERlbHRhIiwyXSxbMiwzLCJcXG1hdGhybXtpZH1cXG90aW1lcyBcXERlbHRhIl0sWzEsMywiXFxEZWx0YVxcb3RpbWVzIFxcbWF0aHJte2lkfSJdXQ==" style="width:30%;"/>
@@ -15,7 +15,7 @@ updated: 2025-09-05
 > Moreover, if the antipode is an anti-involution, i.e. $s\circ s = \id$, then $A$ is called an *involutive Hopf algebra* or *Hopf $\ast$-algebra*. ^ad39af
 
 <u><b>e.g.</b></u>  
-- The [[Non-Commutative Rings#^a15722|group algebra]] $F[G]$ of a [[Groups, Order and Subgroups#^6e0960|group]] $G$ is a Hopf algebra with comultiplication defined by $\Delta(g) = g\otimes g$ for all $g\in G$, counit defined by $e(g)=1$ for all $g\in G$, and antipode defined by $s(g)=g^{-1}$ for all $g\in G$.
+- The [[Noncommutative Rings#^a15722|group algebra]] $F[G]$ of a [[Groups, Order and Subgroups#^6e0960|group]] $G$ is a Hopf algebra with comultiplication defined by $\Delta(g) = g\otimes g$ for all $g\in G$, counit defined by $e(g)=1$ for all $g\in G$, and antipode defined by $s(g)=g^{-1}$ for all $g\in G$.
 - Any [[Universal Enveloping Algebra#^3bf4c7|universal enveloping algebra]] of a [[Lie Algebra#^5007ba|Lie algebra]] is a Hopf algebra, as shown [[Universal Enveloping Algebra#^966336|here]].
 $\quad$
 
