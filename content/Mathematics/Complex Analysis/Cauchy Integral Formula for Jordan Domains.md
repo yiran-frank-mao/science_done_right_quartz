@@ -5,10 +5,8 @@ completed: true
 ---
 ## Jordan Domains
 
-> [!definition] Jordan Path
+> [!definition] Jordan Path, Jordan Curve, Jordan Arc
 > A *Jordan path* is a simple [[Integration and Primitives#^3a89f0|closed path]] $\newcommand{\C}{\mathbb{C}}\gamma\colon[0,1]\to \C$, that is, $γ$ is a closed path which doesn’t cross itself, except at the common endpoints.
-
-> [!definition] Jordan Curve, Jordan Arc
 > A (piecewise-$C^{1}$) *Jordan curve* $\Gamma⊂\C$ is the [[Relations and Functions#^8f2f00|image]] of a Jordan path, i.e. $\Gamma$ is a Jordan curve if there exists a Jordan path $γ \colon [0,1] \to \C$ such that $\gamma([0,1]) = \Gamma$. Such a $\gamma$ is called a *Jordan parametrization* of $\Gamma$. Specifically, A *Jordan arc* $\Gamma ⊂C$ is the image of an [[Relations and Functions#^042daf|injective]] path $γ \colon [0,1] →\C$.
 
 >[!remark]+ Jordan parametrisations are not unique

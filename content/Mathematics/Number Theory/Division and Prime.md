@@ -3,10 +3,10 @@ created: 2024-01-11
 updated: 2024-10-03
 ---
 > [!definition] Division
-> For two [[Number Systems#^b4eff7|natural numbers]] $a$ and $b$, we say $a$ divides $b$, written as $a\mid b$ if there exists [[Number Systems#^25bad2|integer]] $c$ such that $b=a\cdot c$.
+> For two [[Number Systems#^b4eff7|natural numbers]] $a$ and $b$, we say *$a$ divides $b$*, written as $a\mid b$ if there exists [[Number Systems#^25bad2|integer]] $c$ such that $b=a\cdot c$.
 
 > [!definition] Prime
-> A prime number (or a prime) is a natural number greater than $1$ that is not a product of two smaller natural numbers. ^47f235
+> A *prime number* (or a *prime*) is a natural number greater than $1$ that is not a product of two smaller natural numbers. ^47f235
 
 <b><u>e.g.</u></b> $2,3,5,7,11\dots$ are prime numbers.
 
@@ -23,8 +23,18 @@ updated: 2024-10-03
 
 *Proof*  Assume there are only finitely many primes, say $p_{1},p_{2}\dots p_{n}$. Let $N=p_{1}p_{2}\dots p_{n}+1$. Clearly $N$ is not a member of $p_{1},p_{2}\dots p_{n}$ thus not prime. Hence $N$ is a product of primes. Therefore there exists prime $p_{j}$ such that $p_{j}\mid p_{1}p_{2}\dots p_{n}+1$, it follows that $p_{j}\mid 1$, yielding a contradiction. $\square$
 
+## Greatest Common Divisor
+
 > [!definition] Greatest Common Divisor
-> The greatest common divisor of two or more integers, which are not all zero, is the largest positive integer that divides each of the integers, denoted as $\gcd(x,y)$ in two integers case.
+> The *greatest common divisor* of two or more [[Number Systems#^25bad2|integers]], which are not all zero, is the unique largest positive integer that divides each of the integers, denoted as $\gcd(x,y)$ in the two integers case. In other words, it is the positive integer $d$ such that $d\mid x$, $d\mid y$ and $$c \mid x, c\mid y \implies c \mid d.$$
+
+*Proof*  The existence of $\gcd(x,y)$ is guaranteed by the Bézout’s identity below. The uniqueness of $\gcd(x,y)$ is guaranteed by the definition. $\square$
+
+> [!theorem] Bézout’s Identity
+> Let $a,b\in\Z$, not both zero. Then the set 
+> $$ S=\{ ax+by \mid x,y\in \Z , ax+by>0\} $$
+> has a least element $d$, and $d=\gcd(a,b)$.
+
 
 > [!lemma]
 > For prime number $p$,  $p\nmid a \implies \gcd(p,a)=1$.
