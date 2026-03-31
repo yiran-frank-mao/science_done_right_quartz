@@ -5,10 +5,8 @@ completed: true
 ---
 ## Holomorphic Functions
 
-> [!definition] Domain
-> A domain $D$ is a [[Connectedness and Paths#^946cc4|connected]] open subset of $\newcommand{\C}{\mathbb{C}}\C$. ^08ef59
-
 > [!definition] Holomorphic Function
+> A *domain* $D$ is a [[Connectedness and Paths#^946cc4|connected]] open subset of $\newcommand{\C}{\mathbb{C}}\C$.
 > A function $f \colon D → \C$ is called *holomorphic* on domain $D$ if it is $\C$-differentiable at every point in $D$. We write $H(D)$ for the set of functions that are holomorphic on $D$. We call a function $f ∈ H(\C)$ an *entire* function. ^c7e434
 
 <u><b>e.g.</b></u>  The function $f(z)=e^{z}$ is entire. Polynomials and $\sin$, $\cos$ are also entire functions. 

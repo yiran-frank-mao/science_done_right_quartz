@@ -45,7 +45,7 @@ Intuitively, the integral of a holomorphic function around a Jordan curve/arc is
 > One intuitive way to understand this theorem is to think of the Jordan domain as indicated in the following figure. We add paths that connect the boundary and holes, then the integral of $f$ around the boundary of the Jordan domain is the the sum of integrals around the blue loop and the red loops. Since $f$ is holomorphic in the region enclosed by the blue loop, the integral around the blue loop is zero. Same for the red loops. Therefore, the integral around the boundary of the Jordan domain is zero.
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/jordan_domain_boundary_integral.png" alt="sphere" style="width:45%;">
 
-*Proof*  We evaluate the the integral using Green's theorem: $$\int_{\partial D}f(z)\dd{z}=\int_D\left(i\frac{\partial f}{\partial x}-\frac{\partial f}{\partial y}\right)\dd{x}\dd{y}=2i\int_{D} \frac{\partial f}{\partial \bar{z}}\dd x\dd y=0$$The last step is from [[Complex Differentiability#^754871|condition for complex differentiability]], so $\frac{\partial f}{\partial \bar{z}}=0$. $\square$
+*Proof*  We evaluate the the integral using Green's theorem: $$\int_{\partial D}f(z)\dd{z}=\int_D\left(i\frac{\partial f}{\partial x}-\frac{\partial f}{\partial y}\right)\dd{x}\dd{y}=2i\int_{D} \frac{\partial f}{\partial \bar{z}}\dd x\dd y=0.$$The last step is from [[Complex Differentiability#^754871|condition for complex differentiability]], so $\frac{\partial f}{\partial \bar{z}}=0$. $\square$
 
 >[!remark]+ A result in complex differential geometry
 > We actually achieve a result in complex geometry: $$\dd z=\dd x+i\dd y,\quad2i\dd x \dd y=\dd \bar{z} \dd z$$
