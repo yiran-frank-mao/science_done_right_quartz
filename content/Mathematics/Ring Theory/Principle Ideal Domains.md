@@ -30,11 +30,8 @@ For example, both $\newcommand{\Z}{\mathbb{Z}}\Z$ and the ring of polynomials $F
 
 *Proof*  Suppose $p$ is a prime with $p=ab$. Then $p\mid ab$ implies $p\mid a$ or $p\mid b$. Without loss of generality, suppose $p\mid a$. By the equation, $a\mid p$ as well, so $a$ and $p$ are associates, thus $b$ is a unit. $\square$
 
-> [!definition] Nilpotent
-> Let $R$ be a ring. $x\in R$ is nilpotent if there is $n∈\N$ such that $x^n =0$.
-
-**Def** _Idempotent_
-Let $R$ be a ring. $x\in R$ is idempotent if $x^2=x$.
+> [!definition] Nilpotent & Idempotent
+> Let $R$ be a ring. $x\in R$ is *nilpotent* if there is $n\in\N$ such that $x^n =0$. $x\in R$ is *idempotent* if $x^{2}=x$.
 
 > [!proposition]
 > If $x ∈ R$ is nilpotent then $1 + x$ is invertible.

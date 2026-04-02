@@ -22,7 +22,7 @@ We can extend the notion of factorization to rings (integral domains) other than
 > [!definition] Size Function
 > A size function on an [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ can be any function $\sigma\colon R\setminus\{0\}\to \Z^{+}$ whose domain is the set of nonzero elements of $R$ and whose range is the set of nonnegative integers.
 
-<u><b>e.g.</b></u> A multiplicative size function is especially useful, because it allows us to convert the factorization problem in an arbitrary integral domain to a factorization problem in $\Z$ (even $\N$). For example, consider $\Z[\sqrt{-5}]$. We can define a size function $\sigma$ on $\Z[\sqrt{-5}]$ such that $\sigma(z):=\|z\|^{2}$, where $\|\cdot \|$ denotes the [[Complex Numbers#^add791|complex modulus]]. Thus, it satisfies$$\sigma(zw)=\|zw\|^{2}=\|z\|^{2}\|w\|^{2}=\sigma(z)\sigma(w),$$which is multiplicative. Let's consider $1+\sqrt{-5}\in\Z[\sqrt{-5}]$, whose size is $6$. As $6$ can only be factored into $2\cdot 3$ in $\N$, but there is neither size $2$ nor size $3$ element in $\Z[\sqrt{-5}]$, hence we can conclude that $1+\sqrt{-5}$ is irreducible in $\Z[\sqrt{-5}]$.
+<u><b>e.g.</b></u> A multiplicative size function is especially useful, because it allows us to convert the factorization problem in an arbitrary integral domain to a factorization problem in $\Z$ (even $\newcommand{\N}{\mathbb{N}}\N$). For example, consider $\Z[\sqrt{-5}]$. We can define a size function $\sigma$ on $\Z[\sqrt{-5}]$ such that $\sigma(z):=\|z\|^{2}$, where $\|\cdot \|$ denotes the [[Complex Numbers#^add791|complex modulus]]. Thus, it satisfies$$\sigma(zw)=\|zw\|^{2}=\|z\|^{2}\|w\|^{2}=\sigma(z)\sigma(w),$$which is multiplicative. Let's consider $1+\sqrt{-5}\in\Z[\sqrt{-5}]$, whose size is $6$. As $6$ can only be factored into $2\cdot 3$ in $\N$, but there is neither size $2$ nor size $3$ element in $\Z[\sqrt{-5}]$, hence we can conclude that $1+\sqrt{-5}$ is irreducible in $\Z[\sqrt{-5}]$.
 
 > [!definition] Euclidean Domain
 > An integral domain $R$ is an Euclidean domain if there exists a size function $\sigma$ on $R$ such that division with remainder is possible: for all $a,b\in R$ with $b\neq 0$, there exist $q,r\in R$ such that $a=qb+r$ with $r=0$ or $\sigma(r)<\sigma(b)$.
@@ -133,7 +133,7 @@ If $f\in R[x]$ is not primitive, we can always uniquely write $f=d f_{0}$ where 
 
 *Proof*  By the [[Factorization#^94c6f6|the theorem]], it suffices to show that every irreducible element in $R[x]$ is prime. All irreducible elements in $R[x]$ are either a constant, or a non-constant. Since $R$ is a unique factorization domain, nothing need to be shown for constant irreducible elements. Let $f\in R[x]$ be a non-constant irreducible, $f$ has to be primitive and irreducible in $(\Frac R)[x]$. Suppose $f\mid ab$ in $R[x]$, then $f\mid ab$ in $(\Frac R)[x]$. So $f\mid a$ or $f\mid b$ in $(\Frac R)[x]$, and hence in $R[x]$ by [[Factorization#^a09770|the lemma]]. $\square$
 
-<u><b>e.g.</b></u>  $\Q[x,y]\cong\Q[x][y]$ is a unique factorization domain, as $\Q[x]$ is a unique factorization domain.
+<u><b>e.g.</b></u>  $\newcommand{\Q}{\mathbb{Q}}\Q[x,y]\cong\Q[x][y]$ is a unique factorization domain, as $\Q[x]$ is a unique factorization domain.
 
 ## Factoring Polynomials in $\Z[x]$
 
