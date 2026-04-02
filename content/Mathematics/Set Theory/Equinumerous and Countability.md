@@ -5,19 +5,21 @@ updated: 2025-02-09
 ## Equinumerous Sets
 
 > [!definition] Equinumerous
-> Let $A$ and $B$ be two sets. If there exists a bijection $f \colon A\to B$, then we say $A$ is equinumerous or equivalent to $B$ and write $A \sim B$.
+> Let $A$ and $B$ be two sets. If there exists a bijection $f \colon A\to B$, then we say $A$ is *equinumerous* or *equivalent* to $B$ and write $A \sim B$.
 
-<u><b>e.g.</b></u> We have $\newcommand{\N}{\mathbb{N}}\newcommand{\Z}{\mathbb{Z}}\N\sim\Z$ because the function $f \colon \N\to\Z$ defined by $$f(n)=\begin{cases}k \quad &\text{if } n=2k \\-k \quad &\text{if } n=2k+1\end{cases}$$is a bijection.
+<u><b>e.g.</b></u> 
+- We have $\newcommand{\N}{\mathbb{N}}\newcommand{\Z}{\mathbb{Z}}\N\sim\Z$ because the function $f \colon \N\to\Z$ defined by $$f(n)=\begin{cases}k \quad &\text{if } n=2k \\-k \quad &\text{if } n=2k+1\end{cases}$$is a bijection.
+- $[0,1)\sim(0,1)$ because we can take a sequence $\{a_{n}\}$ with distinct elements in $(0,1)$, say $a_{n} = \frac{1}{3^{n}}$ for $n = 1,2,\cdots$. Define $f \colon [0,1) → (0,1)$ as follows: $$f(x)=\left\{\begin{array}{ll}1/3&\quad\text{if $x=0$,}\\1/3^{n+1}&\quad\text{if $x=1/3^n$ for }n\geq1,\\x&\quad\text{otherwise}\end{array}\right.$$Then $f$ is a bijection and thus $[0, 1) ∼ (0, 1)$.
+$\quad$
 
 > [!proposition]
 > The equinumerous relation is an [[Relations and Functions#^14741d|equivalence relation]].
 
  *Proof*  The identity function is a bijection $A \to A$, thus it is reflexive. If $A ∼ B$, then there is a bijection $f \colon A \to B$. The inverse function $f^{−1} \colon B \to A$ is also a bijection. Thus $B ∼A$, therefore it is symmetric. If $A∼B$ and $B ∼C$, then there exist bijection $f \colon A\to B$ and $g \colon B \to C$. Since the composition $g\circ f \colon A\to C$ is a bijection, we have $A∼C$, thus it is transitive. $\square$
 
-> [!proposition]
-> $[0,1)\sim(0,1)$.
+> [!theorem] Cantor-Schröder-Bernstein Theorem
+> If both $f\colon A\to B$ and $g\colon B\to A$ are [[Relations and Functions#^042daf|injective]], then $A\sim B$.
 
-*Proof*  Take a sequence $\{a_{n}\}$ with distinct elements in $(0,1)$, say $a_{n} = \frac{1}{3^{n}}$ for $n = 1,2,\cdots$. Define $f \colon [0,1) → (0,1)$ as follows: $$f(x)=\left\{\begin{array}{ll}1/3&\quad\text{if $x=0$,}\\1/3^{n+1}&\quad\text{if $x=1/3^n$ for }n\geq1,\\x&\quad\text{otherwise}\end{array}\right.$$Clearly f is a bijection and thus $[0, 1) ∼ (0, 1)$. $\square$
 
 ## Countability of Sets
 
