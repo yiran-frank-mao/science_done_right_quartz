@@ -26,7 +26,7 @@ The Heisenberg algebra exists by the following construction:
 ## Oscillator Representation of $\vir$
 
 > [!proposition] $\vir$ Subalgebra in $U(\Hei)$
-> In [$U(\Hei)$](Universal%20Enveloping%20Algebra#%5E3bf4c7.md), we can define a subalgebra $\mathfrak{v}$ which is spanned by $$d_{n}:=\frac{1}{2}\sum_{m\in\Z} \colon a_{n-m}a_{m}\colon$$where $\colon a_{m}a_{n}\colon =a_{m}a_{n}$ if $m\leq n$ and $\colon a_{m}a_{n}\colon =a_{n}a_{m}$ otherwise (this is called the *normal ordering*). 
+> In [$U(\Hei)$](Universal%20Enveloping%20Algebra#%5E3bf4c7), we can define a subalgebra $\mathfrak{v}$ which is spanned by $$d_{n}:=\frac{1}{2}\sum_{m\in\Z} \colon a_{n-m}a_{m}\colon$$where $\colon a_{m}a_{n}\colon =a_{m}a_{n}$ if $m\leq n$ and $\colon a_{m}a_{n}\colon =a_{n}a_{m}$ otherwise (this is called the *normal ordering*). 
 > Then this subalgebra is isomorphic to the [[Witt Algebra and Virasoro Algebra#^61c2ec|Virasoro algebra]] $\vir$ through the map $\theta\colon \vir \to \mathfrak{v}$, $L_{n}\mapsto d_{n}$ and $\kappa\mapsto 1_{\Hei}$.
 > 
 

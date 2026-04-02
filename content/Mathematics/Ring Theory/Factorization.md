@@ -37,7 +37,7 @@ $\quad$
 > [!proposition]
 > A Euclidean domain is a [[Principle Ideal Domains#^74559c|principal ideal domain]]. ^5f7518
 
-*Proof*  We mimic the proof that [$\Z$ is a principle ideal domain](Principle%20Ideal%20Domains#%5E9b5851.md) once again. Let $R$ be an Euclidean domain with size function $\sigma$. Let $I\triangleleft R$ be a non trivial ideal. Pick $n\in I$ such that $\sigma(n)$ is minimal. We claim $I=(n)$. For any $m\in I$, by the remainder theorem, we have $m=qn+r$ for some $q,r\in R$ with $\sigma(r)<\sigma(n)$. Since $n,m\in I$, it follows that $r=m-qn\in I$. As $\sigma(n)$ is minimal, we must have $r=0$. Therefore $m=qn\in (n)$. $\square$
+*Proof*  We mimic the proof that [$\Z$ is a principle ideal domain](Principle%20Ideal%20Domains#%5E9b5851) once again. Let $R$ be an Euclidean domain with size function $\sigma$. Let $I\triangleleft R$ be a non trivial ideal. Pick $n\in I$ such that $\sigma(n)$ is minimal. We claim $I=(n)$. For any $m\in I$, by the remainder theorem, we have $m=qn+r$ for some $q,r\in R$ with $\sigma(r)<\sigma(n)$. Since $n,m\in I$, it follows that $r=m-qn\in I$. As $\sigma(n)$ is minimal, we must have $r=0$. Therefore $m=qn\in (n)$. $\square$
 
 > [!definition] Greatest Common Divisor & Relatively Prime
 > Let $a,b\in R$ be elements of an integral domain $R$. The greatest common divisor of $a$ and $b$ is an element $d\in R$ such that:

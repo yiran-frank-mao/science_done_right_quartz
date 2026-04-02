@@ -1,7 +1,7 @@
 > [!definition] Principal Ideal Domain
 > A [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ is called a principal ideal domain if every [[Homomorphisms and Ideals#^395472|ideal]] is principal. ^74559c
 
-For example, both $\Z$ and the ring of polynomials $F[x]$ over a field $F$ are PIDs:
+For example, both $\newcommand{\Z}{\mathbb{Z}}\Z$ and the ring of polynomials $F[x]$ over a field $F$ are PIDs:
 
 > [!proposition]
 > $\Z$ is a principal ideal domain.
