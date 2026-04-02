@@ -1,4 +1,3 @@
-
 > [!definition] Principal Ideal Domain
 > A [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ is called a principal ideal domain if every [[Homomorphisms and Ideals#^395472|ideal]] is principal. ^74559c
 
@@ -7,7 +6,7 @@ For example, both $\Z$ and the ring of polynomials $F[x]$ over a field $F$ are P
 > [!proposition]
 > $\Z$ is a principal ideal domain.
 
-*Proof*  Suppose $I\triangleleft\Z$ is a non trivial ideal. There exists at least one positive integer in it. Pick the smallest positive integer $n\in I$. We claim $I=(n)$. For any $m\in I$, by the remainder theorem, we have $m=qn+r$ for some $q,r\in\Z$ with $0\leq r<n$. Since $n,m\in I$, it follows that $r=m-qn\in I$. As $n$ is the smallest positive integer in $I$, we must have $r=0$. Therefore $m=qn\in (n)$. $\square$
+*Proof*  Suppose $I\triangleleft\Z$ is a non trivial ideal. There exists at least one positive integer in it. Pick the smallest positive integer $n\in I$. We claim $I=(n)$. For any $m\in I$, by the remainder theorem, we have $m=qn+r$ for some $q,r\in\Z$ with $0\leq r<n$. Since $n,m\in I$, it follows that $r=m-qn\in I$. As $n$ is the smallest positive integer in $I$, we must have $r=0$. Therefore $m=qn\in (n)$. $\square$  ^9b5851
 
 > [!remark]
 > Indeed, any Euclidean domain is a principle ideal domain. (See [[Factorization#^5f7518|proposition]].)
