@@ -17,9 +17,7 @@ tags:
 > - *coisotropic* if $W^{\omega}\subset W$,
 > - *symplectic* if $W \cap W^{\omega} = \{0\}$, i.e. $\omega|_{W}$ is non-degenerate.
 > - *Lagrangian* if $W=W^{\omega}$.
-> $\quad$
-
-^651b51
+> $\quad$ ^651b51
 
 > [!lemma]
 > For any subspace $W\subset (V, \omega)$, there holds $$\dim W+\dim W^{\omega} = \dim V, \quad W^{\omega\omega}=W.$$

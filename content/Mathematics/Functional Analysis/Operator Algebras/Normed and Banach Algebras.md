@@ -21,7 +21,7 @@ Recall that the set of invertible elements in a algebra forms a group:
 Here, for any unital algebra $A$, we denote the set of invertible elements in $\A$ as $\newcommand{\Inv}{\mathrm{Inv}}\Inv(\A):=\A^{\times}$.
 
 > [!definition] Spectrum
-> Suppose $A$ is a unital normed algebra. Then the spectrum of $a\in \A$ is the set $$\sigma_{\A}(a)=\{\lambda \in\C:a-\lambda \cdot 1_{\A} \text{ is not invertible}\}.$$
+> Suppose $A$ is a unital normed algebra. Then the *spectrum* of $a\in \A$ is the set $$\sigma_{\A}(a)=\{\lambda \in\C:a-\lambda \cdot 1_{\A} \text{ is not invertible}\}.$$
 
 <u><b>e.g.</b></u>
 - Suppose $\A=M_{n}(\C)$, the algebra of $n\times n$ complex matrices, then the spectrum of a matrix $B$ is the set of all eigenvalues of $B$.
