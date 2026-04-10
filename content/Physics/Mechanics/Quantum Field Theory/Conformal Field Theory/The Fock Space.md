@@ -21,12 +21,18 @@
 > Even more formally, we can treat $\hat{a}$ as a map that assigns each $x\in\H$ to an annihilation operator $\hat{a}(x)$, and each $x\in \H$ to a creation operator $\hat{a}^{*}(x)$, such that $\hat{a}(x)$ is linear in $x$, $\hat{a}^{*}(x)$ is conjugate-linear in $x$, and they satisfy the canonical commutation relations $$[\hat{a}(x), \hat{a}^{*}(y)]=\langle x,y\rangle,\quad [\hat{a}(x), \hat{a}(y)]=0,\quad [\hat{a}^{*}(x), \hat{a}^{*}(y)]=0.$$ $\hat{a}_{n}$ and $\hat{a}^{*}_{n}$ are the annihilation and creation operators associated to some orthonormal basis $\{e_{n}\}_{n\in\N}$ of $\H$.
 > ^ecdf5b
 
-> [!definition] Second Quantization
-> Suppose $A\in B(\H)$ is a bounded operator on $\H$, then the *second quantization* of $A$ is the operator $\Gamma(A)\in B(\F_{+}(\H))$ defined as $$\Gamma(A)(x_{1}\odot \cdots \odot x_{n}):= Ax_{1}\odot \cdots \odot Ax_{n}.$$
+> [!definition] Canonical Quantization
+> Suppose $A\in B(\H)$ is a bounded operator on $\H$, then the *canonical quantization* of $A$ is the operator $\Gamma(A)\in B(\F_{+}(\H))$ defined as $$\Gamma(A)(x_{1}\odot \cdots \odot x_{n}):= Ax_{1}\odot \cdots \odot Ax_{n}.$$
 > 
 
-> [!definition] Segal–Bargmann Space
-> The *Segal–Bargmann space* is the space of holomorphic functions 
+> [!definition] Segal-Bargmann Space
+> Let $\H$ be a separable complex Hilbert space. For each finite-dimensional subspace $E\subset \H$, let $$\newcommand{\d}{\mathrm{d}}\newcommand{\dd}{\,\d}\mathcal{B}(E):=\left\{f\colon E\to \C \text{ holomorphic }:  \|f\|_{E}^2:=\int_{E} |f(z)|^{2}\dd\mu_E(z)<\infty\right\},$$
+> where  
+> $$\d\mu_E(z):=\pi^{-\dim E}e^{-\|z\|^2}\dd\lambda_E(z)  $$
+> and $\d\lambda_{E}$ is the Lebesgue measure on $E$.  
+> If $E\subset F$, we identify $\mathcal{B}(E)$ with the closed subspace of  $\mathcal{B}(F)$ consisting of functions depending only on the $E$-variable.  
+> Let  $$ \mathcal P_{\mathrm{cyl}}(\H):=\bigcup_{E\subset \H_+,\ \dim E<\infty}\{\text{holomorphic polynomials on }E\}. $$ 
+> Then the *Segal-Bargmann space* $\mathcal{B}(\H)$ is the Hilbert completion of  $\mathcal P_{\mathrm{cyl}}(\H_+)$ with respect to the norms above.
 
 > [!proposition]
 > The bosonic Fock space is isomorphic to the Segal-Bargmann space.

@@ -21,16 +21,16 @@ Recall that the set of invertible elements in a algebra forms a group:
 Here, for any unital algebra $A$, we denote the set of invertible elements in $\A$ as $\newcommand{\Inv}{\mathrm{Inv}}\Inv(\A):=\A^{\times}$.
 
 > [!definition] Spectrum
-> Suppose $A$ is a unital normed algebra. Then the *spectrum* of $a\in \A$ is the set $$\sigma_{\A}(a)=\{\lambda \in\C:a-\lambda \cdot 1_{\A} \text{ is not invertible}\}.$$
+> Suppose $A$ is a unital normed algebra. Then the *spectrum* of $a\in \A$ is the set $$\sigma_{\A}(a)=\{\lambda \in\C:a-\lambda \cdot 1_{\A} \text{ is not invertible}\}.$$ ^5f41ec
 
 <u><b>e.g.</b></u>
 - Suppose $\A=M_{n}(\C)$, the algebra of $n\times n$ complex matrices, then the spectrum of a matrix $B$ is the set of all eigenvalues of $B$.
 - $\Omega$ is a compact [[Hilbert Spaces#^ae0212|Hilbert space]], then the spectrum of $f\in C(\Omega)$, for which $C(\Omega)$ is the algebra of all continuous maps $\Omega\to \C$, is the range of $f$. 
-- Consider the algebra $\C[z]$. The spectrum of $z$ is the whole $\C$.
+- Consider the algebra of polynomials $\C[z]$. The spectrum of $z$ is the whole $\C$.
 $\quad$
 
 > [!proposition]
-> The spectrum is a closed subset of $\C$.
+> The [[Normed and Banach Algebras#^5f41ec|spectrum]] is a closed subset of $\C$.
 > 
 
 > [!theorem] Neumann Theorem
