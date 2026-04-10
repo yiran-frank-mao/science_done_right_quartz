@@ -31,7 +31,7 @@
 > $$\d\mu_E(z):=\pi^{-\dim E}e^{-\|z\|^2}\dd\lambda_E(z)  $$
 > and $\d\lambda_{E}$ is the Lebesgue measure on $E$.  
 > If $E\subset F$, we identify $\mathcal{B}(E)$ with the closed subspace of  $\mathcal{B}(F)$ consisting of functions depending only on the $E$-variable.  
-> Let  $$ \mathcal P_{\mathrm{cyl}}(\H):=\bigcup_{E\subset \H_+,\ \dim E<\infty}\{\text{holomorphic polynomials on }E\}. $$ 
+> Let  $$ \mathcal{P}_{\mathrm{cyl}}(\H):=\bigcup_{E\subset \H_+,\ \dim E<\infty}\{\text{holomorphic polynomials on }E\}. $$ 
 > Then the *Segal-Bargmann space* $\mathcal{B}(\H)$ is the Hilbert completion of  $\mathcal P_{\mathrm{cyl}}(\H_+)$ with respect to the norms above.
 
 > [!proposition]
