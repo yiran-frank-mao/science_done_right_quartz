@@ -29,10 +29,10 @@ The Heisenberg algebra exists by the following construction:
 > In [$U(\Hei)$](Universal%20Enveloping%20Algebra#%5E3bf4c7), we can define a subalgebra $\mathfrak{v}$ which is spanned by $$d_{n}:=\frac{1}{2}\sum_{m\in\Z} \colon a_{n-m}a_{m}\colon$$where $\colon a_{m}a_{n}\colon =a_{m}a_{n}$ if $m\leq n$ and $\colon a_{m}a_{n}\colon =a_{n}a_{m}$ otherwise (this is called the *normal ordering*). 
 > Then this subalgebra is isomorphic to the [[Witt Algebra and Virasoro Algebra#^61c2ec|Virasoro algebra]] $\vir$ through the map $\theta\colon \vir \to \mathfrak{v}$, $L_{n}\mapsto d_{n}$ and $\kappa\mapsto 1_{\Hei}$.
 > 
-
+        
 > [!definition] Oscillator Representation of $\vir$
 > We now define a family of representations $(\varphi_{\lambda,\mu},\F)$ of $\vir$ for $\lambda,\mu\in\C$ by
->  $$\varphi_{\lambda,\mu}(L_{n}):=\frac{1}{2}(\rho_{\lambda}\circ \theta )(L_{n}) + i\mu n \rho_{\lambda}(a_{n}) + \frac{\mu^{2}}{2}\delta_{n,0}I, \quad \varphi_{\lambda,\mu}(\kappa)=I,$$for all $n\in\Z$. This is called the *oscillator representation* of $\vir$.
+>  $$\varphi_{\lambda,\mu}(L_{n}):=(\rho_{\lambda}\circ \theta )(L_{n}) + i\mu n \rho_{\lambda}(a_{n}) + \frac{\mu^{2}}{2}\delta_{n,0}I, \quad \varphi_{\lambda,\mu}(\kappa)=I,$$for all $n\in\Z$. This is called the *oscillator representation* of $\vir$.
 > 
 
 > [!proposition]
