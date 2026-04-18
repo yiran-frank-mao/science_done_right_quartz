@@ -394,7 +394,7 @@ Updates: [[Constructions on Categories]].
 - New page: [[Spin]].
 
 ## 30 May 2024
-- Updates: [[Convex Sets]], [[Connectedness and Paths]], [[Compactness of Metric Space]], [[Isometries and Homeomorphisms]], [[Order]], [[Morphisms]].
+- Updates: [[Convex Sets]], [[Connectedness and Paths]], [[Compactness of Metric Space]], [[Isometries and Homeomorphisms]], [[Preorder, Partial Order and Posets]], [[Morphisms]].
 
 ## 29 May 2024
 - New pages: [[Multiple View Geometry]]
@@ -491,7 +491,7 @@ Updates: [[Constructions on Categories]].
 - Update: [[Functoriality and Naturality]].
 
 ## 31 Mar 2024
-- New pages: [[Order Theory]], [[Order]], [[Completeness]].
+- New pages: [[Order Theory]], [[Preorder, Partial Order and Posets]], [[Completeness]].
 - Add definition of [[Relations and Functions#^759a11|homogeneous binary relation]], [[Relations and Functions#^1bdc5e|reflexive]], [[Relations and Functions#^cb363c|antisymmetric]] and [[Relations and Functions#^1f742d|transitive]].
 - New section of [[Ring, Field and Integral Domain#Ordered Field|ordered field]].
 

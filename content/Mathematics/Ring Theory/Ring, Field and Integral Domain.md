@@ -61,7 +61,7 @@ tags:
 >- if $a∈P$, then $−a\notin P$.
 >- if $a,b∈P$, then $a+b∈P$ and $ab∈P$.
 >
-> Equivalently, a field $F$ together with a [[Order#^a8688d|total order]] $\leq$ on $F$ is an ordered field if the order satisfies the following properties for all $a,b,c\in F$:
+> Equivalently, a field $F$ together with a [[Preorder, Partial Order and Posets#^a8688d|total order]] $\leq$ on $F$ is an ordered field if the order satisfies the following properties for all $a,b,c\in F$:
 >- $a\leq b \implies a+c \leq b+c$.
 >- $0\leq a,0\leq b \implies 0\leq ab$.
 >$\quad$ ^43843e

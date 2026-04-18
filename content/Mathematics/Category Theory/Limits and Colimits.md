@@ -42,7 +42,7 @@
 ## Inverse Limit
 
 >[!definition] Inverse System
->Let $\mathbf{C}$ be a category, $(I,\leq)$ a [[Preorder and Posets#^33ba5a|poset]]. Suppose $\{X_{i}\}_{i\in I}$ is a family of objects with morphisms $\{f_{ij}\colon X_{j}\to X_{i}\}$ for $i\leq j$ with the following properties:
+>Let $\mathbf{C}$ be a category, $(I,\leq)$ a [[Preorder, Partial Order and Posets#^fa7f22|poset]]. Suppose $\{X_{i}\}_{i\in I}$ is a family of objects with morphisms $\{f_{ij}\colon X_{j}\to X_{i}\}$ for $i\leq j$ with the following properties:
 >- $f_{ii}=\id_{X_{i}}$ for all $i\in I$.
 >- $f_{ij}\circ f_{jk}=f_{ik}$ for all $i\leq j\leq k$.
 > 

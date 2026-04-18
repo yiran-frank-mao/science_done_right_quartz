@@ -49,7 +49,7 @@ $\square$
 By the triangle inequality: $$\|(s+t) \cdot 1 - (a+b)\| = \|(s \cdot 1 - a) + (t \cdot 1 - b)\| \le \|s \cdot 1 - a\| + \|t \cdot 1 - b\| \le s+t$$Since $s+t \ge \|a+b\|$, this shows that $a+b$ is positive. $\square$
 
 > [!definition] The Partial Order on $\A_{\text{sa}}$
-> Let $\A_{\text{sa}}$ be the set of self-adjoint elements in $\A$. For $a, b \in \A_{\text{sa}}$, we write $a \le b$ if $b-a \in \A^{+}$. This defines a [[Order#^fa7f22|partial order]] on $\A_{\text{sa}}$.
+> Let $\A_{\text{sa}}$ be the set of self-adjoint elements in $\A$. For $a, b \in \A_{\text{sa}}$, we write $a \le b$ if $b-a \in \A^{+}$. This defines a [[Preorder, Partial Order and Posets#^fa7f22|partial order]] on $\A_{\text{sa}}$.
 
 ## Ideals and Quotient Algebras
 

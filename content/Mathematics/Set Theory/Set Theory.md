@@ -19,7 +19,7 @@ Set theory is a branch of mathematics that deals with the properties of well-def
 [[Number Systems]]
 
 ### Order Theory
-[[Order]]
+[[Preorder, Partial Order and Posets]]
 [[Preorder and Posets]]
 
 ## More ...

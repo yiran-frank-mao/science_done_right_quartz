@@ -37,7 +37,7 @@ completed:
 >$\quad$
 
 > [!proposition]
-> Asymptotic notations are not [[Order#^a8688d|linear ordering]].
+> Asymptotic notations are not [[Preorder, Partial Order and Posets#^a8688d|linear ordering]].
 
 > [!proposition]
 > $𝑎 (\log 𝑛)^k = 𝑜(𝑛)$ for any positive constants $𝑎 > 0$ and integer $𝑘 > 0$.

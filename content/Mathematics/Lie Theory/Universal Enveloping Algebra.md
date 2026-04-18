@@ -10,7 +10,7 @@ The existence of universal enveloping algebras can be shown using the tensor alg
 Furthermore, a concrete description of universal enveloping algebras can be given by the Poincaré–Birkhoff–Witt theorem:
 
 > [!theorem] Poincaré–Birkhoff–Witt Theorem
-> Suppose $\g$ is a [[Lie Algebra#^5007ba|Lie algebra]] over $F$ with a [[Order#^a8688d|totally ordered]] basis $\{x_{1},x_{2},\cdots\}$. Then its universal enveloping algebra $U(\g)$ exists and has a basis consisting of the ordered monomials. That is, the set of all elements of the form $x_{i_1}\ldots x_{i_n}$ for $i_{1}\leq i_{2}\leq\cdots\leq i_{n}$ and some $n$ is a basis of $U(\g)$. 
+> Suppose $\g$ is a [[Lie Algebra#^5007ba|Lie algebra]] over $F$ with a [[Preorder, Partial Order and Posets#^a8688d|totally ordered]] basis $\{x_{1},x_{2},\cdots\}$. Then its universal enveloping algebra $U(\g)$ exists and has a basis consisting of the ordered monomials. That is, the set of all elements of the form $x_{i_1}\ldots x_{i_n}$ for $i_{1}\leq i_{2}\leq\cdots\leq i_{n}$ and some $n$ is a basis of $U(\g)$. 
 > In other words, the [[Grading and Filtration#^ce0272|associated graded algebra]] $\newcommand{\gr}{\operatorname{gr}}\gr U(\g)$ is isomorphic to the symmetric algebra $S(\g)$. ^28e157
 
 *Proof Sketch*  It is clear that the ordered monomials span $U(\g)$, because any monomial that is not well ordered can be rewritten using the relations in the ideal $J$ to express it as a linear combination of well-ordered monomials. The non-trivial part is to show that these ordered monomials are linearly independent.

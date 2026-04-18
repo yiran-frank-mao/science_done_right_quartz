@@ -64,7 +64,7 @@ A similar equation holds for $\Delta_n^{-1}$, but in this case, we apply a half-
 > Let $a,b\in B_{n}^{+}$. We define $a\leq b$ if there exists $c\in B_{n}^{+}$ such that $b=ac$, said $a$ is a prefix of $b$.
 
 > [!proposition]
-> The prefix relation $\leq$ is a [[Order#^fa7f22|partial order]] on $B_{n}^{+}$, invariant under left multiplication.
+> The prefix relation $\leq$ is a [[Preorder, Partial Order and Posets#^fa7f22|partial order]] on $B_{n}^{+}$, invariant under left multiplication.
 
 *Proof*  
 
