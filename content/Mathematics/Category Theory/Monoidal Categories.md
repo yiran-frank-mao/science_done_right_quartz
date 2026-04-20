@@ -17,7 +17,7 @@
 > Moreover, a *strict monoidal category* is a monoidal category in which the components of $\alpha$, $\lambda$ and $\rho$ are all identity morphisms. ^bc017c
 
 > [!definition] Monoid Object
-> A *monoid object* in a monoidal category is an object such that 
+> A *monoid object* in a monoidal category is an object $M$ with two morphisms
 > 
 
 

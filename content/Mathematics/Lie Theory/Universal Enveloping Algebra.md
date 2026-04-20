@@ -56,7 +56,7 @@ To make the "almost equivalence" precise, given a module $M$ over $U(\g)$, we de
 ## The Hopf Algebra Structure
 
 > [!proposition]
-> The universal enveloping algebra of a Lie algebra carries a natural structure of a cocommutative [[Hopf Algebra#^ad39af|Hopf algebra]]. Specifically, we define
+> The universal enveloping algebra of a Lie algebra carries a natural structure of a cocommutative [[Coalgebra and Hopf Algebra#^ad39af|Hopf algebra]]. Specifically, we define
 > - comultiplication $\Delta\colon U(\g)\to U(\g)\otimes U(\g)$ by $\Delta(x)=x\otimes 1 + 1 \otimes x$ for all $x\in \g$ and $\Delta(1)=1\otimes 1$,
 > - counit $e\colon U(\g)\to F$ by $e(x)=0$ for all $x\in \g$ and $e(1)=1$,
 > - antipode $s\colon U(\g)\to U(\g)$ by $s(x)=-x$ for all $x\in \g$ and $s(1)=-1$.

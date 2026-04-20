@@ -12,7 +12,7 @@ Lie theory is the study of continuous symmetries through **Lie groups**—smooth
 [[Lie Algebra]]
 [[The Exponential Map]]
 [[Lie's Theorems]]
-[[Hopf Algebra]]
+[[Coalgebra and Hopf Algebra]]
 [[Lie Group Cohomology]]
 
 ### Properties of Lie Algebras

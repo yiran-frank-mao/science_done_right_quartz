@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 19 Apr 2026
+- Updates: [[Frobenius Algebra]].
+
 ## 19 Mar 2026
 - Updates: [[Structure of Categories]], [[Products of Objects]].
 
@@ -79,10 +82,10 @@ Updates: [[Constructions on Categories]].
 
 ## 3 Sep 2025
 - New: [[Central Extensions of Lie Algebras]], [[Unitary Groups]].
-- Updates: [[Lie Algebra Representations]], [[Hopf Algebra]].
+- Updates: [[Lie Algebra Representations]], [[Coalgebra and Hopf Algebra]].
 
 ## 2 Sep 2025
-- Updates: [[Products of Objects]], [[Noncommutative Rings]], [[Hopf Algebra]], [[Free Groups and Relations]].
+- Updates: [[Products of Objects]], [[Noncommutative Rings]], [[Coalgebra and Hopf Algebra]], [[Free Groups and Relations]].
 
 ## 1 Sep 2025
 -  Updates: [[Real Analysis]], [[Number Systems]].

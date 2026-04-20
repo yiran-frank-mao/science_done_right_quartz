@@ -5,12 +5,12 @@ updated: 2024-09-24
 Tensors and tensor products are multilinear generalizations of vectors and matrices. They provide a flexible framework for representing and manipulating data in various fields. In fact, there are multiple ways to define tensors and tensor products. We will start with an abstract algebraic definition, and then provide constructive definitions in terms of multilinear maps. ^bd55c9
 
 > [!definition] Multilinear Map
-> Suppose $U_{i}$ and $W$ are [[Vector Spaces#^f4b63e|vector spaces]].  A function $f \colon \prod_{i=1}^{n} U_{i} \to W$ is called multilinear if it is linear in each variable. That is, when for all $k<n$, the function $u_{k} \mapsto f (u_{1},\dots,u_{n})$ is linear for each $u_{i} ∈ U_{i}$ with $i\neq k$. In particular, a bilinear function is a multilinear function of two variables. ^da894d
+> Suppose $U_{i}$ and $W$ are [[Vector Spaces#^f4b63e|vector spaces]].  A function $f \colon \prod_{i=1}^{n} U_{i} \to W$ is called *multilinear* if it is linear in each variable. That is, when for all $k<n$, the function $u_{k} \mapsto f (u_{1},\dots,u_{n})$ is linear for each $u_{i} ∈ U_{i}$ with $i\neq k$. In particular, a *bilinear function* is a multilinear function of two variables. ^da894d
 
 ## Tensor Product of Vector Spaces
 
 >[!definition] Tensor Product of Vector Spaces
->The tensor product of vector spaces $U$ and $V$ over the same field is a vector space $U \otimes V$ together with a bilinear function $f\colon U \times V\to U \otimes V$ such that for every vector space $W$ and bilinear function $g \colon U \times V \to W$ there exists a unique linear function $h \colon U \otimes V \to W$ such that $g = h \circ f$:
+>The *tensor product* of vector spaces $U$ and $V$ over the same field is a vector space $U \otimes V$ together with a bilinear function $f\colon U \times V\to U \otimes V$ such that for every vector space $W$ and bilinear function $g \colon U \times V \to W$ there exists a unique linear function $h \colon U \otimes V \to W$ such that $g = h \circ f$:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/tensor_product_universal_property.svg" alt="tensor_product_universal_property" style="width:23%;"/>
 >The function $f$ usually stays anonymous and is written as $(a, b) \mapsto a \otimes b$. ^732917
 
