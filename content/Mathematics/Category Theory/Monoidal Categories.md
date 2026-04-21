@@ -20,7 +20,6 @@
 > A *monoid object* in a monoidal category is an object $M$ with two morphisms
 > 
 
-
 <u><b>e.g.</b></u>  
 - It is called monoidal because the structure is “monoid-like”. Any monoid $(M, \cdot, 1)$ forms a small monoidal category with object set $M$, $\cdot$ as monoidal product and the identity of $M$ as its identity object.
 - The category of [[Groups, Order and Subgroups#^6d511a|abelian groups]] $(\mathsf{Ab},\otimes,\mathbb{Z})$ is a monoidal category with the usual tensor product of abelian groups and the group of integers $\mathbb{Z}$ as the monoidal unit. Rings are monoid objects.
