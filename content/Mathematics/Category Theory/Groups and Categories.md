@@ -24,6 +24,7 @@ updated: 2024-09-17
 <u><b>e.g.</b></u> The idea of a group in a category captures the familiar notion of a group with additional structure:
  - A [[Groups, Order and Subgroups#^6e0960|group]] in the usual sense is a group object in the category $\mathsf{Set}$.
  - A [[Topological Groups#^a4f93a|topological group]] is a group in $\mathsf{Top}$, the category of topological spaces.
+ - A group object in $\mathsf{Group}$ is an [[Groups, Order and Subgroups#^6d511a|abelian group]].
 $\quad$
 
 ## Category of Groups

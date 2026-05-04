@@ -26,6 +26,10 @@
 
 <u><b>e.g.</b></u>  The derivative operator on $C^{\infty}([a,b])\subset C([a,b])$ is not closed but is closable; its closure is the operator on $C^{1}([a,b])$.
 
+> [!definition] Core
+> 
+
+
 ## Adjoints of Densely Defined Operators
 
 > [!definition] Adjoint of Densely Defined Operator
