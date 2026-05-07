@@ -1,3 +1,7 @@
+---
+tags:
+  - algebra
+---
 ## Three Definitions of the Frobenius Structure
 
 > [!definition] Frobenius Algebra

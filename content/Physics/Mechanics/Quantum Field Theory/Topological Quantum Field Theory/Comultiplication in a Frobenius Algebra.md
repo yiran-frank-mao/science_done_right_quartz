@@ -1,3 +1,7 @@
+---
+tags:
+  - algebra
+---
 The main result of this page is that
 
 > [!theorem]
