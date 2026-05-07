@@ -13,3 +13,4 @@ Topological quantum field theory (TQFT) is a kind of quantum field theory design
 ### Frobenius Algebras
 [[Frobenius Algebra]]
 [[Comultiplication in a Frobenius Algebra]]
+[[Frobenius Objects]]
