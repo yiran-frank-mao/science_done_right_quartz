@@ -23,9 +23,8 @@
 
 ## The Projection Valued Measure Form
 
-
-
-
+> [!definition] Projection Valued Measure
+> Let $(\R, \mathcal{B}_{\R^{d}})$ be the Borel [[Measurable Spaces and Functions#^0bddf6|measurable space]]. A *projection-valued measure* on a separable Hilbert space is a map $P\colon \mathcal{B}(\R)\to B(\H)$ such that $P(\Omega)$ is an orthogonal projection, $P(\emptyset)=0$, $P(\R)=I$, and for any countable collection $\{\Omega_{i}\}_{i=1}^{\infty}$ of disjoint Borel sets, we have $$P\left(\bigcup_{i=1}^{\infty} \Omega_{i}\right)=\sum_{i=1}^{\infty} P(\Omega_{i}),$$where the sum converges in the strong operator topology. ^d20d30
 
 > [!theorem] Spectral Theorem - Projection Valued Measure Form
 > There exists a one-to-one correspondence between self-adjoint operators on a separable Hilbert space $\H$ and projection valued measures $\{P_{\Omega}\}$ on $\H$: $$T=\int_{\R} \lambda\dd P_{\lambda}$$
