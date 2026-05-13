@@ -10,7 +10,7 @@ cssclasses:
 > A (smooth) *knot* is a smooth embedding $K \colon S ^{1} \hookrightarrow S^{3}$.
 > More generally, a *link* $L$ with $n$ connected components is a smooth embedding of $\underbrace{S^1\sqcup\cdots\sqcup S^1}_{n\text{ copies}}$ into $S^{3}$.
 
-> [!comment] When are two knots same?
+> [!remark] When are two knots same?
 >  Homotopy is a continuous deformation, which is not enough, because one path might cross itself under the deformation. We need to consider isotopy, which is a continuous deformation of embeddings. However, it turns out that isotopy is not enough either, because any tangle can be shrunk to a point.
 >  ![knot_isotopy.gif|350](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/knot_isotopy.gif)
 >  To solve this, we need to consider one of the following:

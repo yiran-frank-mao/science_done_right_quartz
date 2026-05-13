@@ -26,6 +26,7 @@ Measure theory is a branch of mathematics that extends the concepts of length, a
 [[Convergence Theorems]]
 [[Integration on Measure Spaces]]
 [[Absolute Continuity]]
+[[Projection Valued Measures]]
 
 ## More ...
 [[Geometric Measure Theory]]

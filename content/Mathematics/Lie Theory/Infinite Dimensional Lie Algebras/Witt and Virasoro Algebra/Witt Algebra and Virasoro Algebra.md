@@ -54,7 +54,7 @@ Now let us see properties of the orientation-preserving diffeomorphisms:
 > 
 
 > [!definition] Virasoro Algebra
-> The *Virasoro algebra* is the unique nontrivial [[Central Extensions of Lie Algebras#^c4c058|central extension]] of the Witt algebra, often denoted as $\newcommand{\vir}{\mathfrak{vir}}\vir$$. That is, $\vir:=\witt\oplus\C\kappa$ for some $\kappa$ in the center of $\witt$, equipped with the Lie bracket $$[L_{m}, L_{n}]:=(m-n)L_{m+n}+\delta_{m,-n}\frac{m(m^{2}-1)}{12}\kappa.$$ 
+> The *Virasoro algebra* is the unique nontrivial [[Central Extensions of Lie Algebras#^c4c058|central extension]] of the Witt algebra, often denoted as $\newcommand{\vir}{\mathfrak{vir}}\vir$. That is, $\vir:=\witt\oplus\C\kappa$ for some $\kappa$ in the center of $\witt$, equipped with the Lie bracket $$[L_{m}, L_{n}]:=(m-n)L_{m+n}+\delta_{m,-n}\frac{m(m^{2}-1)}{12}\kappa.$$ 
 > A useful and standard way to present the Virasoro algebra is to decompose it into three parts: $$\newcommand{\h}{\mathfrak{h}} \newcommand{\n}{\mathfrak{n}}\vir = \n^{+} \oplus \h \oplus \n^{-},$$where $\n^{+}:=\bigoplus_{n>0}\C L_{n}$, $\n^{-}:=\bigoplus_{n<0}\C L_{n}$ and $\newcommand{\sl}{\mathfrak{sl}}\h:= \C L_{0} \oplus \C\kappa$. ^61c2ec
 
 ## Induced Representations of $\sl_{2}(\C)$

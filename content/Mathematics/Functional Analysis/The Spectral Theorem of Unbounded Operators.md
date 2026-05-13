@@ -23,8 +23,7 @@
 
 ## The Projection Valued Measure Form
 
-> [!definition] Projection Valued Measure
-> 
+
 
 
 
