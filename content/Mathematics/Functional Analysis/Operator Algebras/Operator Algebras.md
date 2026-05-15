@@ -21,3 +21,5 @@ Operator algebras are self-adjoint (closed under taking Hermitian adjoints), top
 [[The Double Commutant Theorem]]
 [[Factors and Type Classification]]
 [[Tomita-Takesaki Theory]]
+
+### Subfactors
