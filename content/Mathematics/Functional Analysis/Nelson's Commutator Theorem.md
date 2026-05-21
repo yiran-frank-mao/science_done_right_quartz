@@ -74,6 +74,17 @@ Secondly, we need to show that $\|A\|_{k+2,l+2}<\infty$. Since $I+H\colon \H^{k+
 > $$\langle A^\dagger v, w \rangle_{-k,k} = \langle v, Aw \rangle_{-l,l} \quad \forall w, v \in \H^\infty.$$
 > We say that $A$ is *formally Hermitian* if $A = A^\dagger$. ^c1eb50
 
+Suppose $T^*$ is the adjoint of $T$ with respect to $\langle\cdot,\cdot\rangle_{k}$ and $\langle\cdot,\cdot\rangle_{l}$. That is, 
+    \[ \langle Tv, w \rangle_{l} = \langle v, T^*w\rangle_{k} \]
+    for all $v\in \H^k$ and $w\in \H^l$. We can give an expression for \(T^{\dagger}\) in terms of $T^*$ by observing the following: 
+    \[\begin{aligned}
+        \langle v,Tw\rangle_{-l,l} &= \left\langle (\id+A)^{-l/2}v, (\id+A)^{l/2}T w\right\rangle \\ 
+        &= \left\langle (\id+A)^{-l}v, Tw \right\rangle_l \\ 
+        &= \left\langle T^{*}(\id+A)^{-l}v, w\right\rangle_{k} \\ 
+        &= \left\langle (\id+A)^{k/2}T^{*}(\id+A)^{-l}v, (\id+A)^{k/2}w\right\rangle \\ 
+        &= \left\langle (\id+A)^{k}T^{*}(\id+A)^{-l}v, w\right\rangle_{-k,k}.\end{aligned}\]
+    Therefore \(T^{\dagger}=(\id+A)^{k} T^{*}(\id+A)^{-l}\).
+
 We can give an expression for $A^{\dagger}$ by observing the following: $$\begin{aligned}\langle v,Aw\rangle_{-l,l} &= \left\langle (I+H)^{-l/2}v, (I+H)^{l/2}A w\right\rangle \\ &= \left\langle (I+H)^{-l/2}v, (I+H)^{l/2}A(I+H)^{-k} (I+H)^{k}w \right\rangle \\ &= \left\langle (I+H)^{k}A(I+H)^{-l/2} (I+H)^{-l/2}v, (I+H)^{k}w\right\rangle_{-k} \\ &= \left\langle (I+H)^{k}A^{*}(I+H)^{-l}v, (I+H)^{k}w\right\rangle_{-k} \\ &= \left\langle (I+H)^{-k/2}(I+H)^{k}A^{*}(I+H)^{-l}v, (I+H)^{-k/2}(I+H)^{k}w\right\rangle \\ &= \left\langle (I+H)^{k}A^{*}(I+H)^{-l}v, w\right\rangle_{-k,k}.\end{aligned}$$Therefore $A^{\dagger}=(I+H)^{k} A^{*}(I+H)^{-l}$.
 
 > [!lemma]
