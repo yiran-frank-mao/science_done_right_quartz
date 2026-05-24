@@ -19,7 +19,7 @@
 - [[Manifolds and Atlases#^6ef2ef|Smooth manifolds]] and [[Smooth Functions and Maps#^4fb5f6|smooth mappings]] form a category $\mathsf{Man}$.
 - [[Groups, Order and Subgroups#^6e0960|Groups]] and [[Homomorphisms, Normal Subgroup & Conjugation#^homo|group homomorphisms]] form a category $\mathsf{Group}$.
 - Any set $S$ can be regarded as a category with objects being the elements of $S$ and only identity morphisms. This is usually called a *discrete category*. In particular, the empty set $\emptyset$ gives the empty category, and any singleton set $\{*\}$ gives a category $\mathsf{1}$ with one object and one morphism.
-$\quad$
+$\quad$ ^008eea
 
 > [!remark]- Why $\mathsf{C}_{0}$ and $\mathsf{C}_{1}$?
 > There is a reason why objects are denoted $\mathsf{C}_{0}$ and morphisms are denoted $\mathsf{C}_{1}$. We will have a unified way to treat objects and morphisms where they are called *cells*. Specifically, objects are $0$-cells, and morphisms are $1$-cells, and "potential" morphisms between morphisms will be called  as $2$-cells. This will be discussed in detail in [[Category Theory#^f2a96d|higher categories]].
