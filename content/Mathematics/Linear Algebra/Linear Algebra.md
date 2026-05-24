@@ -32,6 +32,7 @@ Linear Algebra is a fundamental area of mathematics concerned with vectors, vect
 [[Tensors and Tensor Products]]
 [[Pairings and Copairings]]
 [[Exterior Forms]]
+[[Graded Vector Spaces]]
 
 ## More ...
 [[Machine Learning]]

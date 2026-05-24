@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 24 May 2026
+- Updates: [[Structure of Categories]], [[Frobenius Objects]].
+
 ## 19 Apr 2026
 - Updates: [[Frobenius Algebra]].
 
