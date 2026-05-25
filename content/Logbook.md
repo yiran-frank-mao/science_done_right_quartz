@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 25 May 2025
+- Updates: [[Graded Vector Spaces]], [[Monoidal Categories]].
+
 ## 24 May 2026
 - Updates: [[Structure of Categories]], [[Frobenius Objects]].
 

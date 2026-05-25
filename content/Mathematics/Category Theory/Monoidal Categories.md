@@ -22,7 +22,9 @@
 > - unit $\eta:\one \to M$,
 > 
 > such that the unit diagram and the pentagon diagram hold:
-> 
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_unit_relation.svg" style="width:50%;"/>
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_pentagon_relation.svg" style="width:50%;"/>
+> Dually, a *comonoid object* is a monoid object in the dual category $\mathsf{C}^{\text{op}}$.
 
 <u><b>e.g.</b></u>  
 - It is called monoidal because the structure is “monoid-like”. Any monoid $(M, \cdot, 1)$ forms a small monoidal category with object set $M$, $\cdot$ as monoidal product and the identity of $M$ as its identity object.
