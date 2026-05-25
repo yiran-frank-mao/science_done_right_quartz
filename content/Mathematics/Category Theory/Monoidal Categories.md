@@ -1,7 +1,7 @@
 ## Monoidal Categories
 
 > [!definition] Monoidal Category
-> A *monoidal category* is a tuple $\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ where 
+> A *monoidal category* is a tuple $\newcommand{\one}{\mathbb{1}}\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ where 
 > - $\mathsf{C}$ is a [[Structure of Categories#^2f5c3a|category]];
 > - [[Functoriality and Naturality#^653948|functor]] $\otimes\colon \mathsf{C}\times\mathsf{C}\to\mathsf{C}$ is called the *monoidal product*;
 > - $\mathbb{1}\in\obj \mathsf{C}$ is called the *monoidal unit*;
@@ -17,7 +17,11 @@
 > Moreover, a *strict monoidal category* is a monoidal category in which the components of $\alpha$, $\lambda$ and $\rho$ are all identity morphisms. ^bc017c
 
 > [!definition] Monoid Object
-> A *monoid object* in a monoidal category is an object $M$ with two morphisms
+> A *monoid object* in a monoidal category $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ is an object $M$ with two morphisms
+> - multiplication $\mu\colon M\otimes M \to M$;
+> - unit $\eta:\one \to M$,
+> 
+> such that the unit diagram and the pentagon diagram hold:
 > 
 
 <u><b>e.g.</b></u>  
