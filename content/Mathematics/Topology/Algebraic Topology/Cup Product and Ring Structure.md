@@ -39,7 +39,7 @@ $$H^*(T^2; \Z) \cong \Lambda_\Z(\alpha, \beta)$$
 
 ## Graded Commutativity
 
-The cohomology ring is not strictly commutative in general, but it satisfies a property called super-commutativity or graded commutativity.
+The cohomology ring is not strictly commutative in general, but it satisfies a property called s*uper-commutativity* or *graded commutativity*.
 
 > [!theorem] Graded Commutativity of the Cup Product
 > If $R$ is a [[Ring, Field and Integral Domain#^178485|commutative ring]], then for any cohomology classes $x \in H^k(X;R)$ and $y \in H^l(X;R)$, the following relation holds:
@@ -55,8 +55,7 @@ The cohomology ring is not strictly commutative in general, but it satisfies a p
 - For the finite-dimensional complex projective space $\CP^{n}$, the ring is a truncated polynomial ring: $$H^*(\CP^{n};  \Z) \cong \Z[x] / (x^{n+1})$$with $x$ in degree $2$, i.e., $x$ is the generator of $H^{2}(\CP^{n}; \Z)$.
 - The infinite real projective space $\newcommand{\RP}{\mathbb{R}\mathrm{P}}\RP^\infty$ with $\Z/2\Z$ coefficients also has a polynomial ring structure on a generator $x \in H^1(\RP^\infty; \Z/2\Z)$: $$ H^{*}(\RP^{\infty};  \Z/2) \cong  \Z/2[x]$$
 - For the finite-dimensional real projective space $\RP^n$, the ring is aoh truncated polynomial ring: $$H^*(\RP^{n};  \Z/2) \cong \Z/2[x] / (x^{n+1})$$with $x$ in degree $1$.
-
-Moreover, the [[de Rham Cohomology#^b54c25|de Rham cohomology]] of a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] with real coefficients is a canonical example of a cohomology ring (see [[Differential Forms#^143f20|here]]).
+- Moreover, the [[de Rham Cohomology#^b54c25|de Rham cohomology]] of a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] with real coefficients is a canonical example of a cohomology ring (see [[Differential Forms#^143f20|here]]).
 
 ## Examples of Cohomology Rings
 
