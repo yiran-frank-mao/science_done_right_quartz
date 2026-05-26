@@ -31,7 +31,7 @@ The above properties mean that $H^*(X;R)$ equipped with the cup product forms a 
 
 <u><b>e.g.</b></u>  The cohomology ring of the torus $T^2 = S^1 \times S^1$ with integer coefficients is isomorphic to the exterior algebra on two generators of degree 1. Recall our $\Delta$-complex structure for the torus:
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/torus_delta_complexes.svg" alt="torus_delta_complexes" style="width:23%;"/>
-The chain complex is $$ 0 \to \Z\{U,L\} \xrightarrow{d_{2}} \Z\{a,b,c\} \xrightarrow{d_{1}} \Z\{v\} \to 0 ,$$where $d_{2}(U) = a - c + b$, $d_{2}(L) = b - c + a$, and $d_{1}(a) = d_{1}(b) = d_{1}(c) = 0$. So we have the homology groups: $$H_{0}=\Z\{v\},\quad H_{1}=\Z\{\bar{a},\bar{b}\}, \quad H_{2}=\Z\{U-L\}. $$Dualize to get the cochain complex: $$0\leftarrow \Z\{U^{*}, L^{*}\}\xleftarrow{d^{2}}\Z\{a^{*}, b^{*}, c^{*}\} \xleftarrow{d^{1}} \Z\{v^{*}\} \leftarrow 0, $$where $d^{2}$ maps $$a^{*}\mapsto U^{*}+L^{*},\quad b^{*}\mapsto U^{*}+L^{*},\quad c^{*}\mapsto -U^{*}-L^{*}, $$and $d^{1}$ is the zero map (we can think of $d^{1}$ and $d^{2}$ as the transpose of $d_{1}$ and $d_{2}$). Thus, the cohomology groups are: $$H^{0}=\Z\{v^{*}\},\quad H^{1}=\Z\{a^{*}+c^{*}, b^{*}+c^{*}\}, \quad H^{2}=\Z\{\bar{U}^{*}\}.$$
+The chain complex is $$\newcommand{\Z}{\mathbb{Z}} 0 \to \Z\{U,L\} \xrightarrow{d_{2}} \Z\{a,b,c\} \xrightarrow{d_{1}} \Z\{v\} \to 0 ,$$where $d_{2}(U) = a - c + b$, $d_{2}(L) = b - c + a$, and $d_{1}(a) = d_{1}(b) = d_{1}(c) = 0$. So we have the homology groups: $$H_{0}=\Z\{v\},\quad H_{1}=\Z\{\bar{a},\bar{b}\}, \quad H_{2}=\Z\{U-L\}. $$Dualize to get the cochain complex: $$0\leftarrow \Z\{U^{*}, L^{*}\}\xleftarrow{d^{2}}\Z\{a^{*}, b^{*}, c^{*}\} \xleftarrow{d^{1}} \Z\{v^{*}\} \leftarrow 0, $$where $d^{2}$ maps $$a^{*}\mapsto U^{*}+L^{*},\quad b^{*}\mapsto U^{*}+L^{*},\quad c^{*}\mapsto -U^{*}-L^{*}, $$and $d^{1}$ is the zero map (we can think of $d^{1}$ and $d^{2}$ as the transpose of $d_{1}$ and $d_{2}$). Thus, the cohomology groups are: $$H^{0}=\Z\{v^{*}\},\quad H^{1}=\Z\{a^{*}+c^{*}, b^{*}+c^{*}\}, \quad H^{2}=\Z\{\bar{U}^{*}\}.$$
 
 
 If $\alpha, \beta$ are generators for $H^1(T^2; \Z)$, then:
@@ -55,7 +55,7 @@ The cohomology ring is not strictly commutative in general, but it satisfies a p
 - For the finite-dimensional complex projective space $\CP^{n}$, the ring is a truncated polynomial ring: $$H^*(\CP^{n};  \Z) \cong \Z[x] / (x^{n+1})$$with $x$ in degree $2$, i.e., $x$ is the generator of $H^{2}(\CP^{n}; \Z)$.
 - The infinite real projective space $\newcommand{\RP}{\mathbb{R}\mathrm{P}}\RP^\infty$ with $\Z/2\Z$ coefficients also has a polynomial ring structure on a generator $x \in H^1(\RP^\infty; \Z/2\Z)$: $$ H^{*}(\RP^{\infty};  \Z/2) \cong  \Z/2[x]$$
 - For the finite-dimensional real projective space $\RP^n$, the ring is aoh truncated polynomial ring: $$H^*(\RP^{n};  \Z/2) \cong \Z/2[x] / (x^{n+1})$$with $x$ in degree $1$.
-- Moreover, the [[de Rham Cohomology#^b54c25|de Rham cohomology]] of a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] with real coefficients is a canonical example of a cohomology ring (see [[Differential Forms#^143f20|here]]).
+- Moreover, the [[de Rham Cohomology#^b54c25|de Rham cohomology]] of a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]] with real coefficients is a canonical example of a cohomology ring (see [[Differential Forms#^143f20|here]]).
 
 ## Examples of Cohomology Rings
 

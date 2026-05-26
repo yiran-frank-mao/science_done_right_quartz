@@ -5,7 +5,7 @@ updated: 2024-10-23
 ## Conjugate Connections
 
 >[!definition] Conjugate Connections
->Let $M$ be a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] with an [[Connections#^f86a0b|affine connection]] $\nabla$ and [[Riemannian Metrics#^c3ac13|metric]] $g$. The conjugate connection $\tilde{\nabla}$ relative to $g$ is determined by the equation $$X{g}(Y,Z)=g(\nabla_XY,Z)+g(Y,\tilde{\nabla}_{X}Z),\mathrm{~where~}X,Y,Z\in\mathcal{X}(M)$$We also say that $\nabla$ and $\tilde{\nabla}$ are dual with respect to $g$. ^98fcf9
+>Let $M$ be a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]] with an [[Connections#^f86a0b|affine connection]] $\nabla$ and [[Riemannian Metrics#^c3ac13|metric]] $g$. The conjugate connection $\tilde{\nabla}$ relative to $g$ is determined by the equation $$X{g}(Y,Z)=g(\nabla_XY,Z)+g(Y,\tilde{\nabla}_{X}Z),\mathrm{~where~}X,Y,Z\in\mathcal{X}(M)$$We also say that $\nabla$ and $\tilde{\nabla}$ are dual with respect to $g$. ^98fcf9
 
 > [!proposition]
 > Given a manifold $(M,g, \nabla)$, the conjugate connection $\tilde{\nabla}$ is uniquely determined.

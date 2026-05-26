@@ -23,7 +23,7 @@
 ## Lagrangian Dynamical System
 
 > [!definition] Lagrangian Dynamical System
-> A Lagrangian dynamical system is a pair $(M,L)$, where $M$ is a [[Manifolds and Atlases#^6ef2ef|smooth manifold]], $\newcommand{\R}{\mathbb{R}}L\colon TM\to \R$ is a smooth function on its [[Tangent Vectors and Spaces#^e3492e|tangent bundle]]. A curve $\gamma\colon \R\to M$ is called a motion in the Lagrangian dynamical system $(M,L)$ if $\gamma$ is an [[Variational Calculus#^aa327b|extremal]] of the functional $$S(f)=\int_{t_{1}}^{t_{2}}L(f(t),\dot{f}(t),t)\dd t.$$
+> A Lagrangian dynamical system is a pair $(M,L)$, where $M$ is a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]], $\newcommand{\R}{\mathbb{R}}L\colon TM\to \R$ is a smooth function on its [[Tangent Vectors and Spaces#^e3492e|tangent bundle]]. A curve $\gamma\colon \R\to M$ is called a motion in the Lagrangian dynamical system $(M,L)$ if $\gamma$ is an [[Variational Calculus#^aa327b|extremal]] of the functional $$S(f)=\int_{t_{1}}^{t_{2}}L(f(t),\dot{f}(t),t)\dd t.$$
 
 <u><b>e.g.</b></u>  The configuration space of a planar double pendulum is the 2-torus $T^{2}$.
 

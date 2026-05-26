@@ -4,26 +4,35 @@ updated: 2024-10-20
 tags:
   - differential-geometry
 ---
+A *manifold* itself is a purely topological object, but it is the most basic object in differential geometry. To do calculus on a manifold, we need to **equip** it with a *smooth structure,* which is given by an atlas of compatible charts. So the data of a smooth manifold is a manifold **together with** a smooth structure. We will discuss these concepts in detail in the following sections.
+
+## Topological Manifolds
+
 >[!definition] Manifold & Manifold with Boundary
 > An *$n$-dimensional manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Topological Spaces#^a8abf4|second-countable]] [[Topological Spaces#^65c94a|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $\newcommand{\R}{\mathbb{R}}\R^{n}$. 
 > A *manifold with boundary* is a Hausdorff and second-countable topological space $M$ such that each point has a neighbourhood homeomorphic to an open subset of the closed half-space $H^{n}=\{(x_{1},\dots,x_{n})\in \R^{n}: x_{n}\geq 0\}$. The *boundary* of $M$ is the set of points that correspond to points in $H^{n}$ with $x_{n}=0$.
-> A *closed manifold* is a [[Compactness of Topological Space#^da2511|compact]] manifold with no boundary. ^3407e4
+> A *closed manifold* is a [[Compactness of Topological Space#^da2511|compact]] manifold without boundary. ^3407e4
 
 Clearly, on a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
 
 >[!definition] Chart and Atlas
->A *chart* for a manifold $M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $φ\colon U \to V$ where $U$ is open in $M$ and $V$ is open in $\R^n$. A collection of charts $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ is called an *atlas* for $M$ if $\cup_{\alpha\in I}U_{\alpha}=M$.
+>A *chart* or *coordinate* for a manifold $M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $φ\colon U \to V$ where $U$ is open in $M$ and $V$ is open in $\R^n$. A collection of charts $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ is called an *atlas* for $M$ if $\cup_{\alpha\in I}U_{\alpha}=M$.
 >A manifold equipped with an atlas is called a *topological manifold*. ^441ce2
 
 <b><u>e.g.</u></b>
-- Consider the set $M=\R$ with the usual topology. $\mathcal{A}=\{ x\mapsto x\colon\R\to \R\}$ and $\mathcal{B}=\{ x \mapsto x^{3} \colon \R \to \R \}$ are both differentiable atlases. They are not compatible since the union $\{ x\mapsto x, x\mapsto x^{3} \}$ is not differentiable.
+- The interval $[a,b]$ is a manifold with boundary. The inclusion $x\colon [a,b] \to \R$ serves as a chart, and $\{x\}$ is an atlas.
 - The sphere $S^{n}=\{ x\in \R^{n+1}:\|x \| =1\}$ is a closed subset of Euclidean space, thus the topological requirements are satisfied. Define the following two maps: $$\varphi_{+}\colon S^{n}\setminus \{ N \}\to\R^{n}, \quad \varphi_{-}\colon S^{n}\setminus \{ S \} \to \R^{n}$$as follows: We write $x\in \R^{n+1}$ as $(y,z)$ where $y\in \R^{n}$ and $z\in \R$, we take $\varphi_{+}(y,z)=\frac{y}{1-z}$ and $\varphi_{-}(y,z)=\frac{y}{1+z}$. Then we have 
 $\quad$
+
+## Differentiable Manifolds
 
 > [!definition] Compatible Charts & Smooth Atlas
 > Two charts $\varphi$ and $\eta$ are *compatible* if $\varphi\circ \eta^{-1}$ is a diffeomorphism.
 > Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *differentiable* or *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}$ and $\varphi_{\alpha}$ are compatible.
 > 
+
+<u><b>e.g.</b></u>
+- Consider the set $M=\R$ with the usual topology. $\mathcal{A}=\{ x\mapsto x\colon\R\to \R\}$ and $\mathcal{B}=\{ x \mapsto x^{3} \colon \R \to \R \}$ are both differentiable atlases. They are not compatible since the union $\{ x\mapsto x, x\mapsto x^{3} \}$ is not differentiable.
 
 > [!definition] Compatible Atlases & Maximal Atlas
 > Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are *compatible* if their union is also a differentiable atlas.

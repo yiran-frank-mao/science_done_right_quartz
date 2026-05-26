@@ -58,3 +58,7 @@ Suppose $f\colon[a,b] \to \R$ is a bounded function, and elements of partition $
 >- $L(f,P)\leq U(f,Q)$.
 >
 **Proof**  The first proposition arises from $m_{i}\leq M_{i}$. And $L(f,P)\leq L(f,Q)\leq U(f,Q)$ implies the third proposition.
+
+> [!theorem] Fundamental Theorem of Calculus
+> Suppose $f\colon[a,b]\to \R$ is a continuous function, then $f$ is integrable and $$\int_{a}^{b}f(x) = F(b)-F(a)$$where $F(x)=\int_{a}^{x}f(t)\d t$. ^433cc4
+

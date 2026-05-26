@@ -1,8 +1,8 @@
 > [!definition] Cobordism
-> Suppose $\Sigma_{-}$ and $\Sigma_{+}$ are two [[Manifolds and Atlases#^3407e4|closed manifolds]] of dimension $n-1$, then a *cobordism* between $\Sigma_{-}$ and $\Sigma_{+}$ is a [[Compactness of Topological Space#^da2511|compact]] $n$-manifold $M$ whose boundary is $\Sigma_{-}\sqcup \Sigma_{+}$. If such $M$ exists, we say $\Sigma_{-}$ and $\Sigma_{+}$ are *cobordant* to each other. ^4998ff
+> Suppose $\Sigma_{-}$ and $\Sigma_{+}$ are two [[Manifolds, Atlases and Smooth Structures#^3407e4|closed manifolds]] of dimension $n-1$, then a *cobordism* between $\Sigma_{-}$ and $\Sigma_{+}$ is a [[Compactness of Topological Space#^da2511|compact]] $n$-manifold $M$ whose boundary is $\Sigma_{-}\sqcup \Sigma_{+}$. If such $M$ exists, we say $\Sigma_{-}$ and $\Sigma_{+}$ are *cobordant* to each other. ^4998ff
 
 > [!definition] Oriented Cobordism
-> Let $\Sigma_{-}$ and $\Sigma_{+}$ be two oriented [[Manifolds and Atlases#^3407e4|closed manifolds]] of dimension $n-1$. An oriented cobordism from $\Sigma_{-}$ to $\Sigma_{+}$ is a [[Compactness of Topological Space#^da2511|compact]] oriented manifold $M$ together with orientation-preserving smooth maps $\gamma_{\pm}\colon \Sigma_{\pm} \to M$ such that $\Sigma_{\pm}$ maps diffeomorphically onto the in/out-boundary of $M$.
+> Let $\Sigma_{-}$ and $\Sigma_{+}$ be two oriented [[Manifolds, Atlases and Smooth Structures#^3407e4|closed manifolds]] of dimension $n-1$. An oriented cobordism from $\Sigma_{-}$ to $\Sigma_{+}$ is a [[Compactness of Topological Space#^da2511|compact]] oriented manifold $M$ together with orientation-preserving smooth maps $\gamma_{\pm}\colon \Sigma_{\pm} \to M$ such that $\Sigma_{\pm}$ maps diffeomorphically onto the in/out-boundary of $M$.
 
 > [!definition] Cobordism Equivalence
 > Two oriented cobordisms $(M, \gamma_{-}, \gamma_{+})$ and $(M', \gamma_{-}', \gamma_{+}')$ from $\Sigma_{-}$ to $\Sigma_{+}$ are *equivalent* if there is an orientation-preserving diffeomorphism $\phi\colon M\to M'$ such that the following diagram commutes:

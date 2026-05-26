@@ -7,7 +7,7 @@ There is one more crucial ingredient which we need to introduce for dealing with
 >- $g_{p}$ is symmetric, that is $g_{p}(u,v)=g_{p}(v,u)$.
 >- $g_{p}$ is nondegenerate, that is for every $u \neq 0$, there is a $v$ such that $g_{p}(u,v)\neq 0$.
 >
-> A semi-Riemannian manifold is a [[Manifolds and Atlases#^6ef2ef|smooth manifold]] furnished with a metric tensor. ^c3ac13
+> A semi-Riemannian manifold is a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]] furnished with a metric tensor. ^c3ac13
 
 >[!definition] Riemannian Metric &  Riemannian Manifold
 > A Riemannian metric $g$ on a smooth manifold $M$ is a nonnegative metric tensor, that is $g_{p}(u,v)\geq 0$ for all $u\in T_{p}(M)$ and $g_{p}(u,u)=0$ if and only if $u=0$.

@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 26 May 2025
+- Updates: [[Integration of Differential Forms]], [[Integral]], [[Manifolds, Atlases and Smooth Structures]].
+
 ## 25 May 2025
 - Updates: [[Graded Vector Spaces]], [[Monoidal Categories]].
 
@@ -19,7 +22,7 @@ completed: true
 - Updates: [[Functoriality and Naturality]], [[Monoidal Categories]], [[Cobordisms]], [[Structure of Categories]].
 
 ## 9 Mar 2026
-- Updates: [[Manifolds and Atlases]], [[Morse Functions and Critical Points]], [[Topological Gluing]].
+- Updates: [[Manifolds, Atlases and Smooth Structures]], [[Morse Functions and Critical Points]], [[Topological Gluing]].
 
 ## 8 Mar 2026
 - Updates: [[Pullback and Pushout]], [[Products of Objects]], [[Morphisms]].
@@ -45,7 +48,7 @@ completed: true
 - Updates: [[The Symplectic Hilbert Space]], [[The Semigroup of Annuli]].
 
 ## 21 Jan 2026
-- Updates: [[Conformal Welding Problem]], [[Manifolds and Atlases]], [[The Semigroup of Annuli]].
+- Updates: [[Conformal Welding Problem]], [[Manifolds, Atlases and Smooth Structures]], [[The Semigroup of Annuli]].
 
 ## 7 Dec 2025
 - Updates: [[The Principles of Relativity and Determinacy]], [[Postulates of Special Relativity]].
@@ -204,7 +207,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Phase Space & Chaos]].
 
 ## 8 Mar 2025
-- Updates: [[Manifolds and Atlases]], [[Fourier Series]], [[Variational Calculus]].
+- Updates: [[Manifolds, Atlases and Smooth Structures]], [[Fourier Series]], [[Variational Calculus]].
 - New page: [[Lagrangian Dynamical System]].
 
 ## 7 Mar 2025
@@ -390,7 +393,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Construction of Sets]].
 
 ## 22 July 2024
-- New page: [[Manifolds and Atlases]], [[Complex Analysis]], [[Complex Numbers]].
+- New page: [[Manifolds, Atlases and Smooth Structures]], [[Complex Analysis]], [[Complex Numbers]].
 
 ## 16 July 2024
 - Update: [[Coding and Compression]].

@@ -10,7 +10,7 @@ tags:
 ## Lie Groups of Finite Dimension
 
 > [!definition] Lie Group
-> A *Lie group* $G$ is a [[Groups, Order and Subgroups#^6e0960|group]] that is also a [[Manifolds and Atlases#^6ef2ef|smooth manifold]], such that the group operations of multiplication and inversion are both smooth maps. That is $$(x,y)\mapsto x^{-1}y$$is a smooth mapping of the product manifold into $G$. ^0e5dd8
+> A *Lie group* $G$ is a [[Groups, Order and Subgroups#^6e0960|group]] that is also a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]], such that the group operations of multiplication and inversion are both smooth maps. That is $$(x,y)\mapsto x^{-1}y$$is a smooth mapping of the product manifold into $G$. ^0e5dd8
 
 <u><b>e.g.</b></u>  The [[Linear Groups#^2ce0d2|group of rotations]] in $\newcommand{\R}{\mathbb{R}}\R^{2}$, $\newcommand{\SO}{\mathrm{SO}}\SO(2)$, is a Lie group. Each element of $\mathrm{SO}(2)$ can be represented by some rotation angle $\theta\in S^{1}$, this gives a chart so that $\SO_{2}$ is a smooth manifold. And the multiplication operation corresponds to the addition of angles, which is smooth. In general, $$\SO(n)\subset \mathrm{O}(n)\subset \mathrm{SL}(n,\R) \subset \mathrm{GL}(n,\R)$$are all Lie groups.
 

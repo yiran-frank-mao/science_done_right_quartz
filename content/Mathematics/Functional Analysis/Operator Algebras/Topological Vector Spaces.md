@@ -37,7 +37,7 @@ The following propositions help to verify if a given space is Fréchet:
 <u><b>e.g.</b></u>  
 - Clearly, any Banach space is a Fréchet space, since it is complete and metrizable by the norm.
 - The space of real smooth functions $C^{\infty}(\R)$ is a Fréchet space with the seminorms defined by $$p_{k,n}(f)=\sup_{x\in [-n,n]}\left|f^{(k)}(x)\right|$$for each nonnegative integers $k$ and $n$.
-- If $M$ is a [[Compactness of Metric Space#^8c1327|compact]] [[Manifolds and Atlases#^6ef2ef|smooth manifold]], then the space of smooth functions $C^\infty(M)$ is a Fréchet space. This holds for some non-compact manifolds as well, such as the real line $\R$.
+- If $M$ is a [[Compactness of Metric Space#^8c1327|compact]] [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]], then the space of smooth functions $C^\infty(M)$ is a Fréchet space. This holds for some non-compact manifolds as well, such as the real line $\R$.
 
 
 ## References

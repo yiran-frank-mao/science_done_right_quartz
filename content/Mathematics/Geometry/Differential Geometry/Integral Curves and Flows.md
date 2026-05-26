@@ -8,7 +8,7 @@ Suppose $M$ is a smooth manifold. If $\gamma\colon I\to M$ is a smooth curve, th
 > [!theorem]
 > Suppose $M$ is a smooth manifold. For any vector field $V\in\mathfrak{X}(M)$ and any $p\in M$, there exists a unique solution of the initial value problem for $V$ at $p$. That is, there exists an integral curve $\gamma\colon [0,\varepsilon]\to M$ of $V$ for some $\varepsilon>0$ such that $\gamma(0)=p$.
 
-*Proof*  In fact, this is a local problem at $p$. We choose a [[Manifolds and Atlases#^441ce2|chart]] at $p$, say $\varphi\colon U\to \R^{n}$, then the initial value problem becomes a [[Ordinary Differential Equations#^0c9610|first order ODE]] in $\R^{n}$, which has a unique solution by [[Ordinary Differential Equations#^0a1064|the theorem]]. $\square$
+*Proof*  In fact, this is a local problem at $p$. We choose a [[Manifolds, Atlases and Smooth Structures#^441ce2|chart]] at $p$, say $\varphi\colon U\to \R^{n}$, then the initial value problem becomes a [[Ordinary Differential Equations#^0c9610|first order ODE]] in $\R^{n}$, which has a unique solution by [[Ordinary Differential Equations#^0a1064|the theorem]]. $\square$
 
 <u><b>e.g.</b></u>  Let $M=\R$ and $V(x)=x^{2}\partial_{x}$. Fix some initial point $x_{0}\in\R$, choose $\id\colon\R\to\R$ as a chart, we solve the ODE $\dot{\gamma}(t)=\gamma(t)^{2}$ to get $\gamma(t)=\frac{1}{c-t}$ for some constant $c\in\R$. Now let $x_{0}=\gamma(0)$, we obtain $c=\frac{1}{x_{0}}$, so $\gamma(t)=\frac{1}{1/x_{0} -c}$, which indicates that the maximal interval of the integral curve is $[0,1/x_{0})$.
 
@@ -64,6 +64,6 @@ An important special case is where the manifold $M$ is compact, or more generall
 ## Lie Derivatives
 
 > [!definition] Lie Derivative of Vector Fields
-> Suppose $M$ is a [[Manifolds and Atlases#^6ef2ef|smooth manifold]], and $\{f_{t}\}_{t\in\R}$ is a [[Integral Curves and Flows#^990d6a|flow]] on $M$. Let $v$ be a vector field defined by $v(p):=\ddf{}{t}\bigg|_{t=0}f_{t}(p)$, then we define the Lie derivative of a [[Vector Fields and Lie Algebra#^a87ff1|vector field ]] $w$ on $M$ as $$L_{v}w:=\ddf{}{t}\bigg|_{t=0} f^{*}_{t} w.$$
+> Suppose $M$ is a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]], and $\{f_{t}\}_{t\in\R}$ is a [[Integral Curves and Flows#^990d6a|flow]] on $M$. Let $v$ be a vector field defined by $v(p):=\ddf{}{t}\bigg|_{t=0}f_{t}(p)$, then we define the Lie derivative of a [[Vector Fields and Lie Algebra#^a87ff1|vector field ]] $w$ on $M$ as $$L_{v}w:=\ddf{}{t}\bigg|_{t=0} f^{*}_{t} w.$$
 
 

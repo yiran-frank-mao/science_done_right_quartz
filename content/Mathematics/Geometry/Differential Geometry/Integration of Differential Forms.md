@@ -1,7 +1,7 @@
 ## Orientability
 
 > [!theorem]
-> A smooth $n$-manifold $M$ is orientable if and only if there exists an differential $n$-form which is nowhere vanishing on $M$.
+> A [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth $n$-manifold]] $M$ is orientable if and only if there exists an differential $n$-form $\eta$ which is nowhere vanishing on $M$. Such an $\eta$ corresponds to an *orientation* of $M$, and we call $(M,\eta)$ an *oriented* manifold.
 > 
 
 ## Integral of a Differential $k$-Form on $\R^k$
@@ -19,8 +19,10 @@
 > [!theorem] Stokes' Theorem
 > Suppose $M$ is a smooth manifold with boundary, and $\omega$ is a differential form on $M$. Then $$\int_{M} \d\omega = \int_{\partial M} \omega.$$ ^33d2f3
 
+<u><b>e.g.</b></u>  In fact, the [[Integral#^433cc4|fundamental theorem of calculus]] is an example of the Stoke's theorem. To see this, consider $[a,b]$ as a manifold with boundary. The standard orientation on $[a,b]$ is given by the $1$-form $\d x$, where $x\colon [a,b] \to \R$ is the standard increasing coordinate. Equivalently, we can declare $\pddf{}{x}$ to be positive. Then the induced orientation on the boundary $\partial[a,b]=\{a,b\}$ is that $b$ is positively oriented while $a$ is negatively oriented. Then the Stoke's theorem implies $$ \int_{[a,b]} f'(x)\dd x =  f(b)-f(a).$$
+
 > [!proposition]
-> For a [[Compactness of Topological Space#^da2511|compact]] smooth $n$-manifold $M$ with boundary $\partial M$, a vector field $v$ tangent to the boundary $\partial M$, and an $n$-form $\omega$. Then $$\int_{M} L_{v}\omega=0.$$
+> For a [[Compactness of Topological Space#^da2511|compact]] smooth $n$-manifold $M$ with boundary $\partial M$, a vector field $v$ tangent to the boundary $\partial M$, and an $n$-form $\omega$. Then $$\int_{M} \mathcal{L}_{v}\omega=0.$$
 
 *Proof*  By [[Differential Forms#^04ae6c|Cartan's formula]], we have $$L_{v}\omega=\d(i_{v}\omega)+i_{v}\d\omega.$$Therefore, $$\int_{M} L_{v}\omega=\int_{M} \d(i_{v}\omega)+\int_{M} i_{v}\d\omega=\int_{\partial M} i_{v}\omega+\int_{M} i_{v}\d\omega,$$where the second equality holds by [[Integration of Differential Forms#^33d2f3|Stokes' theorem]]. Note that $\d\omega$ is an $(n+1)$-form on $M$, so it vanishes, $\int_{M} i_{v}\d\omega=0$. For any vector fields $u_{1},u_{2},\dots u_{n-1}\in\mathfrak{X}(\partial M)$, fix some $p\in\partial M$, $$i_{v}\omega(u_{1}(p),u_{2}(p),\dots,u_{n}(p))=\omega(v(p),u_{1}(p),\dots,u_{n-1}(p)).$$Note that since $v$ is tangent to the boundary $\partial M$, $v(p)$ is a vector in $T_{p}(\partial M)$, which is of dimension $(n-1)$. Therefore, $\{v(p),u_{1}(p),\dots,u_{n-1}(p)\}$ must be linearly dependent, and thus $i_{v}\omega=0$ on $\partial M$. $\square$
 

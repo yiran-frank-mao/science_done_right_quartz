@@ -5,7 +5,7 @@ updated: 2025-09-01
 ## The Symplectic Form
 
 > [!definition] Symplectic Manifold
-> Let $M$ be an even dimensional [[Manifolds and Atlases#^6ef2ef|smooth manifold]]. A symplectic structure on $M$ is a closed non-degenerate [[Differential Forms#^c6c1be|differential 2-form]] $\omega \in \Omega^{2}(M)$, called the *symplectic form*, such that $\newcommand{\d}{\mathrm{d}}\newcommand{\R}{\mathbb{R}}\d\omega=0$, and for all nonzero $v\in T_{p}M$, there exists $u\in T_{p}M$ so that $\omega(v,u)\neq 0$. The pair $(M,\omega)$ is called a *symplectic manifold*.
+> Let $M$ be an even dimensional [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]]. A symplectic structure on $M$ is a closed non-degenerate [[Differential Forms#^c6c1be|differential 2-form]] $\omega \in \Omega^{2}(M)$, called the *symplectic form*, such that $\newcommand{\d}{\mathrm{d}}\newcommand{\R}{\mathbb{R}}\d\omega=0$, and for all nonzero $v\in T_{p}M$, there exists $u\in T_{p}M$ so that $\omega(v,u)\neq 0$. The pair $(M,\omega)$ is called a *symplectic manifold*.
 > We call a symplectic manifold *exact* if the symplectic form is [[Differential Forms#^c1760d|exact]]. ^b558c2
 
 <u><b>e.g.</b></u>  

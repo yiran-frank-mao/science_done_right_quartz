@@ -3,7 +3,7 @@ created: 2024-08-01
 updated: 2024-09-26
 ---
 >[!definition] Vector Bundle
->A vector bundle of rank $k$ over a base [[Topological Spaces#^65c94a|topological space]] $X$ (usually a [[Manifolds and Atlases#^6ef2ef|smooth manifold]]) consists of the following information: 
+>A vector bundle of rank $k$ over a base [[Topological Spaces#^65c94a|topological space]] $X$ (usually a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]]) consists of the following information: 
 >- [[Topological Spaces#^65c94a|topological spaces]] $X$ and $E$;
 >- a [[Continuous Functions on Topological Spaces#^33ee5a|continuous]] [[Relations and Functions#^042daf|surjection]] $\pi \colon E \to X$, called the bundle projection;
 >- for every $x\in X$, the fiber $\pi^{-1}(\{x\})$ yields a finite-dimensional real [[Vector Spaces#^f4b63e|vector space]],

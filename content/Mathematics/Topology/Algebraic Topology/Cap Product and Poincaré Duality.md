@@ -1,13 +1,23 @@
+## Orientability
+
+> [!definition] 
+> A manifold $M$ 
+
 > [!lemma]
-> Let $M$ be an $n$-dimensional oriented [[Connectedness and Paths#^946cc4|connected]] [[Compactness of Topological Space#^da2511|compact]] [[Manifolds and Atlases#^3407e4|manifold]]. Then
+> Let $M$ be an $n$-dimensional oriented [[Connectedness and Paths#^946cc4|connected]] [[Compactness of Topological Space#^da2511|compact]] [[Manifolds, Atlases and Smooth Structures#^3407e4|manifold]]. Then
 > - If $M$ is $R$-orientable then $H_{n}(M;R)\cong R$ and $H_{n}(M;R) \to H_{n}(M|_{x};R)$ is an isomorphism for all $x \in M$.
 > - If $M$ is not $R$-orientable then $H_{n}(M;R) \cong R[2]=\{r\in R: 2r=0\}$.
 > - $H_{k}(M;R)\cong 0$ for all $k>n$.
 > $\quad$
 
 > [!definition] Fundamental Class
-> Let $M$ be an $n$-dimensional oriented [[Connectedness and Paths#^946cc4|connected]] [[Compactness of Topological Space#^da2511|compact]] [[Manifolds and Atlases#^3407e4|manifold]]. The *fundamental class* of $M$, denoted $[M]$, is the unique generator of the top-dimensional homology group $H_n(M;R)$ that corresponds to the given orientation of $M$.
+> Let $M$ be an $n$-dimensional oriented [[Connectedness and Paths#^946cc4|connected]] [[Compactness of Topological Space#^da2511|compact]] [[Manifolds, Atlases and Smooth Structures#^3407e4|manifold]]. The *fundamental class* of $M$, denoted $[M]$, is the unique generator of the top-dimensional homology group $H_n(M;R)$ that corresponds to the given orientation of $M$. 
+> More concretely, the orientation of $M$ is a choice of an isomorphism $\iota\colon R\to H_{n(M;R)}$, and $[M]:=\iota(1_{R})$.
 > 
+
+<u><b>e.g.</b></u>
+- For a positively oriented point $p^+$, the fundamental class is $[p^{+}] = 1 \in H_0(p; \Z) \cong \Z$. If we instead give it the opposite orientation, the fundamental class would be $[p^{-}] = -1$.
+- 
 
 ## Cap Product
 
