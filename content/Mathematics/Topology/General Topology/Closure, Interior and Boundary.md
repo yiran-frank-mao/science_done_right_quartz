@@ -47,8 +47,6 @@
 >[!definition] Dense, Nowhere Dense and Meagre
 >A subset $A$ of $T$ is *dense* in $T$ if $\bar{A}=T$, is *nowhere dense* in $T$ if ${(\bar{A})}^\circ = \emptyset$, is *meagre* if it is a union of a countable number of nowhere dense sets. ^b560bf
 
-<u><b>e.g.</b></u>  $\Q$ is dense in $\R$ (as is $\R \setminus\Q$). In $\R$, one-point sets are nowhere dense; so $\Q$ is meagre in $\R$.
-
 >[!lemma] 
 > A subset $A$ of $T$ is nowhere dense if and only if $T \setminus \bar{A}$ is dense in $T$.
 

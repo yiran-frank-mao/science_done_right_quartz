@@ -52,6 +52,8 @@ $\quad$
 <u><b>e.g.</b></u>  
 
 
+
+
 ## The Category of Monoid Objects
 
 > [!definition] Monoid Homomorphism
