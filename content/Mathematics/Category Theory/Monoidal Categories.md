@@ -24,9 +24,7 @@
 > such that the unit diagram and the pentagon diagram hold:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_unit_relation.svg" style="width:50%;"/>
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_pentagon_relation.svg" style="width:50%;"/>
-> Dually, a *comonoid object* is a monoid object in the dual category $\mathsf{C}^{\text{op}}$.
-
-^2438f8
+> Dually, a *comonoid object* is a monoid object in the dual category $\mathsf{C}^{\text{op}}$. ^2438f8
 
 <u><b>e.g.</b></u>  
 - It is called monoidal because the structure is “monoid-like”. Any monoid $(M, \cdot, 1)$ forms a small monoidal category with object set $M$, $\cdot$ as monoidal product and the identity of $M$ as its identity object.
@@ -36,13 +34,35 @@
 - The category of vector spaces over a field $\newcommand{\K}{\mathbb{K}}\K$ $(\mathsf{Vect}_{\K}, \otimes_{\K}, \K)$ is a monoidal category with the usual tensor product of vector spaces and the field $\K$ as the monoidal unit. Algebras are monoid objects.
 $\quad$
 
+> [!definition] Monoidal Functor
+> A *monoidal functor* between monoidal categories $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ and $(\mathsf{D},\otimes',\mathbb{1}',\alpha',\lambda',\rho')$ is a functor $F \colon \mathsf{C} \to \mathsf{D}$ together with a morphism $F_{0}\colon \mathbb{1}' \to F(\mathbb{1})$ in $\mathsf{D}$ and a natural transformation $F_{2}\colon F(-)\otimes' F(-) \Rightarrow F(-\otimes -)$ such that the following diagrams commute for all objects $X,Y,Z$ in $\mathsf{C}$:
+> ^e5952b
+
+## Braided Monoidal Category
+
 > [!definition] Braided Monoidal Category
 > A *braided monoidal category* is a [[Monoidal Categories#^bc017c|monoidal category]] with an additional structure, a *braiding*, which is a [[Functoriality and Naturality#^b8c1fd|natural isomorphism]] $\tau_{A,B}\colon A\otimes B \to B\otimes A$ that is compatible with the associativity and unit constraints.
 > A *symmetric monoidal category* is a braided monoidal category with the braiding satisfying the symmetry axiom: $\tau_{A,B}=\tau_{B,A}^{-1}$. ^2361b7
 
-> [!definition] Monoidal Functor
-> A *monoidal functor* between monoidal categories $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ and $(\mathsf{D},\otimes',\mathbb{1}',\alpha',\lambda',\rho')$ is a functor $F \colon \mathsf{C} \to \mathsf{D}$ together with a morphism $F_{0}\colon \mathbb{1}' \to F(\mathbb{1})$ in $\mathsf{D}$ and a natural transformation $F_{2}\colon F(-)\otimes' F(-) \Rightarrow F(-\otimes -)$ such that the following diagrams commute for all objects $X,Y,Z$ in $\mathsf{C}$:
-> ^e5952b
+> [!definition] Braided Monoid Object
+> A monoid object $(M,\mu,\eta)$ in a braided monoidal category is *braided* if the following diagram commutes:
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braided_monoid.svg" style="width:35%;"/>
+> 
+
+<u><b>e.g.</b></u>  
+
+
+## The Category of Monoid Objects
+
+> [!definition] Monoid Homomorphism
+> 
+> 
+
+
+> [!proposition]
+> If 
+> 
+
 
 ## Enriched Categories
 
