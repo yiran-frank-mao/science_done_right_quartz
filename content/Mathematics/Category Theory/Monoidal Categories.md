@@ -26,6 +26,8 @@
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_pentagon_relation.svg" style="width:50%;"/>
 > Dually, a *comonoid object* is a monoid object in the dual category $\mathsf{C}^{\text{op}}$.
 
+^2438f8
+
 <u><b>e.g.</b></u>  
 - It is called monoidal because the structure is “monoid-like”. Any monoid $(M, \cdot, 1)$ forms a small monoidal category with object set $M$, $\cdot$ as monoidal product and the identity of $M$ as its identity object.
 - The category of [[Groups, Order and Subgroups#^6d511a|abelian groups]] $(\mathsf{Ab},\otimes,\mathbb{Z})$ is a monoidal category with the usual tensor product of abelian groups and the group of integers $\mathbb{Z}$ as the monoidal unit. [[Ring, Field and Integral Domain#^178485|Rings]] are monoid objects.
@@ -40,7 +42,7 @@ $\quad$
 
 > [!definition] Monoidal Functor
 > A *monoidal functor* between monoidal categories $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ and $(\mathsf{D},\otimes',\mathbb{1}',\alpha',\lambda',\rho')$ is a functor $F \colon \mathsf{C} \to \mathsf{D}$ together with a morphism $F_{0}\colon \mathbb{1}' \to F(\mathbb{1})$ in $\mathsf{D}$ and a natural transformation $F_{2}\colon F(-)\otimes' F(-) \Rightarrow F(-\otimes -)$ such that the following diagrams commute for all objects $X,Y,Z$ in $\mathsf{C}$:
-> 
+> ^e5952b
 
 ## Enriched Categories
 

@@ -30,6 +30,7 @@ Category theory is a branch of mathematics that studies the abstract patterns an
 [[2-Categories]]
 
 ### Specific Categories
+[[Finite Sets Category]]
 [[Finite Category]]
 [[Relation Category]]
 [[Posets Category]]
