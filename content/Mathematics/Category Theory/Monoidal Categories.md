@@ -22,8 +22,10 @@
 > - unit $\eta:\one \to M$,
 > 
 > such that the unit diagram and the pentagon diagram hold:
+> 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_unit_relation.svg" style="width:50%;"/>
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_pentagon_relation.svg" style="width:50%;"/>
+> 
 > Dually, a *comonoid object* is a monoid object in the dual category $\mathsf{C}^{\text{op}}$. ^2438f8
 
 <u><b>e.g.</b></u>  
