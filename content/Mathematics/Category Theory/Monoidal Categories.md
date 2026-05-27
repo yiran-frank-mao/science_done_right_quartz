@@ -49,8 +49,8 @@ $\quad$
 > 
 > A *symmetric monoidal category* is a braided monoidal category with the braiding satisfying the symmetry axiom: $\tau_{A,B}=\tau_{B,A}^{-1}$. ^2361b7
 
-> [!definition] Braided Monoid Object
-> A monoid object $(M,\mu,\eta)$ in a braided monoidal category is *braided* if the following diagram commutes:
+> [!definition] Braided Commutative Monoid Object
+> A monoid object $(M,\mu,\eta)$ in a braided monoidal category is *braided commutative* if the following diagram commutes:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braided_monoid.svg" style="width:35%;"/>
 > 
 
