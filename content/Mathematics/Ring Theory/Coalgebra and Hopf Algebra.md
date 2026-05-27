@@ -5,9 +5,13 @@ updated: 2025-09-05
 
 > [!definition] Coalgebra
 > A *coalgebra* is just like a [[Noncommutative Rings#^2c3d07|unital algebra]], but with all the structure maps reversed. Precisely, a coalgebra $A$ is a [[Vector Spaces#^f4b63e|vector space]] over a [[Ring, Field and Integral Domain#^575174|field]] $F$, equipped with a comultiplication $\Delta\colon A\to A\otimes A$ and a counit $e\colon A \to F$, satisfying the following left/right co-unitality laws
+> 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/coalgebra_counitality.svg" alt="coalgebra_counitality" style="width:80%;"/>
+> 
 > and co-associativity laws
+> 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/coalgebra_coassociativity.svg" alt="https://q.uiver.app/#q=WzAsNCxbMCwwLCJBIl0sWzIsMCwiQVxcb3RpbWVzIEEiXSxbMCwxLCJBXFxvdGltZXMgQSJdLFsyLDEsIkFcXG90aW1lcyBBXFxvdGltZXMgQSJdLFswLDEsIlxcRGVsdGEiXSxbMCwyLCJcXERlbHRhIiwyXSxbMiwzLCJcXG1hdGhybXtpZH1cXG90aW1lcyBcXERlbHRhIl0sWzEsMywiXFxEZWx0YVxcb3RpbWVzIFxcbWF0aHJte2lkfSJdXQ==" style="width:30%;"/>
+> 
 > where $\otimes$ is the [[Tensors and Tensor Products#^732917|tensor product]], $\lambda$ and $\rho$ are the left and right unit isomorphisms of the monoidal category of vector spaces.
 > 
 

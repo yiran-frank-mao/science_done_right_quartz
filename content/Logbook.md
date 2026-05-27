@@ -3,10 +3,13 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
-## 26 May 2025
+## 27 May 2026
+- Updates: [[Basics of Graphs]], [[Frobenius Objects]].
+
+## 26 May 2026
 - Updates: [[Integration of Differential Forms]], [[Integral]], [[Manifolds, Atlases and Smooth Structures]].
 
-## 25 May 2025
+## 25 May 2026
 - Updates: [[Graded Vector Spaces]], [[Monoidal Categories]].
 
 ## 24 May 2026

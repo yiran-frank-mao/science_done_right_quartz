@@ -12,6 +12,5 @@
 > Thus the Frobenius objects together with Frobenius homomorphisms form a category, denoted by $\mathsf{Frob}(\mathsf{C})$. 
 > 
 
-
 ## The Universal Frobenius Structure
 
