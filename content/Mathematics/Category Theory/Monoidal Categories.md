@@ -30,8 +30,8 @@
 - It is called monoidal because the structure is “monoid-like”. Any monoid $(M, \cdot, 1)$ forms a small monoidal category with object set $M$, $\cdot$ as monoidal product and the identity of $M$ as its identity object.
 - The category of [[Groups, Order and Subgroups#^6d511a|abelian groups]] $(\mathsf{Ab},\otimes,\mathbb{Z})$ is a monoidal category with the usual tensor product of abelian groups and the group of integers $\mathbb{Z}$ as the monoidal unit. [[Ring, Field and Integral Domain#^178485|Rings]] are monoid objects.
 - The category of sets $(\mathsf{Set}, \sqcup, \emptyset)$ is a monoidal category. The monoidal product is the disjoint union of sets, and the monoidal unit is the empty set.
-- The category sets can carry another monoidal category $(\mathsf{Set}, \times, \{*\})$, where the monoidal product is the Cartesian product of sets, and the monoidal unit is the singleton set $\{*\}$. [[Free Groups and Relations#^587eee|Monoids]] are monoid objects.
-- The category of vector spaces over a field $\newcommand{\K}{\mathbb{K}}\K$ $(\mathsf{Vect}_{\K}, \otimes_{\K}, \K)$ is a monoidal category with the usual tensor product of vector spaces and the field $\K$ as the monoidal unit. Algebras are monoid objects.
+- The category sets can carry another monoidal category $(\mathsf{Set}, \times, \{*\})$, where the monoidal product is the Cartesian product of sets, and the monoidal unit is the singleton set $\{*\}$. [[Free Groups and Relations#^587eee|Monoids]] are monoid objects; Every set $X$ has a unique comonoid structure given by the diagonal map $X \to X\times X$ and the unique map $X \to \{*\}$.
+- The category of vector spaces over a field $\newcommand{\K}{\mathbb{K}}\K$ $(\mathsf{Vect}_{\K}, \otimes_{\K}, \K)$ is a monoidal category with the usual tensor product of vector spaces and the field $\K$ as the monoidal unit. Algebras are monoid objects; coalgebras are comonoid objects.
 $\quad$
 
 > [!definition] Monoidal Functor
@@ -70,7 +70,7 @@ $\quad$
 
 > [!definition] Enriched Category
 > We call a category $\mathsf{C}$ a *$\mathsf{V}$-category*, or *a category enriched in $\mathsf{V}$*, where $\mathsf{V}=(\mathbf{V},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ is a monoidal category, if
-> - For each pair of objects $X, Y$ in $\mathsf{C}$, there is an object $\mathsf{C}(X, Y)$ in $\mathbf{V}$, called the *hom object with domain $X$ and codomain $Y$*. Every morphism $f\colon X \to Y$ in $\mathsf{C}$ can be uniquely described by $\tilde{f}\colon \mathbb{1} \to \mathsf{C}(X,Y)$ in $\mathsf{V}$.
+> - For each pair of objects $X, Y$ in $\mathsf{C}$, there is an object $\mathsf{C}(X, Y)$ in $\mathsf{V}$, called the *hom object with domain $X$ and codomain $Y$*. Every morphism $f\colon X \to Y$ in $\mathsf{C}$ can be uniquely described by $\tilde{f}\colon \mathbb{1} \to \mathsf{C}(X,Y)$ in $\mathsf{V}$.
 > - For each triple of objects $X, Y, Z$ in $\mathsf{C}$, there is a morphism $$ m_{X,Y,Z}\colon \mathsf{C}(Y,Z) \otimes \mathsf{C}(X,Y) \to \mathsf{C}(X,Z) $$ in $\mathsf{V}$, called the *composition*;
 > - For each object $X$ in $\mathsf{C}$, there is a morphism $$ i_X\colon \mathbb{1} \to \mathsf{C}(X,X) $$ in $\mathsf{V}$, called the *identity of $X$*.
 >
