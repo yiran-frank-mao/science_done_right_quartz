@@ -2,7 +2,8 @@
 Graph theory is a branch of mathematics that studies the properties and relationships of graphs, which are structures made of vertices (or nodes) and edges (or links) that connect them. Graphs can be used to model many kinds of phenomena, such as networks, maps, circuits, games, puzzles, and more.
 ![gt|320](https://i.imgur.com/HKUoTjZ.png)
 ## Contents
-[[Directed Graphs]]
+[[Basics of Graphs]]
+[[Planar Graphs]]
 
 
 ## Other Materials

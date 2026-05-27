@@ -565,7 +565,7 @@ Updates: [[Constructions on Categories]].
 - Rearrange the content of [[Category Theory]].
 
 ## 25 Feb 2024
-- New page: [[Constructions on Categories]], ~~[[Wave Nature of Matter]]~~, [[Directed Graphs]], [[Foundations, Large and Small]].
+- New page: [[Constructions on Categories]], ~~[[Wave Nature of Matter]]~~, [[Basics of Graphs]], [[Foundations, Large and Small]].
 - Rearrange the content of [[Category Theory]].
 
 ## 20 Feb 2024
