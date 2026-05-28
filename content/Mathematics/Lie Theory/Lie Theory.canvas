@@ -1,0 +1,59 @@
+{
+	"nodes":[
+		{"id":"47975208d10ab89f","type":"group","x":1240,"y":1040,"width":2720,"height":760,"label":"Jordan Decomposition"},
+		{"id":"06c08705b4772866","type":"group","x":1200,"y":100,"width":955,"height":754,"label":"Cartan's Criteria"},
+		{"id":"10860f054009d76d","type":"text","text":"![[Jordan-Chevalley Decomposition#^caa6cd]]","x":2680,"y":1156,"width":1160,"height":552},
+		{"id":"7c1e083d161ae538","type":"text","text":"![[Jordan-Chevalley Decomposition#^245420]]","x":1329,"y":1088,"width":1100,"height":280},
+		{"id":"dfcb44846688230f","type":"text","text":"![[Jordan-Chevalley Decomposition#^cd64a6]]","x":1420,"y":1479,"width":919,"height":229},
+		{
+			"id":"027f563aedac8405",
+			"type":"text",
+			"text":"![[Lie Algebra Representations#^566e35]]",
+			"styleAttributes":{},
+			"x":1340,
+			"y":2100,
+			"width":1089,
+			"height":180
+		},
+		{"id":"785850f81d3f0333","type":"text","text":"![[Killing Forms and Cartan's Criteria#^125ec3]]","x":1220,"y":120,"width":915,"height":300},
+		{"id":"eb3500a79c9126c2","type":"text","text":"![[Killing Forms and Cartan's Criteria#^411335]]","x":1220,"y":601,"width":835,"height":233},
+		{"id":"6fe68c022c094182","type":"text","text":"![[Ideals, Simple and Semisimple Lie Algebras#^476cc0]]","x":93,"y":620,"width":755,"height":195},
+		{"id":"892a89993c3fe9f4","type":"text","text":"![[Ideals, Simple and Semisimple Lie Algebras#^b49788]]","x":141,"y":110,"width":660,"height":320},
+		{"id":"f6c2a90ffb032727","type":"text","text":"![[Ideals, Simple and Semisimple Lie Algebras#^f7e0b3]]","x":141,"y":-390,"width":660,"height":290},
+		{"id":"b03bf3da387c1677","type":"text","text":"![[Engel's Theorem#^f3a13a]]","x":-944,"y":-780,"width":829,"height":257},
+		{"id":"1ee7e279fb4e10cb","type":"text","text":"![[Structure Theorem for Semisimple Lie Algebras#^2a28d6]]","x":-919,"y":1157,"width":934,"height":322},
+		{"id":"3f3450b00b9d2a90","type":"text","text":"![[Engel's Theorem#^d489ea]]","x":-919,"y":104,"width":700,"height":313},
+		{"id":"f5f477167b9915e8","type":"text","text":"![[Engel's Theorem#^3a3f00]]","x":-820,"y":-355,"width":580,"height":220},
+		{"id":"ddcf652d223e3904","type":"text","text":"![[Engel's Theorem#^e9c4ad]]","x":-1860,"y":130,"width":704,"height":261},
+		{"id":"3c4c876475445d52","type":"text","text":"![[Engel's Theorem#^121a6c]]","x":-1900,"y":-355,"width":771,"height":220},
+		{"id":"d750e81216a32d53","type":"text","text":"![[Engel's Theorem#^58b6d6]]","x":-2700,"y":-4,"width":648,"height":529}
+	],
+	"edges":[
+		{"id":"e0a95991acc15b85","fromNode":"f6c2a90ffb032727","fromSide":"bottom","toNode":"892a89993c3fe9f4","toSide":"top","label":"implies"},
+		{"id":"05403e412184d0b5","fromNode":"f5f477167b9915e8","fromSide":"right","toNode":"f6c2a90ffb032727","toSide":"left","fromEnd":"arrow"},
+		{"id":"97fa9aa34eae4a47","fromNode":"892a89993c3fe9f4","fromSide":"left","toNode":"3f3450b00b9d2a90","toSide":"right","label":"Algebraically Closed\nChar F=0"},
+		{"id":"3b9817036d86ee6e","fromNode":"785850f81d3f0333","fromSide":"left","toNode":"892a89993c3fe9f4","toSide":"right","fromEnd":"arrow","label":"$Char F=0$"},
+		{"id":"27603e21bd0376dd","fromNode":"eb3500a79c9126c2","fromSide":"left","toNode":"6fe68c022c094182","toSide":"right","fromEnd":"arrow","label":"$Char F=0$"},
+		{"id":"a0c2ce43dac65e99","fromNode":"6fe68c022c094182","fromSide":"left","toNode":"1ee7e279fb4e10cb","toSide":"top","fromEnd":"arrow","label":"$Char F=0$"},
+		{"id":"444e13bfb9728ab5","fromNode":"3f3450b00b9d2a90","fromSide":"left","toNode":"ddcf652d223e3904","toSide":"right"},
+		{"id":"2d6bdc428443cc40","fromNode":"ddcf652d223e3904","fromSide":"left","toNode":"d750e81216a32d53","toSide":"right"},
+		{"id":"68a694c7b8c60a5f","fromNode":"f5f477167b9915e8","fromSide":"top","toNode":"b03bf3da387c1677","toSide":"bottom","fromEnd":"arrow"},
+		{"id":"c8cc1accc8040a74","fromNode":"f5f477167b9915e8","fromSide":"left","toNode":"3c4c876475445d52","toSide":"right","label":"Algebraically Closed\nChar F=0"},
+		{"id":"12b19697e91a259d","fromNode":"10860f054009d76d","fromSide":"left","toNode":"7c1e083d161ae538","toSide":"right"},
+		{"id":"180fd4cbcef73713","fromNode":"6fe68c022c094182","fromSide":"bottom","toNode":"7c1e083d161ae538","toSide":"left"},
+		{"id":"59c8067623bc0b56","fromNode":"7c1e083d161ae538","fromSide":"bottom","toNode":"dfcb44846688230f","toSide":"top"},
+		{
+			"id":"3a3584b006b110db",
+			"styleAttributes":{},
+			"toFloating":false,
+			"fromNode":"dfcb44846688230f",
+			"fromSide":"bottom",
+			"toNode":"027f563aedac8405",
+			"toSide":"top"
+		}
+	],
+	"metadata":{
+		"version":"1.0-1.0",
+		"frontmatter":{}
+	}
+}
