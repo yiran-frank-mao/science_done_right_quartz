@@ -224,7 +224,7 @@ plugins:
     options:
       links:
         GitHub: https://github.com/yiran-frank-mao
-        Discord Community: https://discord.gg/cRFFHYye7t
+        # Discord Community: https://discord.gg/cRFFHYye7t
   - source: github:quartz-community/recent-notes
     enabled: false
   - source: github:quartz-community/spacer
@@ -260,7 +260,7 @@ plugins:
       name: quartz-themes
       repo: github:saberzero1/quartz-themes
       subdir: plugin
-    enabled: true
+    enabled: false
     options:
       theme: default
   - source: github:quartz-community/obsidian-plugin-excalidraw
