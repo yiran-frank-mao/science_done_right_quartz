@@ -1,6 +1,6 @@
 # yaml-language-server: $schema=./quartz/plugins/quartz-plugins.schema.json
 configuration:
-  pageTitle: Quartz 5
+  pageTitle: Science Done Right
   pageTitleSuffix: ""
   enableSPA: true
   enablePopovers: true
@@ -12,6 +12,7 @@ configuration:
     - private
     - templates
     - .obsidian
+    - Logbook.md
   theme:
     fontOrigin: googleFonts
     cdnCaching: true
