@@ -14,9 +14,9 @@ This project is continuously evolving and may continue to evolve indefinitely, w
 [[Topological Quantum Field Theory]]
 
 ## Contents
-- [[📐 Mathematics]]
+- [[Mathematics|📐 Mathematics]]
 	- Mathematics is the spark that ignites physics' equations.
-- [[🔬 Physics]]
+- [[Physics|🔬 Physics]]
 	- Physics is the lens that reveals computer science' foundations.
-- [[🖥️ Computer Science]]
+- [[Computer Science|🖥️ Computer Science]]
 	- Computer science is the code that transforms abstract thought into civilization's creations.

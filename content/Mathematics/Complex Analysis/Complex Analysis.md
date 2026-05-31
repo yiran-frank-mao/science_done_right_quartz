@@ -6,7 +6,7 @@ tags:
   - analysis
 ---
 ## Introduction
-Complex analysis is a branch of mathematics that extends the concepts of calculus to complex numbers. Instead of dealing with real numbers, we work with numbers of the form $a + bi$, where $a$ and $b$ are real numbers, and $i$ is the imaginary unit (the square root of $-1$). Complex analysis has numerous applications in physics, engineering, [[Number Theory|number theory]], and applied mathematics. It is particularly useful in solving problems related to fluid dynamics, electromagnetism, and [[Quantum Mechanics|quantum mechanics]].
+Complex analysis is a branch of mathematics that extends the concepts of calculus to complex numbers. Instead of dealing with real numbers, we work with numbers of the form $a + bi$, where $a$ and $b$ are real numbers, and $i$ is the imaginary unit (the square root of $-1$). Complex analysis has numerous applications in physics, engineering, number theory, and applied mathematics. It is particularly useful in solving problems related to fluid dynamics, electromagnetism, and quantum mechanics.
 
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/riemann_sphere.svg" alt="sphere" style="width:30%;">
 
