@@ -4,17 +4,14 @@ Conformal field theory is a quantum field theory invariant under conformal (angl
 
 ## Contents
 
-### Virasoro Algebra
+[[Loop Groups]]
+[[Vertex Operator Algebra]]
 [[Witt Algebra and Virasoro Algebra]]
 [[Unitary Highest Weight Representations]]
 [[The Verma Module]]
-[[The Integrability Theorem]]
-[[Loop Groups]]
-[[Vertex Operator Algebra]]
-
-### The Semigroup of Annuli
-[[The Semigroup of Annuli]]
 [[The Fock Space]]
+[[The Integrability Theorem]]
+[[The Semigroup of Annuli]]
 [[Conformal Welding Problem]]
 [[The Symplectic Hilbert Space]]
 [[Embed Into The Semigroups]]
