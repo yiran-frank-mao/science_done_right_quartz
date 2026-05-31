@@ -2,7 +2,6 @@
 tags:
   - algebra
 ---
-## Three Definitions of the Frobenius Structure
 
 > [!definition] Frobenius Algebra
 > A *Frobenius algebra* is a finite-dimensional $\newcommand{\K}{\mathbb{K}}\K$-algebra $A$ equipped with a linear functional $\varepsilon\colon A \to \K$ whose nullspace contains no nontrivial left ideals. This linear functional $\varepsilon$ is called the *Frobenius form*.
