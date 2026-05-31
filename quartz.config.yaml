@@ -148,11 +148,11 @@ plugins:
     enabled: true
   - source: github:quartz-community/content-page
     enabled: true
-  # - source: github:quartz-community/folder-page
-  #   enabled: false
-  #   options:
-  #     showFolderCount: false
-  #     showSubfolders: false
+  - source: github:quartz-community/folder-page
+    enabled: false
+    options:
+      showFolderCount: false
+      showSubfolders: false
   - source: github:quartz-community/tag-page
     enabled: true
   - source: github:quartz-community/explorer
