@@ -209,62 +209,62 @@
 
 /* Callout for definitions */
 .theme-light .callout[data-callout="definition"] {
-  --color: 138, 10, 10;
+  --color: #8a0a0a;
   --callout-icon: var(--lucide-bookmark);
 }
 
 .theme-dark .callout[data-callout="definition"] {
-  --color: 255, 168, 168;
+  --color: #ffa8a8;
   --callout-icon: var(--lucide-bookmark);
 }
 
 /* Callout for theorems */
 .callout[data-callout="theorem"] {
-  --color: 255, 149, 0;
+  --color: #ff9500;
   --callout-icon: var(--lucide-book);
 }
 
 /* Callout for algorithms */
 .theme-light .callout[data-callout="algorithm"] {
-  --color: 0, 82, 5;
+  --color: #005205;
   --callout-icon: lucide-brain-circuit;
 }
 
 .theme-dark .callout[data-callout="algorithm"] {
-  --color: 168, 255, 181;
+  --color: #a8ffb5;
   --callout-icon: lucide-brain-circuit;
 }
 
 /* Callout for propositions */
 .theme-light .callout[data-callout="proposition"] {
-  --color: 0, 29, 97;
+  --color: #001d61;
   --callout-icon: var(--lucide-book-up-two);
 }
 
 .theme-dark .callout[data-callout="proposition"] {
-  --color: 168, 226, 255;
+  --color: #a8e2ff;
   --callout-icon: var(--lucide-book-up-two);
 }
 
 .callout[data-callout="principle"] {
-  --color: 0, 42, 255;
+  --color: #002aff;
   --callout-icon: lucide-scale;
 }
 
 /* Callout for lemmas */
 .theme-light .callout[data-callout="lemma"] {
-  --color: 39, 0, 97;
+  --color: #270061;
   --callout-icon: var(--lucide-book-up);
 }
 
 .theme-dark .callout[data-callout="lemma"] {
-  --color: 212, 184, 255;
+  --color: #d4b8ff;
   --callout-icon: var(--lucide-book-up);
 }
 
 /* Callout for corollaries */
 .callout[data-callout="corollary"] {
-  --color: 163, 195, 75;
+  --color: #a3c34b;
   --callout-icon: var(--lucide-book-key);
 }
 

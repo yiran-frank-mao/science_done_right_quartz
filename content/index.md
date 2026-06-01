@@ -10,7 +10,7 @@ This project is continuously evolving and may continue to evolve indefinitely, w
 
 [[The Semigroup of Annuli]]
 [[The Symplectic Hilbert Space]]
-[[Physics/Mechanics/Quantum Field Theory/Conformal Field Theory/]]
+[[Physics/Mechanics/Quantum Field Theory/Conformal Field Theory]]
 [[Physics/Mechanics/Quantum Field Theory/Topological Quantum Field Theory]]
 
 ## Contents
