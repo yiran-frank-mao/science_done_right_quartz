@@ -194,7 +194,7 @@
 
 // Callouts
 .callout[data-callout="block-combine"] {
-  --callout-color: var(--text-normal);
+  --color: var(--text-normal);
   background-color: rgba(0, 0, 0, 0) !important;
   border: 0px !important;
   border-radius: 6px;
@@ -209,62 +209,62 @@
 
 /* Callout for definitions */
 .theme-light .callout[data-callout="definition"] {
-  --callout-color: 138, 10, 10;
+  --color: 138, 10, 10;
   --callout-icon: var(--lucide-bookmark);
 }
 
 .theme-dark .callout[data-callout="definition"] {
-  --callout-color: 255, 168, 168;
+  --color: 255, 168, 168;
   --callout-icon: var(--lucide-bookmark);
 }
 
 /* Callout for theorems */
 .callout[data-callout="theorem"] {
-  --callout-color: 255, 149, 0;
+  --color: 255, 149, 0;
   --callout-icon: var(--lucide-book);
 }
 
 /* Callout for algorithms */
 .theme-light .callout[data-callout="algorithm"] {
-  --callout-color: 0, 82, 5;
+  --color: 0, 82, 5;
   --callout-icon: lucide-brain-circuit;
 }
 
 .theme-dark .callout[data-callout="algorithm"] {
-  --callout-color: 168, 255, 181;
+  --color: 168, 255, 181;
   --callout-icon: lucide-brain-circuit;
 }
 
 /* Callout for propositions */
 .theme-light .callout[data-callout="proposition"] {
-  --callout-color: 0, 29, 97;
+  --color: 0, 29, 97;
   --callout-icon: var(--lucide-book-up-two);
 }
 
 .theme-dark .callout[data-callout="proposition"] {
-  --callout-color: 168, 226, 255;
+  --color: 168, 226, 255;
   --callout-icon: var(--lucide-book-up-two);
 }
 
 .callout[data-callout="principle"] {
-  --callout-color: 0, 42, 255;
+  --color: 0, 42, 255;
   --callout-icon: lucide-scale;
 }
 
 /* Callout for lemmas */
 .theme-light .callout[data-callout="lemma"] {
-  --callout-color: 39, 0, 97;
+  --color: 39, 0, 97;
   --callout-icon: var(--lucide-book-up);
 }
 
 .theme-dark .callout[data-callout="lemma"] {
-  --callout-color: 212, 184, 255;
+  --color: 212, 184, 255;
   --callout-icon: var(--lucide-book-up);
 }
 
 /* Callout for corollaries */
 .callout[data-callout="corollary"] {
-  --callout-color: 163, 195, 75;
+  --color: 163, 195, 75;
   --callout-icon: var(--lucide-book-key);
 }
 
