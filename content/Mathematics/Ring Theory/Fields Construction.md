@@ -63,7 +63,7 @@ $\quad$
 ## Primitive Elements
 
 > [!definition] Primitive Element
-> Let $K$ be a field extension of $F$. An element that generates $K$, i.e. $K=F[\alpha]$, is called a *primitive element* of $K$ over $F$.
+> Let $K$ be a field extension of $F$. An element that generates $K$, i.e. $K=F[\alpha]$, is called a primitive element of $K$ over $F$.
 > 
 
 > [!lemma]
