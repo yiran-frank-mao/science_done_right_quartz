@@ -33,7 +33,7 @@ $\quad$
 >A functor $F \colon \mathsf{C} \to \mathsf{D}$ is called an *embedding* if it is full, faithful, and injective on objects.
 
 >[!definition] Full Subcategory
->A full subcategory $\mathsf{U}\rightarrowtail\mathsf{C}$ consists of some objects of $\mathsf{C}$ and all of the morphisms between them.
+>A *full subcategory* $\mathsf{U}\rightarrowtail\mathsf{C}$ consists of some objects of $\mathsf{C}$ and all of the morphisms between them.
 
 ## Representable Structure
 

@@ -43,7 +43,8 @@ $\quad$ ^008eea
 <u><b>e.g.</b></u>  All finite categories are clearly small, the category $\mathsf{Group}$ of groups, and the category $\mathsf{Set}$ of sets are all large. 
 
 >[!definition] Locally-Small
->A category $\mathsf{C}$ is called *locally small* if for any objects $X, Y$ in $\mathsf{C}$, the collection $\newcommand{\Hom}{\operatorname{Hom}} \Hom_\mathsf{C} (X,Y)=\{f\in\mor(\mathsf{C})\mid f\colon X\to Y \}$ is a set (called a hom-set). ^d0fa66
+>A category $\mathsf{C}$ is called *locally small* if for any objects $X, Y$ in $\mathsf{C}$, the collection $\newcommand{\Hom}{\operatorname{Hom}} \Hom_\mathsf{C} (X,Y)=\{f\in\mor(\mathsf{C})\mid f\colon X\to Y \}$ is a set (called a hom-set).
+> In other words, it is [[Monoidal Categories#^5e1a68|$\mathsf{Set}$-enriched]]. ^d0fa66
 
 <u><b>e.g.</b></u>  Many of the large categories we want to consider are in fact locally small. $\mathsf{Set}$ is locally small since $\text{Hom}_\mathsf{Set} (X,Y)=Y^{X}$, the set of all functions from $X$ to $Y$. Similarly, $\mathsf{Pos}$, $\mathsf{Top}$, and $\mathsf{Group}$ are all locally small.
 
