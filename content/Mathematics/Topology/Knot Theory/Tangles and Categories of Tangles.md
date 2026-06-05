@@ -28,6 +28,13 @@ tags:
 
 <u><b>e.g.</b></u>  We can generate the trefoil as a composition of  basic tangles: ![trefoil_tangle_decompose.svg|260](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/trefoil_tangle_decompose.svg)
 
+## The Category of Braids
+
+> [!definition] Braid Category
+>  The *braid category* $\newcommand{\Braid}{\mathsf{Braid}}(\Braid, +, 0, \tau)$ is a [[Monoidal Categories#^2361b7|braided monoidal category]] whose objects are [[Number Systems#^b4eff7|natural numbers]] $n$ (equivalently, collections of $n$ dots), and whose morphisms are automorphisms represented by elements of the [braid groups $B_n$](Braids%20and%20Braids%20Group#^875d97). The monoidal product is given by addition on objects and juxtaposition on morphisms. The braiding $\tau \colon n+m \to m+n$ is represented by the braid
+>  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braid_category_braiding.svg" style="width:50%;"/>
+
+
 ## The Category of Tangles
 
 > [!definition] Tangle Category

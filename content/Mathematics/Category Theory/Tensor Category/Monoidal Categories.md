@@ -37,7 +37,7 @@
 $\quad$
 
 > [!definition] Monoidal Functor
-> A *monoidal functor* between monoidal categories $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ and $(\mathsf{D},\otimes',\mathbb{1}',\alpha',\lambda',\rho')$ is a functor $F \colon \mathsf{C} \to \mathsf{D}$ together with a morphism $F_{0}\colon \mathbb{1}' \to F(\mathbb{1})$ in $\mathsf{D}$ and a natural isomorphism $F_{2}\colon F(-)\otimes' F(-) \Rightarrow F(-\otimes -)$ such that the following diagrams commute for all objects $X,Y,Z$ in $\mathsf{C}$:
+> A *(lax) monoidal functor* between monoidal categories $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ and $(\mathsf{D},\otimes',\mathbb{1}',\alpha',\lambda',\rho')$ is a tuple $F=(F_{0}, F_{1}, F_{2})$, where functor $F_{1} \colon \mathsf{C} \to \mathsf{D}$ is a functor, $F_{0}\colon \mathbb{1}' \to F(\mathbb{1})$ is a morphism  in $\mathsf{D}$ and $F_{2}\colon F(-)\otimes' F(-) \Rightarrow F(-\otimes -)$ is a natural transformation such that the following diagrams commute for all objects $X,Y,Z$ in $\mathsf{C}$:
 > ^e5952b
 
 ## Braided Monoidal Category
@@ -46,8 +46,12 @@ $\quad$
 > A *braided monoidal category* is a [[Monoidal Categories#^bc017c|monoidal category]] with an additional structure, a *braiding*, which is a [[Functoriality and Naturality#^b8c1fd|natural isomorphism]] $\tau_{A,B}\colon A\otimes B \to B\otimes A$ that is compatible with the associativity and unit constraints. That is, the following hexagon diagrams commute for all objects $X,Y,Z$:
 > 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braiding_hexagon_one.svg" style="width:80%;"/>
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braiding_hexagon_two.svg" style="width:80%;"/>
 > 
 > A *symmetric monoidal category* is a braided monoidal category with the braiding satisfying the symmetry axiom: $\tau_{A,B}=\tau_{B,A}^{-1}$. ^2361b7
+
+> [!definition] Braided Monoidal Functor
+> A *braided monoidal functor* $F$ between two braided monoidal categories is a [[Monoidal Categories#^e5952b|monoidal functor]] such that 
 
 > [!definition] Braided Commutative Monoid Object
 > A monoid object $(M,\mu,\eta)$ in a braided monoidal category is *braided commutative* if the following diagram commutes:
@@ -56,33 +60,38 @@ $\quad$
 
 <u><b>e.g.</b></u>  
 
+> 
 
-| Category                                         | Universal Property                                                              | Categorical Equivalence                                                             |
-| ------------------------------------------------ | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| $(\mathsf{\Delta}, +, 0)$                        | Free monoidal category on a single monoid object $1$                            | $\mathsf{MonFunc}(\mathsf{\Delta}, \mathsf{C}) \cong \mathsf{Mon}(\mathsf{C})$      |
-| $(\mathsf{FinCard}, +, 0)$                       | Free symmetric monoidal category on on a single commutative monoid $1$          | $\mathsf{SymMonFunc}(\mathsf{FinCard}, \mathsf{C}) \cong \mathsf{cMon}(\mathsf{C})$ |
-| $(\mathsf{PlanGraph}, \sqcup, 0)$                | Free monoidal category on a single Frobenius object $1$                         | $\mathsf{MonFunc}(\mathsf{PlanGraph}, \mathsf{C}) \cong \mathsf{Frob}(\mathsf{C})$  |
-| $(\mathsf{Braid}, +, 0)$                         | Free braided monoidal category on a single braided monoid                       | $\mathsf{BrMonFunc}(\mathsf{Braid}, \mathsf{C}) \cong \mathsf{C}$                   |
-| Skeleton of $(\mathsf{2Cob}, \sqcup, \emptyset)$ | Free symmetric monoidal category on a single commutative Frobenius object $S^1$ | $\mathsf{SymMonFunc}(\mathsf{2Cob}, \mathsf{C}) \cong \mathsf{cFrob}(\mathsf{C})$   |
-|                                                  |                                                                                 |                                                                                     |
 
+| Category                                                                | Universal Property                                                              | Category Equivalence                                                                |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
+| $(\mathsf{N}, +, 0)$                                                    | Free monoidal category on a single object $1$                                   | $\mathsf{MonFunc}(\mathsf{N}, \mathsf{C}) \cong \mathsf{C}$                         |
+| $(\mathsf{\Delta}, +, 0)$                                               | Free monoidal category on a single monoid $1$                                   | $\mathsf{MonFunc}(\mathsf{\Delta}, \mathsf{C}) \cong \mathsf{Mon}(\mathsf{C})$      |
+| $(\mathsf{PlanGraph}, \sqcup, 0)$                                       | Free monoidal category on a single Frobenius object $1$                         | $\mathsf{MonFunc}(\mathsf{PlanGraph}, \mathsf{C}) \cong \mathsf{Frob}(\mathsf{C})$  |
+| $(\mathsf{Braid}, +,0)$                                                 | Free braided monoidal category on a single object                               |                                                                                     |
+| $(\mathsf{Vine}, +, 0)$                                                 | Free braided monoidal category on a single braided commutative monoid           | $\mathsf{BrMonFunc}(\mathsf{Vine}, \mathsf{C}) \cong \mathsf{C}$                    |
+| $(\mathsf{2BrCod}, \sqcup, \emptyset)$                                  | Free braided monoidal category on a single braided Frobenius object             | $\mathsf{BrMonFunc}(\mathsf{2BrCod}, \mathsf{C}) \cong \mathsf{C}$                  |
+| $(\mathsf{FinCard}, +, 0)$                                              | Free symmetric monoidal category on on a single commutative monoid $1$          | $\mathsf{SymMonFunc}(\mathsf{FinCard}, \mathsf{C}) \cong \mathsf{cMon}(\mathsf{C})$ |
+| [[Morphisms#^2e268d\|Skeleton]] of $(\mathsf{2Cob}, \sqcup, \emptyset)$ | Free symmetric monoidal category on a single commutative Frobenius object $S^1$ | $\mathsf{SymMonFunc}(\mathsf{2Cob}, \mathsf{C}) \cong \mathsf{cFrob}(\mathsf{C})$   |
 
 
 ## The Category of Monoid Objects
 
 > [!definition] Monoid Homomorphism
+> For any two monoid objects $M_{1}$ and $M_{2}$, a *monoid homomorphism* $f\colon M_{1}\to M_{2}$ is a morphism in the corresponding Monoidal category that is compatible with the monoid structure. That is, the following diagrams commute:
+> 
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_homomorphism.svg" style="width:70%;"/>
 > 
 > 
-
 
 > [!proposition]
-> If 
+> The 
 > 
 
 
 ## Enriched Categories
 
-> [!definition] Enriched Category
+> [!definition] Enriched Category ^5e1a68
 > We call a category $\mathsf{C}$ a *$\mathsf{V}$-category*, or *a category enriched in $\mathsf{V}$*, where $\mathsf{V}=(\mathbf{V},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ is a monoidal category, if
 > - For each pair of objects $X, Y$ in $\mathsf{C}$, there is an object $\mathsf{C}(X, Y)$ in $\mathsf{V}$, called the *hom object with domain $X$ and codomain $Y$*. Every morphism $f\colon X \to Y$ in $\mathsf{C}$ can be uniquely described by $\tilde{f}\colon \mathbb{1} \to \mathsf{C}(X,Y)$ in $\mathsf{V}$.
 > - For each triple of objects $X, Y, Z$ in $\mathsf{C}$, there is a morphism $$ m_{X,Y,Z}\colon \mathsf{C}(Y,Z) \otimes \mathsf{C}(X,Y) \to \mathsf{C}(X,Z) $$ in $\mathsf{V}$, called the *composition*;

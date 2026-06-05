@@ -1,4 +1,4 @@
->[!definition] Vector Space
+>[!definition] Vector Space ^f4b63e
 >Let $F$ be a [[Ring, Field and Integral Domain#^575174|field]]. A $F$-vector space is a set $V$ with two operations:
 >- Addition: $+\colon V\times V\to V, (v_{1},v_{2})\mapsto v_1+v_2$
 >- Scalar multiplication: $\cdot\colon F\times V\to V, (c,v)\mapsto c\cdot v$
@@ -10,7 +10,7 @@
 >- Additive Inverse: $\forall v\in V, \exists w\in V, v+w=0$
 >- Multiplicative Identity: $\exists 1\in F, \forall v\in V,1\cdot v=v$
 >- Distributivity: $\forall a,b\in F, v_{1},v_{2}\in V, a\cdot(v_{1}+v_{2})=a\cdot v_{1}+a\cdot v_{2}, (a+b)\cdot v_{1}=a\cdot v_{1}+b\cdot v_{2}$
->$\quad$^f4b63e
+>$\quad$
 
 <u><b>e.g.</b></u>  The set $\newcommand{\R}{\mathbb{R}}F[a,b]=\{f\colon[a,b]\to\R\}$ is a vector space on $\R$ under the addition and scalar multiplication defined by $$(f+g)(x)=f(x)+g(x),\quad (\alpha f)(x) = \alpha f(x)$$$C[a,b]=\{f\colon[a,b]\to\R\mid f \text{ is continuous}\}$ is a subspace under the same addition and scalar multiplication.
 

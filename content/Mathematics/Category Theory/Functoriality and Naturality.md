@@ -33,7 +33,7 @@ $\quad$
 >A functor $F \colon \mathsf{C} \to \mathsf{D}$ is called an *embedding* if it is full, faithful, and injective on objects.
 
 >[!definition] Full Subcategory
->A full subcategory $\mathsf{U}\rightarrowtail\mathsf{C}$ consists of some objects of $\mathsf{C}$ and all of the morphisms between them.
+>A *full subcategory* $\mathsf{U}\rightarrowtail\mathsf{C}$ consists of some objects of $\mathsf{C}$ and all of the morphisms between them.
 
 ## Representable Structure
 
@@ -86,10 +86,11 @@ $\quad$
 ## Equivalence of Categories
 
 >[!definition] Equivalent Categories
->An equivalence of categories consists of a pair of functors $E\colon \mathsf{C}\to\mathsf{D}$ and $F\colon \mathsf{D}\to\mathsf{C}$ and a pair of natural isomorphisms $$\alpha\colon 1_\mathsf{C} \to F \circ E, \quad \beta\colon1_\mathsf{D}\to E\circ F$$In this situation, the functor $F$ is called a pseudo-inverse of $E$. The categories $\mathsf{C}$ and $\mathsf{D}$ are then said to be equivalent, written $\mathsf{C} ≃ \mathsf{D}$.
+> An *equivalence of categories* consists of a pair of functors $E\colon \mathsf{C}\to\mathsf{D}$ and $F\colon \mathsf{D}\to\mathsf{C}$ and a pair of natural isomorphisms $$\alpha\colon 1_\mathsf{C} \to F \circ E, \quad \beta\colon1_\mathsf{D}\to E\circ F$$
+> In this situation, the functor $F$ is called a *pseudo-inverse* of $E$. The categories $\mathsf{C}$ and $\mathsf{D}$ are then said to be *equivalent*, written $\mathsf{C} ≃ \mathsf{D}$.
 
 >[!proposition] 
->**Prop**  The following conditions on a functor $F \colon \mathsf{C} → \mathsf{D}$ are equivalent:
+> The following conditions on a functor $F \colon \mathsf{C} → \mathsf{D}$ are equivalent:
 >- $F$ is part of an equivalence of categories.
 >- $F$ is full and faithful and “essentially surjective” on objects: for every $D ∈ \obj \mathsf{D}$ there is some $C ∈\obj \mathsf{C}$ such that $F(C)\cong D$.
 >$\quad$
