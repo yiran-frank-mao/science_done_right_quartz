@@ -1,1 +1,0 @@
-Lie algebra cohomology is a cohomology theory for Lie algebras that extends [[de Rham Cohomology|de Rham cohomology]] methods to study Lie groups and their algebras. 
