@@ -96,7 +96,13 @@ plugins:
     enabled: true
     options:
       renderEngine: katex
-      customMacros: { "\\R": "\\mathbb{R}", "\\Q": "\\mathbb{Q}", "\\Z": "\\mathbb{Z}" }
+      customMacros:
+        {
+          "\\R": "\\mathbb{R}",
+          "\\Q": "\\mathbb{Q}",
+          "\\Z": "\\mathbb{Z}",
+          "\\Diff": "\\mathrm{Diff}",
+        }
     order: 80
   - source: github:quartz-community/citations
     enabled: false
