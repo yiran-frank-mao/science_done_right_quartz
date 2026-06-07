@@ -1,0 +1,2 @@
+**Def**  <i><u>Principle Axis</u></i> and <i><u>Principle Point</u></i>
+The principal axis is the straight line passing through the geometrical centre of a lens and joining the two centers of curvature of its surfaces. And the principal pint is the point where the principal axis intersects with the image plane. ^464846

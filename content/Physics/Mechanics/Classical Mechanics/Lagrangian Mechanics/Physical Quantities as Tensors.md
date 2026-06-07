@@ -1,0 +1,3 @@
+The use of tensors ensures that the physical laws governing these phenomena are expressed in a manner that is universally valid, irrespective of the observer's frame of reference or the chosen coordinate system.
+
+<b><u>e.g.</u></b>  Temperature, charge and mass are scalars, position, momentum and force are vectors, stress, strain, inertia and polarisation are tensors. The following is the inertia tensor:$$\left[\begin{array}{lll}I_{xx}&-I_{xy}&-I_{xz}\\-I_{yx}&I_{yy}&-I_{yz}\\-I_{zx}&-I_{zy}&I_{zz}\end{array}\right]$$
