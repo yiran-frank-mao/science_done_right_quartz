@@ -266,6 +266,11 @@
   --callout-icon: var(--callout-icon-note);
 }
 
+.callout[data-callout="remark"] .callout-title {
+  color: #448aff !important;
+  font-variant-caps: all-small-caps;
+}
+
 .callout[data-callout="comment"] .callout-title {
   background-color: var(--background-primary);
   margin-top: -24px;
