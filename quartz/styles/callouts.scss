@@ -259,29 +259,11 @@
   --callout-icon: var(--lucide-book-key);
 }
 
-.callout[data-callout="remark"] .callout-title {
-  background-color: var(--background-primary);
-  margin-top: -24px;
-  z-index: 200;
-  width: fit-content;
-  padding: 0 0.5em;
-  margin-left: -0.75em;
-  letter-spacing: 0.05em;
-  font-variant-caps: all-small-caps;
-}
+/* Callout for remarks */
 .callout[data-callout="remark"] {
-  overflow: visible !important;
-  --callout-border-width: 1px !important;
-  --callout-border-opacity: 0.5 !important;
-  --callout-title-size: 0.8em !important;
-  --callout-blend-mode: normal !important;
-  background-color: transparent !important;
-}
-.cm-embed-block.cm-callout {
-  padding-top: 12px;
-}
-.callout-content .callout[data-callout="remark"] {
-  margin-top: 18px;
+  --color: transparent;
+  --border: #448aff;
+  --callout-icon: var(--callout-icon-note);
 }
 
 .callout[data-callout="comment"] .callout-title {
