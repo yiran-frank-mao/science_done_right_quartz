@@ -261,13 +261,13 @@
 
 /* Callout for remarks */
 .callout[data-callout="remark"] {
-  --color: transparent;
+  --color: #448aff;
   --border: #448aff;
+  --bg: transparent;
   --callout-icon: var(--callout-icon-note);
 }
 
 .callout[data-callout="remark"] .callout-title {
-  color: #448aff !important;
   font-variant-caps: all-small-caps;
 }
 
