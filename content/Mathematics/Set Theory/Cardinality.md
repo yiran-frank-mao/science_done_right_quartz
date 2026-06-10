@@ -99,7 +99,7 @@
 > [!theorem] Cantor's Theorem
 > For any set $A$ there holds $\car{A} < \car{P(A)}$. Thus there is no maximal cardinality.
 
-*Proof*  Note that the function $\varphi \colon A → P(A)$ defined by $φ(x)=\{x\}$ for all $x ∈A$ is an injection. Therefore $\car{A} ≤ \car{P(A)}$. If $A = P(A)$, then there exists a bijection $f \colon A→P(A)$. Define $$Y=\{x\in A:x\notin f(x)\}$$which is a subset of  and hence is contained in $P(A)$. Thus there exists $y ∈ A$ such that $Y=f(y)$. We have either $y∈Y$ or $y \neq Y$. If $y∈Y$,then as an element in $Y$ we must have $y\neq f(y)=Y$ which is a contradiction; if $y \notin Y$, then $y \notin f(y)$, by definition of $Y$ we must have $y ∈ Y$ , a contradiction again. This shows $\car{A} \neq \car{P (A)}$. Consequently $\car{A} < \car{P(A)}$. $\square$
+*Proof*  Note that the function $\varphi \colon A → P(A)$ defined by $φ(x)=\{x\}$ for all $x ∈A$ is an injection. Therefore $\car{A} ≤ \car{P(A)}$. If $A = P(A)$, then there exists a bijection $f \colon A→P(A)$. Define $$Y=\{x\in A:x\notin f(x)\}$$which is a subset of $A$ and hence is contained in $P(A)$. Thus there exists $y ∈ A$ such that $Y=f(y)$. We have either $y∈Y$ or $y \notin Y$. If $y∈Y$, then as an element in $Y$ we must have $y\notin f(y)=Y$ which is a contradiction; if $y \notin Y$, then $y \in f(y)$, by definition of $Y$ we must have $y ∈ Y$ , a contradiction again. This shows $\car{A} \neq \car{P (A)}$. Consequently $\car{A} < \car{P(A)}$. $\square$
 
 > [!theorem]
 > $\car{P(\N)} = c$.
