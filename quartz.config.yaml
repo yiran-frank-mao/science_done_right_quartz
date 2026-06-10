@@ -103,6 +103,8 @@ plugins:
           "\\Z": "\\mathbb{Z}",
           "\\Diff": "\\mathrm{Diff}",
         }
+      katexOptions:
+        globalGroup: true
     order: 80
   - source: github:quartz-community/citations
     enabled: false
