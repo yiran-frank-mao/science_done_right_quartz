@@ -17,7 +17,7 @@ tags:
 <u><b>e.g.</b></u>  
 - For the covering $p\colon \mathbb{R} \to S^1$ given by $p(t) = e^{2 \pi i t}$, the deck transformations are homeomorphisms $f\colon \mathbb{R} \to \mathbb{R}$ such that $p(f(t)) = p(t)$. This implies $e^{2 \pi i f(t)} = e^{2 \pi i t}$, which holds if and only if $f(t) = t + n$ for some integer $n \in \mathbb{Z}$. The group of deck transformations is therefore isomorphic to the integers under addition: $\Aut_{S^1}(\mathbb{R}) \cong \mathbb{Z}$.
 - Consider $\newcommand{\RP}{\mathbb{R}\mathrm{P}}p\colon S^{n} \to \RP^{n}$. Then $\newcommand{\Z}{\mathbb{Z}}\Aut_{\RP^{n}}(S^{n})=\{\mathrm{id}, f\}\cong\Z/(2)$, where $f(x)=-x$. ^80fb30
-- Take any $X\neq \emptyset$, and let $\widetilde{X}=\sqcup_{n=1}^{N} X$. i.e., $\widetilde{X}$ is just $N$ copies of $X$. The deck transformations are simply permutations of the $N$ copies, so $\Aut_{X}(\widetilde{X})\cong S_{N}$, the [[Symmetric Group#^5b562f|symmetric group]] on $N$ letters.
+- Take any $X\neq \emptyset$, and let $\widetilde{X}=\sqcup_{n=1}^{N} X$. i.e., $\widetilde{X}$ is just $N$ copies of $X$. The deck transformations are simply permutations of the $N$ copies, so $\Aut_{X}(\widetilde{X})\cong S_{N}$, the [[Permutations and Symmetric Groups#^5b562f|symmetric group]] on $N$ letters.
 $\quad$
 
 > [!proposition]

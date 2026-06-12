@@ -7,7 +7,7 @@
 > [!definition] Determinant
 > The determinant of a square matrix $A$ is 
 > $$ \newcommand{\sgn}{\mathrm{sgn}}\det A:= \sum_{\sigma \in S_{n}} \sgn(\sigma) \prod^{n}_{k=1} A_{k,\sigma(k)}, $$
-> where $S_{n}$ is [[Symmetric Group#^5b562f|symmetric group]], $\sigma$ is a [[Symmetric Group#^caba60|permutation]], $\sgn(\sigma)$ is the [[Symmetric Group#^8ed9de|sign of the permutation]], and $A_{k,\sigma(k)}$ denotes the $(k,\sigma(k))$ entry of $A$.
+> where $S_{n}$ is [[Permutations and Symmetric Groups#^5b562f|symmetric group]], $\sigma$ is a [[Permutations and Symmetric Groups#^caba60|permutation]], $\sgn(\sigma)$ is the [[Permutations and Symmetric Groups#^8ed9de|sign of the permutation]], and $A_{k,\sigma(k)}$ denotes the $(k,\sigma(k))$ entry of $A$.
 > 
 
 > [!proposition] Cofactor Expansion

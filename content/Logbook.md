@@ -185,7 +185,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Differential Forms]], [[Galois Theory]].
 
 ## 11 Apr 2025
-- Updates: [[Symmetric Group]].
+- Updates: [[Permutations and Symmetric Groups]].
 
 ## 10 Apr 2025
 - Updates: [[Ring, Field and Integral Domain]].
@@ -248,7 +248,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Tangles and Categories of Tangles]], [[Grading and Filtration]].
 
 ## 2 Feb 2025
-- Updates: [[Symmetric Group]], [[Universal Quantum Invariant]], [[Grading and Filtration]].
+- Updates: [[Permutations and Symmetric Groups]], [[Universal Quantum Invariant]], [[Grading and Filtration]].
 
 ## 1 Feb 2025
 - Updates: [[Morphisms]].
