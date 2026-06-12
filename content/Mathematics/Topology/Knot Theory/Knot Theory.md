@@ -6,20 +6,21 @@ Knot theory is a branch of mathematics that studies the properties and classific
 
 ### Knots and Links
 [[Knots and Links]]
-[[Tangles and Categories of Tangles]]
 [[Knot and Link Invariants]]
 [[Grading and Filtration]]
 [[Singular Knots and Vassiliev Invariants]]
 [[Chord Diagrams]]
 [[Universal Quantum Invariant]]
 [[The Kontsevich Integral]]
-[[Formality Maps for Tangles]]
 ### Braids
 [[Braids and Braids Group]]
 [[The Alexander and Markov Theorems]]
 [[Pure Braids]]
 [[Garside Normal Form]]
-
+[[The Braid Category]]
+### Tangles
+[[Tangles and Categories of Tangles]]
+[[Formality Maps for Tangles]]
 ## More ...
 [[Hyperbolic Knot Theory]]
 
