@@ -92,17 +92,11 @@ plugins:
   - source: github:quartz-community/description
     enabled: true
     order: 70
-  - source: github:quartz-community/latex
+  - source: github:yiran-frank-mao/quartz-latex
     enabled: true
     options:
       renderEngine: katex
-      customMacros:
-        {
-          "\\R": "\\mathbb{R}",
-          "\\Q": "\\mathbb{Q}",
-          "\\Z": "\\mathbb{Z}",
-          "\\Diff": "\\mathrm{Diff}",
-        }
+      customMacros: { "\\R": "\\mathbb{R}", "\\Q": "\\mathbb{Q}", "\\Z": "\\mathbb{Z}" }
       katexOptions:
         globalGroup: true
     order: 80
