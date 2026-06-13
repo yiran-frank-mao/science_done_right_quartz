@@ -3,7 +3,7 @@ Exterior differential forms arise when concepts such as the work of a field alon
 ## Differential Forms
 
 > [!definition] Differential Forms
-> A differential $k$-form on a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]] $M$ of dimension $n$ is a smooth map $$\newcommand{\R}{\mathbb{R}}\omega\colon TM\to \R,$$that is an [[Exterior Forms#^794521|exterior form]] restricted to each [[Tangent Vectors and Spaces#^76649d|tangent space]] $T_{p}M$ at each point $p\in M$. 
+> A differential $k$-form on a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]] $M$ of dimension $n$ is a smooth map $$\omega\colon TM\to \R,$$that is an [[Exterior Forms#^794521|exterior form]] restricted to each [[Tangent Vectors and Spaces#^76649d|tangent space]] $T_{p}M$ at each point $p\in M$. 
 > The exterior and interior product of differential forms inherits from the exterior and interior product of exterior forms respectively. ^c6c1be
 
 <u><b>e.g.</b></u> 
