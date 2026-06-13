@@ -33,9 +33,8 @@ $\quad$
 > The [[Normed and Banach Algebras#^5f41ec|spectrum]] is a closed subset of $\C$.
 > 
 
-> [!theorem] Neumann Theorem
-> Let $\A$ be a unital Banach algebra, and $a\in \A$ such that $\|a\|<1$. Then $(1-a)$ is invertible and $$(1-a)^{-1}=\sum_{n=0}^{\infty}a^{n}.$$
-> 
+> [!theorem] Neumann Theorem (Murphy, 1990, Theorem 1.2.2)
+> Let $\A$ be a unital Banach algebra, and $a\in \A$ such that $\|a\|<1$. Then $(1-a)$ is invertible and $$(1-a)^{-1}=\sum_{n=0}^{\infty}a^{n}.$$ ^9e9db9
 
 > [!theorem]
 > Let $\A$ be a unital Banach algebra, then $\Inv(\A)$ is open in $\A$, and the mapping $\Inv(\A)\to \A$, $a\mapsto a^{-1}$ is Fréchet differentiable.
