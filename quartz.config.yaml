@@ -96,7 +96,7 @@ plugins:
     enabled: true
     options:
       renderEngine: "mathjax"
-      customMacros: { R: '\mathbb{R}', Q: '\mathbb{Q}', Z: '\mathbb{Z}' }
+      customMacros: { id: '\operatorname{id}', R: '\mathbb{R}', Q: '\mathbb{Q}', Z: '\mathbb{Z}', C: '\mathbb{C}', d: '\mathrm{d}', dd: '\,\d', pddf: ['\frac{\partial #1}{\partial #2}', 2] }
       # mathJaxOptions:
       # loader:
       #   load: ['[tex]/newcommand', '[tex]/dsfont']
