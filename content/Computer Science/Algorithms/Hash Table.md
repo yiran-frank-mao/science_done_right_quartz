@@ -51,7 +51,7 @@ A *hash table* is a data structure that allows you to quickly store and retrieve
 > The sequence $\langle h(k,0),h(k,1),\dots,h(k,m-1) \rangle$ is called a *probe sequence*.
 
 > [!proposition]
-> Each probe sequence must be a [[Symmetric Group#^caba60|permutation]] of $(0, . . . , m − 1)$.
+> Each probe sequence must be a [[Permutations and Symmetric Groups#^caba60|permutation]] of $(0, . . . , m − 1)$.
 
 > [!algorithm] Linear Hashing
 > The linear hashing strategy is to simply define

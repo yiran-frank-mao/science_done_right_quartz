@@ -1,7 +1,7 @@
 ## Permutations
 
 > [!definition] Permutation
-> A permutation is a bijective map $\alpha: \{1,…,n\} \rightarrow \{1,…,n\}$, denoted by:
+> A *permutation* is a bijective map $\alpha: \{1,…,n\} \rightarrow \{1,…,n\}$, denoted by:
 > $$ \alpha=\left(\begin{array}{ccccc}1 & 2 & 3 & \cdots & n \\\alpha(1) & \alpha(2) & \alpha(3) & \cdots & \alpha(n)\end{array}\right) $$
 > or using the cycle notation: if $i_1,i_2,…,i_r$ are distinct elements from $\{1,…,n\}$ and if $\alpha \in S_n$ fixes the other elements (if any) and if
 > $$ \alpha\left(i_1\right)=i_2, \alpha\left(i_2\right)=i_3, \ldots, \alpha\left(i_r\right)=i_1 $$

@@ -23,7 +23,7 @@ Group theory is the study of algebraic structures known as groups. Groups are fu
 [[Applications]] ^0bc97e
 
 ### Some Concrete Groups
-[[Symmetric Group]]
+[[Permutations and Symmetric Groups]]
 [[Dihedral Groups]]
 [[Linear Groups]]
 [[Quaternion Group]]

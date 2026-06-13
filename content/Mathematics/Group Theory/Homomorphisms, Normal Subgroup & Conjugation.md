@@ -74,7 +74,7 @@ updated: 2024-10-28
 *Proof*  Clearly $\lambda(x)\circ\lambda(y)=\lambda(xy)$. Set $\lambda(g)=\lambda_{g}=\text{id}$ where $\text{id}$ is the identity map from $G$ to $G$. Then for all $x\in G$, we have $gx=x$. It follows that $g=1$. Thus $\lambda$ is injective. $\square$
 
 >[!corollary] 
->**Corollary** Every finite group is isomorphic to a subgroup of a [[Symmetric Group#^5b562f|symmetric group]] $S_{n}$.
+>**Corollary** Every finite group is isomorphic to a subgroup of a [[Permutations and Symmetric Groups#^5b562f|symmetric group]] $S_{n}$.
 >**Proof**  For any finite group $G$, the $\lambda$ map forms an isomorphism, thus $G\cong S_{n}$ for some $n$.
 
 >[!definition] 

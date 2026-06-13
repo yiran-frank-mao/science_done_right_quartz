@@ -9,7 +9,7 @@
 > $$\{e\}=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_k=G$$
 > such that each $G_{i}$ is normal in $G_{i+1}$, and each quotient $G_{i+1}/G_{i}$​ is abelian.
 
-<u><b>e.g.</b></u>  The smallest non-solvable group is the [[Symmetric Group#^a33b58|alternating group]] $A_{5}$.
+<u><b>e.g.</b></u>  The smallest non-solvable group is the [[Permutations and Symmetric Groups#^a33b58|alternating group]] $A_{5}$.
 
 ## Quintic Equations
 

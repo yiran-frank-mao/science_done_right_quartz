@@ -20,7 +20,7 @@ For quartic equations, we immediately have the following:
 
 > [!corollary]
 > Let $G$ be the Galois group of an irreducible quartic polynomial $f\in F[x]$. The discriminant $\Delta$ of $f$ is a square in $F$ if and only if $G$ contains no odd permutation. Therefore, 
-> - If $\Delta$ is a square in $F$, then $G$ is either the [[Symmetric Group#^a33b58|alternating group]] $A_{4}$ or the Klein four-group $D_{2}$.
+> - If $\Delta$ is a square in $F$, then $G$ is either the [[Permutations and Symmetric Groups#^a33b58|alternating group]] $A_{4}$ or the Klein four-group $D_{2}$.
 > - Otherwise, $G$ is $S_{4}$, $D_{4}$, or $C_{4}$.
 > $\quad$
 
