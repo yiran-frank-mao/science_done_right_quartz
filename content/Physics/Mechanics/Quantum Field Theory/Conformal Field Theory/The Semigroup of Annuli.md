@@ -11,7 +11,7 @@ In [[The Integrability Theorem|the integrability theorem]], we demonstrated that
 ## The Semigroup of Annuli
 
 > [!definition] Semigroup of Annuli
-> The *semigroup of annuli*, denoted $\Ann$, consists of equivalence classes of triples $(\Sigma, \phiin, \phiout)$ where $\Sigma$ is an annulus-like surface, and $\phiin\colon S^{1}\to \partial_{-} \Sigma$, $\phiout\colon S^{1}\to \partial_{+} \Sigma$ are orientation preserving diffeomorphic parametrisations of the outer and inner boundaries of $\Sigma$, respectively.
+> The *semigroup of annuli*, denoted $\newcommand{\Ann}{\mathrm{Ann}}\Ann$, consists of equivalence classes of triples $\newcommand{\phiin}{\gamma_{-}}\newcommand{\phiout}{\gamma_{+}}(\Sigma, \phiin, \phiout)$ where $\Sigma$ is an annulus-like surface, and $\phiin\colon S^{1}\to \partial_{-} \Sigma$, $\phiout\colon S^{1}\to \partial_{+} \Sigma$ are orientation preserving diffeomorphic parametrisations of the outer and inner boundaries of $\Sigma$, respectively.
 > Two annuli $(\Sigma, \phiin, \phiout)$ and $(\Sigma', \phiin', \phiout')$ are considered *equivalent* if there exists a biholomorphic $f\colon \Sigma \to \Sigma'$ such that the following diagram commutes:
 > 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/annuli_equivalence.svg" style="width:30%;"/>
