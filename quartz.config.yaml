@@ -96,13 +96,13 @@ plugins:
     enabled: true
     options:
       renderEngine: "mathjax"
-      customMacros: { R: '\\mathbb{R}', Q: '\\mathbb{Q}', Z: '\\mathbb{Z}' }
-      mathJaxOptions:
-      loader:
-        load: ['[tex]/newcommand', '[tex]/dsfont']
-      tex:
-        packages:
-          '[+]': ['newcommand', 'dsfont']
+      customMacros: { R: '\mathbb{R}', Q: '\mathbb{Q}', Z: '\mathbb{Z}' }
+      # mathJaxOptions:
+      # loader:
+      #   load: ['[tex]/newcommand', '[tex]/dsfont']
+      # tex:
+      #   packages:
+      #     '[+]': ['newcommand', 'dsfont']
     order: 80
   - source: github:quartz-community/citations
     enabled: false
