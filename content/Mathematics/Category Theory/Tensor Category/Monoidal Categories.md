@@ -1,7 +1,7 @@
 ## Monoidal Categories
 
 > [!definition] Monoidal Category
-> A *monoidal category* is a tuple $\newcommand{\one}{\mathds{1}}\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\one,\alpha,\lambda,\rho)$ where 
+> A *monoidal category* is a tuple $\require{dsfont}\newcommand{\one}{\mathds{1}}\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\one,\alpha,\lambda,\rho)$ where 
 > - $\mathsf{C}$ is a [[Structure of Categories#^2f5c3a|category]];
 > - [[Functoriality and Naturality#^653948|functor]] $\otimes\colon \mathsf{C}\times\mathsf{C}\to\mathsf{C}$ is called the *monoidal product*;
 > - $\mathbb{1}\in\obj \mathsf{C}$ is called the *monoidal unit*;
