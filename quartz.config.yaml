@@ -97,9 +97,9 @@ plugins:
     options:
       renderEngine: "mathjax"
       customMacros: { \\R: '\\mathbb{R}', \\Q: '\\mathbb{Q}', \\Z: '\\mathbb{Z}' }
-      mathJaxOptions:
-        loader: { load: ["[tex]/dsfont"] }
-        tex: { packages: {'[+]': ['dsfont']} }
+      # mathJaxOptions:
+      #   loader: { load: ['[tex]/newcommand', '[tex]/dsfont'] }
+      #   tex: { packages: {'[+]': ['newcommand', 'dsfont']} }
       # katexOptions:
       #   globalGroup: true
     order: 80
