@@ -96,7 +96,7 @@ plugins:
     enabled: true
     options:
       renderEngine: "mathjax"
-      customMacros: { \\R: '\\mathbb{R}', \\Q: '\\mathbb{Q}', \\Z: '\\mathbb{Z}' }
+      customMacros: { R: '\\mathbb{R}', Q: '\\mathbb{Q}', Z: '\\mathbb{Z}' }
       mathJaxOptions:
       loader:
         load: ['[tex]/newcommand', '[tex]/dsfont']
