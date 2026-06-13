@@ -6,8 +6,4 @@ A tensor category is, roughly, a category equipped with a tensor product that le
 
 [[Monoidal Categories]]
 [[Finite Sets Category]]
-
-[[Braided Monoidal Categories]]
 [[Yang-Baxter Equation]]
-[[The Braid Category]]
-

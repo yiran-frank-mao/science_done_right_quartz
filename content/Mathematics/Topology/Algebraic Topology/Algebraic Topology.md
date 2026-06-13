@@ -25,7 +25,7 @@ Algebraic topology turns qualitative, flexible spaces into rigorous algebraic ob
 [[Degree and Local Homology]]
 [[Cellular Homology]]
 [[Euler Characteristics and Mayer-Vietoris Sequence]]
-[[Simplicial Sets]]
+
 ### Cohomology
 [[Formalism of Homology and Cohomology]]
 [[Singular Cohomology]]

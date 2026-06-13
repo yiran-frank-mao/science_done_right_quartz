@@ -92,13 +92,15 @@ plugins:
   - source: github:quartz-community/description
     enabled: true
     order: 70
-  - source: github:yiran-frank-mao/quartz-latex
+  - source: github:quartz-community/latex
     enabled: true
     options:
-      renderEngine: katex
+      renderEngine: "mathjax"
       customMacros: { "\\R": "\\mathbb{R}", "\\Q": "\\mathbb{Q}", "\\Z": "\\mathbb{Z}" }
-      katexOptions:
-        globalGroup: true
+      mathJaxOptions:
+        loader: { load: ["[tex]/dsfont"] }
+      # katexOptions:
+      #   globalGroup: true
     order: 80
   - source: github:quartz-community/citations
     enabled: false

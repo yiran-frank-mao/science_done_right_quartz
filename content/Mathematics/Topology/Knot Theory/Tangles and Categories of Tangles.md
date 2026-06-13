@@ -28,14 +28,17 @@ tags:
 
 <u><b>e.g.</b></u>  We can generate the trefoil as a composition of  basic tangles: ![trefoil_tangle_decompose.svg|260](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/trefoil_tangle_decompose.svg)
 
+## The Category of Braids
+
+> [!definition] Braid Category
+>  The *braid category* $\newcommand{\Braid}{\mathsf{Braid}}(\Braid, +, 0, \tau)$ is a [[Monoidal Categories#^2361b7|braided monoidal category]] whose objects are [[Number Systems#^b4eff7|natural numbers]] $n$ (equivalently, collections of $n$ dots), and whose morphisms are automorphisms represented by elements of the [braid groups $B_n$](Braids%20and%20Braids%20Group#^875d97). The monoidal product is given by addition on objects and juxtaposition on morphisms. The braiding $\tau \colon n+m \to m+n$ is represented by the braid
+>  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braid_category_braiding.svg" style="width:50%;"/>
+
+
 ## The Category of Tangles
 
-Recall the definition of a braid category $\mathsf{Braid}$:
-
-![[The Braid Category#^fe2c41]]
-
 > [!definition] Tangle Category
-> The category of tangles, denoted by $\mathsf{Tangle}$, is a [[Braided Monoidal Categories#^2361b7|braided monoidal category]] consists of non-negative integers as objects, and tangles as morphisms, such that 
+> The category of tangles, denoted by $\mathsf{Tangle}$, is a [[Monoidal Categories#^2361b7|braided monoidal category]] consists of non-negative integers as objects, and tangles as morphisms, such that 
 > - $T_{m,n}\in\Hom(m,n)$,
 > - the composition of morphisms is tangle composition,
 > - the tensor product of morphisms is (horizontal) stacking, 
@@ -60,7 +63,7 @@ Recall the definition of a braid category $\mathsf{Braid}$:
 > A oriented tangle is a tangle with a fixed orientation on each strand, denoted as $\vec{T}_{{m,n}}$.
 
 > [!definition] Oriented Tangle Category
-> The category of oriented tangles, denoted by $\mathsf{OTangle}$, is a [[Braided Monoidal Categories#^2361b7|braided monoidal category]] consists of
+> The category of oriented tangles, denoted by $\mathsf{OTangle}$, is a [[Monoidal Categories#^2361b7|braided monoidal category]] consists of
 > - words in $\{\uparrow,\downarrow\}$ as objects, (<u><b>e.g.</b></u>  $\uparrow\uparrow\downarrow$)
 > - oriented tangles as morphisms, such that the orientation of the tangle is compatible with the "orientation" of the objects.
 > - the composition of morphisms is tangle composition when the words match

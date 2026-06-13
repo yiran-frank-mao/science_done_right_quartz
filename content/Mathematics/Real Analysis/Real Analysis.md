@@ -24,9 +24,9 @@ Real analysis is the rigorous branch of mathematics that explores real numbers, 
 
 After developing the theory of real analysis, people extend the theory of integration/differentiation in the following ways:
 
-[[Mathematics/Complex Analysis/Complex Analysis|Complex Analysis]] - Obviously, one might ask, what about the complex case?
-[[Mathematics/Geometry/Differential Geometry/Differential Geometry|Differential Geometry]] - This is the geometrical way to extend real analysis and multi-variable calculus. It gives rigorous geometrical meaning to directional derivatives (tangent vectors), differentiation (differential forms) and integrals (volume);
-[[Mathematics/Measure Theory/Measure Theory|Measure Theory]] - Using the tool of measures, one can develop a nicer, and more abstract theory of integration, called the Lebesgue integral, which addresses some deficiencies of Riemann integration:
+[[Complex Analysis]] - Obviously, one might ask, what about the complex case?
+[[Differential Geometry]] - This is the geometrical way to extend real analysis and multi-variable calculus. It gives rigorous geometrical meaning to directional derivatives (tangent vectors), differentiation (differential forms) and integrals (volume);
+[[Measure Theory]] - Using the tool of measures, one can develop a nicer, and more abstract theory of integration, called the Lebesgue integral, which addresses some deficiencies of Riemann integration:
 - Riemann integration does not handle functions with many discontinuities;
 - Riemann integration does not handle unbounded functions;
 - Riemann integration does not work well with limits.
