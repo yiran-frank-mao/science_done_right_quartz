@@ -1,6 +1,6 @@
 ## Monoidal Categories
 
-> [!definition] Monoidal Category
+> [!definition] Monoidal Category ^bc017c
 > A *monoidal category* is a tuple $\require{dsfont}\newcommand{\one}{\mathds{1}}\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\one,\alpha,\lambda,\rho)$ where 
 > - $\mathsf{C}$ is a [[Structure of Categories#^2f5c3a|category]];
 > - [[Functoriality and Naturality#^653948|functor]] $\otimes\colon \mathsf{C}\times\mathsf{C}\to\mathsf{C}$ is called the *monoidal product*;
@@ -14,7 +14,7 @@
 > - Pentagon Axiom: 
 >   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoidal_cat_pentagon.svg" style="width:80%;"/>
 >
-> Moreover, a *strict monoidal category* is a monoidal category in which the components of $\alpha$, $\lambda$ and $\rho$ are all identity morphisms. ^bc017c
+> Moreover, a *strict monoidal category* is a monoidal category in which the components of $\alpha$, $\lambda$ and $\rho$ are all identity morphisms.
 
 > [!definition] Monoid Object
 > A *monoid object* in a monoidal category $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ is an object $M$ with two morphisms

@@ -3,19 +3,19 @@
 In the finite-dimensional setting, a vector space admits a symplectic structure only if its dimension is even. For a separable Hilbert space, dimension can no longer be the relevant criterion. Instead, one constructs a symplectic Hilbert space from a compatible complex structure. This section draws heavily on [[Symplectic Hilbert Spaces#^b29f2c|Sec. 2, Ner90]]. However, Neretin's definition of a symplectic Hilbert space is not entirely clear, so we streamline it here:
 
 > [!definition] Symplectic Hilbert Space  
-> A *symplectic Hilbert space* is a real separable Hilbert space $\H_{\R}$ with a compatible [[Almost Complex Structures#^5f4098|complex structure]] $J$. That is, a bounded linear operator $J\in B(\H_\R)$ such that 
+> A *symplectic Hilbert space* is a real separable Hilbert space $\newcommand{\H}{\mathcal{H}}\H_{\R}$ with a compatible [[Almost Complex Structures#^5f4098|complex structure]] $J$. That is, a bounded linear operator $J\in B(\H_\R)$ such that 
 > $$J^{2}=-\id,\qquad J^*=-J,$$
-> where $J^*$ is the adjoint of $J$ with respect to the inner product $\langle\cdot,\cdot\rangle$.
+> where $J^{*}$ is the adjoint of $J$ with respect to the inner product $\langle\cdot,\cdot\rangle$.
 > Then we can define $\omega(x,y):=\langle x, Jy\rangle$ as the canonical [[Symplectic Structures#^b558c2|symplectic form]] on it.
 
-> [!remark]  
+> [!remark]+
 > $J^*=-J$ is the exact condition that makes $\omega$ alternating:
 > $$\omega(x,y)=\langle x, Jy\rangle = \langle J^*x, y\rangle = -\langle Jx, y\rangle=-\langle y,Jx\rangle = -\omega(y,x).$$
 
 > [!definition] Restricted Symplectic Group  
 > Suppose $\H_{\R}$ is a symplectic Hilbert space, then we write $\RSP(\H_{\R}) \subset B(\H_\R)$ for the *restricted symplectic group*, that is, a subgroup of $\mathrm{Sp}(\H_{\R})$ such that the operators can be written as $U(1+T_{\mathrm{HS}})$ for some $J$-unitary operator $U$ and some [[Hilbert-Schmidt Operators#^5bb53a|Hilbert-Schmidt]] operator $\newcommand{\HS}{\mathrm{HS}}T_{\HS}$ on $\H_\R$.
 
-> [!remark]  
+> [!remark]+
 > $\RSP(\H_{\R})$ captures the idea of "almost unitary" symplectic operators on a real Hilbert space. Note that if $\H_\R$ is finite-dimensional, then $\RSP(\H_{\R})$ coincides with $\mathrm{Sp}(\H_\R)$. To determine whether a symplectic operator $T$ on $\H_{\R}$ belongs to $\RSP(\H_{\R})$, it suffices to check that $T^{*}T$ is a Hilbert--Schmidt perturbation of the identity. Indeed, if $T^{*}T = 1 + K_{\HS}$, then $K_{\HS}$ is necessarily self-adjoint and compact. By the spectral calculus, $\sqrt{1+K_{\HS}}$ is again a Hilbert--Schmidt perturbation of the identity. Hence, by the polar decomposition,
 > $$T = U\sqrt{T^{*}T} = U\sqrt{1+K_{\HS}}$$
 > for some partial isometry $U$. Since $T$ is invertible, this partial isometry is in fact unitary.
@@ -45,7 +45,7 @@ $x_{+}:=\frac{1}{2}(x-iJ(x))$, then clearly this forms an orthogonal decompositi
 For $x\in \H^{+}$, we have $(i-J)x=0$. For all $y\in \H^{+}$, there holds $$\omega(x,y)=\omega(Jx, Jy)=\omega(ix, iy)=-\omega(x,y),$$ so $\omega(x,y)=0$ and $\H^{+} \subset (\H^{+})^{\omega}$ is isotropic. 
 Similarly $\H^{-}$ is also isotropic. To show $\H^{+}$ is maximal, it suffices to show that $\omega(x,\cdot)$ is nondegenerate on $\H^{-}$ for $x\in \H^{+}$. Suppose $\omega(x,y)=0$ for all $y\in \H^{-}$, then $\omega$ will vanish on the whole $\H$. Since $\omega$ is nondegenerate, $x=0$, thus $\omega(x,\cdot)$ is nondegenerate on $\H^{-}$. $\square$
 
-> [!remark]
+> [!remark]+
 > The data of a symplectic Hilbert space is equivalent to that of a polarised complex Hilbert space equipped with a compatible real structure. Indeed, given a tuple
 > $$(\H, \llangle\cdot,\cdot\rrangle, C, \H^+)$$ 
 > consisting of a complex Hilbert space $\H$ with inner product $\llangle\cdot,\cdot\rrangle$, a real structure $C$, and a closed subspace $\H^+$ such that $\H^-=C\H^+$ and $\H=\H^+ \oplus \H^-$ orthogonally, we can recover:
@@ -77,7 +77,7 @@ We now introduce a semigroup on a complexified symplectic Hilbert space, which s
 > 
 > then $T$ is called a *correct operator*, and $\Omega_T$ is called the *Potapov--Ginzburg transformation (matrix)* of $T$. The collection of correct operators forms a semigroup $\CSP(\H)$ under the usual composition of operators. Additionally, we endow $\CSP(\H)$ with the *strong Hilbert-Schmidt topology* such that $T_n\to T$ if and only if  $$\|K_n-K\|_{\HS} \to 0,\qquad \|M_n-M\|_{\HS}\to 0,$$ and $$L_n \to L, \qquad L^{\top}_n\to L^{\top}$$ strongly.
 
-> [!remark]
+> [!remark]+
 > Note that the bottom left entry is $L^{\top}$, not $L^*$. Indeed, it must be $L^\top$. To see this, introduce the notation $\newcommand{\dom}{\mathrm{dom}}\newcommand{\cod}{\mathrm{cod}}\H_{\dom}$ and $\H_{\cod}$ to distinguish the domain and codomain of $T$ (although they coincide as Hilbert spaces, we distinguish them notationally). Then $L \colon \H_{\cod}^{-} \to \H_{\dom}^{-},$ so it is natural that $L^\top \colon \H_{\dom}^{+} \to \H_{\cod}^{+},$ whereas 
 > $$L^* \colon \H_{\dom}^{-} \to \H_{\cod}^{-}.$$ 
 > Moreover, $L^\top$ can be described as follows. Let 
