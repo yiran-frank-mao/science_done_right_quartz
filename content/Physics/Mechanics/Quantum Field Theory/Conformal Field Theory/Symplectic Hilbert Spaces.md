@@ -1,3 +1,5 @@
+## Real Symplectic Hilbert Spaces
+
 In the finite-dimensional setting, a vector space admits a symplectic structure only if its dimension is even. For a separable Hilbert space, dimension can no longer be the relevant criterion. Instead, one constructs a symplectic Hilbert space from a compatible complex structure. This section draws heavily on [[Symplectic Hilbert Spaces#^b29f2c|Sec. 2, Ner90]]. However, Neretin's definition of a symplectic Hilbert space is not entirely clear, so we streamline it here:
 
 > [!definition] Symplectic Hilbert Space  
@@ -21,6 +23,8 @@ In the finite-dimensional setting, a vector space admits a symplectic structure 
 > are Hilbert--Schmidt perturbations of the identity. Therefore, $\RSP(\H_{\R})$ is a subgroup of $\mathrm{Sp}(\H_{\R})$.
 
 For a concrete example of an element of $\RSP(\H_{\R})$, see [[Symplectic Hilbert Spaces#^d79082|example]] below, after the introduction of the *complexified symplectic Hilbert space*.
+
+## Complexified Symplectic Hilbert Spaces
 
 In fact, real symplectic Hilbert space is not well suited to our purposes, as it lacks the necessary structure and does not naturally fit into the framework of Fock space representations. We therefore pass to its complexification. Indeed, in Neretin's paper, a symplectic Hilbert space is constructed directly in this complexified sense. The *complexified symplectic Hilbert space* carries additional structure, notably a polarisation presented in the [[Symplectic Hilbert Spaces#^polarisation|proposition]], which allows each vector to be decomposed into a creation-like part and an annihilation-like part. We will discuss this at the beginning of the next section.
 Let us first examine these additional structures, apart from the polarisation. Let $(\H_\R,\langle\cdot,\cdot\rangle, J)$ be a symplectic Hilbert space with the canonical symplectic form $\omega$. Define $$\H:=\H_{\R} \otimes \C=\H_{\R} \oplus i\H_{\R}$$ to be the complexification as a Hilbert space. Then the following additional
@@ -54,40 +58,49 @@ Henceforth in this note, unless otherwise specified, $\H$ denotes a complexified
 
 <u><b>e.g.</b></u> Utilising the polarisation on complexified symplectic Hilbert space, we can easily construct a nontrivial example of an operator in $\RSP(\H_{\R})$. Let $\{e_n\}_{n>0}$ be an orthonormal basis of $\H^+$, so $\{\bar{e}_n\}_{n>0}$ is an orthonormal basis of $\H^-$. Fix some $s\in \R$, define $T^s \colon \H \to \H$ by $$T^s(e_1) = \cosh(s)\, e_1 + \sinh(s)\, \bar{e}_1, \qquad T^s(\bar{e}_1) = \sinh(s)\, e_1 + \cosh(s)\, \bar{e}_1,$$and let $T^s$ act as the identity on all other basis vectors. Note that $\{ e_n+\bar{e}_n,\, i(e_n-\bar{e}_n) \}_{n>0}$ is a basis of $\H_\R$. Moreover, $$\begin{aligned} T^{s} (e_1+\bar{e}_1) &=  (\cosh(s)+\sinh(s))(e_1 + \bar{e}_1), \\T^{s} \bigl(i(e_1-\bar{e}_1)\bigr) &= (\cosh(s)-\sinh(s))\, i(e_1 - \bar{e}_1).\end{aligned}$$Hence $T^s|_{\H_\R}\colon \H_\R \to \H_\R$. Since $T^s|_{\H_\R}-1$ has finite rank, it is Hilbert-Schmidt, thus $T^s|_{\H_\R}^*T^s|_{\H_\R}-1$ is Hilbert-Schmidt as well. Furthermore, $T^s|_{\H_\R}$ is diagonal, and its diagonal entries occur in reciprocal pairs. In particular, $$(\cosh(s)+\sinh(s)) (\cosh(s)-\sinh(s)) = \cosh^2(s) - \sinh^2(s) = 1.$$Therefore $T^s|_{\H_\R}$ is symplectic, and hence belongs to $\RSP(\H_{\R})$. ^d79082
 
+We now introduce a semigroup on a complexified symplectic Hilbert space, which serves as an extension of $\RSP(\H_{\R})$. Before doing so, we recall the usual notion of *transpose*:
+
 > [!definition] Transpose
 > Suppose $x\in \H$, then $x^{\top}$ is defined as the unique element in $\H$ such that $$\llangle x,y\rrangle = \Lambda(x^{\top}, y),\quad \text{for all } y\in \H.$$ 
 > Moreover, for an operator $A\in B(\H)$, the transpose of $A$ is defined as $$A^{\top}x:= \overline{A^{*}\overline{x}},$$
 > where $A^{*}$ is the adjoint of $A$ w.r.t the inner product $\llangle\cdot,\cdot\rrangle$.
 
-## The Symplectic Semigroup
-
 > [!definition] Correct Operator & Potapov–Ginzburg Matrix
-> Given a symplectic Hilbert space $\H$, suppose $T\colon D(T)\to \H$ is an (possibly unbounded) operator on $\H$. If $T$ satisfies $$\begin{pmatrix} f_{-} \\ (Tf)_{+} \end{pmatrix}=\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix} \begin{pmatrix} f_{+} \\ (Tf)_{-} \end{pmatrix} \text{ for all } f\in D(T),$$
+> Given a complexified symplectic Hilbert space $\H$, suppose $T\colon \mathcal{D}\to \H$ is an (possibly unbounded) operator on $\H$. If there exists
+> $$\Omega_T \colon \H^+ \oplus \H^- \to \H^- \oplus \H^+, \quad \Omega_T=\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix}$$
+> satisfying
+> $$\begin{pmatrix} f_{-} \\ (Tf)_{+} \end{pmatrix}=\begin{pmatrix} K &L \\ L^{\top} & M\end{pmatrix} \begin{pmatrix} f_{+} \\ (Tf)_{-} \end{pmatrix} \text{ for all } f\in \mathcal{D},$$
 > where
-> 1. $K^{\top} =K$, $M^{\top}= M$;
-> 2. $\newcommand{\op}{\text{op}}\|\Omega_{T}\|_{\op}\leq 1$, $\|K\|_{\op}<1$, $\|M\|_{\text{op}}<1$;
-> 3. $K$ and $M$ are [[Hilbert-Schmidt Operators#^5bb53a|Hilbert-Schmidt]],
+> 1.  $K^{\top} =K, M^{\top}= M$;
+> 2.  $\|\Omega_{T}\|_{\op}\leq 1, \|K\|_{\op}<1, \|M\|_{\op}<1$;
+> 3.  $K$ and $M$ are [[Hilbert-Schmidt Operators#^5bb53a|Hilbert-Schmidt]],
 > 
-> then $T$ is called a *correct operator*, and the above matrix is called the *Potapov–Ginzburg matrix* of $T$, denoted as $\Omega_{T}$. The collection of correct operators forms a semigroup $\newcommand{\CSP}{\mathrm{CSp}}\CSP(\H)$ under the usual composition of operators.
+> then $T$ is called a *correct operator*, and $\Omega_T$ is called the *Potapov--Ginzburg transformation (matrix)* of $T$. The collection of correct operators forms a semigroup $\CSP(\H)$ under the usual composition of operators. Additionally, we endow $\CSP(\H)$ with the *strong Hilbert-Schmidt topology* such that $T_n\to T$ if and only if  $$\|K_n-K\|_{\HS} \to 0,\qquad \|M_n-M\|_{\HS}\to 0,$$ and $$L_n \to L, \qquad L^{\top}_n\to L^{\top}$$ strongly.
 
-%% TODO: What is the norm of \Omega? %%
-We can use the associated matrix to describe these operators in $\CSP(\H)$. Given an operator $T\in\CSP(\H)$ with the matrix presentation $$\begin{pmatrix} T_{+}^{+} & T_{+}^{-} \\ T_{-}^{+} & T_{-}^{-}  \end{pmatrix}$$with respect to the decomposition $\H=\H^{+} \oplus \H^{-}$, we have $$\begin{cases} T_{+}^{+} f_{+} + T_{+}^{-} f_{-}= (Tf)_{+}, \\ T_{-}^{+} f_{+} + T_{-}^{-} f_{-}= (Tf)_{-}.\end{cases}$$If $T_{-}^{-}$ is invertible, then we can rearrange the above equation to get $$\Omega_{T}=\begin{pmatrix} -(T_{-}^{-})^{-1} T_{-}^{+} & (T_{-}^{-})^{-1} \\ T^{+}_{+}-T_{+}^{-}(T^{-}_{-})^{-1} T_{-}^{+} & T_{+}^{-}(T_{-}^{-})^{-1} \end{pmatrix}$$
+> [!remark]
+> Note that the bottom left entry is $L^{\top}$, not $L^*$. Indeed, it must be $L^\top$. To see this, introduce the notation $\newcommand{\dom}{\mathrm{dom}}\newcommand{\cod}{\mathrm{cod}}\H_{\dom}$ and $\H_{\cod}$ to distinguish the domain and codomain of $T$ (although they coincide as Hilbert spaces, we distinguish them notationally). Then $L \colon \H_{\cod}^{-} \to \H_{\dom}^{-},$ so it is natural that $L^\top \colon \H_{\dom}^{+} \to \H_{\cod}^{+},$ whereas 
+> $$L^* \colon \H_{\dom}^{-} \to \H_{\cod}^{-}.$$ 
+> Moreover, $L^\top$ can be described as follows. Let 
+> $$C_{\dom} \colon \H_{\dom}^+ \xrightarrow{\,\cong\,} \H_{\dom}^{-}, \qquad C_{\cod} \colon \H_{\cod}^{+} \xrightarrow{\,\cong\,} \H_{\cod}^{-}$$
+>be the conjugation isomorphisms. Then $L^\top$ is the adjoint of $C_{\dom}^{-1} L  C_{\cod} \colon \H_{\cod}^{+} \to \H_{\dom}^{+}$ with respect to the inner product.
 
-Conversely, if $\begin{pmatrix}K&L\\L^{\top}&M\end{pmatrix}$is the Potapov–Ginzburg matrix of $T$ and $L$ is invertible, we can express the block matrix of $T$ (w.r.t the decomposition $\H=\H^{+} \oplus \H^{-}$) using $K$, $L$ and $M$: $$T=\begin{pmatrix}L^{\top}-ML^{-1}K & ML^{-1} \\ -L^{-1}K & L^{-1}\end{pmatrix}.$$ 
+We can use the Potapov-Ginzburg matrix to describe these operators in $\CSP(\H)$. Given an operator $T\in\CSP(\H)$ with the block matrix presentation $$T = \begin{pmatrix} A & B \\ D & E  \end{pmatrix}$$with respect to the decomposition $\H=\H^{+} \oplus \H^{-}$, we have $$\begin{cases} A f_{+} + B f_{-}= (Tf)_{+}, \\ D f_{+} + E f_{-}= (Tf)_{-}.\end{cases}$$If $E$ is invertible, then we can rearrange the above equation to get $$\Omega_{T}=\begin{pmatrix} -E^{-1} D & E^{-1} \\ A-BE^{-1} D & BE^{-1} \end{pmatrix}.$$Conversely, if $\Omega_T=\begin{pmatrix}K&L\\L^{\top}&M\end{pmatrix}$ with invertible $L$, we can express the block matrix of $T$ (w.r.t the decomposition $\H=\H^{+} \oplus \H^{-}$) using $K$, $L$ and $M$: $$T=\begin{pmatrix}L^{\top}-ML^{-1}K & ML^{-1} \\ -L^{-1}K & L^{-1}\end{pmatrix}.$$
 
+<u><b>e.g.</b></u>  Recall the operator $T^s$ from [[Symplectic Hilbert Spaces#^d79082|the previous example]], we claim it is correct. It has the block form $$T^s= \begin{pmatrix}
+    A & B \\ \overline{B} & \overline{A}
+\end{pmatrix}, \quad A\colon e_n \mapsto (1+\delta_{1,n}(\cosh(s)-1))\, e_n, \quad
+   B\colon \bar{e}_n \mapsto \delta_{1,n}\sinh(s)\, e_n,$$where $\overline{A}=CAC$ and $\overline{B}=CBC$. If the Potapov-Ginzburg transformation exists, then by the above equations, it is given by $$\Omega_{T^s} = \begin{pmatrix}
+    - \overline{A}^{-1} \overline{B} & \overline{A}^{-1} \\[0.3em]
+    A-B\overline{A}^{-1}\overline{B} & B\overline{A}^{-1}
+\end{pmatrix}.$$It is straightforward to verify that $$\overline{A}^{-\top}=A-B\overline{A}^{-1}\overline{B}.$$Since $B$ has finite rank, both $-\overline{A}^{-1}\overline{B}$ and $B\overline{A}^{-1}$ are Hilbert-Schmidt and have operator norm $$\left\| -\overline{A}^{-1}\overline{B} \right\|_{\op} = \left\|B\overline{A}^{-1}\right\|_{\op}=|\tanh(s)|<1.$$Hence $T^s$ is correct. So we have obtained an example of an operator which is both restricted symplectic and correct.
 
-> [!proposition]
-> The graph of a correct operator is always Lagrangian. In fact, $W$ is Lagrangian if and only if $(1)$ holds.
+## $\RSP(\H_{\R})$ as a subgroup of $\CSP(\H)$
 
-*Proof*  
+More generally, $\RSP(\H_{\R})$ embeds into $\CSP(\H)$ as a subgroup via complexification, and appears as a boundary of $\CSP(\H)$. This is established in the following theorem, adapted from [[Symplectic Hilbert Spaces#^b29f2c|Sec. 2.3, Ner90]]:
 
-> [!proposition]
-> For some $T\in \CSP(\H)$, the followings are equivalent:
-> 1. $T\in \RSP(\H)$;
-> 2. 
-> 3. $\Omega_{T}^{*}\Omega_{T}=1_{\H}$.
-> 
-> Therefore, $\RSP(\H)$ is a subsemigroup of $\CSP(\H)$, and in fact, it is the Shilov boundary of $\CSP(\H)$.
+> [!theorem]
+>Suppose $\H_\R$ is a symplectic Hilbert space with complexification $\H$. For any almost unitary symplectic operator $T_\R\in \RSP(\H_{\R})$, it can be complexified to an operator $T=T_\R\oplus i T_\R$ on $\H$. Then 
+>$$T_\R \in \RSP(\H_{\R}) \iff T\in \CSP(\H) \text{ and }\Omega_{T} \text{ is unitary as an operator on } \H.$$
 
 *Proof*  
 
