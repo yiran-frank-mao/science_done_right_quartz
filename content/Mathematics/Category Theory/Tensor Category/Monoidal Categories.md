@@ -36,6 +36,10 @@
 - The category of vector spaces over a field $\newcommand{\K}{\mathbb{K}}\K$ $(\mathsf{Vect}_{\K}, \otimes_{\K}, \K)$ is a monoidal category with the usual tensor product of vector spaces and the field $\K$ as the monoidal unit. Algebras are monoid objects; coalgebras are comonoid objects.
 $\quad$
 
+
+
+
+
 > [!definition] Monoidal Functor
 > A *(lax) monoidal functor* between monoidal categories $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ and $(\mathsf{D},\otimes',\mathbb{1}',\alpha',\lambda',\rho')$ is a tuple $F=(F_{0}, F_{1}, F_{2})$, where functor $F_{1} \colon \mathsf{C} \to \mathsf{D}$ is a functor, $F_{0}\colon \mathbb{1}' \to F(\mathbb{1})$ is a morphism  in $\mathsf{D}$ and $F_{2}\colon F(-)\otimes' F(-) \Rightarrow F(-\otimes -)$ is a natural transformation such that the following diagrams commute for all objects $X,Y,Z$ in $\mathsf{C}$:
 > ^e5952b
