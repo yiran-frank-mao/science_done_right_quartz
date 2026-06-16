@@ -2,9 +2,9 @@
 
 >[!definition] Group
 > A *group* is a set $G$ together with a composition law $\circ: G \times G \rightarrow G$ such that the following properties hold:
->- **Associativity:** $(a \circ b) \circ c = a \circ (b \circ c)$ for all $a,b,c \in G$.
->- **Identity:** there exists $e \in G$ such that $e \circ a = a \circ e = a$ for all $a \in G$.
->- **Inverse:** for every $a \in G$ there exists $b \in G$ such that $a \circ b = b \circ a = e$.
+>- Associativity: $(a \circ b) \circ c = a \circ (b \circ c)$ for all $a,b,c \in G$.
+>- Identity: there exists $e \in G$ such that $e \circ a = a \circ e = a$ for all $a \in G$.
+>- Inverse: for every $a \in G$ there exists $b \in G$ such that $a \circ b = b \circ a = e$.
 >
 >We may sometime denote the group by $(G,\circ)$ to emphasize the law of composition. ^6e0960
 
@@ -30,7 +30,7 @@
 
 > [!definition] Power & Order of an Element
 > For an element $a$ and in a group $G$ and $n \in \N$ we write $a^{n}$ for the unambiguous composition of $a$ with itself $n$ times (this follows from generalized associativity). We also define $a^{0} := e$ and $a^{−n} = (a^{−1})^n$.
-> An element $g \in G$ has *finite order* if there is $n \in \N$ such that $g^n = e$; the minimal such $n$ is the order of $g$ and denoted $o(g)$. Otherwise we say that $g$ has *infinite order*.
+> An element $g \in G$ has *finite order* if there is $n \in \N$ such that $g^n = e$; the minimal such $n$ is the *order* of $g$ and denoted $o(g)$. Otherwise we say that $g$ has *infinite order*.
 
 > [!proposition] Laws of Exponents
 > Let $G$ be a group, let $a, b ∈ G$ , and let $m$ and $n$ be integers. Then
