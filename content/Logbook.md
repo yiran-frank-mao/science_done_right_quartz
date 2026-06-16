@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 16 Jun 2026
+- Updates: [[Symplectic Hilbert Spaces]], [[The Weil Representation]].
+
 ## 27 May 2026
 - Updates: [[Basics of Graphs]], [[Frobenius Objects]].
 
@@ -31,24 +34,24 @@ completed: true
 - Updates: [[Pullback and Pushout]], [[Products of Objects]], [[Morphisms]].
 
 ## 6 Mar 2026
-- Updates: [[The Symplectic Hilbert Space]].
+- Updates: [[Symplectic Hilbert Spaces]].
 
 ## 5 Mar 2026
 - Updates: [[Cobordisms]], [[Functoriality and Naturality]], [[Yoneda Lemma]], [[Recurrence Analysis]].
 
 ## 2 Mar 2026
-- Updates: [[Witt Algebra and Virasoro Algebra]], [[Heisenberg Algebra and Fock Models]], [[The Symplectic Hilbert Space]].
+- Updates: [[Witt Algebra and Virasoro Algebra]], [[Heisenberg Algebra and Fock Models]], [[Symplectic Hilbert Spaces]].
 
 ## 25 Feb 2026
 - New: [[Topological Quantum Field Theory]].
 - Updates: [[Knots and Links]].
 
 ## 19 Feb 2026
-- Updates: [[Heisenberg Algebra and Fock Models]], [[The Fock Space]], [[The Symplectic Hilbert Space]], [[Compact Operators]].
+- Updates: [[Heisenberg Algebra and Fock Models]], [[The Fock Space]], [[Symplectic Hilbert Spaces]], [[Compact Operators]].
 
 
 ## 18 Feb 2026
-- Updates: [[The Symplectic Hilbert Space]], [[The Semigroup of Annuli]].
+- Updates: [[Symplectic Hilbert Spaces]], [[The Semigroup of Annuli]].
 
 ## 21 Jan 2026
 - Updates: [[Conformal Welding Problem]], [[Manifolds, Atlases and Smooth Structures]], [[The Semigroup of Annuli]].

@@ -39,14 +39,12 @@
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braided_category_yb_property_org.svg" style="width:60%;"/>
 > 
 
-*Proof*  We cut the diagram into three parts as illustrated below. The left (red) and right (blue) parts are exactly the hexagon axioms for the braiding, and the middle square commutes by naturality of the braiding. Therefore, the whole diagram commutes.  $\square$
+*Proof*  We cut the diagram into three parts as illustrated below.
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braided_category_yb_property.svg" style="width:60%;"/>
+The left (red) and right (blue) parts are exactly the hexagon axioms for the braiding, and the middle square commutes by naturality of the braiding. Therefore, the whole diagram commutes.  $\square$
+
 
 An immediate consequence of the above theorem is that 
 
 > [!corollary] 
-> In a braided monoidal category $(\mathsf{C},\otimes, \one, \alpha,\lambda,\rho,\tau)$, every $(X, \tau_{X,X})$ is a Yang-Baxter object.
-> 
-
-^d7b677
-
+> In a braided monoidal category $(\mathsf{C},\otimes, \one, \alpha,\lambda,\rho,\tau)$, every $(X, \tau_{X,X})$ is a Yang-Baxter object. ^d7b677
