@@ -3,9 +3,9 @@
 > [!definition] Monoidal Category ^bc017c
 > A *monoidal category* is a tuple $\require{dsfont}\newcommand{\one}{\mathds{1}}\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\one,\alpha,\lambda,\rho)$ where 
 > - $\mathsf{C}$ is a [[Structure of Categories#^2f5c3a|category]];
-> - [[Functoriality and Naturality#^653948|functor]] $\otimes\colon \mathsf{C}\times\mathsf{C}\to\mathsf{C}$ is called the *monoidal product*;
+> - [[Functoriality#^653948|functor]] $\otimes\colon \mathsf{C}\times\mathsf{C}\to\mathsf{C}$ is called the *monoidal product*;
 > - $\mathbb{1}\in\obj \mathsf{C}$ is called the *monoidal unit*;
-> - $\alpha$ is a [[Functoriality and Naturality#^b8c1fd|natural isomorphism]] called an *associator*: $$\alpha_{X,Y,Z}\colon (X\otimes Y)\otimes Z \cong X\otimes (Y\otimes Z)$$for all $\mathsf{C}$-objects $X,Y, Z$, called the *associativity isomorphism*;
+> - $\alpha$ is a [[Functoriality#^b8c1fd|natural isomorphism]] called an *associator*: $$\alpha_{X,Y,Z}\colon (X\otimes Y)\otimes Z \cong X\otimes (Y\otimes Z)$$for all $\mathsf{C}$-objects $X,Y, Z$, called the *associativity isomorphism*;
 > - $\lambda$ and $\rho$ are also natural isomorphisms that $$\lambda\colon\mathbb{1}\otimes X \cong X,\quad \rho\colon X\otimes \mathbb{1}\cong X$$for all $\mathsf{C}$-objects $X$, called the *left unit isomorphism* and the *right unit isomorphism* respectively.
 >
 > And the following axioms hold:

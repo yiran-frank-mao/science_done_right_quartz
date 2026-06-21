@@ -51,6 +51,6 @@
 *Proof* The Jacobi identity $[x, [y, z]] + [y, [z, x]] + [z, [x, y]] = 0$ can be rewritten as $[x, [y, z]] = [[x, y], z] + [y, [x, z]]$. This is exactly the condition $\ad_x([y, z]) = [\ad_x(y), z] + [y, \ad_x(z)]$, which means $\ad_x$ is a derivation. The homomorphism property $\ad_{[x,y]} = [\ad_x, \ad_y]$ is another consequence of the Jacobi identity. $\square$
 
 > [!theorem] Relationship Between Adjoint Maps
-> $\ad=\Lie(\Ad)$ for the [[Functoriality and Naturality#^653948|functor]] $\Lie\colon \mathbf{LieGrp}\to\mathbf{LieAlg}$.
+> $\ad=\Lie(\Ad)$ for the [[Functoriality#^653948|functor]] $\Lie\colon \mathbf{LieGrp}\to\mathbf{LieAlg}$.
 > 
 

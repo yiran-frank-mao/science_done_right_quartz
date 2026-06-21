@@ -52,7 +52,7 @@ completed: true
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/associated_graded_algebra.svg" alt="" style="width:65%;"> ^ce0272
 
 > [!proposition]
-> $\gr$ forms a [[Functoriality and Naturality#^653948|functor]] from $\mathsf{FiltAlg}$ to $\mathsf{GrAlg}$.
+> $\gr$ forms a [[Functoriality#^653948|functor]] from $\mathsf{FiltAlg}$ to $\mathsf{GrAlg}$.
 
 *Proof*  Suppose $A=F_{0} \supseteq F_{1} \supseteq F_{2}\supseteq\cdots$ and $B=G_{0} \supseteq G_{1} \supseteq G_{2}\supseteq\cdots$ are filtered algebras, and $f\colon A\to B$ is a filtered homomorphism. Then we have a graded homomorphism $\gr f\colon \gr A\to \gr B$ defined by $$ \gr f (a_{0}+F_{1},a_{1}+F_{2},\cdots) := (f(a_{0})+G_{1},f(a_{2})+G_{2},\cdots).$$It is clear that $\gr f$ is graded, because $f(F_{n})\subseteq G_{n}$. Moreover, $\gr$ is a functor because it preserves composition and identity. $\square$
 

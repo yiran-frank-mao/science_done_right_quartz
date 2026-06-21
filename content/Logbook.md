@@ -25,7 +25,7 @@ completed: true
 - Updates: [[Structure of Categories]], [[Products of Objects]].
 
 ## 11 Mar 2026
-- Updates: [[Functoriality and Naturality]], [[Monoidal Categories]], [[Cobordisms]], [[Structure of Categories]].
+- Updates: [[Functoriality]], [[Monoidal Categories]], [[Cobordisms]], [[Structure of Categories]].
 
 ## 9 Mar 2026
 - Updates: [[Manifolds, Atlases and Smooth Structures]], [[Morse Functions and Critical Points]], [[Topological Gluing]].
@@ -37,7 +37,7 @@ completed: true
 - Updates: [[Symplectic Hilbert Spaces]].
 
 ## 5 Mar 2026
-- Updates: [[Cobordisms]], [[Functoriality and Naturality]], [[Yoneda Lemma]], [[Recurrence Analysis]].
+- Updates: [[Cobordisms]], [[Functoriality]], [[Yoneda Lemma]], [[Recurrence Analysis]].
 
 ## 2 Mar 2026
 - Updates: [[Witt Algebra and Virasoro Algebra]], [[Heisenberg Algebra and Fock Models]], [[Symplectic Hilbert Spaces]].
@@ -170,7 +170,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[The Schwarzschild Solution]], [[Toric Symplectic Manifold]], [[Mathematics/Linear Algebra/Duality|Duality]].
 
 ## 16 Jun 2025
-- Updates: [[Mathematics/Linear Algebra/Duality|Duality]], [[Functoriality and Naturality]].
+- Updates: [[Mathematics/Linear Algebra/Duality|Duality]], [[Functoriality]].
 
 ## 10 Jun 2025
 - Updates: [[Construction of Sets]], [[Set Theory]], [[Orthogonality and Bounded Linear Maps]], [[Hilbert Spaces]].
@@ -442,7 +442,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Bicategories]], [[2-Categories]].
 
 ## 6 May 2024
-- Updates: [[Constructions on Categories]], [[Adjunction]], [[Limits and Colimits]],[[Functoriality and Naturality]], [[Pullback and Pushout]], [[Free Groups and Relations]].
+- Updates: [[Constructions on Categories]], [[Adjunction]], [[Limits and Colimits]],[[Functoriality]], [[Pullback and Pushout]], [[Free Groups and Relations]].
 
 ## 5 May 2024
 - New page: [[Two View Geometry]].
@@ -456,7 +456,7 @@ Updates: [[Constructions on Categories]].
 - New pages: [[Monoidal Categories]], [[Bicategories]], [[Single View Geometry]].
 
 ## 1 May 2024
-- Updates: [[Limit Points and Closure]], [[Vector Spaces]], [[Functoriality and Naturality]], [[Homomorphisms, Normal Subgroup & Conjugation]].
+- Updates: [[Limit Points and Closure]], [[Vector Spaces]], [[Functoriality]], [[Homomorphisms, Normal Subgroup & Conjugation]].
 - New page: [[2-Categories]].
 
 ## 30 Apr 2024
@@ -506,7 +506,7 @@ Updates: [[Constructions on Categories]].
 - New page: [[Yoneda Lemma]].
 
 ## 3 Apr 2024
-- Update: [[Functoriality and Naturality]].
+- Update: [[Functoriality]].
 
 ## 31 Mar 2024
 - New pages: [[Order Theory]], [[Preorder, Partial Order and Posets]], [[Completeness]].

@@ -117,7 +117,7 @@ Case $d < 0$: First, construct a map $g$ of degree $|d|$ as above. Then compose 
 > For any map $f: S^n \to S^n$, its suspension $Sf: S^{n+1} \to S^{n+1}$ has the same degree.
 > $$\deg(Sf) = \deg(f).$$
 
-*Proof*  The proof follows from the [[Functoriality and Naturality#^d73db0|naturality]] of the suspension isomorphism $\tilde{H}_{k+1}(SX) \cong \tilde{H}_k(X)$. The following diagram commutes: $$\begin{CD}\tilde{H}_{n+1}(S^{n+1}) @>{\cong}>> \tilde{H}_n(S^n) \\@V{(Sf)_*}VV @VV{f_*}V \\\tilde{H}_{n+1}(S^{n+1}) @>{\cong}>> \tilde{H}_n(S^n)\end{CD}$$Since the horizontal maps are isomorphisms and $f_*$ is multiplication by $\deg(f)$, it follows that $(Sf)_*$ must be multiplication by the same integer. $\square$
+*Proof*  The proof follows from the [[Naturality#^d73db0|naturality]] of the suspension isomorphism $\tilde{H}_{k+1}(SX) \cong \tilde{H}_k(X)$. The following diagram commutes: $$\begin{CD}\tilde{H}_{n+1}(S^{n+1}) @>{\cong}>> \tilde{H}_n(S^n) \\@V{(Sf)_*}VV @VV{f_*}V \\\tilde{H}_{n+1}(S^{n+1}) @>{\cong}>> \tilde{H}_n(S^n)\end{CD}$$Since the horizontal maps are isomorphisms and $f_*$ is multiplication by $\deg(f)$, it follows that $(Sf)_*$ must be multiplication by the same integer. $\square$
 
 ## The Splitting Lemma
 

@@ -24,10 +24,10 @@ updated: 2025-09-03
 **Proof**  We identify any $\varphi \in V^{*}$ by identifying its values on the basis vectors. Suppose $v_{1},v_{2}, \dots v_{n}$ form a basis for $V$. Then we have 
 
 > [!proposition]
-> There is a [[Functoriality and Naturality#^b8c1fd|natural isomorphism]] between $V$ and $(V^{*})^{*}$. That is, the double dual functor is naturally isomorphic to the identity functor on the category of vector spaces.
+> There is a [[Naturality#^b8c1fd|natural isomorphism]] between $V$ and $(V^{*})^{*}$. That is, the double dual functor is naturally isomorphic to the identity functor on the category of vector spaces.
 > 
 
-*Proof*  Define the [[Functoriality and Naturality#^d73db0|natural transformation]] $\newcommand{\id}{\mathrm{id}}\newcommand{\Vect}{\mathbf{Vect}}\eta\colon \id \Rightarrow (-)^{**}$ by $$\eta_{V}(v)(\alpha):=\alpha(v),\quad\text{for all }\alpha\in V^{*}, v\in V, V\in \Vect_{0}$$We shall check the following diagram commutes for any $V,W\in \Vect_{0}$:
+*Proof*  Define the [[Naturality#^d73db0|natural transformation]] $\newcommand{\id}{\mathrm{id}}\newcommand{\Vect}{\mathbf{Vect}}\eta\colon \id \Rightarrow (-)^{**}$ by $$\eta_{V}(v)(\alpha):=\alpha(v),\quad\text{for all }\alpha\in V^{*}, v\in V, V\in \Vect_{0}$$We shall check the following diagram commutes for any $V,W\in \Vect_{0}$:
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/natural_iso_double_dual.svg" alt="natural_iso_double_dual" style="width:20%;"/>
 For any $v\in V$ and $\alpha\in W^{*}$, there holds $$\begin{aligned}(f^{**}\circ \eta_{V})(v)(\alpha)=f^{**}( \eta_{V}v) (\alpha)&= (\eta_{V}v \circ f^{*})(\alpha)=\eta_{V}v(f^{*}\alpha)=\eta_{V}v(\alpha\circ f)=\alpha(fv),\\ (\eta_{W}\circ f)(v)(\alpha)&=\eta_{W}(fv)(\alpha)= \alpha(fv).\end{aligned}$$Thus the diagram commutes, and $\eta$ is a natural transformation. Moreover, $\eta_{V}$ is an isomorphism for any $V\in \Vect_{0}$, thus $\eta$ is a natural isomorphism. $\square$
 

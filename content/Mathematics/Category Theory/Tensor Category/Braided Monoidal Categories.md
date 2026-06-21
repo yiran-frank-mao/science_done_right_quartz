@@ -1,7 +1,7 @@
 ## Braided Monoidal Category
 
 > [!definition] Braided Monoidal Category ^2361b7
-> A *braided monoidal category* is a [[Monoidal Categories#^bc017c|monoidal category]] with an additional structure, a *braiding*, which is a [[Functoriality and Naturality#^b8c1fd|natural isomorphism]] $\tau_{A,B}\colon A\otimes B \to B\otimes A$ that is compatible with the associativity and unit constraints. That is, the following hexagon diagrams commute for all objects $X,Y,Z$:
+> A *braided monoidal category* is a [[Monoidal Categories#^bc017c|monoidal category]] with an additional structure, a *braiding*, which is a [[Functoriality#^b8c1fd|natural isomorphism]] $\tau_{A,B}\colon A\otimes B \to B\otimes A$ that is compatible with the associativity and unit constraints. That is, the following hexagon diagrams commute for all objects $X,Y,Z$:
 > 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braiding_hexagon_one.svg" style="width:80%;"/>
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braiding_hexagon_two.svg" style="width:80%;"/>

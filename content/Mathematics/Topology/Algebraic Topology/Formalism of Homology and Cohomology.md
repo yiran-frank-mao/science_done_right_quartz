@@ -50,7 +50,7 @@ $\quad$
 The properties of singular homology can be distilled into a set of axioms, known as the *Eilenberg-Steenrod axioms*.
 
 > [!definition] Homology Theory
-> A *homology theory* $H$ is a sequence of [[Functoriality and Naturality#^653948|functors]] $H_{n}\colon \mathsf{Pair} \to \mathsf{Ab}$ for $n \in \mathbb{Z}$, equipped with [[Functoriality and Naturality#^d73db0|natural transformations]] $\partial_{n}\colon H_{n}(X,A) \to H_{n-1}(A)$, satisfying the following axioms:
+> A *homology theory* $H$ is a sequence of [[Functoriality#^653948|functors]] $H_{n}\colon \mathsf{Pair} \to \mathsf{Ab}$ for $n \in \mathbb{Z}$, equipped with [[Naturality#^d73db0|natural transformation]] $\partial_{n}\colon H_{n}(X,A) \to H_{n-1}(A)$, satisfying the following axioms:
 > 1.  Homotopy Invariance: If $f \simeq g: (X, A) \to (Y, B)$, then $H_{n}(f) = H_{n}(g)$.
 > 2.  Excision: For any $U \subset A$ such that $\bar{U} \subset \text{int}(A)$, the inclusion $i\colon (X \setminus U, A \setminus U) \to (X,A)$ induces an isomorphism $H_{n}(i)\colon H_{n}(X \setminus U, A \setminus U) \cong H_{n}(X, A)$.
 > 3.  Long Exact Sequence: For any pair $(X, A)$, there is a [[Abelian Categories#^0c5eb9|long exact sequence]]:
@@ -77,7 +77,7 @@ To make this precise, we first recall the notion of an opposite category:
 ![[Constructions on Categories#^a77bf6]]
 
 > [!definition] Cohomology Theory
-> A *cohomology theory* consists of a sequence of [[Functoriality and Naturality#^653948|functors]] $H^{n}\colon \mathsf{Pairs} \to \mathsf{Ab}$ for each $n \in \mathbb{Z}$ , and a sequence of [[Functoriality and Naturality#^d73db0|natural transformations]] $\partial^{n}\colon H^n(A) \to H^{n+1}(X,A)$ called the *connecting homomorphisms*, satisfying the following axioms:
+> A *cohomology theory* consists of a sequence of [[Functoriality#^653948|functors]] $H^{n}\colon \mathsf{Pairs} \to \mathsf{Ab}$ for each $n \in \mathbb{Z}$ , and a sequence of [[Naturality#^d73db0|natural transformation]] $\partial^{n}\colon H^n(A) \to H^{n+1}(X,A)$ called the *connecting homomorphisms*, satisfying the following axioms:
 > 1.  Homotopy Invariance: If $f \simeq g$, then the induced maps are equal, $f^* = g^*$.
 > 2.  Excision: The inclusion $(X \setminus U, A \setminus U) \hookrightarrow (X,A)$ induces an isomorphism in cohomology.
 > 3.  Additivity: For a disjoint union of spaces, $H^{n}(\coprod_{\alpha} X_{\alpha}) = \bigoplus_\alpha H^{n}(X_{\alpha})$.

@@ -6,7 +6,8 @@ Category theory is a branch of mathematics that studies the abstract patterns an
 [[Structure of Categories]]
 [[Objects and Elements]]
 [[Morphisms]]
-[[Functoriality and Naturality]]
+[[Functoriality]]
+
 [[Constructions on Categories]]
 [[Free Categories]]
 
@@ -21,6 +22,7 @@ Category theory is a branch of mathematics that studies the abstract patterns an
 [[Abelian Categories]]
 
 ### Naturality and Yoneda
+[[Naturality]]
 [[Yoneda Lemma]]
 [[Topoi]]
 [[Adjunction]]
