@@ -1,6 +1,8 @@
 ## Introduction
 Category theory is a branch of mathematics that studies the abstract patterns and structures that appear in different mathematical domains. It focuses on the relationships between objects and the transformations that preserve their properties. Category theory can be used to unify and generalize concepts from various fields of mathematics, such as algebra, topology, logic, and computation.
-![|440](https://i.imgur.com/57vsm7F.jpg)
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Commutative_diagram_for_morphism.svg/960px-Commutative_diagram_for_morphism.svg.png" alt="sphere" style="width:25%;">
+
 ## Content
 ### Basic of Categories
 [[Structure of Categories]]
