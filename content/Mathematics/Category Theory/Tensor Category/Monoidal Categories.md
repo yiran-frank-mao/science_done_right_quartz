@@ -4,7 +4,7 @@
 > A *monoidal category* is a tuple $\newcommand{\one}{\mathds{1}}\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\one,\alpha,\lambda,\rho)$ where 
 > - $\mathsf{C}$ is a [[Structure of Categories#^2f5c3a|category]];
 > - [[Functoriality#^653948|functor]] $\otimes\colon \mathsf{C}\times\mathsf{C}\to\mathsf{C}$ is called the *monoidal product*;
-> - $\mathbb{1}\in\obj \mathsf{C}$ is called the *monoidal unit*;
+> - $\one\in\obj \mathsf{C}$ is called the *monoidal unit*;
 > - $\alpha$ is a [[Functoriality#^b8c1fd|natural isomorphism]] called an *associator*: $$\alpha_{X,Y,Z}\colon (X\otimes Y)\otimes Z \cong X\otimes (Y\otimes Z)$$for all $\mathsf{C}$-objects $X,Y, Z$, called the *associativity isomorphism*;
 > - $\lambda$ and $\rho$ are also natural isomorphisms that $$\lambda\colon\mathbb{1}\otimes X \cong X,\quad \rho\colon X\otimes \mathbb{1}\cong X$$for all $\mathsf{C}$-objects $X$, called the *left unit isomorphism* and the *right unit isomorphism* respectively.
 >
@@ -34,7 +34,7 @@
 - The category of sets $(\mathsf{Set}, \sqcup, \emptyset)$ is a monoidal category. The monoidal product is the disjoint union of sets, and the monoidal unit is the empty set.
 - The category sets can carry another monoidal category $(\mathsf{Set}, \times, \{*\})$, where the monoidal product is the Cartesian product of sets, and the monoidal unit is the singleton set $\{*\}$. [[Free Groups and Relations#^587eee|Monoids]] are monoid objects; Every set $X$ has a unique comonoid structure given by the diagonal map $X \to X\times X$ and the unique map $X \to \{*\}$.
 - The category of vector spaces over a field $\newcommand{\K}{\mathbb{K}}\K$ $(\mathsf{Vect}_{\K}, \otimes_{\K}, \K)$ is a monoidal category with the usual tensor product of vector spaces and the field $\K$ as the monoidal unit. Algebras are monoid objects; coalgebras are comonoid objects.
-- The 
+- The category of categories $\mathsf{Cat}$ with the Cartesian product of categories as the monoidal product and the singleton category $\mathbf{1}$ as the monoidal unit is a monoidal category. Monoid objects in $\mathsf{Cat}$ are precisely strict monoidal categories.
 $\quad$
 
 > [!definition] Monoidal Functor
