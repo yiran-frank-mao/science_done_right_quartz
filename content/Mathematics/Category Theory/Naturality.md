@@ -42,13 +42,13 @@
 
 >[!definition] Horizontal Composition
 >Given a pair of natural transformations $\alpha\colon F\to G$ and $\beta \colon H \to K$ as indicated in the diagram:
->![|350](https://i.imgur.com/125TXbI.png)
+><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/natural_transformation_horizontal_composition.svg" style="width:45%;"/>
 >there is a natural transformation $β ∗ α\colon HF \to KG$ whose component at $C ∈ \obj \mathbf{C}$ is defined as $$(\beta * \alpha)_{C}=\beta_{G(C)} \circ H(\alpha_{C})=K(\alpha_{C})\circ \beta_{F(C)}$$
 
->[!lemma]
->**Lemma**  <i><u>Middle Four Interchange</u></i>
+>[!lemma] Middle Four Interchange
 >Given functors and natural transformations 
->![|320](https://i.imgur.com/HO0THYe.png)
+><img src="https://i.imgur.com/HO0THYe.png" style="width:45%;"/>
 >the natural transformation $JF \to LH$ defined by first composing vertically and then composing horizontally equals the natural transformation defined by first composing horizontally and then composing vertically:
->![|530](https://i.imgur.com/pCUxEBQ.png)
->**Proof**  
+><img src="https://i.imgur.com/pCUxEBQ.png" style="width:72%;"/>
+
+*Proof*  

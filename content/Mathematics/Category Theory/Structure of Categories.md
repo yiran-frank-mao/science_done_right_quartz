@@ -38,7 +38,7 @@ $\quad$ ^008eea
 ## Foundations, Large and Small
 
 >[!definition] Small and Large
->A category $\mathsf{C}$ is called small if both the collection $\obj(\mathsf{C})$ of objects of $\mathsf{C}$ and the collection $\mor(\mathsf{C})$ of arrows of $\mathsf{C}$ are sets. Otherwise, $\mathsf{C}$ is called large. ^20e64e
+>A category $\mathsf{C}$ is called *small* if both the collection $\obj(\mathsf{C})$ of objects of $\mathsf{C}$ and the collection $\mor(\mathsf{C})$ of arrows of $\mathsf{C}$ are sets. Otherwise, $\mathsf{C}$ is called *large*. ^20e64e
 
 <u><b>e.g.</b></u>  All finite categories are clearly small, the category $\mathsf{Group}$ of groups, and the category $\mathsf{Set}$ of sets are all large. 
 
@@ -46,7 +46,4 @@ $\quad$ ^008eea
 >A category $\mathsf{C}$ is called *locally small* if for any objects $X, Y$ in $\mathsf{C}$, the collection $\newcommand{\Hom}{\operatorname{Hom}} \Hom_\mathsf{C} (X,Y)=\{f\in\mor(\mathsf{C})\mid f\colon X\to Y \}$ is a set (called a hom-set).
 > In other words, it is [[Monoidal Categories#^5e1a68|$\mathsf{Set}$-enriched]]. ^d0fa66
 
-<u><b>e.g.</b></u>  Many of the large categories we want to consider are in fact locally small. $\mathsf{Set}$ is locally small since $\text{Hom}_\mathsf{Set} (X,Y)=Y^{X}$, the set of all functions from $X$ to $Y$. Similarly, $\mathsf{Pos}$, $\mathsf{Top}$, and $\mathsf{Group}$ are all locally small.
-
->[!proposition] 
-> Any small category is locally small.
+<u><b>e.g.</b></u>  Many of the large categories we want to consider are in fact locally small. $\mathsf{Set}$ is locally small since $\text{Hom}_\mathsf{Set} (X,Y)=Y^{X}$, the set of all functions from $X$ to $Y$. Similarly, $\mathsf{Pos}$, $\mathsf{Top}$, and $\mathsf{Group}$ are all locally small. Clearly, any small category is locally small.

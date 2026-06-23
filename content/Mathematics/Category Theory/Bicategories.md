@@ -13,13 +13,16 @@
 >- Associator: For objects $W, X,Y, Z ∈ \mathsf{B}_{0}$, $$a_{W,X,Y,Z}\colon c_{W,X,Z}{\left(c_{X,Y,Z}\times\mathrm{Id}_{{\mathsf{B}(W,X)}}\right)}\to c_{W,Y,Z}{\left(\mathrm{Id}_{{\mathsf{B}(Y,Z)}}\times c_{W,X,Y}\right)}$$is a natural isomorphism, called the associator, between functors $$\mathsf{B}(Y,Z)\times\mathsf{B}(X,Y)\times\mathsf{B}(W,X)\to\mathsf{B}(W,Z)$$
 >- Unitors: For each pair of objects $X,Y ∈ \mathsf{B}_{0}$, $$c_{XYY}(1_Y\times\mathrm{Id}_{\mathsf{B}(X,Y)})\xrightarrow{\ell_{XY}}\mathrm{Id}_{\mathsf{B}(X,Y)}\xleftarrow{r_{XY}}c_{XXY}(\mathrm{Id}_{\mathsf{B}(X,Y)}\times1_X)$$are natural isomorphisms, called the left unitor and the right unitor, respectively.
 >
->And the following axioms hold for $1$-cells $f\in \mathsf{B}(V,W)_{0}$, $g\in\mathsf{B}(W,X)_{0}$, $h\in\mathsf{B}(X,Y)_{0}$ and $k\in\mathsf{B}(Y,Z)_{0}$:
->- Unity Axiom: The middle unity diagram commutes: 
+> And the following axioms hold for all $1$-cells $f\in \mathsf{B}(V,W)_{0}$, $g\in\mathsf{B}(W,X)_{0}$, $h\in\mathsf{B}(X,Y)_{0}$ and $k\in\mathsf{B}(Y,Z)_{0}$:
+>- Unity Axiom: The middle unity diagram in $\mathsf{B}(V,X)$ commutes: 
 >  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/bicategory_middle_unity.svg" style="width:40%;"/>
->- Pentagon Axiom: 
+>- Pentagon Axiom: The following diagram in $\mathsf{B}(V,Z)$ commutes: 
+>  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/bicategory_pentagon.svg" style="width:55%;"/>
 >
 >We usually abbreviate a bicategory as above to $\mathsf{B}$.
 
+<u><b>e.g.</b></u>
+- A [[Monoidal Categories#^bc017c|monoidal category]] $\mathsf{C}$ may be regarded a bicategory with a single object $*$, where it serves as the hom category $\mathsf{B}(*, *)$, and the horizontal composition is given by the monoidal product $\otimes$.
 
 >[!definition] 
 >**Def**  <i><u>Local Property</u></i>
