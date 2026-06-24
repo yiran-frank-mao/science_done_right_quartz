@@ -1,5 +1,7 @@
 >[!definition] Product Category
->The *product* of two categories $\mathsf{C}$ and $\mathsf{D}$, written $\mathsf{C}\times \mathsf{D}$, has objects of the form $(C,D)$ for $C\in\obj \mathsf{C}$ and $D\in\obj\mathsf{D}$, and morphisms of the form $(f,g)\colon(C,D)\to(C^{\prime}, D^{\prime})$ for $f\colon C\to C^{\prime}$ and $g\colon D\to D^{\prime}$. Composition and units are defined componentwise. That is$$(f^{\prime},g^{\prime})\circ(f,g)=(f^\prime\circ f,g^\prime\circ g),\quad1_{(C,D)}=(1_C,1_D)$$There are two obvious projection [[Functoriality#^653948|functors]]:
+>The *product* of two categories $\mathsf{C}$ and $\mathsf{D}$, written $\mathsf{C}\times \mathsf{D}$, has objects of the form $(C,D)$ for $C\in\obj \mathsf{C}$ and $D\in\obj\mathsf{D}$, and morphisms of the form $(f,g)\colon(C,D)\to(C^{\prime}, D^{\prime})$ for $f\colon C\to C^{\prime}$ and $g\colon D\to D^{\prime}$. Composition and units are defined componentwise. That is
+>$$(f^{\prime},g^{\prime})\circ(f,g)=(f^\prime\circ f,g^\prime\circ g),\quad1_{(C,D)}=(1_C,1_D)$$
+>There are two obvious projection [[Functoriality#^653948|functors]]:
 >$$\mathsf{C}\xleftarrow{\,\Pi_{\mathsf{C}}\,}\mathsf{C}\times\mathsf{D}\xrightarrow{\,\Pi_{\mathsf{D}}\,}\mathsf{D}$$
 >defined by $\Pi_{\mathsf{C}}(C,D) = C$ and $\Pi_{\mathsf{C}}(f,g) = f$, and similarly for $\Pi_{\mathsf{D}}$.
 
