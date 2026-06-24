@@ -58,7 +58,7 @@ $\quad$
 ## Enriched Categories
 
 > [!definition] Enriched Category ^5e1a68
-> We call a category $\mathsf{C}$ a *$\mathsf{V}$-category*, or *a category enriched in $\mathsf{V}$*, where $(\mathsf{V},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ is a monoidal category, if
+> We call a category $\mathsf{C}$ a *$\mathsf{V}$-category*, or *a category enriched in $\mathsf{V}$*, where $(\mathsf{V},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ is a [[Monoidal Categories#^bc017c|monoidal category]], if
 > - For each pair of objects $X, Y$ in $\mathsf{C}$, there is an object $\mathsf{C}(X, Y)$ in $\mathsf{V}$, called the *hom object with domain $X$ and codomain $Y$*. Every morphism $f\colon X \to Y$ in $\mathsf{C}$ can be uniquely described by $\tilde{f}\colon \mathbb{1} \to \mathsf{C}(X,Y)$ in $\mathsf{V}$.
 > - For each triple of objects $X, Y, Z$ in $\mathsf{C}$, there is a morphism $$ m_{X,Y,Z}\colon \mathsf{C}(Y,Z) \otimes \mathsf{C}(X,Y) \to \mathsf{C}(X,Z) $$ in $\mathsf{V}$, called the *composition*;
 > - For each object $X$ in $\mathsf{C}$, there is a morphism $$ i_X\colon \mathbb{1} \to \mathsf{C}(X,X) $$ in $\mathsf{V}$, called the *identity of $X$*.
