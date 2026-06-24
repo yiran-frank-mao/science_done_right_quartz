@@ -5,6 +5,8 @@
 >$$\mathsf{C}\xleftarrow{\,\Pi_{\mathsf{C}}\,}\mathsf{C}\times\mathsf{D}\xrightarrow{\,\Pi_{\mathsf{D}}\,}\mathsf{D}$$
 >defined by $\Pi_{\mathsf{C}}(C,D) = C$ and $\Pi_{\mathsf{C}}(f,g) = f$, and similarly for $\Pi_{\mathsf{D}}$.
 
+^8f900b
+
 >[!definition] Diagonal Functor
 > The *diagonal functor* $\Delta\colon \mathsf{C} \to\mathsf{C}\times\mathsf{C}$ is defined as its name tells: 
 > $$\Delta(X)=( X,X ),\quad \Delta(f\colon X\to Y)=f\times f \colon X\times X \to Y\times Y.$$
