@@ -5,7 +5,7 @@
 >- morphisms $\alpha_{X}\colon F(X) \to G(X)$, is called the *component of $\alpha$ at $X$*.
 >- and components must be such that for every morphism $f\colon X\to Y$ in $\mathsf{C}$ we have:$$\alpha_{Y}\circ F(f)=G(f)\circ\alpha_{X}$$
 >
-> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/natural_transformation.png" alt="natural_transformation" style="width:60%;"/> ^d73db0
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/natural_transformation.png" alt="natural_transformation" style="width:65%;"/> ^d73db0
 
 >[!definition] Vertical Composition
 >Suppose $α\colon F \Rightarrow G$ and $β\colon G \Rightarrow H$ are natural transformations between parallel functors $F, G, H \colon \mathsf{C} \Rightarrow \mathsf{D}$. Then there is a natural transformation $β \circ α \colon F \to H$ whose components $$(\beta \circ \alpha)_{C}=\beta_{C}\circ \alpha_{C}.$$Such $β \circ α$ is called the *vertical composition* of $\alpha$ and $\beta$. ^70ad46
