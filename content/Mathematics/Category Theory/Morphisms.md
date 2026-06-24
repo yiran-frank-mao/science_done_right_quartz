@@ -32,7 +32,9 @@ $\quad$
 ## Isomorphisms
 
 >[!definition] Isomorphism
->In any category $\mathsf{C}$, an arrow $f \colon A \to B$ is called an *isomorphism* if there is an arrow $g \colon B \to A$ in $\mathsf{C}$ such that$$f\circ g = 1_{A}\text{ and } g\circ f =1_{B}$$Since inverses are unique, we write $g = f^{-1}$. We say that $A$ is isomorphic to $B$, written $A\cong B$, if there exists an isomorphism between them.  ^8927b3
+>In any category $\mathsf{C}$, an arrow $f \colon A \to B$ is called an *isomorphism* if there is an arrow $g \colon B \to A$ in $\mathsf{C}$ such that
+>$$f\circ g = 1_{A}\text{ and } g\circ f =1_{B}$$
+>Since inverses are unique, we write $g = f^{-1}$. We say that $A$ is *isomorphic* to $B$, written $A\cong B$, if there exists an isomorphism between them.  ^8927b3
 
 >[!definition] Endomorphism & Automorphism
 > An *endomorphism* is a morphism whose domain equals its codomain.
