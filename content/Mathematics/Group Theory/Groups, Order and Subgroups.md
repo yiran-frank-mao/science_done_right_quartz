@@ -41,9 +41,9 @@ $\square$
 > A group is called *finite* if $G$ is a finite set; otherwise the group is called *infinite*. The order of a finite group is the number of elements in a finite group, denoted $|G|$. ^3bce31
 
 > [!definition] Power & Order of an Element
-> For an element $a$ and in a group $G$ and $n \in \N$ we write $a^{n}$ for the unambiguous composition of $a$ with itself $n$ times (this follows from generalized associativity). 
+> For an element $a$ and in a group $G$ and $n \in \mathbb{N}$ we write $a^{n}$ for the unambiguous composition of $a$ with itself $n$ times (this follows from generalized associativity). 
 > We also define $a^{0} := e$ and $a^{−n} = (a^{−1})^n$.
-> An element $g \in G$ has *finite order* if there is $n \in \N$ such that $g^n = e$; the minimal such $n$ is the *order* of $g$ and denoted $o(g)$. Otherwise we say that $g$ has *infinite order*.
+> An element $g \in G$ has *finite order* if there is $n \in \mathbb{N}$ such that $g^n = e$; the minimal such $n$ is the *order* of $g$ and denoted $o(g)$. Otherwise we say that $g$ has *infinite order*.
 
 > [!proposition] Laws of Exponents
 > Let $G$ be a group, let $a, b ∈ G$ , and let $m$ and $n$ be integers. Then
@@ -65,7 +65,7 @@ $\square$
 > [!proposition]
 > A nonempty subset $H \subset G$ is a subgroup if and only if it is closed under composition and under taking inverses. That is $a,b \in H \implies ab \in H$ and $a \in H \implies a^{-1} \in H$. The latter two can be consolidated to $a,b \in H \implies ab^{-1} \in H$.
 
-<u><b>e.g.</b></u>  All subgroups of $(\Z,+)$ are of the form $n\Z$ for some $n \in \N$. This is easy to see since if $H$ is a nontrivial subgroup, then it contains some non-zero integer $m$. If $m < 0$ we can replace it by $-m$. Let $n$ be the smallest positive integer in $H$, then any element $h$ in $H$ must be a multiple of $n$, otherwise the division algorithm gives $h = qn + r$ with $0 < r < n$, hence $r = h - qn \in H$, contradicting the minimality of $n$. Thus, $H = n\Z$.
+<u><b>e.g.</b></u>  All subgroups of $(\mathbb{Z},+)$ are of the form $n\mathbb{Z}$ for some $n \in \mathbb{N}$. This is easy to see since if $H$ is a nontrivial subgroup, then it contains some non-zero integer $m$. If $m < 0$ we can replace it by $-m$. Let $n$ be the smallest positive integer in $H$, then any element $h$ in $H$ must be a multiple of $n$, otherwise the division algorithm gives $h = qn + r$ with $0 < r < n$, hence $r = h - qn \in H$, contradicting the minimality of $n$. Thus, $H = n\mathbb{Z}$.
 
 > [!corollary]
 > If $H\leq G$, $K\leq G$, then $H\cap K\leq G$.
