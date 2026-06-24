@@ -29,7 +29,7 @@
 > Dually, a *comonoid object* is a monoid object in the dual category $\mathsf{C}^{\text{op}}$. ^2438f8
 
 <u><b>e.g.</b></u>  
-- It is called monoidal because the structure is “monoid-like”. Any monoid $(M, \cdot, 1)$ forms a small monoidal category with object set $M$, $\cdot$ as monoidal product and the identity of $M$ as its identity object.
+- It is called monoidal because the structure is “monoid-like”. Any [[Free Groups and Relations#^587eee|monoid]] $(M, \cdot, 1)$ forms a small monoidal category with object set $M$, $\cdot$ as monoidal product and the identity of $M$ as its identity object.
 - The category of [[Groups, Order and Subgroups#^6d511a|abelian groups]] $(\mathsf{Ab},\otimes,\mathbb{Z})$ is a monoidal category with the usual tensor product of abelian groups and the group of integers $\mathbb{Z}$ as the monoidal unit. [[Ring, Field and Integral Domain#^178485|Rings]] are monoid objects.
 - The category of sets $(\mathsf{Set}, \sqcup, \emptyset)$ is a monoidal category. The monoidal product is the disjoint union of sets, and the monoidal unit is the empty set.
 - The category $\mathsf{Set}$ can carry another monoidal structure $(\mathsf{Set}, \times, \{*\})$, where the monoidal product is the [[Construction of Sets#^bd02ce|Cartesian product of sets]], and the monoidal unit is the singleton set $\{*\}$. [[Free Groups and Relations#^587eee|Monoids]] are monoid objects; Every set $X$ has a unique comonoid structure given by the diagonal map $X \to X\times X$ and the unique map $X \to \{*\}$.
