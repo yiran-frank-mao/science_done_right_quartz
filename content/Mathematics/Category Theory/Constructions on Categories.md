@@ -15,7 +15,7 @@
 
 <u><b>e.g.</b></u>  
 - Consider a simple $\mathsf{Cat3}$: 
-  <img src="https://i.imgur.com/NoPVoa8.png" style="width:75%;">
+  <img src="https://i.imgur.com/NoPVoa8.png" style="width:55%;">
 - Let $K$ be a [[Ring, Field and Integral Domain#^575174|field]]. The dual space functor $D\colon \operatorname{Vec}_k^{\text{op}} \to \operatorname{Vec}_k$ maps a vector space $V$ to its dual $DV = \operatorname{Hom}(V,k)$. A linear map $f\colon V \to W$ induces a map $f^{*}\colon DW \to DV$ in the opposite direction.
 $\quad$
 
