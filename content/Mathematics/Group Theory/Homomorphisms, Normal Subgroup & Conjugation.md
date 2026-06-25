@@ -21,7 +21,7 @@ updated: 2024-10-28
 ## Normal Subgroup
 
 >[!definition] Conjugate
->Let $G$ be a group. For any $a,b\in G$, we say $a$ and $b$ and conjugate if there exists $g\in G$ such that $a=gbg^{-1}$.
+>Let $G$ be a group. For any $a,b\in G$, we say $a$ and $b$ are *conjugate* if there exists $g\in G$ such that $a=gbg^{-1}$.
 
 >[!definition] Normal Subgroup & Simple Group
 > Let $G$ be a group. A subgroup $N \leq G$ is called *normal* if $gN g^{−1} \subset N$ for every $g \in G$. We denote a normal subgroup by $N \triangleleft G$. 
