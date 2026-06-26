@@ -1,7 +1,7 @@
 ## Cosets
 
 > [!definition] Coset
-> Let $G$ be a group, $H \leq G$ a subgroup and $a \in G$. The following subsets are called *cosets* of $H$ in $G$: $$ \begin{aligned} a H &=\{a h\mid h\in H\}\quad({\mathrm{left~coset}}),\\ H a &=\{h a\mid h\in H\}\quad({\mathrm{right~coset}}). \end{aligned} $$
+> Let $G$ be a group, $H \leq G$ a subgroup and $a \in G$. The following subsets are called *cosets* of $H$ in $G$: $$ \begin{aligned} a H &=\{a h\mid h\in H\}\quad({\mathrm{left~coset}}),\\ H a &=\{h a\mid h\in H\}\quad({\mathrm{right~coset}}). \end{aligned} $$ ^b825de
 
 > [!proposition]
 > Let $H$ be a subgroup of a group $G$. Then the left (or right) cosets form a partition of $G$. That is $G=\bigsqcup_{a \in G} a H$ and for $a,b \in G$ either $aH =bH$ or $aH \cap bH =\emptyset$.
@@ -37,4 +37,7 @@
 > A [[Groups, Order and Subgroups#^1ccb07|subgroup]] of a finite group $G$ whose index is the smallest prime dividing the order of $G$ is [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal]]. In, particular, any subgroup of index 2 in $G$ is automatically normal.
 > 
 
-*Proof*  Suppose $H\leq G$ such that $[G:H]=p$ is the smallest prime factor of $|G|$, and $|G|=pd$. Then $|H|=d$, is the largest divisor of $|G|$. Note that $|gH g^{-1}|=|H|=d$ for all $g\in G$, and $g Hg^{-1}\leq G$, so $|gHg^{-1}|$ divides $|G|$. 
+*Proof*  
+
+
+Suppose $H\leq G$ such that $[G:H]=p$ is the smallest prime factor of $|G|$, and $|G|=pd$. Then $|H|=d$, is the largest divisor of $|G|$. Note that $|gH g^{-1}|=|H|=d$ for all $g\in G$, and $g Hg^{-1}\leq G$, so $|gHg^{-1}|$ divides $|G|$. 

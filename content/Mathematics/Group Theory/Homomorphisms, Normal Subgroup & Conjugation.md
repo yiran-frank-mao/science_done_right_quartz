@@ -49,8 +49,8 @@ updated: 2024-10-28
 ## Isomorphisms
 
 >[!definition] Group Isomorphism
-> A [group homomorphism](Homomorphisms,%20Normal%20Subgroup%20&%20Conjugation.md#^homo) $\varphi\colon G \to H$ is called an *isomorphism* if it has an inverse, that is a homomorphism $ψ:H →G$ such that $\psi \circ \varphi=e_G$ and $\varphi \circ \psi=e_H$. Equivalently, a homomorphism $φ \colon G \to H$ is an isomorphism if and only if it is bijective.
-> An *automorphism* is an isomorphism from a group $G$ to $G$. Denote $\text{Aut}(G)$ as the set of all automorphisms on $G$. ^c32ca8
+> A [group homomorphism](Homomorphisms,%20Normal%20Subgroup%20&%20Conjugation.md#^homo) $\varphi\colon G \to H$ is called an *isomorphism* if it has an inverse, that is a homomorphism $ψ:H →G$ such that $\psi \circ \varphi=e_G$ and $\varphi \circ \psi=e_H$. Equivalently, a homomorphism $φ \colon G \to H$ is an isomorphism if and only if it is [[Relations and Functions#^042daf|bijective]].
+> An *automorphism* is an isomorphism from a group $G$ to $G$. We denote $\text{Aut}(G)$ as the set of all automorphisms on $G$. ^c32ca8
 
 <u><b>e.g.</b></u>  Any two [[Cyclic Groups#^c52ddd|cyclic group]] of the same order are isomorphic.
 
@@ -69,6 +69,6 @@ updated: 2024-10-28
 ## Conjugation
 
 >[!proposition] 
-> Let $G$ be a [[Groups, Order and Subgroups#^6e0960|group]] and $g \in G$. The map$$ \gamma_{g}\colon G \to G, \quad a \mapsto gag^{-1} $$, called *conjugation by $g$ is an isomorphism.
+> Let $G$ be a [[Groups, Order and Subgroups#^6e0960|group]] and $g \in G$. The map$$ \gamma_{g}\colon G \to G, \quad a \mapsto gag^{-1},$$ called *conjugation by $g$*, is an isomorphism.
 
 *Proof*  We first check that $\gamma_g$ is a homomorphism:$$ \gamma_g(ab) = gabg^{-1} = ga(g^{-1}g)bg^{-1} = (gag^{-1})(gbg^{-1})=\gamma_g(a)\gamma_g(b) $$The map is injective because $\gamma_g(a) = e \implies gag^{-1}=e \implies ga=g \implies a=e$. And is surjective since for all $a \in G$, we have $\gamma_g(g^{-1}ag)=a$. $\square$

@@ -13,14 +13,14 @@ updated: 2024-10-28
 
 <b><u>e.g.</u></b>
 - $G$ (the group) acts on $G$ (the set) by left multiplication.
-- Let $H\leq G$. Then $G$ acts on $X = G /H = \{g H \mid g \in G \}$ by left multiplication.
+- Let $H\leq G$. Then $G$ acts on the [[Cosets and Lagrange’s Theorem#^b825de|left coset space]] $G /H = \{g H \mid g \in G \}$ by left multiplication.
 - $G$ acts on itself by conjunction.
 $\quad$
 
 > [!proposition]
-> A group action of $G$ on a set $X$ is the same as homomorphism $G \to \operatorname{Sym}(X)$.
+> A group action of $G$ on a set $X$ is the same as a homomorphism $G \to \operatorname{Sym}(X)$.
 
-*Proof*  Given an action $G\times X \to X$ defineed, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho : G \to \operatorname{Sym}(X), \quad g\mapsto \rho_g $$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh) $$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
+*Proof*  Given an action $G\times X \to X$ defined, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho : G \to \operatorname{Sym}(X), \quad g\mapsto \rho_g $$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh) $$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
 
 > [!definition] Orbit and Stabiliser
 > Let $G$ be a group acting on a set $X$ and let $x \in X$. Then, the orbit of $x$ is the subset $\mathcal{O}(x) = \{ g \cdot x \mid g \in G \} \subset X$. The stabilizer of $x$ in $G$ is the subgroup $G_x = \operatorname{Stab}_G(x) = \{ g \mid g\cdot x =x \} \leq G$. ^705c54
@@ -48,7 +48,7 @@ $\quad$
 > The centralizer of an element $x$ in a group $G$, is the set $C_G(x)$ of elements that commute with $x$. Or equivalently, the stabilizer of $x \in G$ under conjugation is the centralizer $C_G (x)$ of $x$.
 
 > [!theorem] Orbit-Stabilizer Theorem
-> Let $G$ be a group acting on a set $X$ . Let $x ∈ X$ and let $H = G_x$ be the stabilizer of $x$ in $G$ and let $\mathcal{O}(x$) be the orbit. Then the the map $$ \varphi\colon G/H \to \mathcal{O}(x),gH \mapsto gx $$is a bijection. In particular, if $G$ is finite then $|G|=|G_x||\mathcal{O}(x)|$. So the size of every orbit divides the order of the group. ^dac142
+> Let $G$ be a group acting on a set $X$ . Let $x ∈ X$ and let $H = G_x$ be the stabilizer of $x$ in $G$ and let $\mathcal{O}(x$) be the orbit. Then the the map $$ \varphi\colon G/H \to \mathcal{O}(x),\quad gH \mapsto gx $$is a bijection. In particular, if $G$ is finite then $|G|=|G_x||\mathcal{O}(x)|$. So the size of every orbit divides the order of the group. ^dac142
 
 *Proof*  The map is surjective: an inverse image of $gx \in \mathcal{O}(x)$ is $gH$. The map is injective since: $$ gx = hx \iff h^{-1}gx=x \iff h^{-1}g\in G_x=H \iff gH=hH $$
 
