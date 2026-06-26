@@ -62,6 +62,14 @@ It is clear that not every subgroup is normal. For example, let $G=S_3$ and $H=\
 *Proof*  We first show that $H_{G}\leq G$. For all $h_{1}, h_{2}\in H_{G}$, we have $h_{1}=g h_{1}'g^{-1}$, $h_{2}=g h_{2}'g^{-1}$ for some $h_{1}', h_{2}'\in H$ and any $g\in G$. Then $$h_{1}h_{2}^{-1}=g h_{1}'g^{-1} g h_{2}'^{-1}g^{-1}=g h_{1}'h_{2}'^{-1}g^{-1},$$so $h_{1}h_{2}^{-1}\in H_{G}$.
 It is clear that $H_{G} \triangleleft G$. Now let $K\triangleleft G$ such that $K\leq H$. Then for all $k\in K$, we have $k=g k' g^{-1}$ for some $k'\in K\leq H$, so $k\in H_{G}$. Thus $K\subseteq H_{G}$, and the result follows. $\square$
 
+> [!proposition]
+> Normal core is the kernel of the left multiplication action of $G$ on the left coset space $G/H$.
+> 
+
+> [!theorem]
+> $H$ is normal in $G$ if and only if $H_{G}=H=N_{G}(H)$.
+
+*Proof*  
 
 
 ## Isomorphisms
