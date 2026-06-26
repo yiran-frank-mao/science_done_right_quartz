@@ -1,6 +1,7 @@
 ---
 created: 2023-11-22
-updated: 2024-10-28
+updated: 2026-06-26
+completed: true
 ---
 ## Homomorphisms
 
@@ -13,7 +14,7 @@ updated: 2024-10-28
 *Proof*  Let $e_G$ and $e_H$ be the identity elements of $G$ and $H$, respectively. Then we have $\varphi(e_G) = \varphi(e_G e_G) = \varphi(e_G)\varphi(e_G)$. Multiplying both sides by $\varphi(e_G)^{-1}$, we get $\varphi(e_G) = e_H$. $\square$
 
 >[!definition] Kernel & Image
->Let $\varphi : G \to H$ be a group homomorphism. The kernel and the image of $\varphi$ are defined by $$ \begin{aligned} \ker(\varphi)&=\{g\in G\mid \varphi(g)=e_{H}\}\subset G, \\ \operatorname{im}(\varphi)&=\{h\in H\mid\exists g\in G,\varphi(g)=h\}\subset H. \end{aligned}$$
+>Let $\varphi : G \to H$ be a group homomorphism. The *kernel* and the *image* of $\varphi$ are defined by $$ \begin{aligned} \ker(\varphi)&=\{g\in G\mid \varphi(g)=e_{H}\}\subset G, \\ \operatorname{im}(\varphi)&=\{h\in H\mid\exists g\in G,\varphi(g)=h\}\subset H. \end{aligned}$$
 
 >[!proposition] 
 > A homomorphism $\varphi \colon G \to H$ is injective if and only if $\ker(\varphi) = \{e_G\}$_._
@@ -68,13 +69,8 @@ It is clear that $H_{G} \triangleleft G$. Now let $K\triangleleft G$ such that $
 
 *Proof*  Recall the left multiplication action of $G$ on the left coset space $G/H$ is given by $$ \varphi\colon G \to S_{[G:H]},\quad g\mapsto (xH \mapsto gxH). $$Then the kernel of $\varphi$ is $$ \ker(\varphi)=\{g\in G\mid gxH=xH,\forall x\in G\}=\{g\in G\mid g\in x H x^{-1},\forall x\in G\}=\bigcap_{x\in G} xHx^{-1}=H_{G}, $$which is exactly the normal core of $H$ in $G$. $\square$
 
-> [!theorem]
-> $H$ is normal in $G$ if and only if $H_{G}=H=N_{G}(H)$.
-
-^de930c
-
-*Proof*  
-
+> [!corollary]
+> $H$ is normal in $G$ if and only if $H_{G}=H$, if and only if $G=N_{G}(H)$. ^de930c
 
 ## Isomorphisms
 
@@ -82,7 +78,10 @@ It is clear that $H_{G} \triangleleft G$. Now let $K\triangleleft G$ such that $
 > A [group homomorphism](Homomorphisms,%20Normal%20Subgroup%20&%20Conjugation.md#^homo) $\varphi\colon G \to H$ is called an *isomorphism* if it has an inverse, that is a homomorphism $ψ:H →G$ such that $\psi \circ \varphi=e_G$ and $\varphi \circ \psi=e_H$. Equivalently, a homomorphism $φ \colon G \to H$ is an isomorphism if and only if it is [[Relations and Functions#^042daf|bijective]].
 > An *automorphism* is an isomorphism from a group $G$ to $G$. We denote $\text{Aut}(G)$ as the set of all automorphisms on $G$. ^c32ca8
 
-<u><b>e.g.</b></u>  Any two [[Cyclic Groups#^c52ddd|cyclic group]] of the same order are isomorphic.
+<u><b>e.g.</b></u>  
+- Any two [[Cyclic Groups#^c52ddd|cyclic group]] of the same order are isomorphic.
+- Let $G$ be a [[Groups, Order and Subgroups#^6e0960|group]] and $g \in G$. The map$$ \gamma_{g}\colon G \to G, \quad a \mapsto gag^{-1},$$ called *conjugation by $g$*, is an isomorphism. We first check that $\gamma_g$ is a homomorphism:$$ \gamma_g(ab) = gabg^{-1} = ga(g^{-1}g)bg^{-1} = (gag^{-1})(gbg^{-1})=\gamma_g(a)\gamma_g(b) $$The map is injective because $\gamma_g(a) = e \implies gag^{-1}=e \implies ga=g \implies a=e$. And is surjective since for all $a \in G$, we have $\gamma_g(g^{-1}ag)=a$.
+$\quad$
 
 >[!theorem] Cayley’s Theorem
 > For every $g \in G$ define a map by left multiplication with $g$: $$\lambda_{g}:G\to G,\quad x\mapsto g x$$
@@ -94,11 +93,4 @@ It is clear that $H_{G} \triangleleft G$. Now let $K\triangleleft G$ such that $
 >[!corollary] 
 > Every finite group is isomorphic to a subgroup of a [[Permutations and Symmetric Groups#^5b562f|symmetric group]] $S_{n}$.
 
-*Proof*  For any finite group $G$, the $\lambda$ map forms an isomorphism, thus $G\cong S_{n}$ for some $n$.
-
-## Conjugation
-
->[!proposition] 
-> Let $G$ be a [[Groups, Order and Subgroups#^6e0960|group]] and $g \in G$. The map$$ \gamma_{g}\colon G \to G, \quad a \mapsto gag^{-1},$$ called *conjugation by $g$*, is an isomorphism.
-
-*Proof*  We first check that $\gamma_g$ is a homomorphism:$$ \gamma_g(ab) = gabg^{-1} = ga(g^{-1}g)bg^{-1} = (gag^{-1})(gbg^{-1})=\gamma_g(a)\gamma_g(b) $$The map is injective because $\gamma_g(a) = e \implies gag^{-1}=e \implies ga=g \implies a=e$. And is surjective since for all $a \in G$, we have $\gamma_g(g^{-1}ag)=a$. $\square$
+*Proof*  For any finite group $G$, $\lambda$ is moreover bijective. $\square$

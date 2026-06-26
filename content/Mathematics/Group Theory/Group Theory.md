@@ -7,7 +7,7 @@ tags:
 ## Introduction
 Group theory is the study of algebraic structures known as groups. Groups are fundamental in abstract algebra and are used in many areas of mathematics, including number theory, geometry, analysis, and mathematical physics. They are also used in various other fields, such as physics, chemistry, computer science, and cryptography.
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cyclic_group.svg/1920px-Cyclic_group.svg.png" alt="sphere" style="width:30%;">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cyclic_group.svg/1920px-Cyclic_group.svg.png" style="width:30%;">
 
 ## Contents
 [[Groups, Order and Subgroups]]
