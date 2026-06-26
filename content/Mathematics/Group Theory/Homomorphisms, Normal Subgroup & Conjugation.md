@@ -66,8 +66,12 @@ It is clear that $H_{G} \triangleleft G$. Now let $K\triangleleft G$ such that $
 > Normal core is the kernel of the left multiplication action of $G$ on the left coset space $G/H$.
 > 
 
+*Proof*  Recall the left multiplication action of $G$ on the left coset space $G/H$ is given by $$ \varphi\colon G \to S_{[G:H]},\quad g\mapsto (xH \mapsto gxH). $$Then the kernel of $\varphi$ is $$ \ker(\varphi)=\{g\in G\mid gxH=xH,\forall x\in G\}=\{g\in G\mid g\in x H x^{-1},\forall x\in G\}=\bigcap_{x\in G} xHx^{-1}=H_{G}, $$which is exactly the normal core of $H$ in $G$. $\square$
+
 > [!theorem]
 > $H$ is normal in $G$ if and only if $H_{G}=H=N_{G}(H)$.
+
+^de930c
 
 *Proof*  
 

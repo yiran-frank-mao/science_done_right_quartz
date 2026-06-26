@@ -5,7 +5,7 @@
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/first_iso_thm.svg" alt="first_iso_thm" style="width:25%;"/>
 
 > [!theorem] First Isomorphism Theorem
-> Let $f : G \to H$ be a group homomorphism. Then $G/\ker(f) \cong \mathrm{im}(f )$. Specifically, the map $\varphi$ given by $$ \varphi:G/\ker(f)\to\operatorname{im}(f), \quad\varphi\left(g\operatorname{ker}(f)\right):=f(g) $$ is a group isomorphism.
+> Let $f \colon  G \to H$ be a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|group homomorphism]]. Then $G/\ker(f) \cong \mathrm{im}(f )$. Specifically, the map $\varphi$ given by $$ \varphi:G/\ker(f)\to\operatorname{im}(f), \quad\varphi\left(g\operatorname{ker}(f)\right):=f(g) $$ is a group isomorphism. ^320c79
 
 *Proof*  Let $K=\ker(f)$. We saw $φ$ is well-defined. It is a homomorphism because
 $$ \varphi(g K)\varphi(h K)=f(g)f(h)=f(g h)=\varphi(g h K)=\varphi(g K\cdot h K). $$

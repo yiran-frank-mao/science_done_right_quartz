@@ -1,3 +1,6 @@
+---
+completed: true
+---
 ## Cosets
 
 > [!definition] Coset
@@ -34,10 +37,7 @@
 > 
 
 > [!proposition]
-> A [[Groups, Order and Subgroups#^1ccb07|subgroup]] of a finite group $G$ whose index is the smallest prime dividing the order of $G$ is [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal]]. In, particular, any subgroup of index 2 in $G$ is automatically normal.
+> A [[Groups, Order and Subgroups#^1ccb07|subgroup]] of a finite group $G$ whose index is the smallest prime dividing the order of $G$ is [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal]]. In particular, any subgroup of index 2 in $G$ is automatically normal.
 > 
 
-*Proof*  Suppose $H\leq G$ such that $[G:H]=p$ is the smallest prime factor of $|G|$. Consider the standard action of $G$ on the left coset space $G/H$ by left multiplication. This gives a homomorphism $$ \varphi\colon G \to S_{p}, \quad g \mapsto (xH \mapsto gxH). $$The kernel of this homomorphism is the intersection of all conjugates of $H$ in $G$, which is a normal subgroup of $G$. The image of $\varphi$ is a subgroup of the symmetric group $S_{[G:H]}$, which has order $[G:H]!$. By the First Isomorphism Theorem, we have $$ |G|/|\ker(\varphi)| = |\operatorname{im}(\varphi)| \leq [G:H]! $$ Since $[G:H]$ is the smallest prime dividing $|G|$, it follows that $|\ker(\varphi)| = |H|$, and hence $\ker(\varphi) = H$. Therefore, $H$ is normal in $G$. $\square$
-
-
-, and $|G|=pd$. Then $|H|=d$, is the largest divisor of $|G|$. Note that $|gH g^{-1}|=|H|=d$ for all $g\in G$, and $g Hg^{-1}\leq G$, so $|gHg^{-1}|$ divides $|G|$. 
+*Proof*  Suppose $H\leq G$ such that $[G:H]=p$ is the smallest prime factor of $|G|$. Consider the standard action of $G$ on the left coset space $G/H$ by left multiplication. This gives a homomorphism $$ \varphi\colon G \to S_{p}, \quad g \mapsto (xH \mapsto gxH). $$The kernel of this homomorphism is the [[Homomorphisms, Normal Subgroup & Conjugation#^d4bf2b|normal core]] of $H$, which is a normal subgroup of $G$. The image of $\varphi$ is a subgroup of the symmetric group $S_{p}$, so its order divides $p!$. By the [[Isomorphism Theorems#^320c79|First Isomorphism Theorem]], we have $$ |G| = |\ker(\varphi)| \cdot |\operatorname{im}(\varphi)|. $$In particular, $|\operatorname{im}(\varphi)|$ divides $|G|$. So $|\operatorname{im}(\varphi)|$ divides $\gcd(p!, |G|)=p$ (by [[Division and Prime#^2ad3c0|definition of gcd]]). It follows that $|\ker(\varphi)| = |H|$, and hence $\ker(\varphi) = H$. Therefore, $H$ is normal in $G$ by [[Homomorphisms, Normal Subgroup & Conjugation#^de930c|the theorem]]. $\square$

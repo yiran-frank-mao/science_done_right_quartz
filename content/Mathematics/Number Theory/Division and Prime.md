@@ -26,7 +26,8 @@ updated: 2024-10-03
 ## Greatest Common Divisor
 
 > [!definition] Greatest Common Divisor
-> The *greatest common divisor* of two or more [[Number Systems#^25bad2|integers]], which are not all zero, is the unique largest positive integer that divides each of the integers, denoted as $\gcd(x,y)$ in the two integers case. In other words, it is the positive integer $d$ such that $d\mid x$, $d\mid y$ and $$c \mid x, c\mid y \implies c \mid d.$$
+> The *greatest common divisor* of two or more [[Number Systems#^25bad2|integers]], which are not all zero, is the unique largest positive integer that divides each of the integers, denoted as $\gcd(x,y)$ in the two integers case. 
+> In other words, it is the positive integer $d$ such that $d\mid x$, $d\mid y$ and $$c \mid x, c\mid y \implies c \mid d.$$ ^2ad3c0
 
 *Proof*  The existence of $\gcd(x,y)$ is guaranteed by the Bézout’s identity below. The uniqueness of $\gcd(x,y)$ is guaranteed by the definition. $\square$
 
