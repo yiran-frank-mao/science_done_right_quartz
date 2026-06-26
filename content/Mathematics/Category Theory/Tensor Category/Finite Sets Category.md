@@ -33,3 +33,6 @@ We can describe $\mathsf{FinCard}$ and $\mathsf{FinOrd}$ using graphs, where eac
 > $$ \mathsf{MonFunc}(\mathsf{FinOrd}, \mathsf{C}) \cong \mathsf{Mon}(\mathsf{C}),$$
 > where $\mathsf{MonFunc}(\mathsf{FinOrd}, \mathsf{C})$ is the category of monoidal functors from $\mathsf{FinOrd}$ to $\mathsf{C}$, and $\mathsf{Mon}(\mathsf{C})$ is the category of monoid objects in $\mathsf{C}$.
 > 
+
+
+## References
