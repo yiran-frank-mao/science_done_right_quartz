@@ -10,7 +10,7 @@ updated: 2026-06-24
 >- Identity: there exists $e \in G$ such that $e \circ a = a \circ e = a$ for all $a \in G$.
 >- Inverse: for every $a \in G$ there exists $b \in G$ such that $a \circ b = b \circ a = e$.
 >
->We may sometime denote the group by $(G,\circ)$ to emphasize the law of composition. ^6e0960
+> We may sometime denote the group by $(G,\circ)$ to emphasize the law of composition. ^6e0960
 
 > [!remark]+
 > Whilst the definition of associativity involves only three elements it implies the generalized associative law, that is, a product of $n$ elements in a group $a_1a_2 · · · a_n$ has the same value regardless of any parentheses.
