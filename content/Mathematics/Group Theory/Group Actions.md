@@ -23,7 +23,15 @@ $\quad$
 *Proof*  Given an action $G\times X \to X$ defined, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho : G \to \operatorname{Sym}(X), \quad g\mapsto \rho_g $$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh) $$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
 
 > [!definition] Orbit and Stabiliser
-> Let $G$ be a group acting on a set $X$ and let $x \in X$. Then, the *orbit* of $x$ is the subset $\mathcal{O}(x) = \{ g \cdot x \mid g \in G \} \subset X$. The *stabilizer* of $x$ in $G$ is the subgroup $G_x = \operatorname{Stab}_G(x) = \{ g \mid g\cdot x =x \} \leq G$. ^705c54
+> Let $G$ be a group acting on a set $X$ and let $x \in X$. Then, the *orbit* of $x$ is the subset $\mathcal{O}(x) = \{ g \cdot x \mid g \in G \} \subset X$. 
+> The *stabilizer* of $x$ in $G$ is the subgroup $G_x = \operatorname{Stab}_G(x) = \{ g \mid g\cdot x =x \} \leq G$. ^705c54
+
+<u><b>e.g.</b></u>  When $G$ acts on itself by conjugation, the orbits are called *conjugacy classes*.
+
+> [!proposition]
+> An action of a group $G$ on a set $X$ defines an [[Relations and Functions#^14741d|equivalence relation]] on $X$: $$ x ∼ y \iff \exists g \in G , y = g\cdot x. $$
+
+*Proof*  Reflexivity follows from the fact that $1\cdot x = x$. Symmetry follows from the fact that if $y = g\cdot x$ then $x=g^{-1}\cdot y$. Transitivity follows from the fact that if $y = g\cdot x$ and $z = h\cdot y$ then $z = hg\cdot x$.  $\square$
 
 ## Classification of Actions
 
@@ -36,39 +44,36 @@ $\quad$
 > [!definition] Faithful (Effective) Action
 > An action of $G$ on $X$ is said to be faithful if the only element of $G$ that acts as the identity on $X$ is the identity element of $G$. ^f7c6a0
 
-> [!proposition]
-> An action of a group $G$ on a set $X$ defines an [[Relations and Functions#^14741d|equivalence relation]] on $X$: $$ x ∼ y \iff \exists g \in G , y = g\cdot x. $$
-
-*Proof*  Reflexivity follows from the fact that $1\cdot x = x$. Symmetry follows from the fact that if $y = g\cdot x$ then $x=g^{-1}\cdot y$. Transitivity follows from the fact that if $y = g\cdot x$ and $z = h\cdot y$ then $z = hg\cdot x$.  $\square$
-
 ## The Orbit-Stabilizer Theorem
 
-> [!definition] Conjugacy Classes
-> When $G$ acts on itself by conjugation, the orbits are called conjugacy classes.
-
 > [!definition] Centraliser
-> The centralizer of an element $x$ in a group $G$, is the set $C_G(x)$ of elements that commute with $x$. Or equivalently, the stabilizer of $x \in G$ under conjugation is the centralizer $C_G (x)$ of $x$.
+> The *centraliser* of an element $x$ in a group $G$, is the set $C_G(x)$ of elements that commute with $x$. 
+> Or equivalently, the stabilizer of $x \in G$ under conjugation is the centralizer $C_G (x)$ of $x$.
 
 > [!theorem] Orbit-Stabilizer Theorem
-> Let $G$ be a group acting on a set $X$ . Let $x ∈ X$ and let $H = G_x$ be the stabilizer of $x$ in $G$ and let $\mathcal{O}(x$) be the orbit. Then the the map $$ \varphi\colon G/H \to \mathcal{O}(x),\quad gH \mapsto gx $$is a bijection. In particular, if $G$ is finite then $|G|=|G_x||\mathcal{O}(x)|$. So the size of every orbit divides the order of the group. ^dac142
+> Let $G$ be a group acting on a set $X$ . Let $x ∈ X$ and let $G_x$ be the stabilizer of $x$ in $G$ and let $\mathcal{O}(x$) be the orbit. Then the the map $$ \varphi\colon G/G_{x}\to \mathcal{O}(x),\quad gG_{x} \mapsto g\cdot x $$is a [[Relations and Functions#^042daf|bijection]]. In particular, if $G$ is finite then $|G|=|G_x||\mathcal{O}(x)|$. So the size of every orbit divides the order of the group. ^dac142
 
-*Proof*  The map is surjective: an inverse image of $gx \in \mathcal{O}(x)$ is $gH$. The map is injective since: $$ gx = hx \iff h^{-1}gx=x \iff h^{-1}g\in G_x=H \iff gH=hH $$
+*Proof*  The map is surjective: an inverse image of $gx \in \mathcal{O}(x)$ is $gH$. The map is injective since: $$ gx = hx \iff h^{-1}gx=x \iff h^{-1}g\in G_x \iff gG_{x}=hG_{x}. $$$\square$
 
 > [!theorem] The Class Equation
-> Let $G$ be a finite group. Then $$ |G|=\sum_i[G:C_G(x_i)]. $$
+> Let $G$ be a finite group. Then $$ |G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]. $$ ^becec5
 
-*Proof*  $G$ acts on itself by conjugation. It follows that $G$ is a disjoint union of conjugacy classes. For every class $\mathcal{O}(x)$ we have $|\mathcal{O}(x)| = [G : C_G (x)]$ as by [Orbit-Stabilizer Theorem](Group%20Actions.md#^dac142) we have $\mathcal{O}(x)\cong G/C_G(x)$.
+*Proof*  $G$ acts on itself by conjugation. We claim that $G$ is a disjoint union of conjugacy classes. That is, $\mathcal{O}(x)$ and $\mathcal{O}(y)$ are either the same or disjoint. Suppose $\mathcal{O}(x)\cap \mathcal{O}(y)$ is nonempty and we pick some $h\in \mathcal{O}(x)\cap \mathcal{O}(y)$, then $h=g_1xg_1^{-1}=g_2yg_2^{-1}$ for some $g_1,g_2\in G$. It follows that $y=g_2^{-1}g_1xg_1^{-1}g_2\in \mathcal{O}(x)$, so $\mathcal{O}(y)\subseteq \mathcal{O}(x)$. Similarly, $\mathcal{O}(x)\subseteq \mathcal{O}(y)$. Hence $\mathcal{O}(x)=\mathcal{O}(y)$. For every class $\mathcal{O}(x)$ we have $|\mathcal{O}(x)| = [G : C_G (x)]$ by [Orbit-Stabilizer Theorem](Group%20Actions.md#^dac142).  $\square$
+
+## $p$-groups
 
 > [!definition] $p$-group
-> A finite group is called a $p$-group if its order is a $p$-power.
+> A finite group is called a *$p$-group* if its order is a $p$-power for some prime $p$. ^f455f4
 
 > [!corollary]
-> Every $p$-group has a non-trivial centre.
+> Every [[Group Actions#^f455f4|$p$-group]] has a non-trivial centre.
 
-*Proof*  Let $𝐺$ be a finite $𝑝$−group and make it act on itself by conjugation. Observe that:$$ \begin{aligned} |\mathcal{O}(x)|=1 \iff x\in Z(G)\\ \end{aligned} $$By class equation, we know that $|\mathcal{O}(x)| = [G : C_G (x)]$.
+*Proof*  Let $𝐺$ be a finite $𝑝$−group and make it act on itself by conjugation. Observe that:$$ \begin{aligned} |\mathcal{O}(x)|=1 \iff x\in Z(G)\\ \end{aligned} $$By [[Group Actions#^becec5|class equation]], we know that $|G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]$. Note that each $[G:C_G(x_i)]$ is a $p$-power, if $Z(G)$ were trivial, then there is only one term $|\mathcal{O}(e)|=1$, and all other terms are at least $p$, so $|G|=1+p^{k_{1}}+\cdots+p^{k_{m}}$ for some $k_{1},\dots, k_{m}\geq 1$, which is not divisible by $p$, a contradiction. Therefore, $Z(G)$ is non-trivial. $\square$
 
 > [!lemma]
-> For any group $𝐺$, $𝐺/𝑍(𝐺)$ is cyclic iff $𝐺$ is abelian.
+> For any group $𝐺$, $𝐺/𝑍(𝐺)$ is [[Cyclic Groups#^c52ddd|cyclic]] iff $𝐺$ is abelian.
+
+*Proof*  Suppose $G$ is abelian, then $Z(G)=G$, so $G/Z(G)$ is trivial and hence cyclic. Conversely, suppose $G/Z(G)$ is cyclic, then there exists some $g\in G$ such that $G/Z(G)=\langle gZ(G)\rangle$. Let $x,y\in G$, then there exist integers $m,n$ such that $xZ(G)=(gZ(G))^{m}=g^{m}Z(G)$ and $yZ(G)=(gZ(G))^{n}=g^{n}Z(G)$. Then we have $$xyZ(G)=g^{m}Z(G)g^{n}Z(G)=g^{m+n}Z(G)=g^{n+m}Z(G)=g^{n}Z(G)g^{m}Z(G)=yxZ(G).$$Thus $xyx^{-1}y^{-1}\in Z(G)$ for all $x,y\in G$, 
 
 > [!theorem] Cauchy’s Theorem
 > If $p$ is a prime dividing the order of a finite group $G$ then $G$ contains an element of order $p$.

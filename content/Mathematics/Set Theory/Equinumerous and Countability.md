@@ -27,9 +27,9 @@ $\quad$
 > A set is called finite if it is either empty or it is equinumerous to $\{1,\dots,n\}$ for some $n ∈ \N$. If a set is not finite, then it is called infinite.
 
 > [!definition] Denumerability & Countability
-> A set is called denumerable if it is equinumerous to $\N$. 
-> A set is called countable if it is either finite or denumerable. 
-> A set that is not countable is called uncountable. ^79eb6c
+> A set is called *denumerable* if it is equinumerous to $\N$. 
+> A set is called *countable* if it is either finite or denumerable. 
+> A set that is not countable is called *uncountable*. ^79eb6c
 
 > [!theorem]
 > Any denumerable set is infinite. ^39892f
