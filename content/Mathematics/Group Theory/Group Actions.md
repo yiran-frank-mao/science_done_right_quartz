@@ -70,15 +70,10 @@ $\quad$
 
 *Proof*  Let $𝐺$ be a finite $𝑝$−group and make it act on itself by conjugation. Observe that:$$ \begin{aligned} |\mathcal{O}(x)|=1 \iff x\in Z(G)\\ \end{aligned} $$By [[Group Actions#^becec5|class equation]], we know that $|G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]$. Note that each $[G:C_G(x_i)]$ is a $p$-power, if $Z(G)$ were trivial, then there is only one term $|\mathcal{O}(e)|=1$, and all other terms are at least $p$, so $|G|=1+p^{k_{1}}+\cdots+p^{k_{m}}$ for some $k_{1},\dots, k_{m}\geq 1$, which is not divisible by $p$, a contradiction. Therefore, $Z(G)$ is non-trivial. $\square$
 
-> [!lemma]
-> For any group $𝐺$, $𝐺/𝑍(𝐺)$ is [[Cyclic Groups#^c52ddd|cyclic]] iff $𝐺$ is abelian.
-
-*Proof*  Suppose $G$ is abelian, then $Z(G)=G$, so $G/Z(G)$ is trivial and hence cyclic. Conversely, suppose $G/Z(G)$ is cyclic, then there exists some $g\in G$ such that $G/Z(G)=\langle gZ(G)\rangle$. Let $x,y\in G$, then there exist integers $m,n$ such that $xZ(G)=(gZ(G))^{m}=g^{m}Z(G)$ and $yZ(G)=(gZ(G))^{n}=g^{n}Z(G)$. Then we have $$xyZ(G)=g^{m}Z(G)g^{n}Z(G)=g^{m+n}Z(G)=g^{n+m}Z(G)=g^{n}Z(G)g^{m}Z(G)=yxZ(G).$$Thus $xyx^{-1}y^{-1}\in Z(G)$ for all $x,y\in G$, 
-
 > [!theorem] Cauchy’s Theorem
 > If $p$ is a prime dividing the order of a finite group $G$ then $G$ contains an element of order $p$.
 
-*Proof*
+*Proof*  
 
 
 ## Semidirect Products

@@ -36,5 +36,7 @@
 > [!proposition]
 > The centre $Z(G)$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal subgroup]] of $G$.
 
+> [!lemma]
+> For any group $𝐺$, $𝐺/𝑍(𝐺)$ is [[Cyclic Groups#^c52ddd|cyclic]] iff $𝐺$ is abelian.
 
-**Lemma** For any group $𝐺$, $𝐺/𝑍(𝐺)$ is cyclic iff $𝐺$ is abelian.
+*Proof*  Suppose $G$ is abelian, then $Z(G)=G$, so $G/Z(G)$ is trivial and hence cyclic. Conversely, suppose $G/Z(G)$ is cyclic, then there exists some $g\in G$ such that $G/Z(G)=\langle gZ(G)\rangle$. Let $x,y\in G$, then there exist integers $m,n$ such that $xZ(G)=(gZ(G))^{m}=g^{m}Z(G)$ and $yZ(G)=(gZ(G))^{n}=g^{n}Z(G)$. Then we have $x=g^{m}z$ and $y=g^{n} w$ for some $z,w\in Z(G)$. It follows that $$ xy=g^{m}zg^{n}w=g^{n}wg^{m}z=yx $$Thus $G$ is abelian. $\square$
