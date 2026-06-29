@@ -23,7 +23,7 @@ $\quad$
 *Proof*  Given an action $G\times X \to X$ defined, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho : G \to \operatorname{Sym}(X), \quad g\mapsto \rho_g $$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh) $$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
 
 > [!definition] Orbit and Stabiliser
-> Let $G$ be a group acting on a set $X$ and let $x \in X$. Then, the orbit of $x$ is the subset $\mathcal{O}(x) = \{ g \cdot x \mid g \in G \} \subset X$. The stabilizer of $x$ in $G$ is the subgroup $G_x = \operatorname{Stab}_G(x) = \{ g \mid g\cdot x =x \} \leq G$. ^705c54
+> Let $G$ be a group acting on a set $X$ and let $x \in X$. Then, the *orbit* of $x$ is the subset $\mathcal{O}(x) = \{ g \cdot x \mid g \in G \} \subset X$. The *stabilizer* of $x$ in $G$ is the subgroup $G_x = \operatorname{Stab}_G(x) = \{ g \mid g\cdot x =x \} \leq G$. ^705c54
 
 ## Classification of Actions
 
@@ -37,7 +37,9 @@ $\quad$
 > An action of $G$ on $X$ is said to be faithful if the only element of $G$ that acts as the identity on $X$ is the identity element of $G$. ^f7c6a0
 
 > [!proposition]
-> An action of a group $G$ on a set $X$ defines an [[Relations and Functions#^14741d|equivalence relation]] on $X$: $$ x ∼ y \iff \exists g \in G , y = g\cdot x $$
+> An action of a group $G$ on a set $X$ defines an [[Relations and Functions#^14741d|equivalence relation]] on $X$: $$ x ∼ y \iff \exists g \in G , y = g\cdot x. $$
+
+*Proof*  Reflexivity follows from the fact that $1\cdot x = x$. Symmetry follows from the fact that if $y = g\cdot x$ then $x=g^{-1}\cdot y$. Transitivity follows from the fact that if $y = g\cdot x$ and $z = h\cdot y$ then $z = hg\cdot x$.  $\square$
 
 ## The Orbit-Stabilizer Theorem
 
