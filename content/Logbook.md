@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 29 Jun 2026
+- Updates: [[Group Actions]], [[Equinumerous and Countability]].
+
 ## 25 Jun 2026
 - Updates: [[Homomorphisms, Normal Subgroup & Conjugation]], [[Cosets and Lagrange’s Theorem]].
 

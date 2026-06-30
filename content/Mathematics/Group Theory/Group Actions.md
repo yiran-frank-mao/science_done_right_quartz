@@ -55,10 +55,10 @@ $\quad$
 
 *Proof*  The map is surjective: an inverse image of $gx \in \mathcal{O}(x)$ is $gH$. The map is injective since: $$ gx = hx \iff h^{-1}gx=x \iff h^{-1}g\in G_x \iff gG_{x}=hG_{x}. $$$\square$
 
-> [!theorem] The Class Equation
-> Let $G$ be a finite group. Then $$ |G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]. $$ ^becec5
+> [!corollary] Conjugacy Class Equation
+> Let $G$ be a finite group, acting on itself by conjugation. Then $$ |G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]. $$ ^becec5
 
-*Proof*  $G$ acts on itself by conjugation. We claim that $G$ is a disjoint union of conjugacy classes. That is, $\mathcal{O}(x)$ and $\mathcal{O}(y)$ are either the same or disjoint. Suppose $\mathcal{O}(x)\cap \mathcal{O}(y)$ is nonempty and we pick some $h\in \mathcal{O}(x)\cap \mathcal{O}(y)$, then $h=g_1xg_1^{-1}=g_2yg_2^{-1}$ for some $g_1,g_2\in G$. It follows that $y=g_2^{-1}g_1xg_1^{-1}g_2\in \mathcal{O}(x)$, so $\mathcal{O}(y)\subseteq \mathcal{O}(x)$. Similarly, $\mathcal{O}(x)\subseteq \mathcal{O}(y)$. Hence $\mathcal{O}(x)=\mathcal{O}(y)$. For every class $\mathcal{O}(x)$ we have $|\mathcal{O}(x)| = [G : C_G (x)]$ by [Orbit-Stabilizer Theorem](Group%20Actions.md#^dac142).  $\square$
+*Proof*  We claim that $G$ is a disjoint union of conjugacy classes. That is, $\mathcal{O}(x)$ and $\mathcal{O}(y)$ are either the same or disjoint. Suppose $\mathcal{O}(x)\cap \mathcal{O}(y)$ is nonempty and we pick some $h\in \mathcal{O}(x)\cap \mathcal{O}(y)$, then $h=g_1xg_1^{-1}=g_2yg_2^{-1}$ for some $g_1,g_2\in G$. It follows that $y=g_2^{-1}g_1xg_1^{-1}g_2\in \mathcal{O}(x)$, so $\mathcal{O}(y)\subseteq \mathcal{O}(x)$. Similarly, $\mathcal{O}(x)\subseteq \mathcal{O}(y)$. Hence $\mathcal{O}(x)=\mathcal{O}(y)$. For every class $\mathcal{O}(x)$ we have $|\mathcal{O}(x)| = [G : C_G (x)]$ by [Orbit-Stabilizer Theorem](Group%20Actions.md#^dac142).  $\square$
 
 ## $p$-groups
 
@@ -71,10 +71,9 @@ $\quad$
 *Proof*  Let $𝐺$ be a finite $𝑝$−group and make it act on itself by conjugation. Observe that:$$ \begin{aligned} |\mathcal{O}(x)|=1 \iff x\in Z(G)\\ \end{aligned} $$By [[Group Actions#^becec5|class equation]], we know that $|G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]$. Note that each $[G:C_G(x_i)]$ is a $p$-power, if $Z(G)$ were trivial, then there is only one term $|\mathcal{O}(e)|=1$, and all other terms are at least $p$, so $|G|=1+p^{k_{1}}+\cdots+p^{k_{m}}$ for some $k_{1},\dots, k_{m}\geq 1$, which is not divisible by $p$, a contradiction. Therefore, $Z(G)$ is non-trivial. $\square$
 
 > [!theorem] Cauchy’s Theorem
-> If $p$ is a prime dividing the order of a finite group $G$ then $G$ contains an element of order $p$.
+> If $p$ is a [[Division and Prime#^47f235|prime]] dividing the order of a finite group $G$ then $G$ contains an element of order $p$.
 
-*Proof*  
-
+*Proof*  Let $X=\{(x_{1}, \cdots, x_{p})\in G^{p} \mid x_{1}\cdots x_{p}=e\}$. The group $\Z/p\Z$ acts on $X$ by $$[n]\cdot (x_{1},\cdots, x_{p})=(x_{1+n},x_{2+n},\cdots, x_{p}, x_{1}, \cdots, x_{n}).  $$This is a well-defined group action because the multiplication of the RHS is $$ x_{1+n}\cdots x_{p}x_{1}\cdots x_{n}=(x_{1}\cdots x_{n})^{-1}(x_{1}\cdots x_{n})x_{1+n}\cdots x_{p}x_{1}\cdots x_{n}=e.$$Observe that $x\in X$ is a fixed point (i.e., $\mathcal{O}(x)=\{x\}$) if and only if $x=(a, a, \cdots, a)$ and $a^{p}=e$. If there were no elements of order $p$, then only $|\mathcal{O}((e,\cdots, e))|=1$, and all other $x$ will have $|\mathcal{O}(x)|=p$. It follows that $$|X|=|G|^{p-1}=1+kp$$for some $k\in\mathbb{N}$. This yields a contradiction because $p$ must divides $|G|^{p-1}$. $\square$
 
 ## Semidirect Products
 
