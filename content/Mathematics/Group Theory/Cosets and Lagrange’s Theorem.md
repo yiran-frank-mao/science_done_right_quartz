@@ -5,7 +5,8 @@ updated: 2026-06-26
 ## Cosets
 
 > [!definition] Coset
-> Let $G$ be a group, $H \leq G$ a subgroup and $a \in G$. The following subsets are called *cosets* of $H$ in $G$: $$ \begin{aligned} a H &=\{a h\mid h\in H\}\quad({\mathrm{left~coset}}),\\ H a &=\{h a\mid h\in H\}\quad({\mathrm{right~coset}}). \end{aligned} $$ ^b825de
+> Let $G$ be a group, $H \leq G$ a subgroup and $a \in G$. The following subsets are called *cosets* of $H$ in $G$: $$ \begin{aligned} a H &=\{a h\mid h\in H\}\quad({\mathrm{left~coset}}),\\ H a &=\{h a\mid h\in H\}\quad({\mathrm{right~coset}}). \end{aligned} $$ 
+> We denote $G/H$ as the space of left cosets. ^b825de
 
 > [!proposition]
 > Let $H$ be a subgroup of a group $G$. Then the left (or right) cosets form a partition of $G$. That is $G=\bigsqcup_{a \in G} a H$ and for $a,b \in G$ either $aH =bH$ or $aH \cap bH =\emptyset$.

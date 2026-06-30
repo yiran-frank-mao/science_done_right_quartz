@@ -36,10 +36,12 @@ $\quad$
 ## Classification of Actions
 
 > [!definition] Transitive Action
-> A group action is transitive if it has only one orbit. Equivalently, this means for any two elements $x,y\in X$, there exists an element $g\in G$ such that $g\cdot x=y$. ^065d30
+> A [[Group Actions#^4047e8|group action]] is *transitive* if it has only one orbit. This means for any two elements $x,y\in X$, there exists an element $g\in G$ such that $g\cdot x=y$. ^065d30
+
+<u><b>e.g.</b></u>  Let $H\leq G$, then $G$ acts transitively on the [[Cosets and Lagrange’s Theorem#^b825de|left coset space]] $G/H$ by left multiplication, because any two cosets $g_1H$ and $g_2H$ are related by $g_2H = g_2g_1^{-1} \cdot g_1H$.
 
 > [!definition] Free Action
-> A group action of $G$ on $X$ is said to be free if $g \cdot x = x$ implies $g = 1$ for all $x\in X$. ^fddea8
+> A [[Group Actions#^4047e8|group action]] of $G$ on $X$ is said to be free if $g \cdot x = x$ implies $g = 1$ for all $x\in X$. ^fddea8
 
 > [!definition] Faithful (Effective) Action
 > An action of $G$ on $X$ is said to be faithful if the only element of $G$ that acts as the identity on $X$ is the identity element of $G$. ^f7c6a0
