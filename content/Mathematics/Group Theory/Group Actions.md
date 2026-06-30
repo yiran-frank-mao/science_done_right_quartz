@@ -22,16 +22,16 @@ $\quad$
 
 *Proof*  Given an action $G\times X \to X$ defined, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho : G \to \operatorname{Sym}(X), \quad g\mapsto \rho_g $$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh) $$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
 
-> [!definition] Orbit and Stabiliser
-> Let $G$ be a group acting on a set $X$ and let $x \in X$. Then, the *orbit* of $x$ is the subset $\mathcal{O}(x) = \{ g \cdot x \mid g \in G \} \subset X$. 
-> The *stabilizer* of $x$ in $G$ is the subgroup $G_x = \operatorname{Stab}_G(x) = \{ g \mid g\cdot x =x \} \leq G$. ^705c54
-
-<u><b>e.g.</b></u>  When $G$ acts on itself by conjugation, the orbits are called *conjugacy classes*.
-
 > [!proposition]
 > An action of a group $G$ on a set $X$ defines an [[Relations and Functions#^14741d|equivalence relation]] on $X$: $$ x ∼ y \iff \exists g \in G , y = g\cdot x. $$
 
 *Proof*  Reflexivity follows from the fact that $1\cdot x = x$. Symmetry follows from the fact that if $y = g\cdot x$ then $x=g^{-1}\cdot y$. Transitivity follows from the fact that if $y = g\cdot x$ and $z = h\cdot y$ then $z = hg\cdot x$.  $\square$
+
+> [!definition] Orbit and Stabiliser
+> Let $G$ be a group acting on a set $X$ and let $x \in X$. Then, the *orbit* of $x$ is the subset $\mathcal{O}(x) = \{ g \cdot x \mid g \in G \} \subset X$. 
+> The *stabilizer* of $x$ in $G$ is the subgroup $G_x = \operatorname{Stab}_G(x) = \{ g \mid g\cdot x =x \} \leq G$. ^705c54
+
+<u><b>e.g.</b></u>  When $G$ acts on itself by conjugation, the orbits are called *conjugacy classes*, and the stabilizers are [[Abelianisation of Groups#^6d802d|centralisers]].
 
 ## Classification of Actions
 
@@ -45,10 +45,6 @@ $\quad$
 > An action of $G$ on $X$ is said to be faithful if the only element of $G$ that acts as the identity on $X$ is the identity element of $G$. ^f7c6a0
 
 ## The Orbit-Stabilizer Theorem
-
-> [!definition] Centraliser
-> The *centraliser* of an element $x$ in a group $G$, is the set $C_G(x)$ of elements that commute with $x$. 
-> Or equivalently, the stabilizer of $x \in G$ under conjugation is the centralizer $C_G (x)$ of $x$.
 
 > [!theorem] Orbit-Stabilizer Theorem
 > Let $G$ be a group acting on a set $X$ . Let $x ∈ X$ and let $G_x$ be the stabilizer of $x$ in $G$ and let $\mathcal{O}(x$) be the orbit. Then the the map $$ \varphi\colon G/G_{x}\to \mathcal{O}(x),\quad gG_{x} \mapsto g\cdot x $$is a [[Relations and Functions#^042daf|bijection]]. In particular, if $G$ is finite then $|G|=|G_x||\mathcal{O}(x)|$. So the size of every orbit divides the order of the group. ^dac142
@@ -71,7 +67,7 @@ $\quad$
 *Proof*  Let $𝐺$ be a finite $𝑝$−group and make it act on itself by conjugation. Observe that:$$ \begin{aligned} |\mathcal{O}(x)|=1 \iff x\in Z(G)\\ \end{aligned} $$By [[Group Actions#^becec5|class equation]], we know that $|G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]$. Note that each $[G:C_G(x_i)]$ is a $p$-power, if $Z(G)$ were trivial, then there is only one term $|\mathcal{O}(e)|=1$, and all other terms are at least $p$, so $|G|=1+p^{k_{1}}+\cdots+p^{k_{m}}$ for some $k_{1},\dots, k_{m}\geq 1$, which is not divisible by $p$, a contradiction. Therefore, $Z(G)$ is non-trivial. $\square$
 
 > [!theorem] Cauchy’s Theorem
-> If $p$ is a [[Division and Prime#^47f235|prime]] dividing the order of a finite group $G$ then $G$ contains an element of order $p$.
+> If $p$ is a [[Division and Prime#^47f235|prime]] dividing the order of a finite group $G$ then $G$ contains an element of order $p$. ^ff735e
 
 *Proof*  Let $X=\{(x_{1}, \cdots, x_{p})\in G^{p} \mid x_{1}\cdots x_{p}=e\}$. The group $\Z/p\Z$ acts on $X$ by $$[n]\cdot (x_{1},\cdots, x_{p})=(x_{1+n},x_{2+n},\cdots, x_{p}, x_{1}, \cdots, x_{n}).  $$This is a well-defined group action because the multiplication of the RHS is $$ x_{1+n}\cdots x_{p}x_{1}\cdots x_{n}=(x_{1}\cdots x_{n})^{-1}(x_{1}\cdots x_{n})x_{1+n}\cdots x_{p}x_{1}\cdots x_{n}=e.$$Observe that $x\in X$ is a fixed point (i.e., $\mathcal{O}(x)=\{x\}$) if and only if $x=(a, a, \cdots, a)$ and $a^{p}=e$. If there were no elements of order $p$, then only $|\mathcal{O}((e,\cdots, e))|=1$, and all other $x$ will have $|\mathcal{O}(x)|=p$. It follows that $$|X|=|G|^{p-1}=1+kp$$for some $k\in\mathbb{N}$. This yields a contradiction because $p$ must divides $|G|^{p-1}$. $\square$
 

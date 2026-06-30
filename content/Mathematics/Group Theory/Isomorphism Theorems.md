@@ -28,10 +28,13 @@ Let $G$ be a group and $K, N \triangleleft G$ normal subgroups with $K \subset N
 ## The Correspondence Theorem
 
 > [!theorem] Correspondence Theorem
-> Let $φ \colon G \to G^\prime$ be a [[Relations and Functions#^042daf|surjective]] group homomorphism with kernel $K$ . Then for every subgroup $H^\prime \leq G^\prime$ the inverse image $φ^{−1}(H^\prime)$ is a subgroup of $G$ containing $K$ . The map $H^\prime \mapsto H = φ^{−1}(H^\prime)$ sets up a bijection between the sets$$ \{\text{subgroups of }G \text{ containing }K\} \stackrel{1:1} {\longleftrightarrow}\{\text{subgroups of } G^{\prime}\}$$Under this correspondence $H/K \cong H^{\prime}$, and $H^\prime \triangleleft G^{\prime}$ if and only if $H \triangleleft G$. In particular, that subgroups in a quotient $G/K$ are always of the form $H/K$ for a subgroup $K ≤H ≤G$.
+> Let $φ \colon G \to G^\prime$ be a [[Relations and Functions#^042daf|surjective]] group homomorphism with kernel $K$ . Then for every subgroup $H^\prime \leq G^\prime$ the inverse image $φ^{−1}(H^\prime)$ is a subgroup of $G$ containing $K$ . The map $H^\prime \mapsto H = φ^{−1}(H^\prime)$ sets up a bijection between the sets$$ \{\text{subgroups of }G \text{ containing }K\} \stackrel{1:1} {\longleftrightarrow}\{\text{subgroups of } G^{\prime}\}$$Under this correspondence $H/K \cong H^{\prime}$, and $H^\prime \triangleleft G^{\prime}$ if and only if $H \triangleleft G$. 
+> In particular, that subgroups in a quotient $G/K$ are always of the form $H/K$ for a subgroup $K ≤H ≤G$.
 
+^0f045a
 
 *Proof* See [1, Theorem 2.10.5] or [2, Theorem 2.7.2] or [3, Prop 2.76].
+For the "in particular" part, consider the quotient map $\pi\colon G \to G/K$, then any subgroup of $G/K$ is the image of a subgroup of $G$ containing $K$ under $\pi$, so is of the form $H/K$ for some $K ≤ H ≤ G$.
 
 **Prop** Let $G$ be a group and let $H , K \triangleleft G$ be two normal subgroups with $H K = G$ and $H \cap K = \{e\}$. Then $G \cong H \times K$.
 **Proof**
