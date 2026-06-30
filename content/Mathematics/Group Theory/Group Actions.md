@@ -3,7 +3,7 @@ created: 2023-11-22
 updated: 2024-10-28
 ---
 > [!definition] Group Action
-> Let $G$ be a group and $X$ a set. An *action* of $G$ on $X$ is a function
+> Let $G$ be a [[Groups, Order and Subgroups#^6e0960|group]] and $X$ a set. An *action* of $G$ on $X$ is a function
 > $$ G \times X \to X, \quad (g,x) \mapsto g\cdot x $$
 > satisfying
 > - $1 \cdot x = x$ for all $x \in X$, and
@@ -18,7 +18,7 @@ updated: 2024-10-28
 $\quad$
 
 > [!proposition]
-> A group action of $G$ on a set $X$ is the same as a homomorphism $G \to \operatorname{Sym}(X)$.
+> A group action of $G$ on a set $X$ is the same as a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]] $G \to \operatorname{Sym}(X)$.
 
 *Proof*  Given an action $G\times X \to X$ defined, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho : G \to \operatorname{Sym}(X), \quad g\mapsto \rho_g $$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh) $$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
 
