@@ -14,7 +14,7 @@ updated: 2024-10-28
 <b><u>e.g.</u></b>
 - $G$ (the group) acts on $G$ (the set) by left multiplication.
 - Let $H\leq G$. Then $G$ acts on the [[Cosets and Lagrange’s Theorem#^b825de|left coset space]] $G /H = \{g H \mid g \in G \}$ by left multiplication.
-- $G$ acts on itself by conjunction.
+- $G$ acts on itself by conjunction $x\mapsto g x g^{-1}$.
 $\quad$
 
 > [!proposition]

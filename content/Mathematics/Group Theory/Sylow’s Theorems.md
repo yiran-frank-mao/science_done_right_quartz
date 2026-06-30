@@ -1,7 +1,7 @@
 > [!theorem] Sylow’s Theorem I
-> Let $G$ be a group of order $p^nm$, where $p$ is a prime and $p\nmid m$. Then $G$ has a subgroup of order $p^n$, we call it $p$-Sylow subgroup.
+> Let $G$ be a group of order $p^{nm}$, where $p$ is a prime and $p\nmid m$. Then $G$ has a subgroup of order $p^n$, we call it $p$-Sylow subgroup.
 
-**Proof**  We use induction on $|G |$. Clearly for $|G | = 1$ there is nothing to prove.
+*Proof*  We use induction on $|G |$. Clearly for $|G | = 1$ there is nothing to prove. 
 
 > [!theorem] Sylow’s Theorem II
 > Let $G$ be a finite group and $p$ a prime dividing $|G|$. Then
