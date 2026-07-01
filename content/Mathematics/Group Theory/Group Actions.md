@@ -53,10 +53,12 @@ $\quad$
 
 *Proof*  The map is surjective: an inverse image of $gx \in \mathcal{O}(x)$ is $gH$. The map is injective since: $$ gx = hx \iff h^{-1}gx=x \iff h^{-1}g\in G_x \iff gG_{x}=hG_{x}. $$$\square$
 
-> [!corollary] Conjugacy Class Equation
-> Let $G$ be a finite group, acting on itself by conjugation. Then $$ |G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]. $$ ^becec5
+> [!corollary] Class Equation
+> Let $G$ be a finite group, acting on a finite set $X$. Then $$ |X|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:G_{x_{i}}]. $$ ^becec5
 
-*Proof*  We claim that $G$ is a disjoint union of conjugacy classes. That is, $\mathcal{O}(x)$ and $\mathcal{O}(y)$ are either the same or disjoint. Suppose $\mathcal{O}(x)\cap \mathcal{O}(y)$ is nonempty and we pick some $h\in \mathcal{O}(x)\cap \mathcal{O}(y)$, then $h=g_1xg_1^{-1}=g_2yg_2^{-1}$ for some $g_1,g_2\in G$. It follows that $y=g_2^{-1}g_1xg_1^{-1}g_2\in \mathcal{O}(x)$, so $\mathcal{O}(y)\subseteq \mathcal{O}(x)$. Similarly, $\mathcal{O}(x)\subseteq \mathcal{O}(y)$. Hence $\mathcal{O}(x)=\mathcal{O}(y)$. For every class $\mathcal{O}(x)$ we have $|\mathcal{O}(x)| = [G : C_G (x)]$ by [Orbit-Stabilizer Theorem](Group%20Actions.md#^dac142).  $\square$
+*Proof*  We claim that $X$ is a disjoint union of orbits. That is, $\mathcal{O}(x)$ and $\mathcal{O}(y)$ are either the same or disjoint. Suppose $\mathcal{O}(x)\cap \mathcal{O}(y)$ is nonempty and we pick some $h\in \mathcal{O}(x)\cap \mathcal{O}(y)$, then $h=g_{1}\cdot x=g_{2}\cdot y$ for some $g_1,g_2\in G$. It follows that $y=g_2^{-1}g_{1}\cdot x\in \mathcal{O}(x)$, so $\mathcal{O}(y)\subseteq \mathcal{O}(x)$. Similarly, $\mathcal{O}(x)\subseteq \mathcal{O}(y)$. Hence $\mathcal{O}(x)=\mathcal{O}(y)$. For every orbit $\mathcal{O}(x)$ we have $|\mathcal{O}(x)| = [G : G_{x_{i}}]$ by [Orbit-Stabilizer Theorem](Group%20Actions.md#^dac142).  $\square$
+
+<u><b>e.g.</b></u>  If a finite group $G$ acts on itself by conjugation, then the orbits are the conjugacy classes and the stabilizers are the [[Abelianisation of Groups#^6d802d|centralisers]]. The class equation is $$ |G|=|Z(G)|+\sum_{i}[G:C_G(x_i)] $$where $x_i$ are representatives of the non-trivial conjugacy classes.
 
 ## $p$-groups
 

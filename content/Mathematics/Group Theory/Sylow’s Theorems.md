@@ -11,8 +11,9 @@ Sylow's theorems are direct applications of group actions and form a generalisat
 $\quad$
 
 > [!lemma]
-> 
+> Suppose $X$ is a finite set and $G$ is a $p$-group acting on $X$, and $p$ does not divide $|X|$, then the action must have a fixed point.  ^a6b4e3
 
+*Proof*  Every orbit size is a power of $p$ (ref.  [[Group Actions#^dac142|Orbit-stabliser theorem]]), so each orbit has size either $1$ or a power of $p$, and a sum of such numbers can be non-multiple of $p$ only if at least one orbit has size $1$. $\square$
 
 > [!theorem] Second Sylow's Theorem
 > Let $G$ be a finite group and $p$ a [[Division and Prime#^47f235|prime]] dividing $|G|$. Then
@@ -20,7 +21,7 @@ $\quad$
 > - Any $p$-subgroup of $G$ is contained in a $p$-Sylow subgroup.
 > $\quad$
 
-*Proof*  Let $H$ be a $p$-subgroup, and $P$ be a $p$-Sylow subgroup. We will show that there is $g\in G$ such that $gHg^{-1}\leq P$. Once we have that, both parts of the theorem are proved. Consider the (left multiplication) action of $G$ on the [[Cosets and Lagrange’s Theorem#^b825de|left coset space]] $G/P$. While this is [[Group Actions#^065d30|transitive]], the (sub) action of $H$ must have a fixed point, because $H$ is a $p$-group, and $|G/P|=m$ is coprime to $p$. Let $gP\in G/P$ be a fixed point of the action of $H$, then for all $h\in H$, we have $hgP=gP$, which implies that $g^{-1}hg\in P$. Therefore, $gHg^{-1}\leq P$. $\square$
+*Proof*  Let $H$ be a $p$-subgroup, and $P$ be a $p$-Sylow subgroup. We will show that there is $g\in G$ such that $gHg^{-1}\leq P$. Once we have that, both parts of the theorem are proved. Consider the (left multiplication) action of $G$ on the [[Cosets and Lagrange’s Theorem#^b825de|left coset space]] $G/P$. While this is [[Group Actions#^065d30|transitive]], the (sub) action of $H$ must have a fixed point by [[Sylow’s Theorems#^a6b4e3|the above lemma]]. Let $gP\in G/P$ be a fixed point of the action of $H$, then for all $h\in H$, we have $hgP=gP$, which implies that $g^{-1}hg\in P$. Therefore, $gHg^{-1}\leq P$. $\square$
 
 > [!theorem] Sylow’s Theorem III
 > The number of $p$-Sylow subgroups in a finite group $G$ of order $p^nm$ with $(m,p) = 1$ is of the form $1+kp$ and divides $m$.
