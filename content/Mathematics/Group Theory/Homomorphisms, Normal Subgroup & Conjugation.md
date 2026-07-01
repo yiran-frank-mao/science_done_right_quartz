@@ -72,6 +72,13 @@ It is clear that $H_{G} \triangleleft G$. Now let $K\triangleleft G$ such that $
 > [!corollary]
 > $H$ is normal in $G$ if and only if $H_{G}=H$, if and only if $G=N_{G}(H)$. ^de930c
 
+> [!proposition]
+> Suppose $H,K\triangleleft G$, and $H\cap K=\{e\}$, then $H$ commutes with $K$. Moreover, the $H\times K$ can be embedded into $G$ by $(h,k)\mapsto hk$.
+> 
+
+*Proof*  For all $h\in H$ and $k\in K$, we have $hkh^{-1}k^{-1}\in K$ since $K\triangleleft G$, and $hkh^{-1}k^{-1}\in H$ since $H\triangleleft G$. Therefore, $hkh^{-1}k^{-1}\in H\cap K$, so $hkh^{-1}k^{-1}=e$ which implies that $hk=kh$. 
+$\square$
+
 ## Isomorphisms
 
 >[!definition] Group Isomorphism
