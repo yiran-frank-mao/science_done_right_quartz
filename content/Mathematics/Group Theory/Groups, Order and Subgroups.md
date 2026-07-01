@@ -38,7 +38,7 @@ $\square$
 > A group is called *abelian* if the composition law is commutative. ^6d511a
 
 > [!definition] Finite Group
-> A group is called *finite* if $G$ is a finite set; otherwise the group is called *infinite*. The order of a finite group is the number of elements in a finite group, denoted $|G|$. ^3bce31
+> A group is called *finite* if $G$ is a finite set; otherwise the group is called *infinite*. The *order* of a finite group is the number of elements in a finite group, denoted $|G|$. ^3bce31
 
 > [!definition] Power & Order of an Element
 > For an element $a$ and in a group $G$ and $n \in \mathbb{N}$ we write $a^{n}$ for the unambiguous composition of $a$ with itself $n$ times (this follows from generalized associativity). 
