@@ -36,7 +36,7 @@ $\quad$
 Now, restrict the action from $G$ to $P$. We claim that the action of $P$ on $X$ has exactly one fixed point, namely $P$. Firstly, since $|X|$ divides $m$, $p \nmid |X|$. So the fixed point exists because of the [[Sylow’s Theorems#^a6b4e3|lemma]]. Secondly, we show that $P$ is the only fixed point. Suppose $Q\in X$ is some $p$-Sylow subgroup that is fixed by $P$, that is, $aQ a^{-1}=Q$ for all $a\in P$. Then $P \leq N_{G}(Q)$. Thus, in $G_{Q}=N_{G}(Q)$, we have two $p$-Sylow subgroups, $P$ and $Q$. By [[Sylow’s Theorems#^f2aeb1|Sylow II]], they must be conjugate in $G_{Q}$, but $Q$ is normal in $N_{G}(Q)$, so $P=Q$. Therefore, $P$ is the only fixed point of the action of $P$ on $X$. By [[Group Actions#^becec5|class equation]], we have $$ |X|=1+kp $$for some integer $k$. $\square$
 
 > [!corollary]
-> A group $𝐺$ has exactly one $𝑝$-Sylow subgroup $𝑃$ if and only if $𝑃$ is normal.
+> A [[Groups, Order and Subgroups#^6e0960|group]] $G$ has exactly one $p$-Sylow subgroup $P$ if and only if $P$ is [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal]].
 
 <u><b>e.g.</b></u>  There is exactly one $7$-Sylow subgroup in a group of order $35$ and it is
 normal. More generally, If $|G| = pq$ with primes $p > q$, then the $p$-Sylow subgroup in $G$ is normal because the only integer of the form $1 + k p$ that divides $q$ is $1$.
