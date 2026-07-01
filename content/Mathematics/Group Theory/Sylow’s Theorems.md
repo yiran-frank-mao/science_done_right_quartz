@@ -51,7 +51,7 @@ Now, restrict the action from $G$ to $P$. We claim that the action of $P$ on $X$
 
 ## Examples of Sylow's Theorems
 
-<u><b>e.g.</b></u>  We can use Sylow's theorems to show that any group $G$ of order $15$ is isomorphic to $C_{5}\times C_{3}$. Note that $15=5\cdot 3$, so by [[Sylow’s Theorems#^73ca7e|Sylow III]], there is a unique $5$-Sylow subgroup $H\triangleright G$. Similarly, there is a unique $3$-Sylow subgroup $K\triangleright G$. Note that nontrivial elements of $H$ have order $5$, while elements of $K$ have order $3$, so they intersect only at the identity, i.e., $H\cap K=\{e\}$. Therefore, $G=HK$ and $|G|=|H||K|$, so $G\cong H\times K\cong C_{5}\times C_{3}$.
+<u><b>e.g.</b></u>  We can use Sylow's theorems to show that any group $G$ of order $15$ is isomorphic to $C_{5}\times C_{3}$. Note that $15=5\cdot 3$, so by [[Sylow’s Theorems#^73ca7e|Sylow III]], there is a unique $5$-Sylow subgroup $H\triangleright G$. Similarly, there is a unique $3$-Sylow subgroup $K\triangleright G$. Note that nontrivial elements of $H$ have order $5$, while elements of $K$ have order $3$, so they intersect only at the identity, i.e., $H\cap K=\{e\}$. Therefore, $G\cong H\times K\cong C_{5}\times C_{3}$ by the [[Homomorphisms, Normal Subgroup & Conjugation#^579a54|proposition]].
 
 ## References
 [Lecture 22: The Sylow Theorems](https://ocw.mit.edu/courses/res-18-011-algebra-i-student-notes-fall-2021/mit18_701f21_lect22.pdf)
