@@ -9,7 +9,7 @@ completed: true
 >Let $G$ and $H$ be groups. A *group homomorphism* $\varphi\colon G \to H$ is a map that satisfies $\varphi (ab) = \varphi (a) \varphi (b)$ for all $a,b \in G$. ^homo
 
 >[!proposition] 
->If $\varphi\colon G \to H$ is a group homomorphism, then the identity of $G$ is mapped to the identity of $H$.
+>If $\varphi\colon G \to H$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|group homomorphism]], then the identity of $G$ is mapped to the identity of $H$.
 
 *Proof*  Let $e_G$ and $e_H$ be the identity elements of $G$ and $H$, respectively. Then we have $\varphi(e_G) = \varphi(e_G e_G) = \varphi(e_G)\varphi(e_G)$. Multiplying both sides by $\varphi(e_G)^{-1}$, we get $\varphi(e_G) = e_H$. $\square$
 
