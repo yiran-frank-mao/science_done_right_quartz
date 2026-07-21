@@ -36,7 +36,7 @@
 
 >[!definition] Limit Point & Isolated Point
 > Let $S ⊂ X$. A point $x ∈ X$ is a *limit point* of $S$ if every [[Closure, Interior and Boundary#^eda962|neighbourhood]] of $x$ intersects $S \setminus \{x\}$. (Note that a limit point of $S$ does not need to belong to $S$). The set of all limit points is called the *derived set*.
-> A point in $S$ that is not a limit point of $S$ is called an *isolated point*. Equivalently, A point $x$ is an isolated point of $A$ if there is an open subset $U$ of $X$ such that $U\setminus A= \{x\}$.
+> A point in $S$ that is not a limit point of $S$ is called an *isolated point*. Equivalently, A point $x$ is an isolated point of $A$ if there is an open subset $U$ of $X$ such that $U\setminus A= \{x\}$. ^11cf9f
 
 >[!theorem] 
 >Let $X$ be a topological space and $A ⊂ X$ . Then $$\bar{A} = A \cup \{\text{limit points of } A\}$$

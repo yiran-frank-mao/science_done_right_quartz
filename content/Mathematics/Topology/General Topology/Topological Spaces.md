@@ -19,7 +19,7 @@ updated: 2024-09-26
 $\quad$
 
 > [!definition] Closedness
-> In a topological space $(T , \mathcal{T})$, a set $C$ is called closed if $T\setminus C$ is open. i.e. $T\setminus C\in \mathcal{T}$. ^0849a0
+> In a topological space $(X, \mathcal{T})$, a set $C$ is called *closed* if $X\setminus C$ is open. i.e. $T\setminus C\in \mathcal{T}$. ^0849a0
 
 >[!definition] Cofinite Topology & Cocountable Topology
 > A topology is cofinite if all open subsets are $T$, $\emptyset$, or the set whose complement is finite.

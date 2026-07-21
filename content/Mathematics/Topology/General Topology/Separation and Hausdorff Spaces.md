@@ -3,21 +3,27 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 ## Kolmogorov Space $(T_{0})$
 
 > [!definition] Kolmogorov Space
-> A [[Topological Spaces#^65c94a|topological space]] is called a *Kolmogorov space* or *$T_{0}$ space* if for any two distinct points in the space, there exists an open set that contains one of the points but not the other.
+> A [[Topological Spaces#^65c94a|topological space]] is called a *Kolmogorov space* or *$T_{0}$-space* if for any two distinct points in the space, there exists an open set that contains one of the points but not the other.
 
 ## Fréchet Space $(T_{1})$
 
 > [!definition] $T_{1}$ Space
-> A [[Topological Spaces#^65c94a|topological space]] is called *Fréchet* or *$T_{1}$ space* if for any two distinct points in the space, there exists an open set that contains one of the points but not the other, and vice versa.
+> A [[Topological Spaces#^65c94a|topological space]] is called *Fréchet* or *$T_{1}$-space* if for any two distinct points $x$, $y$ in the space, there exists open sets $U$, $V$ respectively such that $$x\in U, x\notin V, y\in V, y\notin U.$$
 
 > [!theorem]
-> A topological space $X$ is a Fréchet space if and only if every singleton set $\{x\}$ is closed for all $x∈X$.
+> The followings are equivalent:
+> - A topological space $X$ is $T_{1}$;
+> - Every singleton set $\{x\}$ is closed for all $x\in X$;
+> - For $A\subset X$, the intersection of all open sets containing $A$, is $A$.
 > 
+> $\quad$
+
+*Proof*  If $X$ is $T_{1}$, for any singleton set $\{x\}$, there are no [[Closure, Interior and Boundary#^11cf9f|limit points]], so the closure of $\{x\}$ is $\{x\}$, which is closed; Now assume every singleton set is closed, then for any point $y$ in the intersection of all open sets containing $A$, if $y\notin A$, since $\{y\}$ is closed, $X\setminus\{y\}$ is an open set containing $A$, but $y\notin X\setminus\{y\}$ which is a contradiction; Lastly, suppose the intersection of all open sets containing $A$ is $A$, and $x$, $y$ are two distinct points, then $X\setminus\{y\}$ and $X\setminus\{x\}$ serve as open sets containing $x$ and $y$ respectively, but not the other. $\square$
 
 ## Hausdorff Space $(T_{2})$
 
 >[!definition] Hausdorff Space
->A topological space $X$ is called *Hausdorff* if for any $x , y ∈ X$ with $x \neq y$ there exist [[Closure, Interior and Boundary#^eda962|open neighborhoods]] $U$ of $x$ and $V$ of $y$ such that $U ∩V = \emptyset$. ^f7bcc8
+> A topological space $X$ is called *Hausdorff* or $T_{2}$ if for any $x , y ∈ X$ with $x \neq y$ there exist [[Closure, Interior and Boundary#^eda962|open neighborhoods]] $U$ of $x$ and $V$ of $y$ such that $U ∩V = \emptyset$. ^f7bcc8
 
 >[!theorem] 
 > In Hausdorff spaces, [[Closure, Interior and Boundary#^72dffe|limits]] of sequences are unique if they exist.
