@@ -18,7 +18,7 @@ updated: 2024-09-26
 - Zariski Topology on $\R^{n}$: A set is open if it is $\R^n$, $\emptyset$, or its complement is the set of zeros of a polynomial with real coefficients.
 $\quad$
 
-> [!definition] Closed Sets
+> [!definition] Closedness
 > In a topological space $(T , \mathcal{T})$, a set $C$ is called closed if $T\setminus C$ is open. i.e. $T\setminus C\in \mathcal{T}$. ^0849a0
 
 >[!definition] Cofinite Topology & Cocountable Topology
