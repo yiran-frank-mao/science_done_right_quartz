@@ -1,3 +1,4 @@
+
 > [!definition] Cyclic Group
 > A [[Equinumerous and Countability#^79eb6c|countable]] [[Groups, Order and Subgroups#^6e0960|group]] $G$ is *cyclic* if
 > $$ G=\langle a\rangle=\left\{\ldots, a^{-3}, a^{-2}, a^{-1}, e, a, a^2, a^3, \ldots\right\} $$
@@ -25,9 +26,15 @@
 > [!theorem]
 > A product of two finite cyclic groups with coprime orders is cyclic. i.e., $\Z_{m}\times \Z_{n}\cong\Z_{mn}$ if and only if $\gcd(m,n)=1$.
 
-> [!theorem] The Structure Theorem for Finite Abelian Groups
-> Every finite abelian group $G$ is isomorphic to a direct product (sum) of cyclic groups: $$G\cong C_{1}\times C_{2}\times\cdots\times C_{n},$$such that $|C_{i}|$ divides $|C_{i+1}|$ for all $i\geq1$, and $|G|=|C_{1}|\cdots|C_{n}|$.
->  ^2a69ea
+
+## Abelian Groups as Product of Cyclic Groups
+
+> [!theorem] The Structure Theorem for Finitely Generated Abelian Groups
+> Every finite [[Groups, Order and Subgroups#^6d511a|abelian group]] $G$ is isomorphic to a direct product (sum) of cyclic groups: 
+> $$G\cong \Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z,$$such that $d_{i}$ divides $d_{i+1}$ for all $i\geq1$, and $|G|=d_{1}d_{2}\cdots d_{k}$.
+> More generally, every finitely generated abelian group $G$ is isomorphic to 
+> $$ \Z^{r} \oplus \Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z,$$
+> where $r$ is called the *rank* of $G$, $d_{i}$ divides $d_{i+1}$ for all $i\geq1$, and $\Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z$ is called the *torsion subgroup* of $G$. ^2a69ea
 
 <u><b>e.g.</b></u>  
 

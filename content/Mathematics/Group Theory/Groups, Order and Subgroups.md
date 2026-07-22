@@ -43,7 +43,11 @@ $\square$
 > [!definition] Power & Order of an Element
 > For an element $a$ and in a group $G$ and $n \in \mathbb{N}$ we write $a^{n}$ for the unambiguous composition of $a$ with itself $n$ times (this follows from generalized associativity). 
 > We also define $a^{0} := e$ and $a^{−n} = (a^{−1})^n$.
-> An element $g \in G$ has *finite order* if there is $n \in \mathbb{N}$ such that $g^n = e$; the minimal such $n$ is the *order* of $g$ and denoted $o(g)$. Otherwise we say that $g$ has *infinite order*.
+> An element $g \in G$ is a *torsion element* if there is $n \in \mathbb{N}$ such that $g^n = e$; the minimal such $n$ is the *order* of $g$ and denoted $o(g)$. Otherwise we say that $g$ has *infinite order*. 
+> > [!definition] Torsion Free Group
+> > A *torsion-free group* is a group $G$ in which every nonidentity element has infinite order.
+> > 
+> ^f826be
 
 > [!proposition] Laws of Exponents
 > Let $G$ be a group, let $a, b ∈ G$ , and let $m$ and $n$ be integers. Then
