@@ -6,7 +6,7 @@ cssclasses:
 ## The Fundamental Braid
 
 > [!definition] Positive Braid
-> A positive braid is the [[Braids and Braids Group#^311e98|braid]] that can be written as product of positive powers of generators. Denote the set of positive $n$-braids as $B_{n}^{+}$, clearly $B_{n}^{+}$ forms a monoid.
+> A positive braid is the [[Braids and Braid Groups#^311e98|braid]] that can be written as product of positive powers of generators. Denote the set of positive $n$-braids as $B_{n}^{+}$, clearly $B_{n}^{+}$ forms a monoid.
 
 > [!definition] Garside's Fundamental Braid
 > The Garside's fundamental braid $\Delta_{n}$ is the unique positive braid in $B_{n}^{+}$ such that any two strands cross exactly once. That is, it is the half twist of the identity braid. One representative of $\Delta_{n}$ in $B_{n}$ is $$\Delta_n = (\sigma_1 \sigma_2 \cdots \sigma_{n-1}) (\sigma_1 \sigma_2 \cdots \sigma_{n-2}) \cdots\ (\sigma_1 \sigma_2) \sigma_1 = \prod_{i=1}^{n-1}\prod_{j=1}^{n-i}\sigma_j.$$ We shall normally abbreviate $\Delta_{n}$ to the simpler form $\Delta$ once the braid group is given.

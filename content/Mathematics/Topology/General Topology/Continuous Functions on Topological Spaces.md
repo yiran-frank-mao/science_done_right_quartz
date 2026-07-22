@@ -41,7 +41,7 @@ updated: 2024-09-26
 
 **Corollary**  Let $X$ be a compact topological space and $f \colon X → \R$ continuous, where $\R$ is endowed with the standard topology. Then $f$ achieves its maximum and minimum value on $X$.
 
-**Lemma**  Let $X$ and $Y$ be topological spaces and let $X × Y$ be endowed with the [[Topological Spaces#^fbf303|product topology]]. Assume that $Y$ is compact. For $p ∈ X$, if $N ⊂ X ×Y$ is open with $\{p\}×Y ⊂ N$, then there is an [[Closure, Interior and Boundary#^eda962|open neighborhood]] $U$ of $p$ such that $U ×Y ⊂ N$.
+**Lemma**  Let $X$ and $Y$ be topological spaces and let $X × Y$ be endowed with the [[Constructions on Topological Spaces#^fbf303|product topology]]. Assume that $Y$ is compact. For $p ∈ X$, if $N ⊂ X ×Y$ is open with $\{p\}×Y ⊂ N$, then there is an [[Closure, Interior and Boundary#^eda962|open neighborhood]] $U$ of $p$ such that $U ×Y ⊂ N$.
 
 **Thrm**  If $X$ and $Y$ are compact topological spaces, then $X × Y$ is also compact in the product topology.
 

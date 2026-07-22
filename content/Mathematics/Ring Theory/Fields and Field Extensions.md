@@ -5,14 +5,14 @@ updated: 2025-08-31
 ## Field Extensions and Common Fields
 
 > [!definition] Field Extension
-> The field $K$ is an extension of the field $F$ if $F\subset K$. We write $K/F$ to denote this extension.
+> The field $K$ is an *extension* of the field $F$ if $F\subset K$. We write $K/F$ to denote this extension.
 
 Here are the three most important classes of fields:
 
 > [!definition] Number Fields, Finite Fields and Function Fields
-> A number field is a subfield of $\newcommand{\C}{\mathbb{C}}\C$. 
-> A finite field is a field with finitely many elements.
-> A function field is an extension field of $\C(t)$ of rational functions in one variable.
+> A *number field* is a subfield of $\newcommand{\C}{\mathbb{C}}\C$. 
+> A *finite field* is a field with finitely many elements.
+> A *function field* is an extension field of $\C(t)$ of rational functions in one variable.
 > 
 
 ## Algebraic and Transcendental Elements
@@ -69,7 +69,7 @@ Here are the three most important classes of fields:
 > It may not be easy to tell whether two algebraic elements $\alpha$ and $\beta$ generate isomorphic field extensions, but the above proposition provides a necessary condition: they must have the same degree over $F$.
 
 > [!definition] Isomorphism of Field Extensions
-> Let $K$ and $K'$ be extensions of the same field $F$. An isomorphism $\varphi\colon K \to K'$ that restricts to the identity on the subfield $F$ is called an $F$-isomorphism, or an isomorphism of field extensions. If there exists an $F$-isomorphism $\varphi\colon K \to K'$, $K$ and $K'$ are isomorphic extension fields. ^72b6c5
+> Let $K$ and $K'$ be extensions of the same field $F$. An isomorphism $\varphi\colon K \to K'$ that restricts to the identity on the subfield $F$ is called an *$F$-isomorphism*, or an *isomorphism of field extensions*. If there exists an $F$-isomorphism $\varphi\colon K \to K'$, $K$ and $K'$ are *isomorphic extension fields*. ^72b6c5
 
 > [!proposition] 
 > Let $F$ be a field, and let $\alpha$ and $\beta$ be elements of field extensions $K/F$ and $L/F$. Suppose that $\alpha$ and $\beta$ are algebraic over $F$. There is an $F$-isomorphism of fields $\sigma\colon F(\alpha) \to F(\beta)$ that sends $\alpha \mapsto \beta$ if and only if the irreducible polynomials for $\alpha$ and $\beta$ over $F$ are equal.

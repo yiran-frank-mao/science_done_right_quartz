@@ -17,8 +17,22 @@
 
 > [!theorem] Universal Property of the Subspace Topology
 > Let $X$ be a topological space and $Y$ a subspace (with the subspace topology). Then
-> - The inclusion map $\iota\colon Y\to X$ is continuous;
-> - 
+> 1. The inclusion map $\iota\colon Y\to X$ is continuous;
+> 2. For any topological space $W$, a map $f \colon W \to Y$ is continuous iff the composite $\iota \circ f \colon W \to X$ is continuous;
+> 3. The subspace topology is the unique topology on $Y$ with this property.
+> 
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/subspace_topology.svg" style="width:25%;"/>
+
+*Proof*  The continuity of the inclusion map follows from 2. For 2, suppose $f\colon W\to Y$ is continuous, then for any open set $U\subset X$, we have $(\iota\circ f)^{-1}(U)=f^{-1}(\iota^{-1}(U))=f^{-1}(U\cap Y)$, which is open in $W$. The converse is similar. To show such topology is unique, suppose $\mathcal{T}'$ is another topology on $Y$ with the same property. Then the identity map $\newcommand{\id}{\operatorname{id}}\id\colon (Y,\mathcal{T}')\to (Y,\mathcal{T})$ is continuous. Thus for any open set $U\in \mathcal{T}$, we have $\id^{-1}(U)=U\in \mathcal{T}'$. Similarly, we can show that $\mathcal{T}'\subset \mathcal{T}$. Therefore, $\mathcal{T}'=\mathcal{T}$. $\square$
+
+> [!corollary]
+> Suppose $f\colon X\to Y$ is continuous. Then
+> - The restriction $f\big|_{S}\colon S\to Y$ is continuous for any subspace $S\subset X$;
+> - If $W$ is a subspace of $Y$ that contains the image $f (X)$, then $f \colon X \to W$ is continuous;
+> - If $Y$ is a subspace of $Z$, then $f \colon X \to Z$ is continuous.
+> $\quad$
+
+*Proof*  This is obvious from the above theorem. $\square$
 
 ## Finite Product Spaces
 

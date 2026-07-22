@@ -21,7 +21,6 @@ Group theory is the study of algebraic structures known as groups. Groups are fu
 [[Sylow’s Theorems]]
 [[Free Groups and Relations]]
 [[Group Cohomology]]
-[[Applications]]
 
 ### Some Concrete Groups
 
@@ -47,7 +46,7 @@ For a more detailed classification of groups of small order, see [Groups of Smal
 [[Dihedral Groups]]
 [[Linear Groups]]
 [[Quaternion Group]]
-[[Braids and Braids Group]]
+[[Braids and Braid Groups]]
 
 ## More ...
 [[Ring Theory]]

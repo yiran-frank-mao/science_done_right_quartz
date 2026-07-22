@@ -281,10 +281,10 @@ Updates: [[Constructions on Categories]].
 - Updates: add definition of an algebra in [[Ring, Field and Integral Domain]].
 
 ## 10 Jan 2025
-- Updates: [[Braids and Braids Group]].
+- Updates: [[Braids and Braid Groups]].
 
 ## 24 Nov 2024
-- New page: [[Braids and Braids Group]], [[The Alexander and Markov Theorems]].
+- New page: [[Braids and Braid Groups]], [[The Alexander and Markov Theorems]].
 - Updates: [[Free Groups and Relations]].
 
 ## 13 Nov 2024

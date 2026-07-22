@@ -13,7 +13,7 @@ Knot theory is a branch of mathematics that studies the properties and classific
 [[Universal Quantum Invariant]]
 [[The Kontsevich Integral]]
 ### Braids
-[[Braids and Braids Group]]
+[[Braids and Braid Groups]]
 [[The Alexander and Markov Theorems]]
 [[Pure Braids]]
 [[Garside Normal Form]]

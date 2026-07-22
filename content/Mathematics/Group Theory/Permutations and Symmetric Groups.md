@@ -41,7 +41,7 @@
 ## Alternating Group
 
 > [!definition] Alternating Group
-> The alternating group $A_n$ is the subgroup of $S_n$ consisting of all even permutations. In other words, it is the kernel of $\sgn$. ^a33b58
+> The *alternating group* $A_{n}$ is the subgroup of $S_{n}$ consisting of all even permutations. In other words, it is the kernel of $\sgn$. ^a33b58
 
 **Def**  <i><u>Permutation Matrices</u></i>
 Let $\alpha \in S_n$ be a permutation. The permutation matrix corresponding to $\alpha$ is the unique linear map $T_\alpha : \R^{n} \rightarrow \R^{n}$ which permutes the standard basis as follows: $$ T_\alpha(e_i) = e_{\alpha(i)} $$

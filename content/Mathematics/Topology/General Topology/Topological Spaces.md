@@ -5,7 +5,7 @@ updated: 2024-09-26
 ## Topology
 
 >[!definition] Topological Space
-> A *topology* $\mathcal{T}$ on a set $X$ is a collection of subsets of $X$, which we agree to call the “open sets”, such that 
+> A *topology* $\mathcal{T}$ on a set $X$ is a collection of subsets of $X$, which we agree to call the *“open sets”*, such that 
 >1. $T$ and $\emptyset$ are open；
 >2. the [[Construction of Sets#^408460|intersection]] of finitely many open sets is open；
 >3. arbitrary [[Construction of Sets#^678b42|unions]] of open sets are open.

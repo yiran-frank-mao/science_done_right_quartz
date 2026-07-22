@@ -10,7 +10,7 @@
 <u><b>e.g.</b></u> 
 - Products in $\mathsf{Set}$ is [[Construction of Sets#^bd02ce|Cartesian products]].
 - Products in $\mathsf{Pos}$ is the meet (i.e., greatest lower bound) as we require that $p\times p\leq p$, $p\times q\leq q$ and $x\leq p,x\leq q\implies x\leq p\times q$.
-- Products in $\mathsf{Top}$ is the [[Topological Spaces#^fbf303|product topology]].
+- Products in $\mathsf{Top}$ is the [[Constructions on Topological Spaces#^fbf303|product topology]].
 $\quad$
 
 >[!proposition] 

@@ -5,7 +5,7 @@
 > 
 
 > [!definition] Solvable Group
-> A group $G$ is solvable if there exists a finite sequence of normal subgroups:
+> A group $G$ is *solvable* if there exists a finite sequence of normal subgroups:
 > $$\{e\}=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_k=G$$
 > such that each $G_{i}$ is normal in $G_{i+1}$, and each quotient $G_{i+1}/G_{i}$​ is abelian.
 

@@ -8,7 +8,7 @@
 > Two braids are equivalent if they are ambient isotopic in $I\times D^{2}$.
 
 > [!definition] Braid Stacking
-> 
+> *Braid stacking* is the operation on braids 
 
 
 
