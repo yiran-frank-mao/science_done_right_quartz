@@ -38,7 +38,7 @@
 > $F$ is a submersion if for each $x ∈ M$ there are charts $φ$ and $η$ such that the derivative of $η \circ F \circ φ^{-1}$ at $φ(x)$ is surjective.
 
 > [!definition] Smooth Embedding
-> A smooth map $F\colon M \to N$ is an embedding if $F$ is a homeomorphism onto its image with the [[Topological Spaces#^a942da|subspace topology]], and for any charts $\varphi$ and $\eta$ for $M$ and $N$ respectively, $\eta\circ F\circ \varphi^{-1}$ has derivative of full rank. ^9d6e60
+> A smooth map $F\colon M \to N$ is an embedding if $F$ is a homeomorphism onto its image with the [[Constructions on Topological Spaces#^a942da|subspace topology]], and for any charts $\varphi$ and $\eta$ for $M$ and $N$ respectively, $\eta\circ F\circ \varphi^{-1}$ has derivative of full rank. ^9d6e60
 
 > [!remark]
 > A smooth embedding is a topological embedding that is also an immersion.

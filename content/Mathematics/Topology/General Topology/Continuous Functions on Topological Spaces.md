@@ -3,8 +3,8 @@ created: 2024-05-22
 updated: 2024-09-26
 ---
 >[!definition] Continuous Function
->Let $(X,τ_{X})$ and $(Y,τ_Y)$ be [[Topological Spaces#^65c94a|topological spaces]] and $f \colon X →Y$ a function. $f$ is called continuous if for every open set $V$ in $Y$, $f^{−1}(V)$ is open in $X$. 
->$f$ is called continuous at $x ∈ X$ if, for any neighborhood $V$ of $f (x)$ in $Y$, the set $f^{−1}(V)$ is a neighborhood of $x$ in $X$. ^33ee5a
+> Let $(X,τ_{X})$ and $(Y,τ_Y)$ be [[Topological Spaces#^65c94a|topological spaces]] and $f \colon X \to Y$ a function. $f$ is called *continuous* if for every open set $V$ in $Y$, $f^{−1}(V)$ is open in $X$. 
+>$f$ is called *continuous at $x \in X$* if, for any [[Closure, Interior and Boundary#^eda962|neighborhood]] $V$ of $f (x)$ in $Y$, the set $f^{−1}(V)$ is a neighborhood of $x$ in $X$. ^33ee5a
 
 >[!theorem] 
 >Let $(X,τ_{X})$ and $(Y,τ_{Y})$ be topological spaces. Consider a function $f \colon X →Y$. The following are equivalent:
