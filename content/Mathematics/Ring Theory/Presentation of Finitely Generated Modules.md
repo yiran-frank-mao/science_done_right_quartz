@@ -33,22 +33,28 @@ as $P$ and $Q$ are invertible, thus preserve the module.
 > [!definition] Noetherian Ring
 > A ring is called *noetherian* if every ideal is finitely generated.
 
+<u><b>e.g.</b></u>  Clearly, every [[Principle Ideal Domains#^74559c|PID]] is noetherian.
 
-**Prop** Every PID is noetherian.
+> [!proposition]
+> Let $R$ be a ring, and $M\leq N$ be $R$-modules. Then if $M$ and $N/M$ are finitely generated so is $M$.
+> 
 
-**Prop** Let $R$ be a ring, and $M\leq N$ be $R$-modules. Then if $M$ and $N/M$ are finitely generated so is $M$.
+> [!proposition]
+> Let $R$ be a noetherian ring. Every submodule of a finitely generated $R$-module $N$ is finitely generated.
+> 
 
-**Prop** Let $R$ be a noetherian ring. Every submodule of a finitely generated $R$-module $N$ is finitely generated.
 
-**Prop** Let $R$ be a PID. A submodule $M$ of a finitely generated free module $N$ over a $R$ is free and $\operatorname{rank}(M ) ≤ \operatorname{rank}(N )$.
+> [!proposition]
+> Let $R$ be a PID. A submodule $M$ of a finitely generated free module $N$ over a $R$ is free and $\operatorname{rank}(M ) ≤ \operatorname{rank}(N )$.
+> 
+
 
 ## Structure Theorem
 
 > [!theorem] Structure of Finitely Generated Modules over PID
 > Let $R$ be a [[Principle Ideal Domains#^74559c|PID]] and $M$ a finitely generated $R$-module. There exist $k,r ∈\N_0$ and $d_1 \mid d_2 \mid\dots\mid d_k$ all non-zero in $R$ such that
 > $$ M \cong R/(d_1)⊕\dots⊕R/(d_k)⊕R^r $$
-> Moreover, $m, k$ and the ideals $(d1) ⊃ \dots ⊃ (dk )$ are uniquely determined.
-
+> Moreover, $m, k$ and the ideals $(d_{1}) \supset \dots \supset (d_{k})$ are uniquely determined.
 
 > [!theorem] The Structure Theorem for Finitely Generated Abelian Groups
 > Every finite [[Groups, Order and Subgroups#^6d511a|abelian group]] $G$ is isomorphic to a direct product (sum) of cyclic groups: 
