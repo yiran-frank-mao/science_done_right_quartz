@@ -30,9 +30,9 @@ as $P$ and $Q$ are invertible, thus preserve the module.
 
 ## Noetherian Rings
 
-**Def** _Noetherian Ring_
+> [!definition] Noetherian Ring
+> A ring is called *noetherian* if every ideal is finitely generated.
 
-A ring is called noetherian if every ideal is finitely generated.
 
 **Prop** Every PID is noetherian.
 
@@ -44,30 +44,18 @@ A ring is called noetherian if every ideal is finitely generated.
 
 ## Structure Theorem
 
-**Thrm** _Structure of Finitely Generated Modules over PID_
+> [!theorem] Structure of Finitely Generated Modules over PID
+> Let $R$ be a [[Principle Ideal Domains#^74559c|PID]] and $M$ a finitely generated $R$-module. There exist $k,r ∈\N_0$ and $d_1 \mid d_2 \mid\dots\mid d_k$ all non-zero in $R$ such that
+> $$ M \cong R/(d_1)⊕\dots⊕R/(d_k)⊕R^r $$
+> Moreover, $m, k$ and the ideals $(d1) ⊃ \dots ⊃ (dk )$ are uniquely determined.
 
-Let $R$ be a PID and $M$ a finitely generated $R$-module. There exist $k,r ∈\N_0$ and $d_1 \mid d_2 \mid\dots\mid d_k$ all non-zero in $R$ such that
 
-$$ M \cong R/(d_1)⊕\dots⊕R/(d_k)⊕R^r $$
-
-Moreover, $m, k$ and the ideals $(d1) ⊃ \dots ⊃ (dk )$ are uniquely determined.
-
-**Def** _Euclidean Ring_
-
-A domain $R$ **is called euclidean if it is equipped with a map $δ : R \backslash \{0\} \to \N_0$, called a degree function, such that
-
-1. $δ(f ) ≤ δ(f g)$ for all non-zero elements $f,g ∈ R$
-2. For all $f , g ∈ R$ **with $f \neq 0$, there exist $q , r ∈ R$ **with $g = q f + r$, where either $r = 0$ or $δ(r) < δ(f )$.
-
-**e.g.** $\Z$ with $δ(·) = | · |$, $F[x]$ with $δ = \deg$, and $\Z[i]$ with $δ(a +bi) = a^2 +b^2$, are all euclidean rings.
-
-**Prop** Every euclidean ring is a PID.
-
-**Thrm** _Structure Theorem for Finitely Generated Abelian Groups_
-
-Let $G$ be a finitely generated abelian group. There exist $k,r ∈\N_0$ and positive integers $d_1 \mid d_2 \mid\dots\mid d_k$ such that
-
-$$ G\cong \Z_{d_1} \times \Z_{d_2} \times \dots \times \Z_{d_k} \times \Z^r $$
+> [!theorem] The Structure Theorem for Finitely Generated Abelian Groups
+> Every finite [[Groups, Order and Subgroups#^6d511a|abelian group]] $G$ is isomorphic to a direct product (sum) of cyclic groups: 
+> $$G\cong \Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z,$$such that $d_{i}$ divides $d_{i+1}$ for all $i\geq1$, and $|G|=d_{1}d_{2}\cdots d_{k}$.
+> More generally, every finitely generated abelian group $G$ is isomorphic to 
+> $$ \Z^{r} \oplus \Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z,$$
+> where $r$ is called the *rank* of $G$, $d_{i}$ divides $d_{i+1}$ for all $i\geq1$, and $\Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z$ is called the *torsion subgroup* of $G$. ^2a69ea
 
 **Corollary** _Structure of Linear Operators on Finite Dimensional Vector Spaces_
 

@@ -28,7 +28,7 @@ tags:
 ## Field and Domain
 
 > [!definition] Zero Divisor & Integral Domain
-> A zero divisor in a ring $R$ is a non-zero element $a$ such that $ab = 0$ for some non-zero $b \in R$. A ring without zero divisors is called an integral domain. In other words, an integral domain is a ring in which the product of any two non-zero elements is non-zero. ^domain
+> A *zero divisor* in a ring $R$ is a non-zero element $a$ such that $ab = 0$ for some non-zero $b \in R$. A ring without zero divisors is called an *integral domain*. In other words, an integral domain is a ring in which the product of any two non-zero elements is non-zero. ^domain
 
 > [!definition] Field
 > A field is a [[Ring, Field and Integral Domain#^178485|ring]] $F$ in which $1 \neq 0$ and every non-zero element is invertible, that is $F^× = F \backslash \{0\}$. ^575174

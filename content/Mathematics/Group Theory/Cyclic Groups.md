@@ -26,17 +26,7 @@
 > [!theorem]
 > A product of two finite cyclic groups with coprime orders is cyclic. i.e., $\Z_{m}\times \Z_{n}\cong\Z_{mn}$ if and only if $\gcd(m,n)=1$.
 
-
-## Abelian Groups as Product of Cyclic Groups
-
-> [!theorem] The Structure Theorem for Finitely Generated Abelian Groups
-> Every finite [[Groups, Order and Subgroups#^6d511a|abelian group]] $G$ is isomorphic to a direct product (sum) of cyclic groups: 
-> $$G\cong \Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z,$$such that $d_{i}$ divides $d_{i+1}$ for all $i\geq1$, and $|G|=d_{1}d_{2}\cdots d_{k}$.
-> More generally, every finitely generated abelian group $G$ is isomorphic to 
-> $$ \Z^{r} \oplus \Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z,$$
-> where $r$ is called the *rank* of $G$, $d_{i}$ divides $d_{i+1}$ for all $i\geq1$, and $\Z/d_{1}\Z \oplus \cdots \oplus \Z/d_{k}\Z$ is called the *torsion subgroup* of $G$. ^2a69ea
-
-<u><b>e.g.</b></u>  
+![[Presentation of Finitely Generated Modules#^2a69ea]]
 
 > [!proposition]
 > Let $C_{n}$ be a cyclic group of order $n$. For each $m\mid n$, there exists a unique subgroup $H$ of $C_{n}$ of order $m$, and it is cyclic. Furthermore, the subgroups of $C_{n}$ are precisely the cyclic groups of order dividing $n$. ^937b31
