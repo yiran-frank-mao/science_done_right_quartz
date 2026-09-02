@@ -1,19 +1,21 @@
+---
+tags:
+  - Radon-Nikodym-theorem
+---
 ## Signed Measures and Total Variation
 
 > [!definition] Signed Measure
-> A signed measure on a measurable space $(X,\mathcal{S})$ is a function $\mu\colon \mathcal{S}\to (-\infty,\infty]$ such that $\mu(\emptyset)=0$ and $$\mu\left(\bigcup_{k=1}^\infty E_k\right)=\sum_{k=1}^\infty\mu(E_k)$$for any countable collection $\{E_k\}_{k=1}^\infty$ of disjoint sets in $\mathcal{S}$.
-> 
+> A *signed measure* on a [[Measurable Spaces and Functions#^60a516|measurable space]] $(X,\mathcal{S})$ is a function $\mu\colon \mathcal{S}\to (-\infty,\infty]$ such that $\mu(\emptyset)=0$ and $$\mu\left(\bigcup_{k=1}^\infty E_k\right)=\sum_{k=1}^\infty\mu(E_k)$$for any countable collection $\{E_k\}_{k=1}^\infty$ of disjoint sets in $\mathcal{S}$. ^f16851
 
-<u><b>e.g.</b></u>  Suppose $(X,\mathcal{S},\lambda)$ is a [[Measurable Spaces and Functions#^c2e020|measure space]], and $f\colon X\to\R$ is a measurable function. Then we can define a signed measure $\mu$ on $(X,\mathcal{S})$ by $$\mu(E):=\int_{E} f\dd\lambda.$$
+<u><b>e.g.</b></u>  Suppose $(X,\mathcal{S},\lambda)$ is a [[Measurable Spaces and Functions#^c2e020|measure space]], and $f\colon X\to\R$ is integrable. Then we can define a signed measure $\mu$ on $(X,\mathcal{S})$ by $$\mu(E):=\int_{E} f\dd\lambda.$$
 
 > [!definition] Total Variation
 > Let $μ$ be a signed measure on a measurable space $(X,\mathcal{S})$. The total variation of $μ$, denoted by $|\mu|$, is defined for any measurable set $A\in\mathcal{S}$ as: $$|\mu|(A) = \sup_{ A = \bigsqcup_{i=1}^n A_i } \left\{ \sum_{i=1}^\infty |\mu(A_i)| \right\}.$$
 
-> [!theorem] Jordan decomposition 
+> [!theorem] Jordan Decomposition 
 > Let $\nu$ be a signed measure on a measurable space $(X, \mathcal{F})$. Then there exist two mutually singular finite non-negative measures $\nu^+$ and $\nu^-$, called the *positive variation* and *negative variation* of $\nu$, such that: 
 > $$\nu = \nu^+ - \nu^-, \nu^+(E) = \sup_{A \subset E} \nu(A), \nu^-(E) = \sup_{B \subset E} -\nu(B), \nu^+ = \frac{1}{2}(|\nu|+\nu),\nu^- = \frac{1}{2}(|\nu|-\nu)$$
 > This decomposition is unique and is known as the *Jordan decomposition* of $\mu$.
-
 
 ## Absolute Continuity and Mutual Singularity
  
@@ -25,17 +27,19 @@
 > Two signed measures $\mu$ and $\nu$ on a measurable space $(X, \mathcal{S})$ are said to be mutually singular, denoted $\mu\perp\nu$, if there exists disjoint measurable sets $A,B\in\mathcal{S}$ such that $\nu$ is supported on $A$ and $\mu$ is supported on $B$.
 
 > [!definition] Absolute Continuity
-> Suppose $\mu$ is a measure and $\nu$ is a signed measure on a measurable space $(X, \mathcal{S})$. We say that $\nu$ is absolutely continuous with respect to $\mu$, denoted $\nu\ll\mu$, if for every measurable set $E\in\mathcal{S}$, if $\mu(E)=0$, then $\nu(E)=0$.
+> Suppose $\mu$ is a [[Measurable Spaces and Functions#^c2e020|measure]] and $\nu$ is a [[Absolute Continuity#^f16851|signed measure]] on a measurable space $(X, \mathcal{S})$. We say that $\nu$ is *absolutely continuous* with respect to $\mu$, denoted $\nu\ll\mu$, if for every measurable set $E\in\mathcal{S}$, if $\mu(E)=0$, then $\nu(E)=0$.
 > 
 
-<u><b>e.g.</b></u>  Suppose $(X,\mathcal{S}, \mu)$ is a measure space, and $f\colon X\to [0,\infty]$ is a [[Measurable Spaces and Functions#^11c83a|measurable function]]. Then we can define another measure $\nu$ on $(X,\mathcal{S})$ by $$\nu(E):=\int_{E} f\dd\mu.$$Then clearly that whenever $\mu(E)=0$, the integral $\int_{E} f\dd\mu=0$, so $\nu\ll\mu$. Moreover, if $\mu$ is $\sigma$-finite and and $\mu(f^{-1}(\infty))=0$ then $\nu$ is also $\sigma$-finite.
+<u><b>e.g.</b></u>  Suppose $(X,\mathcal{S}, \mu)$ is a measure space, and $f\colon X\to [0,\infty]$ is a [[Measurable Spaces and Functions#^11c83a|measurable function]]. Then we can define another measure $\nu$ on $(X,\mathcal{S})$ by $$\nu(E):=\int_{E} f\dd\mu.$$Then clearly that whenever $\mu(E)=0$, the integral $\int_{E} f\dd\mu=0$, so $\nu\ll\mu$. Moreover, if $\mu$ is $\sigma$-finite and $\mu(f^{-1}(\infty))=0$ then $\nu$ is also $\sigma$-finite.
 
 > [!proposition]
-> Suppose $\mu$ and $\nu$ are two measures on a measurable space $(X, \mathcal{S})$. If $\nu(X)<\infty$ and $\nu\ll\mu$, then for all $\varepsilon>0$, there exits some $\delta>0$ such that $\mu(E)\leq \delta$ implies $\nu(E)\leq \varepsilon$ for all measurable sets $E$.
+> Suppose $\mu$ and $\nu$ are two [[Measurable Spaces and Functions#^c2e020|measures]] on a measurable space $(X, \mathcal{S})$. If $\nu(X)<\infty$ and $\nu\ll\mu$, then for all $\varepsilon>0$, there exits some $\delta>0$ such that $\mu(E)\leq \delta$ implies $\nu(E)\leq \varepsilon$ for all measurable sets $E$.
 > 
 
+*Proof*  We prove by contradiction. Suppose there exists some $\varepsilon>0$ such that for all $n\in \mathbb{N}$, there exists some measurable set $E_{n}\in \mathcal{S}$ with $\mu(E_{n})\leq \frac{1}{2^{n}}$ but $\nu(E_{n})>\varepsilon$. Consider the set $E=\bigcap_{n=1}^{\infty}\bigcup_{k=n}^{\infty} E_{k}$. Then we have $\mu(E)\leq \mu(E_{n}) \leq 2^{1-n}$ for all $n$, so $\mu(E)=0$. However, we also have $\nu(E)= \lim_{n\to \infty}\nu(\bigcup_{k=n}^{\infty}E_{k})>\varepsilon$ (ref. [[Measurable Spaces and Functions#^9a0cff|measure of decreasing intersection]]), which is a contradiction. Therefore, the proposition holds. $\square$
+
 > [!theorem] Radon-Nikodym Theorem
-> Suppose $\mu$ is a $\sigma$-finite measure and $\nu$ is a $\sigma$-finite signed measure on the same measurable space $(X,\mathcal{S})$. There exits unique measures $\nu_{a}$ and $\nu_{s}$, such that
+> Suppose $\mu$ is a [[Measurable Spaces and Functions#^a59ebb|$\sigma$-finite measure]] and $\nu$ is a $\sigma$-finite [[Absolute Continuity#^f16851|signed measure]] on the same measurable space $(X,\mathcal{S})$. There exits unique measures $\nu_{a}$ and $\nu_{s}$, such that
 > - $\nu=\nu_{a}+\nu_{s}$,
 > - $\nu_{s}\perp \mu$,
 > - $\nu_{a}\ll\mu$.
@@ -43,5 +47,7 @@
 > Moreover, there exits a unique integrable function $f\in L^{1}(X,\mu)$ such that $$\nu_{a}(E)=\int_{E} f\dd\mu$$ for all measurable sets $E\in \mathcal{S}$.
 
 > [!remark]
-> In the case that $\nu\ll \mu$, $\nu_{s}=0$, and $\nu=\nu_{a}$.
+> In the case that $\nu\ll \mu$, $\nu_{s}=0$, and $\nu=\nu_{a}$. The first part of this theorem is known as the *Lebesgue decomposition theorem*, and the second part is known as the *Radon-Nikodym theorem*.
 > 
+
+*Proof*  

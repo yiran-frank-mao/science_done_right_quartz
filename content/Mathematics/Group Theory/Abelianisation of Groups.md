@@ -25,15 +25,49 @@
 
 *Proof*  For any $g, a,b\in G$, we have $g[a,b]g^{-1}=g aba^{-1}b^{-1}g^{-1}=[gag^{-1}, gbg^{-1}]$, so $[G,G]$ is normal. Moreover, for any $x,y\in G$, we have $$ xy[G,G]=xy (y^{-1}x^{-1}yx)[G,G]=yx[G,G],$$so $G/[G,G]$ is abelian. $\square$
 
-**Prop** 
-
 **Prop**  <i><u>Universal Property of Abelianisation</u></i>
+
+> [!definition] Derived Series
+> The *derived series* of a [[Groups, Order and Subgroups#^6e0960|group]] $G$ is a series of normal groups by repeatedly taking commutator subgroup: 
+> $$G^{(0)}:=G,\quad G^{(1)}:=[G,G],\quad G^{(n+1)}:=[G^{(n)},G^{(n)}].$$
+> Thus $G\triangleright G^{(1)}\triangleright G^{(2)}\triangleright\cdots$. 
+> A group $G$ is *solvable* if its derived series reaches the trivial group after finitely many steps. ^57e861
+
+<u><b>e.g.</b></u>  
+- The smallest non-solvable group is the [[Permutations and Symmetric Groups#^a33b58|alternating group]] $A_{5}$.
+- Any [[Groups, Order and Subgroups#^6d511a|abelian group]] is solvable.
+$\quad$
+
+> [!proposition] 
+> A [[Groups, Order and Subgroups#^6e0960|group]] $G$ is solvable iff there exists a finite sequence of normal subgroups:
+> $$\{e\}=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_k=G$$
+> such that each $G_{i}$ is normal in $G_{i+1}$, and each quotient $G_{i+1}/G_{i}$​ is [[Groups, Order and Subgroups#^6d511a|abelian]].
+
+> [!proposition]
+> If $G$ is solvable, any quotient of $G$ is solvable.
+
+> [!proposition]
+> A simple solvable group must be cyclic of a prime order. 
+> 
+
+*Proof*  Suppose $G$ is both simple and solvable. Then $[G,G]$ can be either trivial or the whole group. But $[G,G]$ can not be $G$ because $G$ is solvable, so it is trivial. This means $G$ is abelian. Finally, note that any finite simple abelian group is cyclic with a prime order. $\square$
+
+> [!corollary]
+> Every nontrivial finite solvable group has a normal subgroup of prime index.
+> 
+
+*Proof*  Suppose $G$ is finite and solvable. We choose a maximal normal subgroup $H$. Then $G/H$ is simple and solvable, so is cyclic with a prime order $p$. $H$ is then the desired normal subgroup.
+
+> [!theorem] Feit–Thompson Theorem
+> Every finite group of odd order is [[Abelianisation of Groups#^57e861|solvable]].
+> 
+
 
 ## Centre
 
 > [!definition] Centre
 > The *center of a group $G$* is the set of elements that commute with every element of $G$. That is
-> $$ Z(G):=\{ z\in G \mid \forall g \in G,zg=gz \} $$
+> $$ Z(G):=\{ z\in G \mid \forall g \in G,zg=gz \} $$ ^afc081
 
 > [!proposition]
 > The centre $Z(G)$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal subgroup]] of $G$.
@@ -49,5 +83,10 @@
 > The *centraliser* of an element $x$ in a [[Groups, Order and Subgroups#^6e0960|group]] $G$, is the set $C_{G}(x)$ of elements that commute with $x$. 
 > Or equivalently, it is the [[Group Actions#^705c54|stabilizer]] of $x \in G$ under conjugation. ^6d802d
 
-## Derived Series
+> [!definition] Lower Central Series and Nilpotency
+> The *lower central series* of a group $G$ is defined recursively:
+> $$ C^0(G) = G, \quad C^{k+1}(G) = [C^{k}(G),G] $$
+> A [[Groups, Order and Subgroups#^6e0960|group]] $G$ is *nilpotent* if $C^{N}(G) = \{0\}$ for some $N\in\N$. ^f7e0b3
+> 
+
 

@@ -3,6 +3,9 @@ completed: true
 tags:
   - fundamental-group
   - algebraic-topology
+  - fundamental-group-of-torus
+  - simply-connectedness
+  - Brouwer-fixed-point-theorem
 ---
 ## Group Structure on Loops
 
@@ -45,12 +48,12 @@ Fundamental groups are powerful in many (other) realms of mathematics.
 $\quad$ ^01b5b9
 
 > [!proposition]
-> Suppose $X$ and $Y$ are topological spaces, then the fundamental group $\pi_{1}(X\times Y,x_{0}\times y_{0})$ is isomorphic to $\pi_{1}(X,x_{0})\times \pi_{1}(Y,y_{0})$.
+> Suppose $X$ and $Y$ are topological spaces, then the fundamental group $\pi_{1}(X\times Y,(x_{0}, y_{0}))$ is isomorphic to $\pi_{1}(X,x_{0})\times \pi_{1}(Y,y_{0})$.
 > 
 
 *Proof*  This is simply because the universal property of product spaces implies that there is a one-to-one correspondence between the loops at $(x_{0},y_{0})$ in $X\times Y$ and the pairs of loops $(f,g)$ in $X$ and $Y$ at $(x_{0},y_{0})$. Then taking homotopy classes for the both sets gives the two groups. $\square$
 
-<u><b>e.g.</b></u>  We can directly deduce that the fundamental group of a torus $\pi_{1}(S^{1}\times S^{1},(1,1))\cong \Z\times \Z$.
+<u><b>e.g.</b></u>  We can directly deduce that the fundamental group of a torus $$\pi_{1}(T^{2},(1,1))=\pi_{1}(S^{1}\times S^{1},(1,1))\cong \Z\times \Z.$$Topologically, this means that first looping around the hole, then looping around the tube is the same as first lopping around the tube and then the hole.
 
 > [!proposition]
 > Suppose $x_{0}\in A\subset X$. If $X$ retracts onto $A$, then the inclusion induced $i_{*}\colon \pi_{1}(A,x_{0})\to \pi_{1}(X,x_{0})$ is [[Relations and Functions#^042daf|injective]].
@@ -66,5 +69,8 @@ $\quad$ ^01b5b9
 
 
 > [!definition] Simple Connectedness
-> A [[Topological Spaces#^65c94a|topological space]] is simply-connected if it is [[Connectedness and Paths#^630354|path-connected]] and its fundamental group is trivial. ^3b18ee
+> A [[Topological Spaces#^65c94a|topological space]] is *simply-connected* if it is [[Connectedness and Paths#^630354|path-connected]] and its fundamental group is trivial. ^3b18ee
 
+> [!theorem]
+> Any simply connected surface is either homeomorphic to $\R^{2}$, or $S^{2}$.
+> 

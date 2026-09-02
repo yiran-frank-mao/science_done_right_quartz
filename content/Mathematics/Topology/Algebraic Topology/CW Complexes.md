@@ -6,6 +6,7 @@ tags:
   - cw-complex
   - fundamental-group
   - euler-characteristic
+  - real-projective-spaces
 completed: true
 ---
 ## Procedure to Construct CW Complexes
@@ -13,27 +14,47 @@ completed: true
 > [!definition] CW Complex
 > A *CW complex* is a [[Topological Spaces#^65c94a|topological space]] $X$ constructed inductively from disks of increasing dimension. The construction proceeds as follows:
 > - Step $0$ ($0$-skeleton): Start with a discrete set of points, $X^0$, called the *0-cells*.
-> - Step $n$ ($n$-skeleton): Assuming the $(n-1)$-skeleton $X^{n-1}$ has been constructed, the *n-skeleton* $X^n$ is formed by attaching $n$-dimensional disks $D^n_\alpha$ to $X^{n-1}$ via *attaching maps* $\varphi_\alpha\colon S^{n-1} \to X^{n-1}$, where $S^{n-1}$ is the boundary of $D^n_\alpha$. The space $X^{n}$ is the quotient space:
->    $$X^n = X^{n-1} \coprod_{\alpha} D^n_\alpha \bigg/ (x \sim \varphi_\alpha(x) \text{ for } x \in \partial D^n_\alpha).$$
+> - Step $n$ ($n$-skeleton): Assuming the $(n-1)$-skeleton $X^{n-1}$ has been constructed, the *n-skeleton* $X^n$ is formed by attaching $n$-dimensional disks $D^n_\alpha$ to $X^{n-1}$ via *attaching maps* $\varphi_\alpha\colon \partial D^{n}_{\alpha} \to X^{n-1}$, where $\partial D^{n}_{\alpha}\cong S^{n-1}$ is the boundary of $D^{n}_{\alpha}$. The space $X^{n}$ is the quotient space:
+>    $$X^{n} = X^{n-1} \coprod_{\alpha} D^n_\alpha \bigg/ (x \sim \varphi_\alpha(x)) \quad\text{for } x \in \partial D^{n}_{\alpha}.$$
 > - Step $∞$ (The full space): The CW complex $X$ is the union of all its skeletons, $X = \bigcup_{n=0}^{\infty} X^n$, endowed with the weak topology: a set $A \subset X$ is open (or closed) if and only if its intersection $A \cap X^n$ with every skeleton is open (or closed) in $X^n$.
 > 
-> An *n-cell* refers to one of the disks $D^n$ attached at step $n$. Specifically, $D^{n}_{\alpha}$ is a *closed n-cell*, and its [[Closure, Interior and Boundary#^871863|interior]], $\text{int}(D^n_\alpha)$, is an *open n-cell*. For each cell $D^{n}_{\alpha}$, the composition of the quotient map with the inclusion of the disk $D^n_\alpha$ gives a *characteristic map* $\Phi_\alpha\colon D^n_\alpha \to X$. ^e68c52
+> An *n-cell* refers to one of the disks $D^n$ attached at step $n$. Specifically, $D^{n}_{\alpha}$ is a *closed n-cell*, and its [[Closure, Interior and Boundary#^871863|interior]], $(D^{n}_{\alpha})^{\circ}$, is an *open n-cell*. For each cell $D^{n}_{\alpha}$, the composition of the quotient map with the inclusion of the disk $D^n_\alpha$ gives a *characteristic map* $\Phi_\alpha\colon D^n_\alpha \to X$. ^e68c52
 
 > [!remark]+ Why "CW"?
 > The C in CW stands for "closure-finite", and the W for "weak" topology.
 > 
 
 <u><b>e.g.</b></u>
-- The sphere $S^2$ can be given a CW structure with:
+- A $1$–dimensional CW complex is a [[Basics of Graphs#^9c650d|graph]] where loops and multiple edges between vertices are allowed.
+- CW structures on a [[Topological Spaces#^65c94a|topological space]] is not unique. For instance, the sphere $S^{2}$ can be built from a 0-cell and a 2-cell. It can also be given a CW structure with:
 	- **Two 0-cells**: $v$ and $w$. So the 0-skeleton is $(S^2)^0 = \{v, w\}$.
 	- **Two 1-cells**: $a$ and $b$. The attaching map for $a$ sends the endpoints of $D^1$ to $v$ and $w$, and the map for $b$ sends the endpoints to $w$ and $v$. The 1-skeleton is two arcs joining $v$ and $w$, forming a circle.
-	- **Two 2-cells**: $E$ and $F$. These correspond to the two hemispheres. Their boundaries ($S^1$) are attached to the 1-skeleton. The attaching map for $E$ is $\varphi_E = a \cdot b$, which traces the circular 1-skeleton. Similarly, the attaching map for $F$ is $\varphi_F = b \cdot a$, which traces the same circle.
+	- **Two 2-cells**: $E$ and $F$. These correspond to the two hemispheres. Their boundaries ($S^1$) are attached to the 1-skeleton. The attaching map for $E$ is $\varphi_E = a \cdot b$, which traces the circular 1-skeleton. Similarly, the attaching map for $F$ is $\varphi_{F} = b \cdot a$, which traces the same circle.
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/CW_complex_sphere.svg" alt="CW_complex_sphere" style="width:20%;"/>
 - The closed orientable surface of genus $g$, $M_g$, has a very economical CW structure:
 	- **One 0-cell**: $v$.
 	- **$2g$ 1-cells**: $a_1, b_1, \dots, a_g, b_g$. The 1-skeleton $(M_g)^1$ is a wedge of $2g$ circles.
 	- **One 2-cell**: $E$. This single 2-cell is attached to the 1-skeleton. Its boundary is identified with the path given by the product of commutators: $$\varphi(\partial E) = [a_1, b_1] [a_2, b_2] \cdots [a_g, b_g] = a_1 b_1 a_1^{-1} b_1^{-1} \cdots a_g b_g a_g^{-1} b_g^{-1}.$$
 
+
+> [!definition] Subcomplex
+> A *subcomplex* of a CW complex $X$ is a closed subspace $A \subset X$ that is a union of cells. We call $(X, A)$ a *CW pair*.
+> 
+
+> [!proposition]
+> If $X$ and $Y$ are CW complexes, then $X ×Y$ has a CW structure, with cells the products of cells of $X$ and $Y$. The $n$-cells of $X \times Y$ are the products of an $i$-cell of $X$ and a $(n-i)$-cell of $Y$, for $0 \leq i \leq n$.
+
+> [!remark]
+> If $X$ and $Y$ have infinitely many cells, then the CW topology on $X \times Y$ may be finer than the product topology.
+
+> [!proposition]
+> If $(X,A)$ is a CW pair, then the quotient $X/A$ inherits a cell structure. Explicitly, there will be one new $0$-cell, the image $A$ in $X/A$; for each cell not in $A$, we get a cell of $X/A$ with attaching map being the composition of the quotient map with the attaching map of the cell in $X$.
+> 
+
+<u><b>e.g.</b></u> 
+- Consider the genus-$g$ surface $M_{g}$ with subcomplex $A$ being the 1–skeleton. Then $M_{g}/A$ is $S^{2}$, since it has exactly one 2–cell attached to one 0–cell.
+- Since valid quotients and products of CW complexes are again CW complexes, [[Operations on Spaces#^a942da|suspensions]], and [[Operations on Spaces#^a942da|wedge sums]] of CW complexes are also CW complexes.
+$\quad$
 
 ## Euler Characteristic
 
@@ -43,7 +64,7 @@ completed: true
 > This generalizes the familiar formula $V-E+F$ for polyhedra. ^ddd7c6
 
 <u><b>e.g.</b></u>
-- For the 2-sphere $S^2$, using the structure with 2 0-cells, 2 1-cells, and 2 2-cells: $\chi(S^2) = 2 - 2 + 2 = 2$.
+- For the 2-sphere $S^2$, using the structure with two 0-cells, two 1-cells, and two 2-cells: $\chi(S^2) = 2 - 2 + 2 = 2$.
 - For the genus $g$ surface $M_g$, using the structure with 1 0-cell, $2g$ 1-cells, and 1 2-cell: $\chi(M_g) = 1 - 2g + 1 = 2 - 2g$.
 $\quad$
 

@@ -45,7 +45,7 @@ Let $R_1 , R_2$ be rings. Then $R_1 × R_2$, with coordinate-wise addition and m
 ## Prime and Maximal Ideals
 
 > [!definition] Prime Ideal
-> Let $R$ be a ring. An ideal $P \triangleleft R$ is prime if $P \neq R$ and $ab \in P$ implies that either $a \in P$ or $b \in P$. ^da4561
+> Let $R$ be a ring. An ideal $P \triangleleft R$ is *prime* if $P \neq R$ and $ab \in P$ implies that either $a \in P$ or $b \in P$. ^da4561
 
 > [!theorem]
 > Let $R$ be a ring. $P \triangleleft R$ is prime if and only if $R/P$ is an integral domain.

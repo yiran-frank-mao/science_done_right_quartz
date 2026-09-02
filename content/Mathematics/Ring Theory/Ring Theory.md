@@ -20,6 +20,7 @@ Rings are algebraic structures that generalize fields: multiplication need not b
 
 ### Noncommutative Rings and Algebras
 [[Noncommutative Rings]]
+[[Division Algebras]]
 [[Grading and Filtration]]
 [[Coalgebra and Hopf Algebra]]
 

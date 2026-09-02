@@ -1,4 +1,17 @@
-We restricted to commutative unital rings for the previous pages, now let us have a look at some noncommutative rings.
+We restricted to commutative unital rings for the previous pages, now let us have a look at some noncommutative rings. In particular, the associative algebras.
+
+## Ideals in Non-Commutative Rings
+
+> [!definition] Ideals in Non-Commutative Rings
+> When the ring is non-commutative we have three variants of an ideal: an abelian subgroup $I ⊂ R$ in a ring $R$ is
+> - left ideal if $ra∈I$ for all $a∈I$ and $r ∈R$
+> - right ideal if $ar ∈I$ for all $a∈I$ and $r ∈R$
+> - a two-sided ideal if it is both left and right.
+>$\quad$
+
+<u><b>e.g.</b></u> In $M_n(F)$ the left (right) ideals are matrices having some columns (rows) consisting of zeros and the other columns (rows) arbitrary. There are no non-trivial two-sided ideals in $M_n (F )$, it is a simple ring.
+
+## Associative Algebras
 
 > [!definition] Algebra
 > An *algebra* is a (possibly non-commutative) [[Ring, Field and Integral Domain#^178485|ring]] $A$ equipped with a [[Vector Spaces#^f4b63e|vector space]] structure over a [[Ring, Field and Integral Domain#^575174|field]] $F$ such that the multiplication is compatible with the scalar multiplication. That is, the ring multiplication $\cdot\colon A\times A\to A$ is [[Tensors and Tensor Products#^da894d|bilinear]]: for all $u,v,w\in A$ and $a\in F$ we have $$(au+v)\cdot w=a(u\cdot w)+(v\cdot w), \quad w\cdot(au+v)=a(w\cdot u)+(w\cdot v).$$ The algebra is called non-associative if the multiplication is non-associative. It is unital if there is an element $1 ∈ A$ such that $1\cdot a=a\cdot 1=a$ for all $a ∈ A$. ^2c3d07
@@ -16,13 +29,8 @@ We restricted to commutative unital rings for the previous pages, now let us hav
 
 *Proof*  We can identify each $\sum_{i\leq n}a_{i}g_{i}$ with a function $f\colon G\to F$ defined by $f(g_{i})=a_{i}$ for $i\leq n$ and $f(g)=0$ for all other $g\in G$. Under this identification, the multiplication in $F[G]$ corresponds to the convolution product of functions: $$(f*h)(g)=\sum_{x\in G}f(x)h(x^{-1}g).$$ $\square$
 
-## Ideals in Non-Commutative Rings
-
-> [!definition] Ideals in Non-Commutative Rings
-> When the ring is non-commutative we have three variants of an ideal: an abelian subgroup $I ⊂ R$ in a ring $R$ is
-> - left ideal if $ra∈I$ for all $a∈I$ and $r ∈R$
-> - right ideal if $ar ∈I$ for all $a∈I$ and $r ∈R$
-> - a two-sided ideal if it is both left and right.
->$\quad$
-
-<u><b>e.g.</b></u> In $M_n(F)$ the left (right) ideals are matrices having some columns (rows) consisting of zeros and the other columns (rows) arbitrary. There are no non-trivial two-sided ideals in $M_n (F )$, it is a simple ring.
+> [!definition] Simple and Semisimple Algebra
+> An algebra is *simple*, if it has no nontrivial ideals;
+> is *semisimple* if has no nontrivial nilpotent ideals.
+> 
+> 

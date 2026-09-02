@@ -8,7 +8,7 @@ completed: true
 ## Tensorial Representation of Random Variables
 
 > [!definition] Tensor Product of Vector Valued Random Variables
-> Suppose $\newcommand{\var}{\mathrm{Var}}\newcommand{\cov}{\mathrm{Cov}}\newcommand{\R}{\mathbb{R}}\newcommand{\E}{\mathbb{E}} X$ is a finite [[Random Variable and Probability Space#^9cf9be|sample space]]. The tensor product of two [[Random Variable and Probability Space#^a0b9ff|random variables]] $v\colon X\to V$ and $w\colon X\to W$ with $V$ and $W$ being vector spaces is defined as $$v\otimes w \colon X\to V^{*}\otimes W,\quad x\mapsto v(x)\otimes w(x),$$
+> Suppose $\newcommand{\var}{\mathrm{Var}}\newcommand{\cov}{\mathrm{Cov}}\newcommand{\R}{\mathbb{R}}\newcommand{\E}{\mathbb{E}} X$ is a finite [[Random Variable and Probability Space#^c9205a|sample space]]. The tensor product of two [[Random Variable and Probability Space#^a0b9ff|random variables]] $v\colon X\to V$ and $w\colon X\to W$ with $V$ and $W$ being vector spaces is defined as $$v\otimes w \colon X\to V^{*}\otimes W,\quad x\mapsto v(x)\otimes w(x),$$
 > where $V^{*}\otimes W$ is the [[Tensors and Tensor Products#^732917|tensor product]] of the [[Mathematics/Linear Algebra/Duality#^6c7627|dual space]] of $V$ and $W$. Notice that $v\otimes w$ is also a random variable.
 
 > [!definition] General Expected Value

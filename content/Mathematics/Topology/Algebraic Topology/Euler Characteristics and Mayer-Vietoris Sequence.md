@@ -1,7 +1,8 @@
 ## Euler Characteristic Revisited
 
-> [!definition] Rank of a Group
-> The *rank* of a finitely generated [[Groups, Order and Subgroups#^6d511a|abelian group]] is the number of $\newcommand{\Z}{\mathbb{Z}}\Z$ summands in its decomposition.
+Recall the rank of an abelian group:
+
+![[Presentation of Finitely Generated Modules#^2a69ea]]
 
  <u><b>e.g.</b></u>  $\text{rank}(\Z \oplus \Z \oplus \Z/69\Z) = 2$.
 

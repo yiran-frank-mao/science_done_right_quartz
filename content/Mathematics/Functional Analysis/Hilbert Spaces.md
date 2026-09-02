@@ -3,9 +3,6 @@
 > [!definition] Hilbert Space
 > A *Hilbert space* is a [[Number Systems#^5fea5c|real]] or [[Complex Numbers#^a81924|complex]] [[Inner Products#^f0c22c|inner product space]] that is also [[Complete Metric Space#^67b510|complete]] with respect to the [[Metric Spaces#^0eacc7|metric]] induced by the [[Inner Products#^f0c22c|inner product]]. ^ae0212
 
-> [!definition] Separable Normed Space
-> A [[Normed Spaces#^345fd3|normed space]] is *separable* if it has a [[Equinumerous and Countability#^79eb6c|countable]] [[Closure, Interior and Boundary#^b560bf|dense]] subset. i.e. it contains a countable subset whose closure is the entire space. ^acb78f
-
 <u><b>e.g.</b></u>
 - The finite dimensional complex spaces $\newcommand{\H}{\mathcal{H}}\C^{n}$ are separable Hilbert spaces, with the inner product being $$\langle (a_{1},\dots,a_{n}),(b_{1},\dots,b_{n})\rangle=\sum_{i=1}^{n}a_{i}\bar{b}_{i}.$$
 - An infinite-dimensional analogue of the above example is the space $$\ell^{2}(\Z):=\left\{(\dots,a_{-2},a_{-1},a_{0},a_{1},a_{2},\dots):a_{i}\in\C,\sum_{i=-\infty}^{\infty}|a_{i}|^{2}<\infty\right\}$$with the inner product $$\langle (a_{n})_{n\in\Z},(b_{n})_{n\in\Z}\rangle=\sum_{i=-\infty}^{\infty}a_{i}\bar{b}_{i}.$$

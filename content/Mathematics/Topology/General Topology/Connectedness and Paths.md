@@ -3,9 +3,9 @@ created: 2024-05-25
 updated: 2024-09-26
 ---
 >[!definition] Connectedness
->A [[Topological Spaces#^65c94a|topological space]] $X$ is called *connected* if there do not exist two disjoint nonempty open sets $U$ and $V$ such that $X = U ∪V$.  ^946cc4
+>A [[Topological Spaces#^65c94a|topological space]] $X$ is called *connected* if there do not exist two disjoint nonempty open sets $U$ and $V$ such that $X = U \sqcup V$.  ^946cc4
 
-<u><b>e.g.</b></u>  The set $\newcommand{\Q}{\mathbb{Q}}\newcommand{\R}{\mathbb{R}}\Q$ of [[Number Systems#^e8a24a|rational numbers]] in the standard Euclidean topology is not connected because $\Q = U ∪V$ with $$U=\mathbb{Q}\cap(-\infty,\pi)\quad\text{ and }\quad V=\mathbb{Q}\cap(\pi,\infty)$$
+<u><b>e.g.</b></u>  The set $\newcommand{\Q}{\mathbb{Q}}\newcommand{\R}{\mathbb{R}}\Q$ of [[Number Systems#^e8a24a|rational numbers]] in the standard Euclidean topology is not connected because $\Q = U \sqcup V$ with $$U=\mathbb{Q}\cap(-\infty,\pi)\quad\text{ and }\quad V=\mathbb{Q}\cap(\pi,\infty).$$
 
 >[!proposition] 
 > Let $\R$ be endowed with the standard Euclidean topology. A set $I ⊂ \R$ is connected if and only if $I$ is an [[Number Systems#^fd03c6|interval]].
@@ -39,7 +39,7 @@ updated: 2024-09-26
 *Proof*  If $X$ is not connected, then there exist disjoint nonempty open sets $U$,$V$ in $X$ with $X =U∪V$. Let $x ∈U$ and $y ∈V$. Since $X$ is path-connected, there is a path $f \colon [0,1]→X$ joining $x$ to $y$. By the continuity of $f$, $f^{−1}(U)$ and $f^{−1}(V)$ are disjoint nonempty open sets in $[0,1]$ with $$[0,1]=f^{-1}(X)=f^{-1}(U\cup V)=f^{-1}(U)\cup f^{-1}(V)$$Therefore $[0,1]$ is not connected, which is a contradiction. $\square$
 
 > [!proposition]
-> If $U$ is an open set in $\R^{n}$, then $U$ is connected if and only if $U$ is path connected.
+> If $U$ is an open set in $\R^{n}$, then $U$ is [[Connectedness and Paths#^946cc4|connected]] if and only if $U$ is [[Connectedness and Paths#^630354|path connected]].
 
 *Proof*  It suffices to show that if $U$ is nonempty connected, then it is path connected. Fix some $x\in U$, we define $V:=\{y\in U: \text{there is a path joining }x \text{ and } y\}$. Clearly $V\neq \emptyset$ because $x\in V$. By the [[Connectedness and Paths#^7a08b9|proposition]], it is enough to show that $V$ is both open and closed in $U$, which implies that $V=U$, hence $U$ is path connected. For any $y\in V$, since $U$ is open, there is a open ball $B_{r}(y)$ contained in $U$. Let $\gamma\colon [0,1]\to U$ be the path from $x$ to $y$. Note that for all $z\in B_{r}(y)$, we can define a path $\gamma_{z}\colon [0,1]\to U$ from $x$ to $z$ by $$\gamma_{z}(t)=\begin{cases} \gamma(2t),\quad& t\in[0,1/2],\\ (2t-1)z+(2-2t)y,\quad& t\in[1/2,1], \end{cases}$$connecting $x$ and $z$, so $z\in V$, which shows that $V$ is open in $U$.
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/connectedness_in_R%5En.svg" alt="connectedness_in_R^n" style="width:35%;"/>

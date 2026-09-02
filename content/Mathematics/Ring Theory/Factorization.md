@@ -11,13 +11,21 @@ We can extend the notion of factorization to rings (integral domains) other than
 
 > [!definition] Factorization & Division in Integral Domain
 > Suppose $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]]. We have the following definitions:
-> - $u\in R$ is a unit if $u$ is invertible in $R$.
-> - $a$ divides $b$ if there exists $c\in R$ such that $b=ac$.
-> - $a$ is a proper divisor of $b$ if $a$ divides $b$, say $b=ac$, with neither $a$ nor $c$ units.
-> - $a$ and $b$ are associates if $a$ divides $b$ and $b$ divides $a$. i.e. $a=ub$ for some unit $u$.
-> - $a$ is irreducible if $a$ is not a unit and it has no proper divisors, i.e. its only divisors are units and associates.
-> - $p$ is prime if $p$ is not a unit and whenever $p$ divides $ab$, then $p$ divides $a$ or $p$ divides $b$.
+> - $u\in R$ is a *unit* if $u$ is invertible in $R$.
+> - $a$ *divides* $b$ if there exists $c\in R$ such that $b=ac$.
+> - $a$ is a *proper divisor* of $b$ if $a$ divides $b$, say $b=ac$, with neither $a$ nor $c$ units.
+> - $a$ and $b$ are *associates* if $a$ divides $b$ and $b$ divides $a$. i.e. $a=ub$ for some unit $u$.
+> - $a$ is *irreducible* if $a$ is not a unit and it has no proper divisors, i.e. its only divisors are units and associates of $p$.
+> - $p$ is *prime* if $p$ is not a unit and whenever $p$ divides $ab$, then $p$ divides $a$ or $p$ divides $b$.
 >$\quad$ ^d98fbf
+
+> [!proposition]
+> In any [[Ring, Field and Integral Domain#^domain|integral domain]], every prime element is irreducible.
+
+*Proof*  Let $p$ be a prime element in an integral domain $R$. Suppose $p=ab$ for some $a,b\in R$. Then $p$ divides $ab$. Since $p$ is prime, $p$ divides $a$ or $p$ divides $b$. Without loss of generality, suppose $p$ divides $a$. Then $a=pc$ for some $c\in R$. Substituting this back into $p=ab$, we have $p=pcb$, and since $R$ is an integral domain, we can cancel $p$ to get $1=cb$. Therefore $b$ is a unit, and $p$ is irreducible. $\square$
+
+> [!remark] The converse is not true
+> Consider $\Z[\sqrt{-5}]$. $2$ is irreducible, $2\mid (1+\sqrt{-5})(1-\sqrt{-5})$, but $2$ does not divide either of the factors.
 
 > [!definition] Size Function
 > A size function on an [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ can be any function $\sigma\colon R\setminus\{0\}\to \Z^{+}$ whose domain is the set of nonzero elements of $R$ and whose range is the set of nonnegative integers.
@@ -25,7 +33,7 @@ We can extend the notion of factorization to rings (integral domains) other than
 <u><b>e.g.</b></u> A multiplicative size function is especially useful, because it allows us to convert the factorization problem in an arbitrary integral domain to a factorization problem in $\Z$ (even $\newcommand{\N}{\mathbb{N}}\N$). For example, consider $\Z[\sqrt{-5}]$. We can define a size function $\sigma$ on $\Z[\sqrt{-5}]$ such that $\sigma(z):=\|z\|^{2}$, where $\|\cdot \|$ denotes the [[Complex Numbers#^add791|complex modulus]]. Thus, it satisfies$$\sigma(zw)=\|zw\|^{2}=\|z\|^{2}\|w\|^{2}=\sigma(z)\sigma(w),$$which is multiplicative. Let's consider $1+\sqrt{-5}\in\Z[\sqrt{-5}]$, whose size is $6$. As $6$ can only be factored into $2\cdot 3$ in $\N$, but there is neither size $2$ nor size $3$ element in $\Z[\sqrt{-5}]$, hence we can conclude that $1+\sqrt{-5}$ is irreducible in $\Z[\sqrt{-5}]$.
 
 > [!definition] Euclidean Domain
-> An integral domain $R$ is an Euclidean domain if there exists a size function $\sigma$ on $R$ such that division with remainder is possible: for all $a,b\in R$ with $b\neq 0$, there exist $q,r\in R$ such that $a=qb+r$ with $r=0$ or $\sigma(r)<\sigma(b)$.
+> An integral domain $R$ is an *Euclidean domain* if there exists a size function $\sigma$ on $R$ such that division with remainder is possible: for all $a,b\in R$ with $b\neq 0$, there exist $q,r\in R$ such that $a=qb+r$ with $r=0$ or $\sigma(r)<\sigma(b)$.
 
 <u><b>e.g.</b></u>  
 - $\Z$ is an Euclidean domain with size function be the absolute value.
@@ -35,7 +43,7 @@ We can extend the notion of factorization to rings (integral domains) other than
 $\quad$
 
 > [!proposition]
-> A Euclidean domain is a [[Principle Ideal Domains#^74559c|principal ideal domain]]. ^5f7518
+> An Euclidean domain is a [[Principle Ideal Domains#^74559c|principal ideal domain]]. ^5f7518
 
 *Proof*  We mimic the proof that [$\Z$ is a principle ideal domain](Principle%20Ideal%20Domains#%5E9b5851) once again. Let $R$ be an Euclidean domain with size function $\sigma$. Let $I\triangleleft R$ be a non trivial ideal. Pick $n\in I$ such that $\sigma(n)$ is minimal. We claim $I=(n)$. For any $m\in I$, by the remainder theorem, we have $m=qn+r$ for some $q,r\in R$ with $\sigma(r)<\sigma(n)$. Since $n,m\in I$, it follows that $r=m-qn\in I$. As $\sigma(n)$ is minimal, we must have $r=0$. Therefore $m=qn\in (n)$. $\square$
 
@@ -62,7 +70,7 @@ $\quad$
 ## Unique Factorization Domains
 
 > [!definition] Unique Factorization Domain
-> An integral domain $R$ is a unique factorization domain if it has the following properties:
+> An integral domain $R$ is a *unique factorization domain* if it has the following properties:
 > - Factoring terminates.
 > - The irreducible factorization of an element $a$ is unique, up to order and associates.
 
@@ -73,14 +81,6 @@ $\quad$
 > - Factoring terminates.
 > - $R$ does not contain an infinitely strictly increasing chain $(a_{1})\subsetneq(a_{2})\subsetneq(a_{3})\subsetneq\cdots$ of principle ideals.
 >$\quad$
-
-> [!proposition]
-> In any [[Ring, Field and Integral Domain#^domain|integral domain]], every prime element is irreducible.
-
-*Proof*  Let $p$ be a prime element in an integral domain $R$. Suppose $p=ab$ for some $a,b\in R$. Then $p$ divides $ab$. Since $p$ is prime, $p$ divides $a$ or $p$ divides $b$. Without loss of generality, suppose $p$ divides $a$. Then $a=pc$ for some $c\in R$. Substituting this back into $p=ab$, we have $p=pcb$, and since $R$ is an integral domain, we can cancel $p$ to get $1=cb$. Therefore $b$ is a unit, and $p$ is irreducible. $\square$
-
-> [!remark] The converse is not true
-> Consider $\Z[\sqrt{-5}]$. $2$ is irreducible, $2\mid (1+\sqrt{-5})(1-\sqrt{-5})$, but $2$ does not divide either of the factors.
 
 > [!theorem]
 > If $\newcommand{\Frac}{\operatorname{frac}}R$ is an integral domain, in which factoring terminates, then $R$ is a unique factorization domain if and only if every irreducible element is prime. ^94c6f6

@@ -1,5 +1,5 @@
 >[!definition] Ring Homomorphism
->A ring homomorphism is a map $φ \colon R → S$ between rings which is compatible with addition, multiplication and maps the unit of $R$ to that of $S$. A ring homomorphism which admits an inverse is an isomorphism. Equivalently, it is a bijective homomorphism. ^16be07
+> A *ring homomorphism* is a map $\varphi \colon R \to S$ between [[Ring, Field and Integral Domain#^178485|rings]] which is compatible with addition, multiplication and maps the unit of $R$ to that of $S$ (if they are unital). A ring homomorphism which admits an inverse is an isomorphism. ^16be07
 
 > [!proposition]
 > For every ring $R$ there is a unique homomorphism $\mathbb{Z} → R$.
@@ -18,8 +18,8 @@
 
 > [!definition] Ideal
 > A *left ideal* in a ring $R$ is a subset $I$ of $R$ such that 
-> - $0\in R$
-> - $I$ is closed under addition
+> - $0\in R$;
+> - $I$ is closed under addition;
 > - If $a\in I$ then $ra\in I$ for all $r\in R$.
 >
 > Equivalently, it is a non-empty subset such that for $a_1 ,\dots,a_k ∈I$ we have $r_1 a_1 +\dots+r_k a_k ∈I$ for every $r_1,\dots,r_k ∈R$. We write $I\triangleleft R$ in such case. ^395472

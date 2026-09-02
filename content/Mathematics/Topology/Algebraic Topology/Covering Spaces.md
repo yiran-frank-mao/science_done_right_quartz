@@ -8,7 +8,7 @@ completed: true
 ## Covering Spaces
 
 > [!definition] Covering Space
-> A covering space is a continuous map $p\colon \widetilde{X}\to X$ such that each point $x\in X$ has an open neighborhood $U$ such that
+> A *covering space* is a continuous map $p\colon \widetilde{X}\to X$ such that each point $x\in X$ has an open neighborhood $U$ such that
 > - $p^{-1}(U)$ is a disjoint union of open sets in $\widetilde{X}$: $p^{-1}(U)=\bigsqcup_{\alpha\in A} V_{\alpha}$,
 > - for each $\alpha\in A$, the restriction $p|_{V_{\alpha}}\colon V_{\alpha}\to U$ is a homeomorphism.
 >
@@ -32,17 +32,22 @@ $\quad$
 
 <u><b>e.g.</b></u>
 * The map $p\colon \mathbb{R} \to S^1$ is a universal cover, since $\mathbb{R}$ is simply-connected.
-* The universal cover of a torus $T$ is $\R^{2}$.
 * For $n \ge 2$, the map $p\colon S^n \to \RP^n$ is a universal cover because $S^n$ is simply-connected.
 * The universal cover of $X = S^1 \lor S^1$ is an infinite 4-valent tree, which is the Cayley graph of the free group on two generators.
 $\quad$
+
+> [!proposition]
+> Suppose $\widetilde{X}$ is the universal cover of $X$, $\widetilde{Y}$ is the universal cover of $Y$, then $\widetilde{X\times Y}$ is $\widetilde{X}\times \widetilde{Y}$ up to homeomorphism.
+> 
+
+<u><b>e.g.</b></u>  The universal cover of a torus $T^{2}\cong S^{1}\times S^{1}$ is $\R^{2}$.
 
 ## The Homotopy Lifting Property
 
 > [!proposition] Homotopy Lifting Property
 > Let $p\colon \widetilde{X} \to X$ be a covering space. Let $F\colon Y \times I \to X$ be a [[Homotopy Types#^2c10b4|homotopy]], and let $\tilde{f}_0\colon Y \to \widetilde{X}$ be a lift of the initial map $f_0 = F(\cdot, 0)$ (meaning $p \circ \tilde{f}_0 = f_0$). Then, there exists a unique lift of the entire homotopy, $\tilde{F}\colon Y \times I \to \widetilde{X}$, such that $p \circ \tilde{F} = F$ and $\tilde{F}(\cdot, 0) = \tilde{f}_0$.
 > The property is summarized by the following commutative diagram:
-> $$\begin{CD}Y \times \{0\} @>{\tilde{f}_0}>> \widetilde{X} \\@V{i}VV @VV{p}V \\Y \times I @>>{F}> X\end{CD}$$ ^4faa27
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/covering_space_homotopy_lifting.svg" style="width:45%;"/> ^4faa27
 
 *Proof Sketch*  The goal is to find a unique map $\tilde{F}\colon Y \times I \to \tilde{X}$ that makes the full diagram commute. For each point $y \in Y$, we can lift the path $t \mapsto F(y, t)$ to a path in $\tilde{X}$ starting at $\tilde{f}_0(y)$. We can then find a neighborhood $N_y$ of $y$ and lift the homotopy on the "tube" $N_y \times I$ to a map $\tilde{F}\colon N_y \times I \to \tilde{X}$. Because these local lifts are unique, they must agree on the overlaps of neighborhoods, such as on $(N_{y_0} \cap N_{y_1}) \times I$. This allows us to "glue" these local lifts together to construct the desired global lift $\tilde{F}$. $\square$
 
@@ -55,6 +60,11 @@ A key result connecting the topology of a covering space to its base space invol
 
 > [!remark]
 > This injectivity allows us to view $\pi_1(\widetilde{X}, \tilde{x}_0)$ as a subgroup of $\pi_1(X, x_0)$. The image, $p_*(\pi_1(\widetilde{X}, \tilde{x}_0))$, consists of all loop classes in $X$ whose representative loops lift to loops in $\widetilde{X}$ based at $\tilde{x}_0$. ^92b0f0
+
+> [!proposition]
+> For any [[Covering Spaces#^b33205|covering space]] $p\colon (\widetilde{X}, \tilde{x}_0) \to (X, x_0)$, the homomorphism induced on the higher homotopy groups, $p_*\colon \pi_n(\widetilde{X}, \tilde{x}_0) \to \pi_n(X, x_0)$ for $n\geq 2$ is an isomorphism.
+> 
+
 
 ## Sheets, Fibers, and Group Index
 

@@ -7,6 +7,7 @@ Algebraic topology turns qualitative, flexible spaces into rigorous algebraic ob
 
 ### Fundamental Groups and Covering Spaces
 [[Homotopy Types]]
+[[Operations on Spaces]]
 [[The Fundamental Group]]
 [[van Kampen's Theorem]]
 [[CW Complexes]]
@@ -26,6 +27,7 @@ Algebraic topology turns qualitative, flexible spaces into rigorous algebraic ob
 [[Cellular Homology]]
 [[Euler Characteristics and Mayer-Vietoris Sequence]]
 [[Simplicial Sets]]
+
 ### Cohomology
 [[Formalism of Homology and Cohomology]]
 [[Singular Cohomology]]

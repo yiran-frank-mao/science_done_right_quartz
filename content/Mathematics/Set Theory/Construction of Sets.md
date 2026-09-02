@@ -1,14 +1,17 @@
 >[!definition] Intersection
->Let $A$ and $B$ be two given sets. The intersection is the set:$$A\cap B=\{x:x\in A \wedge x\in B \}.$$ ^408460
+> Let $A$ and $B$ be two given sets. The intersection is the set:$$A\cap B=\{x:x\in A \wedge x\in B \}.$$ 
+> More generally, we can intersect a collection of sets: $\bigcap_{i\in I} A_{i}$, where $I$ is some index set, and $A_{i}$ are sets. ^408460
 
 >[!definition] Union
->The union of sets $A$ and $B$ is the set:$$A\cup B=\{x: x\in A \vee x\in B\}.$$ ^678b42
+>The union of sets $A$ and $B$ is the set:$$A\cup B=\{x: x\in A \vee x\in B\}.$$
+>More generally, we can union a collection of sets: $\bigcup_{i\in I} A_{i}$, where $I$ is some index set, and $A_{i}$ are sets. ^678b42
 
 >[!definition] Disjoint Union
 > The disjoint union of $A$ and $B$ is the set:$$A\sqcup B=\{(x,a):x\in A\}\cup\{(y,b):y\in B\}.$$ ^e08e6f
 
->[!definition] Difference
->The difference of $A$ from $B$ is the set $$A\setminus B=\{x:x\in A \wedge x \notin B\}$$In the circumstance that sets are considered within a fixed set $X$, for any subset $A$ of $X$ we write $X\setminus A$ as $A^{c}$ and call it the complement of $A$ in $X$.
+>[!definition] Difference and Complement
+> The *difference* of $A$ from $B$ is the set $$A\setminus B=\{x:x\in A \wedge x \notin B\}$$
+> In the circumstance that sets are considered within a fixed set $X$, for any subset $A$ of $X$ we write $X\setminus A$ as $A^{c}$ and call it the *complement* of $A$ in $X$.
 
 > [!proposition]
 > Let $A$, $B$, $C$ and $B_{i} (i ∈ I)$ be sets. The following properties hold:

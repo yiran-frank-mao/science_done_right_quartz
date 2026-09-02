@@ -4,4 +4,10 @@ Representation theory is a branch of mathematics that studies abstract algebraic
 
 ## Contents
 
+### Representation of Finite Groups
+
+
+### Representation of Lie Algebras
+[[Lie Algebra Representations]]
+
 [[Projective Representations and Cohomology]]

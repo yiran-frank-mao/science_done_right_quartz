@@ -26,7 +26,7 @@ The above properties mean that $H^*(X;R)$ equipped with the cup product forms a 
 *Proof of Unital Property*  Let $\mathbf{1} \in H^0(X;R)$ be the unit element, represented by the cocycle $\varphi$ where $\varphi(x) = 1_R$ for any point $x \in X$. Let $[\psi] \in H^n(X;R)$ be represented by the cocycle $\psi \in C^n(X;R)$. For any $n$-simplex $\sigma: \Delta^n \to X$ with vertices $[v_0, \dots, v_n]$, we have: $$(\varphi \smallsmile \psi)(\sigma) = \varphi(\sigma|_{[v_0]}) \cdot \psi(\sigma|_{[v_0, \dots, v_n]})$$Since $\sigma|_{[v_0]}$ is a 0-simplex, $\varphi(\sigma|_{[v_0]}) = 1_R$. Therefore, $$(\varphi \smallsmile \psi)(\sigma) = 1_R \cdot \psi(\sigma|_{[v_0, \dots, v_n]}) = \psi(\sigma)$$This shows that $\varphi \smallsmile \psi = \psi$, so $[\mathbf{1}] \smallsmile [\psi] = [\psi]$. A similar calculation shows $[\psi] \smallsmile [\mathbf{1}] = [\psi]$, so it is a two-sided unit. $\square$
 
 > [!proposition] Induced Homomorphisms
-> Let $f\colon X \to Y$ be a [[Continuous Functions on Topological Spaces#^33ee5a|continuous map]]. The induced map on cohomology $f^{*}\colon H^{*}(Y;R) \to H^{*}(X;R)$ is a homomorphism of graded rings. That is, it preserves the ring structure:
+> Let $f\colon X \to Y$ be a [[Continuous Maps on Topological Spaces#^33ee5a|continuous map]]. The induced map on cohomology $f^{*}\colon H^{*}(Y;R) \to H^{*}(X;R)$ is a homomorphism of graded rings. That is, it preserves the ring structure:
 > $$f^{*}(1) = 1,\quad f^{*}(x \smallsmile y) = f^{*}(x) \smallsmile f^{*}(y).$$
 
 <u><b>e.g.</b></u>  The cohomology ring of the torus $T^2 = S^1 \times S^1$ with integer coefficients is isomorphic to the exterior algebra on two generators of degree 1. Recall our $\Delta$-complex structure for the torus:

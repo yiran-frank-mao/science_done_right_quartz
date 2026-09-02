@@ -18,7 +18,7 @@ updated: 2024-09-17
 >A function $m\colon A\to B$ with posets $(A,\leq_{A})$ and $(B,\leq_{B})$ is monotone if $$a\leq_Ab\implies m(a)\leq_{B}m(b).$$ ^893616
 
 > [!definition] Total Order
-> A total order or linear order is a partial order that is also [[Relations and Functions#^f0a2cd|connected]]. ^a8688d
+> A *total order* or *linear order* is a partial order that is also [[Relations and Functions#^f0a2cd|connected]]. ^a8688d
 
 > [!definition] Upper Bound
 > Let $X$ be a nonempty partially ordered set and $A ⊂ X$ is a totally ordered subset. An upper bound for $A⊂X$ is an element $z ∈X$ such that $x ≤z$ for all $x ∈A$. 
@@ -34,4 +34,16 @@ A maximal element in a partially ordered set $X$ is an element $x ∈X$ such tha
 > [!remark]
 > Zorn’s lemma is equivalent to the axiom of choice: for any collection of nonempty sets, it is possible to form a new set consisting of one element from each member of the collection.
 
+## Preorder
+
+> [!definition] Preorder
+> A *preorder* is a [[Relations and Functions#^759a11|homogeneous binary relation]] that is [[Relations and Functions#^1bdc5e|reflexive]] and [[Relations and Functions#^1f742d|transitive]]. A set $X$ equipped with a preorder is called a *preordered set*. ^fa7f22
+> 
+
+> [!definition] Directed Set
+> A *directed set* is a preordered set $(X,\lesssim)$ such that for any $x,y∈X$, there exists $z∈X$ with $x≤z$ and $y≤z$. In other words, every finite subset has an upper bound. ^fa7f24
+> 
+
+
+## Directed Set
 

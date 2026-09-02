@@ -8,7 +8,7 @@ Let $A \in M_{m,n}(\Z)$. There exists invertible matrices $P\in\mathrm{GL}_m(\Z)
 
 **Def** _Presentations of a Finitely Generated Module_
 
-Let $R$ **be a ring and $φ :V →W$ **a map of finitely generated $R$-modules. Then $φ(V)$ is a submodule of $W$ **and we can form the quotient $W /φ(V )$. In particular, if $A ∈ M_{m,n} (R)$ is a matrix, it defines a map of free modules $A : R^n \to R^m$, $v \mapsto Av$ **and we can look at the quotient $V = R^m/AR^n$. We say that $V$ **is presented **by the matrix $A$.
+Let $R$ **be a ring and $\varphi \colon V →W$ **a map of finitely generated $R$-modules. Then $φ(V)$ is a submodule of $W$ **and we can form the quotient $W /φ(V )$. In particular, if $A ∈ M_{m,n} (R)$ is a matrix, it defines a map of free modules $A : R^n \to R^m$, $v \mapsto Av$ **and we can look at the quotient $V = R^m/AR^n$. We say that $V$ **is presented **by the matrix $A$.
 
 **e.g.** $A=[4] : \Z \to \Z$ gives $\Z/4\Z$
 

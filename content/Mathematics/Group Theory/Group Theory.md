@@ -31,7 +31,7 @@ Group theory is the study of algebraic structures known as groups. Groups are fu
 | 3     | $C_{3}$                                                                                                                                                     |
 | 4     | $C_{4}$,  $C_2\times C_2$                                                                                                                                   |
 | 5     | $C_5$                                                                                                                                                       |
-| 6     | $C_{6}$, $S_{3}$                                                                                                                                            |
+| 6     | $C_{6}$, $S_{3}\cong D_{3}$                                                                                                                                 |
 | 7     | $C_{7}$                                                                                                                                                     |
 | 8     | $C_8$, $C_4\times C_2$, $C_{2}\times C_{2}\times C_{2}$, $Q_{8}$ (quarternian group; dicyclic group), $D_{4}$ ([[Dihedral Groups#^0206e0\|dihedral group]]) |
 | 9     | $C_{9}$, $C_3\times C_3$                                                                                                                                    |

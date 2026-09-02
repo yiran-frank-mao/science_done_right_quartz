@@ -1,7 +1,7 @@
 ## Full Fock Space
 
 > [!definition] Full Fock Space
-> The *full Fock space* over a [[Hilbert Spaces#^acb78f|separable]] [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$ is the Hilbert space completion of the [[Tensors and Tensor Products#^b6f3e2|tensor algebra]] of $\H$: $$\newcommand{\F}{\mathcal{F}}\F(\H):=\overline{\bigoplus_{n=0}^{\infty}\otimes^{n} \H}.$$
+> The *full Fock space* over a [[Closure, Interior and Boundary#^acb78f|separable]] [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$ is the Hilbert space completion of the [[Tensors and Tensor Products#^b6f3e2|tensor algebra]] of $\H$: $$\newcommand{\F}{\mathcal{F}}\F(\H):=\overline{\bigoplus_{n=0}^{\infty}\otimes^{n} \H}.$$
 > By definition $\otimes^{0}\H$ is one-dimensional, and spanned by the *vacuum vector*, denoted $\ket{0}$ or $\Omega$.
 
 ## Fermionic Fock Space

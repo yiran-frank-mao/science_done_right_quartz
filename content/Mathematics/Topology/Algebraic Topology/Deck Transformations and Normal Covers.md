@@ -9,7 +9,7 @@ tags:
 > [!definition] Deck Transformation
 > A *deck transformation* of a [[Covering Spaces#^b33205|covering space]] $p\colon \widetilde{X} \to X$ is a [[Fundamental Theorem of Covering Spaces#^4783f4|covering space automorphism]] $f\colon \widetilde{X} \to \widetilde{X}$. That is, the following diagram commutes:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/deck_transformation.svg" alt="deck_transformation" style="width:28%;"/>
-> In other words, $p \circ f = p$. The set of all deck transformations forms a group under composition, denoted $\newcommand{\Aut}{\mathrm{Aut}}\Aut_X(\widetilde{X})$ or $\Aut_{X}(p)$. ^988018
+> The set of all deck transformations forms a group under composition, denoted $\newcommand{\Aut}{\mathrm{Aut}}\Aut_X(\widetilde{X})$ or $\Aut_{X}(p)$. ^988018
 
 > [!remark]
 > For a path-connected covering space $\widetilde{X}$, a deck transformation is uniquely determined by its action on a single point. (ref. [[Fundamental Theorem of Covering Spaces#^6ba239|proposition]]) If $f(\tilde{x}_0) = g(\tilde{x}_0)$ for two deck transformations $f, g$, then $f=g$.

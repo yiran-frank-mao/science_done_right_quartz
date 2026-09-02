@@ -4,7 +4,7 @@
 >A set $A$ in a metric space $(X,d)$ is called totally bounded if for any $δ > 0$ there exist finitely many points $x_1,\dots ,x_{n} ∈ X$ such that $$A\subset\bigcup_{i=1}^{n}B_\delta(x_{i})$$
 
 >[!proposition] 
->**Prop**  Totally bounded sets must be [[Open and Closed Sets#^7012df|bounded]], but bounded sets may not be totally bounded.
+>**Prop**  Totally bounded sets must be [[Open and Closed Sets in Metric Spaces#^7012df|bounded]], but bounded sets may not be totally bounded.
 
 >[!proposition] 
 >**Prop**  Bounded sets in $\R^{n}$ are totally bounded.

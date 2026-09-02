@@ -44,7 +44,7 @@ $\quad$
 > A [[Group Actions#^4047e8|group action]] of $G$ on $X$ is said to be free if $g \cdot x = x$ implies $g = 1$ for all $x\in X$. ^fddea8
 
 > [!definition] Faithful (Effective) Action
-> An action of $G$ on $X$ is said to be faithful if the only element of $G$ that acts as the identity on $X$ is the identity element of $G$. ^f7c6a0
+> An action of $G$ on $X$ is said to be *faithful* if the only element of $G$ that acts as the identity on $X$ is the identity element of $G$. ^f7c6a0
 
 ## The Orbit-Stabilizer Theorem
 
@@ -65,10 +65,21 @@ $\quad$
 > [!definition] $p$-group
 > A finite group is called a *$p$-group* if its order is a $p$-power for some prime $p$. ^f455f4
 
-> [!corollary]
-> Every [[Group Actions#^f455f4|$p$-group]] has a non-trivial centre.
+> [!proposition]
+> Every [$p$-group](Group%20Actions#%5Ef455f4) has a non-trivial [[Abelianisation of Groups#^afc081|centre]].
 
 *Proof*  Let $𝐺$ be a finite $𝑝$−group and make it act on itself by conjugation. Observe that:$$ \begin{aligned} |\mathcal{O}(x)|=1 \iff x\in Z(G)\\ \end{aligned} $$By [[Group Actions#^becec5|class equation]], we know that $|G|=\sum_{i}|\mathcal{O}(x_{i})|=\sum_{i}[G:C_G(x_i)]$. Note that each $[G:C_G(x_i)]$ is a $p$-power, if $Z(G)$ were trivial, then there is only one term $|\mathcal{O}(e)|=1$, and all other terms are at least $p$, so $|G|=1+p^{k_{1}}+\cdots+p^{k_{m}}$ for some $k_{1},\dots, k_{m}\geq 1$, which is not divisible by $p$, a contradiction. Therefore, $Z(G)$ is non-trivial. $\square$
+
+> [!corollary]
+> A [$p$-group](Group%20Actions#%5Ef455f4) is always [[Abelianisation of Groups#^f7e0b3|nilpotent]].
+
+*Proof*  A finite $p$-group always has some central elements, and after removing them by quotienting, the quotient is still a smaller $p$-group with more central elements. Eventually every element is accounted for by successive centers.
+
+> [!corollary]
+> Every [$p$-group](Group%20Actions#%5Ef455f4) with order $p^{n}$ has a [[Groups, Order and Subgroups#^1ccb07|subgroup]] of [[Groups, Order and Subgroups#^3bce31|order]] $p^{k}$ for $0≤k≤n$.
+> 
+
+*Proof*  We make induction on $n$. If $n=1$, there is nothing to prove. Assume that it is true for $|G|=k$ and we prove for the case $|G|=k+1$. Note that $G$ is nilpotent, so is solvable. Then there exists $H\triangleleft G$ such that $[G:H]=p$ and $G/H$ is abelian, 
 
 > [!theorem] Cauchy’s Theorem
 > If $p$ is a [[Division and Prime#^47f235|prime]] dividing the order of a finite group $G$ then $G$ contains an element of order $p$. ^ff735e

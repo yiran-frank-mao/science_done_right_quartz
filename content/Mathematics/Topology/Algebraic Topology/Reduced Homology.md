@@ -45,5 +45,5 @@ From the above diagram, we know that the reduced homology $\tilde{H}_0(X)$ is th
 > [!corollary]
 > If a space $X$ is a disjoint union of its path components $X_\alpha$, then the homology groups are direct sums:
 > $$H_n(X) \cong \bigoplus_{\alpha} H_n(X_\alpha)$$
-> In particular, for any space $X$, $H_{0}(X)\cong \bigoplus_{\alpha}X_{\alpha}$ counts the number of path-components of $X$.
+> In particular, for any space $X$, $H_{0}(X)\cong \bigoplus_{\alpha}\Z$ counts the number of path-components of $X$.
 

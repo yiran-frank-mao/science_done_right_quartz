@@ -27,15 +27,10 @@ We shall first define the rectangle and cube in $\newcommand{\R}{\mathbb{R}}\R^{
 ## Properties of Exterior Measure
 
 > [!proposition] Monotonicity
-> If $E\subseteq F\subseteq \R^{d}$, then $m_{*}(E)\leq m_{*}(F)$.
+> If $E\subseteq F\subseteq \R^{d}$, then $m_{*}(E)\leq m_{*}(F)$. In particular, any bounded $E\subseteq \R^d$ has finite exterior measure.
 > 
 
-*Proof*  Any countable covering of $F$ also covers $E$. $\square$
-
-> [!corollary]
-> Any bounded $E\subseteq \R^d$ has finite exterior measure.
-
-*Proof*  If $E$ is bounded, then $E\subseteq [-M,M]^{d}$ for some $M>0$. $\square$
+*Proof*  Any countable covering of $F$ also covers $E$. If $E$ is bounded, then $E\subseteq [-M,M]^{d}$ for some $M>0$. $\square$
 
 > [!proposition] Countable Subadditivity
 > If $E=\cup_{j=1}^{\infty} E_{j}$, then $m_{*}(E)\leq \sum_{j=1}^{\infty} m_{*}(E_{j})$.
@@ -58,3 +53,7 @@ We shall first define the rectangle and cube in $\newcommand{\R}{\mathbb{R}}\R^{
 
 > [!proposition]
 > If a set $E$ is the countable union of almost disjoint cubes $E=\cup_{j=1}^{\infty} Q_{j}$, then $$m_*(E)=\sum_{j=1}^\infty|Q_j|,$$where cubes are almost disjoint if their [[Interior, Exterior and Boundary#^7741a2|interiors]] are disjoint: $Q_{i}^{\circ}\cap Q_{j}^{\circ}=\emptyset$ for all $i\neq j$.
+
+> [!theorem]
+> The exterior measure is a measure on $(\R^{d},\mathcal{B})$, where $\mathcal{B}$ is the Borel $\sigma$-algebra.
+> 

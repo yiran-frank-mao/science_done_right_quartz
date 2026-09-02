@@ -12,7 +12,7 @@
 
 <u><b>e.g.</b></u>  
 - Every (left) ideal in a ring $R$ is a (left) $R$-module.
-- Any [[Groups, Order and Subgroups#^6d511a|abelian group]] $A$ is a $\Z$-module. Suppose $(A,+)$ is an abelian group we can define for $n\in \Z$ and $a\in A$ that $$na := \begin{cases}\underbrace{a+\dots+a}_{n \text{ times}} \quad & n\geq0\\ -((-n)a) \quad &n<0\end{cases} $$This makes $A$ a $\Z$-module.
+- Any [[Groups, Order and Subgroups#^6d511a|abelian group]] $A$ is a $\Z$-module. Suppose $(A,+)$ is an abelian group we can define for $n\in \Z$ and $a\in A$ that $$na := \begin{cases}\underbrace{a+\dots+a}_{n \text{ times}} \quad & n\geq0,\\ -((-n)a) \quad &n<0,\end{cases} $$which makes $A$ a $\Z$-module. In fact, there is no difference between abelian groups and $\Z$-modules. For any $\Z$-module $M$, 
 - Linear operators are related to $F[x]$-modules. Let $T : V → V$ be a linear operator on a finite dimensional vector space over field $F$ . Then $V$ is an $F [x ]$-module by setting $$\begin{aligned}f(x) \cdot v = (f(T))(v) =(a_{0} +a_{1}T+\dots+a_{n}T^{n})(v)\\ \text{for all }f(x)=a_0 +a_1x+\dots+a_nx^n \in F[x]\end{aligned}$$
 $\quad$
 
@@ -39,8 +39,8 @@ $\quad$
 **Prop**  Let $R$ be a ring and $I$ an ideal. Let $M$ be an $R$-module. Then $I M$ is an $R$-submodule of $M$ and $M /I M$ is an $R/I$-modules.
 **Proof**
 
-**Def**  <i><u>Finitely Generated Module</u></i> and <i><u>Basis</u></i>
-A module $M$ is finitely generated if there exists $m_1, \dots , m_k ∈ M$ such that every element of $M$ has the form $r_1m_1 +···+r_km_k$ for some $r_i ∈R$. elements $m_1,\dots,m_k ∈M$ are called independent if $r_1m_1+\dots+r_km_k =0$ implies that all $r_i=0$. An independent generating set is called a basis.
+> [!definition] Finitely Generated Module & Basis
+> A module $M$ is *finitely generated* if there exists $m_1, \dots , m_k ∈ M$ such that every element of $M$ has the form $r_1m_1 +···+r_km_k$ for some $r_i ∈R$. Elements $m_1,\dots,m_k ∈M$ are called *independent* if $r_1m_1+\dots+r_km_k =0$ implies that all $r_i=0$. An independent generating set is called a *basis*.
 
 > [!definition] Cyclic Module
 > An $R$-module $M$ is called *cyclic* if there exists $m \in M$ such that $M = Rm$.
@@ -50,19 +50,17 @@ A module $M$ is finitely generated if there exists $m_1, \dots , m_k ∈ M$ such
 
 *Proof*  Clearly, $Rv \leq N$. Conversely, if $m \in N$, then $m = rv$ for some $r \in R$, so $m \in Rv$. Thus, $N \subseteq Rv$. Therefore, $N = Rv$. $\square$ 
 
-## Free Modules
+## Free Modules and Rank
 
 **Prop**  If $F$ is a field, we know that all modules are free and $F^n  \cong F^m$ iff $m = n$.
 
 **Def**  <i><u>Invariant Base Number</u></i> and <i><u>Rank</u></i>
-Rings $R$ with the property that $R^n \cong  R^m \iff n=m$ are called rings with invariant base number (IBN). The exponent in $R^n$ is called the rank of the free module.
+Rings $R$ with the property that $R^n \cong  R^m \iff n=m$ are called rings with *invariant base number (IBN)*. The exponent in $R^{n}$ is called the rank of the free module.
 
 **Prop**  Commutative rings are IBN.
 
 > [!definition] Free Module
-> Let $R$ be a ring with invariant base number. An $R$-module $M$ is *free of rank $n$* if $M  \cong  R^n$. If $\{ m_1,\dots,m_n \} \subset M$ is independent and generating then $M \cong R^n$. Indeed,$$\varphi \colon (r_1,\dots,r_n) \mapsto\sum_{i=1}^n r_im_i$$is an $R$-module isomorphism.
-
-^c08671
+> Let $R$ be a ring with invariant base number. An $R$-module $M$ is *free of rank $n$* if $M  \cong  R^n$. If $\{ m_1,\dots,m_n \} \subset M$ is independent and generating then $M \cong R^n$. Indeed,$$\varphi \colon (r_1,\dots,r_n) \mapsto\sum_{i=1}^n r_im_i$$is an $R$-module isomorphism. ^c08671
 
 
 **Def**  <i><u>General Linear Map over Ring</u></i>

@@ -2,12 +2,13 @@
 
 >[!definition] Initial and Terminal Objects
 > In a category $\mathsf{C}$, an object $0$ is *initial* or *coterminal* if there is a unique morphism $0\to C$ for all $C\in \mathsf{C}_{0}$. An object $1$ is *terminal* if there is a unique morphism $C\to 1$ for all $C\in \mathsf{C}_{0}$.
-> If an object is both initial and terminal, it is called a *zero object* or *null object*. ^a7dd74
+> If an object is both initial and terminal, it is called a *zero object* or *null object*. A *pointed category* is one with a zero object. ^a7dd74
 
 <u><b>e.g.</b></u>   
 - In $\mathsf{Set}$ the empty set $\emptyset$ is initial, and any singleton set $\{*\}$ is terminal. 
 - In $\mathsf{Cat}$ the category $\mathsf{0}$ (no objects and no arrows) is initial, and the category $\mathsf{1}$ (one object and identity arrow) is terminal.
 - In $\mathsf{Group}$, the one element group is both initial and terminal, hence a zero object.
+- In $\mathsf{UnitalRing}$, $\Z$ is the initial object, and the trivial ring $\{0\}$ is the terminal object.
 - In $\mathbf{P}$, an object is initial iff it is the least element, and terminal iff it is the greatest element.
 - For any category $\mathsf{C}$ and any object $X \in \mathsf{C}_{0}$, the identity arrow $1_X \colon X\to X$ is a terminal object in $\mathsf{C}/X$ and an initial object in $X/\mathsf{C}$.
 $\quad$
@@ -16,9 +17,6 @@ $\quad$
 > Initial and terminal objects are unique up to isomorphism if exists.
 
 *Proof*  Suppose $A,B\in\obj \mathbf{C}$ are initial. Then there's unique $f\colon A\to B$ and $g\colon B\to A$. Hence $g\circ f\circ g = g$, this implies $g\circ f=1_{A}$. Similarly $f\circ g=1_{B}$, thus $A\cong B$. Similarly we have $A\cong B$ if $A,B\in\obj \mathbf{C}$ are terminal. $\square$
-
->[!definition] Pointed Category
-> A pointed category is one with a zero object.
 
 >[!definition] Strict Initial Object
 >A strict initial object $I$ is one for which every morphism into $I$ is an isomorphism.

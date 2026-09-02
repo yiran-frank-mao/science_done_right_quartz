@@ -5,13 +5,13 @@ updated: 2024-10-29
 ## Sequential Compactness
 
 >[!theorem]
-> Let $S$ be a subset in $\R^{k}$. Then $S$ is closed and [[Open and Closed Sets#^7012df|bounded]] iff every sequence in $S$ has a subsequence that converges to a point in $S$.
+> Let $S$ be a subset in $\R^{k}$. Then $S$ is closed and [[Open and Closed Sets in Metric Spaces#^7012df|bounded]] iff every sequence in $S$ has a subsequence that converges to a point in $S$.
 
 >[!definition] Sequential Compactness
->Let $(X , d )$ be a metric space. A set $S ⊂ X$ is called sequentially compact if every sequence in $S$ has a subsequence that converges to a point in $S$. ^f1fb8b
+>Let $(X , d )$ be a metric space. A set $S ⊂ X$ is called *sequentially compact* if every sequence in $S$ has a subsequence that converges to a point in $S$. ^f1fb8b
 
 >[!theorem]
-> In a metric space, every sequentially compact set is [[Open and Closed Sets#^7012df|bounded]] and closed.
+> In a metric space, every sequentially compact set is [[Open and Closed Sets in Metric Spaces#^7012df|bounded]] and closed.
 
 > [!remark]+ The Converse is Not True in General
 > However, the converse is not true in general. For example, consider the metric space $\Q$ with the standard metric inherited from $\R$. Let a subset $A:=[0,1]\cap\Q$. Clearly $A$ is closed as a intersection of closed sets, and bounded. However, $A$ is not sequentially compact since a subsequence of any sequence of rationals converging to $\sqrt{2}/2$ never converges to a point in $A$.
@@ -29,7 +29,7 @@ updated: 2024-10-29
 ## Covering and Compactness
 
 >[!definition] Covering
->Let $(X,d)$ be a metric space and $A⊂X$. A collection of sets $\{U_α\}$ is called a covering of $A$ if $A⊂\bigcup_{\alpha\in I}U_\alpha$ . If in addition, each $U$ is open, then $\{U _\alpha\}$ is called an open covering of $A$.
+>Let $(X,d)$ be a metric space and $A⊂X$. A collection of sets $\{U_{α}\}_{\alpha\in I}$ is called a *cover* of $A$ if $A⊂\bigcup_{\alpha\in I}U_\alpha$ . If in addition, each $U$ is open, then $\{U _\alpha\}$ is called an *open cover* of $A$.
 
 >[!definition] Compactness
 > Let $(X,d)$ be a metric space. A set $K ⊂ X$ is called compact if for every open covering $\{U_α\}$ of $K$ there exists a finite subcollection $\{U_{i}\}_{i=1}^{n}$ of $\{U_α\}$ such that $$K\subset\bigcup_{i=1}^nU_i$$ ^8c1327

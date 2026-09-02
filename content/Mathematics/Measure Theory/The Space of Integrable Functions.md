@@ -1,5 +1,5 @@
 > [!definition] $L^{p}$ Norm of an Integrable Function
-> For any integrable function $f\colon \R^d \to \R$, we define the $L^{p}$ norm of $f$ as $$\|f\|_{p} = \left( \int_{\R^{d}} |f|^p \right)^{1/p}.$$In particular, the $L^{1}$ norm is the integral of the absolute value of $f$.
+> For any integrable function $f\colon \R^d \to \R$, we define the *$L^{p}$ norm* of $f$ as $$\|f\|_{p} = \left( \int_{\R^{d}} |f|^p \right)^{1/p}$$for $1\leq p\leq \infty$. In particular, the $L^{1}$ norm is the integral of the absolute value of $f$.
 
 > [!definition] $L^{1}$ Space
 > We denote by $L^{1}(E)$ the [[Normed Spaces#^345fd3|normed vector space]] of all integrable functions on $E\subset\R^d$, modulo the [[Relations and Functions#^14741d|equivalence relation]] of being equal almost everywhere, with the norm defined by the $L^{1}$ norm.

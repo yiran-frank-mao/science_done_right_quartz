@@ -25,7 +25,7 @@ completed: true
 > A homogeneous relation $R$ on a set $X$ is transitive if, for all elements $a, b, c$ in $X$, whenever $R$ relates $a$ to $b$ and $b$ to $c$, then $R$ also relates $a$ to $c$. ^1f742d
 
 > [!definition] Connectedness
-> A homogeneous relation $R$ on a set $X$ is connected if for all $x,y\in X$: $$x\neq y \implies xRy \text{ or } yRx$$It is called strongly connected if $xRy$ or $yRx$ for all $x,y\in X$ no matter if they are equal. ^f0a2cd
+> A homogeneous relation $R$ on a set $X$ is *connected* if for all $x,y\in X$: $$x\neq y \implies xRy \text{ or } yRx$$It is called strongly connected if $xRy$ or $yRx$ for all $x,y\in X$ no matter if they are equal. ^f0a2cd
 
 > [!definition] Univalent
 > For all $x ∈ X$ and $y_{1},y_{2}\in Y$ with relation $R$, if $xRy_{1}$ and $xRy_{2}$ implies $y_1 = y_2$, we say $R$ is univalent. ^70f956
@@ -82,8 +82,9 @@ completed: true
 
 *Proof*  By definition, for all $y\in f\left(\bigcup_{i\in I}A_{i}\right)$, $y=f(a)$ for some $a \in \bigcup_{i\in I}A_{i}$. Thus $a\in A_{k}$ for some $k\in I$. It follows that $y=f(a)\in \bigcup_{i\in I}f(A_i)$. All statements above are reversible, thus we have equality holds: $f\left(\bigcup_{i\in I}A_i\right)=\bigcup_{i\in I}f(A_i)$. Consider any $y\in f\left(\bigcap_{i\in I}A_{i}\right)$, then $y=f(a)$ for some $a\in \bigcap_{i\in I}A_{i}$. It follows that $a\in A_{i}$ for all $i\in I$, hence $y=f(a)\in f(A_{i})$ for all $i\in I$. Thus $y\in \bigcap_{i\in I}f(A_{i})$. $\square$
 
-> [!proposition]
-> Suppose $f\colon X \to Y$. For any family of sets $\{B_{i}\}_{i∈I}$ in $Y$ there hold$$f^{-1}\left(\bigcup_{i\in I}B_i\right)=\bigcup_{i\in I}f^{-1}(B_i),\quad f^{-1}\left(\bigcap_{i\in I}B_i\right)=\bigcap_{i\in I}f^{-1}(B_i)$$
+> [!proposition] Algebra of Inverse Images
+> Suppose $f\colon X \to Y$. For any family of sets $\{B_{i}\}_{i∈I}$ in $Y$ there hold$$f^{-1}\left(\bigcup_{i\in I}B_i\right)=\bigcup_{i\in I}f^{-1}(B_i),\quad f^{-1}\left(\bigcap_{i\in I}B_i\right)=\bigcap_{i\in I}f^{-1}(B_{i}).$$
+> Moreover, $f^{-1}(B^{c})=f^{-1}(B)^{c}$. ^f5be27
 
 *Proof*  For any $x\in f^{-1}\left(\bigcup_{i\in I}B_i\right)$, $f(x)\in \bigcup_{i\in I}B_i$, thus $f(x)\in B_{k}$ for some $k\in I$. It follows that $x\in f^{-1}(B_{k})$ and hence $x\in \bigcup_{i\in I}f^{-1}(B_i)$. All statements above are reversible, thus we have equality holds: $f^{-1}\left(\bigcup_{i\in I}B_i\right)=\bigcup_{i\in I}f^{-1}(B_i)$. Consider any $x\in f^{-1}\left(\bigcap_{i\in I}B_i\right)$, then $f(x)\in \bigcap_{i\in I}B_i$, it follows that $f(x)\in B_{i}$ for all $i\in I$. Thus $x\in f^{-1}(B_{i})$ for all $i\in I$, hence $x\in \bigcap_{i\in I}f^{-1}(B_{i})$. Conversely, for any $x\in \bigcap_{i\in I}f^{-1}(B_{i})$, $x\in f^{-1}(B_{i})$ for all $i\in I$, thus $f(x)\in B_{i}$ for all $i\in I$, hence $f(x)\in \bigcap_{i\in I}B_{i}$. That is $x\in f^{-1}\left(\bigcap_{i\in I}B_{i}\right)$. $\square$
 
@@ -105,7 +106,7 @@ completed: true
 *Proof*  Suppose $f\colon X\to X$ is injective. Assume $f$ is not surjective, then there exists $y\in X$ such that $y\notin f(X)$. Because $X$ is finite, by the pigeonhole  $\square$
 
 >[!definition] Invertible Function
->A function $f \colon X \to Y$ is invertible if there is a function $g \colon Y \to X$ such that$$g(f(x))=x, \text{ and } f(g(y))=y \text{ for all } x\in X, y\in Y$$We will call $g$ the inverse of $f$ and denote it as $f ^{−1}$.
+>A function $f \colon X \to Y$ is *invertible* if there is a function $g \colon Y \to X$ such that$$g(f(x))=x, \text{ and } f(g(y))=y \text{ for all } x\in X, y\in Y$$We will call $g$ the inverse of $f$ and denote it as $f ^{−1}$.
 
 >[!theorem]
 >A function $f \colon X \to Y$ is invertible if and only if it is bijective.

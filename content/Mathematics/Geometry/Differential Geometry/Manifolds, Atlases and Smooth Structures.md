@@ -4,7 +4,7 @@ updated: 2024-10-20
 tags:
   - differential-geometry
 ---
-A *manifold* itself is a purely topological object, but it is the most basic object in differential geometry. To do calculus on a manifold, we need to **equip** it with a *smooth structure,* which is given by an atlas of compatible charts. So the data of a smooth manifold is a manifold **together with** a smooth structure. We will discuss these concepts in detail in the following sections.
+A *manifold* itself is a purely topological object, but it is the most basic object in differential geometry. To do calculus on a manifold, we need to equip it with a *smooth structure,* which is given by an atlas of compatible charts. So the data of a smooth manifold is a manifold **together with** a smooth structure. We will discuss these concepts in detail in the following sections.
 
 ## Topological Manifolds
 
@@ -33,6 +33,7 @@ $\quad$
 
 <u><b>e.g.</b></u>
 - Consider the set $M=\R$ with the usual topology. $\mathcal{A}=\{ x\mapsto x\colon\R\to \R\}$ and $\mathcal{B}=\{ x \mapsto x^{3} \colon \R \to \R \}$ are both differentiable atlases. They are not compatible since the union $\{ x\mapsto x, x\mapsto x^{3} \}$ is not differentiable.
+$\quad$
 
 > [!definition] Compatible Atlases & Maximal Atlas
 > Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are *compatible* if their union is also a differentiable atlas.
@@ -79,7 +80,7 @@ There are several equivalent ways to define submanifolds:
 > $\quad$
 
 > [!definition] Embedded Submanifold
-> Suppose $M$ is a smooth manifold with or without boundary. An embedded (or regular) submanifold of $M$ is a subset $S \subset M$ that is a manifold (without boundary) in the subspace topology, endowed with a smooth structure with respect to which the inclusion map $S\hookrightarrow M$ is a [[Smooth Functions and Maps#^9d6e60|smooth embedding]]. ^632f7d
+> Suppose $M$ is a smooth manifold with or without boundary. An *embedded (or regular) submanifold* of $M$ is a subset $S \subset M$ that is a manifold (without boundary) in the subspace topology, endowed with a smooth structure with respect to which the inclusion map $S\hookrightarrow M$ is a [[Smooth Functions and Maps#^9d6e60|smooth embedding]]. ^632f7d
 
 > [!lemma] Open Submanifold Lemma
 > An open subset of a manifold is a manifold of the same dimension.

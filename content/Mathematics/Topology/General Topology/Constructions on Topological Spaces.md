@@ -34,10 +34,10 @@
 
 *Proof*  This is obvious from the above theorem. $\square$
 
-## Finite Product Spaces
+## Product Spaces
 
 >[!definition] Product Topology
-> Suppose that $(T_{1},\mathcal{T}_{1})$ and $(T_{2}, \mathcal{T}_{2})$ are two topological spaces. Then the product topology on $T_{1}\times T_{2}$ is the topology $\mathcal{T}$ with basis $$\{U_{1}\times U_{2} \mid U_{1}\in \mathcal{T}_{1},U_{2}\in\mathcal{T}_{2}\}$$ 
+> Suppose that $(T_{1},\mathcal{T}_{1})$ and $(T_{2}, \mathcal{T}_{2})$ are two topological spaces. Then the *product topology* on $T_{1}\times T_{2}$ is the topology $\mathcal{T}$ with basis $$\{U_{1}\times U_{2} \mid U_{1}\in \mathcal{T}_{1},U_{2}\in\mathcal{T}_{2}\}$$ 
 > We call $\mathcal{T}$ the *product topology* on $T_{1}\times T_{2}$. ^fbf303
 
 > [!remark]
@@ -50,3 +50,13 @@ A ⇥ B
 
 
 **Thrm**  Let $(X,τ_{X})$ and $(Y,τ_{Y})$ be topological spaces with respective bases $\mathcal{B}_{X}$ and $\mathcal{B}_{Y}$. Then 
+
+
+## Quotient Topology
+
+> [!definition] Quotient Topology
+> Suppose $X$ is a topological space and $Y$ is a set. $q\colon X\to Y$ is surjective, then the *quotient toplogy* is a topology on $Y$ by declaring that $U\subset Y$ is open iff $q^{-1}(U)$ is open in $X$. ^d57887
+
+
+> [!theorem] Universal Property of Quotient Topology
+> The quotient topology has the following universal property (in $\mathsf{Top}$): 

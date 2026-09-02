@@ -17,7 +17,9 @@
 ## Neighbourhood, Boundary and Limit Points
 
 >[!definition] Neighbourhood
-> Let $(X,\mathcal{T})$ to be a topological space. A *(open) neighbourhood* of $x ∈ X$ is an open set $U\in\mathcal{T}$ that contains $x$. ^eda962
+> Let $(X,\mathcal{T})$ to be a topological space. 
+> An *open neighbourhood* of $x ∈ X$ is an open set $U\in\mathcal{T}$ that contains $x$. 
+> A *neighbourhood* of $x\in X$ is a set containing an open neighborhood of $x$. ^eda962
 
 >[!definition] Boundary
 >The boundary $\partial H$ of a set $H\subset X$ is the set of all points $x$ with the property that every neighbourhood of $x$ meets both $H$ and its complement: $$ \partial H=\left\{x\in X\mid \text{ $U$ is open and $x\in U$ $\implies$  $U\cap H\neq \emptyset$ and $U\cap(T\setminus H)\neq\emptyset$}\right\}$$
@@ -29,14 +31,15 @@
 > Let $(X,τ)$ be a topological space and $A ⊂ X$. Then
 >- A is open iff $A \cap \partial A = \emptyset$.
 >- A is closed iff $\partial A \subset A$.
->
 >$\quad$
 
 *Proof*  If $A$ is open, then every $x ∈ A$ has the neighborhood $A$ that does not intersect $A^{c}$ and thus $x \notin ∂A$. Thus $A∩∂A = \emptyset$. Conversely, if $A∩∂A=\emptyset$, then for any $x ∈A$ we have $x\notin ∂A$. Thus there is an open neighborhood $U_{x}$ of $x$ not intersecting both $A$ and $A^{c}$. Since $x ∈ U_{x} ∩ A$, we have $U_{x} ∩A^{c} =\emptyset$. Thus $U_{x} ⊂A$ and hence $A=\bigcup_{x\in A} U_{x}$ is open. $\square$
 
 >[!definition] Limit Point & Isolated Point
-> Let $S ⊂ X$. A point $x ∈ X$ is a *limit point* of $S$ if every [[Closure, Interior and Boundary#^eda962|neighbourhood]] of $x$ intersects $S \setminus \{x\}$. (Note that a limit point of $S$ does not need to belong to $S$). The set of all limit points is called the *derived set*.
+> Let $S \subset X$. A point $x ∈ X$ is a *limit point* of $S$ if every [[Closure, Interior and Boundary#^eda962|open neighbourhood]] of $x$ intersects $S \setminus \{x\}$. (Note that a limit point of $S$ does not need to belong to $S$). The set of all limit points is called the *derived set*, denoted $S'$/
 > A point in $S$ that is not a limit point of $S$ is called an *isolated point*. Equivalently, A point $x$ is an isolated point of $A$ if there is an open subset $U$ of $X$ such that $U\setminus A= \{x\}$. ^11cf9f
+
+<u><b>e.g.</b></u>  Consider $A=(0,1)\subset \R$, then $A'=[0,1]$; For $B=\{1/n\}$
 
 >[!theorem] 
 >Let $X$ be a topological space and $A ⊂ X$ . Then $$\bar{A} = A \cup \{\text{limit points of } A\}$$
@@ -44,10 +47,14 @@
 >[!definition] Dense, Nowhere Dense and Meagre
 >A subset $A$ of $T$ is *dense* in $T$ if $\bar{A}=T$, is *nowhere dense* in $T$ if ${(\bar{A})}^\circ = \emptyset$, is *meagre* if it is a union of a countable number of nowhere dense sets. ^b560bf
 
+> [!definition] Separable Space
+> A topological space is *separable* if it has a [[Equinumerous and Countability#^79eb6c|countable]] [[Closure, Interior and Boundary#^b560bf|dense]] subset. ^acb78f
+> 
+
 >[!lemma] 
 > A subset $A$ of $T$ is nowhere dense if and only if $T \setminus \bar{A}$ is dense in $T$.
 
-<b><u>e.g.</u></b>  $\mathbb{Q}$ is dense in $\R$ (as is $\R \setminus\mathbb{Q}$). In $\R$, one-point sets are nowhere dense; so $\mathbb{Q}$ is meagre in $\R$. However, $\R \setminus\mathbb{\bar{Q}} = \emptyset$, so Q isn’t nowhere dense.
+<b><u>e.g.</u></b>  $\mathbb{Q}$ is dense in $\R$ (as is $\R \setminus\mathbb{Q}$). In $\R$, one-point sets are nowhere dense; so $\mathbb{Q}$ is meagre in $\R$. However, $\R \setminus\mathbb{\bar{Q}} = \emptyset$, so $\Q$ isn’t nowhere dense.
 
 ## Convergent Sequences
 

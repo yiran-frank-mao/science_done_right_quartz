@@ -1,5 +1,5 @@
 > [!definition] Topological Vector Space
-> A topological vector space is a [[Vector Spaces#^f4b63e|vector space]] that is also a [[Topological Spaces#^65c94a|topological space]], where the vector space operations (addition and scalar multiplication) are [[Continuous Functions on Topological Spaces#^33ee5a|continuous]] with respect to the topology.
+> A topological vector space is a [[Vector Spaces#^f4b63e|vector space]] that is also a [[Topological Spaces#^65c94a|topological space]], where the vector space operations (addition and scalar multiplication) are [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] with respect to the topology.
 
 <u><b>e.g.</b></u>  Banach spaces, Hilbert spaces, and Sobolev spaces are all examples of topological vector spaces.
 

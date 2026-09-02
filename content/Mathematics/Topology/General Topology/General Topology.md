@@ -17,7 +17,7 @@ The fundamental concepts in point-set topology are **continuity**, **compactness
 [[Metric Spaces]]
 [[Interior, Exterior and Boundary]]
 [[Limit Points and Closure]]
-[[Open and Closed Sets]]
+[[Open and Closed Sets in Metric Spaces]]
 [[Sequence and Convergence]]
 [[Compactness of Metric Space]]
 [[Complete Metric Space]]
@@ -30,10 +30,13 @@ The fundamental concepts in point-set topology are **continuity**, **compactness
 [[Closure, Interior and Boundary]]
 [[Separation and Hausdorff Spaces]]
 [[Compactness of Topological Space]]
-[[Continuous Functions on Topological Spaces]]
+[[Continuous Maps on Topological Spaces]]
 [[Constructions on Topological Spaces]]
 [[Isometries and Homeomorphisms]]
 [[Connectedness and Paths]]
+[[Topological Groups]]
+[[The Mapping Space]]
+[[The Baire Category Theorem]]
 [[Nets]]
 
 

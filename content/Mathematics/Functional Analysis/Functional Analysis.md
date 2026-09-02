@@ -20,9 +20,9 @@ Functional Analysis is the study of [[Vector Spaces#^f4b63e|vector spaces]] endo
 [[Nelson's Commutator Theorem]]
 ### Banach Spaces
 [[Banach Spaces]]
-[[The Implicit Function Theorem]]
-[[The Hahn-Banach Theorem]]
 [[The Baire Category Theorem]]
+[[The Hahn-Banach Theorem]]
+[[The Implicit Function Theorem]]
 ### Topological Vector Spaces
 [[Topological Vector Spaces]]
 [[Generalized Functions]]

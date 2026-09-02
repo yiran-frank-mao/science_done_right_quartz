@@ -14,7 +14,7 @@ Recall the definition of a group action:
 
 ![[Group Actions#^4047e8]]
 
-We can treat it as a group homomorphism $\rho\colon G \to \mathrm{Homeo}(X)$. We usually assume the action is [[Group Actions#^f7c6a0|faithful]] (i.e., $\rho$ is injective). If not, we can replace $G$ with the quotient group $G/\ker(\rho)$.
+For topological spaces, we can treat it as a group homomorphism $\rho\colon G \to \mathrm{Homeo}(X)$. We usually assume the action is [[Group Actions#^f7c6a0|faithful]] (i.e., $\rho$ is injective). If not, we can replace $G$ with the quotient group $G/\ker(\rho)$.
 
 > [!definition] Covering Space Action
 > A $G$-action on a [[Topological Spaces#^65c94a|space]] $Y$ is called a *covering space action* if for any point $y \in Y$, there exists an open neighborhood $U$ of $y$ such that for any two distinct elements $g_1, g_2 \in G$, the sets $g_1U$ and $g_2U$ are disjoint.
@@ -31,7 +31,7 @@ We can treat it as a group homomorphism $\rho\colon G \to \mathrm{Homeo}(X)$. We
 > $\quad$
 
 *Proof*  **(1)** First, we show $p: Y \to X$ is a covering space. Let $U$ be a neighborhood of a point $y \in Y$ as in the definition of a covering space action. Then $p(U)$ is an open set in $X$. Its preimage is $p^{-1}(p(U)) = \bigsqcup_{g \in G} gU$. The restriction of $p$ to each disjoint open set $gU$ is a homeomorphism onto $p(U)$. These sets $p(U)$ form a basis of evenly covered neighborhoods for the topology on $X$, so $p$ is a covering map.
-To show the covering is normal, we must show that for any $y_1, y_2 \in Y$ such that $p(y_1) = p(y_2)$, there exists a deck transformation $f \in \text{Aut}_X(Y)$ with $f(y_1) = y_2$. By definition of the quotient space, $p(y_1) = p(y_2)$ means that $y_1$ and $y_2$ are in the same orbit, so there exists some $g \in G$ such that $y_2 = gy_1$[cite: 29]. The action of this $g$ (i.e., the map $f = \rho(g): Y \to Y$) is a deck transformation, and since $f(y_1) = gy_1 = y_2$, the condition is satisfied and the covering is normal.
+To show the covering is normal, we must show that for any $y_1, y_2 \in Y$ such that $p(y_1) = p(y_2)$, there exists a deck transformation $f \in \text{Aut}_X(Y)$ with $f(y_1) = y_2$. By definition of the quotient space, $p(y_1) = p(y_2)$ means that $y_1$ and $y_2$ are in the same orbit, so there exists some $g \in G$ such that $y_2 = gy_1$. The action of this $g$ (i.e., the map $f = \rho(g): Y \to Y$) is a deck transformation, and since $f(y_1) = gy_1 = y_2$, the condition is satisfied and the covering is normal.
 **(2)** If $Y$ is connected, any deck transformation $f \in \text{Aut}_X(Y)$ is uniquely determined by its action on a single point, say $y_1$. Since $f$ is a deck transformation, we must have $p(f(y_1)) = p(y_1)$. This implies that $f(y_1)$ and $y_1$ are in the same fiber, so there must be some $g \in G$ such that $f(y_1) = gy_1$. Since the action of $g$ is also a deck transformation that sends $y_1$ to $gy_1$, and since deck transformations are uniquely determined by their action on one point, we must have $f = \rho(g)$. Thus, every deck transformation corresponds to an element of $G$.
 **(3)** This is a standard result from covering space theory which states that for a normal covering space with a path-connected base space, the group of deck transformations is isomorphic to $\pi_1(X) / p_*(\pi_1(Y))$. $\square$
 

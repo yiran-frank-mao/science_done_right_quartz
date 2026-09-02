@@ -18,6 +18,7 @@ Knot theory is a branch of mathematics that studies the properties and classific
 [[Pure Braids]]
 [[Garside Normal Form]]
 [[The Braid Category]]
+[[Representations of Braid Groups]]
 ### Tangles
 [[Tangles and Categories of Tangles]]
 [[Formality Maps for Tangles]]

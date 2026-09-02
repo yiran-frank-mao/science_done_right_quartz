@@ -2,6 +2,8 @@
 created: 2025-09-15
 updated: 2025-09-15
 completed: true
+tags:
+  - homology-of-torus
 ---
 ## $\Delta$-Complexes and Chains
 

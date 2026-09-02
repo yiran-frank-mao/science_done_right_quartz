@@ -1,23 +1,12 @@
 ## Simple Functions and Measurable Functions
 
-> [!definition] Characteristic Function
-> A characteristic function of a set $E$ is a function defined by $$\chi_{E}(x)=\begin{cases}
-1,\text{ if }x\in E \\ 0, \text{if }x\notin E\end{cases}$$
-
-> [!definition] Simple Function, Step Function
-> A simple function is a function that can be expressed as a finite linear combination of characteristic functions of measurable sets with finite measure: $$f=\sum_{k=1}^{N}a_{k}\chi_{E_{k}}$$where $a_{k}$ are constants. In particular, if each $E_{k}$ is a rectangle, then $f$ is called a step function. ^ad60a2
+As we defined the [[Measurable Spaces and Functions#^11c83a|measurable functions]], when the domain of a function is endowed with the Lebsgue $\sigma$-algebra, we call it *Lebesgue measurable*:
 
 > [!definition] Lebesgue Measurable Function  
-> A function $f\colon E\to [-\infty,\infty]$ defined on a measurable subset $E$ of $\R^d$ is Lebesgue measurable, if the set $f^{-1}(B)$  is Lebesgue measurable for all Borel set $B\subseteq\R$.
-> To simplify our notation, we shall often denote the set $\{x \in E : f(x) < a\}$ simply by $\{f < a\}$ whenever no confusion is possible. ^d36994
+>  A function $f\colon \R^{d} \to \R$ is *Lebesgue measurable* if it is measurable when the domain $\R^{d}$ is endowed with the Lebesgue $\sigma$-algebra. ^d36994
 
 > [!proposition]
-> The followings are equivalent:
-> 1. $f$ is Lebesgue measurable.
-> 2. $\{f\leq a\}$ or $\{f\geq a\}$ or $\{f<a\}$ or $\{f>a\}$ is measurable for all $a\in \R$. 
-> $\quad$
-
-> [!proposition]
+> To simplify our notation, we shall often denote the set $\{x \in E : f(x) < a\}$ simply by $\{f < a\}$ whenever no confusion is possible. 
 > The followings are equivalent for a finite-valued function $f$:
 > 1. $f$ is measurable.
 > 2. $\{a\leq f<b\}$ is measurable for all $a,b\in\R$.
@@ -31,14 +20,9 @@
 > 
 
 > [!proposition]
-> Suppose $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of measurable functions. Then $$x\mapsto\sup_{n}f_{n}(x), \quad x\mapsto\inf_{n} f_{n}(x),\quad \limsup_{n\to \infty} f_{n}(x),\quad \liminf_{n\to \infty}f_{n}(x)$$are measurable. In particular, if $\lim_{n\to \infty} f_{n}$ exists a.e., it is measurable.
-
-*Proof*  Note that $\{\sup_{n} f_{n}>a\}=\bigcup_{n}\{f_{n}>a\}$, and $\{\limsup_{n} f_{n}>a\}=\bigcap_{N}\bigcup_{n\geq N}\{f_{n}>a\}$, and other cases are similar. $\square$
-
-> [!proposition]
 > If $f$ and $g$ are measurable, then  
-> 1. The integer powers $f^k$, $k \geq 1$ are measurable.  
-> 2. $f+g$ and $fg$ are measurable if both $f$ and $g$ are finite-valued.
+> 5. The integer powers $f^k$, $k \geq 1$ are measurable.  
+> 6. $f+g$ and $fg$ are measurable if both $f$ and $g$ are finite-valued.
 >$\quad$
 
 > [!definition] Almost Everywhere

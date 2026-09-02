@@ -428,7 +428,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Two View Geometry]], [[Convolutional Neural Network]], [[Image Filtering]], [[Image Processing]], [[Digital Image Representation]].
 
 ## 27 May 2024
-- Update: [[Angular Momentum]], [[The Harmonic Oscillator]], [[Totally Bounbdedness]], [[Compactness of Metric Space]], [[Open and Closed Sets]].
+- Update: [[Angular Momentum]], [[The Harmonic Oscillator]], [[Totally Bounbdedness]], [[Compactness of Metric Space]], [[Open and Closed Sets in Metric Spaces]].
 - New pages: [[Radiant Intensity]], [[Connectedness and Paths]].
 
 ## 23 May 2024

@@ -7,20 +7,23 @@ tags:
 
 >[!definition] Ring
 >A *ring* $R$ is a set equipped with two laws of composition $+$ and $\cdot$, called addition and multiplication, satisfying the following axioms:
->- $(R,+)$ is an abelian group with identity $0$, called zero.
->- The multiplication is associative: $a(bc)=(ab)c$  for all $a,b,c \in R$.
+>- $(R,+)$ is an [[Groups, Order and Subgroups#^6d511a|abelian group]] with identity $0$, called *zero*;
+>- The multiplication is associative: $a(bc)=(ab)c$  for all $a,b,c \in R$;
 >- Distributivity: $(a+b)c = ac+bc$ for all $a,b,c \in R$.
 >
-> If $R$ has identity $1$ with respect to multiplication we say that $R$ is *unital*.
+> If $R$ has an identity $1$ with respect to multiplication, we say that $R$ is *unital*.
 > A ring $R$ is *commutative* if the multiplication is commutative. ^178485
 
-<b><u>e.g.</u></b>  The integers $\mathbb{Z}$ is a commutative unital ring.
+<b><u>e.g.</u></b>  
+- The integers $\mathbb{Z}$ is a commutative unital ring, any $\Z/n\Z$ is a commutative unital ring.
+- The set of 2×2 matrices with real entries $M_{2}(\R)$ is a non-commutative unital ring.
+$\quad$
 
 >[!attention] 
->We will restrict to commutative unital rings and just call them rings.
+> We shall sometimes just call commutative unital rings "rings", and emphasize the other cases when necessary.
 
 >[!definition] Subring
->A subset $S$ in a ring $R$ is called a subring if $S$ is closed under addition, subtraction, multiplication and contains $1$.
+>A subset $S$ in a ring $R$ is called a *subring* if $S$ is closed under addition, subtraction, multiplication and contains $1$.
 
 >[!definition] Unit
 >An element of a ring $R$ is called a unit if it is invertible with respect to multiplication. The set of invertible elements is a [[Groups, Order and Subgroups#^6e0960|group]] called the the group of units in $R$ and denotes $R^{\times}$. ^c4d0ce

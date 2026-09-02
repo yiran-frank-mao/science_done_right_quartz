@@ -20,7 +20,6 @@ Set theory is a branch of mathematics that deals with the properties of well-def
 
 ### Order Theory
 [[Preorder, Partial Order and Posets]]
-[[Preorder and Posets]]
 
 ## More ...
 [[General Topology]]

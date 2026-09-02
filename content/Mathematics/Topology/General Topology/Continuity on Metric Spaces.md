@@ -1,5 +1,8 @@
 ---
 updated: 2025-09-07
+tags:
+  - equivalent-metrics
+  - continuity
 ---
 ## Limit and Continuity
 
@@ -12,17 +15,15 @@ updated: 2025-09-07
 >- continuous on $X$ if it is continuous at every point of $X$.
 >$\quad$ ^d3351a
 
->[!definition] 
->**Def**  <i><u>Neighbourhood</u></i>
+>[!definition] Neighbourhood
 >Let $(X,d)$ be a metric space and $a ∈ X$. A set $U ⊂ X$ is called a neighborhood of $a$ if there is an open ball $B_{r}(a)$ with $B_{r}(a)⊂U$.
 
 >[!theorem] 
->**Thrm**  Let $(X,d)$ and $(Y,ρ)$ be metric spaces, let $f \colon X →Y$ be a function, and let $a ∈ X$. The following statements are equivalent:
+> Let $(X,d)$ and $(Y,ρ)$ be metric spaces, let $f \colon X →Y$ be a function, and let $a ∈ X$. The following statements are equivalent:
 >- $f$ is continuous at $a$.
 >- For any sequence $(x_{n})$ in $X$ with $x_{n} → a$ there holds $f (x_{n}) → f (a)$.
 >- For any neighborhood $U$ of $f (a)$, $f^{ −1}(U)$ is a neighborhood of $a$.
 >
->**Proof**
 
 >[!theorem] 
 >**Thrm**  Let $(X,d)$ and $(Y,ρ)$ be metric spaces and let $f \colon X →Y$ be a function. The following are equivalent:
@@ -44,7 +45,7 @@ updated: 2025-09-07
 >[!theorem] 
 > Let $(X,d)$ and $(Y,ρ)$ be metric spaces and let $f \colon X →Y$ be continuous. If $K ⊂ X$ is compact, then $f (K )$ is [[Compactness of Topological Space#^da2511|compact]] in $Y$ ^3a05b1
 
->[!theorem] 
+>[!corollary] 
 > Let $(X,d)$ be a metric space and let $f \colon X → \R$ be a continuous function. If $K ⊂ X$ is compact, then $f$ is bounded above and below and achieves its maximum and minimum values on $K$.
 
 ## Uniform Continuity
@@ -71,10 +72,10 @@ $\quad$
 
 *Proof*  Suppose $f:X\to Y$ is Lipschitz. Then for all $p\in X$ and $\epsilon>0$, let $\delta=\frac{\epsilon}{C}$, then $$d_{X}(x,p)<\delta=\frac{\epsilon}{C} \implies d_{Y}(f(x),f(p))<C\cdot\frac{\epsilon}{C}=\epsilon$$$\square$
 
-## Topologically Equivalent Metrics
+## Equivalent Metrics
 
 >[!lemma] 
->**Lemma**  Suppose that $d_{1}$ and $d_{2}$ are two metrics on $X$. Then the following statements are equivalent:
+> Suppose that $d_{1}$ and $d_{2}$ are two metrics on $X$. Then the following statements are equivalent:
 >- Every set that is open in $(X, d_{2})$ is open in $(X, d_{1})$
 >- For any metric space $(Y, d_{Y})$, if $g : X \to Y$ is continuous from $(X, d_{2})$ to $(Y, d_{Y})$ then $g$ is continuous from $(X, d_1)$ to $(Y, d_Y)$
 >- For any metric space $(Y, d_{Y})$, if $f : Y \to X$ is continuous from $(Y, d_{Y})$ to $(X, d_1)$ then $f$ is continuous from $(Y, d_Y)$ into $(X, d_2)$.
@@ -88,12 +89,20 @@ $\quad$
 >$\quad$
 
 >[!definition] Topologically Equivalence
->Two metrics $d_{1}$ and $d_{2}$ on $X$ are called topologically equivalent, or just equivalent, if the open sets in $(X, d_1)$ and $(X, d_2)$ coincide.
+>Two metrics $d_{1}$ and $d_{2}$ on $X$ are called *topologically equivalent*, or just *equivalent*, if the open sets in $(X, d_1)$ and $(X, d_2)$ coincide. i.e., they yield the same [[Topological Spaces#^65c94a|topology]].
+
+> [!definition] Uniform Equivalence
+> Two metrics $d_1$ and $d_2$ on $X$ are called *uniformly equivalent* if the identity map $\operatorname{id}\colon(X,d_1)\to(X,d_2)$ is a [[Uniform Continuity#^9947a1|uniform homeomorphism]].
+> 
 
 >[!definition] Lipschitz Equivalence
->Two metrics $d_1$ and $d_2$ on $X$ are called *Lipschitz equivalent* if there exist $0 < c \leq C < 1$ such that $$ cd_1(x,y)\leq d_2(x,y)\leq Cd_1(x,y)\quad\text{ for all } x,y\in X$$
+>Two metrics $d_1$ and $d_2$ on $X$ are called *Lipschitz equivalent* if there exist $0 < c \leq C < 1$ such that $$ cd_1(x,y)\leq d_2(x,y)\leq Cd_1(x,y)\quad\text{ for all } x,y\in X.$$
 
-**Lemma**  Let $d_1$ and $d_2$ be two metrics on $X$ that are Lipschitz equivalent on $X$. Then $d_1$ and $d_2$ are topologically equivalent.
+> [!proposition]
+> Lipschitz equivalent metrics are topologically equivalent.
+
+*Proof*  This is straightforward by scaling the open balls. $\square$
+
 **Corollary**  The metrics induced by equivalent norms are topologically equivalent.
 
 **Lemma**  If $X$ is a vector space and two norms $\|\cdot \|_1$ and $\|\cdot \|_2$ on $X$ induce topologically equivalent metrics then the norms are equivalent.

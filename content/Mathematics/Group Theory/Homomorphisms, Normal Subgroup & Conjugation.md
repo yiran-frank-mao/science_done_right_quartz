@@ -30,7 +30,11 @@ completed: true
 > Let $G$ be a group. A subgroup $N \leq G$ is called *normal* if $gN g^{−1} \subset N$ for every $g \in G$. We denote a normal subgroup by $N \triangleleft G$. 
 > A group is *simple* if there’s no non-trivial normal subgroups. ^normal
 
-<u><b>e.g.</b></u>  Let $\varphi : G \to H$ be a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]], then $\ker(\varphi) \triangleleft G$. Fix some $x\in \ker(\varphi)$, then for all $g\in G$ we have $\varphi(g x g^{-1})=\varphi(g)\varphi(x)\varphi(g^{-1})=\varphi(g)\varphi(g)^{-1}=e$.
+<u><b>e.g.</b></u>  
+- Let $\varphi : G \to H$ be a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]], then $\ker(\varphi) \triangleleft G$. Fix some $x\in \ker(\varphi)$, then for all $g\in G$ we have $\varphi(g x g^{-1})=\varphi(g)\varphi(x)\varphi(g^{-1})=\varphi(g)\varphi(g)^{-1}=e$.
+- Every subgroup of an [[Groups, Order and Subgroups#^6d511a|abelian group]] is normal;
+- Finite simple abelian group is [[Cyclic Groups#^c52ddd|cyclic]] with a [[Division and Prime#^47f235|prime]] [[Groups, Order and Subgroups#^3bce31|order]].
+$\quad$
 
 From the definition of a normal subgroup, we immediately have the following properties:
 
@@ -38,7 +42,6 @@ From the definition of a normal subgroup, we immediately have the following prop
 > The followings are true:
 >1. $N \leq G$ is normal iff the right coset $Ng$ coincides with the left coset $gN$ for every $g \in G$.
 >2. We required in the definition that $gN g^{−1} \subset N$ , but it follows that $gN g^{−1} = N$.
->3. Every subgroup of an [[Groups, Order and Subgroups#^6d511a|abelian group]] is normal.
 >$\quad$
 
 It is clear that not every subgroup is normal. For example, let $G=S_3$ and $H=\langle (1~2)\rangle$, then $(1~3)H(1~3)^{-1}=\langle (2~3)\rangle\neq H$. However, we can make an arbitrary subgroup as normal as possible by two ways. One is to instead of sticking to $G$, find the largest subgroup of $G$ in which $H$ is normal; the other is to fix $G$, but to find the largest normal subgroup of $G$ contained in $H$. The first one is called the *normaliser* of $H$ in $G$, and the second one is called the *normal core* of $H$ in $G$.

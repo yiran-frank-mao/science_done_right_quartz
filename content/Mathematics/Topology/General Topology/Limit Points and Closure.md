@@ -9,7 +9,7 @@
 $\quad$
 
 >[!definition] Closure
->The closure of $A$ is defined as $$\overline{A}:=A\cup\{\text{all limit points of }A\}.$$
+> The *closure* of $A$ is defined as $$\overline{A}:=A\cup\{\text{all limit points of }A\}.$$
 
 >[!theorem] 
 >Let $(X,d)$ be a metric space and $A ⊂ X$. If $x ∈ X$ is a limit point of $A$, then every open ball $B_{r} (x)$ contains infinitely many points of $A$.

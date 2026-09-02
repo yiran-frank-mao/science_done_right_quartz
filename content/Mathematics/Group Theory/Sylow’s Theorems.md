@@ -1,7 +1,7 @@
 ---
 completed: true
 ---
-Sylow's theorems are direct applications of group actions and form a generalisation of Cauchy's theorem.
+Sylow's theorems are direct applications of group actions and form a generalisation of [[Group Actions#^ff735e|Cauchy's theorem]].
 
 ## The Existence Theorem
 

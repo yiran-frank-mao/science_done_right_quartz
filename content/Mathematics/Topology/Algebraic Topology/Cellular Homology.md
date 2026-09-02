@@ -85,7 +85,7 @@ Following the blue route, $1\in \Z$ will be sent to $d_{\alpha\beta}\in \Z$, whi
 The real projective space $\newcommand{\RP}{\mathbb{R}\mathrm{P}}\RP^n$ has a CW structure with exactly one $k$-cell $e_k$ in each dimension $k$ for $0 \le k \le n$. The cell $e_k$ is attached to the $(k-1)$-skeleton $\RP^{k-1}$ via the standard 2-sheeted covering map $\phi_k\colon S^{k-1} \to \RP^{k-1}$.
 The cellular chain complex is $C_k^{\CW}(\RP^n) = \Z$ for $0 \le k \le n$ and $0$ otherwise.
 The boundary map $d_{k}\colon C_k^{\CW} \to C_{k-1}^{\CW}$ is determined by the degree of the composite map: $$S^{k-1} \xrightarrow{\phi_k} \RP^{k-1} \xrightarrow{q} \RP^{k-1}/\RP^{k-2} \cong S^{k-1}$$Let's call this composite map $f\colon S^{k-1} \to S^{k-1}$. To find its degree, we can sum the local degrees over the preimage of a regular point $y \in S^{k-1}$. The preimage under $\phi_k$ consists of two points, which we can identify with $y$ and its antipode $-y$ in the domain $S^{k-1}$.
-1.  Near $y$, the map is a local homeomorphism that preserves orientation. The local degree is **+1**.
+1.  Near $y$, the map is a local homeomorphism that preserves orientation. The local degree is $+1$.
 2.  Near $-y$, the map is a composition of the antipodal map $a: S^{k-1} \to S^{k-1}$ (which has degree $(-1)^k$) and an orientation-preserving local homeomorphism. The local degree is **$(-1)^k$**.
 
 Therefore, the total degree is $\text{deg}(f) = 1 + (-1)^k$. The boundary map is multiplication by this integer: $$d_k = \begin{cases} 0 & \text{if } k \text{ is odd} \\ 2 & \text{if } k \text{ is even and } k>0 \end{cases}$$

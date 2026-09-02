@@ -44,3 +44,5 @@
 > A smooth embedding is a topological embedding that is also an immersion.
 > 
 
+> [!theorem] Regular Value Theorem
+> 

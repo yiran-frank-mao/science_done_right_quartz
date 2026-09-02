@@ -42,7 +42,7 @@ But clearly not every Lie group is a matrix Lie group. Here are two examples of 
 $\quad$
 ### Compactness
 
-One benefit of matrix Lie groups is that it is easy to check [[Compactness of Topological Space#^da2511|compactness]] by [[Continuous Functions on Topological Spaces#^6e5465|Heine-Borel theorem]]. For example, $\U_{n}$ and $\O_{n}$ are compact since every orthogonal/unitary matrix has Frobenius norm $\sqrt{n}$, and so is bounded. On the other hand, $\SL_{2}(\R)$ is not compact since the [[Groups, Order and Subgroups#^1ccb07|subgroup]] $\left\{\begin{pmatrix}t & 0 \\ 0 & 1/t\end{pmatrix}\mid t\neq0\right\}$ is not bounded.
+One benefit of matrix Lie groups is that it is easy to check [[Compactness of Topological Space#^da2511|compactness]] by [[Continuous Maps on Topological Spaces#^6e5465|Heine-Borel theorem]]. For example, $\U_{n}$ and $\O_{n}$ are compact since every orthogonal/unitary matrix has Frobenius norm $\sqrt{n}$, and so is bounded. On the other hand, $\SL_{2}(\R)$ is not compact since the [[Groups, Order and Subgroups#^1ccb07|subgroup]] $\left\{\begin{pmatrix}t & 0 \\ 0 & 1/t\end{pmatrix}\mid t\neq0\right\}$ is not bounded.
 
 ### Connectedness
 

@@ -14,7 +14,7 @@
 > $\car{A}\leq\car{B}$ if and only if there exists injection $f\colon A\to B$.
 >
 
-*Proof*  $g\colon A\to f(A), x \mapsto f(x)$ forms a bijection, $A \sim f(A)\subseteq B$. $\square$
+*Proof*  $g\colon A\to f(A), x \mapsto f(x)$ forms a [[Relations and Functions#^042daf|bijection]], $A \sim f(A)\subseteq B$. $\square$
 
 > [!corollary] Pigeonhole Principle
 > There does not exist an injective function whose codomain is smaller than its domain.
@@ -46,11 +46,6 @@
 
 > [!theorem]
 > A countable union of countable sets is countable. ^7d624e
-
-> [!corollary] 
-> If $A_{1},\dots,A_{n}$ are countable sets, then $\bigcup_{i=1}^{n}A_{i}$ is also a countable set. ^b77fc5
-
-*Proof*  We define $A_{n+1} = A_{n+2} = \dots = \emptyset$. Then $\bigcup_{i=1}^nA_i=\bigcup_{i=1}^\infty A_i$ and the latter is countable by the above theorem. $\square$
 
 **Corollary**  Let $A$ and $B$ be two sets. If $\car{ A ∪ B} = c$, show that either $\car{A} = c$ or $\car{B} = c$.
 **Proof**  Assume that $\car{A} < c$ and $\car{B} < c$. Since $\car{A∪B}=c$, there is a bijection $f\colon A∪B\to \R^2$. Let $U=f(A)$ and $V =f(B)$. Then $$\overline{\overline{U}}=\overline{\overline{A}}<c,\quad\overline{\overline{V}}=\overline{\overline{B}}<c,\quad\mathbb{R}^2=f(A\cup B)=f(A)\cup f(B)=U\cup V$$Let $X=\{(x,0):x\in\mathbb{R}\}$ and $Y=\{(0,y):y\in\mathbb{R}\}$. Then both $X$ and $Y$ have cardinality $c$. Let $p_1$ and $p_2$ denote the projections of $\R^2$ onto $X$ and $Y$ respectively. We claim that $p_1(U)\neq X$ and $p_{2}(V)\neq Y$. If $p_1(U) = X$, since $p_1$ is a surjection, this means that $X$ is equinumerous to a subset of $U$ and hence $\car{U} ≥ \car{X} = c$, contradicting $\car{U} < c$. By a similar argument we can obtain $p_2(V ) \neq Y$. Therefore, there exists $x^*, y^* ∈ \R$ such that $(x^*, y) \notin U$ for all $y∈\R$ and $(x,y^{*})\notin V$ for all $x∈\R$. Thus $(x^{*},y^{*)}\notin U∪V =\R^2$, yielding a contradiction.

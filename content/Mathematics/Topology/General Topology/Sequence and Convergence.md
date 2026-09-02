@@ -28,9 +28,9 @@ Let $(X,d)$ be a metric space. A sequence $(x_{n})$ in $X$ is called bounded if 
 **Thrm**  Let $(X,⟨·,·⟩)$ be an inner product space. If $x_{n} \to x$ and $y_{n} \to y$, then $⟨x_n,y_n⟩ \to ⟨x,y⟩$.
 **Proof**  We have $$\begin{aligned}\langle x_n,y_n\rangle-\langle x,y\rangle&=\langle x_n,y_n\rangle-\langle x,y_n\rangle+\langle x,y_n\rangle-\langle x,y\rangle\\&=\langle x_n-x,y_n\rangle+\langle x,y_n-y\rangle\end{aligned}$$Therefore, by the Cauchy-Schwarz inequality, we have $$|\langle x_n,y_n\rangle-\langle x,y\rangle|\leq\|x_n-x\|\|y_n\|+\|x\|\|y_n-y\|\to0$$because $x_{n} \to x$, $y_{n} \to y$ and $(y_n)$ is bounded.
 
-## Convergence and Closeness 
+## Convergence and Closedness 
 
-**Thrm**  Let $(x_{n})_{n=1}^{\infty}$ be a sequence in a metric space $(X,d)$. We have $x_{n} \to x$, as $n \to \infty$ if and only if for every [[Open and Closed Sets#^e112b1|open set]] $U$ containing $x$ there is an $N\geq1$ such that $x_{n} \in U$ for all $n\geq N$.
+**Thrm**  Let $(x_{n})_{n=1}^{\infty}$ be a sequence in a metric space $(X,d)$. We have $x_{n} \to x$, as $n \to \infty$ if and only if for every [[Open and Closed Sets in Metric Spaces#^e112b1|open set]] $U$ containing $x$ there is an $N\geq1$ such that $x_{n} \in U$ for all $n\geq N$.
 **Proof**  
 
 **Thrm**  Let $(X,d)$ be a metric space and $A⊂X$. Then $$x\in \overline{A} \iff \exists(x_{n})\in A^{\infty}\text{ s.t. } x_{n}\to x$$**Proof**  We have $$\begin{aligned}x\in\overline{A}&\Longrightarrow B_{1/n}(x)\cap A\neq\emptyset\text{ for all }n\in\mathbb{N}\\&\Longrightarrow\exists x_n\in B_{1/n}(x)\cap A\text{ for all }n\\&\Longrightarrow\exists(x_n)\subset A\text{ with }d(x_{n},x)<1/n\\&\Longrightarrow\exists(x_{n})\subset{A}\text{ such that }x_n\to x\end{aligned}$$Thus proved the proposition. ^527a6d

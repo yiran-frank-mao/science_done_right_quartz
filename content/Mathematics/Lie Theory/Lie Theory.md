@@ -8,6 +8,7 @@ Lie theory is the study of continuous symmetries through **Lie groups**—smooth
 
 ### Lie Group and Lie Algebra Correspondence
 [[Topological Groups]]
+[[The Mapping Space]]
 [[Lie Groups]]
 [[Lie Algebra]]
 [[The Exponential Map]]

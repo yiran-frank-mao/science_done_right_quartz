@@ -3,6 +3,8 @@
 > [!definition] Galois Group
 > Suppose $K\supset F$ is a finite field extension. Then the *Galois group* $\Gal(K/F)$ is the group of all $F$-automorphisms of $K$, where an $F$-automorphism is a [[Fields and Field Extensions#^72b6c5|field extension isomorphism]] $K\to K$.
 
+<u><b>e.g.</b></u>  
+
 > [!definition] Galois Extension
 > A finite extension $K\supset F$ is a *Galois extension* if the order of its Galois group $\Gal(K/F)$ is equal to the degree of the extension $[K:F]$.
 
@@ -25,10 +27,10 @@
 ## Galois Extensions
 
 > [!definition] Intermediate Field
-> If $K$ is a field extension of $F$, an intermediate field $L$ is a field such that $F\subset L\subset K$. An intermediate field is proper if $L\neq F$ and $L\neq K$.
+> If $K$ is a field extension of $F$, an *intermediate field* $L$ is a field such that $F\subset L\subset K$. An intermediate field is *proper* if $L\neq F$ and $L\neq K$.
 
 > [!theorem] Characterization of Galois Extensions
-> Let $K\supset F$ be a finite extension and let $G$ be its Galois group. The following are equivalent:
+> Let $K\supset F$ be a finite extension and let $G$ be its Galois group. The followings are equivalent:
 > - $K\supset F$ is a Galois extension;
 > - The fixed field $K^{G}$ is equal to $F$;
 > - $K$ is the splitting field over $F$.
@@ -41,6 +43,22 @@
 >$\quad$
 
 *Proof*  The first statement holds because every finite field extension is contained in a splitting field, which is a Galois extension. For the second statement, if $K\supset F$ is a Galois extension with Galois group $G$, then $K$ is a splitting field over $F$ and $F=K^{G}$. Suppose $L$ is an intermediate field, then $K$ must also be a splitting field over $L$, thus $K\supset L$ is also Galois. Let its Galois group be $H$, then $L=K^{H}$. So $K^{G}\subset K^{H}$, which means every automorphism in $H$ must fix every element in $K^{G}$, thus $H\subset G$, and furthermore, $H\leq G$. $\square$
+
+## Normal Extension and Separability
+
+> [!definition] Normal Extension
+> $K/F$ is a *normal extension* if every element of $K$ has its minimal polynomial over $F$ split completely in $K[x]$.
+
+In other words, a normal extension never contains “only some” of the conjugates of an algebraic element. If it contains one conjugate, it contains the entire set.
+
+> [!definition] Separable Extension
+> $K/F$ is separable if the minimal polynomial of any element has no multiple roots. 
+> 
+ 
+> [!proposition]
+> Every algebraic extension of a field of characteristic zero is separable, and every algebraic extension of a finite field is separable.
+> 
+
 
 ## The Main Theorem
 

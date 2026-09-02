@@ -146,7 +146,7 @@ Note that $f_{n}(x)\geq 0$ and $f_{n}(x)\to f(x)$ for a.e. $x$ not necessarily i
 > $\quad$
 
 > [!theorem] Dominated Convergence Theorem
-> Suppose $\{f_n\}$ is a sequence of measurable functions such that $f_n(x) \to f(x)$ a.e. as $n \to \infty$. If $|f_n(x)| \leq g(x)$, where $g$ is integrable, then  
+> Suppose $\{f_n\}$ is a sequence of measurable functions such that $f_n(x) \to f(x)$ a.e. as $n \to \infty$. If $|f_n(x)| \leq g(x)$ a.e., where $g$ is integrable, then  
 > $$\int |f_n - f| \to 0 \quad \text{as } n \to \infty,$$  
 > and consequently,  
 > $$\int f_n \to \int f \quad \text{as } n \to \infty.$$

@@ -58,6 +58,8 @@ We will see that there are several equivalent ways to define a Lebesgue measurab
 > 
 > Where if $E_{1}, E_{2}, \cdots$ is a countable collection of subsets of $\R^{d}$ that increases to $E$ in the sense that $E_{k} \subset E_{k+1}$ for all $k$, and $E=\bigcup_{k=1}^{\infty} E_{k}$, then we write $E_{k}\nearrow E$. Similarly, if $E_{1}, E_{2}, \cdots$ is a countable collection of subsets of $\R^{d}$ that decreases to $E$ in the sense that $E_{k+1} \subset E_{k}$ for all $k$, and $E=\bigcap_{k=1}^{\infty} E_{k}$, then we write $E_{k}\searrow E$.
 
+
+
 > [!theorem]
 > Suppose $E$ is a measurable subset of $\mathbb{R}^d$. Then, for every $\epsilon > 0$:
 > 1. There exists an open set $\mathcal{O}$ with $E \subset \mathcal{O}$ and $m(\mathcal{O} \setminus E) \leq \epsilon$.
@@ -83,17 +85,7 @@ We will see that there are several equivalent ways to define a Lebesgue measurab
 
 *Proof*  This is easy to see by replacing $O$ with $-O$. $\square$
 
-## Borel Sets
 
-> [!definition] Borel $\sigma$-Algebra
-> The *Borel $\sigma$-algebra* on $\R^{d}$, denoted as $\mathcal{B}_{\R^{d}}$, is the smallest $\sigma$-algebra containing all [[Open and Closed Sets#^e112b1|open sets]]. The term “smallest” means that if $\mathcal{S}$ is any $\sigma$-algebra that contains all open sets in $\R^{d}$, then necessarily $\mathcal{B}_{\R^{d}}\subset \mathcal{S}$. Elements of the Borel $\sigma$-algebra are called *Borel sets*.
-
-> [!corollary]
-> A subset $E$ of $\mathbb{R}^d$ is measurable  
-> 1. if and only if $E$ differs from a $G_\delta$ by a set of measure zero, i.e., $E\subseteq G_{\delta}$, and $m(G_{\delta}\setminus E)=0$.
-> 2. if and only if $E$ differs from an $F_\sigma$ by a set of measure zero. i.e., $E\supseteq F_{\sigma}$, and $m(E\setminus F_{\sigma})=0$.
-> 
-> Where a $G_\delta$ set is a countable intersection of open sets, and an $F_\sigma$ set is a countable union of closed sets.
 
 Here is a summary of the equivalence of the definitions of a Lebesgue measurable set:
 
@@ -115,11 +107,14 @@ Here is a summary of the equivalence of the definitions of a Lebesgue measurable
 
 We now explicitly construct a non-measurable set.
 
+> [!definition] Vitali Set
+> Consider $[0,1]/\Q$, a *Vitali set* $N\subset [0,1]$ is a set of representatives of each equivalence class in $[0,1]/\Q$.
+
 > [!proposition]
-> Consider $[0,1]/\Q$, we identify a set $\mathcal{N}\subset [0,1]$ of representatives of each equivalence class in $[0,1]/\Q$. Then $\mathcal{N}$ is a non-measurable set.
+>  Vitali sets are non-measurable.
 > 
 
-*Proof*  We shall prove by contradiction. Suppose $\mathcal{N}$ is measurable.
+*Proof*  We shall prove by contradiction. Suppose $N$ is a Vitali set and is measurable with measure $a$. Note that for all rationals $q\in [-1,1]$, the translations $N+q$ are pairwise disjoint. Let $U=\bigcup_{q\in[-1,1]\cap\Q} N+q$, then $m(U)=\sum_{q\in[-1,1]\cap\Q} a$. If $a=0$, $m(U)=0$, otherwise $a>0$, $m(U)=\infty$. So $m(U)$ can be either $0$ or $\infty$. However, $$[0,1]\subset U \subset [-1,2],$$yields a contradiction. $\square$
 
 > [!remark]+ Axiom of Choice
 > The construction of such a set relies on the axiom of choice, and the existence of non-measurable sets is independent of the standard axioms of set theory.

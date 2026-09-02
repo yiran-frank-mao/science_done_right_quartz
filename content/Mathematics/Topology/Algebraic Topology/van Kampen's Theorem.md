@@ -25,6 +25,8 @@ The path-connectedness of the intersections is a crucial hypothesis. If it fails
 * However, the space $X$ is the wedge sum $S^1 \lor S^1$, so its fundamental group is $\pi_1(X) \cong \mathbb{Z} * \mathbb{Z}$.
 * The issue here is that the triple intersection $A \cap B \cap C$ is not path-connected, so condition (2) does not apply.
 
+We will see right applications of the van Kampen after introducing the wedge sum.
+
 ## The "Good Point" Condition for Infinite Unions
 
 > [!definition] Wedge Sum
@@ -46,6 +48,9 @@ For the theorem to extend to infinite unions of closed sets, a local condition o
 *Proof Sketch*  One can "fatten" each space $X_\alpha$ to an open set $A_\alpha$ in the wedge sum such that $A_\alpha$ deformation retracts to $X_\alpha$. The pairwise and triple intersections of these fattened sets will deformation retract to the wedge point $x_0$. Since $x_0$ is a good point, these intersections are path-connected. Van Kampen's theorem then applies to give the result. $\square$
 
 ## Applications: Complements of Links in $\mathbb{R}^3$
+
+### The Torus
+We can 
 
 ### Complement of a Single Circle
 Let $Z=\R^3 \setminus S^1$. This space [[Homotopy Types#^05414e|deformation retracts]] to a 2-sphere union one of its diameter that pass through the removed $S^{1}$. There are two approaches to think about this. One way is that we can explicitly construct a retraction as follows: for any $x\in Z$, if $x$ is outside of the sphere, we map it to $x/\|x\|$; otherwise, $x$ is inside the sphere, we pick its closest point $\tilde{x}$ on the removed $S^{1}$, and travel away from $\tilde{x}$ until we reach either the diameter or the sphere.

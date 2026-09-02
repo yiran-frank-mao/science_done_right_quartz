@@ -49,7 +49,7 @@
 *Proof*  This is a direct consequence of the [[Lebesgue Differentiation Theorem#^35dec0|Lebesgue Differentiation Theorem]]. To see this, note that if $E$ is measurable, then $\chi_{E}$ is integrable. Thus, by the Lebesgue Differentiation Theorem, we have $$\lim_{\substack{m(B)\to0\\B\supset\{x\}}}\frac{1}{m(B)}\int_{B}\chi_{E}(y) \dd y=\chi_{E}(x),\quad\text{for almost all } x\in\R^{d}.$$ This implies that $$\lim_{\substack{m(B)\to0\\B\supset\{x\}}}\frac{m(E\cap B)}{m(B)}=\chi_{E}(x),$$ for almost all $x\in \R^{d}$. $\square$
 
 > [!definition] Lebesgue Points
-> Suppose $f$ is locally integrable on $\R^{d}$. A point $x\in\R^{d}$ is called a Lebesgue point of $f$ if $f(x)$ is finite and $$\lim_{\substack{m(B)\to0\\B\supset\{x\}}}\frac{1}{m(B)}\int_{B}|f(y)-f(x)| \dd y=0.$$We call the set of Lebesgue points of $f$ the Lebesgue set of $f$.
+> Suppose $f$ is locally integrable on $\R^{d}$. A point $x\in\R^{d}$ is called a *Lebesgue point* of $f$ if $f(x)$ is finite and $$\lim_{\substack{m(B)\to0\\B\supset\{x\}}}\frac{1}{m(B)}\int_{B}|f(y)-f(x)| \dd y=0.$$We call the set of Lebesgue points of $f$ the Lebesgue set of $f$.
 
 > [!proposition]
 > If $f$ is locally integrable on $\R^{d}$, then $x\in\R^{d}$ is a Lebesgue point of $f$ if and only if $f$ is continuous at $x$.

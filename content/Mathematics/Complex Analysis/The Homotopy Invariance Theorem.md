@@ -27,7 +27,7 @@ Let $\newcommand{\C}{\mathbb{C}}D\subset \C$ be a domain, and $\gamma, \tilde{\g
 ## The Homotopy Invariance Theorem
 
 > [!lemma]
-> Let $K\subset U\subset \C$, with $K$ [[Compactness of Metric Space#^f1fb8b|compact]] and $U$ [[Open and Closed Sets#^e112b1|open]]. Then there exists $\varepsilon>0$ such that for all $z\in K$, $\Delta(z,\varepsilon)\subset U$. ^220c21
+> Let $K\subset U\subset \C$, with $K$ [[Compactness of Metric Space#^f1fb8b|compact]] and $U$ [[Open and Closed Sets in Metric Spaces#^e112b1|open]]. Then there exists $\varepsilon>0$ such that for all $z\in K$, $\Delta(z,\varepsilon)\subset U$. ^220c21
 
 *Proof*  Assume the contrary. Then for all $\varepsilon>0$, there is some $z\in K$ such that $\Delta(z,\varepsilon)\not\subset U$. Let $C:=U^{c}$, a closed set. Choose sequence $(z_{n})\subset K$, $(w_{n})\subset C$ such that $|z_{n}-w_{n}|<\frac1n$. Since $K$ is compact, there is a subsequence $(z_{n_{k}})$ converging to some $z_{0}\in K$. Then $w_{n_{k}}\to z_{0}$. Since $C$ is closed, $z_{0}\in C$, thus $z_{0}\in U^{c}\cap K$, contradicting $K\subset U$. $\square$
 

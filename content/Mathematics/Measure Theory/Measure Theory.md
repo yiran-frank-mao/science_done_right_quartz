@@ -14,11 +14,14 @@ Measure theory is a branch of mathematics that extends the concepts of length, a
 
 ### Measure-theoretical Real Analysis
 [[The Exterior Measure]]
+[[Borel Sets and Real Valued Measurable Functions]]
 [[Lebesgue Measurability]]
 [[Lebesgue Measurable Functions]]
 [[Littlewood’s Three Principles]]
 [[Lebesgue Integration]]
+[[Absolute Continuous Functions]]
 [[The Space of Integrable Functions]]
+[[Function Spaces]]
 [[Lebesgue Differentiation Theorem]]
 
 ### Abstract Measures
@@ -31,7 +34,7 @@ Measure theory is a branch of mathematics that extends the concepts of length, a
 ## More ...
 [[Geometric Measure Theory]]
 
-## Acknowledgement
-- [Terence Tao, An Introduction to Measure Theory](https://bookstore.ams.org/gsm-126)
-- [Sheldon Axler, Measure, Integration & Real Analysis](http://measure.axler.net/)
-- [Elias M. Stein and Rami Shakarchi, Real Analysis: Measure Theory, Integration, and Hilbert Spaces](https://press.princeton.edu/books/hardcover/9780691113869/real-analysis)
+## References
+[Terence Tao, An Introduction to Measure Theory](https://bookstore.ams.org/gsm-126)
+[Sheldon Axler, Measure, Integration & Real Analysis](http://measure.axler.net/)
+[Elias M. Stein and Rami Shakarchi, Real Analysis: Measure Theory, Integration, and Hilbert Spaces](https://press.princeton.edu/books/hardcover/9780691113869/real-analysis)

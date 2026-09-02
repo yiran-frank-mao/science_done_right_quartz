@@ -7,7 +7,7 @@ To discuss integration, we have to focus on functions with values in the extende
 > 
 
 > [!definition] Integrable Functions
-> Suppose $(X,\mathcal{S},\mu)$ is a measure space. A measurable function $f\colon X\to \hat{\R}$ is integrable if $$\int_{X} |f(x)|\dd\mu(x)<\infty.$$ ^56d25a
+> Suppose $(X,\mathcal{S},\mu)$ is a measure space. A measurable function $f\colon X\to [-\infty,\infty]$ is *integrable* if $$\int_{X} |f(x)|\dd\mu(x)<\infty.$$ ^56d25a
 
 ## Properties of Integration
 
@@ -26,8 +26,12 @@ The basic limit theorems also hold:
 > [!lemma] Fatou's Lemma
 > If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of non-negative measurable functions on $(X,\mathcal{S},\mu)$, then $$\int\liminf_{n\to \infty} f_{n}\dd\mu \leq \liminf_{n\to \infty} \int f_{n} \dd\mu.$$
 
+*Proof*  
+
 > [!theorem] Monotone Convergence Theorem
-> If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of non-negative measurable functions with $f_n\nearrow f$ on $(X,\mathcal{S},\mu)$, then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$
+> If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of non-negative measurable functions with $f_{n}\nearrow f$ on $(X,\mathcal{S},\mu)$, then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$
+
+*Proof*  Since $f_{n}(x)\leq f(x)$ a.e., we have $\int f_{n}\dd\mu\leq \int f\dd\mu$ for all $n$. Hence $\limsup_{n\to \infty} \int f_{n}\dd\mu \leq \int f \dd\mu$. On the other hand, by Fatou's lemma, we have $$\int f \dd\mu = \int \liminf_{n\to \infty} f_{n}\dd\mu \leq \liminf_{n\to \infty} \int f_{n}\dd\mu.$$ Therefore, we have $\lim_{n\to \infty} \int f_{n}\dd\mu = \int f\dd\mu$. $\square$
 
 > [!theorem] Bounded Convergence Theorem
 > If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of measurable functions on $(X,\mathcal{S},\mu)$ with $\mu(X)<\infty$ and $\|f_{n}\|_{\infty}\leq M$ for all $n$. If $f_{n}\to f$ a.e., then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$ ^f80aa2
@@ -82,7 +86,7 @@ The basic limit theorems also hold:
 
 > [!theorem] Fubini's Theorem
 > Suppose $(X_{1},\mathcal{S}_{1},\mu_{1})$ and $(X_{2},\mathcal{S}_{2},\mu_{2})$ are two $\sigma$-finite measure spaces, and $f\colon X_{1}\times X_{2}\to \hat{\R}$ is $\mu_{1}\times\mu_{2}$-integrable. Then $y\mapsto f(x,y)$ is $\mu_{2}$-integrable for a.e. $y\in X_{2}$, and $x\mapsto f(x,y)$ is $\mu_{1}$-integrable for a.e. $x\in X_{1}$. Moreover, we have 
-> - $x\mapsto \int_{X_{2}}f(x,y)\dd\mu_{2}(y)$ is an $\mathcal{S}_{1}$-measurable function on $X_{1}$,
-> - $y\mapsto \int_{X_{1}}f(x,y)\dd\mu_{1}(x)$ is an $\mathcal{S}_{2}$-measurable function on $X_{2}$,
+> - $x\mapsto \int_{X_{2}}f(x,y)\dd\mu_{2}(y)$ is a $\mu_{1}$-integrable function on $X_{1}$,
+> - $y\mapsto \int_{X_{1}}f(x,y)\dd\mu_{1}(x)$ is a $\mu_{2}$-integrable function on $X_{2}$,
 > 
 > and $$\int_{X_{1}\times X_{2}} f\dd(\mu_{1}\times \mu_{2})=\int_{X_{1}}\int_{X_{2}} f\dd\mu_{2}\dd\mu_{1}=\int_{X_{2}}\int_{X_{1}}f\dd\mu_{1}\dd\mu_{2}.$$

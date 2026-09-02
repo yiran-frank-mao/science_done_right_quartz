@@ -46,4 +46,4 @@ We’ll now use the integral formula to show that if $f ∈H(D)$, then $f'∈H(D
 > [!corollary]
 > Let $D$ be a domain and $f ∈ H(D)$. Then $f^{\prime}∈ H(D)$ and so $f$ is infinitely many times $\C$-differentiable on $D$.
 
-*Proof*  Fix some $z_{0}\in D$. Since $D$ is [[Open and Closed Sets#^e112b1|open]], we can choose some $\Delta(z_{0},r)\subset D$, then $\overline{\Delta(z_{0},\frac{r}{2})}\subset D$. We apply the above corollary to get $f$ is infinitely many times $\C$-differentiable on $\Delta(z_{0},\frac{r}{2})$, in particular $\C$-differentiable at $z_{0}$. Since $z_{0}\in D$ is arbitrary, $f$ is infinitely many times $\C$-differentiable on $D$. $\square$
+*Proof*  Fix some $z_{0}\in D$. Since $D$ is [[Open and Closed Sets in Metric Spaces#^e112b1|open]], we can choose some $\Delta(z_{0},r)\subset D$, then $\overline{\Delta(z_{0},\frac{r}{2})}\subset D$. We apply the above corollary to get $f$ is infinitely many times $\C$-differentiable on $\Delta(z_{0},\frac{r}{2})$, in particular $\C$-differentiable at $z_{0}$. Since $z_{0}\in D$ is arbitrary, $f$ is infinitely many times $\C$-differentiable on $D$. $\square$

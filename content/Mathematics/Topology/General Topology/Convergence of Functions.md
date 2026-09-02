@@ -34,7 +34,7 @@ Let $(X,d)$ and $(Y,ρ)$ be metric spaces. Then
 >If a set of functions from $X$ to $Y$, $\mathscr{F}$ is uniformly equicontinuous, then every $f\in \mathscr{F}$ is [[Continuity on Metric Spaces#^9947a1|uniformly continuous]].
 
 >[!theorem] Arzela-Ascoli Theorem
->Let $(X,d)$ be a compact metric space and let $C(X,\R^{n})$ denote the set of continuous functions from $X$ to $\R^{n}$ equipped with the uniform metric. $\mathscr{F} ⊂C(X,\R^n)$ is closed, [[Open and Closed Sets#^7012df|bounded]] and uniformly equicontinuous iff $\mathscr{F}$ is compact in $C(X,\R^{n})$. ^5cb1ea
+>Let $(X,d)$ be a compact metric space and let $C(X,\R^{n})$ denote the set of continuous functions from $X$ to $\R^{n}$ equipped with the uniform metric. $\mathscr{F} ⊂C(X,\R^n)$ is closed, [[Open and Closed Sets in Metric Spaces#^7012df|bounded]] and uniformly equicontinuous iff $\mathscr{F}$ is compact in $C(X,\R^{n})$. ^5cb1ea
 
 *Proof*
 

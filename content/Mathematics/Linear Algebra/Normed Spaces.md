@@ -12,22 +12,14 @@ updated: 2024-09-17
 >
 > If $X$ is a [[Vector Spaces#^f4b63e|vector space]] and $\|\cdot\|$ is a norm on $X$, then the pair $(X, \|\cdot\|)$ is called a normed space. ^345fd3
 
-<u><b>e.g.</b></u>  We define $C[a,b]$ the [[Vector Spaces#^f4b63e|vector space]] of real-valued continuous functions on the interval $[a,b]$. The standard norm to use on $C[a,b]$ is the supremum norm: $$\newcommand{\dd}{\:\mathrm{d}}\|f\|_{\infty}=\sup_{x\in[a,b]}|f(x)|.$$ Another family of norms are defined on $C[a, b]$ using an integral: for $p \in[1, \infty)$ set $$\|f\|_{p}=\left( \int_{a}^{b}|f(x)|^{p} \dd x \right)^{1/p}$$And we can also define the inner product: $$\langle f, g \rangle = \int_{a}^{b}f(x)g(x)\dd x$$
+<u><b>e.g.</b></u>  
+- The *$L_p$ norm* on $\R^{n}$ for $p\in\N\cup\{\infty\}$ is defined as $$\|x\|_{p}:=\sqrt[p]{|x_{1}|^p+\cdots+|x_{n}|^p}.$$Specifically, we have $\|x\|_1=|x_1|+|x_2|+\dots+|x_n|$ and $\|x\|_\infty=\max_i|x_i|$. Specially, we define the $L_0$ norm as the number of non-zero elements in a vector, and $L_{\infty}$ as $$\|x\|_{\infty}=\max\{|x_1|,\cdots,|x_n|\}.$$Note that $L_{2}$ norm is the standard norm that we usually use in $\R^{n}$. The reason why these are indeed norms is exactly the *Minkowski’s inequality*:
+>[!proposition] Minkowski’s Inequality
+>In $\R^n$, for all $1\leq p\leq \infty$, if $x,y\in \R^n$ then $$\sqrt[p]{(x_{1}+y_1)^{p}+\cdots+(x_{n}+y_n)^{p}} \leq \sqrt[p]{x_1^p+\cdots+x_n^p}+\sqrt[p]{y_1^p+\cdots+y_n^p}.$$ ^af1cb7
+- We define $C[a,b]$ the [[Vector Spaces#^f4b63e|vector space]] of real-valued continuous functions on the interval $[a,b]$. The standard norm to use on $C[a,b]$ is the supremum norm: $$\newcommand{\dd}{\:\mathrm{d}}\|f\|_{\infty}=\sup_{x\in[a,b]}|f(x)|.$$ Another family of norms are defined on $C[a, b]$ using an integral: for $p \in[1, \infty)$ set $$\|f\|_{p}=\left( \int_{a}^{b}|f(x)|^{p} \dd x \right)^{1/p}$$And we can also define the inner product: $$\langle f, g \rangle = \int_{a}^{b}f(x)g(x)\dd x.$$
 
 > [!proposition]
 > $\|x\|\geq 0$ for all $x\in X$ for norm $\|\cdot\|$.
-
-> [!proposition]
-> If $(X, \|\cdot\|)$ is a normed space and $Y$ is a subspace of $X$, then $(Y, \|\cdot\|)$ is also a normed space.
-
->[!definition] Euclidean Norm
->For $x ∈ \R^n$, we define the Euclidean ($L_{2}$) norm as $$\|x\|_2=\sqrt{x_1^2+\cdots+x_n^2}=\sqrt{\tr{x}x}$$
-
->[!definition] $L_p$ Norm
->The $L_p$ norm of $x\in\R^n$ is defined as $$\|x\|_p=\sqrt[p]{x_1^p+\cdots+x_n^p}$$Specifically, we have $\|x\|_1=|x_1|+|x_2|+\dots+|x_n|$ and $\|x\|_\infty=\max_i|x_i|$. Specially, we define the $L_0$ norm as the number of non-zero elements in a vector, and $L_{\infty}$ as $$\|x\|_{\infty}=\max\{|x_1|,\cdots,|x_n|\}$$
-
->[!theorem] Minkowski’s Inequality
->In $\R^n$, for all $1\leq p\leq \infty$, if $x,y\in \R^n$ then $$\sqrt[p]{(x_{1}+y_1)^{p}+\cdots+(x_{n}+y_n)^{p}} \leq \sqrt[p]{x_1^p+\cdots+x_n^p}+\sqrt[p]{y_1^p+\cdots+y_n^p}$$
 
 ## Sets from Norms
 
