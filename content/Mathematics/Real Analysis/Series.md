@@ -52,3 +52,11 @@ There is also a limit version of the comparison test:
 > [!remark]
 > Power series has nicer properties in the complex case. In fact, this formula of the radius of convergence can be extended to the complex power series. (See [[Series of Complex Functions#^2b3316|theorem]])
 > 
+
+## Uncountable Sums
+
+Series are summations of a countable set. We can generalize this to an uncountable sum further:
+
+> [!definition] General Series
+> Suppose $I$ is some index set, $\{x_{i}\}_{i\in I}$ is a family of real numbers. Then we define $$\sum_{i\in I} x_{i} : = \sup_{\text{finite }F\subset I} \left(\sum_{i\in F} x_{i}\right).$$
+> 

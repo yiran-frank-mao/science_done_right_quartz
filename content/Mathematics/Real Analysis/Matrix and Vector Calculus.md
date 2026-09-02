@@ -7,13 +7,13 @@ The Pseudo-Inverse of some matrix $X$ is defined as $X^{\dagger} = (X^\mathrm{T}
 
 ## Trace
 **Def**  <i><u>Trace</u></i>
-The trace of a square matrix $A ∈ \R^{n×n}$ is the sum of diagonal elements: $$\operatorname{\textbf{tr}}\left(A\right)=\sum_{i=1}^{n}A_{ii}$$
+The trace of a square matrix $A ∈ \R^{n×n}$ is the sum of diagonal elements: $$\newcommand{\trace}{\operatorname{\textbf{tr}}}\trace\left(A\right)=\sum_{i=1}^{n}A_{ii}$$
 
 
 **Prop**  Trace satisfies the following properties:
-- $\operatorname{\textbf{tr}}(A)=\operatorname{\textbf{tr}}(\tr{A})$.
-- $\operatorname{\textbf{tr}}\left(\alpha A+\beta B\right)=\alpha\operatorname{\textbf{tr}}\left(A\right)+\beta\operatorname{\textbf{tr}}\left(B\right)$.
-- if $AB$ is square then $\trace{AB}=\operatorname{\textbf{tr}}\left(BA\right)$.
+- $\newcommand{\tr}[1]{{#1}^{\top}} \operatorname{\textbf{tr}}(A)=\operatorname{\textbf{tr}}(\tr{A})$.
+- $\operatorname{\textbf{tr}}\left(\alpha A+\beta B\right)=\alpha\operatorname{\textbf{tr}}\left(A\right)+\beta\operatorname{\textbf{tr}}\left(B\right)$ for all $\alpha,\beta\in\R$.
+- if $AB$ is square then $\trace{(AB)}=\trace\left(BA\right)$.
 
 ## Factorizations
 **Thrm**  <i><u>LU Factorization</u></i>
@@ -46,20 +46,18 @@ $$
 
 **Thrm**  <i><u>Differentiation Laws</u></i>
 - Constant: $\partial{C}=0$
-- Addition: $\partial{(\textbf{X} \pm \textbf{Y})} = \partial{\textbf{X}} \pm \textbf{Y}$
-- Matrix multiplication: $\partial{(\textbf{X}\textbf{Y})} = (\partial{\textbf{X}})\textbf{Y} + \textbf{X}(\partial{\textbf{Y}})$
-- Element-wise multiplication: $\partial{(\textbf{X} \odot \textbf{Y})} = (\partial{\textbf{X}}) \odot \textbf{Y} + \textbf{X} \odot (\partial{\textbf{Y}})$
-- Transpose: $\partial{(\textbf{X}^{\top})} = (\partial{\textbf{X}})^\top$
-- Inverse: $\partial{\textbf{X}^{-1}} = -\textbf{X}^{-1} (\partial{\textbf{X}}) \textbf{X}^{-1}$
-- Trace: $\partial{(\mathrm{tr}(\textbf{X}))} = \mathrm{tr}(\partial{\textbf{X}})$
-- Derivative: $\dd f = \mathrm{tr}\left(\tr{\left( \pddf{f}{X}\right) }\dd \textbf{X}\right)$
-- Determinant: $\partial{|\textbf{X}|} = \mathrm{tr}(\textbf{X}^\#\partial{\textbf{X}})$
-    - Specially, if $\textbf{X}$ is invertible, $\partial{|\textbf{X}|} = |\textbf{X}|\mathrm{tr}(\textbf{X}^{-1}\partial{\textbf{X}})$.
+- Addition: $\partial{(X \pm Y)} = \partial{X} \pm \partial Y$
+- Matrix multiplication: $\partial{(XY)} = (\partial{X})Y + X(\partial{Y})$
+- Element-wise multiplication: $\partial{(X \odot Y)} = (\partial{X}) \odot Y + X \odot (\partial{Y})$
+- Transpose: $\partial{(X^{\top})} = (\partial{X})^\top$
+- Inverse: $\partial{X^{-1}} = -X^{-1} (\partial{X}) X^{-1}$
+- Trace: $\partial{(\mathrm{tr}(X))} = \mathrm{tr}(\partial{X})$
+- Differential: Suppose $f\colon \R^{m\times n}\to \R$, then $\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}}\newcommand{\d}{\mathrm{d}} \d f = \mathrm{tr}\left(\tr{\left( \pddf{f}{X}\right) }\dd X\right)$
+- Determinant: $\partial{|X|} = \trace(X^{\#}\partial{X})$
+    - Specially, if $X$ is invertible, $\partial{|X|} = |X|\mathrm{tr}(X^{-1}\partial{X})$.
 
 <b><u>e.g.</u></b>  Suppose $a\in \R^m,b\in\R^n,X\in\R^{m\times n}$. Consider  $f(X)=\tr{a}Xb$. Then we have
-$$
-\dd f=\tr{a}(\dd X )b = \trace{\tr{a}(\dd X )b} = \trace{b\tr{a}(\dd X )}  \implies \pddf{f}{X}=\tr{(b\tr{a})}=a\tr{b}
-$$
+$$\d f=\tr{a}(\d X )b = \trace{\tr{a}(\d X )b} = \trace{b\tr{a}(\dd X )}  \implies \pddf{f}{X}=\tr{(b\tr{a})}=a\tr{b}.$$
 
 ## Block Matrix
 **Thrm**  <i><u>Block matrix Determinant</u></i>
