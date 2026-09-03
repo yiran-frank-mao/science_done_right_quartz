@@ -36,13 +36,13 @@
 *Proof*  If $A$ is open, then every $x ∈ A$ has the neighborhood $A$ that does not intersect $A^{c}$ and thus $x \notin ∂A$. Thus $A∩∂A = \emptyset$. Conversely, if $A∩∂A=\emptyset$, then for any $x ∈A$ we have $x\notin ∂A$. Thus there is an open neighborhood $U_{x}$ of $x$ not intersecting both $A$ and $A^{c}$. Since $x ∈ U_{x} ∩ A$, we have $U_{x} ∩A^{c} =\emptyset$. Thus $U_{x} ⊂A$ and hence $A=\bigcup_{x\in A} U_{x}$ is open. $\square$
 
 >[!definition] Limit Point & Isolated Point
-> Let $S \subset X$. A point $x ∈ X$ is a *limit point* of $S$ if every [[Closure, Interior and Boundary#^eda962|open neighbourhood]] of $x$ intersects $S \setminus \{x\}$. (Note that a limit point of $S$ does not need to belong to $S$). The set of all limit points is called the *derived set*, denoted $S'$/
+> Let $S \subset X$. A point $x ∈ X$ is a *limit point* of $S$ if every [[Closure, Interior and Boundary#^eda962|open neighbourhood]] of $x$ intersects $S \setminus \{x\}$. (Note that a limit point of $S$ does not need to belong to $S$). The set of all limit points is called the *derived set*, denoted $S'$
 > A point in $S$ that is not a limit point of $S$ is called an *isolated point*. Equivalently, A point $x$ is an isolated point of $A$ if there is an open subset $U$ of $X$ such that $U\setminus A= \{x\}$. ^11cf9f
 
-<u><b>e.g.</b></u>  Consider $A=(0,1)\subset \R$, then $A'=[0,1]$; For $B=\{1/n\}$
+<u><b>e.g.</b></u>  Consider $A=(0,1)\subset \R$, then $A'=[0,1]$; For $\{1/n\}_{n=1}^{\infty}\subset \R$, the only limit point is $0$.
 
 >[!theorem] 
->Let $X$ be a topological space and $A ⊂ X$ . Then $$\bar{A} = A \cup \{\text{limit points of } A\}$$
+> Let $X$ be a topological space and $A \subset X$ . Then $$\bar{A} = A \cup A'$$
 
 >[!definition] Dense, Nowhere Dense and Meagre
 >A subset $A$ of $T$ is *dense* in $T$ if $\bar{A}=T$, is *nowhere dense* in $T$ if ${(\bar{A})}^\circ = \emptyset$, is *meagre* if it is a union of a countable number of nowhere dense sets. ^b560bf

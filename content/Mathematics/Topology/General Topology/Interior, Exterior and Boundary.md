@@ -13,9 +13,8 @@ updated: 2025-05-03
 >**Def**  <i><u>Exterior</u></i>
 >Let $(X,d)$ be a metric space, $A⊂X$ and $x ∈X$. $x$ is called an exterior point of $A$ if there is $r>0$ such that $B(x,r)⊂A^{c} =X\setminus A$. The set of all exterior points of $A$ is called the exterior of $A$, denoted by $\exterior(A)$.
 
->[!definition] 
->**Def**  <i><u>Boundary</u></i>
->Let $(X,d)$ be a metric space, $A⊂X$ and $x ∈X$. $x$ is called a boundary point of $A$ if every ball $B(x,r)$ contains points of $A$ and points of $A^{c}$. The set of all boundary points of $A$ is called the boundary of $A$, denoted by $\partial A$.
+>[!definition] Boundary
+> Let $(X,d)$ be a metric space, $A⊂X$ and $x ∈X$. $x$ is called a *boundary point* of $A$ if every ball $B(x,r)$ contains points of $A$ and points of $A^{c}$. The set of all boundary points of $A$ is called the *boundary of $A$*, denoted by $\partial A$.
 
 >[!proposition] 
 >**Prop**  By definition we can see immediately that

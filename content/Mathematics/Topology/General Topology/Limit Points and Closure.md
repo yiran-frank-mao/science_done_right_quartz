@@ -2,6 +2,10 @@
 >Let $\newcommand{\R}{\mathbb{R}}\newcommand{\interior}{\operatorname{\text{int}}}\newcommand{\exterior}{\operatorname{\text{ext}}}(X,d)$ be a metric space and $A ⊂ X$. $x ∈ X$ is called a *limit point* of $A$ if every open ball $B_{r} (x)$ contains a point of $A$ other than $x$. 
 >Conversely, $x ∈ A$ is called an *isolated point* of $A$ if there is an open ball $B_{r} (x)$ that contains no elements of $A$ other than $x$.
 
+> [!remark]-
+> Limit points may or may not be in $A$. Isolated points are always in $A$.
+> 
+
 <u><b>e.g.</b></u>  
 - Consider $A = (0, 1) ∪ \{2\}$ in $\R$ with Euclidean metric. Then $2$ is an isolated point of $A$, every point in $[0,1]$ is a limit point of $A$ and the closure of $A$ is $[0,1]∪\{2\}$.
 - Let $(X, \|\cdot\|)$ be a [[Normed Spaces#^345fd3|normed vector space]] and $x ∈ X$. Then for any $r > 0$ we have $$\{\text{all limit points of }B_r(x)\}=\{y\in X:\|y-x\|\leq r\}$$
