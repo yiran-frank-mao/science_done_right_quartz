@@ -26,7 +26,10 @@
 ## Cartesian Product
 
 > [!definition] Cartesian Product
-> Let $X_{1},\dots ,X_{n}$ be sets. The set$$\{(x_1,x_2,\dots,x_n):x_{1}\in X_{1},\dots,x_{n}\in X_{n}\}$$is called the *Cartesian product* of $X_{1},\dots,X_{n}$ and is written as$$X_1\times\dots\times X_{n}\quad \text{or} \quad \prod_{i=1}^{n}X_{i}$$where each $(x_1,\dots ,x_n)$ is an ordered $n$-tuple and the $x_{i}$ is called the $i$-th coordinate. ^bd02ce
+> Let $X_{1},\dots ,X_{n}$ be sets. The set$$\{(x_1,x_2,\dots,x_n):x_{1}\in X_{1},\dots,x_{n}\in X_{n}\}$$is called the *Cartesian product* of $X_{1},\dots,X_{n}$ and is written as$$X_1\times\dots\times X_{n}\quad \text{or} \quad \prod_{i=1}^{n}X_{i}$$
+> where each $(x_1,\dots ,x_n)$ is an ordered $n$-tuple and the $x_{i}$ is called the *$i$-th coordinate*. 
+> In general, we can also define possibly infinite Cartesian product of sets. Suppose $I$ is an index set, $\{X_{i}\}_{i\in I}$ is a family of sets. Then we define 
+> $$ \prod_{i\in I}X_{i}:= \left\{f\colon I \to \bigcup_{i\in I} X_{i} \mid f(i)\in X_{i} \text{ for all } i\in I \right\}. $$ ^bd02ce
 
 > [!proposition]
 > Suppose $\{X_{j}\}_{j\in J}$ and $\{Y_{k}\}_{k\in K}$ are families of sets for arbitrary index sets $J$ and $K$. Then

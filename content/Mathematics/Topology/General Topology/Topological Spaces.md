@@ -77,7 +77,7 @@ $\quad$
 ## Countability Axioms
 
 > [!definition] First Countable
-> A topological space $(X,\mathcal{T})$ is *first-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] local basis at each point $x\in X$. That is, for each $x\in X$, there is a sequence of neighbourhoods $N_{1}, N_{2},\cdots$ such that for any neighbourhood $N$ of $x$ there is some $i$ so that $N_{i}\subset N$.  ^a8abf4
+> A topological space $(X,\mathcal{T})$ is *first-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] local basis at each point $x\in X$. That is, for each $x\in X$, there is a sequence of open neighbourhoods $N_{1}, N_{2},\cdots$ such that for any neighbourhood $N$ of $x$ there is some $i$ so that $N_{i}\subset N$.  ^a8abf4
 
 <u><b>e.g.</b></u>  
 - Any metric space is first countable. To see this, note that the set of open balls centered at $x$ with radius $2^{-n}$ for all natural numbers $n$ form a countable local basis at $x$;

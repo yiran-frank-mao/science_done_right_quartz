@@ -32,13 +32,13 @@ $$A=U\Sigma\tr{V}$$
 
 ## Differentiation
 **Def**  <i><u>Jacobian</u></i>
-Suppose $f : \R^{m×n} → \R$ is a function. Then the gradient of $f(A)$ with respect to $A ∈ \R^{m×n}$ is the matrix of partial derivatives called Jacobian:
+Suppose $f \colon \R^{m} → \R^{n}$ is a (smooth) function. Then the gradient of $f(A)$ with respect to $A ∈ \R^{m×n}$ is a matrix of partial derivatives called Jacobian:
 $$
-\nabla_Af(A)=\begin{bmatrix}\frac{\partial f}{\partial A_{11}}&\frac{\partial f}{\partial A_{12}}&\cdots&\frac{\partial f}{\partial A_{1n}}\\\frac{\partial f}{\partial A_{21}}&\frac{\partial f}{\partial A_{22}}&\cdots&\frac{\partial f}{\partial A_{2n}}\\\vdots&\vdots&\ddots&\vdots\\\frac{\partial f}{\partial A_{m1}}&\frac{\partial f}{\partial A_{m2}}&\cdots&\frac{\partial f}{\partial A_{mn}}\end{bmatrix}
+\nabla_{A} f =\begin{bmatrix}\frac{\partial f}{\partial A_{11}}&\frac{\partial f}{\partial A_{12}}&\cdots&\frac{\partial f}{\partial A_{1n}}\\\frac{\partial f}{\partial A_{21}}&\frac{\partial f}{\partial A_{22}}&\cdots&\frac{\partial f}{\partial A_{2n}}\\\vdots&\vdots&\ddots&\vdots\\\frac{\partial f}{\partial A_{m1}}&\frac{\partial f}{\partial A_{m2}}&\cdots&\frac{\partial f}{\partial A_{mn}}\end{bmatrix}
 $$
 
 **Def**  <i><u>Hessian</u></i>
-Suppose that $f : \R^n → \R$ is a function. Then the hessian of $f(x)$ with respect to $x ∈ \R^n$ is the $n × n$ matrix of second partial derivatives:
+Suppose that $f \colon \R^{n} → \R$ is a function. Then the hessian of $f(x)$ with respect to $x ∈ \R^n$ is the $n × n$ matrix of second partial derivatives:
 $$
 \nabla_x^2f(x)=\begin{bmatrix}\frac{\partial^2f}{\partial x_1^2}&\frac{\partial^2f}{\partial x_1\partial x_2}&\cdots&\frac{\partial^2f}{\partial x_1\partial x_n}\\\frac{\partial^2f}{\partial x_2\partial x_1}&\frac{\partial^2f}{\partial x_2^2}&\cdots&\frac{\partial^2f}{\partial x_2\partial x_n}\\\vdots&\vdots&\ddots&\vdots\\\frac{\partial^2f}{\partial x_n\partial x_1}&\frac{\partial^2f}{\partial x_n\partial x_2}&\cdots&\frac{\partial^2f}{\partial x_n^2}\end{bmatrix}
 $$
