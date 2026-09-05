@@ -31,6 +31,8 @@ The basic limit theorems also hold:
 > [!theorem] Monotone Convergence Theorem
 > If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of non-negative measurable functions with $f_{n}\nearrow f$ on $(X,\mathcal{S},\mu)$, then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$
 
+^e32def
+
 *Proof*  Since $f_{n}(x)\leq f(x)$ a.e., we have $\int f_{n}\dd\mu\leq \int f\dd\mu$ for all $n$. Hence $\limsup_{n\to \infty} \int f_{n}\dd\mu \leq \int f \dd\mu$. On the other hand, by Fatou's lemma, we have $$\int f \dd\mu = \int \liminf_{n\to \infty} f_{n}\dd\mu \leq \liminf_{n\to \infty} \int f_{n}\dd\mu.$$ Therefore, we have $\lim_{n\to \infty} \int f_{n}\dd\mu = \int f\dd\mu$. $\square$
 
 > [!theorem] Bounded Convergence Theorem
@@ -38,6 +40,8 @@ The basic limit theorems also hold:
 
 > [!theorem] Dominated Convergence Theorem
 > If $\{f_{n}\}_{n=1}^{\infty}$ is a sequence of measurable functions with $f_n\to f$ pointwise a.e. on $(X,\mathcal{S},\mu)$, and $|f_{n}|<g$ for some integrable $g$, then $$\lim_{n\to \infty} \int f_{n} \dd\mu = \int f \dd\mu.$$
+
+^de731e
 
 ## The Space of Integrable Functions
 

@@ -19,7 +19,7 @@ Operator algebras are self-adjoint (closed under taking Hermitian adjoints), top
 ### Von Neumann Algebras
 [[Von Neumann Algebras]]
 [[The Double Commutant Theorem]]
-[[Factors and Type Classification]]
 [[Tomita-Takesaki Theory]]
 ### Factors and Subfactors
+[[Factors and Type Classification]]
 [[Temperley–Lieb Algebra]]
