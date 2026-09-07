@@ -1,7 +1,7 @@
 > [!definition] Normed Algebra & Banach Algebra
 > Let $\newcommand{\A}{A}\A$ be an [[Noncommutative Rings#^2c3d07|algebra]] (over $\newcommand{\C}{\mathbb{C}}\C$) equipped with a submultiplicative norm, that is, $\|ab\|\leq \|a\| \|b\|$ for all $a,b\in A$, then $\A$ is called a *normed algebra*. 
 > If $\A$ admits a unit $1_{\A}$ such that $\|1_{\A}\|=1$, then it is called a *unital normed algebra*.
-> If it is also a [[Banach Spaces#^7196a5|Banach space]] (i.e. [[Complete Metric Space#^67b510|complete]]), then it is called a *Banach algebra*. ^040470
+> If it is also a [[Banach Spaces#^concept-06d04a8caa8e|Banach space]] (i.e. [[Complete Metric Space#^67b510|complete]]), then it is called a *Banach algebra*. ^040470
 
 <u><b>e.g.</b></u>  Suppose $X$ is a Banach space, and $B(X)$ is the algebra of bounded linear operators on $X$ with operator norm $\|\cdot\|_{\text{op}}$. Then $(B(X), \|\cdot\|_{\text{op}})$ is a Banach algebra with unit being the identity operator on $X$.
 

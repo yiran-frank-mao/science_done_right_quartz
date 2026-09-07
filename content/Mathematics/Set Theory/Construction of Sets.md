@@ -1,9 +1,9 @@
 >[!definition] Intersection
-> Let $A$ and $B$ be two given sets. The intersection is the set:$$A\cap B=\{x:x\in A \wedge x\in B \}.$$ 
+> Let $A$ and $B$ be two given sets. The *intersection* is the set:$$A\cap B=\{x:x\in A \wedge x\in B \}.$$ 
 > More generally, we can intersect a collection of sets: $\bigcap_{i\in I} A_{i}$, where $I$ is some index set, and $A_{i}$ are sets. ^408460
 
 >[!definition] Union
->The union of sets $A$ and $B$ is the set:$$A\cup B=\{x: x\in A \vee x\in B\}.$$
+>The *union* of sets $A$ and $B$ is the set:$$A\cup B=\{x: x\in A \vee x\in B\}.$$
 >More generally, we can union a collection of sets: $\bigcup_{i\in I} A_{i}$, where $I$ is some index set, and $A_{i}$ are sets. ^678b42
 
 >[!definition] Disjoint Union

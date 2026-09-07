@@ -30,7 +30,9 @@ Let $(X,d)$ be a [[Metric Spaces#^0eacc7|metric space]]. A sequence $(x_{n})$ in
 ## Completeness
 
 >[!definition] Complete Metric Space
-A metric space $(X,d)$ is called *complete* if every Cauchy sequence in $X$ is convergent. ^67b510
+> A [[Mathematics/Topology/General Topology/Metric Spaces#^concept-e26011bc6f0a|metric space]] $(X,d)$ is called *complete* if every Cauchy sequence in $X$ is convergent. ^67b510
+
+^concept-08babb55cabd
 
 <u><b>e.g.</b></u> 
 - $\R^{k}$ with the standard Euclidean metric is complete.

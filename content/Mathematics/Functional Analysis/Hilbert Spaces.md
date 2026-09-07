@@ -3,18 +3,20 @@
 > [!definition] Hilbert Space
 > A *Hilbert space* is a [[Number Systems#^5fea5c|real]] or [[Complex Numbers#^a81924|complex]] [[Inner Products#^f0c22c|inner product space]] that is also [[Complete Metric Space#^67b510|complete]] with respect to the [[Metric Spaces#^0eacc7|metric]] induced by the [[Inner Products#^f0c22c|inner product]]. ^ae0212
 
+^concept-309eb44da4da
+
 <u><b>e.g.</b></u>
-- The finite dimensional complex spaces $\newcommand{\H}{\mathcal{H}}\C^{n}$ are separable Hilbert spaces, with the inner product being $$\langle (a_{1},\dots,a_{n}),(b_{1},\dots,b_{n})\rangle=\sum_{i=1}^{n}a_{i}\bar{b}_{i}.$$
+- The finite dimensional complex spaces $\newcommand{\H}{\mathcal{H}}\C^{n}$ are separable [[Mathematics/Functional Analysis/Hilbert Spaces#^concept-309eb44da4da|Hilbert spaces]], with the inner product being $$\langle (a_{1},\dots,a_{n}),(b_{1},\dots,b_{n})\rangle=\sum_{i=1}^{n}a_{i}\bar{b}_{i}.$$
 - An infinite-dimensional analogue of the above example is the space $$\ell^{2}(\Z):=\left\{(\dots,a_{-2},a_{-1},a_{0},a_{1},a_{2},\dots):a_{i}\in\C,\sum_{i=-\infty}^{\infty}|a_{i}|^{2}<\infty\right\}$$with the inner product $$\langle (a_{n})_{n\in\Z},(b_{n})_{n\in\Z}\rangle=\sum_{i=-\infty}^{\infty}a_{i}\bar{b}_{i}.$$
 - The space of all complex-valued measurable function $f$ on $\R^{d}$ such that $\int_{\R^{d}}|f(x)|^{2}<\infty$, modulo the [[Relations and Functions#^14741d|equivalence relation]] of being equal almost everywhere, denoted as $L^{2}(\R^d)$, is a prime example of a separable Hilbert space. The inner product is defined as $$\langle f,g\rangle=\int_{\R^{d}}f(x)\overline{g(x)}\dd x.$$We shall first check that $L^{2}(\R^{d})$ is a vector space, and $\langle\cdot,\cdot\rangle$ is a well-defined inner product. 
   For any $f,g\in L^{2}(\R^{d})$, we have $$\int_{\R^{d}}|f+cg|^{2} \leq 4 \int_{\R^{d}}|f|^{2}+4|c|^{2}\int_{\R^{d}}|g|^{2} <\infty, $$so $f+cg\in L^{2}(\R^{d})$ for all $c\in\C$, hence $L^{2}(\R^{d})$ is a [[Vector Spaces#^f4b63e|vector space]]. Moreover, $$\begin{aligned} \langle f+cg,h\rangle&=\int_{\R^{d}}(f+cg)\overline{h}=\int_{\R^{d}}f\overline{h}+c\int_{\R^{d}}g\overline{h}=\langle f,h\rangle + c\langle g,h \rangle, \\ \langle f,\lambda g\rangle &=\int_{\R^{d}}f\overline{\lambda g}=\overline{\lambda}\int_{\R^{d}}f\overline{g}=\overline{\lambda}\langle f,g\rangle, \\ \langle f,g\rangle &=\int_{\R^{d}}f\overline{g}=\int_{\R^{d}}\overline{\overline{f}g}=\overline{\langle g,f\rangle}.\end{aligned}$$So the inner product is well-defined. Now we verify that $L^{2}(\R^{d})$ is complete. ^ba55f5
-- Indeed, $L^{p}(\R^{d})$ is a Hilbert space if and only if $p=2$. For $p\neq 2$, $L^{p}(\R^{d})$ is only a [[Banach Spaces#^7196a5|Banach space]].
+- Indeed, $L^{p}(\R^{d})$ is a Hilbert space if and only if $p=2$. For $p\neq 2$, $L^{p}(\R^{d})$ is only a [[Banach Spaces#^concept-06d04a8caa8e|Banach space]].
 $\quad$
 
 ## Orthonormal Basis
 
 > [!proposition] Bessel's Inequality
-> Let $\H$ be a Hilbert space, and let $\{e_{k}\}_{k=1}^{\infty}$​ be an orthonormal set in $\H$. For any $f\in H$, there holds $$\sum_{k=1}^\infty|\langle f,e_k\rangle|^2\leq\|f\|^2.$$
+> Let $\H$ be a [[Mathematics/Functional Analysis/Hilbert Spaces#^concept-309eb44da4da|Hilbert space]], and let $\{e_{k}\}_{k=1}^{\infty}$​ be an orthonormal set in $\H$. For any $f\in H$, there holds $$\sum_{k=1}^\infty|\langle f,e_k\rangle|^2\leq\|f\|^2.$$
 
 > [!proposition] Characterisation of Orthonormal Basis in Hilbert Space 
 > The following properties of a countable orthonormal set $\{e_{i}\}_{i\in I}$ in a Hilbert space $\H$ are equivalent:

@@ -1,5 +1,5 @@
->[!definition]
-> A [[Normed Spaces#^345fd3|normed space]] $(X,\|\cdot\|)$ is a Banach space if it is [[Complete Metric Space#^67b510|complete]] as a [[Metric Spaces#^0eacc7|metric space]]. ^7196a5
+>[!definition] Banach Space
+> A [[Normed Spaces#^345fd3|normed space]] $(X,\|\cdot\|)$ is a *Banach space* if it is [[Complete Metric Space#^67b510|complete]] as a [[Metric Spaces#^0eacc7|metric space]]. ^concept-06d04a8caa8e
 
 <u><b>e.g.</b></u>  
 - Let $\Omega \subset \mathbb{R}^n$ be a domain and $\alpha \in (0,1]$. A function $f\colon \Omega \to \mathbb{R}$ is said to belong to the *Hölder space* $C^{0,\alpha}(\Omega)$ if $$\|f\|_{C^{0,\alpha}(\Omega)} := \sup_{x \in \Omega} |f(x)| + \sup_{\substack{x,y \in \Omega\\ x \neq y}} \frac{|f(x) - f(y)|}{|x-y|^\alpha} < \infty.$$
@@ -23,6 +23,6 @@ Conversely, we pick a Cauchy sequence in $X$, say $\{x_{n}\}_{n=1}^{\infty}$. We
 ## Bounded Operators
 
 > [!theorem]
-> Let $X$ be a [[Normed Spaces#^345fd3|normed space]] and let $Y$ be a [[Banach Spaces#^7196a5|Banach space]]. Then $B(X, Y)$ provided with the operator norm is a Banach space.
+> Let $X$ be a [[Normed Spaces#^345fd3|normed space]] and let $Y$ be a [[Banach Spaces#^concept-06d04a8caa8e|Banach space]]. Then $B(X, Y)$ provided with the operator norm is a Banach space.
 
 *Proof*  

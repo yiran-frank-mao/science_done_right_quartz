@@ -12,6 +12,8 @@ updated: 2024-09-26
 >
 > The pair $(X , \mathcal{T})$ is called a *topological space*. ^65c94a
 
+^concept-39ce12df888c
+
 <b><u>e.g.</u></b>  
 - The topology induced by a [[Metric Spaces#^0eacc7|metric]]: in any metric space $(X,d)$ the collection of all open sets forms a topology.
 - A topology is said to be *discrete* if all subsets are open. It is *indiscrete* or *trivial* if the only open sets are $T$ and $\emptyset$.
