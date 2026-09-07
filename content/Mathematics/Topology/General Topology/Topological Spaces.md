@@ -79,7 +79,7 @@ $\quad$
 ## Countability Axioms
 
 > [!definition] First Countable
-> A topological space $(X,\mathcal{T})$ is *first-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] local basis at each point $x\in X$. That is, for each $x\in X$, there is a sequence of open neighbourhoods $N_{1}, N_{2},\cdots$ such that for any neighbourhood $N$ of $x$ there is some $i$ so that $N_{i}\subset N$.  ^a8abf4
+> A topological space $(X,\mathcal{T})$ is *first-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] local basis at each point $x\in X$. That is, for each $x\in X$, there is a sequence of open neighbourhoods $N_{1}, N_{2},\cdots$ such that for any neighbourhood $N$ of $x$ there is some $i$ so that $N_{i}\subset N$. ^concept-d4688c3aefae
 
 <u><b>e.g.</b></u>  
 - Any metric space is first countable. To see this, note that the set of open balls centered at $x$ with radius $2^{-n}$ for all natural numbers $n$ form a countable local basis at $x$;
@@ -87,7 +87,11 @@ $\quad$
 $\quad$
 
 > [!definition] Second Countable
-> A topological space $(X,\mathcal{T})$ is *second-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] basis for $\mathcal{T}$. ^a8abf4
+> A topological space $(X,\mathcal{T})$ is *second-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] basis for $\mathcal{T}$. ^concept-5144b7350d14
 > 
 
-<u><b>e.g.</b></u> $\R^{n}$ with the usual topology is second-countable, since the collection of all open balls with rational radius and rational center forms a countable basis.
+<u><b>e.g.</b></u>  $\R^{n}$ with the usual topology is second-countable, since the collection of all open balls with rational radius and rational center forms a countable basis.
+
+> [!proposition]
+> If $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-5144b7350d14|second countable]], 
+> 
