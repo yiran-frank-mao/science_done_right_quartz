@@ -77,7 +77,7 @@ $\quad$
 ## Countability Axioms
 
 > [!definition] First Countable
-> A topological space $(X,\mathcal{T})$ is *first-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] local basis at each point $x\in X$. That is, for each $x\in X$, there is a sequence of open neighbourhoods $N_{1}, N_{2},\cdots$ such that for any neighbourhood $N$ of $x$ there is some $i$ so that $N_{i}\subset N$. ^concept-d4688c3aefae
+> A topological space $(X,\mathcal{T})$ is *first-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] local basis at each point $x\in X$. That is, for each $x\in X$, there is a sequence of open neighbourhoods $N_{1}, N_{2},\cdots$ such that for any neighbourhood $N$ of $x$ there is some $i$ so that $N_{i}\subset N$. ^concept-b7c77a3b39fa
 
 <u><b>e.g.</b></u>  
 - Any metric space is first countable. To see this, note that the set of open balls centered at $x$ with radius $2^{-n}$ for all natural numbers $n$ form a countable local basis at $x$;
@@ -92,7 +92,7 @@ $\quad$
 
 > [!proposition]
 > If $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-5144b7350d14|second countable]], then
-> 1. $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-d4688c3aefae|first countable]];
+> 1. $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-b7c77a3b39fa|first countable]];
 > 2. 
 > 3. $X$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-871f5f6137af|Lindelöf]].
 > $\quad$

@@ -14,6 +14,8 @@ tags:
 > If $R$ has an identity $1$ with respect to multiplication, we say that $R$ is *unital*.
 > A ring $R$ is *commutative* if the multiplication is commutative. ^178485
 
+^concept-b822d04b4a4b
+
 <b><u>e.g.</u></b>  
 - The integers $\mathbb{Z}$ is a commutative unital ring, any $\Z/n\Z$ is a commutative unital ring.
 - The set of 2×2 matrices with real entries $M_{2}(\R)$ is a non-commutative unital ring.

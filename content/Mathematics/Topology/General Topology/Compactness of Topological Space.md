@@ -42,20 +42,17 @@ functions $x \colon A → \bigcup_{\alpha\in A} X_{\alpha}$ such that $x(α)∈X
 There is a slightly weaker notion of compactness called Lindelöf spaces, which is defined as follows:
 
 > [!definition] Lindelöf Space
-> A topological space $X$ is called a *Lindelöf space* if every open cover of $X$ has a countable subcover.
-> 
-
-^concept-871f5f6137af
+> A topological space $X$ is called a *Lindelöf space* if every open cover of $X$ has a countable subcover. ^concept-871f5f6137af
 
 > [!proposition]
-> A [[Topological Spaces#^concept-5144b7350d14|second-countable]] space is Lindelöf.
+> A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-5144b7350d14|second-countable]] space is Lindelöf.
 > 
 
 *Proof*  Let $\mathcal{B}$ be a countable basis for the topology of $X$. Let $\mathcal{U}=\{U_{\alpha}\}_{\alpha\in \Lambda}$ be an open cover of $X$. For each $x \in X$, there exists $U_x \in \mathcal{U}$ such that $x \in U_x$. Since $\mathcal{B}$ is a basis, there exists $B_x \in \mathcal{B}$ such that $x \in B_x \subseteq U_x$. The collection $\{B_{x} : x \in X\}$ is an open cover of $X$ consisting of elements from the countable basis $\mathcal{B}$. Since $\mathcal{B}$ is countable, $\{B_{x} : x \in X\}$ is countable. Now, for each $B_x$, we can choose the corresponding $U_x \in \mathcal{U}$ such that $B_x \subseteq U_x$. The collection $\{U_x : x \in X\}$ is a countable subcollection of $\mathcal{U}$ that covers $X$. Therefore, $X$ is Lindelöf. $\square$
 
 > [!remark]
 > The proof above utilized countable axiom of choice.
-> 
+
 
 ## References and Other Resources
 - [Morphocular, The Concept So Much of Modern Math is Built On](https://www.youtube.com/watch?v=td7Nz9ATyWY)

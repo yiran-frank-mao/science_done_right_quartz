@@ -9,7 +9,7 @@ A *manifold* itself is a purely topological object, but it is the most basic obj
 ## Topological Manifolds
 
 >[!definition] Manifold & Manifold with Boundary
-> An *$n$-dimensional manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Topological Spaces#^concept-5144b7350d14|second-countable]] [[Topological Spaces#^concept-39ce12df888c|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $\newcommand{\R}{\mathbb{R}}\R^{n}$. 
+> An *$n$-dimensional manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Mathematics/Topology/General Topology/Topological Spaces#^concept-5144b7350d14|second-countable]] [[Topological Spaces#^concept-39ce12df888c|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $\newcommand{\R}{\mathbb{R}}\R^{n}$. 
 > A *manifold with boundary* is a Hausdorff and second-countable topological space $M$ such that each point has a neighbourhood homeomorphic to an open subset of the closed half-space $H^{n}=\{(x_{1},\dots,x_{n})\in \R^{n}: x_{n}\geq 0\}$. The *boundary* of $M$ is the set of points that correspond to points in $H^{n}$ with $x_{n}=0$.
 > A *closed manifold* is a [[Compactness of Topological Space#^da2511|compact]] manifold without boundary. ^3407e4
 

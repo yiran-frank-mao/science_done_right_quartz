@@ -12,10 +12,9 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 
 > [!theorem]
 > The followings are equivalent:
-> - A topological space $X$ is $T_{1}$;
+> - A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is $T_{1}$;
 > - Every singleton set $\{x\}$ is closed for all $x\in X$;
 > - For $A\subset X$, the intersection of all open sets containing $A$, is $A$.
-> 
 > $\quad$
 
 *Proof*  If $X$ is $T_{1}$, for any singleton set $\{x\}$, there are no [[Closure, Interior and Boundary#^11cf9f|limit points]], so the closure of $\{x\}$ is $\{x\}$, which is closed; Now assume every singleton set is closed, then for any point $y$ in the intersection of all open sets containing $A$, if $y\notin A$, since $\{y\}$ is closed, $X\setminus\{y\}$ is an open set containing $A$, but $y\notin X\setminus\{y\}$ which is a contradiction; Lastly, suppose the intersection of all open sets containing $A$ is $A$, and $x$, $y$ are two distinct points, then $X\setminus\{y\}$ and $X\setminus\{x\}$ serve as open sets containing $x$ and $y$ respectively, but not the other. $\square$

@@ -10,8 +10,10 @@ updated: 2024-10-03
 
 <b><u>e.g.</u></b> $2,3,5,7,11\dots$ are prime numbers.
 
-> [!lemma] Euclidean's Lemma
+> [!lemma] Euclid's Lemma
 > Let $p$ be a prime number. If $p$ divides the product $ab$, then $p\mid a$ or $p\mid b$.
+
+
 
 > [!theorem] Fundamental Theorem of Arithmetic
 > Every integer greater than $1$ can either be prime or represented uniquely as a product of prime numbers. ^ff714c
