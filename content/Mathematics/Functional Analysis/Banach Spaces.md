@@ -1,5 +1,5 @@
 >[!definition] Banach Space
-> A [[Normed Spaces#^345fd3|normed space]] $(X,\|\cdot\|)$ is a *Banach space* if it is [[Complete Metric Space#^67b510|complete]] as a [[Metric Spaces#^0eacc7|metric space]]. ^concept-06d04a8caa8e
+> A [[Normed Spaces#^concept-d7c3bfd21209|normed space]] $(X,\|\cdot\|)$ is a *Banach space* if it is [[Complete Metric Space#^67b510|complete]] as a [[Metric Spaces#^0eacc7|metric space]]. ^concept-06d04a8caa8e
 
 <u><b>e.g.</b></u>  
 - Let $\Omega \subset \mathbb{R}^n$ be a domain and $\alpha \in (0,1]$. A function $f\colon \Omega \to \mathbb{R}$ is said to belong to the *Hölder space* $C^{0,\alpha}(\Omega)$ if $$\|f\|_{C^{0,\alpha}(\Omega)} := \sup_{x \in \Omega} |f(x)| + \sup_{\substack{x,y \in \Omega\\ x \neq y}} \frac{|f(x) - f(y)|}{|x-y|^\alpha} < \infty.$$
@@ -9,10 +9,10 @@
 - Suppose $(X,\mathcal{S},\mu)$ is a [[Measurable Spaces and Functions#^c2e020|measure space]], then $L^{p}(X,\mathcal{S},\mu)$ is a Banach space with norm $\|f\|_{p}:=\left(\int_{X}|f|^{p}\dd\mu\right)^{1/p}$. The proof of completeness will be provided later [[Banach Spaces#^63386a|here]] after we have established a tool for proving completeness of normed spaces.
 
 > [!definition] Absolutely Convergent Series
-> A series $\sum_{n=1}^{\infty}x_{n}$ in a [[Normed Spaces#^345fd3|normed space]] $(X,\|\cdot\|)$ is said to be *absolutely convergent* if the series $\sum_{n=1}^{\infty}\|x_{n}\|$ converges in $\R$.
+> A series $\sum_{n=1}^{\infty}x_{n}$ in a [[Normed Spaces#^concept-d7c3bfd21209|normed space]] $(X,\|\cdot\|)$ is said to be *absolutely convergent* if the series $\sum_{n=1}^{\infty}\|x_{n}\|$ converges in $\R$.
 
 > [!theorem]
-> A [[Normed Spaces#^345fd3|normed space]] is Banach if and only if every absolutely convergent series in it converges.
+> A [[Normed Spaces#^concept-d7c3bfd21209|normed space]] is Banach if and only if every absolutely convergent series in it converges.
 > 
 
 *Proof*  Suppose $X$ is a Banach space, and $\sum_{n=1}^{\infty}x_{n}$ is absolutely convergent, then $\sum_{n=1}^{\infty}\|x_{n}\|$ converges in $\R$. So the sequence of partial sum of norms is Cauchy in $\R$. Consider $\{s_{n}\}_{n=1}^{\infty}$, $s_{n}:=\sum_{i=1}^{n}x_{i}$, for any $N\leq m\leq n$, we have $$\|s_{n}-s_{m}\|=\left\| \sum_{i={m+1}}^{n} x_{i} \right\|\leq \sum_{i=m+1}^{n}\|x_{i}\| \to 0 \quad\text{as }N\to \infty,$$so $\{s_{n}\}_{n}$ is Cauchy in $X$, and hence convergent since $X$ is complete.
@@ -23,6 +23,6 @@ Conversely, we pick a Cauchy sequence in $X$, say $\{x_{n}\}_{n=1}^{\infty}$. We
 ## Bounded Operators
 
 > [!theorem]
-> Let $X$ be a [[Normed Spaces#^345fd3|normed space]] and let $Y$ be a [[Banach Spaces#^concept-06d04a8caa8e|Banach space]]. Then $B(X, Y)$ provided with the operator norm is a Banach space.
+> Let $X$ be a [[Normed Spaces#^concept-d7c3bfd21209|normed space]] and let $Y$ be a [[Banach Spaces#^concept-06d04a8caa8e|Banach space]]. Then $B(X, Y)$ provided with the operator norm is a Banach space.
 
 *Proof*  

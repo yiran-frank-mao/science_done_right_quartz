@@ -5,7 +5,7 @@ Inner products generalize the idea of the dot product in $\R^{n}$ to more genera
 >1. Positivity: $⟨x,x⟩≥0$ for all $x ∈X$, and $⟨x,x⟩=0 \iff x =0$.
 >2. Symmetry: $⟨x,y⟩ = \overline{⟨y,x⟩}$ for all $x,y ∈ X$.
 >3. Sesquilinearity: for all $x,y,z ∈ X$ and $α,β,\lambda ∈ F$ there holds $$⟨αx +βy,z⟩ = α⟨x,z⟩+β⟨y,z⟩,\quad \langle u,\lambda v \rangle = \overline{\lambda}\langle u, v \rangle.$$
-> 4. Induced Norm: inner product induces a [[Normed Spaces#^345fd3|norm]] $\|x\|:=\sqrt{\langle x,x\rangle}$.
+> 4. Induced Norm: inner product induces a [[Normed Spaces#^concept-d7c3bfd21209|norm]] $\|x\|:=\sqrt{\langle x,x\rangle}$.
 > 
 > A [[Vector Spaces#^f4b63e|vector space]] endowed with an inner product is called an *inner product space*. ^f0c22c
 

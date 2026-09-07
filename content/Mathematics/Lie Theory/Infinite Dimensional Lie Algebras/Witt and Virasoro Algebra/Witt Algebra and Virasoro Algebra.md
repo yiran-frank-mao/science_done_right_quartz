@@ -39,7 +39,7 @@ Now let us see properties of the orientation-preserving diffeomorphisms:
 > Define $\mathfrak{X}_{\C}(S^{1})$ as the [[Lie Algebra#^5007ba|Lie algebra]] of complex vector fields on a circle. That is 
 > $$\newcommand{\pddf}[2]{\frac{\partial#1}{\partial#2}} \mathfrak{X}_{\C}(S^{1}):=\left\{f(e^{i\theta}) \pddf{}{\theta} : f\in  C^{\infty}(S^{1},\C) \right\},$$
 >  equipped with the usual Lie bracket $$\left[f(e^{i\theta}) \pddf{}{\theta}, g(e^{i\theta}) \pddf{}{\theta}\right] = \left(f(e^{i\theta})g'(e^{i\theta}) - f'(e^{i\theta})g(e^{i\theta})\right) \pddf{}{\theta}$$ where $f', g'$ are derivatives with respect to $\theta$.
-> For each $t\geq0$, we can define a [[Normed Spaces#^345fd3|norm]] on $\mathfrak{X}_{\C}(S^{1})$ by $$\left\|\sum_{n\in\Z} a_{n}L_{n}\right\|_{t}:=\sum_{n\in\Z}(1+|n|)^{t}|a_{n}|.$$ 
+> For each $t\geq0$, we can define a [[Normed Spaces#^concept-d7c3bfd21209|norm]] on $\mathfrak{X}_{\C}(S^{1})$ by $$\left\|\sum_{n\in\Z} a_{n}L_{n}\right\|_{t}:=\sum_{n\in\Z}(1+|n|)^{t}|a_{n}|.$$ 
 
 > [!proposition]
 > For all $X,Y\in\mathfrak{X}_{\C}(S^{1})$ and $t\geq0$, there holds $$\|[X,Y]\|_{t}\leq \|X\|_{t+1}\|Y\|_{t+1}.$$

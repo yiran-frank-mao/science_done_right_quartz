@@ -35,7 +35,7 @@ tags:
 >[!theorem] 
 >**Thrm**  Let $(X,d)$ be a metric space.
 >1. If $f,g:X\to\R$ are continuous then $f+g$ and $fg$ are continuous and $f/g$ is continuous at all points $x$ where $g(x) \neq 0$.
->2. If $(Y,\|\cdot\|$) is a [[Normed Spaces#^345fd3|normed vector space]] and $f,g : X \to Y$ are continuous then $f +g$ is continuous.
+>2. If $(Y,\|\cdot\|$) is a [[Normed Spaces#^concept-d7c3bfd21209|normed vector space]] and $f,g : X \to Y$ are continuous then $f +g$ is continuous.
 >$\quad$
 
 >[!theorem] 

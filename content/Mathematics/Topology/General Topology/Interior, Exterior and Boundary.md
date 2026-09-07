@@ -32,7 +32,7 @@ updated: 2025-05-03
 >$\quad$
 
 >[!corollary] 
->**Corollary**  Let $(X, \| \cdot \|)$ be a [[Normed Spaces#^345fd3|normed vector space]] and let $d$ be the induced metric. Then,
+>**Corollary**  Let $(X, \| \cdot \|)$ be a [[Normed Spaces#^concept-d7c3bfd21209|normed vector space]] and let $d$ be the induced metric. Then,
 >- $\interior(B_r(x))=B_r(x)$.
 >- $\exterior(B_r(x))=\{y\in{X}:d(y,x)>r\}$.
 >- $\partial B_{r}(x)=\{y\in X:d(y,x)=r\}$.

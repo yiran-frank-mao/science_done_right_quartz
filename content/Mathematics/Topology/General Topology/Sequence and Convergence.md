@@ -23,7 +23,7 @@ Let $(X,d)$ be a metric space. A sequence $(x_{n})$ in $X$ is called bounded if 
 
 **Thrm**  In any metric space $(X,d)$ we have $$x_{n}\to x, y_{n}\to y \implies d(x_{n},y_{n})\to d(x,y)$$**Proof**  
 
-**Thrm**  Let $(X,\|\cdot\|)$ be a [[Normed Spaces#^345fd3|normed vector space]] on $\R$. If $x_n →x$ and $y_n →y$ in $X$ and $α_n → α$ in $\R$, then $$x_n+y_n\to x+y,\quad\alpha_nx_n\to\alpha x$$
+**Thrm**  Let $(X,\|\cdot\|)$ be a [[Normed Spaces#^concept-d7c3bfd21209|normed vector space]] on $\R$. If $x_n →x$ and $y_n →y$ in $X$ and $α_n → α$ in $\R$, then $$x_n+y_n\to x+y,\quad\alpha_nx_n\to\alpha x$$
 
 **Thrm**  Let $(X,⟨·,·⟩)$ be an inner product space. If $x_{n} \to x$ and $y_{n} \to y$, then $⟨x_n,y_n⟩ \to ⟨x,y⟩$.
 **Proof**  We have $$\begin{aligned}\langle x_n,y_n\rangle-\langle x,y\rangle&=\langle x_n,y_n\rangle-\langle x,y_n\rangle+\langle x,y_n\rangle-\langle x,y\rangle\\&=\langle x_n-x,y_n\rangle+\langle x,y_n-y\rangle\end{aligned}$$Therefore, by the Cauchy-Schwarz inequality, we have $$|\langle x_n,y_n\rangle-\langle x,y\rangle|\leq\|x_n-x\|\|y_n\|+\|x\|\|y_n-y\|\to0$$because $x_{n} \to x$, $y_{n} \to y$ and $(y_n)$ is bounded.

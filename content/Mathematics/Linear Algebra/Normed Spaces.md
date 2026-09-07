@@ -10,7 +10,7 @@ updated: 2024-09-17
 >2. $\|\lambda x\|=|\lambda|\|x\|$ for every $\lambda\in \mathbb{C}$ and $x\in X$, we call this homogeneity .
 >3. $\|x+y\| \leq \|x\|+\|y\|$ for every $x,y\in X$, we call this triangle inequality.
 >
-> If $X$ is a [[Vector Spaces#^f4b63e|vector space]] and $\|\cdot\|$ is a norm on $X$, then the pair $(X, \|\cdot\|)$ is called a normed space. ^345fd3
+> If $X$ is a [[Vector Spaces#^f4b63e|vector space]] and $\|\cdot\|$ is a norm on $X$, then the pair $(X, \|\cdot\|)$ is called a normed space. ^concept-d7c3bfd21209
 
 <u><b>e.g.</b></u>  
 - The *$L_p$ norm* on $\R^{n}$ for $p\in\N\cup\{\infty\}$ is defined as $$\|x\|_{p}:=\sqrt[p]{|x_{1}|^p+\cdots+|x_{n}|^p}.$$Specifically, we have $\|x\|_1=|x_1|+|x_2|+\dots+|x_n|$ and $\|x\|_\infty=\max_i|x_i|$. Specially, we define the $L_0$ norm as the number of non-zero elements in a vector, and $L_{\infty}$ as $$\|x\|_{\infty}=\max\{|x_1|,\cdots,|x_n|\}.$$Note that $L_{2}$ norm is the standard norm that we usually use in $\R^{n}$. The reason why these are indeed norms is exactly the *Minkowski’s inequality*:
@@ -45,3 +45,5 @@ $\square$
 
 > [!proposition]
 > Two norms are equivalent if and only there exist constants $0\leq c_{1}\leq c_2$ such that $$c_1\mathfrak{B}_{(X,\|\cdot\|_2)}\subset\mathfrak{B}_{(X,\|\cdot\|_1)}\subset c_2\mathfrak{B}_{(X,\|\cdot\|_2)}$$ where $\mathfrak{B}_{(X,\|\cdot\|_j)}$ is the closed unit ball in $(X, \|\cdot\|_j)$ with $j=1,2$.
+
+[[Mathematics/Linear Algebra/Normed Spaces#^concept-d7c3bfd21209|norm]]

@@ -49,7 +49,7 @@ The basic limit theorems also hold:
 > We denote by $L^{1}(X,\mu)$ the space of all integrable functions on $(X,\mathcal{S},\mu)$, modulo the equivalence relation of being equal almost everywhere, with the norm defined by the integral of the absolute value: $$\|f\|_{L^{1}}=\int_{X} |f(x)| \dd\mu.$$
 
 > [!proposition]
-> The space $L^{1}(X,\mu)$ is a [[Complete Metric Space#^67b510|complete]] [[Normed Spaces#^345fd3|normed vector space]].
+> The space $L^{1}(X,\mu)$ is a [[Complete Metric Space#^67b510|complete]] [[Normed Spaces#^concept-d7c3bfd21209|normed vector space]].
 > 
 
 > [!definition] $L^2(X,\mu)$

@@ -10,7 +10,7 @@
 
 <u><b>e.g.</b></u>  
 - The *discrete metric* on any non-empty set $X$ is defined by setting $d(x,x) = 0$ and $d(x,y) = 1$ if $x \neq y$;
-- Any [[Normed Spaces#^345fd3|norm]] $\|\cdot\|$ on a [[Vector Spaces#^f4b63e|vector space]] $X$ gives rise to a metric on $X$ by setting $d (x , y ) = \|x-y\|$. For example, on $\R^{n}$, we have $L^{p}$ metrics for $1 \leq p \leq \infty$ given by $$d_{p}(x,y)=\left(\sum_{i=1}^{n}|x_{i}-y_{i}|^{p}\right)^{1/p},$$which are induced from [[Normed Spaces#^af1cb7|$L^{p}$ norms]].
+- Any [[Normed Spaces#^concept-d7c3bfd21209|norm]] $\|\cdot\|$ on a [[Vector Spaces#^f4b63e|vector space]] $X$ gives rise to a metric on $X$ by setting $d (x , y ) = \|x-y\|$. For example, on $\R^{n}$, we have $L^{p}$ metrics for $1 \leq p \leq \infty$ given by $$d_{p}(x,y)=\left(\sum_{i=1}^{n}|x_{i}-y_{i}|^{p}\right)^{1/p},$$which are induced from [[Normed Spaces#^af1cb7|$L^{p}$ norms]].
 - Let $\R^{J} = \prod_{j\in J}\R$. Then the *uniform metric* on $\R^{J}$ is given by $$d_{u}(x,y)=\sup\left\{\min\{|x_{j}-y_{j}|, 1\}:j\in J\right\}.$$More generally, over a set $\mathscr{F}$ of functions $X\to\R$, the *uniform metric* is defined as$$d_{u}(f,g)=\sup_{x\in X} \| f(x)-g(x)\|.$$
 - Consider the set $\Z$ of integers. Let $p$ be a prime. For any $x,y ∈ \Z$ with $x \neq y$, there is a unique $k ∈ \N$ such that $x −y = p^{k}n$, where $n ∈ \Z$ is not divisible by $p$. The following is called the *$p$-adic metric*: $$d(x,y)=\begin{cases}\frac{1}{k+1} \quad &\text{if } x\neq y \\0 \quad &\text{otherwise}\end{cases}$$
 - Let $(X_1, d_1)$ and $(X_2, d_2)$ be two metric spaces. Then for any $1\leq p\leq\infty$, we have $$

@@ -8,7 +8,7 @@
 
 <u><b>e.g.</b></u>  
 - Consider $A = (0, 1) ∪ \{2\}$ in $\R$ with Euclidean metric. Then $2$ is an isolated point of $A$, every point in $[0,1]$ is a limit point of $A$ and the closure of $A$ is $[0,1]∪\{2\}$.
-- Let $(X, \|\cdot\|)$ be a [[Normed Spaces#^345fd3|normed vector space]] and $x ∈ X$. Then for any $r > 0$ we have $$\{\text{all limit points of }B_r(x)\}=\{y\in X:\|y-x\|\leq r\}$$
+- Let $(X, \|\cdot\|)$ be a [[Normed Spaces#^concept-d7c3bfd21209|normed vector space]] and $x ∈ X$. Then for any $r > 0$ we have $$\{\text{all limit points of }B_r(x)\}=\{y\in X:\|y-x\|\leq r\}$$
 
 $\quad$
 

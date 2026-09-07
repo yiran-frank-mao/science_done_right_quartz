@@ -57,7 +57,7 @@ Since every Cauchy sequence in $X^*$ converges to an element in $X^*$, the space
 > $\quad$
 
 > [!corollary]
-> Let $Y$ be a subspace of a [[Normed Spaces#^345fd3|normed vector space]] $X$ over $\R$.  Every bounded linear functional $L \in B(Y,\R)$ can be extended to a bounded linear functional $l \in B(X,\R)$ such that the extension has the same norm:
+> Let $Y$ be a subspace of a [[Normed Spaces#^concept-d7c3bfd21209|normed vector space]] $X$ over $\R$.  Every bounded linear functional $L \in B(Y,\R)$ can be extended to a bounded linear functional $l \in B(X,\R)$ such that the extension has the same norm:
 > $$ \|l\|_{B(X,\R)} = \|L\|_{B(Y,\R)}. $$
 
 *Proof*  Let us denote $X':=B(X,\R)$ and $Y':=B(Y,\R)$.  Let $L \in Y'$. We define a function $p: X \to \R$ by $p(x) = \|L\|_{Y'} \|x\|_X$.  This function $p$ is sublinear, as it is positively homogeneous and satisfies the triangle inequality.
