@@ -14,7 +14,7 @@ tags:
 <u><b>e.g.</b></u> $\Delta^0$ is a point; $\Delta^1$ is a line segment; $\Delta^2$ is a triangle; $\Delta^3$ is a tetrahedron.
 
 > [!definition] $\Delta$-Complex
-> A *$\Delta$-complex* is a [[Topological Spaces#^65c94a|topological space]] $X$ constructed by gluing together simplices ($\Delta^k$ for various $k$) along their faces. The gluing maps must be linear and preserve the ordering of vertices.
+> A *$\Delta$-complex* is a [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ constructed by gluing together simplices ($\Delta^k$ for various $k$) along their faces. The gluing maps must be linear and preserve the ordering of vertices.
 
 > [!remark]+
 > One can think of it as a more structured and restrictive type of [[CW Complexes#^e68c52|CW complex]], where the cells are specifically simplices and the attaching maps have stricter rules.

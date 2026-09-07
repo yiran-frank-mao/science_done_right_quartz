@@ -1,7 +1,7 @@
 In the topology scenario, a net is a generalization of a sequence:
 
 > [!definition] Net
-> Suppose $X$ is a [[Topological Spaces#^65c94a|topological space]], then a *net* in $X$ is a map $x\colon I\to X$, where $(I,\lesssim)$ is a [[Preorder, Partial Order and Posets#^fa7f24|directed set]]. We often write it as $\{x_{i}\}_{i\in I}$. ^ed5107
+> Suppose $X$ is a [[Topological Spaces#^concept-39ce12df888c|topological space]], then a *net* in $X$ is a map $x\colon I\to X$, where $(I,\lesssim)$ is a [[Preorder, Partial Order and Posets#^fa7f24|directed set]]. We often write it as $\{x_{i}\}_{i\in I}$. ^ed5107
 
 > [!definition] Convergence of Nets
 > Let $X$ be a topological space and $\{x_{i}\}_{i\in I}$ be a net in $X$. Then we say that *$\{x_{i}\}_{i\in I}$ converges to $x\in X$* if for every [[Closure, Interior and Boundary#^eda962|neighbourhood]] $U$ of $x$, there exists $i_{0}\in I$ such that $x_{i}\in U$ for all $i\gtrsim i_{0}$. We write $\lim_{i\in I}x_{i}=x$ or simply $x_{i}\to x$.

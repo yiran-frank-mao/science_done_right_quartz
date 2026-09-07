@@ -29,7 +29,7 @@ $\quad$
 ## Mayer-Vietoris Sequence
 
 > [!theorem] Mayer-Vietoris Sequence
-> Suppose a [[Topological Spaces#^65c94a|space]] $X$ is the union of the interiors of two subspaces $A$ and $B$, i.e., $X = \text{int}(A) \cup \text{int}(B)$. Then there is a [[Abelian Categories#^0c5eb9|long exact sequence]] in homology:
+> Suppose a [[Topological Spaces#^concept-39ce12df888c|space]] $X$ is the union of the interiors of two subspaces $A$ and $B$, i.e., $X = \text{int}(A) \cup \text{int}(B)$. Then there is a [[Abelian Categories#^0c5eb9|long exact sequence]] in homology:
 > $$\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \xrightarrow{\partial_*} H_{n-1}(A \cap B) \to \cdots$$ 
 
 *Proof*  This sequence arises from the short exact sequence of chain complexes: $$0 \to C_n(A \cap B) \xrightarrow{x \mapsto (x, -x)} C_n(A) \oplus C_n(B) \xrightarrow{(x, y) \mapsto x+y} C_n(A+B) \to 0$$ Here $C_n(A+B)$ represents chains in $A \cup B$, and by the Excision Theorem, its homology is $H_n(X)$. $\square$

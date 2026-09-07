@@ -1,7 +1,7 @@
 ## Closure and Interior
 
 >[!definition] Closure
-> Suppose $X$ is a [[Topological Spaces#^65c94a|topological space]]. The *closure* $\bar{A}$ of a set $A\subset X$ is the [[Construction of Sets#^408460|intersection]] of all closed sets that contain $A$. We can say that the closure of $A$ is therefore the smallest closed set that contains $A$. ^cf4e59
+> Suppose $X$ is a [[Topological Spaces#^concept-39ce12df888c|topological space]]. The *closure* $\bar{A}$ of a set $A\subset X$ is the [[Construction of Sets#^408460|intersection]] of all closed sets that contain $A$. We can say that the closure of $A$ is therefore the smallest closed set that contains $A$. ^cf4e59
 
 >[!proposition] 
 > If $A$ is non-empty then $\bar{A}$ is non-empty. Moreover, $\bar{A}$ is always [[Topological Spaces#^0849a0|closed]].

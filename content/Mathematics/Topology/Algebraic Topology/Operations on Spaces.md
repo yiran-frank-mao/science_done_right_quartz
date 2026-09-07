@@ -1,7 +1,7 @@
 ## Suspension
 
 > [!definition] Suspension
-> The *suspension* of a [[Topological Spaces#^65c94a|topological space]] $X$ is the quotient of $X\times I$ obtained by collapsing $X\times\{0\}$ to a point and $X\times\{1\}$ to a point. The suspension is denoted by $SX$ or $\Sigma X$. ^a942da
+> The *suspension* of a [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is the quotient of $X\times I$ obtained by collapsing $X\times\{0\}$ to a point and $X\times\{1\}$ to a point. The suspension is denoted by $SX$ or $\Sigma X$. ^a942da
 > 
 
 <u><b>e.g.</b></u>  Suspension of $S^{n}$ is $S^{n+1}$.

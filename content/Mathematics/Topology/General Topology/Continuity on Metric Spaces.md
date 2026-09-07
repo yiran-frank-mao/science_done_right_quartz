@@ -89,7 +89,7 @@ $\quad$
 >$\quad$
 
 >[!definition] Topologically Equivalence
->Two metrics $d_{1}$ and $d_{2}$ on $X$ are called *topologically equivalent*, or just *equivalent*, if the open sets in $(X, d_1)$ and $(X, d_2)$ coincide. i.e., they yield the same [[Topological Spaces#^65c94a|topology]].
+>Two metrics $d_{1}$ and $d_{2}$ on $X$ are called *topologically equivalent*, or just *equivalent*, if the open sets in $(X, d_1)$ and $(X, d_2)$ coincide. i.e., they yield the same [[Topological Spaces#^concept-39ce12df888c|topology]].
 
 > [!definition] Uniform Equivalence
 > Two metrics $d_1$ and $d_2$ on $X$ are called *uniformly equivalent* if the identity map $\operatorname{id}\colon(X,d_1)\to(X,d_2)$ is a [[Uniform Continuity#^9947a1|uniform homeomorphism]].

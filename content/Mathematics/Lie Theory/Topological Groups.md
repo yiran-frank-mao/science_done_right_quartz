@@ -1,5 +1,5 @@
 > [!definition] Topological Group
-> A *topological group* is a [[Groups, Order and Subgroups#^6e0960|group]] that is also a [[Topological Spaces#^65c94a|topological space]], such that the group operations of multiplication and inversion are both [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] maps. That is $$(x,y)\mapsto x^{-1}y$$is a continuous mapping of the product space into $G$. ^a4f93a
+> A *topological group* is a [[Groups, Order and Subgroups#^6e0960|group]] that is also a [[Topological Spaces#^concept-39ce12df888c|topological space]], such that the group operations of multiplication and inversion are both [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] maps. That is $$(x,y)\mapsto x^{-1}y$$is a continuous mapping of the product space into $G$. ^a4f93a
 
 > [!remark]-
 > In the language of category, topological groups can be defined concisely as [[Groups and Categories#^6ff745|group objects]] in the category of topological spaces $\mathsf{Top}$.

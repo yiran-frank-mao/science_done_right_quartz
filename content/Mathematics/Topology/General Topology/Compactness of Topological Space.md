@@ -45,6 +45,8 @@ There is a slightly weaker notion of compactness called Lindelöf spaces, which 
 > A topological space $X$ is called a *Lindelöf space* if every open cover of $X$ has a countable subcover.
 > 
 
+^concept-871f5f6137af
+
 > [!proposition]
 > A [[Topological Spaces#^concept-5144b7350d14|second-countable]] space is Lindelöf.
 > 

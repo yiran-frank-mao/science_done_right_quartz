@@ -3,7 +3,7 @@ created: 2024-05-25
 updated: 2024-09-26
 ---
 >[!definition] Connectedness
->A [[Topological Spaces#^65c94a|topological space]] $X$ is called *connected* if there do not exist two disjoint nonempty open sets $U$ and $V$ such that $X = U \sqcup V$.  ^946cc4
+>A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is called *connected* if there do not exist two disjoint nonempty open sets $U$ and $V$ such that $X = U \sqcup V$.  ^946cc4
 
 <u><b>e.g.</b></u>  The set $\newcommand{\Q}{\mathbb{Q}}\newcommand{\R}{\mathbb{R}}\Q$ of [[Number Systems#^e8a24a|rational numbers]] in the standard Euclidean topology is not connected because $\Q = U \sqcup V$ with $$U=\mathbb{Q}\cap(-\infty,\pi)\quad\text{ and }\quad V=\mathbb{Q}\cap(\pi,\infty).$$
 
@@ -11,7 +11,7 @@ updated: 2024-09-26
 > Let $\R$ be endowed with the standard Euclidean topology. A set $I ⊂ \R$ is connected if and only if $I$ is an [[Number Systems#^fd03c6|interval]].
 
 >[!theorem] 
-> Let $X$ and $Y$ be [[Topological Spaces#^65c94a|topological spaces]]. If $f \colon X → Y$ is continuous and $X$ is connected, then $f (X )$ is connected, i.e. the continuous image of a connected set is connected.
+> Let $X$ and $Y$ be [[Topological Spaces#^concept-39ce12df888c|topological spaces]]. If $f \colon X → Y$ is continuous and $X$ is connected, then $f (X )$ is connected, i.e. the continuous image of a connected set is connected.
 
 > [!corollary] 
 > Let $X$ be a connected topological space and $f \colon X → \R$ a continuous function, where $\R$ is endowed with the standard topology. If $f$ takes the values $a$ and $b$, then $f$ takes all the values between $a$ and $b$.
@@ -27,7 +27,7 @@ updated: 2024-09-26
 ## Path Connectedness
 
 > [!definition] Path
-> Let $X$ be a [[Topological Spaces#^65c94a|topological space]]. A *path* in $X$ joining two points $x,y ∈ X$ is a continuous function $f \colon [0,1]→X$ such that $f(0)=x$ and $f(1)=y$.
+> Let $X$ be a [[Topological Spaces#^concept-39ce12df888c|topological space]]. A *path* in $X$ joining two points $x,y ∈ X$ is a continuous function $f \colon [0,1]→X$ such that $f(0)=x$ and $f(1)=y$.
 > If the start point and end point coincide, we call it a *loop*. ^1c51ed
 
 > [!definition] Path Connectedness

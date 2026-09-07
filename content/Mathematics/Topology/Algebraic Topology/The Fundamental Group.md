@@ -10,7 +10,7 @@ tags:
 ## Group Structure on Loops
 
 > [!definition] Fundamental Group
-> The *fundamental group* $\newcommand{\Z}{\mathbb{Z}}\pi_{1}(X,x_{0})$ of a [[Topological Spaces#^65c94a|topological space]] $X$ at a base point $x_{0}$ is the group of [[Homotopy Types#^76ea93|(path) homotopy]] [[Relations and Functions#^973688|classes]] of [[Connectedness and Paths#^1c51ed|loops]] based at $x_{0}$, with the multiplication of concatenation of loops, inverse being the reversed loop, and identity being the constant loop at $x_{0}$. ^74adbc
+> The *fundamental group* $\newcommand{\Z}{\mathbb{Z}}\pi_{1}(X,x_{0})$ of a [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ at a base point $x_{0}$ is the group of [[Homotopy Types#^76ea93|(path) homotopy]] [[Relations and Functions#^973688|classes]] of [[Connectedness and Paths#^1c51ed|loops]] based at $x_{0}$, with the multiplication of concatenation of loops, inverse being the reversed loop, and identity being the constant loop at $x_{0}$. ^74adbc
 
 > [!lemma]
 > In [$\newcommand{\R}{\mathbb{R}}\R$](Number%20Systems#^5fea5c), any two paths are homotopic if and only if they have the same endpoints.
@@ -69,7 +69,7 @@ $\quad$ ^01b5b9
 
 
 > [!definition] Simple Connectedness
-> A [[Topological Spaces#^65c94a|topological space]] is *simply-connected* if it is [[Connectedness and Paths#^630354|path-connected]] and its fundamental group is trivial. ^3b18ee
+> A [[Topological Spaces#^concept-39ce12df888c|topological space]] is *simply-connected* if it is [[Connectedness and Paths#^630354|path-connected]] and its fundamental group is trivial. ^3b18ee
 
 > [!theorem]
 > Any simply connected surface is either homeomorphic to $\R^{2}$, or $S^{2}$.

@@ -3,7 +3,7 @@
 We can construct a specific cohomology theory, called singular cohomology, by dualizing the singular chain complex.
 
 > [!definition] Cochains
-> Let $X$ be a [[Topological Spaces#^65c94a|topological space]] and $G$ be an [[Groups, Order and Subgroups#^6d511a|abelian group]] (the *coefficient group*). The group of *$n$-cochains* with coefficients in $G$ is the group of all homomorphisms from the singular $n$-chain group $C_n(X)$ to $G$:
+> Let $X$ be a [[Topological Spaces#^concept-39ce12df888c|topological space]] and $G$ be an [[Groups, Order and Subgroups#^6d511a|abelian group]] (the *coefficient group*). The group of *$n$-cochains* with coefficients in $G$ is the group of all homomorphisms from the singular $n$-chain group $C_n(X)$ to $G$:
 > $$C^n(X;G) := \operatorname{Hom}(C_n(X), G)$$
 > An element $\varphi \in C^n(X;G)$ is a map $\varphi\colon C_n(X) \to G$, and it is completely determined by its values on the basis of singular $n$-simplices $\sigma\colon \Delta^n \to X$.
 

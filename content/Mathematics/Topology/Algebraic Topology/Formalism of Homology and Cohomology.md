@@ -12,7 +12,7 @@ completed: true
 ## Homology with Coefficients
 
 > [!definition] Chain Complex with Coefficients
-> Let $X$ be a [[Topological Spaces#^65c94a|topological space]] and $G$ be an [[Groups, Order and Subgroups#^6d511a|abelian group]], which we call the *coefficient group*. The *singular chain group of $X$ with coefficients in $G$* is defined as the free $G$-module with basis as the set of singular $n$-simplices in $X$.
+> Let $X$ be a [[Topological Spaces#^concept-39ce12df888c|topological space]] and $G$ be an [[Groups, Order and Subgroups#^6d511a|abelian group]], which we call the *coefficient group*. The *singular chain group of $X$ with coefficients in $G$* is defined as the free $G$-module with basis as the set of singular $n$-simplices in $X$.
 > $$C_n(X; G) := G\{\sigma: \Delta^n \to X\}$$
 > An element of $C_n(X; G)$ is a finite formal sum of the form $\sum_{i} g_i \sigma_i$, where $g_i \in G$ and $\sigma_i: \Delta^n \to X$ are singular $n$-simplices.
 > The usual boundary map $d_{n}\colon C_n(X) \to C_{n-1}(X)$ extends $G$-linearly to a boundary map $d_{n}\colon C_n(X; G) \to C_{n-1}(X; G)$ by defining:

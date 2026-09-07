@@ -10,9 +10,7 @@ updated: 2024-09-26
 >2. the [[Construction of Sets#^408460|intersection]] of finitely many open sets is open；
 >3. arbitrary [[Construction of Sets#^678b42|unions]] of open sets are open.
 >
-> The pair $(X , \mathcal{T})$ is called a *topological space*. ^65c94a
-
-^concept-39ce12df888c
+> The pair $(X , \mathcal{T})$ is called a *topological space*. ^concept-39ce12df888c
 
 <b><u>e.g.</u></b>  
 - The topology induced by a [[Metric Spaces#^0eacc7|metric]]: in any metric space $(X,d)$ the collection of all open sets forms a topology.
@@ -93,5 +91,9 @@ $\quad$
 <u><b>e.g.</b></u>  $\R^{n}$ with the usual topology is second-countable, since the collection of all open balls with rational radius and rational center forms a countable basis.
 
 > [!proposition]
-> If $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-5144b7350d14|second countable]], 
+> If $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-5144b7350d14|second countable]], then
+> 1. $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-d4688c3aefae|first countable]];
+> 2. 
+> 3. $X$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-871f5f6137af|Lindelöf]].
+> $\quad$
 > 

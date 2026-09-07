@@ -8,13 +8,13 @@ tags:
 ## Homotopy
 
 > [!definition] Retraction
-> Suppose $X$ is a [[Topological Spaces#^65c94a|topological space]], then a continuous map $r\colon X\to X$ such that $r^{2}=r$ is called a *retraction*. The image of $r$ is called the *retract* of $X$. 
+> Suppose $X$ is a [[Topological Spaces#^concept-39ce12df888c|topological space]], then a continuous map $r\colon X\to X$ such that $r^{2}=r$ is called a *retraction*. The image of $r$ is called the *retract* of $X$. 
 
 > [!remark]+
 > Retraction is the topological analogue of a projection in linear algebra. In general, they are the maps that "project" the space onto a subspace while preserving the structure of the space.
 
 > [!definition] Homotopy
-> A *homotopy* is a continuous deformation of one function into another. Formally, given two [[Continuous Maps on Topological Spaces#^33ee5a|continuous functions]] $f,g\colon X \to Y$, where $X,Y$ are [[Topological Spaces#^65c94a|topological spaces]], a homotopy between $f$ and $g$ is a continuous function $H\colon X \times [0,1] \to Y$ such that $H(-,0)=f$ and $H(-,1)=g$.
+> A *homotopy* is a continuous deformation of one function into another. Formally, given two [[Continuous Maps on Topological Spaces#^33ee5a|continuous functions]] $f,g\colon X \to Y$, where $X,Y$ are [[Topological Spaces#^concept-39ce12df888c|topological spaces]], a homotopy between $f$ and $g$ is a continuous function $H\colon X \times [0,1] \to Y$ such that $H(-,0)=f$ and $H(-,1)=g$.
 > One says that two maps $f$ and $g$ are *homotopic*, if there exists a homotopy $H$ from $f$ to $g$, and denoted $f\simeq g$.
 > For [$C^{k}$-manifolds](Manifolds,%20Atlases%20and%20Smooth%20Structures.md#^6ef2ef), we can also define *$C^{k}$-homotopy* by requiring the homotopy $H$ to be $C^{k}$-smooth. ^2c10b4
 > 
@@ -53,7 +53,7 @@ $\quad$
 
 ## Path Homotopy
 
-An important concept in homotopy theory is the path homotopy, which deals with paths in [[Topological Spaces#^65c94a|topological spaces]]. We first recall the following definition of a path:
+An important concept in homotopy theory is the path homotopy, which deals with paths in [[Topological Spaces#^concept-39ce12df888c|topological spaces]]. We first recall the following definition of a path:
 
 ![[Connectedness and Paths#^1c51ed]]
 

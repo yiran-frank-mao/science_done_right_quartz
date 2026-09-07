@@ -12,7 +12,7 @@ completed: true
 ## Procedure to Construct CW Complexes
 
 > [!definition] CW Complex
-> A *CW complex* is a [[Topological Spaces#^65c94a|topological space]] $X$ constructed inductively from disks of increasing dimension. The construction proceeds as follows:
+> A *CW complex* is a [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ constructed inductively from disks of increasing dimension. The construction proceeds as follows:
 > - Step $0$ ($0$-skeleton): Start with a discrete set of points, $X^0$, called the *0-cells*.
 > - Step $n$ ($n$-skeleton): Assuming the $(n-1)$-skeleton $X^{n-1}$ has been constructed, the *n-skeleton* $X^n$ is formed by attaching $n$-dimensional disks $D^n_\alpha$ to $X^{n-1}$ via *attaching maps* $\varphi_\alpha\colon \partial D^{n}_{\alpha} \to X^{n-1}$, where $\partial D^{n}_{\alpha}\cong S^{n-1}$ is the boundary of $D^{n}_{\alpha}$. The space $X^{n}$ is the quotient space:
 >    $$X^{n} = X^{n-1} \coprod_{\alpha} D^n_\alpha \bigg/ (x \sim \varphi_\alpha(x)) \quad\text{for } x \in \partial D^{n}_{\alpha}.$$
@@ -26,7 +26,7 @@ completed: true
 
 <u><b>e.g.</b></u>
 - A $1$–dimensional CW complex is a [[Basics of Graphs#^9c650d|graph]] where loops and multiple edges between vertices are allowed.
-- CW structures on a [[Topological Spaces#^65c94a|topological space]] is not unique. For instance, the sphere $S^{2}$ can be built from a 0-cell and a 2-cell. It can also be given a CW structure with:
+- CW structures on a [[Topological Spaces#^concept-39ce12df888c|topological space]] is not unique. For instance, the sphere $S^{2}$ can be built from a 0-cell and a 2-cell. It can also be given a CW structure with:
 	- **Two 0-cells**: $v$ and $w$. So the 0-skeleton is $(S^2)^0 = \{v, w\}$.
 	- **Two 1-cells**: $a$ and $b$. The attaching map for $a$ sends the endpoints of $D^1$ to $v$ and $w$, and the map for $b$ sends the endpoints to $w$ and $v$. The 1-skeleton is two arcs joining $v$ and $w$, forming a circle.
 	- **Two 2-cells**: $E$ and $F$. These correspond to the two hemispheres. Their boundaries ($S^1$) are attached to the 1-skeleton. The attaching map for $E$ is $\varphi_E = a \cdot b$, which traces the circular 1-skeleton. Similarly, the attaching map for $F$ is $\varphi_{F} = b \cdot a$, which traces the same circle.

@@ -3,12 +3,12 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 ## Kolmogorov Space $(T_{0})$
 
 > [!definition] Kolmogorov Space
-> A [[Topological Spaces#^65c94a|topological space]] is called a *Kolmogorov space* or *$T_{0}$-space* if for any two distinct points in the space, there exists an open set that contains one of the points but not the other.
+> A [[Topological Spaces#^concept-39ce12df888c|topological space]] is called a *Kolmogorov space* or *$T_{0}$-space* if for any two distinct points in the space, there exists an open set that contains one of the points but not the other.
 
 ## Fréchet Space $(T_{1})$
 
 > [!definition] $T_{1}$ Space
-> A [[Topological Spaces#^65c94a|topological space]] is called *Fréchet* or *$T_{1}$-space* if for any two distinct points $x$, $y$ in the space, there exists open sets $U$, $V$ respectively such that $$x\in U, x\notin V, y\in V, y\notin U.$$
+> A [[Topological Spaces#^concept-39ce12df888c|topological space]] is called *Fréchet* or *$T_{1}$-space* if for any two distinct points $x$, $y$ in the space, there exists open sets $U$, $V$ respectively such that $$x\in U, x\notin V, y\in V, y\notin U.$$
 
 > [!theorem]
 > The followings are equivalent:
@@ -45,5 +45,5 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 **Thrm**  Let $X$ be a Hausdorff space and $A⊂X$. A point $x∈X$ is a limit point of $A$ if and only if any neighborhood $U$ of $x$ contains infinitely many points of $A$.
 
 > [!theorem]
-> A [[Topological Spaces#^65c94a|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the product space $X \times X$.
+> A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the product space $X \times X$.
 > 

@@ -58,7 +58,7 @@ The topology on $\widetilde{X}_{\text{univ}}$ is defined using a basis of open s
 
 ## Categorical Perspective
 
-We can see immediately from the above that, the covering spaces of a given [[Topological Spaces#^65c94a|topological space]] $X$ form a [[Structure of Categories#^2f5c3a|category]] $\mathbf{Cov}(X)$. It is a subcategory of the [[Constructions on Categories#^8b8420|slice category]] $\mathbf{Top}/X$. Then the fundamental theorem of covering spaces can be interpreted as follows:
+We can see immediately from the above that, the covering spaces of a given [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ form a [[Structure of Categories#^2f5c3a|category]] $\mathbf{Cov}(X)$. It is a subcategory of the [[Constructions on Categories#^8b8420|slice category]] $\mathbf{Top}/X$. Then the fundamental theorem of covering spaces can be interpreted as follows:
 If a space $X$ is path-connected, locally path-connected, and semi-locally simply-connected, then the category $\mathbf{Cov}(X)$ is equivalent to the category of $\pi_{1}(X)-\mathbf{Set}$ (or functors from the fundamental groupoid to $\mathbf{Set}$).
 
 Also, the [[Fundamental Theorem of Covering Spaces#^c6cbd5|universal property of the universal cover]] can be interpreted as the universal cover is the [[Objects and Elements#^a7dd74|initial object]] of the category of [[Connectedness and Paths#^946cc4|connected]] covering spaces of a "nice" space $X$.
