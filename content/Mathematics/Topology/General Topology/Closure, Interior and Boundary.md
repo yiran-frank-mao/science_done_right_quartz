@@ -48,7 +48,7 @@
 >A subset $A$ of $T$ is *dense* in $T$ if $\bar{A}=T$, is *nowhere dense* in $T$ if ${(\bar{A})}^\circ = \emptyset$, is *meagre* if it is a union of a countable number of nowhere dense sets. ^b560bf
 
 > [!definition] Separable Space
-> A topological space is *separable* if it has a [[Equinumerous and Countability#^79eb6c|countable]] [[Closure, Interior and Boundary#^b560bf|dense]] subset. ^acb78f
+> A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] is *separable* if it has a [[Equinumerous and Countability#^79eb6c|countable]] [[Closure, Interior and Boundary#^b560bf|dense]] subset. ^acb78f
 > 
 
 >[!lemma] 

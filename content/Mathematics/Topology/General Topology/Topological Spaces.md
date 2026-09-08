@@ -21,10 +21,10 @@ updated: 2024-09-26
 $\quad$
 
 > [!definition] Closedness
-> In a topological space $(X, \mathcal{T})$, a set $C$ is called *closed* if $X\setminus C$ is open. i.e. $T\setminus C\in \mathcal{T}$. ^0849a0
+> In a [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $(X, \mathcal{T})$, a set $C$ is called *closed* if $X\setminus C$ is open. i.e. $T\setminus C\in \mathcal{T}$. ^0849a0
 
 >[!definition] Coarser and Finer
->If $\mathcal{T}_1$ and $\mathcal{T}_2$ are two topologies on $T$ then we say that $\mathcal{T}_1$ is coarser than $\mathcal{T}_2$ if $\mathcal{T}_1\subset\mathcal{T}_2$, that is $\mathcal{T}_1$ contains fewer open sets than $\mathcal{T}_2$. In this situation, we also say that $\mathcal{T}_2$ is *finer* than $\mathcal{T}_1$. ^149286
+>If $\mathcal{T}_1$ and $\mathcal{T}_2$ are two topologies on $T$ then we say that $\mathcal{T}_1$ is *coarser* than $\mathcal{T}_2$ if $\mathcal{T}_1\subset\mathcal{T}_2$, that is $\mathcal{T}_1$ contains fewer open sets than $\mathcal{T}_2$. In this situation, we also say that $\mathcal{T}_2$ is *finer* than $\mathcal{T}_1$. ^149286
 
 <u><b>e.g.</b></u>  Given a set $X$, the trivial topology is the coarsest/weakest topology on $X$ and the discrete topology is the finest/strongest topology on $X$.
 
@@ -40,7 +40,7 @@ $\quad$
 
 ## Bases and Sub-bases
 
->[!definition] Base for a Topology
+>[!definition] Basis of a Topology
 >A *basis* for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$. ^2fc468
 
 <u><b>e.g.</b></u>  Let $(X,d)$ be a [[Metric Spaces#^0eacc7|metric space]]. Then $$\mathcal{B}=\{B_r(x):x\in X\mathrm{~and~}r>0\}$$ is a basis for the metric topology on $X$.
@@ -73,27 +73,3 @@ $\quad$
 
 >[!definition] Sub-basis
 >A *sub-basis* for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset \mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$. ^02668a
-
-## Countability Axioms
-
-> [!definition] First Countable
-> A topological space $(X,\mathcal{T})$ is *first-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] local basis at each point $x\in X$. That is, for each $x\in X$, there is a sequence of open neighbourhoods $N_{1}, N_{2},\cdots$ such that for any neighbourhood $N$ of $x$ there is some $i$ so that $N_{i}\subset N$. ^concept-b7c77a3b39fa
-
-<u><b>e.g.</b></u>  
-- Any metric space is first countable. To see this, note that the set of open balls centered at $x$ with radius $2^{-n}$ for all natural numbers $n$ form a countable local basis at $x$;
-- Cofinite topology on uncountable sets is not first countable;
-$\quad$
-
-> [!definition] Second Countable
-> A topological space $(X,\mathcal{T})$ is *second-countable* if there is a [[Equinumerous and Countability#^79eb6c|countable]] basis for $\mathcal{T}$. ^concept-5144b7350d14
-> 
-
-<u><b>e.g.</b></u>  $\R^{n}$ with the usual topology is second-countable, since the collection of all open balls with rational radius and rational center forms a countable basis.
-
-> [!proposition]
-> If $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-5144b7350d14|second countable]], then
-> 1. $X$ is [[Mathematics/Topology/General Topology/Topological Spaces#^concept-b7c77a3b39fa|first countable]];
-> 2. 
-> 3. $X$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-871f5f6137af|Lindelöf]].
-> $\quad$
-> 
