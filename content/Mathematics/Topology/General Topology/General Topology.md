@@ -27,10 +27,10 @@ The fundamental concepts in point-set topology are **continuity**, **compactness
 
 ### Topological Spaces
 [[Topological Spaces]]
+[[Continuous Maps on Topological Spaces]]
 [[Closure, Interior and Boundary]]
 [[Separation and Hausdorff Spaces]]
 [[Compactness of Topological Space]]
-[[Continuous Maps on Topological Spaces]]
 [[Constructions on Topological Spaces]]
 [[Isometries and Homeomorphisms]]
 [[Connectedness and Paths]]

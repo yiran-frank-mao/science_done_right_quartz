@@ -55,8 +55,3 @@
 > A subset $A$ of $T$ is nowhere dense if and only if $T \setminus \bar{A}$ is dense in $T$.
 
 <b><u>e.g.</u></b>  $\mathbb{Q}$ is dense in $\R$ (as is $\R \setminus\mathbb{Q}$). In $\R$, one-point sets are nowhere dense; so $\mathbb{Q}$ is meagre in $\R$. However, $\R \setminus\mathbb{\bar{Q}} = \emptyset$, so $\Q$ isn’t nowhere dense.
-
-## Convergent Sequences
-
->[!definition] Convergent Sequence
->Let $(X,τ)$ be a topological space. A sequence $(x_{n})$ in $X$ is called convergent to $x ∈ X$ if for any [[Closure, Interior and Boundary#^eda962|neighborhood]] $U$ of $x$ there exists an integer $N$ such that $x_{n} ∈ U$ for all $n≥N$. We write $\lim_{n→∞}x_{n} =x$ or simply $x_{n} →x$. ^72dffe

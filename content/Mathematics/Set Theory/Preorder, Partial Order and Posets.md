@@ -37,7 +37,7 @@ A maximal element in a partially ordered set $X$ is an element $x ∈X$ such tha
 ## Preorder
 
 > [!definition] Preorder
-> A *preorder* is a [[Relations and Functions#^759a11|homogeneous binary relation]] that is [[Relations and Functions#^1bdc5e|reflexive]] and [[Relations and Functions#^1f742d|transitive]]. A set $X$ equipped with a preorder is called a *preordered set*. ^fa7f22
+> A *preorder* is a [[Relations and Functions#^759a11|homogeneous binary relation]] that is only [[Relations and Functions#^1bdc5e|reflexive]] and [[Relations and Functions#^1f742d|transitive]]. A set $X$ equipped with a preorder is called a *preordered set*. ^fa7f22
 > 
 
 > [!definition] Directed Set

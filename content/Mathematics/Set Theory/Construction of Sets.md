@@ -31,6 +31,10 @@
 > In general, we can also define possibly infinite Cartesian product of sets. Suppose $I$ is an index set, $\{X_{i}\}_{i\in I}$ is a family of sets. Then we define 
 > $$ \prod_{i\in I}X_{i}:= \left\{f\colon I \to \bigcup_{i\in I} X_{i} \mid f(i)\in X_{i} \text{ for all } i\in I \right\}. $$ ^bd02ce
 
+> [!theorem]
+> The cartesian product satisfies the following universal property: Let $\{X_{i}\}_{i\in I}$ be a family of sets and $Y$ be a set. Then for any family of maps $\{f_{i}\colon Y\to X_{i}\}_{i\in I}$, there exists a unique map $f\colon Y\to \prod_{i\in I}X_{i}$ such that $\pi_{i}\circ f=f_{i}$ for all $i\in I$, where $\pi_{i}\colon \prod_{i\in I}X_{i}\to X_{i}$ is the projection map defined by $\pi_{i}(x)=x(i)$ for all $x\in \prod_{i\in I}X_{i}$. ^bd02ce
+> 
+
 > [!proposition]
 > Suppose $\{X_{j}\}_{j\in J}$ and $\{Y_{k}\}_{k\in K}$ are families of sets for arbitrary index sets $J$ and $K$. Then
 > $$\left(\bigcup_{j} X_{j}\right) \times \left(\bigcup_{k} Y_{k}\right)=\bigcup_{j,k} (X_{j} \times Y_{k}).$$ ^9d651c
