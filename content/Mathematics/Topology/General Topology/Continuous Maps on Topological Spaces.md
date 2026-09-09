@@ -9,7 +9,7 @@ updated: 2024-09-26
 <u><b>e.g.</b></u> 
 - The identity map $\operatorname{id}_{X} \colon X → X$ is continuous;
 - Any constant map is continuous;
-- The composition of two continuous maps is continuous;
+- The composition of two continuous maps is always continuous.
 $\quad$
 
 >[!theorem] 

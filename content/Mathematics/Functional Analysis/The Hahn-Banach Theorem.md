@@ -29,7 +29,6 @@ $$ |f_n(x) - f(x)| = \lim_{m \to \infty} |f_n(x) - f_m(x)| \le \epsilon $$
 This holds for all $n \ge N$ and for all $x \in X$ with $\|x\|=1$.  Taking the supremum over all such $x$ gives:
 $$ \|f_n - f\|_{X^*} = \sup_{\|x\|=1} |f_n(x) - f(x)| \le \epsilon \quad \forall n \ge N $$
 This is precisely the definition of convergence of $f_n$ to $f$ in the norm of $X^*$.
-
 Second, we need to verify that our limit function $f$ is actually in $X^*$.  We know $f$ is linear; we just need to show it is bounded. We use the triangle inequality for any $n \ge N$:
 $$ \|f\|_{X^*} \le \|f - f_n\|_{X^*} + \|f_n\|_{X^*} $$
 From our previous step, we know $\|f - f_n\|_{X^*} \le \epsilon$. For instance, we can take $\epsilon = 1$.  Since $f_N$ is in $X^*$, its norm $\|f_N\|_{X^*}$ is finite. Therefore:
@@ -39,22 +38,25 @@ Since every Cauchy sequence in $X^*$ converges to an element in $X^*$, the space
 
 ## The Hahn-Banach Theorem
 
-> [!theorem] Hahn-Banach Theorem (Real Vector Spaces)
-> Let $X$ be a vector space over $\R$, $Y$ be a vector subspace of $X$. Suppose $p\colon X \to \R$ is a *sublinear functional*, meaning it satisfies:
-> 1.  **Positive homogeneity**: $p(\lambda x) = \lambda p(x)$ for all $x \in X$ and $\lambda > 0$.
-> 2.  **Subadditivity**: $p(x+y) \leq p(x) + p(y)$ for all $x,y \in X$.
-> 
-> If $L\colon Y \to \R$ is a linear functional that is dominated by $p$ on $Y$, i.e., $L(y) \le p(y)$ for all $y\in Y$, then there exists a linear extension $l\colon X \to \R$ of $L$ such that:
-> 1.  $l(y) = L(y)$ for all $y \in Y$ ($l$ is an extension).
-> 2.  $l(x) \le p(x)$ for all $x \in X$ (the extension is also dominated by $p$).
-> $\quad$ ^d7e9d9
+> [!definition] Sublinear Functional
+> Let $X$ be a vector space over $\R$, $p\colon X \to \R$ is a *sublinear functional* if
+> 1.  Positive homogeneity: $p(\lambda x) = \lambda p(x)$ for all $x \in X$ and $\lambda > 0$.
+> 2.  Subadditivity: $p(x+y) \leq p(x) + p(y)$ for all $x,y \in X$.
+> $\quad$
 
-> [!remark]+
+> [!theorem] Hahn-Banach Theorem (Real Vector Spaces)
+> Let $X$ be a vector space over $\R$, $Y$ be a subspace of $X$. If $f\colon Y \to \R$ is a linear functional that is dominated by $p$ on $Y$, i.e., $f(y) \le p(y)$ for all $y\in Y$, then there exists a linear extension $g\colon X \to \R$ of $f$ that is also dominated by $p$. That is, $g|_{Y}=f$, and $f(x) \le p(x)$ for all $x\in X$. ^d7e9d9
+
+> [!remark]-
 > In the setup of the theorem:
 > - $X$ is a vector space, not necessarily normed or complete.
 > - $Y$ is a subspace, not necessarily closed.
 > - A typical example of a sublinear functional is $p(x) = C\|x\|$ for some constant $C$.
 > $\quad$
+
+*Proof*  The full proof requires [[Preorder, Partial Order and Posets#^11e467|Zorn's Lemma]] to extend the functional from a subspace to the whole space by considering a partially ordered set of all valid extensions. The key step, however, is to show that a functional can be extended by just one dimension.
+Let $f\colon Y \to \R$ be a functional dominated by $p$. Pick an element $x_0 \in X \setminus Y$.  We want to extend $f$ to the subspace $Y_{1} = \text{span}\{Y, x_{0}\}$. Any element in $Y_1$ can be uniquely written as $y + tx_0$ for $y \in Y$ and $t \in \R$. For the extension, which we'll call $g$, to be linear, it must have the form:$$ g(y + tx_0) = f(y) + t \cdot g(x_0) $$We need to define the value $g(x_0)$. Let's call this value $\gamma \in \R$.  Our task is to choose a $\gamma$ such that the extension condition $g(y + tx_0) \le p(y + tx_0)$ holds for all $y \in Y, t \in \R$.
+By considering cases for $t>0$ and $t<0$ and rearranging, we find that $\gamma$ must satisfy for all $y, z \in Y$: $$ g(z) - p(z-x_0) \le \gamma \le p(y+x_0) - g(y). $$Such a $\gamma$ exists if and only if the supremum of the left side is less than or equal to the infimum of the right side.  This is equivalent to showing that for all $y, z \in Y$: $$ g(z) - p(z-x_0) \le p(y+x_0) - g(y) \iff g(y+z) \le p(y+x_0) + p(z-x_0). $$We know that $y+z \in Y$, so $g(y+z) \le p(y+z)$.  Also, by the subadditivity of $p$: $$ p(y+z) = p((y+x_0) + (z-x_0)) \le p(y+x_0) + p(z-x_0). $$Putting these together: $$ g(y+z) \le p(y+z) \le p(y+x_0) + p(z-x_0). $$The inequality holds, so a valid choice for $\gamma$ exists.  This completes the one-step extension. Zorn's Lemma is then invoked to show this process can be continued to cover the entire space $X$. $\square$
 
 > [!corollary]
 > Let $Y$ be a subspace of a [[Normed Spaces#^concept-d7c3bfd21209|normed vector space]] $X$ over $\R$.  Every bounded linear functional $L \in B(Y,\R)$ can be extended to a bounded linear functional $l \in B(X,\R)$ such that the extension has the same norm:
@@ -70,9 +72,3 @@ The conditions for the Hahn-Banach theorem are met. Therefore, there exists a li
 
 > [!remark]
 > This corollary is significant because it guarantees that the dual space $X'$ is non-trivial (if $X$ is non-trivial) and is "large enough" to separate points. It also shows that the supremum in the dual definition of the norm of an element $x_0$ (i.e., $\|x_0\| = \sup_{\|l\|=1} |l(x_0)|$) is actually **achieved**.
-
-*Proof Sketch of the Hahn-Banach Theorem*
-The full proof requires [[Preorder, Partial Order and Posets#^11e467|Zorn's Lemma]] to extend the functional from a subspace to the whole space by considering a partially ordered set of all valid extensions.  The key step, however, is to show that a functional can be extended by just one dimension.
-Let $L: Y \to \R$ be the functional satisfying the theorem's hypotheses. Pick an element $x_0 \in X \setminus Y$.  We want to extend $L$ to the subspace $Y_1 = \text{span}\{Y, x_0\}$.  Any element in $Y_1$ can be uniquely written as $y + tx_0$ for $y \in Y$ and $t \in \R$.
-For the extension, which we'll also call $L$, to be linear, it must have the form:$$ L(y + tx_0) = L(y) + t \cdot L(x_0) $$We need to define the value $L(x_0)$. Let's call this value $\gamma \in \R$.  Our task is to choose a $\gamma$ such that the extension condition $L(y + tx_0) \le p(y + tx_0)$ holds for all $y \in Y, t \in \R$.
-By considering cases for $t>0$ and $t<0$ and rearranging, we find that $\gamma$ must satisfy for all $y, z \in Y$: $$ L(z) - p(z-x_0) \le \gamma \le p(y+x_0) - L(y). $$Such a $\gamma$ exists if and only if the supremum of the left side is less than or equal to the infimum of the right side.  This is equivalent to showing that for all $y, z \in Y$: $$ L(z) - p(z-x_0) \le p(y+x_0) - L(y) \iff L(y+z) \le p(y+x_0) + p(z-x_0). $$We know that $y+z \in Y$, so $L(y+z) \le p(y+z)$.  Also, by the subadditivity of $p$: $$ p(y+z) = p((y+x_0) + (z-x_0)) \le p(y+x_0) + p(z-x_0). $$Putting these together: $$ L(y+z) \le p(y+z) \le p(y+x_0) + p(z-x_0). $$The inequality holds, so a valid choice for $\gamma$ exists.  This completes the one-step extension. Zorn's Lemma is then invoked to show this process can be continued to cover the entire space $X$. $\square$

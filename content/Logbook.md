@@ -3,6 +3,10 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 8 Sep 2026
+- Updates: [[The Hahn-Banach Theorem]], [[Construction of Sets]], [[Constructions on Topological Spaces]].
+
+
 ## 5 Sep 2026
 - Updates: [[Banach Spaces]], [[Von Neumann Algebras]].
 
