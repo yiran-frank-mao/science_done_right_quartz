@@ -7,17 +7,20 @@ Tensors and tensor products are multilinear generalizations of vectors and matri
 > [!definition] Multilinear Map
 > Suppose $U_{i}$ and $W$ are [[Vector Spaces#^f4b63e|vector spaces]].  A function $f \colon \prod_{i=1}^{n} U_{i} \to W$ is called *multilinear* if it is linear in each variable. That is, when for all $k<n$, the function $u_{k} \mapsto f (u_{1},\dots,u_{n})$ is linear for each $u_{i} ∈ U_{i}$ with $i\neq k$. In particular, a *bilinear function* is a multilinear function of two variables. ^da894d
 
+> [!remark]
+> Note that multilinear maps are not linear maps in general. For example, the function $f \colon \R^{2} \to \R$ given by $f(x,y)=xy$ is bilinear, but it is not linear.
+> 
+
 ## Tensor Product of Vector Spaces
 
 >[!definition] Tensor Product of Vector Spaces
->The *tensor product* of vector spaces $U$ and $V$ over the same field is a vector space $U \otimes V$ together with a bilinear function $f\colon U \times V\to U \otimes V$ such that for every vector space $W$ and bilinear function $g \colon U \times V \to W$ there exists a unique linear function $h \colon U \otimes V \to W$ such that $g = h \circ f$:
+> The *tensor product* of vector spaces $U$ and $V$ over the same field is a vector space $U \otimes V$ together with a bilinear map $f\colon U \times V\to U \otimes V$ such that for every vector space $W$ and bilinear map $g \colon U \times V \to W$ there exists a unique linear map $h \colon U \otimes V \to W$ such that $g = h \circ f$:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/tensor_product_universal_property.svg" alt="tensor_product_universal_property" style="width:23%;"/>
 >The function $f$ usually stays anonymous and is written as $(a, b) \mapsto a \otimes b$. ^732917
 
 > [!remark]
 > This means, having a linear map 
 > 
-
 
 > [!theorem] Construction of Tensor Product of Vector Spaces
 > The tensor product of vector spaces $U$ and $V$ over the same field $F$ is a vector space $U \otimes V$ of the same field $F$ spanned by the set of all pure (elementary) tensors of the form $u \otimes v$ for $u\in U$ and $v\in V$ with the following properties hold:

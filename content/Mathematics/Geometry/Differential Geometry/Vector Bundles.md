@@ -28,7 +28,7 @@ $\quad$
 ![|350](https://i.imgur.com/TTlaMBP.png) 
 
 > [!proposition]
-> Let $\pi\colon E\to X$ be a vector bundle. The space of sections, denoted $\Gamma(E)$, is a vector space, with a [[Modules#^697aa9|module]] structure over the [[Ring, Field and Integral Domain#^178485|ring]] $C^{\infty}(M)$.
+> Let $\pi\colon E\to X$ be a vector bundle. The space of sections, denoted $\Gamma(E)$, is a vector space, with a [[Modules#^697aa9|module]] structure over the [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|ring]] $C^{\infty}(M)$.
 > 
 
 > [!definition] Frame of a Vector Bundle

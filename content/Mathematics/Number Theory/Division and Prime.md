@@ -2,18 +2,20 @@
 created: 2024-01-11
 updated: 2024-10-03
 ---
+In this note, we will discuss the basic concepts of number theory. In short, number theory is the study of $\Z$.
+
 > [!definition] Division
-> For two [[Number Systems#^b4eff7|natural numbers]] $a$ and $b$, we say *$a$ divides $b$*, written as $a\mid b$ if there exists [[Number Systems#^25bad2|integer]] $c$ such that $b=a\cdot c$.
+> For two [[Number Systems#^25bad2|integers]] $a$ and $b$, we say *$a$ divides $b$*, written as $a\mid b$ if there exists [[Number Systems#^25bad2|integer]] $c$ such that $b=a\cdot c$.
 
 > [!definition] Prime
 > A *prime number* (or a *prime*) is a natural number greater than $1$ that is not a product of two smaller natural numbers. ^47f235
 
-<b><u>e.g.</u></b> $2,3,5,7,11\dots$ are prime numbers.
+<b><u>e.g.</u></b> $2,3,5,7,11,13,17,19\cdots$ are prime numbers.
 
-> [!lemma] Euclid's Lemma
-> Let $p$ be a prime number. If $p$ divides the product $ab$, then $p\mid a$ or $p\mid b$.
+> [!lemma]
+> For prime number $p$,  $p\nmid a \implies \gcd(p,a)=1$. ^4c2043
 
-
+*Proof*  By definition of a prime, the only possible divisors of $p$ are $1$ and $p$. Since $p\nmid a$, we have $\gcd(p,a)=1$. $\square$
 
 > [!theorem] Fundamental Theorem of Arithmetic
 > Every integer greater than $1$ can either be prime or represented uniquely as a product of prime numbers. ^ff714c
@@ -36,11 +38,18 @@ updated: 2024-10-03
 > [!theorem] Bézout’s Identity
 > Let $a,b\in\Z$, not both zero. Then the set 
 > $$ S=\{ ax+by \mid x,y\in \Z , ax+by>0\} $$
-> has a least element $d$, and $d=\gcd(a,b)$.
+> has a least element $d$, and $d=\gcd(a,b)$. ^a2ecfb
 
+> [!lemma] Euclid's Lemma
+> Let $p$ be a prime number. If $p$ divides the product $ab$, then $p\mid a$ or $p\mid b$.
 
-> [!lemma]
-> For prime number $p$,  $p\nmid a \implies \gcd(p,a)=1$.
+*Proof*  Suppose $p\nmid a$, then $\gcd(p,a)=1$ by [[Division and Prime#^4c2043|the lemma above]]. By [[Division and Prime#^a2ecfb|Bézout’s identity]], there exists $x,y\in\Z$ such that $px+ay=1$. Multiplying both sides by $b$, we have $pbx+aby=b$. Since $p\mid ab$, we have $p\mid b$. $\square$
+
+> [!proposition]
+> For integers $a,b,c\in \Z$ with $a\neq 0$, $a\gcd(b,c)=\gcd(ab, ac)$.
+> 
+
+*Proof*  We will show that $\gcd(ab, ac)$ divides $a\gcd(b,c)$ and vice versa. Let $d=\gcd(b,c)$, then $d\mid b$ and $d\mid c$. Thus $ad\mid ab$ and $ad\mid ac$, so $ad\mid \gcd(ab, ac)$. Conversely, let $e=\gcd(ab, ac)$, then $e\mid ab$ and $e\mid ac$. Note that by [[Division and Prime#^a2ecfb|Bézout’s identity]], there exists $x,y\in\Z$ such that $d=bx+cy$, so $ad=abx+acy$, thus $e\mid ad$. Therefore, we have $a\gcd(b,c)=\gcd(ab, ac)$. $\square$
 
 > [!algorithm] Euclidean Algorithm
 > The Euclidean algorithm is an efficient method for computing the greatest common divisor of two integers $a$ and $b$.
@@ -57,6 +66,6 @@ updated: 2024-10-03
 Thus, $\gcd(56,12) = 4$.
 
 > [!theorem] Fermat’s Little Theorem
-> For every two integers $n,a$ that are coprime, then we have $a^{\varphi(n)} \equiv 1 \pmod{n}$, where $\varphi$ is the [[Arithmetic Functions#^d3f605|Euler's totient function]]. In particular if $n = p$ is a prime number then $a^p ≡ a \pmod{p}$. ^5214dc
+> For every two integers $n,a$ that are coprime, then we have $a^{\varphi(n)} \equiv 1 \pmod{n}$, where $\varphi$ is the [[Arithmetic Functions#^d3f605|Euler's totient function]]. In particular, if $n = p$ is a [[Division and Prime#^47f235|prime number]] then $a^p ≡ a \pmod{p}$. ^5214dc
 
-*Proof*  
+*Proof*  Let $n$ be a positive integer and $a$ be an integer coprime to $n$. Consider the set of integers $S_{n}=\{k_{1},k_{2},\cdots,k_{\varphi(n)}\}$ that are coprime to $n$. Multiplying each of these integers by $a$ modulo $n$ gives another set of integers that are also coprime to $n$. Since multiplication by $a$ is a bijection on the set of integers coprime to $n$, we have

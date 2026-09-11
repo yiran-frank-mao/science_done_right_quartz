@@ -1,7 +1,7 @@
 ## The Cup Product
 
 > [!definition] Cup Product
-> Let $R$ be a [[Ring, Field and Integral Domain#^178485|ring]]. The *cup product* is a map
+> Let $R$ be a [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|ring]]. The *cup product* is a map
 > $$\smallsmile \colon C^k(X;R) \times C^l(X;R) \to C^{k+l}(X;R)$$
 > given by the following formula. For $\varphi \in C^k(X;R)$, $\psi \in C^l(X;R)$, and a singular $(k+l)$-simplex $\sigma\colon \Delta^{k+l} \to X$, we define:
 > $$(\varphi \smallsmile \psi)(\sigma) = \varphi(\sigma|_{[v_0, \dots, v_k]}) \cdot \psi(\sigma|_{[v_k, \dots, v_{k+l}]})$$
@@ -20,7 +20,7 @@ An important consequence of this formula is that the cup product of two cocycles
 The above properties mean that $H^*(X;R)$ equipped with the cup product forms a ring:
 
 > [!theorem]
-> $H^*(X;R) = \bigoplus_k H^k(X;R)$ is a unital, associative, [[Ring, Field and Integral Domain#^178485|ring]] under the cup product. The unit $1 \in H^0(X;R)$ is represented by the cocycle $\varphi \in C^0(X;R)$ which maps every 0-simplex (a point in $X$) to the multiplicative identity $1_R \in R$.
+> $H^*(X;R) = \bigoplus_k H^k(X;R)$ is a unital, associative, [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|ring]] under the cup product. The unit $1 \in H^0(X;R)$ is represented by the cocycle $\varphi \in C^0(X;R)$ which maps every 0-simplex (a point in $X$) to the multiplicative identity $1_R \in R$.
 > This is called the *cohomology ring* of $X$ with coefficients in $R$.
 
 *Proof of Unital Property*  Let $\mathbf{1} \in H^0(X;R)$ be the unit element, represented by the cocycle $\varphi$ where $\varphi(x) = 1_R$ for any point $x \in X$. Let $[\psi] \in H^n(X;R)$ be represented by the cocycle $\psi \in C^n(X;R)$. For any $n$-simplex $\sigma: \Delta^n \to X$ with vertices $[v_0, \dots, v_n]$, we have: $$(\varphi \smallsmile \psi)(\sigma) = \varphi(\sigma|_{[v_0]}) \cdot \psi(\sigma|_{[v_0, \dots, v_n]})$$Since $\sigma|_{[v_0]}$ is a 0-simplex, $\varphi(\sigma|_{[v_0]}) = 1_R$. Therefore, $$(\varphi \smallsmile \psi)(\sigma) = 1_R \cdot \psi(\sigma|_{[v_0, \dots, v_n]}) = \psi(\sigma)$$This shows that $\varphi \smallsmile \psi = \psi$, so $[\mathbf{1}] \smallsmile [\psi] = [\psi]$. A similar calculation shows $[\psi] \smallsmile [\mathbf{1}] = [\psi]$, so it is a two-sided unit. $\square$
@@ -42,7 +42,7 @@ $$H^*(T^2; \Z) \cong \Lambda_\Z(\alpha, \beta)$$
 The cohomology ring is not strictly commutative in general, but it satisfies a property called s*uper-commutativity* or *graded commutativity*.
 
 > [!theorem] Graded Commutativity of the Cup Product
-> If $R$ is a [[Ring, Field and Integral Domain#^178485|commutative ring]], then for any cohomology classes $x \in H^k(X;R)$ and $y \in H^l(X;R)$, the following relation holds:
+> If $R$ is a [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|commutative ring]], then for any cohomology classes $x \in H^k(X;R)$ and $y \in H^l(X;R)$, the following relation holds:
 > $$x \smallsmile y = (-1)^{kl} (y \smallsmile x)$$
 
 > [!remark]+

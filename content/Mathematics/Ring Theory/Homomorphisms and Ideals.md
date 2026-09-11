@@ -1,5 +1,5 @@
 >[!definition] Ring Homomorphism
-> A *ring homomorphism* is a map $\varphi \colon R \to S$ between [[Ring, Field and Integral Domain#^178485|rings]] which is compatible with addition, multiplication and maps the unit of $R$ to that of $S$ (if they are unital). A ring homomorphism which admits an inverse is an isomorphism. ^16be07
+> A *ring homomorphism* is a map $\varphi \colon R \to S$ between [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|rings]] which is compatible with addition, multiplication and maps the unit of $R$ to that of $S$ (if they are unital). A ring homomorphism which admits an inverse is an isomorphism. ^16be07
 
 > [!proposition]
 > For every ring $R$ there is a unique homomorphism $\mathbb{Z} → R$.

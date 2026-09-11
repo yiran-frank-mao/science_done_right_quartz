@@ -12,7 +12,7 @@
 
 <u><b>e.g.</b></u>  
 - Every (left) ideal in a ring $R$ is a (left) $R$-module.
-- Any [[Groups, Order and Subgroups#^6d511a|abelian group]] $A$ is a $\Z$-module. Suppose $(A,+)$ is an abelian group we can define for $n\in \Z$ and $a\in A$ that $$na := \begin{cases}\underbrace{a+\dots+a}_{n \text{ times}} \quad & n\geq0,\\ -((-n)a) \quad &n<0,\end{cases} $$which makes $A$ a $\Z$-module. In fact, there is no difference between abelian groups and $\Z$-modules. For any $\Z$-module $M$, 
+- Any [[Groups, Order and Subgroups#^6d511a|abelian group]] $A$ is a $\Z$-module. Suppose $(A,+)$ is an abelian group we can define for $n\in \Z$ and $a\in A$ that $$na := \begin{cases}\underbrace{a+\dots+a}_{n \text{ times}} \quad & n\geq0,\\ -((-n)a) \quad &n<0,\end{cases} $$which makes $A$ a $\Z$-module. In fact, there is no difference between abelian groups and $\Z$-modules. For any $\Z$-module $M$,  ^a2dd74
 - Linear operators are related to $F[x]$-modules. Let $T : V → V$ be a linear operator on a finite dimensional vector space over field $F$ . Then $V$ is an $F [x ]$-module by setting $$\begin{aligned}f(x) \cdot v = (f(T))(v) =(a_{0} +a_{1}T+\dots+a_{n}T^{n})(v)\\ \text{for all }f(x)=a_0 +a_1x+\dots+a_nx^n \in F[x]\end{aligned}$$
 $\quad$
 

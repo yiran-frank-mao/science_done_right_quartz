@@ -29,8 +29,6 @@ A maximal element in a partially ordered set $X$ is an element $x ∈X$ such tha
 > [!theorem] Zorn's Lemma
 > Let $X$ be a nonempty partially ordered set. If every totally ordered subset of $X$ has an upper bound in $X$, then $X$ has a maximal element. ^11e467
 
-
-
 > [!remark]
 > Zorn’s lemma is equivalent to the axiom of choice: for any collection of nonempty sets, it is possible to form a new set consisting of one element from each member of the collection.
 

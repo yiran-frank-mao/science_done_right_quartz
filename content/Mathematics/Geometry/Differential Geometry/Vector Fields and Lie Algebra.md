@@ -14,7 +14,7 @@ The space of vector fields has a rich structure:
 *Proof*  It suffices to check that the scaler multiplication is valid. Indeed, $$(cX)(p):=c\cdot X(p), \quad \text{for all } c\in\R,p\in M,$$where the dot denotes the scalar multiplication in $T_{p}(M)$. It is clear that this satisfies distributivity and the associativity. $\square$
 
 > [!proposition]
-> The space of vector fields $\mathfrak{X}(M)$ is a [[Modules#^697aa9|module]] over the [[Ring, Field and Integral Domain#^178485|ring]] $C^{\infty}(M)$.
+> The space of vector fields $\mathfrak{X}(M)$ is a [[Modules#^697aa9|module]] over the [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|ring]] $C^{\infty}(M)$.
 
 *Proof*  We can define the the scaler multiplication of a vector field $X$ by a smooth function $f\in C^{\infty}(M)$ as follows: $$(fX)(p) := f(p)\cdot X(p),\quad \text{for all } p\in M,$$where the dot denotes the scalar multiplication in $T_{p}(M)$. Clearly this gives a smooth vector field, and thus makes $\mathfrak{X}(M)$ a module over $C^{\infty}(M)$. $\square$
 

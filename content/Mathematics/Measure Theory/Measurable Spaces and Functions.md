@@ -1,7 +1,9 @@
 ---
 created: 2024-08-17
 updated: 2024-10-07
-tags: []
+tags:
+  - measure
+  - sigma-algebra
 ---
 ## Measurable Spaces
 

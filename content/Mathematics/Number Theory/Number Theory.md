@@ -10,7 +10,6 @@ Number theory (or arithmetic or higher arithmetic in older usage) is a branch of
 
 ## Contents
 [[Division and Prime]]
-[[Euclidean Lemma]]
 ### Analytical Number Theory
 [[Prime Distribution]]
 [[Arithmetic Functions]]

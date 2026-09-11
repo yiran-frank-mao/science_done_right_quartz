@@ -1,7 +1,7 @@
 ## Subspaces
 
 >[!definition] Subspace Topology
->If $(T,\mathcal{T})$ is a topological space and $S\subset T$ , then the subspace topology on $S$ is $$\mathcal{T}_{S}=\{U\cap S \mid U \in \mathcal{T} \}$$ We call $(S,\mathcal{T}_{S})$ a topological subspace of $T$. ^a942da
+>If $(T,\mathcal{T})$ is a topological space and $S\subset T$ , then the *subspace topology* on $S$ is $$\mathcal{T}_{S}=\{U\cap S \mid U \in \mathcal{T} \}$$ We call $(S,\mathcal{T}_{S})$ a topological subspace of $T$. ^a942da
 
 <b><u>e.g.</u></b>  If we consider $[0,1]$ as a subspace of $\R$ then the open sets in $[0,1]$ consist of all sets $U\cap [0,1]$ where $U$ is an open subset of $\R$. In particular, $[0, a)$ is open in the subspace for every $a\in(0, 1)$. 
 
@@ -74,3 +74,11 @@
 
 > [!theorem] Universal Property of Quotient Topology
 > The quotient topology has the following universal property (in $\mathsf{Top}$): 
+
+
+<u><b>e.g.</b></u>
+- Consider the unit interval $I=[0,1]$, then $\partial I=\{0,1\}$, and $I/\partial I \cong S^{1}$;
+- The torus $\R/\Z\cong T^{2}=S^{1}\times S^{1}$;
+- Real projective space $\newcommand{\RP}{\mathbb{R}\mathrm{P}}\RP^{n}$ is the set of one dimensional subspaces of 
+
+Cone
