@@ -1,7 +1,7 @@
 ## Countability Axioms
 
 > [!definition] Local Basis
-> For each $x\in X$, a collection of [[Mathematics/Topology/General Topology/Closure, Interior and Boundary#^eda962|open neighbourhoods]] $\{N_{i}\}_{i\in I}$ is called a *local basis at $x$* if for any open neighbourhood $N$ of $x$ there is some $i$ so that $N_{i}\subset N$.
+> For each $x\in X$, a collection of [[Mathematics/Topology/General Topology/Closure, Interior and Boundary#^eda962|open neighbourhoods]] $\{N_{i}\}_{i\in I}$ is called a *local basis at $x$* if for any [[Mathematics/Topology/General Topology/Closure, Interior and Boundary#^eda962|open neighbourhood]] $N$ of $x$ there is some $i$ so that $N_{i}\subset N$.
 > 
 
 > [!definition] First Countable

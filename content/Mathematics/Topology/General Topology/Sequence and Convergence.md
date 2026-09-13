@@ -13,7 +13,7 @@ Let $\require{mhchem}\newcommand{\R}{\mathbb{R}}\newcommand{\N}{\mathbb{N}}\newc
 **Def**  <i><u>Convergence</u></i>
 A sequence $(x_{n})_{n=1}^{\infty}$ in metric space $(X,d)$ converges to $x \in X$ if $$\lim_{n\to\infty}d(x_{n},x)=0$$ In terms of open balls, this can be phrased as for every $\epsilon>0$, exists $N\geq1$ such that $$
 x_n\in B(x,\epsilon),\quad\text{ for all }n\geq N $$
-**Lemma**  A sequence in a [[Metric Spaces#^0eacc7|metric space]] can have at most one limit. ^f71e2a
+**Lemma**  A sequence in a [[Metric Spaces#^concept-e26011bc6f0a|metric space]] can have at most one limit. ^f71e2a
 
 **Def**  <i><u>Bounded Sequence</u></i>
 Let $(X,d)$ be a metric space. A sequence $(x_{n})$ in $X$ is called bounded if the subset $\{x_n\}$ of $X$ consisting of all elements from $(x_{n})$ is bounded, i.e. there exist $\bar{x} ∈ X$ and $R >0$ such that $x_{n} ∈B_R(\bar{x})$ for all $n$.

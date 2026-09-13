@@ -24,7 +24,7 @@ completed: true
 > Define the modulus, or absolute value, of $z=x+yi$ by $$|z|=\sqrt{ z\bar{z} } =\sqrt{ x^2+y^2 }$$ ^add791
 
 > [!proposition]
-> $\C$ yields a [[Metric Spaces#^0eacc7|metric space]] by the metric defined by modulus of difference: $$d(z,w)=|z-w|,\quad \text{for all } z,w\in\C$$
+> $\C$ yields a [[Metric Spaces#^concept-e26011bc6f0a|metric space]] by the metric defined by modulus of difference: $$d(z,w)=|z-w|,\quad \text{for all } z,w\in\C$$
 
 *Proof*  Straightforward by definition. $\square$
 

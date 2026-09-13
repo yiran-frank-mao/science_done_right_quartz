@@ -1,12 +1,12 @@
 ## Subspaces
 
 >[!definition] Subspace Topology
->If $(T,\mathcal{T})$ is a topological space and $S\subset T$ , then the *subspace topology* on $S$ is $$\mathcal{T}_{S}=\{U\cap S \mid U \in \mathcal{T} \}$$ We call $(S,\mathcal{T}_{S})$ a topological subspace of $T$. ^a942da
+>If $(T,\mathcal{T})$ is a [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] and $S\subset T$ , then the *subspace topology* on $S$ is $$\mathcal{T}_{S}=\{U\cap S \mid U \in \mathcal{T} \}$$ We call $(S,\mathcal{T}_{S})$ a topological subspace of $T$. ^a942da
 
 <b><u>e.g.</u></b>  If we consider $[0,1]$ as a subspace of $\R$ then the open sets in $[0,1]$ consist of all sets $U\cap [0,1]$ where $U$ is an open subset of $\R$. In particular, $[0, a)$ is open in the subspace for every $a\in(0, 1)$. 
 
 > [!lemma]
-> Suppose that $(X, d)$ is a metric space with corresponding topology $\mathcal{T}$. If $S\subset X$ then subspace topology $\mathcal{T}_{S}$ on $S$ corresponds to the topology on $S$ that arises from the metric space $(S,d\big|_{S})$.
+> Suppose that $(X, d)$ is a [[Mathematics/Topology/General Topology/Metric Spaces#^concept-e26011bc6f0a|metric space]] with corresponding topology $\mathcal{T}$. If $S\subset X$ then subspace topology $\mathcal{T}_{S}$ on $S$ corresponds to the topology on $S$ that arises from the metric space $(S,d\big|_{S})$.
 
 *Proof*  
 

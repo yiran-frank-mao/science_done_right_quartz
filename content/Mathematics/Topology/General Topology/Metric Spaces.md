@@ -4,9 +4,7 @@
 >2. Symmetry: $d(x,y)=d(y,x)$ for every $x,y\in X$;
 >3. Triangle inequality: $d(x,z)\leq d(x,y)+d(y,z)$ for every $x,y,z\in X$.
 > 
-> We call $(X,d)$ a *metric space*.  ^0eacc7
-
-^concept-e26011bc6f0a
+> We call $(X,d)$ a *metric space*.  ^concept-e26011bc6f0a
 
 <u><b>e.g.</b></u>  
 - The *discrete metric* on any non-empty set $X$ is defined by setting $d(x,x) = 0$ and $d(x,y) = 1$ if $x \neq y$;

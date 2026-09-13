@@ -11,7 +11,7 @@ updated: 2024-10-23
 >
 >Given a divergence $D$, the dual divergence $D^*$ is defined by $$D^*(p:q) := D(q:p).$$
 
-<u><b>e.g.</b></u>  The Euclidean distance is a [[Metric Spaces#^0eacc7|metric distance]] but not a divergence; The squared Euclidean distance is a non-metric symmetric divergence.
+<u><b>e.g.</b></u>  The Euclidean distance is a [[Metric Spaces#^concept-e26011bc6f0a|metric distance]] but not a divergence; The squared Euclidean distance is a non-metric symmetric divergence.
 
 >[!proposition]
 >$\frac{\partial^{2}}{\partial p^{i}\partial p^{j}}D(p:q)|_{p=q}=-\frac{\partial^{2}}{\partial p^{i}\partial q^{j}}D(p:q)|_{p=q}$

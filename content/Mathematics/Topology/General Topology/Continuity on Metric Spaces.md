@@ -10,7 +10,7 @@ tags:
 >Let $(X,d_{X})$ and $(Y,d_{Y})$ be metric spaces and let $f : X \to Y$ be a function. For $p\in X$, we say that $\lim_{x\to p}f(x)=y\in Y$ if for every $\epsilon>0$ there exists $\delta>0$ such that $$0<d_{X}(x,p)<\delta \implies d_{Y}(f(x),y)<\epsilon.$$
 
 >[!definition] Continuity
->Let $(X,d_X)$ and $(Y,d_Y)$ be [[Metric Spaces#^0eacc7|metric spaces]] and let $f : X \to Y$ be a function. Then $f$ is
+>Let $(X,d_X)$ and $(Y,d_Y)$ be [[Metric Spaces#^concept-e26011bc6f0a|metric spaces]] and let $f : X \to Y$ be a function. Then $f$ is
 >- continuous at $p \in X$ if $\lim_{x\to p}f(x)=f(p)$.
 >- continuous on $X$ if it is continuous at every point of $X$.
 >$\quad$ ^d3351a

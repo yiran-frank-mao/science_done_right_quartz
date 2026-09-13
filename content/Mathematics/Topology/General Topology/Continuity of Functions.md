@@ -4,13 +4,13 @@
 >Let $(X,d_{X})$ and $(Y,d_{Y})$ be metric spaces and let $f \colon X \to Y$ be a function. For $p\in X$, we say that $\lim_{x\to p}f(x)=y\in Y$ if for every $\epsilon>0$ there exists $\delta>0$ such that $$0<d_{X}(x,p)<\delta \implies d_{Y}(f(x),y)<\epsilon.$$
 
 >[!definition] Continuity of Functions
->Let $(X,d_X)$ and $(Y,d_Y)$ be [[Metric Spaces#^0eacc7|metric spaces]] and let $f : X \to Y$ be a function. Then $f$ is
+>Let $(X,d_X)$ and $(Y,d_Y)$ be [[Metric Spaces#^concept-e26011bc6f0a|metric spaces]] and let $f : X \to Y$ be a function. Then $f$ is
 >- *continuous* at $p \in X$ if $\lim_{x\to p}f(x)=f(p)$.
 >- *continuous on $X$* if it is continuous at every point of $X$.
 >$\quad$^f56121
 
 >[!definition] Neighbourhood
->Let $(X,d)$ be a [[Metric Spaces#^0eacc7|metric space]] and $a ∈ X$. A set $U ⊂ X$ is called a *neighborhood* of $a$ if there is an open ball $B_{r}(a)$ with $B_{r}(a)⊂U$.
+>Let $(X,d)$ be a [[Metric Spaces#^concept-e26011bc6f0a|metric space]] and $a ∈ X$. A set $U ⊂ X$ is called a *neighborhood* of $a$ if there is an open ball $B_{r}(a)$ with $B_{r}(a)⊂U$.
 
 >[!theorem] 
 > Let $(X,d)$ and $(Y,ρ)$ be metric spaces, let $f \colon X →Y$ be a function, and let $a ∈ X$. The following statements are equivalent:
@@ -29,13 +29,13 @@
 >$\quad$
 
 >[!theorem] 
-> Let $(X,d)$ be a [[Metric Spaces#^0eacc7|metric space]].
+> Let $(X,d)$ be a [[Metric Spaces#^concept-e26011bc6f0a|metric space]].
 >1. If $f,g\colon X\to\R$ are continuous then $f+g$ and $fg$ are continuous and $f/g$ is continuous at all points $x$ where $g(x) \neq 0$.
 >2. If $(Y,\|\cdot\|$) is a [[Normed Spaces#^concept-d7c3bfd21209|normed vector space]] and $f,g : X \to Y$ are continuous then $f +g$ is continuous.
 >$\quad$
 
 >[!theorem] 
-> Let $X,Y,Z$ be [[Metric Spaces#^0eacc7|metric spaces]]. If $f \colon X →Y$ is continuous at $a$ and $g \colon Y →Z$ is continuous at $f (a)$, then $g \circ f$ is continuous at $a$.
+> Let $X,Y,Z$ be [[Metric Spaces#^concept-e26011bc6f0a|metric spaces]]. If $f \colon X →Y$ is continuous at $a$ and $g \colon Y →Z$ is continuous at $f (a)$, then $g \circ f$ is continuous at $a$.
 
 *Proof*  Let $(x_{n})$ be any sequence with $x_{n} → a$. By the continuity of $f$ at $a$, we have $f (x_{n}) → f (a)$. Next, by the continuity of $g$ at $f (a)$ we have $$(g\circ f)(x_n)=g(f(x_n))\to g(f(a))=(g\circ f)(a)$$Therefore $g\circ f$ is continuous at $a$. $\square$
 

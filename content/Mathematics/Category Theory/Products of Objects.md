@@ -1,7 +1,7 @@
 ## Products
 
 >[!definition] Product of Objects
->In a category $\mathsf{C}$, a *product* for the objects $A$ and $B$ consists of an object $P$ and arrows $p_{1}\colon P\to A$ and $p_{2}\colon P\to B$:
+>In a [[Structure of Categories#^2f5c3a|category]] $\mathsf{C}$, a *product* for the objects $A$ and $B$ consists of an object $P$ and arrows $p_{1}\colon P\to A$ and $p_{2}\colon P\to B$:
 ><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/category_object_product_1.svg" alt="category_object_product_1" style="width:30%;"/>
 >satisfying the following universal property: for all $X$ with $x_{1}$ and $x_2$, there exists unique $u\colon X\to P$ such that the following diagram commutes:
 ><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/category_object_product_2.svg" alt="category_object_product_2" style="width:30%;"/>
@@ -42,10 +42,7 @@ A category $\mathbf{C}$ is said to have all finite products if it has a terminal
 > In any category $\mathsf{C}$, $Q$ is a *coproduct* (dual product) of objects $A$ and $B$ if for any $Z$ and $z_{1}\colon A \to Z$ and $z_{2}\colon B \to Z$, there is a unique $u\colon Q \to Z$ with $u\circ q_i=z_i$ for $i=1,2$, all as indicated in:
 ><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/coproduct.svg" style="width:30%;"/>
 > In other words, a coproduct of two objects is exactly their product in the opposite category.
-> We usually write $Q=A+B$ for the coproduct, and $[z_{1}, z_{2}]$ for the uniquely determined morphism $u \colon A + B \to Z$. And $q_1,q_2$ are usually called *coproduct injections*.
->
-
-^e08759
+> We usually write $Q=A+B$ for the coproduct, and $[z_{1}, z_{2}]$ for the uniquely determined morphism $u \colon A + B \to Z$. And $q_1,q_2$ are usually called *coproduct injections*. ^e08759
 
 <u><b>e.g.</b></u>  
 - In $\mathsf{Set}$, the coproduct $A+B$ of two sets is their disjoint union $A+B=\{(a,A)\mid a\in A\}\cup\{(b,B)\mid b\in B\}$ with evident coproduct injections $i_{1}(a)=(a,A)$ and $i_{2}(b)=(b,B)$. And we we have $$[z_{1},z_{2}](x,\delta)=\begin{cases}z_{1}(x)&\delta=A,\\z_{2}(x)&\delta=B.\end{cases}$$So every finite set $A$ is a coproduct: $$A\cong 1+1+\dots+1 \quad \left(\car{A} \text{ times}\right)$$This is because a function $f \colon A \to Z$ is uniquely determined by its values $f(a)$ for all $a ∈ A$.

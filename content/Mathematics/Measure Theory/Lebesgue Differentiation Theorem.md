@@ -1,7 +1,7 @@
 ## Hardy-Littlewood Maximal Function
 
 > [!lemma] Vitali's Covering Lemma
-> Suppose $\mathcal{B} = \{B_1, B_2, \ldots, B_N\}$ is a finite collection of open balls in some [[Metric Spaces#^0eacc7|metric space]] $(X,d)$. Then there exists a disjoint sub-collection $B_{i_1}, B_{i_2}, \ldots, B_{i_k}$ of $\mathcal{B}$ such that the $3$-times expansions $\hat{B}_{i_{1}}, \hat{B}_{i_{2}}, \ldots, \hat{B}_{i_{k}}$ of $B_{i_1}, B_{i_2}, \ldots, B_{i_k}$ satisfy
+> Suppose $\mathcal{B} = \{B_1, B_2, \ldots, B_N\}$ is a finite collection of open balls in some [[Metric Spaces#^concept-e26011bc6f0a|metric space]] $(X,d)$. Then there exists a disjoint sub-collection $B_{i_1}, B_{i_2}, \ldots, B_{i_k}$ of $\mathcal{B}$ such that the $3$-times expansions $\hat{B}_{i_{1}}, \hat{B}_{i_{2}}, \ldots, \hat{B}_{i_{k}}$ of $B_{i_1}, B_{i_2}, \ldots, B_{i_k}$ satisfy
 > $$\bigcup_{n=1}^{k} \hat{B}_{i_{n}} \supset \bigcup_{i=1}^{N} B_{i}.$$
 
 > [!corollary]

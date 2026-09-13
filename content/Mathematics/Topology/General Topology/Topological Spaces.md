@@ -13,7 +13,7 @@ updated: 2024-09-26
 > The pair $(X , \mathcal{T})$ is called a *topological space*. ^concept-39ce12df888c
 
 <b><u>e.g.</u></b>  
-- The topology induced by a [[Metric Spaces#^0eacc7|metric]]: in any metric space $(X,d)$ the collection of all open sets forms a topology.
+- The topology induced by a [[Metric Spaces#^concept-e26011bc6f0a|metric]]: in any metric space $(X,d)$ the collection of all open sets forms a topology.
 - A topology is said to be *discrete* if all subsets are open. It is *indiscrete* or *trivial* if the only open sets are $T$ and $\emptyset$.
 - Zariski Topology on $\R^{n}$: A set is open if it is $\R^n$, $\emptyset$, or its complement is the set of zeros of a polynomial with real coefficients.
 - A topology is *cofinite* if all open subsets are $T$, $\emptyset$, or the set whose complement is finite.
@@ -43,7 +43,7 @@ $\quad$
 >[!definition] Basis of a Topology
 >A *basis* for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$. ^2fc468
 
-<u><b>e.g.</b></u>  Let $(X,d)$ be a [[Metric Spaces#^0eacc7|metric space]]. Then $$\mathcal{B}=\{B_r(x):x\in X\mathrm{~and~}r>0\}$$ is a basis for the metric topology on $X$.
+<u><b>e.g.</b></u>  Let $(X,d)$ be a [[Metric Spaces#^concept-e26011bc6f0a|metric space]]. Then $$\mathcal{B}=\{B_r(x):x\in X\mathrm{~and~}r>0\}$$ is a basis for the metric topology on $X$.
 
 > [!theorem]
 > Let $(X,\mathcal{T})$ be a topological space. Then $\mathcal{B}\subset \mathcal{T}$ is a basis for $\mathcal{T}$ iff for any $x\in X$ and any $U ∈ \mathcal{T}$ with $x ∈ U$ there is $B ∈ \mathcal{B}$ such that $x \in B ⊂ U$.
