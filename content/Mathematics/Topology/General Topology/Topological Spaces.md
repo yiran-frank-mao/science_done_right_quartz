@@ -1,6 +1,10 @@
 ---
 created: 2023-12-11
 updated: 2024-09-26
+tags:
+  - topology
+  - metric-space
+  - basis-of-topologies
 ---
 ## Topology
 
