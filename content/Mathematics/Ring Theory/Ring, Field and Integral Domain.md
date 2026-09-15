@@ -43,9 +43,7 @@ From the above proposition, we can see that any ring can be enlarged into a unit
 > A *zero divisor* in a ring $R$ is a non-zero element $a$ such that $ab = 0$ for some non-zero $b \in R$. A ring without zero divisors is called an *integral domain*. In other words, an integral domain is a ring in which the product of any two non-zero elements is non-zero. ^domain
 
 > [!proposition] Cancellation Law
-> An integral domain $R$ satisfies the cancellation law: if $ab = ac$ and $a \neq 0$ then $b = c$.
-
-^8b4305
+> An integral domain $R$ satisfies the cancellation law: if $ab = ac$ and $a \neq 0$ then $b = c$. ^8b4305
 
 *Proof*  Suppose $ab = ac$ and $a \neq 0$. Then $ab - ac = a(b - c) = 0$. Since $a \neq 0$ and $R$ is an integral domain, $b - c = 0$. $\square$
 
@@ -69,6 +67,20 @@ From the above proposition, we can see that any ring can be enlarged into a unit
 > 
 
 *Proof*  Suppose $R$ is an integral domain with finitely many elements. Let $a \in R$ be a non-zero element. Consider the function $f\colon R \to R$ defined by $f(x) = ax$. Since the [[Ring, Field and Integral Domain#^8b4305|cancellation law holds in an integral domain]], $f$ is [[Relations and Functions#^042daf|injective]]. Because $R$ is finite, $f$ must also be surjective (ref. [[Relations and Functions#^9109dc|proposition]]). Therefore, there exists some $b \in R$ such that $ab = 1$, showing that every non-zero element has a multiplicative inverse. Hence, $R$ is a field. $\square$
+
+Given any integral domain, we can construct the smallest field containing it, called the *fraction field*:
+
+> [!definition] The Field of Fractions
+> Suppose $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]]. Consider $R\times(R \backslash \{0\})=\{ (a,b)\mid a,b \in R, b\neq0 \}$ equip with the following relation: $$ (a_1,b_1)\sim(a_2,b_2) \quad \text{if} \quad a_1b_2=a_2b_1 $$
+> This is an [[Relations and Functions#^14741d|equivalence relation]]. Let $\newcommand{\frac}{\operatorname{Frac}}\frac(R)$ denote the quotient. We denote the [[Relations and Functions#^973688|equivalence classes]] by $a/b = [(a,b)]$.
+
+> [!proposition] Universal Property of the Field of Fractions
+> $\frac(R)$ is the smallest field containing $R$. More precisely, for any field $F$ and any injective [[Homomorphisms and Ideals#^16be07|ring homomorphism]] $\phi\colon R \to F$, there exists a unique field homomorphism $\bar{\phi}\colon \frac(R) \to F$ such that the following diagram commute:
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/universal_property_fraction_field.svg" style="width:30%;"/>
+> 
+
+
+
 
 ## Ordered Field
 

@@ -18,9 +18,9 @@ updated: 2024-10-28
 $\quad$
 
 > [!proposition]
-> A group action of $G$ on a set $X$ is the same as a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]] $G \to \operatorname{Sym}(X)$.
+> A group action of $G$ on a set $X$ is the same as a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]] $G \to \operatorname{Sym}(X)$, where $\operatorname{Sym}(X)$ is the group of all bijections $X \to X$ under composition.
 
-*Proof*  Given an action $G\times X \to X$ defined, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho : G \to \operatorname{Sym}(X), \quad g\mapsto \rho_g $$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh) $$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
+*Proof*  Given an action $G\times X \to X$ defined, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho \colon  G \to \operatorname{Sym}(X), \quad g\mapsto \rho_{g}.$$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh).$$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
 
 > [!proposition]
 > An action of a group $G$ on a set $X$ defines an [[Relations and Functions#^14741d|equivalence relation]] on $X$: $$ x ∼ y \iff \exists g \in G , y = g\cdot x. $$
@@ -41,7 +41,7 @@ $\quad$
 <u><b>e.g.</b></u>  Let $H\leq G$, then $G$ acts transitively on the [[Cosets and Lagrange’s Theorem#^b825de|left coset space]] $G/H$ by left multiplication, because any two cosets $g_1H$ and $g_2H$ are related by $g_2H = g_2g_1^{-1} \cdot g_1H$.
 
 > [!definition] Free Action
-> A [[Group Actions#^4047e8|group action]] of $G$ on $X$ is said to be free if $g \cdot x = x$ implies $g = 1$ for all $x\in X$. ^fddea8
+> A [[Group Actions#^4047e8|group action]] of $G$ on $X$ is said to be free if $g \cdot x = x$ for some $x\in X$ implies $g = 1$. ^fddea8
 
 > [!definition] Faithful (Effective) Action
 > An action of $G$ on $X$ is said to be *faithful* if the only element of $G$ that acts as the identity on $X$ is the identity element of $G$. ^f7c6a0

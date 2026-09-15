@@ -9,7 +9,7 @@ completed: true
 *Proof*  By definition, $K_{f−w,D}≥1$ means that the $f-w$ has at least one zero on the domain $D$. That is $f(z_0)-w=0$ for some $z_0\in D$, thus $w\in f(D)$. The converse is also true by the same arguments. $\square$
 
 > [!theorem] Open Mapping Theorem
-> Let $D$ be a domain and let $f ∈H(D)$ be a non-constant function. Then $f(D)$ is open. ^6df1f8
+> Let $D$ be a domain and let $f \in H(D)$ be a non-constant function. Then $f(D)$ is open. ^6df1f8
 
 *Proof*  Fix some $f(z_{0})=w_0 \in f(D)$, we must show that some open disk around $w_0$ is contained in $f(D)$. Since $f$ is non-constant, we can pick some $r>0$ such that $f(z)\neq w_0$ for all $z\in\overline{\Delta(z_0 ,r )} \setminus \{z_0\}$. If such $r$ doesn't exist, then there would exist a sequence $(z_n)$ such that $f(z_n )=w_0$ for all $n$, then by the uniqueness theorem, $f$ would be constant, which yields a contradiction. Now let $$\rho=\min_{|z-z_{0}|=r}|f(z)-w_{0}|$$We have $\rho>0$ since $f(z)\neq w_0$ on $\partial \Delta(z_0, r)$.  Notice that the minimum can be achieved as the boundary is compact and $|f(z)-w_0|$ is continuous.
 We will now show that $\Delta(w_{0}, \rho)\subset f(D)$. Let $w\in \Delta(w_{0},\rho)$, consider$$f(z)-w=(f(z)-w_{0})+(w_{0}-w)$$For $z\in \partial\Delta(z_{0},r)$, we have $$|w_{0}-w|<\rho\leq|f(z)-w_{0}|$$Hence we can apply the [[The Argument Principle#^fc2a0d|Rouché's  theorem]] to $f-w$ to obtain$$K_{f-w,\Delta(z_{0},r)}=K_{f-w_{0},\Delta(z_{0},r)}\geq1$$By [[The Open Mapping Theorem#^1d5387|lemma]], this implies that $w\in f(D)$, therefore $\Delta(w_{0}, \rho)\subset f(D)$, and so $f(D)$ is open. $\square$

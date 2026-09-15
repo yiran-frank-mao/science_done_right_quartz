@@ -22,15 +22,8 @@ We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2
 > [!proposition]
 > $\Phi:R[x] \to S, f \mapsto f(\alpha)$ defines an isomorphism $R[x]/\ker(\Phi)\cong R[\alpha]$.
 
-## **Field of Fractions & Product Rings**
+## Field of Fractions & Product Rings
 
-> [!definition] The Field of Fractions
-> Suppose $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]]. Consider $R\times(R \backslash \{0\})=\{ (a,b)\mid a,b \in R, b\neq0 \}$ equip with the following relation: $$ (a_1,b_1)\sim(a_2,b_2) \quad \text{if} \quad a_1b_2=a_2b_1 $$
-> This is an [[Relations and Functions#^14741d|equivalence relation]]. Let $\frac R$ denote the quotient. We denote the equivalence classes by $a/b = [(a,b)]$.
-
-> [!proposition]
-> $\frac R$ is a field.
-> 
 
 > [!theorem]
 > Suppose $R$ is an integral domain and $F$ is defined as above. Define addition and multiplication on $F$ by$$ a/b \cdot c/d = ac/bd, \quad a/b + c/d = (ad+bc)/bd $$Then $F$ is a field, denotes as $\text{Frac}(R)$. The map $R \to F$ given by $a \mapsto \frac{a}{1}$ is an injective ring homomorphism.

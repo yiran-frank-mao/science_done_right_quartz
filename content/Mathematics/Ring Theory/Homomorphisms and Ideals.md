@@ -79,7 +79,7 @@ If the ideal $I$ corresponds to the ideal $I^\prime$ then $R/I \cong R^\prime/I^
 ## Chinese Remainder Theorem
 
 > [!definition] Product Ring
-> Given two rings $R_{1}$ and $R_{2}$, the product ring $R_{1}\times R_{2}$ is the ring with addition and multiplication being elementwise, defined as follows: $$(a,b)+(c,d)=(a+c,b+d),\quad (a,b)(c,d)=(ac,bd)$$
+> Given two rings $R_{1}$ and $R_{2}$, the product ring $R_{1}\times R_{2}$ is the ring with addition and multiplication being elementwise, defined as follows: $$(a,b)+(c,d)=(a+c,b+d),\quad (a,b)(c,d)=(ac,bd).$$
 
 > [!theorem] Chinese Remainder Theorem
 > Let $I, J \triangleleft R$ such that $I + J = R$. then $I J =I \cap J$ and $R/I J\cong R/I ×R/J$.  ^27e653

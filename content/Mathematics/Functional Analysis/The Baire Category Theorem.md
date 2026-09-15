@@ -8,11 +8,7 @@ tags:
 > 
 
 > [!theorem] Baire Category Theorem
-> Every completely metrizable space is Baire. Every locally compact Hausdorff space is Baire. ^b97e4d
-
-
-
-
+> Every [[Mathematics/Topology/General Topology/Complete Metric Space#^concept-08babb55cabd|completely]] metrizable space is Baire. Every locally compact [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]] is Baire. ^b97e4d
 
 ## Open Mapping Theorem
 
@@ -20,12 +16,17 @@ tags:
 > Let $X$ and $Y$ be Banach spaces and $T$ a surjective bounded linear map of $X\to Y$. Then $T$ is an [[Continuous Maps on Topological Spaces#^cd295d|open map]].
 > 
 
+> [!corollary] 
+> Suppose $T\colon X\to Y$ is a bijective bounded linear map between Banach spaces. Then $T^{-1}$ is bounded.
 
+*Proof*  Since $T$ is bijective, it is surjective. By the open mapping theorem, $T$ is an open map. Therefore, for any open set $U\subset X$, we have $T(U)$ is open in $X$. This shows that $T^{-1}$ is continuous, thus bounded. $\square$
 
 ## Closed Graph Theorem
 
 > [!theorem] Closed Graph Theorem
 > Let $X$ and $Y$ be Banach spaces and $T$ a linear map of $X\to Y$. Then $T$ is bounded if and only if the graph of $T$ is closed in $X\times Y$.
+
+*Proof*  It is clear that if 
 
 > [!corollary] Helinger-Toeplitz Theorem
 > Let $A$ be an everywhere defined linear operator on a Hilbert space $\newcommand{\H}{\mathcal{H}}\H$ such that $\langle x, Ay\rangle=\langle Ax,y\rangle$ holds for all $x,y\in\H$. Then $A$ is bounded. ^1d50d9
@@ -35,7 +36,7 @@ tags:
 ## Uniform Boundedness Principle
 
 > [!theorem] Uniform Boundedness Principle
-> Let $X$ be a Banach space and $Y$ a normed vector space. Let $\{T_{\alpha}\}_{\alpha\in A}$ be a family of bounded linear operators from $X$ to $Y$. If for every $x\in X$, the set $\{\|T_{\alpha}x\|\colon \alpha\in A\}$ is bounded, then the set $\{\|T_{\alpha}\|_{\text{op}}\colon \alpha\in A\}$ is bounded.
+> Let $X$ be a [[Mathematics/Functional Analysis/Banach Spaces#^concept-06d04a8caa8e|Banach space]] and $Y$ a normed vector space. Let $\{T_{\alpha}\}_{\alpha\in A}$ be a family of bounded linear operators from $X$ to $Y$. If for every $x\in X$, the set $\{\|T_{\alpha}x\|\colon \alpha\in A\}$ is bounded, then the set $\{\|T_{\alpha}\|_{\text{op}}\colon \alpha\in A\}$ is bounded.
 > 
 
 *Proof*  Define sets $X_{n}:=\{x\in X : \sup_{\alpha\in A} \|T_{\alpha}x\|\leq n\}$. Each $X_{n}$ is closed because if a sequence $(x_{k})\subset X_{n}$ converges to $x\in X$, then $T_{\alpha}x_{k} \to T_{\alpha}x$ by continuity, so $\|T_{\alpha}x\| \leq \|T_{\alpha}x-T_{\alpha}x_{k}\|+\|T_{\alpha}x_{k}\|\leq \|T_{\alpha}x-T_{\alpha}x_{k}\|+n$ for all $k$, thus $\|T_{\alpha}x\|\leq n$ for all $\alpha$, therefore, $x\in X_{n}$. Note that from our assumption, we have $\cup_{n\in\N} X_{n} = X$. By the [[The Baire Category Theorem#^b97e4d|Baire category theorem]], there exists some $m\in\N$ such that $X_{m}$ has nonempty interior. So there exists $x_{0}\in X_{m}$ and $\varepsilon>0$ such that the closure of $B_{\varepsilon}(x_{0})$ is contained in $X_{m}$. For any arbitrary $u\in X$ with $\|u\|\leq 1$, we have $$\begin{aligned} \|T_{\alpha}u\| &= \varepsilon^{-1}\|T_{\alpha}x_{0}+\varepsilon T_{\alpha}u - T_{\alpha}x_{0} \| \\ &\leq \varepsilon^{-1}\|T_{\alpha}(x_{0}+\varepsilon u)\| + \varepsilon^{-1}\|T_{\alpha}x_{0}\| \\ &\leq 2\varepsilon^{-1}m,\end{aligned}$$which proves the desired statement. $\square$ 
