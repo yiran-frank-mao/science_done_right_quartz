@@ -33,12 +33,12 @@ $\quad$
 <u><b>e.g.</b></u>  Given a set $X$, the trivial topology is the coarsest/weakest topology on $X$ and the discrete topology is the finest/strongest topology on $X$.
 
 >[!definition] Metrizable
->Topologies need not come from metrics, but if there is, we say that $(T , \mathcal{T})$ is *metrizable*.
+> Topologies need not come from metrics, but if there is, we say that $(T , \mathcal{T})$ is *metrizable*.
 
 <u><b>e.g.</b></u> 
 - Suppose that $X$ consists of more than one point. Then the trivial topology on $X$ is not metrizable.
 - discrete yes
-- cofinite iff X is finite
+- cofinite topology on $X$ is metrizable iff $X$ is finite
 
 *Proof*  Assume the indiscrete topology on $T$ is induced by a metric $d$ on $T$. Let $x,y\in T$ with $x\neq y$. Then $d(x,y)=\epsilon>0$. The set $B\left(x,\frac{\epsilon}{2}\right)$ is an open subset of $(T,d)$. Since $x\in B\left(x, \frac{\epsilon}{2}\right)$, this set is not empty. And since $y\notin B\left(x, \frac{\epsilon}{2}\right)$ this set is not all of $T$. But $\emptyset$ and $T$ are the only open sets, yielding a contradiction. $\square$
 

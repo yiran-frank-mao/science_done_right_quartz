@@ -1,5 +1,5 @@
 >[!definition] Banach Space
-> A [[Normed Spaces#^concept-d7c3bfd21209|normed space]] $(X,\|\cdot\|)$ is a *Banach space* if it is [[Complete Metric Space#^67b510|complete]] as a [[Metric Spaces#^concept-e26011bc6f0a|metric space]]. ^concept-06d04a8caa8e
+> A [[Normed Spaces#^concept-d7c3bfd21209|normed space]] $(X,\|\cdot\|)$ is a *Banach space* if it is [[Complete Metric Space#^concept-08babb55cabd|complete]] as a [[Metric Spaces#^concept-e26011bc6f0a|metric space]]. ^concept-06d04a8caa8e
 
 <u><b>e.g.</b></u>  
 - Let $\Omega \subset \mathbb{R}^n$ be a domain and $\alpha \in (0,1]$. A function $f\colon \Omega \to \mathbb{R}$ is said to belong to the *Hölder space* $C^{0,\alpha}(\Omega)$ if $$\|f\|_{C^{0,\alpha}(\Omega)} := \sup_{x \in \Omega} |f(x)| + \sup_{\substack{x,y \in \Omega\\ x \neq y}} \frac{|f(x) - f(y)|}{|x-y|^\alpha} < \infty.$$
@@ -7,6 +7,7 @@
 	- The second term $\sup_{x \neq y} \frac{|f(x) - f(y)|}{|x-y|^\alpha}$ measures the *$\alpha$-Hölder continuity* of $f$.
   Equipped with this norm, $C^{0,\alpha}(\Omega)$ is a Banach space.
 - Suppose $(X,\mathcal{S},\mu)$ is a [[Measurable Spaces and Functions#^c2e020|measure space]], then $L^{p}(X,\mathcal{S},\mu)$ is a Banach space with norm $\|f\|_{p}:=\left(\int_{X}|f|^{p}\dd\mu\right)^{1/p}$. The proof of completeness will be provided later [[Banach Spaces#^63386a|here]] after we have established a tool for proving completeness of normed spaces.
+$\quad$
 
 > [!definition] Absolutely Convergent Series
 > A series $\sum_{n=1}^{\infty}x_{n}$ in a [[Normed Spaces#^concept-d7c3bfd21209|normed space]] $(X,\|\cdot\|)$ is said to be *absolutely convergent* if the series $\sum_{n=1}^{\infty}\|x_{n}\|$ converges in $\R$.
@@ -20,9 +21,21 @@ Conversely, we pick a Cauchy sequence in $X$, say $\{x_{n}\}_{n=1}^{\infty}$. We
 
 <u><b>e.g.</b></u>  We now use this theorem to show that $L^{p}(X,\mathcal{S},\mu)$ is complete. Suppose $\sum_{n=1}^{\infty} f_{n}$ absolutely converges to $M>0$. We define $g_{n}:=\sum_{i=1}^{n}|f_{n}|$. By Minkowski's inequality, $$ \|g_{n}\|_{p}\leq \sum_{i=1}^{n} \|f_{i}\|_{p} \leq \sum_{i=1}^{\infty}\|f_{i}\|_{p}=M<\infty.$$Note that $g_{n}$ is increasingly convergent to $g=\sum_{i=1}^{\infty}|f_{i}|$, [[Integration on Measure Spaces#^e32def|monotone convergence theorem]] gives $$\|g\|_{p}^{p}=\int g^{p}\dd\mu = \lim_{n\to \infty}\int g_{n}^{p}\dd\mu \leq M^{p}.$$Hence $g\in L^{p}(X,\mathcal{S},\mu)$, in particular, $g(x)=\sum_{i=1}^{\infty}|f_{i}(x)|<\infty$ a.e. Since absolute convergence implies convergence for series in $\R$, we can define $F(x):=\sum_{i=1}^{\infty}f_{i}(x)<\infty$ for a.e. $x$, also let $F_{n}(x):=\sum_{i=1}^{n}f_{i}(x)$ a.e. That is, $F_{n}\to F$ a.e. Note that  $|F_{n}(x)|\leq g(x)$ a.e, so dominated convergence theorem gives $$\|F\|_{p} = \left(\int_{X} |F|^{p}\dd\mu\right)^{1/p} = \lim_{n\to \infty} \|F_{n}\|_{p}<\sum_{i=1}^{n} \|f_{i}\|_{p} < \infty. $$Thus $F\in L^{p}(X,\mathcal{S}, \mu)$. Moreover, $|F_{n}(x)-F(x)|=|\sum_{i=n+1}^{\infty} f_{i}(x)|\leq \sum_{i=n+1}^{\infty} |f_{i}(x)|\leq g(x)$ a.e., so [[Integration on Measure Spaces#^de731e|dominated convergence theorem]] implies  $$\|F_{n}-F\|_{p} = \left(\int_{X} |F_{n}-F|^{p}\dd\mu\right)^{1/p} \to \int_{X}|F-F|^{p}\dd\mu=0 \quad\text{as }n\to \infty. $$That is, $\sum_{n=1}^{\infty} f_{n}$ converges in $L^{p}$ norm, as desired. $\square$ ^63386a
 
-## Bounded Operators
+## Bounded Linear Operators
 
 > [!theorem]
 > Let $X$ be a [[Normed Spaces#^concept-d7c3bfd21209|normed space]] and let $Y$ be a [[Banach Spaces#^concept-06d04a8caa8e|Banach space]]. Then $B(X, Y)$ provided with the operator norm is a Banach space.
 
 *Proof*  
+
+## Bounded Linear Functionals
+
+> [!definition]
+> Suppose $X$ is a normed space over $\C$, then $X^{*}$ is defined as bounded linear operators from $X$ to $\C$, that is, $X^{*}:=B(X,\C)$. The elements of $X^{*}$ are called *bounded linear functionals* on $X$.
+> 
+
+> [!corollary]
+> Any dual space $X^{*}$ is a Banach space.
+
+<u><b>e.g.</b></u>  For $1<p<\infty$, we have $L^{p}(X,\mathcal{S},\mu)^{*}\cong L^{q}(X,\mathcal{S},\mu)$, where $q$ is the conjugate exponent of $p$, i.e., $\frac{1}{p}+\frac{1}{q}=1$. The isomorphism is given by the mapping $$\Phi\colon L^{q}(X,\mathcal{S},\mu)\to L^{p}(X,\mathcal{S},\mu)^{*},\quad \Phi(g)(f):= \int_{X} fg \dd\mu,$$where for all $f\in L^{p}(X,\mathcal{S},\mu)$.
+

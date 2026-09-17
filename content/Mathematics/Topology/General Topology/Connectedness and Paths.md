@@ -5,18 +5,31 @@ updated: 2024-09-26
 >[!definition] Connectedness
 >A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is called *connected* if there do not exist two disjoint nonempty open sets $U$ and $V$ such that $X = U \sqcup V$.  ^946cc4
 
-<u><b>e.g.</b></u>  The set $\newcommand{\Q}{\mathbb{Q}}\newcommand{\R}{\mathbb{R}}\Q$ of [[Number Systems#^e8a24a|rational numbers]] in the standard Euclidean topology is not connected because $\Q = U \sqcup V$ with $$U=\mathbb{Q}\cap(-\infty,\pi)\quad\text{ and }\quad V=\mathbb{Q}\cap(\pi,\infty).$$
-
->[!proposition] 
-> Let $\R$ be endowed with the standard Euclidean topology. A set $I ⊂ \R$ is connected if and only if $I$ is an [[Number Systems#^fd03c6|interval]].
+<u><b>e.g.</b></u>  
+- The set $\newcommand{\Q}{\mathbb{Q}}\newcommand{\R}{\mathbb{R}}\Q$ of [[Number Systems#^e8a24a|rational numbers]] in the standard Euclidean topology is not connected because $\Q = U \sqcup V$ with $U=\mathbb{Q}\cap(-\infty,\pi)$ and $V=\mathbb{Q}\cap(\pi,\infty)$. Note that this also means that a subspace of a connected space need not be connected.
+- Let $\R$ be endowed with the standard Euclidean topology. A set $I ⊂ \R$ is connected if and only if $I$ is an [[Number Systems#^fd03c6|interval]].
+$\quad$
 
 >[!theorem] 
-> Let $X$ and $Y$ be [[Topological Spaces#^concept-39ce12df888c|topological spaces]]. If $f \colon X → Y$ is continuous and $X$ is connected, then $f (X )$ is connected, i.e. the continuous image of a connected set is connected.
+> Let $X$ and $Y$ be [[Topological Spaces#^concept-39ce12df888c|topological spaces]]. If $f \colon X → Y$ is continuous and $X$ is connected, then $f (X )$ is connected, i.e. the continuous image of a connected set is connected. ^affaf2
 
-> [!corollary] 
+*Proof*  We prove the contrapositive. Suppose $f (X )$ is not connected, then there exist disjoint nonempty open sets $U$ and $V$ in $Y$ such that $f (X ) = U \sqcup V$. Then $f^{-1}(U)$ and $f^{-1}(V)$ are disjoint nonempty open sets in $X$ with $$X=f^{-1}(f(X))=f^{-1}(U\cup V)=f^{-1}(U)\cup f^{-1}(V)$$which shows that $X$ is not connected. $\square$
+
+> [!corollary]
+> Every continuous map $f \colon X \to Y$ from a connected topological space $X$ to a discrete topological space $Y$ is constant.
+
+
+> [!corollary] Intermediate Value Theorem
 > Let $X$ be a connected topological space and $f \colon X → \R$ a continuous function, where $\R$ is endowed with the standard topology. If $f$ takes the values $a$ and $b$, then $f$ takes all the values between $a$ and $b$.
 
-*Proof*  By the given conditions, $f (X )$ is connected and hence it is an interval. Since $a,b∈f(X)$, any value between $a$ and $b$ must be in $f(X)$.
+*Proof*  By the given conditions, $f (X )$ is connected and hence it is an interval. Since $a,b∈f(X)$, any value between $a$ and $b$ must be in $f(X)$. $\square$
+
+> [!remark]-
+> This is a generalization of the [[Real Continuous Functions#^f2dbe6|classical intermediate value theorem in real analysis]].
+> 
+
+>[!lemma]
+> If $A\subset X$ is connected and $A\subset B\subset \overline{A}$, then $B$ is connected.
 
 > [!proposition]
 > The only subset of a connected topological space which is both open and closed is the empty set and itself. ^7a08b9
@@ -31,12 +44,14 @@ updated: 2024-09-26
 > If the start point and end point coincide, we call it a *loop*. ^1c51ed
 
 > [!definition] Path Connectedness
-> A topological space $X$ is called path connected if for every pair of points $x,y ∈ X$ can be joined by a path in $X$. ^630354
+> A topological space $X$ is called *path connected* if for every pair of points $x,y ∈ X$ can be joined by a path in $X$. ^630354
 
 >[!theorem] 
 > A path connected topological space is connected. In general, connected space is not necessarily path-connected.
 
-*Proof*  If $X$ is not connected, then there exist disjoint nonempty open sets $U$,$V$ in $X$ with $X =U∪V$. Let $x ∈U$ and $y ∈V$. Since $X$ is path-connected, there is a path $f \colon [0,1]→X$ joining $x$ to $y$. By the continuity of $f$, $f^{−1}(U)$ and $f^{−1}(V)$ are disjoint nonempty open sets in $[0,1]$ with $$[0,1]=f^{-1}(X)=f^{-1}(U\cup V)=f^{-1}(U)\cup f^{-1}(V)$$Therefore $[0,1]$ is not connected, which is a contradiction. $\square$
+*Proof*  If $X$ is not connected, then there exist disjoint nonempty open sets $U$,$V$ in $X$ with $X =U∪V$. Let $x ∈U$ and $y ∈V$. Since $X$ is path-connected, there is a path $f \colon [0,1]→X$ joining $x$ to $y$. By the continuity of $f$, $f^{−1}(U)$ and $f^{−1}(V)$ are disjoint nonempty open sets in $[0,1]$ with $$[0,1]=f^{-1}(X)=f^{-1}(U\cup V)=f^{-1}(U)\cup f^{-1}(V).$$Therefore $[0,1]$ is not connected, which is a contradiction. $\square$
+
+<u><b>e.g.</b></u>  $\R^{n}\setminus\{0\}$ is path connected for $n\geq 2$; Any convex set in $\R^{n}$ is path connected; The topologist's sine curve is connected but not path connected.
 
 > [!proposition]
 > If $U$ is an open set in $\R^{n}$, then $U$ is [[Connectedness and Paths#^946cc4|connected]] if and only if $U$ is [[Connectedness and Paths#^630354|path connected]].
@@ -44,6 +59,14 @@ updated: 2024-09-26
 *Proof*  It suffices to show that if $U$ is nonempty connected, then it is path connected. Fix some $x\in U$, we define $V:=\{y\in U: \text{there is a path joining }x \text{ and } y\}$. Clearly $V\neq \emptyset$ because $x\in V$. By the [[Connectedness and Paths#^7a08b9|proposition]], it is enough to show that $V$ is both open and closed in $U$, which implies that $V=U$, hence $U$ is path connected. For any $y\in V$, since $U$ is open, there is a open ball $B_{r}(y)$ contained in $U$. Let $\gamma\colon [0,1]\to U$ be the path from $x$ to $y$. Note that for all $z\in B_{r}(y)$, we can define a path $\gamma_{z}\colon [0,1]\to U$ from $x$ to $z$ by $$\gamma_{z}(t)=\begin{cases} \gamma(2t),\quad& t\in[0,1/2],\\ (2t-1)z+(2-2t)y,\quad& t\in[1/2,1], \end{cases}$$connecting $x$ and $z$, so $z\in V$, which shows that $V$ is open in $U$.
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/connectedness_in_R%5En.svg" alt="connectedness_in_R^n" style="width:35%;"/>
 Now we show that $V$ is closed in $U$. Let $\{y_{n}\}\subset V$ be a sequence converging to $y\in U$. As $U$ is open, there is some open ball $B_{\varepsilon}(y)\subset U$, and $y_{n}\in B_{\varepsilon}(y)$ for all sufficiently large $n$. Similarly by concatenation of paths, we can define a path joining $x$ to $y_{n}$ and then to $y$, hence $y\in V$. This shows that $V$ is closed in $U$. Therefore, $U$ is path connected. $\square$
+
+> [!proposition]
+> 1. Every quotient of a (path) connected space is (path) connected;
+> 2. The union of a family of (path) connected subspaces of $X$ that have a point in common is (path) connected;
+> 3. Any finite product of (path) connected spaces is (path) connected.
+> 
+
+*Proof*  (1) is immediate from [[Connectedness and Paths#^affaf2|the theorem]]. 
 
 > [!definition] Locally Path Connected
 > A topological space $Y$ is *locally path-connected* if for any point $y \in Y$ and any open neighborhood $U$ of $y$, there exists a path-connected open neighborhood $V \subseteq U$ containing $y$. ^ba4f32

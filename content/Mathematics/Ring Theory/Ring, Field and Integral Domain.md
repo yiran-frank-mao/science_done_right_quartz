@@ -15,12 +15,16 @@ tags:
 > A ring $R$ is *commutative* if the multiplication is commutative. ^concept-b822d04b4a4b
 
 <b><u>e.g.</u></b>  
-- The integers $\mathbb{Z}$ is a commutative unital ring, any $\newcommand{\Z}{\mathbb{Z}}\Z/n\Z$ is a commutative unital ring.
+- $\{0\}$ is the trivial ring with $0=1$, it is sometimes called the *zero ring*;
+- The integers $\mathbb{Z}$ is a commutative unital ring, any $\newcommand{\Z}{\mathbb{Z}}\Z/n\Z$ is a commutative unital ring;
 - The set of 2×2 matrices with real entries $M_{2}(\R)$ is a non-commutative unital ring.
 $\quad$
 
 >[!definition] Subring
 >A subset $S$ in a ring $R$ is called a *subring* if $S$ is closed under addition, subtraction, multiplication and contains $1$ (if $R$ is unital).
+
+<u><b>e.g.</b></u>
+- The trivial ring is **not** a subring of any other nontrivial rings, even though itself is a ring. The point is 
 
 >[!definition] Unit
 >An element of a ring $R$ is called a *unit* if it is invertible with respect to multiplication. The set of invertible elements is a [[Groups, Order and Subgroups#^6e0960|group]] called the the group of units in $R$ and denotes $R^{\times}$. ^c4d0ce
@@ -28,7 +32,7 @@ $\quad$
 > [!proposition]
 > For any (non-unital) ring $R$, $\Z\times R$ is a unital ring with multiplicative identity $(1,0)$ under the multiplication 
 > $$ (m,r)(n,s):= (mn, m\cdot s + n \cdot r + rs), $$
-> where for any $k\in\Z$, $k\cdot x$ is a shorthand for $x+x+\cdots+x$ ($k$ times) if $k>0$, $0$ if $k=0$, and $-((-k)\cdot x)$ if $k<0$. ([[Modules#^a2dd74|any abelian group is a $\Z$-module]]) ^c4d0ce
+> where for any $k\in\Z$, $k\cdot x$ is a shorthand for $x+x+\cdots+x$ ($k$ times) if $k>0$, $0$ if $k=0$, and $-((-k)\cdot x)$ if $k<0$. ([[Modules#^a2dd74|any abelian group is a $\Z$-module]])
 
 *Proof*  This is easy to check.  $\square$
 
@@ -76,11 +80,12 @@ Given any integral domain, we can construct the smallest field containing it, ca
 
 > [!proposition] Universal Property of the Field of Fractions
 > $\frac(R)$ is the smallest field containing $R$. More precisely, for any field $F$ and any injective [[Homomorphisms and Ideals#^16be07|ring homomorphism]] $\phi\colon R \to F$, there exists a unique field homomorphism $\bar{\phi}\colon \frac(R) \to F$ such that the following diagram commute:
-> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/universal_property_fraction_field.svg" style="width:30%;"/>
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/universal_property_fraction_field.svg" style="width:28%;"/>
 > 
 
+*Proof*  
 
-
+In general, if a ring $R$ is not an integral domain, we can still attempt to construct a "field of fractions", this is called the [localisation](https://www.wikiwand.com/en/Localization_(commutative_algebra).
 
 ## Ordered Field
 

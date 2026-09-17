@@ -64,7 +64,7 @@
 
 > [!theorem] Universal Property of Disjoint Union Topology
 > The disjoint union of topological spaces is the [[Products of Objects#^e08759|coproduct]] in the category $\mathsf{Top}$, i.e. for any [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $Z$ and a family of continuous maps $f_{i}\colon X_{i}\to Z$, there exists a unique continuous map $f\colon \bigsqcup_{i\in I}X_{i}\to Z$ such that $f\circ \iota_i=f_{i}$ for all $i\in I$, where $\iota_j\colon X_j\to \bigsqcup_{i\in I}X_{i}$ is the inclusion map.
-> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/coproduct_topology.svg" style="width:32%;"/>
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/coproduct_topology.svg" style="width:30%;"/>
 > 
 
 ## Quotient Topology

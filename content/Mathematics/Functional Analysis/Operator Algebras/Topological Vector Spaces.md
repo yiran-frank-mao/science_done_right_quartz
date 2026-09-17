@@ -1,11 +1,13 @@
 > [!definition] Topological Vector Space
-> A topological vector space is a [[Vector Spaces#^f4b63e|vector space]] that is also a [[Topological Spaces#^concept-39ce12df888c|topological space]], where the vector space operations (addition and scalar multiplication) are [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] with respect to the topology.
+> A *topological vector space* is a [[Vector Spaces#^f4b63e|vector space]] that is also a [[Topological Spaces#^concept-39ce12df888c|topological space]], where the vector space operations (addition and scalar multiplication) are [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] with respect to the topology.
 
 <u><b>e.g.</b></u>  Banach spaces, Hilbert spaces, and Sobolev spaces are all examples of topological vector spaces.
 
 > [!definition] Locally Convex Space
->  A topological vector space is locally convex if it has a [[Topological Spaces#^2fc468|basis]] of its topology consisting of [[Convex Sets#^3a9d82|convex]] open subsets.
-> 
+>  A topological vector space is *locally convex* if it has a [[Topological Spaces#^2fc468|basis]] of its topology consisting of [[Convex Sets#^3a9d82|convex]] open subsets. Equivalently, $0$ has a neighborhood basis consisting of convex open subsets.
+
+> [!definition] Complete Topological Space
+> A topological vector space is complete
 
 In practice, it is often useful to define a locally convex space by means of a family of seminorms.
 
@@ -22,8 +24,14 @@ In practice, it is often useful to define a locally convex space by means of a f
 
 ## Fréchet Spaces
 
+> [!lemma]
+> A complete topological vector space is complete in every compatible metric that induces its topology.
+> 
+
+
+
 > [!definition] Fréchet Space
-> A topological vector space $X$ is a *Fréchet space* if it is, locally convex, metrizable and [[Complete Metric Space#^67b510|complete]].
+> A topological vector space $X$ is a *Fréchet space* if it is, locally convex, metrizable and [[Complete Metric Space#^concept-08babb55cabd|complete]].
 
 > [!remark]+
 > The original definition due to Stefan Banach defines Fréchet spaces as metrizable complete topological vector spaces, which does not require local convexity. The books of Waelbroeck (1971) and Wilansky (1978) follow this original definition.

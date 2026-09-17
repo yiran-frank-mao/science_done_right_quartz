@@ -84,7 +84,7 @@ $\quad$
 >[!theorem] 
 > Suppose that $d_{1}$ and $d_2$ are two metrics on $X$. Then the following statements are equivalent:
 >- The open sets in $(X, d_{1})$ and $(X, d_{2})$ coincide
->- For any metric space $(Y, d_Y)$, a function $g : X \to Y$ is continuous from $(X, d_1)$ into $(Y, d_Y)$ if and only if $g$ is continuous from $(X, d_2)$ into $(Y, d_Y)$
+>- For any metric space $(Y, d_Y)$, a function $g \colon X \to Y$ is continuous from $(X, d_1)$ into $(Y, d_Y)$ if and only if $g$ is continuous from $(X, d_2)$ into $(Y, d_Y)$
 >- For any metric space $(Y, d_{Y})$, a function $f : Y \to X$ is continuous from $(Y, d_Y)$ into $(X, d_1)$ if and only if $f$ is continuous from $(Y, d_Y)$ into $(X, d_2)$.
 >$\quad$
 

@@ -10,9 +10,9 @@
 >
 > And the following axioms hold:
 > - Middle Unity Axiom: 
->   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoidal_cat_triangle.svg" style="width:50%;"/>
+>   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoidal_cat_triangle.svg" style="width:55%;"/>
 > - Pentagon Axiom: 
->   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoidal_cat_pentagon.svg" style="width:80%;"/>
+>   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoidal_cat_pentagon.svg" style="width:85%;"/>
 >
 > Moreover, a *strict monoidal category* is a monoidal category in which the components of $\alpha$, $\lambda$ and $\rho$ are all identity morphisms.
 
@@ -23,8 +23,8 @@
 > 
 > such that the unit diagram and the pentagon diagram hold:
 > 
-> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_unit_relation.svg" style="width:50%;"/>
-> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_pentagon_relation.svg" style="width:50%;"/>
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_unit_relation.svg" style="width:55%;"/>
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_pentagon_relation.svg" style="width:55%;"/>
 > 
 > Dually, a *comonoid object* is a monoid object in the dual category $\mathsf{C}^{\text{op}}$. ^2438f8
 

@@ -7,7 +7,7 @@ updated: 2025-07-28
 > [!lemma]
 > The [[Fields and Field Extensions#^2bfbd8|characteristic]] of any field is either zero or a prime.
 
-*Proof*  Assume a field $F$ has characteristic neither zero nor a prime, say $n$. Then $n\cdot 1_{F} = 0_{F}$, where $1_{F}$ is the multiplicative identity of $F$ and $0_{F}$ is the additive identity of $F$. Let $p$ be the smallest prime divisor of $n$. Then, we have $p\cdot 1_{F} = 0_{F}$, which contradicts the assumption that the characteristic of $F$ is neither zero nor a prime. $\square$
+*Proof*  Assume a field $F$ has characteristic neither zero nor a prime, say $n$. Then $n\cdot 1_{F} = 0_{F}$, where $1_{F}$ is the multiplicative identity of $F$ and $0_{F}$ is the additive identity of $F$. Let $p$ be the smallest prime divisor of $n$ so that $n=pm$. Then, we have $0_{F}=(pm)\cdot 1_{F}=(p\cdot 1_{F})(m\cdot 1_{F})$. Note that $F$ has no nonzero zero divisor, so either $p\cdot 1_{F}=0_{F}$ or $m\cdot 1_{F}=0_{F}$, which contradicts the assumption that $n$ is the smallest integer making $n\cdot 1_{F}=0_{F}$. $\square$
 
 > [!lemma]
 > A finite field must have characteristic $p$ for some prime $p$ and its order is $p^{r}$ for some $r\in \N$.

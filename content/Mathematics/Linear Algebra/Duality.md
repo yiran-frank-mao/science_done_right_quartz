@@ -2,7 +2,7 @@
 updated: 2025-09-03
 ---
 > [!definition] Dual Space & Covector
-> The dual space of a [[Vector Spaces#^f4b63e|vector space]] $V$, denoted as $V^{*}$, is the set of all linear maps from $V$ to $\R$. i.e. $V^{*} = \Hom(V,\R)$. And elements of $V^{*}$ are called covectors or dual vectors. ^6c7627
+> The dual space of a [[Vector Spaces#^f4b63e|vector space]] $V$, denoted as $V^{*}$, is the set of all linear maps from $V$ to the underlying field $F$. i.e. $V^{*} = \Hom(V,F)$. And elements of $V^{*}$ are called *covectors*, *dual vectors* or *linear functionals*. ^6c7627
 
 > [!proposition]
 > The dual space is a [[Vector Spaces#^f4b63e|vector space]].

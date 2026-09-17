@@ -12,7 +12,7 @@
 > $\quad$
 
 > [!theorem] Riesz-Fischer Theorem
-> The space $L^{1}(E)$ is [[Complete Metric Space#^67b510|complete]] with respect to the $L^{1}$ norm.
+> The space $L^{1}(E)$ is [[Complete Metric Space#^concept-08babb55cabd|complete]] with respect to the $L^{1}$ norm.
 
 > [!corollary] 
 > If $\{f_n\}_{n=1}^{\infty}$ converges to $f$ in $L^1$, then there exists a subsequence $\{f_{n_k}\}_{k=1}^{\infty}$ such that  

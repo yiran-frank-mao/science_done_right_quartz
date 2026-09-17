@@ -28,7 +28,7 @@ We can extend the notion of factorization to rings (integral domains) other than
 > Consider $\Z[\sqrt{-5}]$. $2$ is irreducible, $2\mid (1+\sqrt{-5})(1-\sqrt{-5})$, but $2$ does not divide either of the factors.
 
 > [!definition] Size Function
-> A size function on an [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ can be any function $\sigma\colon R\setminus\{0\}\to \Z^{+}$ whose domain is the set of nonzero elements of $R$ and whose range is the set of nonnegative integers.
+> A *size function* on an [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ can be any function $\sigma\colon R\setminus\{0\}\to \Z^{+}$ whose domain is the set of nonzero elements of $R$ and whose range is the set of nonnegative integers.
 
 <u><b>e.g.</b></u> A multiplicative size function is especially useful, because it allows us to convert the factorization problem in an arbitrary integral domain to a factorization problem in $\Z$ (even $\newcommand{\N}{\mathbb{N}}\N$). For example, consider $\Z[\sqrt{-5}]$. We can define a size function $\sigma$ on $\Z[\sqrt{-5}]$ such that $\sigma(z):=\|z\|^{2}$, where $\|\cdot \|$ denotes the [[Complex Numbers#^add791|complex modulus]]. Thus, it satisfies$$\sigma(zw)=\|zw\|^{2}=\|z\|^{2}\|w\|^{2}=\sigma(z)\sigma(w),$$which is multiplicative. Let's consider $1+\sqrt{-5}\in\Z[\sqrt{-5}]$, whose size is $6$. As $6$ can only be factored into $2\cdot 3$ in $\N$, but there is neither size $2$ nor size $3$ element in $\Z[\sqrt{-5}]$, hence we can conclude that $1+\sqrt{-5}$ is irreducible in $\Z[\sqrt{-5}]$.
 

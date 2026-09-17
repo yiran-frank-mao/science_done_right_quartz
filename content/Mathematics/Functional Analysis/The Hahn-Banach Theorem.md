@@ -72,3 +72,7 @@ The conditions for the Hahn-Banach theorem are met. Therefore, there exists a li
 
 > [!remark]
 > This corollary is significant because it guarantees that the dual space $X'$ is non-trivial (if $X$ is non-trivial) and is "large enough" to separate points. It also shows that the supremum in the dual definition of the norm of an element $x_0$ (i.e., $\|x_0\| = \sup_{\|l\|=1} |l(x_0)|$) is actually **achieved**.
+
+> [!lemma]
+> Let $X$ be a vector space over $\C$, and $f\colon X \to \C$. Then $f$ is a linear functional iff it can be uniquely expressed as: $$f(x)=u(x)-iu(ix),$$
+> for some $u\colon X\to \R$ being a real linear functional. Moreover, if $X$ is a normed space, then $f$ is bounded iff $u$ is bounded, and $\|f\|_{X^*} = \|u\|_{X^*}$.

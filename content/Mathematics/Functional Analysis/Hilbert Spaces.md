@@ -1,7 +1,7 @@
 ## Hilbert Spaces and Separability
 
 > [!definition] Hilbert Space
-> A *Hilbert space* is a [[Number Systems#^5fea5c|real]] or [[Complex Numbers#^a81924|complex]] [[Inner Products#^f0c22c|inner product space]] that is also [[Complete Metric Space#^67b510|complete]] with respect to the [[Metric Spaces#^concept-e26011bc6f0a|metric]] induced by the [[Inner Products#^f0c22c|inner product]]. ^ae0212
+> A *Hilbert space* is a [[Number Systems#^5fea5c|real]] or [[Complex Numbers#^a81924|complex]] [[Inner Products#^f0c22c|inner product space]] that is also [[Complete Metric Space#^concept-08babb55cabd|complete]] with respect to the [[Metric Spaces#^concept-e26011bc6f0a|metric]] induced by the [[Inner Products#^f0c22c|inner product]]. ^ae0212
 
 ^concept-309eb44da4da
 

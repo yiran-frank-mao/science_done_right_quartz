@@ -34,7 +34,7 @@
 >[!lemma] 
 > Given locally small categories $\mathsf{A}$, $\mathsf{B}$, and $\mathsf{C}$, a map of arrows and objects, $$F_{0}\colon \obj \mathsf{A} \times \obj \mathsf{B} \to \obj \mathsf{C},\quad F_{1}\colon \mor \mathsf{A}\times \mor \mathsf{B} \to \mor\mathsf{C}$$forms a functor $F \colon \mathsf{A} \times \mathsf{B} \to \mathsf{C}$ iff 
 >- $F$ is functorial in each argument: $F(A,−) \colon \mathsf{B} → \mathsf{C}$ and $F(−,B) \colon \mathsf{A} → \mathsf{C}$ are functors for all $A∈\obj\mathsf{A}$ and $B∈\obj \mathsf{B}$.
->- $F$ satisfies the following interchange law. Given $α \colon A → A^{\prime} ∈ \mor\mathsf{A}$ and $β : B → B^{\prime} ∈ \mor B$, $F(A^{\prime},β)\circ F(α,B)=F(α,B^{\prime})\circ F(A,β)$.
+>- $F$ satisfies the following interchange law. Given $α \colon A → A^{\prime} ∈ \mor\mathsf{A}$ and $β \colon B \to B^{\prime} \in \mor B$,  $F(A^{\prime},β)\circ F(α,B)=F(α,B^{\prime})\circ F(A,β)$.
 >$\quad$
 
 >[!proposition] 

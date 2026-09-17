@@ -1,6 +1,6 @@
 ## First Isomorphism Theorem
 
-> [!proposition]
+> [!proposition] Universal Property of Quotients
 > Let $f\colon G\to H$ be a group homomorphism, $K=\ker(f)$ and $\pi\colon G\to G/K$ the canonical quotient map. There is a well-defined map $\varphi \colon G/K \to H$ given by $φ(gK) = f (g)$ such that $φ \circ \pi = f$, in other words the following diagram commutes: 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/first_iso_thm.svg" alt="first_iso_thm" style="width:25%;"/>
 
