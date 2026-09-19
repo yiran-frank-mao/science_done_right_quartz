@@ -13,7 +13,7 @@ Let $(X,d)$ be a [[Metric Spaces#^concept-e26011bc6f0a|metric space]]. A sequenc
 *Proof*  Suppose $(x_{n})$ is convergent with $x_{n} → x$. Then for any $ε > 0$, there exists $N$ such that $d(x_{n},x) < ε/2$ for all $n > N$. Therefore, for all $n,m > N$, we have $$d(x_{n},x_{m})\leq d(x_{n},x)+d(x,x_{m})<ε/2+ε/2=ε$$Thus $(x_{n})$ is a Cauchy sequence. $\square$
 
 >[!proposition]
->Cauchy sequences in metric spaces are bounded.
+> Cauchy sequences in metric spaces are bounded.
 
 *Proof*  Let $(x_{n})$ be a Cauchy sequence. Then there exists $N$ such that $d(x_{n},x_{N})<1$ for all $n≥N$. Let $$R=\max\left\{d(x_1,x_N),\cdots,d(x_{N-1},x_N)\right\}+1$$Then $d(x_{n},x_{N}) < R$ for all n. Therefore $x_{n} ∈ B_{R}(x_{N})$ for all $n$, i.e. $(x_{n})$ is bounded. $\square$
 

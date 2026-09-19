@@ -5,7 +5,7 @@ updated: 2024-09-17
 ## Monic and Epic
 
 >[!definition] Monomorphism
->In any category $\mathsf{C}$, an morphism $f\colon A\to B$ is called a monomorphism (monic) if given any $g,h\colon C \to A$, $f\circ g = f\circ h$ implies $g = h$. We write $f \colon A\rightarrowtail B$ if $f$ is a monomorphism. ^4e0259
+>In any category $\mathsf{C}$, an morphism $f\colon A\to B$ is called a *monomorphism (monic)* if given any $g,h\colon C \to A$, $f\circ g = f\circ h$ implies $g = h$. We write $f \colon A\rightarrowtail B$ if $f$ is a monomorphism. ^4e0259
 
 <u><b>e.g.</b></u>  A [[Relations and Functions#^862dba|function]] $f\colon A\to B$ is monic if and only if it is [[Relations and Functions#^042daf|injective]].
 

@@ -4,7 +4,7 @@ tags:
   - open-mapping-theorem
 ---
 > [!definition] Baire
-> A *Baire Space* is a [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ in which every countable intersection of open dense subsets remains dense.
+> A *Baire Space* is a [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ in which every countable intersection of open [[Mathematics/Topology/General Topology/Closure, Interior and Boundary#^b560bf|dense]] subsets remains dense. In other words, $X$ is not a countable union of [[Mathematics/Topology/General Topology/Closure, Interior and Boundary#^b560bf|nowhere dense]] sets.
 > 
 
 > [!theorem] Baire Category Theorem

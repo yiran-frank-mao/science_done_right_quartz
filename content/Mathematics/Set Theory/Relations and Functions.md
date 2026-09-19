@@ -36,7 +36,7 @@ completed: true
 ## Equivalence Relation
 
 >[!definition] Equivalence Relation
->An equivalence relation is a relation on a set, generally denoted by $∼$, that is reflexive, symmetric, and transitive for everything in the set.
+>An *equivalence relation* is a relation on a set, generally denoted by $∼$, that is reflexive, symmetric, and transitive for everything in the set.
 >- Reflexivity: $a ∼ a$
 >- Symmetry: $a∼b \implies b∼a$
 >- Transitivity: $a∼b \text{ and } b∼c \implies a∼c$

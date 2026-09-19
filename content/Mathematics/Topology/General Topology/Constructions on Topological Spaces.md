@@ -70,10 +70,11 @@
 ## Quotient Topology
 
 > [!definition] Quotient Topology
-> Suppose $X$ is a topological space and $Y$ is a set. $q\colon X\to Y$ is surjective, then the *quotient toplogy* is a topology on $Y$ by declaring that $U\subset Y$ is open iff $q^{-1}(U)$ is open in $X$. ^d57887
+> Suppose $X$ is a topological space and $Y$ is a set. $q\colon X\to Y$ is surjective, then the *quotient toplogy* is a topology on $Y$ by declaring that $U\subset Y$ is open iff $q^{-1}(U)$ is open in $X$. Such $q\colon X\to Y$ is called a *quotient topology*. ^d57887
 
 > [!theorem] Universal Property of Quotient Topology
-> The quotient topology has the following universal property (in $\mathsf{Top}$): 
+> The quotient map $q\colon X\to Y$ has the following universal property (in $\mathsf{Top}$): For any topological space $Z$, a map $f\colon Y\to Z$ is continuous iff the composite $f\circ q\colon X\to Z$ is continuous.
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/quotient_topology.svg" style="width:25%;"/>
 
 
 <u><b>e.g.</b></u>
