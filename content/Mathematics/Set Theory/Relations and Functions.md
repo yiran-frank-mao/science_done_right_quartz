@@ -60,17 +60,15 @@ completed: true
 >[!definition] Function
 >Let $X$ and $Y$ be two sets. A function $f \colon X \to Y$ is a relation that is [[Relations and Functions#^70f956|univalent]] and [[Relations and Functions#^d97ac1|serial]] defined over $X$ and $Y$. The sets $X$ and $Y$ are called the domain and codomain of $f$ respectively. ^862dba
 
-> [!definition] Range
-> For some function $f\colon X\to Y$, the range is the set$$f(X)=\{y\in Y:y=f(x)\text{ for some }x\in X\}$$ ^eb7c36
-
 > [!definition] Graph
 > The following set is called the graph of a function $f$:$$\Gamma(f)=\{(x,y):x ∈X,y ∈Y \text{ and } y =f(x)\}$$ ^bd51b5
 
 >[!definition] Image
->Given a subset $A\subset X$, its image under $f\colon X\to Y$ is defined by$$f(A)=\{y\in Y:y=f(x) \text{ for some }x\in A\}$$^8f2f00
+>Given a subset $A\subset X$, its image under $f\colon X\to Y$ is defined by$$f(A)=\{y\in Y:y=f(x) \text{ for some }x\in A\}.$$
+> In particular, the image $f(X)$ is called the *range* of $f$. ^8f2f00
 
 > [!definition] Preimage
-> Given a subset $B ⊂ Y$ , its inverse image or preimage under $f$ is defined by$$f^{-1}(B)=\{x\in X:f(x)\in B\}$$
+> Given a subset $B ⊂ Y$ , its *inverse image* or *preimage* under $f$ is defined by$$f^{-1}(B)=\{x\in X:f(x)\in B\}.$$
 
 > [!proposition]
 > Let $f \colon X \to Y$ be a function. For any set $A⊂X$ and $B ⊂Y$ there hold$$A\subset f^{-1}(f(A)), \quad f(f^{-1}(B))\subset B$$
