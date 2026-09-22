@@ -32,7 +32,7 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 *Proof*  Assume a sequence $(x_{n})$ in a Hausdorff space has two distinct limits $x$ and $y$. Then there exist neighborhoods $U$ of $x$ and $V$ of $y$ such that $U ∩V = \emptyset$. However, since $x_{n} → x$ and $x_{n} → y$ , there exists an integer $N$ such that $x_{n} ∈ U$ and $x_{n} ∈V$ for $n≥N$. Thus $U∩V \neq \emptyset$, which is a contradiction. $\square$
 
 >[!proposition] 
-> Every finite set in a Hausdorff topological space $(X,\tau)$ is closed.
+> Every finite set in a Hausdorff topological space $(X,\tau)$ is closed. More generally, any compact set in a Hausdorff space is closed.
 
 *Proof*  It suffices to show for any $x∈X$ the set $\{x\}$ is closed. For any $z\in X\setminus \{x\}$, by the Hausdorff property we can find an open set $U_{z}$ containing $z$ but $x \notin U_{z}$. Thus $X \setminus\{x\} = \bigcup_{z∈X\setminus\{x\}} U_{z}$ and hence it is open. Consequently $\{x\}$ is closed. $\square$
 
