@@ -13,7 +13,7 @@ updated: 2025-05-19
 <b><u>e.g.</u></b> $(0, 1)$ is not compact, $\{(0, a) \mid a ∈ (0, 1)\}$ is an open cover with no finite subcover; $\R$ is not compact, $\{(−\infty, a) : a ∈ \Z\}$ has no finite subcover.
 
 >[!definition] Sequential Compactness
->Let $X$ be a topological space and $A⊂X$. We say that $A$ is sequentially compact if every sequence in $A$ has a subsequence converges to a point in $A$.
+>Let $X$ be a topological space and $A⊂X$. We say that $A$ is *sequentially compact* if every sequence in $A$ has a subsequence converges to a point in $A$.
 
 > [!lemma]
 > If $T$ is a topological space and $S ⊂ T$ then $S$ is compact in the $T$ if and only if $(S,\mathcal{T}_S)$ is compact.
@@ -26,13 +26,9 @@ updated: 2025-05-19
 > [!proposition]
 > Any compact subset $K$ of a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]] $T$ is closed.
 
+
+
 ## Tychonoff's Theorem
-
-**Def**  <i><u>Product of Sets</u></i>
-Let $\{X_α\}_{α∈A}$ be a family of sets. We define $∏_{α∈A} X_{α}$ to be the collection of all
-functions $x \colon A → \bigcup_{\alpha\in A} X_{\alpha}$ such that $x(α)∈X_{\alpha}$ for each $α ∈A$.
-
-**Def**  <i><u>Projection</u></i>
 
 > [!theorem] Tychonoff's Theorem
 > The product of any collection of compact topological spaces is compact with respect to the product topology.

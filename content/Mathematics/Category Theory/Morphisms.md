@@ -10,7 +10,7 @@ updated: 2024-09-17
 <u><b>e.g.</b></u>  A [[Relations and Functions#^862dba|function]] $f\colon A\to B$ is monic if and only if it is [[Relations and Functions#^042daf|injective]].
 
 >[!definition] Epimorphisim
->In any category $\mathsf{C}$, an morphism $f\colon A\to B$ is called an epimorphism (epic) if given any $i, j \colon B \to D$, $i\circ f = j\circ f$ implies $i = j$. Write $f \colon A\twoheadrightarrow B$ if $f$ is an epimorphism. ^09ba17
+>In any category $\mathsf{C}$, an morphism $f\colon A\to B$ is called an *epimorphism* (*epic*) if given any $i, j \colon B \to D$, $i\circ f = j\circ f$ implies $i = j$. Write $f \colon A\twoheadrightarrow B$ if $f$ is an epimorphism. ^09ba17
 
 <u><b>e.g.</b></u>  
 - A [[Relations and Functions#^862dba|function]] $f\colon A\to B$ is epic if and only if it is [[Relations and Functions#^042daf|surjective]].
@@ -27,7 +27,35 @@ $\quad$
 
 *Proof*  Note that $$f(−n)=f((−1) +(−1)+\dots+(−1)) =f(−1) *f(−1) *\dots*f(−1)$$and similarly for $g$. Indeed, $$\begin{aligned}f(-1)&=f(-1)*u\\&=f(-1)*g(0)\\&=f(-1)*g(1-1)\\&=f(-1)*g(1)*g(-1)\\&=f(-1)*f(1)*g(-1)\\&=f(-1+1)*g(-1)\\&=f(0)*g(-1)\\&=u*g(-1)\\&=g(-1)\end{aligned}$$Hence $f = g$. $\square$
 
-<u><b>e.g.</b></u> In the category $\mathsf{Mon}$ of monoids and monoid homomorphisms, there is a monic homomorphism $\N \rightarrowtail \Z$ where $\N$ is the additive monoid $(\N,+,0)$ of natural numbers, and $\Z$ is the additive monoid $(\Z, +, 0)$ of integers. This map, given by the inclusion $\N ⊂ \Z$ of sets, is also epic in $\mathsf{Mon}$.
+<u><b>e.g.</b></u> In the category $\mathsf{Mon}$ of monoids and monoid homomorphisms, there is a monic homomorphism $\N \rightarrowtail \Z$ where $\N$ is the additive monoid $(\N,+,0)$ of natural numbers, and $\Z$ is the additive monoid $(\Z, +, 0)$ of integers. This map, given by the inclusion $\N \subset \Z$ of sets, is also epic in $\mathsf{Mon}$.
+
+## Sections and Retractions
+
+>[!lemma] 
+> If a morphism $f\colon A\to B$ has a left inverse $g\colon B\to A$ such that $g\circ f=1_{A}$ then then $f$ must be monic and $g$ epic.
+
+*Proof*  Suppose $g\circ f=1_{A}$, then $f$ is monic as any $i,j\colon C\to A$ such that $f \circ i=f\circ j$ follows that $g\circ (f \circ i)=g\circ(f\circ j)$, implies that $i=j$. Similarly $g$ is epic.  $\square$
+
+> [!definition] Splitting, Section & Retraction
+> A *split monomorphism* (*epimorphism*) is an arrow with a left (right) inverse. That is, given morphisms $e \colon X \to A$ and $s \colon A \to X$ such that $es = 1_{A}$, then $e$ is a split epimorphism and $s$ is a split monomorphism. $s$ is also called a *section* of $e$, and $e$ is called a *retraction* of $s$. The object $A$ is called a *retract* of $X$.
+
+<u><b>e.g.</b></u>  In $\mathsf{Set}$, every monomorphism splits except those with domain $\emptyset$.
+
+Functors not necessarily preserve monomorphisms and epimorphisms. For example, the forgetful functor $U\colon \mathsf{Group}\to\mathsf{Set}$ preserves monomorphisms but not epimorphisms. Consider the inclusion $\{*\} \to \mathbb{Z}$ of groups, which is an epimorphism in $\mathsf{Group}$ but not in $\mathsf{Set}$. However, functors do preserve split monomorphisms and split epimorphisms.
+
+> [!proposition]
+> Functors also preserve split epimorphisms and split monomorphisms.
+> 
+
+*Proof*  This is straightforward because functors preserve the identity morphisms. $\square$
+
+> [!definition] Projective Object
+> An object $P$ is called *projective* if for any epimorphism $e\colon E\twoheadrightarrow X$ and morphism $f\colon P\to X$ there is some morphism $\bar{f}\colon P\to E$ such that $e\circ \bar{f}=f$:
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/projective_object.svg" style="width:24%;"/>
+> 
+
+**Prop**  In any category, any retract of a projective object is also projective.
+**Proof**  Suppose arrows $e \colon P \to A$ and $s \colon A \to P$ such that $es = 1_{A}$ with projective $P$. For all epimorphism $e\colon E\to X$ and morphism $g\colon A\to X$, let $f=g\circ r\colon P\to X$. Since $P$ is projective, there exists $\bar{f}\colon P\to E$ such that $e\circ \bar{f}=f$. Let $\bar{g}=\bar{f}\circ s\colon A\to E$. Then $$e\circ\bar{g}=e\circ (\bar{f}\circ s)=(e\circ \bar{f})\circ s=f\circ s=g\circ r \circ s = g\circ 1_{A}=g$$Therefore $A$ is also projective.
 
 ## Isomorphisms
 
@@ -68,29 +96,6 @@ We shall check the inverse is unique. Suppose $g$ and $h$ are both inverse of $f
 >Every category $\mathsf{C}$ with a set of arrows is isomorphic to one in which the objects are sets and the arrows are functions.
 
 *Proof*  Define the Cayley representation $\bar{\mathsf{C}}$ of $\mathsf{C}$ to be the following concrete category with objects $\bar{A}=\{f\in \mor(\mathsf{C})\mid \cod f = A\}$ for all $A\in \obj (\mathsf{C})$. Morphisms are functions $\bar{g}\colon \bar{C}\to\bar{D}$ for any $g\colon C\to D$ in $\mathsf{C}$, defined by $\bar{g}(f)=g\circ f$. Indeed, they are isomorphic as functor $F\colon \mathsf{C} \to \mathsf{\bar{C}}, A\to\bar{A},g\to\bar{g}$ is invertible. $\square$
-
-## Sections and Retractions
-
->[!proposition] 
->**Prop**  If an morphism $f\colon A\to B$ has a left inverse $g\colon B\to A$ such that $g\circ f=1_{A}$ then then $f$ must be monic and $g$ epic.
->**Proof**  Suppose $g\circ f=1_{A}$, then $f$ is monic as any $i,j\colon C\to A$ such that $f \circ i=f\circ j$ follows that $g\circ (f \circ i)=g\circ(f\circ j)$, implies that $i=j$. Similarly $g$ is epic.
-
-**Def**  <i><u>Split Monomorphism</u></i>
-A split monomorphism (epimorphism) is an arrow with a left (right) inverse. 
-<u><b>e.g.</b></u>  In $\mathsf{Set}$, every monomorphism splits except those with domain $\emptyset$.
-
-**Def**  <i><u>Section</u></i> and <i><u>Retraction</u></i>
-Given arrows $e \colon X \to A$ and $s \colon A \to X$ such that $es = 1_{A}$, then $s$ is called a *section* or *splitting* of $e$, and e is called a retraction of $s$. The object $A$ is called a retract of $X$.
-
-**Prop**  Functors also preserve split epimorphisms and split monomorphisms.
-**Proof**  
-
-**Def**  <i><u>Projective Objects</u></i>
-An object $P$ is called *projective* if for any epimorphism $e\colon E\twoheadrightarrow X$ and morphism $f\colon P\to X$ there is some morphism $\bar{f}\colon P\to E$ such that $e\circ \bar{f}=f$:
-![projobj|200](https://svgshare.com/i/13n_.svg)
-
-**Prop**  In any category, any retract of a projective object is also projective.
-**Proof**  Suppose arrows $e \colon P \to A$ and $s \colon A \to P$ such that $es = 1_{A}$ with projective $P$. For all epimorphism $e\colon E\to X$ and morphism $g\colon A\to X$, let $f=g\circ r\colon P\to X$. Since $P$ is projective, there exists $\bar{f}\colon P\to E$ such that $e\circ \bar{f}=f$. Let $\bar{g}=\bar{f}\circ s\colon A\to E$. Then $$e\circ\bar{g}=e\circ (\bar{f}\circ s)=(e\circ \bar{f})\circ s=f\circ s=g\circ r \circ s = g\circ 1_{A}=g$$Therefore $A$ is also projective.
 
 ## Hom-Set
 

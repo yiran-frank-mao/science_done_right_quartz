@@ -25,5 +25,6 @@ Functional Analysis is the study of [[Vector Spaces#^f4b63e|vector spaces]] endo
 [[The Implicit Function Theorem]]
 ### Topological Vector Spaces
 [[Topological Vector Spaces]]
+[[Geometry of Topological Vector Spaces]]
 [[Generalized Functions]]
 

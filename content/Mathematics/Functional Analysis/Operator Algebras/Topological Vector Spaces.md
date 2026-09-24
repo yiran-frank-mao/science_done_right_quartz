@@ -1,7 +1,13 @@
 > [!definition] Topological Vector Space
-> A *topological vector space* is a [[Vector Spaces#^f4b63e|vector space]] that is also a [[Topological Spaces#^concept-39ce12df888c|topological space]], where the vector space operations (addition and scalar multiplication) are [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] with respect to the topology.
+> A *topological vector space* is a [[Vector Spaces#^f4b63e|vector space]] that is also a [[Topological Spaces#^concept-39ce12df888c|topological space]], where the vector space operations (addition and scalar multiplication) are [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] with respect to the topology. ^dd5802
 
 <u><b>e.g.</b></u>  Banach spaces, Hilbert spaces, and Sobolev spaces are all examples of topological vector spaces.
+
+> [!proposition]
+> Suppose $X$ is a topological vector space. Fix some $x_{0}\in X$, then the translation map $T_{x_{0}}\colon X\to X$, $x\mapsto x+x_{0}$ is a homeomorphism. Therefore, any topological vector space is topologically homogeneous.
+> 
+
+*Proof*  Suppose $\alpha\colon X\times X\to X$ is the addition. Then every translation map is a composition: $$ T_{x_{0}}\colon  X \xrightarrow{\cong} \{*\}\times X \xrightarrow{c_{x_{0}}\times\operatorname{id}} X \times X \xrightarrow{\alpha} X, $$where each map is continuous. So $T_{x_{0}}$ is continuous. Its inverse is $T_{-x_{0}}$, which is also continuous. $\square$
 
 > [!definition] Locally Convex Space
 >  A topological vector space is *locally convex* if it has a [[Topological Spaces#^2fc468|basis]] of its topology consisting of [[Convex Sets#^3a9d82|convex]] open subsets. Equivalently, $0$ has a neighborhood basis consisting of convex open subsets.
@@ -27,7 +33,6 @@ In practice, it is often useful to define a locally convex space by means of a f
 > [!lemma]
 > A complete topological vector space is complete in every compatible metric that induces its topology.
 > 
-
 
 
 > [!definition] Fréchet Space

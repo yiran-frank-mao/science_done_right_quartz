@@ -34,11 +34,11 @@ The fundamental concepts in point-set topology are **continuity**, **compactness
 [[Constructions on Topological Spaces]]
 [[Isometries and Homeomorphisms]]
 [[Connectedness and Paths]]
-[[Topological Groups]]
 [[The Mapping Space]]
 [[The Baire Category Theorem]]
 [[Countability Axioms and Nets]]
-
+[[Topological Groups]]
+[[Topological Vector Spaces]]
 
 ## More ...
 - [Problem Sheet on Analysis](https://maths-people.anu.edu.au/~john/Assets/Analysis%201%20Problems.pdf)

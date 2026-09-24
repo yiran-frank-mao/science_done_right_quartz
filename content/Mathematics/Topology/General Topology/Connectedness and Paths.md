@@ -18,6 +18,7 @@ $\quad$
 > [!corollary]
 > Every continuous map $f \colon X \to Y$ from a connected topological space $X$ to a discrete topological space $Y$ is constant.
 
+*Proof*  This is because the only connected subsets of a discrete space are the singletons. $\square$
 
 > [!corollary] Intermediate Value Theorem
 > Let $X$ be a connected topological space and $f \colon X → \R$ a continuous function, where $\R$ is endowed with the standard topology. If $f$ takes the values $a$ and $b$, then $f$ takes all the values between $a$ and $b$.
@@ -29,13 +30,15 @@ $\quad$
 > 
 
 >[!lemma]
-> If $A\subset X$ is connected and $A\subset B\subset \overline{A}$, then $B$ is connected.
+> If $A\subset X$ is connected and $A\subset B\subset \overline{A}$, then $B$ is connected. In particular, the closure of a connected set is connected.
+
+*Proof*  Since $A\subset B\subset \overline{A}$, we can write $B=A\cup C$ for for some $C\subset A'$ where $A'$ is the set of limit points of $A$. Without loss of generality, we assume that $A\neq B$, so $C\neq \emptyset$. Suppose $B=U\sqcup V$ for nonempty open sets $U,V\subset X$. Since $A$ is connected, either $A\subset U$ or $A\subset V$. Without loss of generality, assume $A\subset U$. Then $C\cap V$ is nonemty. Pick some $y\in C\cap V$, then $V$ is an open neighborhood of $y$, so it must intersect $A$, yielding a contradiction. Therefore, $B$ is connected. $\square$
 
 > [!proposition]
 > The only subset of a connected topological space which is both open and closed is the empty set and itself. ^7a08b9
 >
 
-*Proof*  
+*Proof*  Suppose $A\subset X$ is both open and closed. Then $A$ and $A^{c}$ are disjoint open sets with $X=A\sqcup A^{c}$, which implies that either $A$ or $A^{c}$ is empty. $\square$
 
 ## Path Connectedness
 
@@ -45,6 +48,9 @@ $\quad$
 
 > [!definition] Path Connectedness
 > A topological space $X$ is called *path connected* if for every pair of points $x,y ∈ X$ can be joined by a path in $X$. ^630354
+
+<u><b>e.g.</b></u>  Any convex set in a [[Topological Vector Spaces#^dd5802|topological vector space]] over $\R$ or $\C$ is path connected; $\R^{n}\setminus\{0\}$ is path connected for $n\geq 2$; The topologist's sine curve $\{(0,y)\mid y\in[-1,1]\}\cup\{(x, \sin(1/x))\mid x\in(0,\infty)\}\subset \R^{2}$ is connected but not path connected:
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/topologists_sine_curve.svg" style="width:50%;"/>
 
 >[!theorem] 
 > A path connected topological space is connected. In general, connected space is not necessarily path-connected.
@@ -63,10 +69,27 @@ Now we show that $V$ is closed in $U$. Let $\{y_{n}\}\subset V$ be a sequence co
 > [!proposition]
 > 1. Every quotient of a (path) connected space is (path) connected;
 > 2. The union of a family of (path) connected subspaces of $X$ that have a point in common is (path) connected;
-> 3. Any finite product of (path) connected spaces is (path) connected.
+> 3. Any product of (path) connected spaces is (path) connected.
 > 
 
-*Proof*  (1) is immediate from [[Connectedness and Paths#^affaf2|the theorem]]. 
+*Proof*  (1) is immediate from [[Connectedness and Paths#^affaf2|the theorem]]; For (2), path connectedness is clear, and we will only prove that it is connected here. Suppose $\{A_{i}\}_{i\in I}$ is a family of connected subspaces of $X$ with a point $a\in \cap_{i\in I} A_{i}$. Suppose $U\sqcup V$ separates $\cup_{i\in I}A_{i}$, without loss of generality, we assume that $a\in U$, then $A_{i}\subset U$ for all $i\in I$, which implies that $\cup_{i\in I}A_{i}\subset U$, and $V=\emptyset$. 
+
+## Components
+
+> [!definition] Components
+> A *(path) component* of a topological space $X$ is a maximal (path) connected subspace of $X$.
+> 
+
+> [!proposition]
+> The following holds for a topological space $X$:
+> 1. The (path) components form a partition of $X$;
+> 2. Any (path) connected subset is contained in a unique (path) component;
+> 3. Each path component is contained in a single component and each component is a disjoint union of path components.
+> $\quad$
+
+*Proof*
+
+## Locally (Path) Connectedness
 
 > [!definition] Locally Path Connected
 > A topological space $Y$ is *locally path-connected* if for any point $y \in Y$ and any open neighborhood $U$ of $y$, there exists a path-connected open neighborhood $V \subseteq U$ containing $y$. ^ba4f32

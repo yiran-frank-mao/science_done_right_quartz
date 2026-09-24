@@ -74,9 +74,14 @@
 > Suppose $X$ is a topological space and $Y$ is a set. $q\colon X\to Y$ is surjective, then the *quotient toplogy* is a topology on $Y$ by declaring that $U\subset Y$ is open iff $q^{-1}(U)$ is open in $X$. Such $q\colon X\to Y$ is called a *quotient topology*. ^d57887
 
 > [!theorem] Universal Property of Quotient Topology
-> The quotient map $q\colon X\to Y$ has the following universal property (in $\mathsf{Top}$): For any topological space $Z$, a map $f\colon Y\to Z$ is continuous iff the composite $f\circ q\colon X\to Z$ is continuous.
-> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/quotient_topology.svg" style="width:25%;"/>
+> The quotient map $q\colon X\to Y$ has the following universal property (i.e., it is the [[Equalizers and Coequalizers#^9b92cf|coequalizer]] in $\mathsf{Top}$): For any topological space $Z$, a map $f\colon Y\to Z$ is continuous iff the composite $f\circ q\colon X\to Z$ is continuous.
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/quotient_topology.svg" style="width:24%;"/>
+> Conversely, for any continuous map $g\colon X\to Z$ such that $g(x)=g(y)$ whenever $q(x)=q(y)$, there exists a unique continuous map $f\colon Y\to Z$ such that $f\circ q=g$.
 
+> [!corollary]
+> If the two quotient maps $q_{1}\colon X\to Y_{1}$ and $q_{2}\colon X\to Y_{2}$ have the same identification, that is, $q_{1}(x)=q_{2}(x)$ for all $x\in X$, then there is a unique homeomorphism $f\colon Y_{1}\to Y_{2}$ such that $f\circ q_{1}=q_{2}$.
+
+*Proof*  This is obvious from the universal property. In fact, [[Equalizers and Coequalizers#^06c338|coequalizers are unique up to isomorphism in any category]]. $\square$
 
 <u><b>e.g.</b></u>
 - Consider the unit interval $I=[0,1]$, then $\partial I=\{0,1\}$, and $I/\partial I \cong S^{1}$;
@@ -84,6 +89,10 @@
 - Real projective space $\newcommand{\RP}{\mathbb{R}\mathrm{P}}\RP^{n}$ is the set of one dimensional subspaces of 
 
 Cone
+
+> [!proposition]
+> The composition of two quotient maps is a quotient map; If $f\circ g$ is a quotient map, then $f$ is a quotient map.
+> 
 
 
 ## Attaching Spaces
