@@ -110,7 +110,6 @@ Note that quotient spaces do **not** behave well with respect to most topologica
 > Suppose $q\colon X\to Y$ is an open quotient map then $Y$ is Hausdorff if and only if the set $\{(x_{1},x_{2})\in X\times X\mid q(x_{1})=q(x_{2})\}$ is closed in $X\times X$.
 > 
 
-
 ## Attaching Spaces
 
 Mapping cone
