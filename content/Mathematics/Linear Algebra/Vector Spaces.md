@@ -39,5 +39,7 @@
 >[!definition] Span
 >The span of a set of vectors $S\subseteq V$ is the set of all finite linear combinations of vectors in $S$: $$\mathrm{span}(S)=\left\{\sum_{i=1}^{n} c_{i}v_{i} \mid n\in\N, v_{i}\in S, c_{i}\in F\right\}.$$^ce69a9
 
+^concept-4e452455341d
+
 >[!proposition] 
 > The span of any nonempty set of vectors is a subspace.

@@ -85,10 +85,12 @@
 
 <u><b>e.g.</b></u>
 - Consider the unit interval $I=[0,1]$, then $\partial I=\{0,1\}$, and $I/\partial I \cong S^{1}$;
-- The torus $\R/\Z\cong T^{2}=S^{1}\times S^{1}$;
-- Real projective space $\newcommand{\RP}{\mathbb{R}\mathrm{P}}\RP^{n}$ is the set of one dimensional subspaces of 
-
-Cone
+- The torus $\mathbb{R}/\Z\cong T^{2}=S^{1}\times S^{1}$;
+- Real projective space $\newcommand{\RP}{\mathbb{R}\mathrm{P}}\RP^{n}$ is the set of one dimensional subspaces in $\mathbb{R}^{n}$ equipped with the quotient topology induced by the map sending any $x\in \mathbb{R}^{n}$ to its [[Mathematics/Linear Algebra/Vector Spaces#^concept-4e452455341d|span]].
+- For topological space $X$ and $A ⊂X$, we can collapse $A$ to a point to build space $X/A$. i.e., introduce an equivalence relation $x\sim y$ iff $x=y$ or $x,y\in A$.
+- The *cone* of a topological space $X$ is the quotient space $CX:=(X\times I)/(X\times\{0\})$, where $I=[0,1]$ is the unit interval. The cone of $S^{n}$ is homeomorphic to $D^{n+1}$.
+  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/cone_of_a_topological_space.svg" style="width:40%;"/>
+$\quad$
 
 > [!proposition]
 > The composition of two quotient maps is a quotient map; If $f\circ g$ is a quotient map, then $f$ is a quotient map.
