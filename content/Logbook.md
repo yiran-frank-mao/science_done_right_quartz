@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 24 Sep 2026
+- Updates: [[Equalizers and Coequalizers]], [[Constructions on Topological Spaces]].
+
 ## 8 Sep 2026
 - Updates: [[The Hahn-Banach Theorem]], [[Construction of Sets]], [[Constructions on Topological Spaces]].
 
