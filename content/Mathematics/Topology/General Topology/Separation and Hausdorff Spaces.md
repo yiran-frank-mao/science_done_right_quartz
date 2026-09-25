@@ -46,3 +46,5 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 > [!theorem]
 > A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the product space $X \times X$.
 > 
+
+*Proof*  Suppose $X$ is Hausdorff, then the 
