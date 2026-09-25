@@ -27,7 +27,7 @@
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/category_pullback.svg" alt="category_pullback" style="width:25%;"/>
 > We write such $P$ as $A\times_{X}B$. ^5810df
 
-<u><b>e.g.</b></u>  In $\mathsf{Set}$, the pullback of functions $f\colon X\to Z$ and $g\colon Y\to Z$ always exists and is given by $$X\times_{Z} Y = \{ (x,y)\in X\times Y \mid f(x)=g(y) \}.$$
+<u><b>e.g.</b></u>  In $\mathsf{Set}$, the pullback of functions $f\colon X\to Z$ and $g\colon Y\to Z$ always exists and is given by $$X\times_{Z} Y := \{ (x,y)\in X\times Y \mid f(x)=g(y) \}.$$
 
 > [!corollary] 
 > If a category $\mathsf{C}$ has binary products and equalizers, then it has pullbacks.
@@ -38,6 +38,10 @@
 > Given a pullback $A \times_{X} B$ in any category: 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/category_pullback.svg" alt="category_pullback" style="width:25%;"/>
 > If $g$ is [[Morphisms#^4e0259|monic]], then $p_{1}$ is monic as well.
+
+*Proof*  The following diagram commutes:
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/category_pullback_monicness.svg" style="width:28%;"/>
+Then by uniqueness of the pullback, we have $y=y'$. $\square$
 
 >[!lemma] Two-Pullbacks
 >Consider the commutative diagram below in a category with pullbacks:

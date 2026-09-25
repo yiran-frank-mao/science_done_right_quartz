@@ -37,7 +37,7 @@ $\quad$
 *Proof*  Suppose $g\circ f=1_{A}$, then $f$ is monic as any $i,j\colon C\to A$ such that $f \circ i=f\circ j$ follows that $g\circ (f \circ i)=g\circ(f\circ j)$, implies that $i=j$. Similarly $g$ is epic.  $\square$
 
 > [!definition] Splitting, Section & Retraction
-> A *split monomorphism* (*epimorphism*) is an arrow with a left (right) inverse. That is, given morphisms $e \colon X \to A$ and $s \colon A \to X$ such that $es = 1_{A}$, then $e$ is a split epimorphism and $s$ is a split monomorphism. $s$ is also called a *section* of $e$, and $e$ is called a *retraction* of $s$. The object $A$ is called a *retract* of $X$.
+> A *split monomorphism* (*epimorphism*) is an arrow with a left (right) inverse. That is, given morphisms $e \colon X \to A$ and $s \colon A \to X$ such that $es = 1_{A}$, then $e$ is a split epimorphism and $s$ is a split monomorphism. $s$ is also called a *section* of $e$, and $e$ is called a *retraction* of $s$. The object $A$ is called a *retract* of $X$. ^concept-4f86c293e68b
 
 <u><b>e.g.</b></u>  In $\mathsf{Set}$, every monomorphism splits except those with domain $\emptyset$.
 
