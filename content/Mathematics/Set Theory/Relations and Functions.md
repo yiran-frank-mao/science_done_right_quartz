@@ -73,6 +73,11 @@ completed: true
 
 *Proof*  For any $x\in A$, $f(x)\in f(A)$, thus $x\in f^{-1}(f(A))$. For any $y\in f(f^{-1}(B))$, $y=f(x)$ for some $x\in f^{-1}(B)$, thus $y=f(x)\in B$.  $\square$
 
+Though the equality does not hold in general, if it holds, we call them saturated:
+
+> [!definition] Saturated Subset
+> A set $A\subset X$ is called saturated with respect to $f\colon X\to Y$ if $A=f^{-1}(B)$ for some $B\subset Y$. In other words, $A=f^{-1}(f(A))$. ^64f83d
+
 > [!proposition]
 > Suppose $f\colon X \to Y$. For any family of sets $\{A_{i}\}_{i\in I}$ in $X$ there hold$$f\left(\bigcup_{i\in I}A_i\right)=\bigcup_{i\in I}f(A_i),\quad f\left(\bigcap_{i\in I}A_i\right)\subset\bigcap_{i\in I}f(A_i)$$
 

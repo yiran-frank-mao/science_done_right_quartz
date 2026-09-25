@@ -96,6 +96,20 @@ $\quad$
 > The composition of two quotient maps is a quotient map; If $f\circ g$ is a quotient map, then $f$ is a quotient map.
 > 
 
+> [!proposition]
+> A continuous surjective map $q \colon X \to Y$ is a quotient map iff it takes [[Relations and Functions#^64f83d|saturated]] open subsets to open subsets (or saturated closed subsets to closed subsets).
+> 
+
+> [!corollary]
+>  Continuous surjection that is [[Continuous Maps on Topological Spaces#^cd295d|open]] (or [[Continuous Maps on Topological Spaces#^cd295d|closed]]) is a quotient map
+> 
+
+Note that quotient spaces do **not** behave well with respect to most topological properties. Neither Hausdorffness, nor 2nd countability automatically pass to quotient spaces. It is generally hard to prove a quotient space is Hausdorff. However, for open maps, its a little easier:
+
+> [!proposition]
+> Suppose $q\colon X\to Y$ is an open quotient map then $Y$ is Hausdorff if and only if the set $\{(x_{1},x_{2})\in X\times X\mid q(x_{1})=q(x_{2})\}$ is closed in $X\times X$.
+> 
+
 
 ## Attaching Spaces
 

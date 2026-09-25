@@ -67,5 +67,3 @@ Thus, $\gcd(56,12) = 4$.
 
 > [!theorem] Fermat’s Little Theorem
 > For every two integers $n,a$ that are coprime, then we have $a^{\varphi(n)} \equiv 1 \pmod{n}$, where $\varphi$ is the [[Arithmetic Functions#^d3f605|Euler's totient function]]. In particular, if $n = p$ is a [[Division and Prime#^47f235|prime number]] then $a^p ≡ a \pmod{p}$. ^5214dc
-
-*Proof*  Let $n$ be a positive integer and $a$ be an integer coprime to $n$. Consider the set of integers $S_{n}=\{k_{1},k_{2},\cdots,k_{\varphi(n)}\}$ that are coprime to $n$. Multiplying each of these integers by $a$ modulo $n$ gives another set of integers that are also coprime to $n$. Since multiplication by $a$ is a bijection on the set of integers coprime to $n$, we have
