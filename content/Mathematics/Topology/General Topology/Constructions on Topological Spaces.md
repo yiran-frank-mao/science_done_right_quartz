@@ -97,6 +97,10 @@ $\quad$
 > 
 
 > [!proposition]
+> An injective quotient map is a homeomorphism.
+> 
+
+> [!proposition]
 > A continuous surjective map $q \colon X \to Y$ is a quotient map iff it takes [[Relations and Functions#^64f83d|saturated]] open subsets to open subsets (or saturated closed subsets to closed subsets).
 > 
 
@@ -110,8 +114,14 @@ Note that quotient spaces do **not** behave well with respect to most topologica
 > Suppose $q\colon X\to Y$ is an open quotient map then $Y$ is Hausdorff if and only if the set $\{(x_{1},x_{2})\in X\times X\mid q(x_{1})=q(x_{2})\}$ is closed in $X\times X$.
 > 
 
-*Proof*
+*Proof*  
 
 ## Attaching Spaces
 
-Mapping cone
+> [!definition] Attaching Space
+> Let $A$ be a closed subspace of $Y$ and $f \colon A \to X$ a continuous map. The *attaching space* formed by *attaching $Y$ to $X$ along $f$*  is the quotient
+> $$ X\cup_{f}Y:= (X \sqcup Y)/\sim \quad \text{ where } a\sim f(a) \text{ for all } a\in A.$$
+
+> [!remark]
+> If $A=\emptyset$, this is just the disjoint union $X\sqcup Y$.
+> 

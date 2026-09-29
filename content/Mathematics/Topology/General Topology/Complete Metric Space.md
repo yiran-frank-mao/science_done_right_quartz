@@ -37,15 +37,14 @@ Let $(X,d)$ be a [[Metric Spaces#^concept-e26011bc6f0a|metric space]]. A sequenc
 - $(0,1)$ with the induced Euclidean metric is not complete.
 - $C[−1,1]$ is complete under the metric $$d_\infty(f,g)=\max_{x\in[-1,1]}|f(x)-g(x)|.$$
 $\quad$
-$\quad$ 
 
 >[!proposition]
 >Let $(X,d)$ be a complete metric space and $S ⊂ X$. Then $(S,d)$ is complete iff $S$ is closed in $X$.
 
 *Proof*  Let $(x_{n})$ be a sequence in $S$ with $x_{n} →x ∈X$. Then $(x_{n})$ is a Cauchy sequence in $X$ and hence is a Cauchy sequence in $S$. Since $S$ is complete, $x_{n} → \tilde{x}$ for some $\tilde{x}\in S$. By uniqueness of limit, we have $x=\tilde{x}$ and thus $x ∈ S$ . This shows that $S$ is closed by [[Sequence and Convergence#^7f5b74|corollary]]. Conversely, let $(x_{n})$ be a Cauchy sequence in $(S,d)$. Then $(x_{n})$ is also a Cauchy sequence in $(X,d)$. Since $(X,d)$ is complete, $x_{n} → x$ for some $x ∈ X$. Since $S$ is closed, $x ∈ S$. Therefore $(S,d)$ is complete. $\square$
 
->[!theorem]
->Every metric space $(X,d)$ has a completion, i.e. there exists a complete metric space $(\tilde{X},\tilde{d})$ and an injection $f \colon X → \tilde{X}$ such that $$d(x,y)=d(f(x),f(y)),\quad \forall x,y\in X$$and $\overline{f(X)}=\tilde{X}$.
+>[!theorem] Universal Property of Completion
+>Every metric space $(X,d)$ has a unique completion, i.e. there exists a complete metric space $(\tilde{X},\tilde{d})$ and an injection $f \colon X \to \tilde{X}$ such that $$d(x,y)=d(f(x),f(y)),\quad \forall x,y\in X$$and $\overline{f(X)}=\tilde{X}$.
 
 ## Contraction Mapping Theorem
 

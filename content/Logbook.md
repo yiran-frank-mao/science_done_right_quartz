@@ -3,6 +3,12 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 28 Sep 2026
+- Updates: [[Geometry of Topological Vector Spaces]].
+
+## 25 Sep 2026
+- Updates: [[Separation and Hausdorff Spaces]].
+
 ## 24 Sep 2026
 - Updates: [[Equalizers and Coequalizers]], [[Constructions on Topological Spaces]].
 

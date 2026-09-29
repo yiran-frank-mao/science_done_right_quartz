@@ -1,7 +1,7 @@
 
->[!definition] 
->**Def**  <i><u>Exponential</u></i>
->Let the category $\mathbf{C}$ have binary products. An exponential of objects $B$ and $C$ consists of an object $C^{B}$ and an morphism $\epsilon\colon C^B\times B\to C$ such that, for any object $A$ and morphism $f\colon A\times B\to C$ there is a unique morphism $\tilde{f}\colon A\to C^{B}$ such that $$\epsilon\circ(\tilde{f}\times1_B)=f$$And we call such $\epsilon$ evaluation, and $\tilde{f}$  the exponential transpose of $f$. ^8657d1
+>[!definition] Exponential
+> Let category $\mathsf{C}$ have [[Products of Objects#^728bf5|binary products.]] An *exponential* of objects $B$ and $C$ consists of an object $C^{B}$ and an morphism $\epsilon\colon C^B\times B\to C$ such that, for any object $A$ and morphism $f\colon A\times B\to C$ there is a unique morphism $\tilde{f}\colon A\to C^{B}$ such that $$\epsilon\circ(\tilde{f}\times1_B)=f$$
+> And we call such $\epsilon$ *evaluation*, and $\tilde{f}$  the *exponential transpose* of $f$. ^8657d1
 
 >[!definition] 
 >**Def**  <i><u>Transpose</u></i>

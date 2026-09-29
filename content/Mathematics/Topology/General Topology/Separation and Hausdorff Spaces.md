@@ -47,4 +47,4 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 > A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the product space $X \times X$.
 > 
 
-*Proof*  Suppose $X$ is Hausdorff, then the 
+*Proof*  Suppose $X$ is Hausdorff, then for every distinct $x,y\in X$, there are disjoint open neighborhoods $U$, $V$ of $x$ and $y$ respectively. Then $U\times V\subset \Delta^{c}$ is an open neighborhood of $(x,y)$, hence $X\setminus\Delta$ is open and $\Delta$ is closed. The converse is exactly the same argument in reverse. $\square$

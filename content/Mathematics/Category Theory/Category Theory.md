@@ -20,7 +20,6 @@ Category theory is a branch of mathematics that studies the abstract patterns an
 [[Limits and Colimits]]
 [[Exponential]]
 [[Groups and Categories]]
-[[Monoidal Categories]]
 [[Abelian Categories]]
 
 ### Naturality and Yoneda
@@ -30,6 +29,7 @@ Category theory is a branch of mathematics that studies the abstract patterns an
 [[Adjunction]]
 
 ### Higher Categories ^f2a96d
+[[Monoidal Categories]]
 [[Bicategories]]
 [[2-Categories]]
 

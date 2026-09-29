@@ -40,6 +40,9 @@ The fundamental concepts in point-set topology are **continuity**, **compactness
 [[Topological Groups]]
 [[Topological Vector Spaces]]
 
+### Uniform Spaces
+[[Uniform Spaces]]
+
 ## More ...
 - [Problem Sheet on Analysis](https://maths-people.anu.edu.au/~john/Assets/Analysis%201%20Problems.pdf)
 

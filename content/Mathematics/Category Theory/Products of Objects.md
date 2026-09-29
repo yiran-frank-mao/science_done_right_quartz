@@ -21,7 +21,9 @@ $\quad$
 Then there is unique $u\colon P\to Q$ such that $q_{2}\circ u=p_{2}$ and $q_{1}\circ u = p_1$. Similarly, exists unique $w\colon Q\to P$ such that $p_{1}\circ w = q_{1}$ and $p_{2}\circ w = q_{2}$. Therefore,$$q_{1}\circ u\circ w=q_{1},\quad p_{1}\circ w\circ u = p_{1} $$It follows that $u\circ w= 1_{Q}$ and $w\circ u=1_{P}$, thus $P\cong Q$.  $\square$
 
 >[!proposition] 
-> The binary product of objects is associative up to isomorphism:$$(A\times B)\times C\cong A\times (B\times C)$$
+> The binary product of objects is associative up to isomorphism:$$(A\times B)\times C\cong A\times (B\times C).$$
+
+
 
 **Def**  <i><u>All Finite Products</u></i>
 A category $\mathbf{C}$ is said to have all finite products if it has a terminal object and all binary products. The category $\mathbf{C}$ has all (small) products if every set of objects in $\mathbf{C}$ has a product.

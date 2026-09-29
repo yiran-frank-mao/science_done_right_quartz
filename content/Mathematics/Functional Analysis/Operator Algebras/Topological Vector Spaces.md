@@ -13,7 +13,15 @@
 >  A topological vector space is *locally convex* if it has a [[Topological Spaces#^2fc468|basis]] of its topology consisting of [[Convex Sets#^3a9d82|convex]] open subsets. Equivalently, $0$ has a neighborhood basis consisting of convex open subsets.
 
 > [!definition] Complete Topological Space
-> A topological vector space is complete
+> A *Cauchy net* in a topological vector space $X$ is a [[Countability Axioms and Nets#^ed5107|net]] $(x_{\alpha})_{\alpha\in A}$ such that for every [[Closure, Interior and Boundary#^eda962|open neighborhood]] $U$ of $0$, there exists $\alpha_{0}\in A$ such that for all $\alpha,\beta\gtrsim \alpha_{0}$, $x_{\alpha}-x_{\beta}\in U$.
+> A topological vector space is *complete* if any Cauchy net converges to a point in the space.
+
+Usually the completeness is defined with respect to a metric, 
+
+> [!theorem]
+> 
+> 
+
 
 In practice, it is often useful to define a locally convex space by means of a family of seminorms.
 
