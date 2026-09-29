@@ -23,15 +23,15 @@ It is quite easy to see that absorbing sets, balanced sets, and convex sets (con
 > Every balanced set in $\mathbb{C}$ (as a complex vector space) is convex. However, this is not true in higher dimensional, nor when regarding $\mathbb{C}$ as a two-dimensional real vector space.
 > 
 
-|                                                                                                                                                                                    | Real/Complex | Absorbing | Balanced | Convex |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------- | -------- | ------ |
-| Open unit disk in $\R^{2}$                                                                                                                                                         |              | ✅         | ✅        | ✅      |
-| Star shape: <br><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/star_shape.svg" alt="star_shape" style="width:100%;">                       | Real         | ✅         | ✅        | 🚫     |
-| Closed unit disk with a point:<br><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/unit_disk_with_a_dot.svg" alt="" style="width:100%;"><br> |              | ✅         | 🚫       | 🚫     |
-| $\{(z,0):\|z\|\leq 1\}\cup \{(0,w):\|w\|\le 1\}\subset\mathbb{C}^{2}$                                                                                                              | Complex      | 🚫        | ✅        | 🚫     |
-| Unit interval                                                                                                                                                                      |              | 🚫        | 🚫       | ✅      |
-| Unit cross:<br><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/unit_cross.svg" style="width:100%;"/>                                        | Real         | 🚫        | ✅        | 🚫     |
-|                                                                                                                                                                                    |              |           |          |        |
+|                                                                                                                                                                                | Real/Complex | Absorbing | Balanced | Convex |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------ | --------- | -------- | ------ |
+| Open unit disk in $\R^{2}$                                                                                                                                                     |              | ✅         | ✅        | ✅      |
+| Star shape: <br><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/star_shape.svg" alt="star_shape" style="width:100%;">                   | Real         | ✅         | ✅        | 🚫     |
+| Closed unit disk with a point:<br><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/unit_disk_with_a_dot.svg" alt="" style="width:100%;"> |              | ✅         | 🚫       | 🚫     |
+| $\{(z,0):\|z\|\leq 1\}\cup \{(0,w):\|w\|\le 1\}\subset\mathbb{C}^{2}$                                                                                                          | Complex      | 🚫        | ✅        | 🚫     |
+| Unit cross:<br><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/unit_cross.svg" style="width:100%;"/>                                    | Real         | 🚫        | ✅        | 🚫     |
+| Unit interval in $\mathbb{C}$                                                                                                                                                  | Complex      | 🚫        | 🚫       | ✅      |
+|                                                                                                                                                                                |              |           |          |        |
 
 > [!proposition]
 > Let $X$ be a topological vector space, and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing.
