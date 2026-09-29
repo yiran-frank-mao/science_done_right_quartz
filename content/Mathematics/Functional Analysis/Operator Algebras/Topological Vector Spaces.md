@@ -42,7 +42,6 @@ In practice, it is often useful to define a locally convex space by means of a f
 > A complete topological vector space is complete in every compatible metric that induces its topology.
 > 
 
-
 > [!definition] Fréchet Space
 > A topological vector space $X$ is a *Fréchet space* if it is, locally convex, metrizable and [[Complete Metric Space#^concept-08babb55cabd|complete]].
 
