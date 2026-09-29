@@ -34,13 +34,13 @@ It is quite easy to see that absorbing sets, balanced sets, and convex sets (con
 |                                                                                                                                                                                |              |           |          |        |
 
 > [!proposition]
-> Let $X$ be a topological vector space, and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing.
+> Let $X$ be a [[Mathematics/Functional Analysis/Operator Algebras/Topological Vector Spaces#^dd5802|topological vector space]], and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing.
 > 
 
 *Proof*  Let $x\in X$, consider $A=\{t\in\C \mid tx\in V\}$. Note that $0\in A$. Define $f\colon \C\to X$, $t\mapsto tx$, then $f$ is continuous and $A=f^{-1}(V)$ is open. Since $(t_{n})_{n=1}^{\infty}$ diverges, there exists $N$ such that $1/t_{n} \in A$ for all $n\geq N$. Thus $x\in t_{n}V$ for all $n\geq N$. $\square$
 
 > [!proposition]
-> Let $X$ be a topological vector space, and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing. Every topological vector space has a basis of balanced neighborhoods.
+> Let $X$ be a [[Mathematics/Functional Analysis/Operator Algebras/Topological Vector Spaces#^dd5802|topological vector space]], and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing. Every topological vector space has a basis of balanced neighborhoods.
 
 *Proof*  It suffices to show a balanced basis at the origin. 
 
