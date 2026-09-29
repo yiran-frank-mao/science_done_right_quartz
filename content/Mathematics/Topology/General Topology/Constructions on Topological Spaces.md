@@ -111,7 +111,7 @@ $\quad$
 Note that quotient spaces do **not** behave well with respect to most topological properties. Neither Hausdorffness, nor 2nd countability automatically pass to quotient spaces. It is generally hard to prove a quotient space is Hausdorff. However, for open maps, its a little easier:
 
 > [!proposition]
-> Suppose $q\colon X\to Y$ is an open quotient map then $Y$ is Hausdorff if and only if the set $\{(x_{1},x_{2})\in X\times X\mid q(x_{1})=q(x_{2})\}$ is closed in $X\times X$.
+> Suppose $q\colon X\to Y$ is an open quotient map then $Y$ is [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] if and only if the set $\{(x_{1},x_{2})\in X\times X\mid q(x_{1})=q(x_{2})\}$ is closed in $X\times X$.
 > 
 
 *Proof*  
@@ -121,6 +121,7 @@ Note that quotient spaces do **not** behave well with respect to most topologica
 > [!definition] Attaching Space
 > Let $A$ be a closed subspace of $Y$ and $f \colon A \to X$ a continuous map. The *attaching space* formed by *attaching $Y$ to $X$ along $f$*  is the quotient
 > $$ X\cup_{f}Y:= (X \sqcup Y)/\sim \quad \text{ where } a\sim f(a) \text{ for all } a\in A.$$
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/attaching_space.svg" style="width:72%;"/>
 
 > [!remark]
 > If $A=\emptyset$, this is just the disjoint union $X\sqcup Y$.
