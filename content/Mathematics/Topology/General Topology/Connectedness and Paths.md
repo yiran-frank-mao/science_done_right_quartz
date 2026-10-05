@@ -6,6 +6,7 @@ tags:
   - path-connectedness
   - connected-components
   - local-connectedness
+completed: true
 ---
 ## Connectedness
 
@@ -57,7 +58,7 @@ $\quad$
 > A topological space $X$ is called *path connected* if for every pair of points $x,y ∈ X$ can be joined by a path in $X$. ^630354
 
 >[!theorem] 
-> A path connected topological space is connected. In general, connected space is not necessarily path-connected.
+> A path connected topological space is connected. In general, connected space is not necessarily path-connected. ^709875
 
 *Proof*  If $X$ is not connected, then there exist disjoint nonempty open sets $U$,$V$ in $X$ with $X =U∪V$. Let $x ∈U$ and $y ∈V$. Since $X$ is path-connected, there is a path $f \colon [0,1]→X$ joining $x$ to $y$. By the continuity of $f$, $f^{−1}(U)$ and $f^{−1}(V)$ are disjoint nonempty open sets in $[0,1]$ with $$[0,1]=f^{-1}(X)=f^{-1}(U\cup V)=f^{-1}(U)\cup f^{-1}(V).$$Therefore $[0,1]$ is not connected, which is a contradiction. $\square$
 
@@ -77,7 +78,7 @@ $\quad$ ^65c383
 $\square$
 
 > [!proposition]
-> If $U$ is an open set in $\R^{n}$, then $U$ is [[Connectedness and Paths#^946cc4|connected]] if and only if $U$ is [[Connectedness and Paths#^630354|path connected]].
+> If $U$ is an open set in $\R^{n}$, then $U$ is [[Connectedness and Paths#^946cc4|connected]] if and only if $U$ is [[Connectedness and Paths#^630354|path connected]]. ^a850f2
 
 *Proof*  It suffices to show that if $U$ is nonempty connected, then it is path connected. Fix some $x\in U$, we define $V:=\{y\in U: \text{there is a path joining }x \text{ and } y\}$. Clearly $V\neq \emptyset$ because $x\in V$. By the [[Connectedness and Paths#^7a08b9|proposition]], it is enough to show that $V$ is both open and closed in $U$, which implies that $V=U$, hence $U$ is path connected. For any $y\in V$, since $U$ is open, there is a open ball $B_{r}(y)$ contained in $U$. Let $\gamma\colon [0,1]\to U$ be the path from $x$ to $y$. Note that for all $z\in B_{r}(y)$, we can define a path $\gamma_{z}\colon [0,1]\to U$ from $x$ to $z$ by $$\gamma_{z}(t)=\begin{cases} \gamma(2t),\quad& t\in[0,1/2],\\ (2t-1)z+(2-2t)y,\quad& t\in[1/2,1], \end{cases}$$connecting $x$ and $z$, so $z\in V$, which shows that $V$ is open in $U$.
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/connectedness_in_R%5En.svg" alt="connectedness_in_R^n" style="width:35%;"/>
@@ -94,7 +95,7 @@ For (3), path connectedness is clear by [[Constructions on Topological Spaces#^f
 ## Components
 
 > [!definition] Components
-> A *(path) component* of a topological space $X$ is a maximal (path) connected subspace of $X$. ^concept-588e0af599cc
+> A *(path-) component* of a topological space $X$ is a maximal (path-) connected subspace of $X$. ^concept-588e0af599cc
 
 > [!proposition]
 > The following holds for a topological space $X$:
@@ -106,7 +107,8 @@ For (3), path connectedness is clear by [[Constructions on Topological Spaces#^f
 *Proof*  By [[Connectedness and Paths#^a6707d|(2) of the proposition]], we know that whenever (path) components $U$ and $V$ share a point, then $U ∪V$ is also (path) connected, so by maximality, the components must be disjoint; Additionally, the components cover $X$ because every singleton is connected. (2) is obvious. (3) is because each component is a topological space and hence partitioned into path components.  $\square$
 
 > [!proposition]
-> Each component of a topological space is  always closed.
+> Components of a topological space are always closed.
+> 
 
  *Proof*  This is a direct consequence of [[Connectedness and Paths#^a3fdd1|the lemma]], because the [[Closure, Interior and Boundary#^cf4e59|closure]] of a component is also connected, so the maximality implies that the component itself has to be closed. $\square$
 
@@ -130,11 +132,28 @@ In general, there are no implications between the local and global versions. Her
 - The [[Connectedness and Paths#^65c383|topologist’s sine curve]] is connected but not locally connected.
 $\quad$
 
+Similar to the global version, local path-connectedness is also stronger than local connectedness:
+
 > [!proposition]
-> If $X$ is locally (path-) connected, then every open subset is locally (path-) connected. Moreover, every component is open.
+> If $X$ is locally path connected, then it is locally connected.
 > 
 
-*Proof*  If $X$ is locally (path-) connected, then it has a (path-) connected basis, so every open set is a 
- 
+*Proof*  Immediate from the basis characterization of local (path-) connectedness and the fact that [[Connectedness and Paths#^709875|every path connected space is connected]]. $\square$
+
 > [!proposition]
-> If a topological space is both connected and locally path-connected, then it must be path-connected.
+> If $X$ is locally (path-) connected, then every open subset is locally (path-) connected. Moreover, every [[Connectedness and Paths#^concept-588e0af599cc|(path-) component]] is open.
+> 
+
+*Proof*  If $X$ is locally (path-) connected, then it has a (path-) connected basis, then the every basis element that is included in an open subset $U$ of $X$ is also a (path-) connected basis element for $U$.
+We now prove that every component is open. Suppose $Y\subset X$ is a (path-)component. Then for any $y\in Y$, there is a (path-) connected open set $B$ containing $y$, and $B\subset Y$ because $Y$ is maximal. Hence $Y$ is open. $\square$
+
+The following proposition and corollary give a sufficient condition for path-connectedness being the same as connectedness. It can explain [[Connectedness and Paths#^a850f2|the equivalence of path-connectedness and connectedness on $\R^{n}$]] in a clean way.
+
+> [!proposition]
+> Suppose $X$ is locally path-connected, then the path components of $X$ coincide with the components of $X$.
+> 
+
+*Proof*  Since every component is a partition of path components, it suffices to show that every component is path-connected. Suppose $Y\subset X$ is a component, then it is a partition of path components, and each path component is open by the previous proposition. If $Y$ has two distinct path components $Y_{1}$ and $Y_{2}$, then they will separate $Y$, which is a contradiction. Hence $Y$ has to be path-connected. $\square$
+
+> [!corollary]
+> If a topological space is locally path-connected, then it is connected iff it is path-connected.

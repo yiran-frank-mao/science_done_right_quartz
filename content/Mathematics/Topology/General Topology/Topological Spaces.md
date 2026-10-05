@@ -52,7 +52,7 @@ $\quad$
 > [!theorem] Characterization of Basis
 > Let $(X,\mathcal{T})$ be a topological space. Then $\mathcal{B}\subset \mathcal{T}$ is a basis for $\mathcal{T}$ iff for any $x\in X$ and any $U ∈ \mathcal{T}$ with $x ∈ U$ there is $B ∈ \mathcal{B}$ such that $x \in B ⊂ U$.
 
-*Proof*  Suppose 
+*Proof*  Suppose $\mathcal{B}$ is a basis, then any open neighbourhood $U$ is a union of sets from $\mathcal{B}$, so must contain some $B\in \mathcal{B}$ containing $x$. Conversely, for any nonempty $U\in \mathcal{T}$, it is an open neighbourhood of each of its points, so by assumption for each $x\in U$ there is $B_{x}\in \mathcal{B}$ such that $x\in B_{x}\subset U$. Then $U=\bigcup_{x\in U}B_{x}$, which is a union of sets from $\mathcal{B}$. Therefore $\mathcal{B}$ is a basis. $\square$
 
 > [!proposition]
 > A collection of sets cannot be basis for two distinct topologies.
@@ -69,8 +69,8 @@ $\quad$
 *Proof*  If $\mathcal{B}$ is a basis, then it clearly has the above properties, we will prove the converse here. Let $\mathcal{T}=\left\{\bigcup_{\alpha\in A}B_{\alpha}\mid B_{\alpha}\in \mathcal{B}\right\}$. We first prove that it is a topology. Clearly, both $X$ and $\emptyset$ is in $\mathcal{T}$, and any union of sets in $\mathcal{T}$ is in $\mathcal{T}$. Now consider the intersection of two sets $U=\bigcup_{\alpha}B_{\alpha}$ and $V=\bigcup_{\beta}B_{\beta}$ in $\mathcal{T}$. Then $$U\cap V=\bigcup_{\alpha\in A}\bigcup_{\beta\in B}(B_{\alpha}\cap B_{\beta})$$Since each $B_{\alpha}\cap B_{\beta}$ is a union of sets from $\mathcal{B}$, we have that $U\cap V$ is a union of sets from $\mathcal{B}$, thus $U\cap V\in \mathcal{T}$. Therefore, $\mathcal{T}$ is a topology. Uniqueness is obvious.  $\square$
 
 >[!proposition] 
-> Let $X$ be a set. Let $\tau$ and $\tau^{\prime}$ be two topologies on $X$ with bases $\mathcal{B}$ and $\mathcal{B}^{\prime}$ respectively. The followings are equivalent:
->- $\tau \subset \tau^{\prime}$.
+> Let $X$ be a set. Let $\mathcal{T}$ and $\mathcal{T}^{\prime}$ be two topologies on $X$ with bases $\mathcal{B}$ and $\mathcal{B}^{\prime}$ respectively. The followings are equivalent:
+>- $\mathcal{T} \subset \mathcal{T}^{\prime}$.
 >- For each $B\in \mathcal{B}$ and each $x\in B$ there is $B^{\prime}\in \mathcal{B}^{\prime}$ such that $x\in B^{\prime} \subset B$.
 >$\quad$
 >

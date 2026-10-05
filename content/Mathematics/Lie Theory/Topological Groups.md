@@ -1,3 +1,8 @@
+---
+updated: 2026-10-05
+created:
+completed: true
+---
 > [!definition] Topological Group
 > A *topological group* is a [[Groups, Order and Subgroups#^6e0960|group]] that is also a [[Topological Spaces#^concept-39ce12df888c|topological space]], such that the group operations of multiplication and inversion are both [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] maps. That is $$(x,y)\mapsto x^{-1}y$$is a continuous mapping of the product space into $G$. ^a4f93a
 
@@ -32,16 +37,10 @@ $\quad$
 
 *Proof*  Let $U$ be an open neighborhood of $e$. For each $n\in \N$, let $U_{n}$ be the set of all products of at most $n$ elements of $U$, and $W=\bigcup_{n\in\N} U_{n}$. Since each $U_{n}$ is open, $W$ is open. We now see that $W$ is also closed. For any $g\in \overline{W}$, $gU^{-1}$ is an open neighbourhood of $g$, so it must intersect $W$. Let $h\in W\cap g U^{-1}$, then $h=gu^{-1}$ for some $u\in U$. Since $h\in W$, $h$ is a product of finitely many elements in $U$, hence so is $g=hu$. Therefore, $g\in W$, and we have $\overline{W}\subset W$. Since $G$ is connected, we conclude that $W=G$ (ref. [[Connectedness and Paths#^7a08b9|proposition]]). $\square$
 
+Note that if $G$ is a topological group, and $H\leq G$ is a subgroup, then the coset space $G/H$ can be endowed with the [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^d57887|quotient topology]]. Hence,
+
 > [!proposition]
-> Suppose $G$ is a topological group, and $H\leq G$ is a subgroup. Then the coset space $G/H$ can be endowed with a natural topology such that the 
-> 
-
-> [!corollary]
-> Suppose $G$ is a topological group, and $H\triangleleft G$ is a normal subgroup, then $G/H$ is also a topological group
-> 
-
-*Proof*  
-
+> Suppose $G$ is a topological group, and $H\triangleleft G$ is a normal subgroup, then $G/H$ is also a topological group.
 
 ## Topological Group Actions
 

@@ -65,4 +65,7 @@ We now show that the similar results for sequences also hold for nets. The cruci
 
  *Proof*  Suppose $x\in \overline{Y}$. Then for every neighbourhood $U$ of $x$, we have $U\cap Y\neq \emptyset$. Let $I=\{U\subset X: U \text{ is a neighbourhood of } x\}$, and define a preorder on $I$ by $U\lesssim V$ if and only if $V\subset U$. Then $(I,\lesssim)$ is a directed set. For each $U\in I$, choose $y_{U}\in U\cap Y$. Then $\{y_{U}\}_{U\in I}$ is a net in $Y$ that converges to $x$. The converse is clear. $\square$
 
+> [!proposition]
+> Suppose $f\colon X\to Y$ is a map between two topological spaces. Then $f$ is continuous if and only if for every net $\{x_{i}\}_{i\in I}$ in $X$ that converges to $x\in X$, the net $\{f(x_{i})\}_{i\in I}$ converges to $f(x)$ in $Y$.
+> 
 

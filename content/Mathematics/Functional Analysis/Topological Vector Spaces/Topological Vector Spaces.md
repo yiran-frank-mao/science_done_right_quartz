@@ -9,9 +9,6 @@
 
 *Proof*  Suppose $\alpha\colon X\times X\to X$ is the addition. Then every translation map is a composition: $$ T_{x_{0}}\colon  X \xrightarrow{\cong} \{*\}\times X \xrightarrow{c_{x_{0}}\times\operatorname{id}} X \times X \xrightarrow{\alpha} X, $$where each map is continuous. So $T_{x_{0}}$ is continuous. Its inverse is $T_{-x_{0}}$, which is also continuous. $\square$
 
-> [!definition] Locally Convex Space
->  A topological vector space is *locally convex* if it has a [[Topological Spaces#^2fc468|basis]] of its topology consisting of [[Convex Sets#^3a9d82|convex]] open subsets. Equivalently, $0$ has a neighborhood basis consisting of convex open subsets.
-
 > [!definition] Complete Topological Space
 > A *Cauchy net* in a topological vector space $X$ is a [[Countability Axioms and Nets#^ed5107|net]] $(x_{\alpha})_{\alpha\in A}$ such that for every [[Closure, Interior and Boundary#^eda962|open neighborhood]] $U$ of $0$, there exists $\alpha_{0}\in A$ such that for all $\alpha,\beta\gtrsim \alpha_{0}$, $x_{\alpha}-x_{\beta}\in U$.
 > A topological vector space is *complete* if any Cauchy net converges to a point in the space.

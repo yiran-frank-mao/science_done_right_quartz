@@ -1,3 +1,5 @@
+Roughly speaking, Minkowski functionals are like seminorms, but more general and sis defined associated to some subsets of a topological vector space. Under some conditions, it can even be norms, making the topological vector space a normed space. To extend this idea, we will think about locally convex topologcal vector spaces, which are 
+
 > [!definition] Minkowski Functional
 > Suppose $A\subset X$ is a subset of a real or complex vector space. Then the *Minkowski functional* or *gauge* of $A$ is defined to be a function $p_{A}\colon X \to [0,\infty]$ such that 
 > $$ p_{A}(x):=\inf\{r\in (0,\infty) : x\in r A \}. $$
@@ -5,10 +7,17 @@
 
 <u><b>e.g.</b></u>
 - Consider a [[Mathematics/Linear Algebra/Normed Spaces#^concept-d7c3bfd21209|normed vector space]] $(X,\|\cdot\|)$ and let $U:=\{x\in X\mid \|x\|\leq 1\}$ be the unit ball in $X$. Then the Minkowski functional $p_{U}$ is just the norm on $X$.
+$\quad$
+
+> [!proposition]
+> If $A$ is convex, then $p_{A}$ is bounded;
+> 
+
 
 ## Seminorms
 
-In practice, it is often useful to define a locally convex space by means of a family of seminorms.
+
+
 
 > [!definition] Seminorm
 > A *seminorm* on a complex or real topological vector space $X$ is a map $p\colon X\to \R$ such that the following properties hold:
@@ -22,6 +31,9 @@ In practice, it is often useful to define a locally convex space by means of a f
 > 
 
 ## Fréchet Spaces
+
+> [!definition] Locally Convex Space
+>  A topological vector space is *locally convex* if it has a [[Topological Spaces#^2fc468|basis]] of its topology consisting of [[Convex Sets#^3a9d82|convex]] open subsets. Equivalently, $0$ has a neighborhood basis consisting of convex open subsets.
 
 > [!lemma]
 > A complete topological vector space is complete in every compatible metric that induces its topology.
