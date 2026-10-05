@@ -12,6 +12,16 @@
 
 ## Splitting Fields
 
+> [!definition] Splitting Field
+> 
+> 
+
+> [!proposition]
+> Splitting fields are unique up to 
+> 
+
+<u><b>e.g.</b></u>  $f(x)=x^{p}-1\in F[x]$, 
+
 > [!theorem] Splitting Theorem
 > Let $K\supset F$ be a splitting field extension of a polynomial $f \in F[x]$. If an irreducible polynomial $g\in F[x]$ has one root in $K$, then it splits completely in $K$. 
 > 

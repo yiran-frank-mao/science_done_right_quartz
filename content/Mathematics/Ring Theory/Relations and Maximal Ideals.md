@@ -45,7 +45,7 @@ Let $R_1 , R_2$ be rings. Then $R_1 × R_2$, with coordinate-wise addition and m
 > 
 
 > [!definition] Maximal Ideal
-> Let $R$ be a ring. An ideal $M \triangleleft R$ is maximal if $M \neq R$ and there is no other ideal $I$ such that $M \subsetneq I \subsetneq R$. ^ee0592
+> Let $R$ be a ring. An ideal $M \triangleleft R$ is *maximal* if $M \neq R$ and there is no other ideal $I$ such that $M \subsetneq I \subsetneq R$. ^ee0592
 
 <u><b>e.g.</b></u> $M \triangleleft \Z$ is maximal iff $M =(p)=p\Z$ for a prime $p$. In general, we have the following proposition holds:
 
@@ -53,6 +53,7 @@ Let $R_1 , R_2$ be rings. Then $R_1 × R_2$, with coordinate-wise addition and m
 > Let $R$ be a principle ideal domain, then $(a) \triangleleft R$ is maximal if and only if $a$ is irreducible.
 
 *Proof*  In a PID, we have that $(a)\subset(b)$ iff $b \mid a$. It follows that $(a)$ is maximal iff there is no proper divisor $b\mid a$, which means $a$ is irreducible. $\square$
+
 
 > [!corollary]
 > If $F$ is a field, then $M = (f (x)) \triangleleft F [x]$ is maximal iff $f (x)$ is irreducible.
@@ -63,9 +64,10 @@ Let $R_1 , R_2$ be rings. Then $R_1 × R_2$, with coordinate-wise addition and m
 > Let $I \triangleleft R$ be an ideal. Then $I$ is maximal iff $R/I$ is a [[Ring, Field and Integral Domain#^575174|field]].
 
 > [!corollary]
-> Every maximal ideal is prime.
+> Every maximal ideal is prime. In a PID, conversely, every non-zero prime ideal is maximal.
 
-*Proof*  Every field is an integral domain. $\square$
+*Proof*  Every maximal ideal is prime is clear because every field is an integral domain.
+
 
 
 **Corollary** Let $f\in F[x]$ be an irreducible polynomial. Then $F[x]/(f(x))$ is a field and contains a root of $f$, namely the coset $\overline{x} = x + (f(x))$.

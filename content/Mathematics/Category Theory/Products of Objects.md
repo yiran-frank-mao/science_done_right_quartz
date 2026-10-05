@@ -5,7 +5,7 @@
 ><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/category_object_product_1.svg" alt="category_object_product_1" style="width:30%;"/>
 >satisfying the following universal property: for all $X$ with $x_{1}$ and $x_2$, there exists unique $u\colon X\to P$ such that the following diagram commutes:
 ><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/category_object_product_2.svg" alt="category_object_product_2" style="width:30%;"/>
->We write such product $P$ as $A\times B$, and write $\langle x_{1},x_{2}\rangle$ for $u\colon X\to A\times B$. ^728bf5
+>We write such product $P$ as $A\times B$, and write $( x_{1},x_{2})$ for $u\colon X\to A\times B$. ^728bf5
 
 <u><b>e.g.</b></u> 
 - Products in $\mathsf{Set}$ is [[Construction of Sets#^bd02ce|Cartesian products]].

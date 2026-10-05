@@ -49,8 +49,10 @@ $\quad$
 
 <u><b>e.g.</b></u>  Let $(X,d)$ be a [[Metric Spaces#^concept-e26011bc6f0a|metric space]]. Then $$\mathcal{B}=\{B_r(x):x\in X\mathrm{~and~}r>0\}$$ is a basis for the metric topology on $X$.
 
-> [!theorem]
+> [!theorem] Characterization of Basis
 > Let $(X,\mathcal{T})$ be a topological space. Then $\mathcal{B}\subset \mathcal{T}$ is a basis for $\mathcal{T}$ iff for any $x\in X$ and any $U ∈ \mathcal{T}$ with $x ∈ U$ there is $B ∈ \mathcal{B}$ such that $x \in B ⊂ U$.
+
+*Proof*  Suppose 
 
 > [!proposition]
 > A collection of sets cannot be basis for two distinct topologies.

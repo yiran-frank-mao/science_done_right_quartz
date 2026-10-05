@@ -100,7 +100,7 @@ We shall check the inverse is unique. Suppose $g$ and $h$ are both inverse of $f
 ## Hom-Set
 
 >[!definition] Hom Set
->In any category $\mathsf{C}$, we call the following set of morphisms as hom-set:$$\mathrm{Hom}(A,B)=\{f\in\mor\mathsf{C}\mid f\colon A\to B\}$$And any any morphism $g \colon B \to B^{\prime}$ in $\mathsf{C}$ induces a function $\mathrm{Hom}(A,g)$:$$\mathrm{Hom}(A,g)\colon\mathrm{Hom}(A,B)\to\mathrm{Hom}(A,B^{\prime}),\quad f\mapsto g\circ f$$
+> In any [[Structure of Categories#^d0fa66|locally small]] category $\mathsf{C}$, we call the following set of morphisms as hom-set:$$\mathrm{Hom}(A,B)=\{f\in\mor\mathsf{C}\mid f\colon A\to B\}$$And any any morphism $g \colon B \to B^{\prime}$ in $\mathsf{C}$ induces a function $\mathrm{Hom}(A,g)$:$$\mathrm{Hom}(A,g)\colon\mathrm{Hom}(A,B)\to\mathrm{Hom}(A,B^{\prime}),\quad f\mapsto g\circ f$$
 
 **Def**  <i><u>Representable Functor</u></i>
 The (covariant) representable functor of $A\in\obj \mathsf{C}$ is$$\mathrm{Hom}(A,\cdot)\colon\mathsf{C}\to\mathsf{Set}$$It is indeed a functor as $\mathrm{Hom}(A,1_{X})=1_{\mathrm{Hom}(A,X)}$ and $\mathrm{Hom}(A,g\circ f)=\mathrm{Hom}(A,g)\circ\mathrm{Hom}(A,f)$. ^6a1c64

@@ -11,6 +11,8 @@
 - Nonzero complex numbers $\C^{\times}$ with multiplication is a topological group, $S^{1}\subset \C^{\times}$ is a topological subgroup with multiplication;
 - $n$-Torus $T^{n}=(S^{1})^{n}$ is a topological group with multiplication;
 - [[Linear Groups#^264ff5|General linear group]] $\mathrm{GL}_{n}(\R)$ is a topological group with matrix multiplication;
+- Any subgroup $A ≤ G$ of a topological group is a topological group with [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]];
+- The (group) direct product $H \times G$ of topological groups is a topological group with [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^fbf303|product topology]].
 $\quad$
 
 > [!proposition]
@@ -34,18 +36,19 @@ $\quad$
 > Suppose $G$ is a topological group, and $H\leq G$ is a subgroup. Then the coset space $G/H$ can be endowed with a natural topology such that the 
 > 
 
-
-> [!proposition]
+> [!corollary]
 > Suppose $G$ is a topological group, and $H\triangleleft G$ is a normal subgroup, then $G/H$ is also a topological group
 > 
 
 *Proof*  
 
 
-## Group Actions
+## Topological Group Actions
+
+Here we will give some examples of topological group actions.
 
 <u><b>e.g.</b></u>
-- Consider the action of $\math$
-- Cibsuder
-- Consider $\R^{\times}$ ac
-- So $\R^{n}\setminus\{0\} / \R_{+} /\Z_{2}$
+- Suppose $H\leq G$ is a subgroup of a topological group $G$, then $H$ acts on $G$ by left translation, and the action is continuous and free;
+- $\GL_{n}(\R)$ acts on $\R^{n}$ by matrix multiplication. The only orbits are $\{0\}$ and $(\R^{n})^{\times}=\R^{n}\setminus\{0\}$. The induced quotient topology on the orbit space is $\{\emptyset,\{(\R^{n})^{\times}\}, \{\{0\}, (\R^{n})^{\times}\} \}$, that is, the orbit space is homeomorphic to the Sierpiński space;
+- Orthogonal group $O(n)$ acts on $\R^{n}$ by matrix multiplication. The only orbits are $\{0\}$ and the spheres $S^{n-1}_{r}=\{x\in \R^{n}\mid \|x\|=r\}$ of radius $r>0$;
+- $\R^{\times}$ acts on $\R^{n}\setminus\{0\}$ by scalar multiplication, the quotient is the real projective space $\R\mathrm{P}^{n-1}$;

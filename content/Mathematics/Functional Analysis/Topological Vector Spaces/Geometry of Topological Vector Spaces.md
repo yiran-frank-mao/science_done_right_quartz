@@ -34,13 +34,13 @@ It is quite easy to see that absorbing sets, balanced sets, and convex sets (con
 |                                                                                                                                                                                |              |           |          |        |
 
 > [!proposition]
-> Let $X$ be a [[Mathematics/Functional Analysis/Operator Algebras/Topological Vector Spaces#^dd5802|topological vector space]], and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing.
+> Let $X$ be a [[Topological Vector Spaces#^dd5802|topological vector space]], and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing.
 > 
 
 *Proof*  Let $x\in X$, consider $A=\{t\in\C \mid tx\in V\}$. Note that $0\in A$. Define $f\colon \C\to X$, $t\mapsto tx$, then $f$ is continuous and $A=f^{-1}(V)$ is open. Since $(t_{n})_{n=1}^{\infty}$ diverges, there exists $N$ such that $1/t_{n} \in A$ for all $n\geq N$. Thus $x\in t_{n}V$ for all $n\geq N$. $\square$
 
 > [!proposition]
-> Let $X$ be a [[Mathematics/Functional Analysis/Operator Algebras/Topological Vector Spaces#^dd5802|topological vector space]], and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing. Every topological vector space has a basis of balanced neighborhoods.
+> Let $X$ be a [[Topological Vector Spaces#^dd5802|topological vector space]], and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing. Every topological vector space has a basis of balanced neighborhoods.
 
 *Proof*  It suffices to show a balanced basis at the origin. 
 
@@ -58,7 +58,7 @@ It is quite easy to see that absorbing sets, balanced sets, and convex sets (con
 Form the lemma, we immediately have
 
 > [!proposition]
-> $A$ in a topological space $X$ is bounded if and only if it is bounded by neighbourhoods at one, thus all points in $X$.
+> $A$ in a topological space $X$ is bounded if and only if it is bounded by neighbourhoods at the origin, thus all points in $X$.
 > 
 
 > [!proposition]
@@ -66,7 +66,3 @@ Form the lemma, we immediately have
 > 
 
 *Proof*  Suppose $I$ is some finite index set and $A$ is a bounded set. Then for any open neighbourhood $U$ of $0$, there exists a scalar $\lambda_{i}>0$ such that $A_{i}\subset tU$ for all $|t|\geq \lambda_{i}$. Let $\lambda=\max_{i\in I}\lambda_{i}$, then for all $|t|\geq \lambda$, we have $\bigcup_{i\in I} A_{i}\subset tU$. So $\bigcup_{i\in I} A_{i}$ is bounded. $\square$
-
-## Seminorms
-
-It turns out that convex, absorbing, balanced sets give rise to seminorms and is a vector space has a neighbourhood at $0$ consisting of such sets 

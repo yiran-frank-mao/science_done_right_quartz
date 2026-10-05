@@ -8,10 +8,13 @@ updated: 2024-09-17
 > Let $\mathsf{C}$ be a [[Structure of Categories#^2f5c3a|category]] with finite products. A *group object* in $\mathsf{C}$ consists of objects and arrows as: 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/groupinc.svg" alt="group_inc" style="width:40%;">
 > satisfying the following conditions:
-> - $m$ is associative, that is the following commutes: ![|350](https://svgshare.com/i/14CS.svg)
+> - $m$ is associative, that is the following commutes: 
+>   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/group_object_associativity.svg" style="width:50%;"/>
 >   where $\cong$ is the canonical associativity isomorphism for products.
-> - $u$ is a unit for $m$, that is both triangles in the following commute: ![|300](https://svgshare.com/i/14Bn.svg)
+> - $u$ is a unit for $m$, that is both triangles in the following commute: 
+>   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/group_object_unitality.svg" style="width:50%;"/>
 > - $i$ is an inverse with respect to $m$, that is both sides of this commute:
+>   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/group_object_inverse.svg" style="width:50%;"/>
 > 
 > $\quad$^6ff745
 
@@ -24,7 +27,7 @@ updated: 2024-09-17
 <u><b>e.g.</b></u> The idea of a group in a category captures the familiar notion of a group with additional structure:
  - A [[Groups, Order and Subgroups#^6e0960|group]] in the usual sense is a group object in the category $\mathsf{Set}$.
  - A [[Topological Groups#^a4f93a|topological group]] is a group in $\mathsf{Top}$, the category of topological spaces.
- - A group object in $\mathsf{Group}$ is an [[Groups, Order and Subgroups#^6d511a|abelian group]].
+ - A group object in $\mathsf{Group}$ is an [[Groups, Order and Subgroups#^6d511a|abelian group]], because the multiplication map $m \colon G \times G \to G$ is a homomorphism of groups if and only if $G$ is abelian.
 $\quad$
 
 ## Category of Groups
