@@ -13,11 +13,7 @@ $\quad$
 > If $A$ is convex, then $p_{A}$ is bounded;
 > 
 
-
 ## Seminorms
-
-
-
 
 > [!definition] Seminorm
 > A *seminorm* on a complex or real topological vector space $X$ is a map $p\colon X\to \R$ such that the following properties hold:

@@ -85,9 +85,11 @@ $\square$
 Now we show that $V$ is closed in $U$. Let $\{y_{n}\}\subset V$ be a sequence converging to $y\in U$. As $U$ is open, there is some open ball $B_{\varepsilon}(y)\subset U$, and $y_{n}\in B_{\varepsilon}(y)$ for all sufficiently large $n$. Similarly by concatenation of paths, we can define a path joining $x$ to $y_{n}$ and then to $y$, hence $y\in V$. This shows that $V$ is closed in $U$. Therefore, $U$ is path connected. $\square$
 
 > [!proposition]
+> The following holds:
 > 1. Every quotient of a (path) connected space is (path) connected;
 > 2. The union of a family of (path) connected subspaces of $X$ that have a point in common is (path) connected;
-> 3. Any product of (path) connected spaces is (path) connected. ^a6707d
+> 3. Any product of (path) connected spaces is (path) connected.
+> $\quad$ ^a6707d
 
 *Proof*  (1) is immediate from [[Connectedness and Paths#^affaf2|the theorem]]; For (2), path connectedness is clear, and we will only prove that it is connectedness here. Suppose $\{A_{i}\}_{i\in I}$ is a family of connected subspaces of $X$ with a point $a\in \cap_{i\in I} A_{i}$. Suppose $U\sqcup V$ separates $\cup_{i\in I}A_{i}$, without loss of generality, we assume that $a\in U$, then $A_{i}\subset U$ for all $i\in I$, which implies that $\cup_{i\in I}A_{i}\subset U$, and $V=\emptyset$. 
 For (3), path connectedness is clear by [[Constructions on Topological Spaces#^f133c4|the universal property]], and we will only prove connectedness. We will first show that the product of two thus any finite connected spaces is connected, and then extend the result to the infinite case. In fact, fix some $x_{0}\in X$, we have $$X\times Y=\bigcup_{y\in Y} (X\times \{y\} \cup \{x_{0}\}\times Y ),$$so by (2), $X\times Y$ is connected if both $X$ and $Y$ are connected. 
