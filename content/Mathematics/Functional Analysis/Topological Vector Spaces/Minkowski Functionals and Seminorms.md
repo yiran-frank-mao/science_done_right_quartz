@@ -1,5 +1,12 @@
 Roughly speaking, Minkowski functionals are like seminorms, but more general and sis defined associated to some subsets of a topological vector space. Under some conditions, it can even be norms, making the topological vector space a normed space. To extend this idea, we will also discuss locally convex topological vector spaces, which are better than general topological vector spaces, and can be described by a separating family of seminorms.
 
+| Spaces                    |                                 |
+| ------------------------- | ------------------------------- |
+| Topological Vector Spaces | Family of Minkowski functionals |
+| Locally Convex Spaces     | Family of Seminorms             |
+| Normable Spaces           | (Family of) norm(s)             |
+
+
 > [!definition] Minkowski Functional
 > Suppose $A\subset X$ is a subset of a real or complex vector space. Then the *Minkowski functional* or *gauge* of $A$ is defined to be a function $p_{A}\colon X \to [0,\infty]$ such that 
 > $$ p_{A}(x):=\inf\{r\in (0,\infty) : x\in r A \}. $$
