@@ -15,9 +15,12 @@ We can extend the notion of factorization to rings (integral domains) other than
 > - $a$ *divides* $b$ if there exists $c\in R$ such that $b=ac$.
 > - $a$ is a *proper divisor* of $b$ if $a$ divides $b$, say $b=ac$, with neither $a$ nor $c$ units.
 > - $a$ and $b$ are *associates* if $a$ divides $b$ and $b$ divides $a$. i.e. $a=ub$ for some unit $u$.
-> - $a$ is *irreducible* if $a$ is not a unit and it has no proper divisors, i.e. its only divisors are units and associates of $p$.
-> - $p$ is *prime* if $p$ is not a unit and whenever $p$ divides $ab$, then $p$ divides $a$ or $p$ divides $b$.
+> - $a$ is *irreducible* if $a$ is not a unit and it has no proper divisors, i.e. its only divisors are units and associates of $a$.
+> - $p$ is *prime* if $p$ is not a unit and whenever $p$ divides $ab$, $p$ divides $a$ or $p$ divides $b$.
 >$\quad$ ^d98fbf
+
+> [!remark]-
+> $p$ is a prime is equivalent to saying that $(p)$ is a [[Mathematics/Ring Theory/Relations and Maximal Ideals#^da4561|prime ideal]].
 
 > [!proposition]
 > In any [[Ring, Field and Integral Domain#^domain|integral domain]], every prime element is irreducible.
@@ -76,14 +79,16 @@ $\quad$
 
 <u><b>e.g.</b></u>  Every field is vacuously a unique factorization domain. $\Z[\sqrt{5}]$ is not a unique factorization domain, because $4=(\sqrt{5}-1)(\sqrt{5}+1)=2\cdot 2= (3-\sqrt{5})(3+\sqrt{5})$.
 
-> [!proposition]
+> [!lemma]
 > Let $R$ be an integral domain, then the following conditions are equivalent:
 > - Factoring terminates.
 > - $R$ does not contain an infinitely strictly increasing chain $(a_{1})\subsetneq(a_{2})\subsetneq(a_{3})\subsetneq\cdots$ of principle ideals.
->$\quad$
+>$\quad$ ^505c39
+
+*Proof*  Suppose the factorization terminates, then 
 
 > [!theorem]
-> If $\newcommand{\Frac}{\operatorname{frac}}R$ is an integral domain, in which factoring terminates, then $R$ is a unique factorization domain if and only if every irreducible element is prime. ^94c6f6
+> If $\newcommand{\Frac}{\operatorname{frac}}R$ is an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], in which factoring terminates, then $R$ is a unique factorization domain if and only if every irreducible element is prime. ^94c6f6
 
 *Proof*  Let $R$ be an integral domain where every irreducible element is prime. Suppose some element can be factored in two ways: $$a=p_{1}\cdots p_{n}=q_{1}\cdots q_{m}.$$Then $p_{1}$ divides $q_{1}\cdots q_{m}$, and since $p_{1}$ is prime, $p_{1}$ divides some $q_{i}$. Without loss of generality, suppose $p_{1}$ divides $q_{1}$. Then $q_{1}=p_{1}u$ for some unit $u$. Cancelling $p_{1}$ from both sides, we get $$p_{2}\cdots p_{n}=uq_{2}\cdots q_{m}.$$Repeating this process, we can show that $n=m$ and the $p_{i}$'s are associates of the $q_{i}$'s.
 Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreducible element, and suppose $p$ divides $ab$, say $ab=pc$. Assume $p$ divides neither $a$ nor $b$. Then $a$ and $b$ can be factored into irreducible elements, say $a=p_{1}\cdots p_{m}$ and $b=q_{1}\cdots q_{n}$. Then $p_{1}\cdots p_{m}q_{1}\cdots q_{n}=pc$. That are two inequivalent factorizations of $pc$, a contradiction. $\square$
@@ -94,7 +99,7 @@ Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreduci
 > Every principal ideal domain is a unique factorization domain.
 > 
 
-*Proof*  To show any factorization stops, it suffices to show that a infinite factorization $$(a_{1})\subset(a_{2})\subset(a_{3})\subset \cdots,$$has all tailing terms equal from some point. Note that $I=\cup_{i=1}^{\infty}(a_{i})$ is an ideal, hence, principle, say $I=(a)$. Then $a\in (a_{k})$ for some $k$, and so $(a)\subset (a_{k})$. Since $(a)$ is the union of all $(a_{i})$, we must have $$(a)\subset(a_{k})\subset(a_{k+1})\subset\cdots\subset(a),$$that is the tailing terms are all equal to $(a)$, starting from $k$. $\square$
+*Proof*  In a PID, irreducible and prime elements coincide, by [[Factorization#^94c6f6|the above theorem]], it remains to show the factorization terminates. By [[Factorization#^505c39|the lemma]], it suffices to show that any infinite chain of ideals $$(a_{1})\subset(a_{2})\subset(a_{3})\subset \cdots,$$has all tailing terms equal from some point. Note that $I=\cup_{i=1}^{\infty}(a_{i})$ is an ideal, hence, principle, say $I=(a)$. Then $a\in (a_{k})$ for some $k$, and so $(a)\subset (a_{k})$. Since $(a)$ is the union of all $(a_{i})$, we must have $$(a)\subset(a_{k})\subset(a_{k+1})\subset\cdots\subset(a),$$that is the tailing terms are all equal to $(a)$, starting from $k$. $\square$
 
 > [!proposition]
 > A unique factorization domain is a principle ideal domain if and only if all nonzero [[Relations and Maximal Ideals#^da4561|prime ideals]] are [[Relations and Maximal Ideals#^ee0592|maximal]].
@@ -148,7 +153,7 @@ By [[Factorization#^4f5a64|the corollary]], we can tell whether a polynomial is 
 >
 > Then $f(x)$ is irreducible in $\Q[x]$.
 
-In fact, the Eisenstein's criterion holds for any unique factorization domain, not just $\Z$. We shall prove it in the following.
+In fact, the Eisenstein's criterion holds for any unique factorization domain, not just $\Z$. We shall prove it in the following form:
 
 > [!theorem] Generalized Eisenstein's Criterion
 > Let $f(x)=a_{n}x^{n}+\cdots+a_{0}\in R[x]$, where $R$ is a unique factorization domain. Suppose there is a prime $p\in R$ such that:

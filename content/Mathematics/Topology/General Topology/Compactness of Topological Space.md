@@ -52,6 +52,9 @@ There is a slightly weaker notion of compactness called Lindelöf spaces, which 
 > [!remark]
 > The proof above utilized countable axiom of choice.
 
+> [!lemma] Tube Lemma
+> Let $X$ be any topological space and Y be a compact space. If x ∈X and U ⊂X ×Y is a nbhd of {x}×Y, then there is a nbhd V ⊂X of x so that V ×Y ⊂U.
+
 ## Sequential and Limit Point Compactness
 
 > [!definition] Limit Point Compactness

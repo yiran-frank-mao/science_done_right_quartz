@@ -147,7 +147,7 @@ So one can apply the above proposition to help to find the minimal polynomial of
 ## Ruler and Compass Constructions
 
 > [!definition] Ruler and Compass Constructions
-> A ruler and compass construction is a method of drawing geometric figures using only a straightedge (ruler) and a compass.
+> A *ruler and compass construction* is a method of drawing geometric figures in $\R^{2}$ using only a straightedge (ruler) and a compass.
 > - Two points in the plane are given to start the construction.
 > - The straightedge can be used to draw a line between any two points.
 > - The compass can be used to draw a circle with a given center and a point on the circle.
@@ -156,6 +156,8 @@ So one can apply the above proposition to help to find the minimal polynomial of
 
 > [!theorem]
 > Let $P$ be a constructible point in the plane. Then there is a chain of field extensions $\Q\subset F_1\subset F_2\subset \cdots \subset F_{n}=K\subset \R$ such that the coordinates of $P$ are in $K$, and each extension $F_{i+1}/F_{i}$ is a quadratic extension.
+
+*Proof Ideal*  The points gained from the ruler and compass constructions can be described by the intersection of lines and circles, which leads to quadratic equations. Thus, the coordinates of any constructible point can be expressed in terms of a sequence of quadratic extensions starting from $\Q$. For details of the proof, see [Artin's Sec. 15.5](https://www.pearson.com/en-us/subject-catalog/p/algebra-classic-version/P200000006078/9780134689609). $\square$
 
 > [!corollary]
 > Let $a$ be a constructible real number. Then $a$ is algebraic over $\Q$ and the degree of $a$ over $\Q$ is a power of $2$.

@@ -10,9 +10,6 @@
 >[!proposition] 
 >**Prop**  $\tilde{\bar{g}}=g$.
 
-**Prop**  $\mathrm{Hom}_\mathbf{C}(A\times B,C)~\cong~\mathrm{Hom}_\mathbf{C}(A,C^B)$.
-**Proof**  
-
 >[!definition] 
 >**Def**  <i><u>Cartesian Closed</u></i>
 >A category is called cartesian closed, if it has all finite products and exponentials.
