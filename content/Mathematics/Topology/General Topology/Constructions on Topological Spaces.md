@@ -136,3 +136,5 @@ From the definition of the above topologies, we can see that there is a general 
 > Dually, if $\{Y_{i}\}_{i\in I}$ is a family of topological spaces with maps $g_{i}\colon Y_{i}\to X$ for each $i\in I$, the *final topology* on $X$ induced by the maps $\{g_{i}\}_{i\in I}$ is the finest topology on $X$ that makes all the maps $g_{i}$ continuous.
 > 
 
+^concept-895d850bc290
+

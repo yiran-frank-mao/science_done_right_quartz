@@ -12,6 +12,7 @@ Knot theory is a branch of mathematics that studies the properties and classific
 [[Chord Diagrams]]
 [[Universal Quantum Invariant]]
 [[The Kontsevich Integral]]
+[[Seifert Circles and Vogel's Algorithm]]
 ### Braids
 [[Braids and Braid Groups]]
 [[The Alexander and Markov Theorems]]
