@@ -32,6 +32,7 @@ It is quite easy to see that absorbing sets, balanced sets, and convex sets (con
 | Unit cross:<br><img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/unit_cross.svg" style="width:100%;"/>                                    | Real         | 🚫        | ✅        | 🚫     |
 | Unit interval in $\mathbb{C}$                                                                                                                                                  | Complex      | 🚫        | 🚫       | ✅      |
 |                                                                                                                                                                                |              |           |          |        |
+|                                                                                                                                                                                |              |           |          |        |
 
 > [!proposition]
 > Let $X$ be a [[Topological Vector Spaces#^dd5802|topological vector space]], and $V$ be an open neighborhood of $0$, then $X=\bigcup_{n=1}^{\infty}t_{n} V$ for any sequence $\{t_{n}\}$ of real numbers with $t_{n}\to \infty$. In particular, every open neighbourhood of $0$ is absorbing.

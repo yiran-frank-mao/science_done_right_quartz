@@ -53,7 +53,7 @@ completed: true
 
 <u><b>e.g.</b></u> 
 - Consider the genus-$g$ surface $M_{g}$ with subcomplex $A$ being the 1–skeleton. Then $M_{g}/A$ is $S^{2}$, since it has exactly one 2–cell attached to one 0–cell.
-- Since valid quotients and products of CW complexes are again CW complexes, [[Operations on Spaces#^a942da|suspensions]], and [[Operations on Spaces#^a942da|wedge sums]] of CW complexes are also CW complexes.
+- Since valid quotients and products of CW complexes are again CW complexes, [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|suspensions]], and [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|wedge sums]] of CW complexes are also CW complexes.
 $\quad$
 
 ## Euler Characteristic
