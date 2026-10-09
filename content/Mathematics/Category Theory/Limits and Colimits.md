@@ -14,7 +14,8 @@
 >![|200](https://svgshare.com/i/15ke.svg)
 
 >[!definition] Limit & Colimit
->A limit for a diagram $D \colon \mathsf{J} → \mathsf{C}$ is a [[Objects and Elements#^a7dd74|terminal object]] in $\mathbf{Cone}(D)$, written as $$\lim_{\leftarrow} D$$A finite limit is a limit for a diagram on a finite index category $\mathsf{J}$. A colimit is an [[Objects and Elements#^a7dd74|initial object]] in the category of cones under $D$. ^d7e9c8
+> A *limit* for a diagram $D \colon \mathsf{J} \to \mathsf{C}$ is a [[Objects and Elements#^a7dd74|terminal object]] in $\mathbf{Cone}(D)$, written as $$\lim_{\leftarrow} D$$A finite limit is a limit for a diagram on a finite index category $\mathsf{J}$. 
+> A *colimit* is an [[Objects and Elements#^a7dd74|initial object]] in the category of cones under $D$. ^d7e9c8
 
 ## Continuity
 

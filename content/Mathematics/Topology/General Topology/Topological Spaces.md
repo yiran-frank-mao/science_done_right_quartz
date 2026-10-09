@@ -33,7 +33,7 @@ $\quad$
 <u><b>e.g.</b></u>  Given a set $X$, the trivial topology is the coarsest/weakest topology on $X$ and the discrete topology is the finest/strongest topology on $X$.
 
 >[!definition] Metrizable
-> Topologies need not come from metrics, but if there is, we say that $(T , \mathcal{T})$ is *metrizable*.
+> Topologies need not come from metrics, but if there is, we say that $(T, \mathcal{T})$ is *metrizable*.
 
 <u><b>e.g.</b></u> 
 - Suppose that $X$ consists of more than one point. Then the trivial topology on $X$ is not metrizable.
