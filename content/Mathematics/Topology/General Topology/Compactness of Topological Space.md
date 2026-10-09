@@ -13,10 +13,10 @@ updated: 2025-05-19
 <b><u>e.g.</u></b> $(0, 1)$ is not compact, $\{(0, a) \mid a ∈ (0, 1)\}$ is an open cover with no finite subcover; $\R$ is not compact, $\{(−\infty, a) : a ∈ \Z\}$ has no finite subcover.
 
 > [!lemma]
-> If $T$ is a topological space and $S \subset T$ then $S$ is compact in the $T$ if and only if $S$ is compact in the [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]] on $S$.
+> If $T$ is a topological space and $S \subset T$ then $S$ is compact in the $T$ if and only if $S$ is compact in the [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]] on $S$.
 
 >[!theorem] 
-> Let $X$ be a compact topological space and $K$ a closed [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace]] of $X$. Then $K$ is compact. ^f5bb06
+> Let $X$ be a compact topological space and $K$ a closed [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace]] of $X$. Then $K$ is compact. ^f5bb06
 
 *Proof*  Let $K ⊂X$ be closed and let $\{U_{α}\}_{α∈\Lambda}$ be an open covering of $K$. Then $\{K^{c}\cup U_{α}\}_{α∈\Lambda}$ is an open covering of $X$. Since $X$ is compact, there exist $α_{1},\dots,α_{n} ∈ \Lambda$ such that $$X=K^{c}\bigcup\left(\bigcup_{i=1}^{n}U_{\alpha_i}\right)$$It follows that $K \subset \bigcup_{i=1}^{n}U_{\alpha_{i}}$, therefore $K$ is compact. $\square$
 
@@ -24,7 +24,7 @@ updated: 2025-05-19
 > Any intersection of a compact set with a closed set is compact.
 > 
 
-*Proof*  Suppose $C$ is closed and $K$ is compact. Then $C\cap K$ is closed in $K$ (w.r.t [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]]), and hence compact by the previous theorem and lemma. $\square$
+*Proof*  Suppose $C$ is closed and $K$ is compact. Then $C\cap K$ is closed in $K$ (w.r.t [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]]), and hence compact by the previous theorem and lemma. $\square$
 
 > [!proposition]
 > Any compact subset $K$ of a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]] $X$ is closed.
