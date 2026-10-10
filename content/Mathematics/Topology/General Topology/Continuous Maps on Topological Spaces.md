@@ -31,27 +31,3 @@ $\quad$
 > A map $f\colon X\to Y$ is *open* if for every open set $U\subset X$, $f(U)$ is open in $Y$. Similarly, it is *closed* if for every closed set $C\subset X$, $f(C)$ is closed in $Y$.
 > ^cd295d
 
-## Compactness and Continuous Functions
-
-> [!theorem] Continuous Image of a Compact Set is Compact
-> Let $X$ and $Y$ be topological spaces. If $K\subseteq X$ is compact and $f \colon X → Y$ is [[Continuous Maps on Topological Spaces#^33ee5a|continuous]], then $f (K )$ is compact.
-
-> [!proposition]
-> The inverse of a bijective continuous function $f\colon X\to Y$, with $Y$ compact, is continuous, so it is a homeomorphism. ^3626d1
-
-*Proof*  Suppose $f\colon X\to Y$ is a continuous bijection. Consider the inverse function $f^{-1}\colon Y\to X$. Let $V\subset X$ be open, then $f(V)$ is open in $Y$ because $f$ is continuous. Since $Y$ is compact, $f(V)$ is compact. Since $f$ is a bijection, $f(V)$ is also a bijection. Therefore, $f(V)$ is closed. Hence, $f^{-1}$ is continuous.^33ee5a
-
-
-
-
-
-**Corollary**  Let $X$ be a compact topological space and $f \colon X → \R$ continuous, where $\R$ is endowed with the standard topology. Then $f$ achieves its maximum and minimum value on $X$.
-
-**Lemma**  Let $X$ and $Y$ be topological spaces and let $X × Y$ be endowed with the [[Constructions on Topological Spaces#^fbf303|product topology]]. Assume that $Y$ is compact. For $p ∈ X$, if $N ⊂ X ×Y$ is open with $\{p\}×Y ⊂ N$, then there is an [[Closure, Interior and Boundary#^eda962|open neighborhood]] $U$ of $p$ such that $U ×Y ⊂ N$.
-
-**Thrm**  If $X$ and $Y$ are compact topological spaces, then $X × Y$ is also compact in the product topology.
-
-> [!theorem] Heine–Borel Theorem
-> Any closed interval $[a,b]$ is a compact subset of $\R$. More generally, a subset of  $\R^n$ is compact if and only if, it is bounded and is a close subset of  $\R^𝑛$. ^6e5465
-
-*Proof*  

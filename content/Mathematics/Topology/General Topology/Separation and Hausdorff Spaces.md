@@ -24,9 +24,12 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 >[!definition] Hausdorff Space
 > A topological space $X$ is called *Hausdorff* or $T_{2}$ if for any $x , y ∈ X$ with $x \neq y$ there exist [[Closure, Interior and Boundary#^eda962|open neighborhoods]] $U$ of $x$ and $V$ of $y$ such that $U ∩V = \emptyset$. ^f7bcc8
 
-<u><b>e.g.</b></u>  It is clear that all metric spaces are Hausdorff.
+<u><b>e.g.</b></u>  It is clear that all metric spaces are Hausdorff. In fact, most of the spaces we will encounter is Hausdorff.
 
->[!theorem] 
+> [!proposition]
+> Let $X$ be a Hausdorff space and $A\subset X$. A point $x∈X$ is a limit point of $A$ if and only if any neighborhood $U$ of $x$ contains infinitely many points of $A$.
+
+>[!proposition] 
 > In Hausdorff spaces, [[Closure, Interior and Boundary#^72dffe|limits]] of sequences are unique if they exist.
 
 *Proof*  Assume a sequence $(x_{n})$ in a Hausdorff space has two distinct limits $x$ and $y$. Then there exist neighborhoods $U$ of $x$ and $V$ of $y$ such that $U ∩V = \emptyset$. However, since $x_{n} → x$ and $x_{n} → y$ , there exists an integer $N$ such that $x_{n} ∈ U$ and $x_{n} ∈V$ for $n≥N$. Thus $U∩V \neq \emptyset$, which is a contradiction. $\square$
@@ -54,7 +57,6 @@ Now for any two disjoint compact sets $K_{1}$ and $K_{2}$, for any $x\in K_{1}$,
 
 *Proof*  Let $x,y\in X$ with $x\neq y$. Since $\mathcal{T}\subset \mathcal{T}^{\prime}$, the open sets in $\mathcal{T}$ are also open in $\mathcal{T}^{\prime}$. Thus there exist open sets $U,V\in \mathcal{T}\subset\mathcal{T}^{\prime}$ such that $x\in U$, $y\in V$ and $U\cap V=\emptyset$, that is $X$ is a Hausdorff space under $\mathcal{T}^{\prime}$. $\square$
 
-**Thrm**  Let $X$ be a Hausdorff space and $A\subset X$. A point $x∈X$ is a limit point of $A$ if and only if any neighborhood $U$ of $x$ contains infinitely many points of $A$.
 
 > [!theorem]
 > A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the [[Constructions on Topological Spaces#^fbf303|product space]] $X \times X$.
