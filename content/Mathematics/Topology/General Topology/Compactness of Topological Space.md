@@ -31,6 +31,16 @@ updated: 2025-05-19
 
 *Proof*  For any $x\in K^{c}$, since $X$ is Hausdorff, we can find some 
 
+> [!proposition] Super-Hausdorff
+> 
+
+
+> [!lemma] Tube Lemma
+> Let $X$ be any [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] and $Y$ be a [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact space]]. If $x\in X$ and $U \subset X \times Y$ is an open set containing $\{x\}\times Y$, then there is an open neighborhood $V ⊂X$ of $x$ so that $V \times Y \subset U$.
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/tube_lemma.svg" style="width:42.5%;"/>
+
+*Proof*  $U$ is an open neighborhood of any $(x,y)\in \{x\}\times Y$, so $U$ contains some $V_{(x,y)}\times W_{(x,y)}$ with $V_{(x,y)}$ an open neighborhood of $x$ in $X$ and $W_{(x,y)}$ an open neighborhood of $y$ in $Y$. Then $\{W_{(x,y)}\}_{y\in Y}$ forms an open cover of $Y$, since $Y$ is compact, we can take a finite subcover $\{W_{y_{1}},\dots,W_{y_{n}}\}$ of $Y$. Then $V=\bigcap_{i=1}^{n}V_{(x,y_{i})}$ is an open neighborhood of $x$ in $X$ and $$V\times Y=V\times\left(\bigcup_{i=1}^{n}W_{y_{i}}\right)=\bigcup_{i=1}^{n}\left(V\times W_{y_{i}}\right)\subset U.$$ $\square$
+
 ## Tychonoff's Theorem
 
 > [!theorem] Tychonoff's Theorem
@@ -52,8 +62,7 @@ There is a slightly weaker notion of compactness called Lindelöf spaces, which 
 > [!remark]
 > The proof above utilized countable axiom of choice.
 
-> [!lemma] Tube Lemma
-> Let $X$ be any topological space and Y be a compact space. If x ∈X and U ⊂X ×Y is a nbhd of {x}×Y, then there is a nbhd V ⊂X of x so that V ×Y ⊂U.
+
 
 ## Sequential and Limit Point Compactness
 
