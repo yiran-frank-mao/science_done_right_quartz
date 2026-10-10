@@ -31,17 +31,30 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 
 *Proof*  Assume a sequence $(x_{n})$ in a Hausdorff space has two distinct limits $x$ and $y$. Then there exist neighborhoods $U$ of $x$ and $V$ of $y$ such that $U ∩V = \emptyset$. However, since $x_{n} → x$ and $x_{n} → y$ , there exists an integer $N$ such that $x_{n} ∈ U$ and $x_{n} ∈V$ for $n≥N$. Thus $U∩V \neq \emptyset$, which is a contradiction. $\square$
 
->[!proposition] 
-> Every finite set in a Hausdorff topological space $(X,\tau)$ is closed. More generally, any compact set in a Hausdorff space is closed.
+> [!lemma] Super Hausdorff Lemma
+> A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] if and only if for any disjoint [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact]] sets $K_{1},K_{2}\subset X$, there are disjoint open sets $U_{1},U_{2}\subset X$ such that $K_{1}\subset U_{1}$ and $K_{2}\subset U_{2}$.
+> 
 
-*Proof*  It suffices to show for any $x∈X$ the set $\{x\}$ is closed. For any $z\in X\setminus \{x\}$, by the Hausdorff property we can find an open set $U_{z}$ containing $z$ but $x \notin U_{z}$. Thus $X \setminus\{x\} = \bigcup_{z∈X\setminus\{x\}} U_{z}$ and hence it is open. Consequently $\{x\}$ is closed. $\square$
+*Proof*  $(\Leftarrow)$ direction is immediate because any singleton is compact. Conversely, suppose $X$ is Hausdorff, we first show that any compact set $K$ and singleton set $\{x\}$ can be separated by disjoint open neighborhoods. For any $y\in K$, we can pick an open neighbourhood $V_{y}$ of $y$ and an open neighborhood $U_{x}$ of $x$ such that $V_{y} \cap U_{y}=\emptyset$. Then $\{Y_{y}\}_{y\in K}$ forms an open cover of $K$, so it has a finite subcover $\{V_{y_{i}}\}_{i=1}^{n}$. Let $U:=\cap_{i=1}^{n} U_{y_{i}}$, then $U$ and $\cup_{i=1}^{n}V_{y_{i}}$ are disjoint open neighborhoods of $x$ and $K$. 
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/super_Hausdorff_lemma.svg" style="width:43%;"/>
+Now for any two disjoint compact sets $K_{1}$ and $K_{2}$, for any $x\in K_{1}$, we can find open neighborhoods $U_{x}$ of $x$ and $V_{x}$ of $K_{2}$ such that $U_{x}\cap V_{x}=\emptyset$. Then similar to the previous case, $\{U_{x}\}_{x\in K_{1}}$ forms an open cover of $K_{1}$, so it has a finite subcover $\{U_{x_{i}}\}_{i=1}^{n}$. Let $U:=\cup_{i=1}^{n} U_{x_{i}}$, then $U$ and $\cap_{i=1}^{n}V_{x_{i}}$ are disjoint open neighborhoods of $K_{1}$ and $K_{2}$. $\square$
+
+>[!proposition] 
+> Every finite set in a [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]] $X$ is [[Topological Spaces#^0849a0|closed]]. More generally, any [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact]] set in a Hausdorff space is closed.
+
+*Proof*  It suffices to show for any $x\in X$ the set $\{x\}$ is closed. For any $z\in X\setminus \{x\}$, by the Hausdorff property we can find an open set $U_{z}$ containing $z$ but $x \notin U_{z}$. Thus $X \setminus\{x\} = \bigcup_{z∈X\setminus\{x\}} U_{z}$ and hence it is open. Consequently $\{x\}$ is closed. To show this is true for a compact set $K$, note that super Hausdorff lemma shows every $x\in K^{c}$ has an open neighborhood that is disjoint from $K$, so $K^{c}$ is open. $\square$
+
+> [!corollary]
+> Any [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact]] set $K$ in a [[Metric Spaces#^concept-e26011bc6f0a|metric space]] $X$ is closed and bounded.
+
+*Proof*  Any metric space is Hausdorff, so $K$ is closed. Without loss of generality, we can assume that $K$ is nonempty, so we can fix some $x\in K$. Note that the open balls $\{B_{r}(x)\}_{r\in \mathbb{N}}$ forms an open cover of $X$ (thus an open cover of $K$), so it has a finite subcover $\{B_{r_{i}}(x)\}_{i=1}^{n}$. Let $R=\max\{r_{i}\mid i=1,\dots,n\}$, then $K\subset B_{R}(x)$, so $K$ is bounded. $\square$ 
 
 >[!proposition] 
 > Let $(X,\mathcal{T})$ be a Hausdorff space. If $\mathcal{T}^{\prime}$ is a [[Topological Spaces#^149286|finer]] topology on $X$, then $(X,\mathcal{T}^{\prime})$ is also a Hausdorff space.
 
 *Proof*  Let $x,y\in X$ with $x\neq y$. Since $\mathcal{T}\subset \mathcal{T}^{\prime}$, the open sets in $\mathcal{T}$ are also open in $\mathcal{T}^{\prime}$. Thus there exist open sets $U,V\in \mathcal{T}\subset\mathcal{T}^{\prime}$ such that $x\in U$, $y\in V$ and $U\cap V=\emptyset$, that is $X$ is a Hausdorff space under $\mathcal{T}^{\prime}$. $\square$
 
-**Thrm**  Let $X$ be a Hausdorff space and $A⊂X$. A point $x∈X$ is a limit point of $A$ if and only if any neighborhood $U$ of $x$ contains infinitely many points of $A$.
+**Thrm**  Let $X$ be a Hausdorff space and $A\subset X$. A point $x∈X$ is a limit point of $A$ if and only if any neighborhood $U$ of $x$ contains infinitely many points of $A$.
 
 > [!theorem]
 > A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the [[Constructions on Topological Spaces#^fbf303|product space]] $X \times X$.
