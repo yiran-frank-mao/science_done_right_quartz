@@ -98,23 +98,41 @@ There is a slightly weaker notion of compactness called Lindelöf spaces, which 
 *Proof*  Suppose $X$ is compact, and $A\subset X$ is infinite, and has no limit points. Then for each $x\in A$, there exists an open neighborhood $U_x$ of $x$ such that $U_{x}\cap A=\{x\}$, and for each $x\in X\setminus A$, there exists an open neighborhood $U_x$ of $x$ such that $U_{x}\cap A=\emptyset$. Then $\{U_{x}\}_{x\in X}$ is an open cover of $X$, but it does not have a finite subcover because every $U_{x}$ for $x\in A$ is needed to cover $A$. This contradicts the compactness of $X$. $\square$
 
 >[!definition] Sequential Compactness
->Let $X$ be a topological space and $A\subset X$. We say that $A$ is *sequentially compact* if every sequence in $A$ has a subsequence converges to a point in $A$.
+>Let $X$ be a topological space and $A\subset X$. We say that $A$ is *sequentially compact* if every sequence in $A$ has a subsequence converges to a point in $A$. ^concept-61051ddd6c98
 
 > [!lemma]
-> Suppose $X$ is limit point compact, first-countable and [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]], then $X$ is sequentially compact.
+> Suppose $X$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-c564d7124948|limit point compact]], [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-b7c77a3b39fa|first-countable]] and [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]], then $X$ is sequentially compact.
 > 
 
-*Proof*  
+*Proof*  Suppose $(x_{n})_{n=1}^{\infty}$ is a sequence in $X$. If $(x_{n})_{n=1}^{\infty}$ is eventually constant, then it converges to the constant value. Otherwise, it is an infinite set in $X$, and it has a limit point $x\in X$. Since $X$ is first-countable, we can pick a nested countable neighborhood basis at $x$, say, $N_{1}\supset N_{2} \supset \cdots$. Then we can define a convergent subsequence $(x_{{k_{n}}})_{n=1}^{\infty}$ recursively as follows: pick $x_{k_{1}}$ as the point in $N_{1}\cap (x_{n})_{n=1}^{\infty} \setminus \{x\}$; assume all $\{x_{k_{1}},\dots,x_{k_{n}}\}$ have been chosen, then by the [[Separation and Hausdorff Spaces#^98cd3e|super Hausdorff lemma]], there exists an open neighbourhood $W_{n}$ of $x$ not intersecting $\{x_{1},\dots,x_{k_{n}}\}$. As $N_{1}\supset N_{2} \supset \cdots$ is a neighborhood basis, $N_{m_{n}}\subset W_{n}$ for some $m_{n}$, then we pick $x_{k_{n+1}}$ as the point in $N_{m_{n}}\cap (x_{n})_{n=1}^{\infty} \setminus \{x\}$. Then by our construction, we have $x_{k_{n}}\to x$ as $n\to \infty$. $\square$
+
+> [!remark]-
+> Here, we utilized Hausdorffness to construct a subsequence (i.e., we need to ensure that the subindex $k_{n+1}>k_{n}$ for all $n$), and first-countability to ensure the subsequence converges.
+> 
 
 > [!lemma]
-> If $X$ is sequentially compact, and second-countable, then $X$ is compact.
+> If $X$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-61051ddd6c98|sequentially compact]], and [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]], then $X$ is compact.
 > 
 
 *Proof*  Since $X$ is second-countable, it is Lindelöf, so it suffices to show that any countable open cover $\{U_{i}\}_{i\in\mathbb{N}}$ of $X$ admits a finite cover. For the sake of contradiction, suppose $X$ is not compact, then any finite subcollection does not cover the whole space, so we can pick $x_{i}\in X\setminus \bigcup_{j=1}^{i}U_{j}$ for each $i$, and $(x_{i})_{i=1}^{\infty}$ is a sequence in $X$, which has convergent subsequence, say, $x_{k_{i}} \to x$ as $i\to \infty$. Suppose $x\in U_{m}$ for some $m\in \mathbb{N}$, then there exists an integer $N$ such that $x_{k_{i}}\in U_{m}$ for all $i\geq N$. However, for sufficiently large $i$ such that $k_{i}>m$, we have $x_{k_{i}}\in X\setminus U_{m}$, which is a contradiction. $\square$
 
+In summary, the above lemmas tell us immediately that
+
 > [!theorem]
 > Compactness, limit point compactness, and sequential compactness are equivalent for metric spaces and second-countable Hausdorff spaces.
 > 
+
+## Local Compactness
+
+> [!definition] Precompactness
+> A subset $A$ of a topological space $X$ is *precompact* if its closure $\overline{A}$ is compact.
+> 
+
+
+> [!definition] Local Compactness
+> A topological space $X$ is *locally compact* if every point $x\in X$ has a compact neighbourhood.
+> 
+
 
 
 ## References and Other Resources
