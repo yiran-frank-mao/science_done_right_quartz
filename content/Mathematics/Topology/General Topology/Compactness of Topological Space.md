@@ -13,7 +13,8 @@ updated: 2025-05-19
 <b><u>e.g.</u></b> 
 - $(0, 1)$ is not compact, $\{(0, a) \mid a ∈ (0, 1)\}$ is an open cover with no finite subcover; 
 - $\R$ is not compact, $\{(−\infty, a) : a ∈ \Z\}$ has no finite subcover;
-- $[0,1]^\mathbb{N}$ with the box topology is not compact. In fact, any discrete infinite space is not compact, since the cover of singletons has no finite subcover.
+- $[0,1]^\mathbb{N}$ with the box topology is not compact. In fact, any discrete infinite space is not compact, since the cover of singletons has no finite subcover;
+- In any topological space $X$, a convergent sequence together with its limit is always compact.
 $\quad$
 
 > [!lemma]
@@ -48,7 +49,7 @@ $\quad$
 *Proof*  $U$ is an open neighborhood of any $(x,y)\in \{x\}\times Y$, so $U$ contains some $V_{(x,y)}\times W_{(x,y)}$ with $V_{(x,y)}$ an open neighborhood of $x$ in $X$ and $W_{(x,y)}$ an open neighborhood of $y$ in $Y$. Then $\{W_{(x,y)}\}_{y\in Y}$ forms an open cover of $Y$, since $Y$ is compact, we can take a finite subcover $\{W_{y_{1}},\dots,W_{y_{n}}\}$ of $Y$. Then $V=\bigcap_{i=1}^{n}V_{(x,y_{i})}$ is an open neighborhood of $x$ in $X$ and $$V\times Y=V\times\left(\bigcup_{i=1}^{n}W_{y_{i}}\right)=\bigcup_{i=1}^{n}\left(V\times W_{y_{i}}\right)\subset U.$$ $\square$
 
 > [!corollary]
-> Any finite disjoint union, quotient, or finite product of [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact spaces]] is compact.
+> Any finite [[Constructions on Topological Spaces#^e08e6f|disjoint union]], [[Constructions on Topological Spaces#^d57887|quotient]], or finite [[Constructions on Topological Spaces#^fbf303|product]] of [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact spaces]] is compact.
 
 *Proof*  Finite disjoint unions of compact spaces are compact since any open cover of the union is an open cover of each component; The quotient of a compact space is compact since [[Compactness of Topological Space#^1075ec|the continuous image of any compact space is compact]]; To show finite product of compact spaces is compact, it suffices to only consider the product of two compact spaces, say $X\times Y$. Suppose $\{U_{i}\}_{i\in I}$ is an open cover of $X\times Y$, then for any $x\in X$, there is a subcover $\{U_{i}\}_{i\in I_{x}}$ that covers $\{x\}\times Y$, which is compact. So we can pick a finite subcover, $\{U_{i}\}_{i\in J_{x}}$ where $J_{x}\subset I_{x}$ is a finite index set. By the tube lemma, we can enlarge $\{x\}\times Y$ to a tube $V_{x}\times Y$ that is also covered by $\{U_{i}\}_{i\in J_{x}}$. Now $\{V_{x}\}_{x\in X}$ is an open cover of $X$, so we can pick a finite subcover $\{V_{x_{i}}\}_{i=1}^{n}$, then $\{U_{i}\mid i\in \cup_{k=1}^{n} J_{x_{k}}\}$ is a finite subcover of $X\times Y$. $\square$
 
@@ -137,15 +138,41 @@ In summary, the above lemmas tell us immediately that
 *Proof*  This is clear because the whole space is a compact neighbourhood of every point. $\square$
 
 > [!proposition]
-> For a Hausdorff space, the followings are equivalent:
+> For a [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]], the followings are equivalent:
 > 1. $X$ is locally compact;
 > 2. Every point $x\in X$ has a precompact neighbourhood;
 > 3. $X$ has a basis of precompact open sets.
 > $\quad$
 
-*Proof*  3 $\Rightarrow$ 2 $\Rightarrow$ 1 is obvious. It remains to show 1 $\Rightarrow$ 3. Suppose $X$ is locally compact and Hausdorff, then for any $x\in X$ and an open neighborhood $U$ of $x$, note that $x$ has a compact neighborhood $K$, let $V:=U\cap K^{\circ}$. Then $V$ is an open neighborhood of $x$, and $\overline{V}=\overline{U\cap K^{\circ}}\subset \overline{U}\cap K$ is compact (ref. [[Compactness of Topological Space#^f5bb06|theorem]] and [[Compactness of Topological Space#^20b0cb|corollary]]). $\square$
+*Proof*  3 $\Rightarrow$ 2 $\Rightarrow$ 1 is obvious. It remains to show 1 $\Rightarrow$ 3. Suppose $X$ is locally compact and Hausdorff, then for any $x\in X$ and an open neighborhood $U$ of $x$, note that $x$ has a compact neighborhood $K$, let $V:=U\cap K^{\circ}$. Then $V$ is an open neighborhood of $x$, and $\overline{V}=\overline{U\cap K^{\circ}}\subset \overline{U}\cap \overline{K^{\circ}}=\overline{U}\cap K$ is compact (ref. [[Compactness of Topological Space#^f5bb06|theorem]] and [[Compactness of Topological Space#^20b0cb|corollary]]), where the last equality holds because Hausdorffness implies that $K$ is closed. $\square$
+
+So every locally compact Hausdorff space has a basis of precompact open sets. It turns out that this is even stronger:
+
+> [!lemma]
+> Let $X$ be locally compact Hausdorff. Given any neighborhood $U$ of $x \in X$, there exists a precomact neighborhood $V$ of $x$ with $\overline{V} \subset U$.
+> 
+
+## Compactly Generated Spaces
+
+> [!definition] Proper Map & Compactly Generated Space
+> A continuous map $f\colon X \to Y$ of topological spaces is *proper* if the preiamge of every compact set is compact.
+> A topological space $X$ is *compactly generated* if 
+> $$A\subset X \text{ is closed} \iff A\cap K \text{ is closed in } K \text{ for all compact } K\subset X. $$ ^concept-f338be9bfa88
+
+<u><b>e.g.</b></u>  [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-b7c77a3b39fa|First countable]] spaces and [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0adb622702af|locally compact]] spaces are compactly generated. Note that $\Rightarrow$ is straightforward by definition of the [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]]. For each of the cases, we only need to show the converse. Suppose $X$ is first countable, and $A\cap K$ is closed in $K$ for every compact $K$. As $X$ is first countable, to show $A$ is closed in $X$, we show that any convergent sequence in $A$ has its limit in $A$. Note that any convergent sequence in $A$ together its limit $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$ is a compact set in $X$, so its intersection with $A$ is closed in $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$. But the only nonempty closed subset in $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$ is the whole $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$, it follows that $x\in A$, so $A$ is closed.
+Now suppose $X$ is locally compact, and $A\cap K$ is closed in $K$ for every compact $K$. For the sake of contradiction, assume $A$ is not closed in $X$ and $x$ is a limit point of $A$ that is not in $A$. Consider a compact neighbourhood $K$ of $x$, then $K\cap A$ is closed in $K$, say $K\cap A=C\cap K$ for some closed set $C\subset X$. Then $K^{\circ}\setminus C=K^{\circ} \setminus (K\cap A)$ is some open neighborhood containing $x$, but not any point in $a$, contracting the fact that $x$ is a limit point.
+
+> [!lemma] Proper Closed Map Lemma
+> If $f \colon X \to Y$ is a proper map and $Y$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-f338be9bfa88|compactly generated]] [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]], then $f$ is a closed map.
+> 
+
+*Proof*  For any closed set $C\subset X$, if $K ⊂Y$ is compact, then $C\cap f^{-1}(K)$ is compact, so $f (C \cap f^{−1}(K)) = f (C) \cap K$ is compact and therefore closed in $K$ (because $Y$ is Hausdorff). Since this holds for every compact $K$, we conclude $f(C)$ is closed by compact generation of $Y$. $\square$
 
 ## Paracompactness
+
+> [!definition] Paracompact
+> 
+
 
 
 ## References and Other Resources
