@@ -32,6 +32,10 @@ $\quad$
 
 <u><b>e.g.</b></u>  Given a set $X$, the trivial topology is the coarsest/weakest topology on $X$ and the discrete topology is the finest/strongest topology on $X$.
 
+> [!proposition]
+> Suppose $\mathcal{T}_{1}$ and $\mathcal{T}_{2}$ are topologies on $X$. Then $\mathcal{T}_{1}$ is finer than $\mathcal{T}_{2}$ if and only if the identity map $\operatorname{id}\colon (X,\mathcal{T}_{1})\to (X,\mathcal{T}_{2})$ is continuous.
+> 
+
 >[!definition] Metrizable
 > Topologies need not come from metrics, but if there is, we say that $(T, \mathcal{T})$ is *metrizable*.
 

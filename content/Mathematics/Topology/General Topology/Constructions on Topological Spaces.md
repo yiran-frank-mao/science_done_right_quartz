@@ -106,13 +106,13 @@ $\quad$
 >  Continuous surjection that is [[Continuous Maps on Topological Spaces#^cd295d|open]] (or [[Continuous Maps on Topological Spaces#^cd295d|closed]]) is a quotient map
 > 
 
-Note that quotient spaces do **not** behave well with respect to most topological properties. Neither Hausdorffness, nor 2nd countability automatically pass to quotient spaces. It is generally hard to prove a quotient space is Hausdorff. However, for open maps, its a little easier:
+Note that quotient spaces do **not** behave well with respect to most topological properties. Neither Hausdorffness, nor 2nd countability automatically pass to quotient spaces. It is generally hard to prove a quotient space is Hausdorff. However, for open maps, it's a little easier:
 
 > [!proposition]
 > Suppose $q\colon X\to Y$ is an open quotient map then $Y$ is [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] if and only if the set $\{(x_{1},x_{2})\in X\times X\mid q(x_{1})=q(x_{2})\}$ is closed in $X\times X$.
 > 
 
-*Proof*  
+*Proof*  We denote $\Delta_q=\{(x_{1},x_{2})\in X\times X\mid q(x_{1})=q(x_{2})\}$. Since $q$ is open and surjective, $q\times q\colon X\times X \to Y\times Y$ is open and surjective. Hence, $Y$ is Hausdorff iff $\Delta=\{(y,y)\in Y\times Y\mid y\in Y \}$ is closed in $Y\times Y$, iff $\Delta^c$ is open in $Y\times Y$, iff $(q\times q)^{-1}(\Delta^c)=\Delta_q^c$ is open in $X\times X$, iff $\Delta_q$ is closed in $X\times X$ (ref. [[Separation and Hausdorff Spaces#^0496cf|theorem]]).  
 
 ## Attaching Spaces
 

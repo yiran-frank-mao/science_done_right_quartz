@@ -37,8 +37,7 @@ $\quad$
 *Proof*  Let $K ⊂X$ be closed and let $\{U_{α}\}_{α∈\Lambda}$ be an open covering of $K$. Then $\{K^{c}\cup U_{α}\}_{α∈\Lambda}$ is an open covering of $X$. Since $X$ is compact, there exist $α_{1},\dots,α_{n} ∈ \Lambda$ such that $$X=K^{c}\bigcup\left(\bigcup_{i=1}^{n}U_{\alpha_i}\right)$$It follows that $K \subset \bigcup_{i=1}^{n}U_{\alpha_{i}}$, therefore $K$ is compact. $\square$
 
 > [!corollary]
-> Any intersection of a compact set with a closed set is compact.
-> 
+> Any intersection of a compact set with a closed set is compact. ^20b0cb
 
 *Proof*  Suppose $C$ is closed and $K$ is compact. Then $C\cap K$ is closed in $K$ (w.r.t [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]]), and hence compact by the previous theorem and lemma. $\square$
 
@@ -128,11 +127,25 @@ In summary, the above lemmas tell us immediately that
 > A subset $A$ of a topological space $X$ is *precompact* if its closure $\overline{A}$ is compact.
 > 
 
-
 > [!definition] Local Compactness
-> A topological space $X$ is *locally compact* if every point $x\in X$ has a compact neighbourhood.
+> A topological space $X$ is *locally compact* if every point $x\in X$ has a compact neighbourhood. ^concept-0adb622702af
+
+> [!proposition]
+> Every [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact space]] is locally compact.
 > 
 
+*Proof*  This is clear because the whole space is a compact neighbourhood of every point. $\square$
+
+> [!proposition]
+> For a Hausdorff space, the followings are equivalent:
+> 1. $X$ is locally compact;
+> 2. Every point $x\in X$ has a precompact neighbourhood;
+> 3. $X$ has a basis of precompact open sets.
+> $\quad$
+
+*Proof*  3 $\Rightarrow$ 2 $\Rightarrow$ 1 is obvious. It remains to show 1 $\Rightarrow$ 3. Suppose $X$ is locally compact and Hausdorff, then for any $x\in X$ and an open neighborhood $U$ of $x$, note that $x$ has a compact neighborhood $K$, let $V:=U\cap K^{\circ}$. Then $V$ is an open neighborhood of $x$, and $\overline{V}=\overline{U\cap K^{\circ}}\subset \overline{U}\cap K$ is compact (ref. [[Compactness of Topological Space#^f5bb06|theorem]] and [[Compactness of Topological Space#^20b0cb|corollary]]). $\square$
+
+## Paracompactness
 
 
 ## References and Other Resources

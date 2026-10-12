@@ -4,7 +4,7 @@ updated: 2024-10-21
 completed: true
 ---
 ## 10 Oct 2026
-- Updates: [[Separation and Hausdorff Spaces]].
+- Updates: [[Separation and Hausdorff Spaces]], [[Compactness of Topological Space]].
 
 ## 28 Sep 2026
 - Updates: [[Geometry of Topological Vector Spaces]], [[Constructions on Topological Spaces]], [[Separation and Hausdorff Spaces]].

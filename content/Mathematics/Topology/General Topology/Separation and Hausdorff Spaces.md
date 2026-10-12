@@ -35,17 +35,14 @@ The $T_{n}$​ hierarchy is a way of classifying separation axioms in topology. 
 *Proof*  Assume a sequence $(x_{n})$ in a Hausdorff space has two distinct limits $x$ and $y$. Then there exist neighborhoods $U$ of $x$ and $V$ of $y$ such that $U ∩V = \emptyset$. However, since $x_{n} → x$ and $x_{n} → y$ , there exists an integer $N$ such that $x_{n} ∈ U$ and $x_{n} ∈V$ for $n≥N$. Thus $U∩V \neq \emptyset$, which is a contradiction. $\square$
 
 > [!lemma] Super Hausdorff Lemma
-> A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] if and only if for any disjoint [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact]] sets $K_{1},K_{2}\subset X$, there are disjoint open sets $U_{1},U_{2}\subset X$ such that $K_{1}\subset U_{1}$ and $K_{2}\subset U_{2}$.
-> 
-
-^98cd3e
+> A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] if and only if for any disjoint [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact]] sets $K_{1},K_{2}\subset X$, there are disjoint open sets $U_{1},U_{2}\subset X$ such that $K_{1}\subset U_{1}$ and $K_{2}\subset U_{2}$. ^98cd3e
 
 *Proof*  $(\Leftarrow)$ direction is immediate because any singleton is compact. Conversely, suppose $X$ is Hausdorff, we first show that any compact set $K$ and singleton set $\{x\}$ can be separated by disjoint open neighborhoods. For any $y\in K$, we can pick an open neighbourhood $V_{y}$ of $y$ and an open neighborhood $U_{x}$ of $x$ such that $V_{y} \cap U_{y}=\emptyset$. Then $\{Y_{y}\}_{y\in K}$ forms an open cover of $K$, so it has a finite subcover $\{V_{y_{i}}\}_{i=1}^{n}$. Let $U:=\cap_{i=1}^{n} U_{y_{i}}$, then $U$ and $\cup_{i=1}^{n}V_{y_{i}}$ are disjoint open neighborhoods of $x$ and $K$. 
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/super_Hausdorff_lemma.svg" style="width:43%;"/>
 Now for any two disjoint compact sets $K_{1}$ and $K_{2}$, for any $x\in K_{1}$, we can find open neighborhoods $U_{x}$ of $x$ and $V_{x}$ of $K_{2}$ such that $U_{x}\cap V_{x}=\emptyset$. Then similar to the previous case, $\{U_{x}\}_{x\in K_{1}}$ forms an open cover of $K_{1}$, so it has a finite subcover $\{U_{x_{i}}\}_{i=1}^{n}$. Let $U:=\cup_{i=1}^{n} U_{x_{i}}$, then $U$ and $\cap_{i=1}^{n}V_{x_{i}}$ are disjoint open neighborhoods of $K_{1}$ and $K_{2}$. $\square$
 
 >[!proposition] 
-> Every finite set in a [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]] $X$ is [[Topological Spaces#^0849a0|closed]]. More generally, any [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact]] set in a Hausdorff space is closed.
+> Every finite set in a [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]] $X$ is [[Topological Spaces#^0849a0|closed]]. More generally, any [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact]] set in a Hausdorff space is closed. ^dd7357
 
 *Proof*  It suffices to show for any $x\in X$ the set $\{x\}$ is closed. For any $z\in X\setminus \{x\}$, by the Hausdorff property we can find an open set $U_{z}$ containing $z$ but $x \notin U_{z}$. Thus $X \setminus\{x\} = \bigcup_{z∈X\setminus\{x\}} U_{z}$ and hence it is open. Consequently $\{x\}$ is closed. To show this is true for a compact set $K$, note that super Hausdorff lemma shows every $x\in K^{c}$ has an open neighborhood that is disjoint from $K$, so $K^{c}$ is open. $\square$
 
@@ -59,9 +56,26 @@ Now for any two disjoint compact sets $K_{1}$ and $K_{2}$, for any $x\in K_{1}$,
 
 *Proof*  Let $x,y\in X$ with $x\neq y$. Since $\mathcal{T}\subset \mathcal{T}^{\prime}$, the open sets in $\mathcal{T}$ are also open in $\mathcal{T}^{\prime}$. Thus there exist open sets $U,V\in \mathcal{T}\subset\mathcal{T}^{\prime}$ such that $x\in U$, $y\in V$ and $U\cap V=\emptyset$, that is $X$ is a Hausdorff space under $\mathcal{T}^{\prime}$. $\square$
 
-
 > [!theorem]
 > A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the [[Constructions on Topological Spaces#^fbf303|product space]] $X \times X$.
 > 
 
+^0496cf
+
 *Proof*  Suppose $X$ is Hausdorff, then for every distinct $x,y\in X$, there are disjoint open neighborhoods $U$, $V$ of $x$ and $y$ respectively. Then $U\times V\subset \Delta^{c}$ is an open neighborhood of $(x,y)$, hence $X\setminus\Delta$ is open and $\Delta$ is closed. The converse is exactly the same argument in reverse. $\square$
+
+## Closed Map Lemma
+
+> [!lemma] Closed Map Lemma
+> A continuous map from a compact space to a Hausdorff space is automatically [[Continuous Maps on Topological Spaces#^cd295d|closed]].
+> 
+
+*Proof*  Suppose $f\colon X\to Y$ is continuous with $X$ compact and $Y$ Hausdorff. Then for any closed $C\subset X$, $C$ is compact (ref. [[Compactness of Topological Space#^f5bb06|proposition]]), so $f(C)\subset Y$ is compact (ref. [[Compactness of Topological Space#^1075ec|theorem]]), thus $f(C)$ is closed by [[Separation and Hausdorff Spaces#^dd7357|the proposition]]. $\square$
+
+> [!remark]+ Closed Map Lemma is Useful
+> Knowing a map is closed is extremely useful. For closed maps, if it is surjective, then it is a quotient map; if it is injective, then it is a topological embedding; if it is bijective, then it is a homeomorphism.
+
+<u><b>e.g.</b></u>  We can now easily see that the map $f\colon I \to S^{1}$ such that $t\mapsto e^{2\pi i t}$ is a quotient map because $I$ is compact and $S^{1}$ is Hausdorff.
+
+
+
