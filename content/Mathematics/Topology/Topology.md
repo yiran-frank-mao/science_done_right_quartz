@@ -5,6 +5,7 @@ Topology is the branch of mathematics that studies the properties of shapes and 
 ## Contents
 
 [[General Topology]]
+[[Differential Topology]]
 [[Algebraic Topology]]
 ### Low-Dimensional Topology ^2fc8e9
 [[Knot Theory]]

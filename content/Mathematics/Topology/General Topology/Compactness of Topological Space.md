@@ -18,7 +18,7 @@ updated: 2025-05-19
 $\quad$
 
 > [!lemma]
-> If $T$ is a topological space and $S \subset T$ then $S$ is compact in the $T$ if and only if $S$ is compact in the [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]] on $S$.
+> If $T$ is a topological space and $S \subset T$ then $S$ is compact in the $T$ if and only if $S$ is compact in the [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]] on $S$.
 
 > [!theorem] Continuous Image of a Compact Set is Compact
 > Let $X$ and $Y$ be topological spaces. If $K\subseteq X$ is compact and $f \colon X → Y$ is [[Continuous Maps on Topological Spaces#^33ee5a|continuous]], then $f (K )$ is compact. ^1075ec
@@ -33,14 +33,14 @@ $\quad$
 *Proof*  
 
 >[!theorem] 
-> Let $X$ be a compact topological space and $K$ a closed [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace]] of $X$. Then $K$ is compact. ^f5bb06
+> Let $X$ be a compact topological space and $K$ a closed [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace]] of $X$. Then $K$ is compact. ^f5bb06
 
 *Proof*  Let $K ⊂X$ be closed and let $\{U_{α}\}_{α∈\Lambda}$ be an open covering of $K$. Then $\{K^{c}\cup U_{α}\}_{α∈\Lambda}$ is an open covering of $X$. Since $X$ is compact, there exist $α_{1},\dots,α_{n} ∈ \Lambda$ such that $$X=K^{c}\bigcup\left(\bigcup_{i=1}^{n}U_{\alpha_i}\right)$$It follows that $K \subset \bigcup_{i=1}^{n}U_{\alpha_{i}}$, therefore $K$ is compact. $\square$
 
 > [!corollary]
 > Any intersection of a compact set with a closed set is compact. ^20b0cb
 
-*Proof*  Suppose $C$ is closed and $K$ is compact. Then $C\cap K$ is closed in $K$ (w.r.t [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]]), and hence compact by the previous theorem and lemma. $\square$
+*Proof*  Suppose $C$ is closed and $K$ is compact. Then $C\cap K$ is closed in $K$ (w.r.t [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]]), and hence compact by the previous theorem and lemma. $\square$
 
 > [!lemma] Tube Lemma
 > Let $X$ be any [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] and $Y$ be a [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact space]]. If $x\in X$ and $U \subset X \times Y$ is an open set containing $\{x\}\times Y$, then there is an open neighborhood $V ⊂X$ of $x$ so that $V \times Y \subset U$.
@@ -159,11 +159,11 @@ So every locally compact Hausdorff space has a basis of precompact open sets. It
 > A topological space $X$ is *compactly generated* if 
 > $$A\subset X \text{ is closed} \iff A\cap K \text{ is closed in } K \text{ for all compact } K\subset X. $$ ^concept-f338be9bfa88
 
-<u><b>e.g.</b></u>  [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-b7c77a3b39fa|First countable]] spaces and [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0adb622702af|locally compact]] spaces are compactly generated. Note that $\Rightarrow$ is straightforward by definition of the [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]]. For each of the cases, we only need to show the converse. Suppose $X$ is first countable, and $A\cap K$ is closed in $K$ for every compact $K$. As $X$ is first countable, to show $A$ is closed in $X$, we show that any convergent sequence in $A$ has its limit in $A$. Note that any convergent sequence in $A$ together its limit $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$ is a compact set in $X$, so its intersection with $A$ is closed in $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$. But the only nonempty closed subset in $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$ is the whole $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$, it follows that $x\in A$, so $A$ is closed.
-Now suppose $X$ is locally compact, and $A\cap K$ is closed in $K$ for every compact $K$. For the sake of contradiction, assume $A$ is not closed in $X$ and $x$ is a limit point of $A$ that is not in $A$. Consider a compact neighbourhood $K$ of $x$, then $K\cap A$ is closed in $K$, say $K\cap A=C\cap K$ for some closed set $C\subset X$. Then $K^{\circ}\setminus C=K^{\circ} \setminus (K\cap A)$ is some open neighborhood containing $x$, but not any point in $a$, contracting the fact that $x$ is a limit point.
+<u><b>e.g.</b></u>  [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-b7c77a3b39fa|First countable]] spaces and [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0adb622702af|locally compact]] spaces are compactly generated. Note that $\Rightarrow$ is straightforward by definition of the [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]]. For each of the cases, we only need to show the converse. Suppose $X$ is first countable, and $A\cap K$ is closed in $K$ for every compact $K$. As $X$ is first countable, to show $A$ is closed in $X$, we show that any convergent sequence in $A$ has its limit in $A$. Note that any convergent sequence in $A$ together its limit $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$ is a compact set in $X$, so its intersection with $A$ is closed in $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$. But the only nonempty closed subset in $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$ is the whole $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$, it follows that $x\in A$, so $A$ is closed.
+Now suppose $X$ is locally compact, and $A\cap K$ is closed in $K$ for every compact $K$. For the sake of contradiction, assume $A$ is not closed in $X$ and $x$ is a limit point of $A$ that is not in $A$. Consider a compact neighbourhood $K$ of $x$, then $K\cap A$ is closed in $K$, say $K\cap A=C\cap K$ for some closed set $C\subset X$. Then $K^{\circ}\setminus C=K^{\circ} \setminus (K\cap A)$ is some open neighborhood containing $x$, but not any point in $a$, contradicting the fact that $x$ is a limit point.
 
 > [!lemma] Proper Closed Map Lemma
-> If $f \colon X \to Y$ is a proper map and $Y$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-f338be9bfa88|compactly generated]] [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]], then $f$ is a closed map.
+> If $f \colon X \to Y$ is a proper map and $Y$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-f338be9bfa88|compactly generated]] [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]], then $f$ is a [[Mathematics/Topology/General Topology/Continuous Maps on Topological Spaces#^cd295d|closed map]].
 > 
 
 *Proof*  For any closed set $C\subset X$, if $K ⊂Y$ is compact, then $C\cap f^{-1}(K)$ is compact, so $f (C \cap f^{−1}(K)) = f (C) \cap K$ is compact and therefore closed in $K$ (because $Y$ is Hausdorff). Since this holds for every compact $K$, we conclude $f(C)$ is closed by compact generation of $Y$. $\square$

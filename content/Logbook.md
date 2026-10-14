@@ -3,6 +3,9 @@ created: 2024-01-30
 updated: 2024-10-21
 completed: true
 ---
+## 12 Oct 2026
+- Updates: [[Compactness of Topological Space]], [[Continuous Maps on Topological Spaces]].
+
 ## 10 Oct 2026
 - Updates: [[Separation and Hausdorff Spaces]], [[Compactness of Topological Space]].
 

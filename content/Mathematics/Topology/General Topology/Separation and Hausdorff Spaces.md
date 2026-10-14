@@ -57,10 +57,7 @@ Now for any two disjoint compact sets $K_{1}$ and $K_{2}$, for any $x\in K_{1}$,
 *Proof*  Let $x,y\in X$ with $x\neq y$. Since $\mathcal{T}\subset \mathcal{T}^{\prime}$, the open sets in $\mathcal{T}$ are also open in $\mathcal{T}^{\prime}$. Thus there exist open sets $U,V\in \mathcal{T}\subset\mathcal{T}^{\prime}$ such that $x\in U$, $y\in V$ and $U\cap V=\emptyset$, that is $X$ is a Hausdorff space under $\mathcal{T}^{\prime}$. $\square$
 
 > [!theorem]
-> A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the [[Constructions on Topological Spaces#^fbf303|product space]] $X \times X$.
-> 
-
-^0496cf
+> A [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is Hausdorff if and only if the diagonal $\Delta = \{(x,x) \mid x \in X\}$ is closed in the [[Constructions on Topological Spaces#^fbf303|product space]] $X \times X$. ^0496cf
 
 *Proof*  Suppose $X$ is Hausdorff, then for every distinct $x,y\in X$, there are disjoint open neighborhoods $U$, $V$ of $x$ and $y$ respectively. Then $U\times V\subset \Delta^{c}$ is an open neighborhood of $(x,y)$, hence $X\setminus\Delta$ is open and $\Delta$ is closed. The converse is exactly the same argument in reverse. $\square$
 

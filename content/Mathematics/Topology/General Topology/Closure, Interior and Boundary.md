@@ -21,16 +21,24 @@
 > An *open neighbourhood* of $x ∈ X$ is an open set $U\in\mathcal{T}$ that contains $x$. 
 > A *neighbourhood* of $x\in X$ is a set containing an open neighborhood of $x$. ^eda962
 
+> [!proposition]
+> A set $A$ in a topological space $X$ is open iff it is a neighbourhood of each of its points. That is, for every $x\in A$, there exists an open set $U$ such that $x\in U\subset A$.
+> 
+
+*Proof*  If $A$ is a neighbourhood of each of its points, then for any $x\in A$, there exists an open set $U_{x}$ such that $x\in U\subset A$. Thus $A=\bigcup_{x\in A}U_{x}$ is a union of open sets, hence open. Conversely, if $A$ is open, then for any $x\in A$, we can take $U=A$ to satisfy the condition. $\square$
+
 >[!definition] Boundary
->The boundary $\partial H$ of a set $H\subset X$ is the set of all points $x$ with the property that every neighbourhood of $x$ meets both $H$ and its complement: $$ \partial H=\left\{x\in X\mid \text{ $U$ is open and $x\in U$ $\implies$  $U\cap H\neq \emptyset$ and $U\cap(T\setminus H)\neq\emptyset$}\right\}$$
+>The *boundary* $\partial H$ of a set $H\subset X$ is the set of all points $x$ with the property that every neighbourhood of $x$ meets both $H$ and its complement: $$ \partial H=\left\{x\in X\mid \text{ $U$ is open and $x\in U$ $\implies$  $U\cap H\neq \emptyset$ and $U\cap(T\setminus H)\neq\emptyset$}\right\}$$
 
 >[!theorem] 
 > Let $(X,τ)$ be a topological space and $A ⊂ X$. Then $\partial A =\bar{A} ∩\overline{A^{c}}$ and $\bar{A}=A\cup \partial A$.
 
+*Proof*  
+
 >[!theorem] 
 > Let $(X,τ)$ be a topological space and $A ⊂ X$. Then
->- A is open iff $A \cap \partial A = \emptyset$.
->- A is closed iff $\partial A \subset A$.
+>- $A$ is open iff $A \cap \partial A = \emptyset$.
+>- $A$ is closed iff $\partial A \subset A$.
 >$\quad$
 
 *Proof*  If $A$ is open, then every $x ∈ A$ has the neighborhood $A$ that does not intersect $A^{c}$ and thus $x \notin ∂A$. Thus $A∩∂A = \emptyset$. Conversely, if $A∩∂A=\emptyset$, then for any $x ∈A$ we have $x\notin ∂A$. Thus there is an open neighborhood $U_{x}$ of $x$ not intersecting both $A$ and $A^{c}$. Since $x ∈ U_{x} ∩ A$, we have $U_{x} ∩A^{c} =\emptyset$. Thus $U_{x} ⊂A$ and hence $A=\bigcup_{x\in A} U_{x}$ is open. $\square$
@@ -42,7 +50,9 @@
 <u><b>e.g.</b></u>  Consider $A=(0,1)\subset \R$, then $A'=[0,1]$; For $\{1/n\}_{n=1}^{\infty}\subset \R$, the only limit point is $0$.
 
 >[!theorem] 
-> Let $X$ be a topological space and $A \subset X$ . Then $$\bar{A} = A \cup A'$$
+> Let $X$ be a topological space and $A \subset X$ . Then $\overline{A} = A \cup A'$.
+
+*Proof*  For any $x\in \overline{A}$. If $x\in A$, there is nothing to prove. Otherwise, if $x\notin A'$, then there exists an open neighborhood $U$ of $x$ such that $U\cap A =\emptyset$, then $U^{c}$ is a closed set containing $A$ but not $x$, which contradicts the definition of closure. Therefore, $x\in A'$. Conversely, for any $x\in A'$, if $x\notin\overline{A}$, then there exists a closed set $C$ containing $A$ but not $x$. Then $C^{c}$ is an open neighborhood of $x$ that does not intersect $A$, which contradicts the definition of limit point. Therefore, $x\in\overline{A}$. $\square$
 
 >[!definition] Dense, Nowhere Dense and Meagre
 >A subset $A$ of $T$ is *dense* in $T$ if $\bar{A}=T$, is *nowhere dense* in $T$ if ${(\bar{A})}^\circ = \emptyset$, is *meagre* if it is a union of a countable number of nowhere dense sets. ^b560bf

@@ -18,6 +18,10 @@ completed: true
 - Let $\R$ be endowed with the standard Euclidean topology. A set $I ⊂ \R$ is connected if and only if $I$ is an [[Number Systems#^fd03c6|interval]].
 $\quad$
 
+> [!remark]+
+> Note that $A\subset X$ cannot be separated by open sets in $X$ does not imply that $A$ is connected as a subspace. For example, consider $\R$ endowed with the cofinite topology. Then $\{0,1\}$ can be separated by $\{0\}$ and $\{1\}$ in the subspace topology, but they cannot be separated by open sets in $\R$, because any nonempty open set in $\R$ has infinitely many elements.
+> 
+
 >[!theorem] 
 > Let $X$ and $Y$ be [[Topological Spaces#^concept-39ce12df888c|topological spaces]]. If $f \colon X → Y$ is continuous and $X$ is connected, then $f (X )$ is connected, i.e. the continuous image of a connected set is connected. ^affaf2
 
@@ -38,9 +42,9 @@ $\quad$
 > 
 
 >[!lemma]
-> If $A\subset X$ is connected and $A\subset B\subset \overline{A}$, then $B$ is connected. In particular, the closure of a connected set is connected. ^a3fdd1
+> If $A\subset X$ is [[Mathematics/Topology/General Topology/Connectedness and Paths#^946cc4|connected]] and $A\subset B\subset \overline{A}$, then $B$ is connected. In particular, the [[Closure, Interior and Boundary#^cf4e59|closure]] of a connected subspace is connected. ^a3fdd1
 
-*Proof*  Since $A\subset B\subset \overline{A}$, we can write $B=A\cup C$ for for some $C\subset A'$ where $A'$ is the set of limit points of $A$. Without loss of generality, we assume that $A\neq B$, so $C\neq \emptyset$. Suppose $B=U\sqcup V$ for nonempty open sets $U,V\subset X$. Since $A$ is connected, either $A\subset U$ or $A\subset V$. Without loss of generality, assume $A\subset U$. Then $C\cap V$ is nonemty. Pick some $y\in C\cap V$, then $V$ is an open neighborhood of $y$, so it must intersect $A$, yielding a contradiction. Therefore, $B$ is connected. $\square$
+*Proof*  Since $A\subset B\subset \overline{A}$, we can write $B=A\cup C$ for for some $C\subset A'$ where $A'$ is the set of limit points of $A$. Without loss of generality, we assume that $A\neq B$, so $C\neq \emptyset$. Suppose $B=U\sqcup V$ for nonempty open sets $U,V\subset B$. That is, $U=\tilde{U}\cap B$ and $V=\tilde{V}\cap B$ for open sets $\tilde{U},\tilde{V}\subset X$. Since $A$ is connected, either $A\subset U$ or $A\subset V$. Without loss of generality, assume $A\subset U$. Then $C\cap V$ is nonempty. Pick some $y\in C\cap V$, then $\tilde{V}$ is an open neighbourhood of $y$, so it must intersect $A$, hence $V$ must intersect $A$, yielding a contradiction. Therefore, $B$ is connected. $\square$
 
 > [!proposition]
 > A topological space is connected iff the only both open and closed sets are the empty set and itself. ^7a08b9

@@ -28,6 +28,5 @@ $\quad$
 > Let $f \colon X → Y$ be a function between two topological spaces $X$ and $Y$. Assume that $X=\bigcup_{\alpha} U_{\alpha}$ ,where $U_{\alpha}$ is open in $X$ for each index $α$. Then $f$ is continuous if and only if $f \big|_{U_α}$ is continuous for every $\alpha$.
 
 > [!definition] Open and Closed Map
-> A map $f\colon X\to Y$ is *open* if for every open set $U\subset X$, $f(U)$ is open in $Y$. Similarly, it is *closed* if for every closed set $C\subset X$, $f(C)$ is closed in $Y$.
-> ^cd295d
+> A map $f\colon X\to Y$ is *open* if for every open set $U\subset X$, $f(U)$ is open in $Y$. Similarly, it is *closed* if for every closed set $C\subset X$, $f(C)$ is closed in $Y$. ^cd295d
 

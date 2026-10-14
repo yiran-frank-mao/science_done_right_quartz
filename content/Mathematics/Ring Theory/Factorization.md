@@ -76,6 +76,7 @@ $\quad$
 > An integral domain $R$ is a *unique factorization domain* if it has the following properties:
 > - Factoring terminates.
 > - The irreducible factorization of an element $a$ is unique, up to order and associates.
+> $\quad$
 
 <u><b>e.g.</b></u>  Every field is vacuously a unique factorization domain. $\Z[\sqrt{5}]$ is not a unique factorization domain, because $4=(\sqrt{5}-1)(\sqrt{5}+1)=2\cdot 2= (3-\sqrt{5})(3+\sqrt{5})$.
 
@@ -85,7 +86,7 @@ $\quad$
 > - $R$ does not contain an infinitely strictly increasing chain $(a_{1})\subsetneq(a_{2})\subsetneq(a_{3})\subsetneq\cdots$ of principle ideals.
 >$\quad$ ^505c39
 
-*Proof*  Suppose the factorization terminates, then 
+*Proof*  Observe that if $r$ factors to $r=st$ in $R$, where neither of $s$, $t$ are units, then $(r)\subsetneq (s)$, so the factorization terminates if and only if there is no infinite strictly increasing chain of principle ideals. $\square$
 
 > [!theorem]
 > If $\newcommand{\Frac}{\operatorname{frac}}R$ is an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], in which factoring terminates, then $R$ is a unique factorization domain if and only if every irreducible element is prime. ^94c6f6
@@ -106,14 +107,20 @@ Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreduci
 > 
 
 > [!definition] Primitive Polynomial
-> Suppose $R$ is a unique factorization domain. $f\in R[x]$ is primitive if one of (thus all) the following equivalent conditions hold:
+> Suppose $R$ is a unique factorization domain. $f\in R[x]$ is *primitive* if one (thus all) of the following equivalent conditions hold:
 > - the greatest common divisor of its coefficients is $1$ (thus any units). 
 > - no prime in $R$ divides all the coefficients of $f$.
 > - For any prime $p\in R$, the canonical map $\pi\colon R[x] \to (R/(p))[x]$ evaluated at $f$ is nonzero.
->
->$\quad$
+>$\quad$ ^acdde9
 
 If $f\in R[x]$ is not primitive, we can always uniquely write $f=d f_{0}$ where $d$ is the greatest common divisor of the coefficients of $f$ and $f_{0}$ is primitive. Similarly in $(\Frac R)[x]$, we can write $f=cf_{0}$ where $c$ is a fraction number and $f_{0}$ is primitive in $R[x]$.
+
+> [!lemma]
+> Suppose $R$ is a UFD. There is a unique way to express any polynomial $f\in (\Frac R)[x]$ as a product of an element $c\in \Frac R$ and a primitive polynomial $f_{0}\in R[x]$ up to a unit.
+> Moreover, $f\in R[x]$ if and only if $c\in R$.
+> 
+
+*Proof by Example*  Say we have a polynomial $f(x)=6x^{2}+\frac{8}{3}x+\frac{4}{5}\in \Q[x]$, then we can uniquely write $$ f(x)= \frac{2}{15} \cdot (45x^{2}+20x + 6).$$For the "moreover" part, $c\in R$ implies $f\in R[x]$ is clear. Conversely, if $c\in \Frac R$ but not $R$, then $c f_{0}$ cannot be in $R[x]$ (think about the example above). $\square$
 
 > [!lemma] Gauss' Lemma
 > The product of primitive polynomials is primitive. ^ad087a
@@ -121,9 +128,9 @@ If $f\in R[x]$ is not primitive, we can always uniquely write $f=d f_{0}$ where 
 *Proof*  By the third definition of primitive polynomial, it suffices to show that $(R/(p))[x]$ is an integral domain. Note that $R/(p)$ is an integral domain, and so is $(R/(p))[x]$. $\square$
 
 > [!lemma]
-> $f_{0}\in R[x]$ is primitive, suppose $g\in R[x]$, such that $f_{0}\mid g$ in $(\Frac R)[x]$. Then $f_{0}\mid g$ in $R[x]$. ^a09770
+> $f_{0}\in R[x]$ is [[Factorization#^acdde9|primitive]], suppose $g\in R[x]$, such that $f_{0}\mid g$ in $(\Frac R)[x]$. Then $f_{0}\mid g$ in $R[x]$. ^a09770
 
-*Proof*  Suppose $g=f_{0}\cdot h$, so that $$g=d\cdot g_{0} = f_{0} \cdot (c\cdot h_{0})=c(f_{0}g_{0})$$By the [[Factorization#^ad087a|Gauss' lemma]], $f_{0}g_{0}$ is primitive, since there is only a unique way to express any polynomial as a product of an element in $R$ (up to a unit) and a primitive polynomial, we must have $c=d \cdot u$. $\square$
+*Proof*  Suppose $g=f_{0}\cdot h$ in $(\Frac R)[x]$, $g=d\cdot g_{0}$ for primitive $g_{0}$ in $R[x]$, and coefficient $d\in \Frac R$, and similarly $h=c\cdot h_{0}$. Then $$g=d\cdot g_{0} = f_{0} \cdot (c\cdot h_{0})=c\cdot(f_{0}h_{0})$$By the [[Factorization#^ad087a|Gauss' lemma]], $f_{0}g_{0}$ is primitive, since there is only a unique way to express any polynomial as a product of an element in $R$ and a primitive polynomial up to a unit, we must have $f_{0}h_{0}=u \cdot g_{0}$ in $R[x]$, in particular, $f_{0}\mid g$ in $R[x]$. $\square$
 
 > [!lemma]
 > A primitive $f\in R[x]$ factors non-trivially in $R[x]$ if and only if it factors non-trivially in $(\Frac R)[x]$.
@@ -136,7 +143,7 @@ If $f\in R[x]$ is not primitive, we can always uniquely write $f=d f_{0}$ where 
 > [!proposition]
 > $R$ is a unique factorization domain if and only if $R[x]$ is also a unique factorization domain.
 
-*Proof*  By the [[Factorization#^94c6f6|the theorem]], it suffices to show that every irreducible element in $R[x]$ is prime. All irreducible elements in $R[x]$ are either a constant, or a non-constant. Since $R$ is a unique factorization domain, nothing need to be shown for constant irreducible elements. Let $f\in R[x]$ be a non-constant irreducible, $f$ has to be primitive and irreducible in $(\Frac R)[x]$. Suppose $f\mid ab$ in $R[x]$, then $f\mid ab$ in $(\Frac R)[x]$. So $f\mid a$ or $f\mid b$ in $(\Frac R)[x]$, and hence in $R[x]$ by [[Factorization#^a09770|the lemma]]. $\square$
+*Proof*  By the [[Factorization#^94c6f6|the theorem]], it suffices to show that every irreducible element in $R[x]$ is prime. All irreducible elements in $R[x]$ are either a constant, or a non-constant. Since $R$ is a unique factorization domain, nothing need to be shown for constant irreducible elements. Let $f\in R[x]$ be a non-constant irreducible, $f$ has to be primitive in $R[x]$ and irreducible in $(\Frac R)[x]$. Suppose $f\mid ab$ in $R[x]$, then $f\mid ab$ in $(\Frac R)[x]$. So $f\mid a$ or $f\mid b$ in $(\Frac R)[x]$, and hence in $R[x]$ by [[Factorization#^a09770|the lemma]]. $\square$
 
 <u><b>e.g.</b></u>  $\newcommand{\Q}{\mathbb{Q}}\Q[x,y]\cong\Q[x][y]$ is a unique factorization domain, as $\Q[x]$ is a unique factorization domain.
 
