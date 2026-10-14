@@ -6,7 +6,7 @@ created: 2025-10-23
 In [[Projective Resolution of Modules]], we've introduced enough homological algebras. Now we can state and prove the Universal Coefficient Theorem, which relates homology and cohomology via the $\operatorname{Ext}$ and $\operatorname{Hom}$ functors.
 
 > [!theorem] Universal Coefficient Theorem
-> Let $C$ be a chain complex of free abelian groups  and $G$ be an [[Groups, Order and Subgroups#^6d511a|abelian group]]. Then for each $n$, there is a [[Abelian Categories#^0c5eb9|short exact sequence]]:
+> Let $C$ be a chain complex of free abelian groups  and $G$ be an [[Groups, Order and Subgroups#^6d511a|abelian group]]. Then for each $n$, there is a [[Chain Complexes and Abelian Categories#^0c5eb9|short exact sequence]]:
 > $$\newcommand{\Ext}{\operatorname{Ext}}\newcommand{\Hom}{\operatorname{Hom}} 0 \to \Ext(H_{n-1}(C,\Z), G) \to H^n(C;G) \to \Hom(H_{n}(C,\Z), G) \to 0$$
 > This sequence splits, but the splitting is not natural. ^2162f3
 

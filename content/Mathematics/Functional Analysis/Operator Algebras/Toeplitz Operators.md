@@ -95,7 +95,7 @@ A remarkable result is that this algebra contains all compact operators and is g
 The structure of the Toeplitz algebra is completely characterized by the following fundamental theorem.
 
 > [!theorem] Structure of the Toeplitz Algebra
-> The C\*-algebra of compact operators $K(H^2)$ is a closed ideal in the Toeplitz algebra $\A$. The quotient algebra is $*$-isomorphic to the algebra of continuous functions on the circle, $C(S^{1})$. This relationship is summarized by the [[Abelian Categories#^0c5eb9|short exact sequence]]:
+> The C\*-algebra of compact operators $K(H^2)$ is a closed ideal in the Toeplitz algebra $\A$. The quotient algebra is $*$-isomorphic to the algebra of continuous functions on the circle, $C(S^{1})$. This relationship is summarized by the [[Chain Complexes and Abelian Categories#^0c5eb9|short exact sequence]]:
 > $$ 0 \to K(H^2) \xrightarrow{i} \A \xrightarrow{\pi} C(S^{1}) \to 0. $$
 > The symbol map $\pi\colon \A \to C(S^{1})$ is a $*$-homomorphism defined by $\pi(T_\varphi) = \varphi$, with $\ker(\pi) = K(H^2)$.
 

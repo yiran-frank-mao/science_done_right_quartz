@@ -9,7 +9,7 @@ updated: 2025-02-11
 
 Let's recall the definition of exact sequences in the context of abelian groups:
 
-![[Abelian Categories#^a7688c]]
+![[Chain Complexes and Abelian Categories#^a7688c]]
 
 > [!definition] Good Pair
 > A pair $(X, A)$ with $A \subset X$ is called a *good pair* if $A$ is a non-empty [[Topological Spaces#^0849a0|closed]] subset of $X$ that has an open neighborhood which deformation retracts onto $A$. ^3637ee
@@ -24,7 +24,7 @@ To prove this theorem we need the notion of relative homology and several lemmas
 ##  From Short to Long Exact Sequences
 
 > [!lemma] 
-> For any pair $(X,A)$, there is a [[Abelian Categories#^0c5eb9|long exact sequence]] relating their homology groups:
+> For any pair $(X,A)$, there is a [[Chain Complexes and Abelian Categories#^0c5eb9|long exact sequence]] relating their homology groups:
 > $$\cdots \to H_n(A) \xrightarrow{i_{*}} H_n(X) \xrightarrow{j_{*}} H_n(X,A) \xrightarrow{\partial} H_{n-1}(A) \to \cdots$$
 
 This sequence arises from a short exact sequence of chain complexes. Recall that the relative chain group is defined as the quotient $C_n(X,A) = C_n(X)/C_n(A)$. This gives a short exact sequence of chain complexes: $$0 \to C_*(A) \xrightarrow{i_*} C_*(X) \xrightarrow{j_*} C_*(X,A) \to 0$$where $i_*$ is induced by the inclusion and $j_*$ is the projection. The existence of the long exact sequence in homology is a general algebraic result stated as follows:

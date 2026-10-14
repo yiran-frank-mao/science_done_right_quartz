@@ -53,7 +53,7 @@ The properties of singular homology can be distilled into a set of axioms, known
 > A *homology theory* $H$ is a sequence of [[Functoriality#^653948|functors]] $H_{n}\colon \mathsf{Pair} \to \mathsf{Ab}$ for $n \in \mathbb{Z}$, equipped with [[Naturality#^d73db0|natural transformation]] $\partial_{n}\colon H_{n}(X,A) \to H_{n-1}(A)$, satisfying the following axioms:
 > 1.  Homotopy Invariance: If $f \simeq g: (X, A) \to (Y, B)$, then $H_{n}(f) = H_{n}(g)$.
 > 2.  Excision: For any $U \subset A$ such that $\bar{U} \subset \text{int}(A)$, the inclusion $i\colon (X \setminus U, A \setminus U) \to (X,A)$ induces an isomorphism $H_{n}(i)\colon H_{n}(X \setminus U, A \setminus U) \cong H_{n}(X, A)$.
-> 3.  Long Exact Sequence: For any pair $(X, A)$, there is a [[Abelian Categories#^0c5eb9|long exact sequence]]:
+> 3.  Long Exact Sequence: For any pair $(X, A)$, there is a [[Chain Complexes and Abelian Categories#^0c5eb9|long exact sequence]]:
 >    $$ \cdots \to H_{n}(A) \to H_{n}(X) \to H_{n}(X,A) \xrightarrow{\partial_n} H_{n-1}(A) \to \cdots $$
 > 4.  Additivity: If $X$ is a disjoint union $X = \coprod_\alpha X_\alpha$, then the inclusion maps $i_\alpha\colon X_\alpha \to X$ induce an isomorphism $\bigoplus_\alpha H_{n}(i_\alpha): \bigoplus_\alpha H_{n}(X_\alpha) \cong H_{n}(X)$.
 >

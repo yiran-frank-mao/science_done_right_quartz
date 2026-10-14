@@ -1,4 +1,4 @@
-The notion of abelian category is a generalization of $\mathbf{Ab}$, the category of abelian groups.
+The notion of abelian category is a generalization of $\mathsf{Ab}$, the category of abelian groups.
 
 > [!definition] Abelian Category
 > A [[Monoidal Categories#^610215|preadditive]] category is *abelian* if 
@@ -13,7 +13,7 @@ The notion of abelian category is a generalization of $\mathbf{Ab}$, the categor
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/abelian_category_kernel.svg" style="width:48%;"/>
 
 > [!definition] Exact Sequence
-> A sequence of morphisms between objects in an [[Abelian Categories#^3c8ffc|abelian category]] $\dots \xrightarrow{f_{n-1}} A_n \xrightarrow{f_n} A_{n+1} \xrightarrow{f_{n+1}} \dots$ is *exact* at $A_n$ if $\text{im}(f_{n-1}) = \ker(f_n)$. The sequence is an *exact sequence* if it is exact at every object.
+> A sequence of morphisms between objects in an [[Chain Complexes and Abelian Categories#^3c8ffc|abelian category]] $\dots \xrightarrow{f_{n-1}} A_n \xrightarrow{f_n} A_{n+1} \xrightarrow{f_{n+1}} \dots$ is *exact* at $A_n$ if $\text{im}(f_{n-1}) = \ker(f_n)$. The sequence is an *exact sequence* if it is exact at every object.
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/exact_sequence_of_groups.svg" alt="exact_sequence_of_groups" style="width:50%;"/> ^a7688c
 
 > [!definition] Short Exact Sequence & Long Exact Sequence

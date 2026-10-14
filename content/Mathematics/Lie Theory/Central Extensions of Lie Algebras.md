@@ -1,7 +1,17 @@
+## Lie Algebra Cohomology
+Lie algebra cohomology is a cohomology theory for Lie algebras that extends [[de Rham Cohomology|de Rham cohomology]] methods to study Lie groups and their algebras. 
+
+> [!definition] Lie Algebra Cohomology
+> Let $\newcommand{\g}{\mathfrak{g}}\g$ be a Lie algebra, denote $U_{\g}$ as its universal enveloping algebra, and $M$ be a representation of $\g$ (i.e., a $U_{\g}$-module). 
+> 
+
+
+
+
 ## Extension of Lie Algebras
 
 > [!definition] Lie Algebra Extension
-> An *extension* of a [[Lie Algebra#^5007ba|Lie algebra]] $\newcommand{\g}{\mathfrak{g}}\g$ is another Lie algebra $\hat{\g}$ that is equipped with a [[Relations and Functions#^042daf|surjective]] Lie algebra homomorphism to $\g$.
+> An *extension* of a [[Lie Algebra#^5007ba|Lie algebra]] $\g$ is another Lie algebra $\hat{\g}$ that is equipped with a [[Relations and Functions#^042daf|surjective]] Lie algebra homomorphism to $\g$.
 > For non-trivial extensions, this homomorphism has a kernel $\newcommand{\a}{\mathfrak{a}}\a \subset \hat{g}$, and one says that *$\hat{\g}$ is an extension of $\g$ by $\a$*.
 > In particular, if $\a$ happens to be abelian, i.e., its Lie bracket is trivial, then we call it an *abelian extension*.
 
@@ -16,7 +26,7 @@
 > [!definition] Projective Representation
 > Let $\g$ be a [[Lie Algebra#^5007ba|Lie algebra]] over a field $F$, $V$ be an $F$-vector space. A *projective representation* loosens the requirement of a Lie algebra homomorphism, it allows $\newcommand{\gl}{\mathfrak{gl}}\rho\colon \g \to \gl (V)$ to only satisfy
 > $$ \rho([X,Y]) = [\rho(X), \rho(Y)] - \omega(X,Y) I, $$
-> for some (typically central) bilinear map $\omega\colon \g \times  \g \to \C$ and identity $I\in\gl(V)$.
+> for some (typically central) bilinear map $\omega\colon \g \times  \g \to F$ and identity $I\in\gl(V)$.
 > Alternatively, it is a map $\newcommand{\pu}{\mathfrak{pu}}\rho\colon \g \to \pu(V)$.
 
 For a projective representation, the usual Lie bracket relations are preserved up to a scalar, which obstructs them from being honest (linear) representations in $\gl (V)$.
@@ -28,3 +38,4 @@ To correct this, one can enlarge the Lie algebra by adding a central element gov
 
 *Proof*  Define $\hat{\rho}\colon \hat{\g}\to \gl (V)$ by $\hat{\rho}(X):=\rho(X)$ and $\hat{\rho}(Z)=I$. Then $$\begin{aligned}
 \hat{\rho}([X\oplus tZ , Y\oplus sZ]_{\hat{\g}}) &= \rho([X,Y]) + \omega(X,Y) I \\ &= [\rho(X),\rho(Y)] \\ &= [\rho(X)+t I, \rho(Y)+s I] \\ &= [\hat{\rho}(X\oplus t Z), \hat{\rho}(Y\oplus s Z)].\end{aligned}$$Therefore, $\hat{\rho}$ forms a linear representation. $\square$
+
