@@ -74,5 +74,4 @@ Now for any two disjoint compact sets $K_{1}$ and $K_{2}$, for any $x\in K_{1}$,
 
 <u><b>e.g.</b></u>  We can now easily see that the map $f\colon I \to S^{1}$ such that $t\mapsto e^{2\pi i t}$ is a quotient map because $I$ is compact and $S^{1}$ is Hausdorff.
 
-
-
+## Regular Space $(T_{3})$

@@ -10,11 +10,11 @@
 >$\quad$
 
 >[!proposition] 
->**Prop**  Cones form a category $\mathbf{Cone}(D)$ for $D\in\obj\mathsf{C}$ by its morphisms are defined by morphisms in $\mathsf{C}$: $$\vartheta\colon (C,\lambda)\to(C^\prime,\lambda^\prime)$$such that the following diagram commutes in $\mathsf{C}$ for all $j\in\obj \mathsf{J}$: 
+> Cones form a category $\mathbf{Cone}(D)$ for $D\in\obj\mathsf{C}$ by its morphisms are defined by morphisms in $\mathsf{C}$: $$\vartheta\colon (C,\lambda)\to(C^\prime,\lambda^\prime)$$such that the following diagram commutes in $\mathsf{C}$ for all $j\in\obj \mathsf{J}$: 
 >![|200](https://svgshare.com/i/15ke.svg)
 
 >[!definition] Limit & Colimit
-> A *limit* for a diagram $D \colon \mathsf{J} \to \mathsf{C}$ is a [[Objects and Elements#^a7dd74|terminal object]] in $\mathbf{Cone}(D)$, written as $$\lim_{\leftarrow} D$$A finite limit is a limit for a diagram on a finite index category $\mathsf{J}$. 
+> A *limit* for a diagram $D \colon \mathsf{J} \to \mathsf{C}$ is a [[Objects and Elements#^a7dd74|terminal object]] in $\mathsf{Cone}(D)$, written as $$\lim_{\leftarrow} D$$A finite limit is a limit for a diagram on a finite index category $\mathsf{J}$. 
 > A *colimit* is an [[Objects and Elements#^a7dd74|initial object]] in the category of cones under $D$. ^d7e9c8
 
 ## Continuity
@@ -39,6 +39,13 @@
 ><u><b>e.g.</b></u>  $\mathbf{Cat}$ has all small limits and colimits, thus complete.
 
 **Prop**  A category is complete if and only if it has equalizers (of all pairs of morphisms) and all (small) products.
+
+## Direct Limit
+
+> [!definition] Direct System
+> Let $\mathsf{C}$ be a 
+> 
+
 
 ## Inverse Limit
 

@@ -43,5 +43,5 @@ A maximal element in a partially ordered set $X$ is an element $x ∈X$ such tha
 > 
 
 
-## Directed Set
+
 
