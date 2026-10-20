@@ -39,7 +39,7 @@ A maximal element in a partially ordered set $X$ is an element $x ∈X$ such tha
 > 
 
 > [!definition] Directed Set
-> A *directed set* is a preordered set $(X,\lesssim)$ such that for any $x,y∈X$, there exists $z∈X$ with $x≤z$ and $y≤z$. In other words, every finite subset has an upper bound. ^fa7f24
+> A *directed set* is a preordered set $(X,\lesssim)$ such that for any $x,y∈X$, there exists $z\in X$ with $x\lesssim z$ and $y\lesssim z$. In other words, every finite subset has an upper bound. ^fa7f24
 > 
 
 

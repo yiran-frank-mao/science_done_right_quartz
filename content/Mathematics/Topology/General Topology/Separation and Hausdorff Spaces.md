@@ -75,3 +75,37 @@ Now for any two disjoint compact sets $K_{1}$ and $K_{2}$, for any $x\in K_{1}$,
 <u><b>e.g.</b></u>  We can now easily see that the map $f\colon I \to S^{1}$ such that $t\mapsto e^{2\pi i t}$ is a quotient map because $I$ is compact and $S^{1}$ is Hausdorff.
 
 ## Regular Space $(T_{3})$
+
+
+## Normal Space $(T_{4})$
+
+> [!lemma] Urysohn's Lemma
+> A topological space $X$ is normal if and only if for any two disjoint closed sets $A,B\subset X$, there exists a continuous function $f\colon X\to [0,1]$ such that $f(A)=\{0\}$ and $f(B)=\{1\}$. ^d8e2c
+
+> [!corollary] Bump Functions
+> Suppose $X$ is a normal Hausdorff space, and $A\subset X$ is closed. Then for any open neighborhood $U$ of $A$, there exists a continuous function $f\colon X\to \R$ such that $f(A)=\{1\}$ and $\supp f \subset U$.
+
+*Proof*
+
+<u><b>e.g.</b></u>  If $0 < r_1 < r_2$, then there exists $H_{r_1, r_2} \in C^{\infty}(\mathbb{R}^n)$ such that  
+> - $H(x) = 1$ for $x \in \overline{B_{r_1}(0)}$,  
+> - $0 < H(x) < 1$ for $x \in B_{r_2}(0) \setminus B_{r_1}(0)$, and  
+> - $H(x) = 0$ for $x \notin B_{r_2}(0)$.
+> $\quad$
+
+*Proof*  Let $f\colon \R\to \R$ satisfy $$f(t)=\begin{cases}e^{-1/t}, \quad & t>0, \\ 0, \quad & t\leq 0.\end{cases}$$Then the function $H\colon \R^{n} \to \R$ such that $$H(x):=\frac{f(r_{2}-|x|)}{f(r_{2}-|x|)+f(|x|-r_{1})}$$will do the job. $\square$
+
+> [!definition] Continuous Partition of Unity
+> Suppose $\mathcal{A} = \{U_{\alpha}\}_{\alpha \in A}$ is an open cover of $X$. A *partition of unity* subordinate to the cover $\mathcal{A}$ is a collection of continuous functions $\{\rho_{\alpha}\colon X\to \R\}_{\alpha \in A}$ satisfying:
+> 
+> 1. For every $x \in X$ and every $\alpha \in A$, $0 \leq \rho_{\alpha}(x) \leq 1$;
+> 2. The support $\operatorname{supp}(\rho_{\alpha}) = \{x \in M : \rho_{\alpha}(x) \neq 0\}$ is contained in $U_{\alpha}$ for each $\alpha \in A$;
+> 3. The set of supports $\{\operatorname{supp}(\rho_{\alpha}) : \alpha \in A\}$ is locally finite;
+> 4. For each $x \in X$, $\sum_{\alpha \in A} \rho_{\alpha}(x) = 1$.
+>$\quad$
+
+> [!theorem]
+> Let $X$ be paracompact Hausdorff space and $\mathcal{A} = \{U_{\alpha}\}_{\alpha \in A}$ an indexed open cover. Then there exists a continuous partition of unity subordinate to the cover $\mathcal{A}$.
+> 
+
+*Proof*  

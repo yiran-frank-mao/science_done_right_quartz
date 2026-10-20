@@ -39,7 +39,10 @@ $\quad$
 > [!definition] Splitting, Section & Retraction
 > A *split monomorphism* (*epimorphism*) is an arrow with a left (right) inverse. That is, given morphisms $e \colon X \to A$ and $s \colon A \to X$ such that $es = 1_{A}$, then $e$ is a split epimorphism and $s$ is a split monomorphism. $s$ is also called a *section* of $e$, and $e$ is called a *retraction* of $s$. The object $A$ is called a *retract* of $X$. ^concept-4f86c293e68b
 
-<u><b>e.g.</b></u>  In $\mathsf{Set}$, every monomorphism splits except those with domain $\emptyset$.
+<u><b>e.g.</b></u>  
+- In $\mathsf{Set}$, every monomorphism splits except those with domain $\emptyset$.
+- In $\mathsf{Top}$, a continuous map is a split monomorphism if and only if it is a topological embedding whose image is a retract of the codomain.
+$\quad$
 
 Functors not necessarily preserve monomorphisms and epimorphisms. For example, the forgetful functor $U\colon \mathsf{Group}\to\mathsf{Set}$ preserves monomorphisms but not epimorphisms. Consider the inclusion $\{*\} \to \mathbb{Z}$ of groups, which is an epimorphism in $\mathsf{Group}$ but not in $\mathsf{Set}$. However, functors do preserve split monomorphisms and split epimorphisms.
 

@@ -49,7 +49,7 @@ Indeed, the mapping $f\mapsto \{a_{n}(f)\}_{n\in \Z}$ makes $L^{2}(S^{1})$ [[Hil
 ## Unitary Mappings
 
 > [!definition] Unitary Mapping
-> A mapping $U\colon \H_{1}\to \H_{2}$ between two Hilbert spaces is called *unitary* if it is a vector space isomorphism and preserves the inner product, i.e. $$\langle U(x),U(y)\rangle_{\H_{2}}=\langle x,y\rangle_{\H_{1}}$$for all $x,y\in \H_{1}$. We call two Hilbert spaces *unitarily equivalent* if there exists a unitary mapping between them. ^68e362
+> A mapping $U\colon \H_{1}\to \H_{2}$ between two Hilbert spaces is called *unitary* if it is a vector space isomorphism and preserves the inner product, i.e. $$\langle U(x),U(y)\rangle_{\H_{2}}=\langle x,y\rangle_{\H_{1}}$$for all $x,y\in \H_{1}$. We call two Hilbert spaces *unitarily equivalent* (i.e., isomorphic) if there exists a unitary mapping between them. ^68e362
 
 > [!theorem]
 > Any two separable Hilbert spaces are unitarily equivalent if and only if they have the same dimension.

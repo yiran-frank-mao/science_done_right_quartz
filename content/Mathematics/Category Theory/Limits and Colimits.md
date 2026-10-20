@@ -3,10 +3,11 @@
 >[!definition] Diagram
 > Suppose $\mathsf{C}$ is a category and $\mathsf{J}$ is a [[Structure of Categories#^20e64e|small category]]. A *diagram of type $\mathsf{J}$* in $\mathsf{C}$ is a functor $D\colon \mathsf{J}\to\mathsf{C}$. We write the objects in the index category $\mathsf{J}$ lower case, $i, j, \dots$ and the values of the functor $D \colon \mathsf{J} → \mathsf{C}$ in the form $D_{i},D_{j},\dots$ etc.
 
->[!definition] Cone
+>[!definition] Cone & Cocone
 > A *cone* over a diagram $D \colon \mathsf{J} \to \mathsf{C}$ with the *summit* or *apex* $X \in \mathsf{C}_{0}$ is a [[Naturality#^d73db0|natural transformation]]  $\lambda\colon C \Rightarrow D$ whose domain $C\colon \mathsf{J}\to\mathsf{C}$ is the constant functor at $X$. The components $λ_j \colon C \to D_{j}$ are called the *legs of the cone*. Explicitly:
->- The data of a cone over $D\colon \mathsf{J} → \mathsf{C}$ with summit $C$ is a collection of morphisms $λ_j \colon C \to D_{j}$, indexed by the objects $j ∈ \obj\mathsf{J}$.
->- A family of morphisms $(λ_j \colon C → D_{j})_{j∈\obj\mathsf{J}}$ defines a cone over $D$ if and only if, for each morphism $f \colon k → j$ in $\mathsf{J}$, the following triangle commutes in $\mathsf{C}$:![|200](https://svgshare.com/i/15kz.svg)
+>- The data of a cone over $D\colon \mathsf{J} → \mathsf{C}$ with summit $C$ is a collection of morphisms $λ_j \colon C \to D_{j}$, indexed by the objects $j \in \mathsf{J}_{0}$.
+>- A family of morphisms $(\lambda_{j} \colon C \to D_{j})_{j\in\mathsf{J}_{0}}$ defines a cone over $D$ if and only if, for each morphism $f_{kj} \colon j \to k$ in $\mathsf{J}$, the following triangle commutes in $\mathsf{C}$:
+>  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/category_cone.svg" style="width:60%;"/>
 >$\quad$
 
 >[!proposition] 
@@ -40,10 +41,14 @@
 
 **Prop**  A category is complete if and only if it has equalizers (of all pairs of morphisms) and all (small) products.
 
-## Direct Limit
+## Direct Limit and Inverse Limit
+
+An inverse limit is the same thing as a limit. (Similarly, a direct limit is the same thing as a colimit.) In this context, an inverse system is the same thing as a diagram, and an inverse cone is the same thing as a cone.
 
 > [!definition] Direct System
-> Let $\mathsf{C}$ be a 
+> Let $\mathsf{C}$ be a category, $(I, \lesssim)$ a [[Mathematics/Set Theory/Preorder, Partial Order and Posets#^fa7f24|directed set]]. Suppose $\{X_{i}\}_{i\in I}$ is a family of objects with morphisms $\{f_{ij}\colon X_{i}\to X_{j}\}$ for $i\lesssim j$ with the following properties:
+> - $f_{ii}=\id_{X_{i}}$ for all $i\in I$.
+> - 
 > 
 
 

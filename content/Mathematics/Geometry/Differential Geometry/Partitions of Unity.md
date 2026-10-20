@@ -12,16 +12,6 @@ In this section, we develop bump functions and partitions of unity, which are to
 > [!theorem]  
 > Let $M$ be a manifold and $\mathcal{A}$ an open cover. Then there exists a smooth partition of unity subordinate to $\mathcal{A}$.
 
-First, we will develop the basic building blocks for the construction, which are smooth compactly supported functions on Euclidean space: 
-
-> [!lemma]  
-> If $0 < r_1 < r_2$, then there exists $H_{r_1, r_2} \in C^{\infty}(\mathbb{R}^n)$ such that  
-> - $H(x) = 1$ for $x \in \overline{B_{r_1}(0)}$,  
-> - $0 < H(x) < 1$ for $x \in B_{r_2}(0) \setminus B_{r_1}(0)$, and  
-> - $H(x) = 0$ for $x \notin B_{r_2}(0)$.
-> $\quad$
-
-*Proof*  Let $f\colon \R\to \R$ satisfy $$f(t)=\begin{cases}e^{-1/t}, \quad & t>0, \\ 0, \quad & t\leq 0.\end{cases}$$Then the function $H\colon \R^{n} \to \R$ such that $$H(x):=\frac{f(r_{2}-|x|)}{f(r_{2}-|x|)+f(|x|-r_{1})}$$will do the job. $\square$
 
 ## Applications of Partitions of Unity
 

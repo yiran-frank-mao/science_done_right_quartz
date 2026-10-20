@@ -4,12 +4,22 @@ updated: 2024-10-20
 tags:
   - differential-geometry
 ---
-A *manifold* itself is a purely topological object, but it is the most basic object in differential geometry. To do calculus on a manifold, we need to equip it with a *smooth structure,* which is given by an atlas of compatible charts. So the data of a smooth manifold is a manifold **together with** a smooth structure. We will discuss these concepts in detail in the following sections.
+A *manifold* itself is a purely topological object, but it is the most basic object in differential geometry. To do calculus on a manifold, we need to equip it with a *smooth structure,* which is given by an atlas of compatible charts. So the data of a *smooth manifold* is a manifold **together with** a smooth structure. We will discuss these concepts in detail in the following sections.
 
 ## Topological Manifolds
 
+> [!definition] Locally Euclidean Space
+> A topological space $X$ is said to be *locally Euclidean of dimension $n$* if each point $x\in X$ has an open neighbourhood that is homeomorphic to an open subset of $\newcommand{\R}{\mathbb{R}}\R^{n}$.
+> 
+
+> [!remark]
+> In the definition, 
+> 
+
+e.g.  A topological space is locally Euclidean of dimension $0$ iff it is discrete.
+
 >[!definition] Manifold & Manifold with Boundary
-> An *$n$-dimensional manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]] [[Topological Spaces#^concept-39ce12df888c|topological space]] $M$ with the property that each point has a neighbourhood that is [[Isometries and Homeomorphisms#^85034b|homeomorphic]] to an open subset of $\newcommand{\R}{\mathbb{R}}\R^{n}$. 
+> An *$n$-dimensional manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]] locally Euclidean space of dimension $n$.
 > A *manifold with boundary* is a Hausdorff and second-countable topological space $M$ such that each point has a neighbourhood homeomorphic to an open subset of the closed half-space $H^{n}=\{(x_{1},\dots,x_{n})\in \R^{n}: x_{n}\geq 0\}$. The *boundary* of $M$ is the set of points that correspond to points in $H^{n}$ with $x_{n}=0$.
 > A *closed manifold* is a [[Compactness of Topological Space#^da2511|compact]] manifold without boundary. ^3407e4
 
