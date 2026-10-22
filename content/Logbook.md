@@ -23,7 +23,7 @@ completed: true
 
 
 ## 5 Sep 2026
-- Updates: [[Banach Spaces]], [[Von Neumann Algebras]].
+- Updates: [[Banach Spaces]], [[Von Neumann Bicommutant Theorem]].
 
 ## 19 Jul 2026
 - Updates: [[Topological Spaces]], [[Construction of Sets]]. 

@@ -25,8 +25,9 @@ Operator algebras are self-adjoint (closed under taking Hermitian adjoints), top
 [[Crossed Products of C*-Algebras]]
 [[C*-Dynamical Systems with Integer Actions]]
 ### Von Neumann Algebras
-[[Von Neumann Algebras]]
-[[The Double Commutant Theorem]]
+[[Von Neumann Bicommutant Theorem]]
+[[Finite Dimensional von Neumann Algebras]]
+[[Projections in von Neumann Algebras]]
 [[Tomita-Takesaki Theory]]
 ### Factors and Subfactors
 [[Factors and Type Classification]]

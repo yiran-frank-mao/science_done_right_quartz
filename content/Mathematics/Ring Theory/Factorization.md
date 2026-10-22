@@ -78,6 +78,8 @@ $\quad$
 > - The irreducible factorization of an element $a$ is unique, up to order and associates.
 > $\quad$
 
+^concept-592ec03e9ddd
+
 <u><b>e.g.</b></u>  Every field is vacuously a unique factorization domain. $\Z[\sqrt{5}]$ is not a unique factorization domain, because $4=(\sqrt{5}-1)(\sqrt{5}+1)=2\cdot 2= (3-\sqrt{5})(3+\sqrt{5})$.
 
 > [!lemma]
@@ -152,6 +154,16 @@ If $f\in R[x]$ is not primitive, we can always uniquely write $f=d f_{0}$ where 
 By [[Factorization#^4f5a64|the corollary]], we can tell whether a polynomial is irreducible in $\Q[x]$ by checking its irreducibility in $\Z[x]$. Moreover, it is helpful to check its factorization in $\Z/(p)[x]=\Z_{p}[x]$ for some prime $p$. Because, there are only $p$ elements to check in $\Z_{p}$, and the factorization in $\Z_{p}[x]$ can be lifted back to $\Z[x]$.
 
 <u><b>e.g.</b></u>  Consider $f(x)=x^{2}+x+2$. In $\Z_{3}[x]$, it is irreducible because $$f([0])=[2]\neq [0],\quad f([1])=[1]\neq [0],\quad f([2])=[2]\neq [0].$$So $f$ is irreducible in $\Z[x]$, thus in $\Q[x]$.
+
+Let us make it formal:
+
+> [!proposition]
+> Let $R$ be an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], $I\triangleleft R$ a proper ideal, and $f\in R[x]$ a monic polynomial. If the induced $\overline{f}$ is irreducible in $(R/I)[x]$, then $f$ is irreducible in $R[x]$.
+> Moreover, if $R$ is a UFD, monicity can be weakened: it suffices that $f$ is primitive and that $\deg \overline{f}=\deg f$.
+> 
+
+*Proof*  Suppose $R$ is an integral domain, and $I\triangleleft R$ is an ideal. We prove the contrapositive, and without loss of generality assume that $f(x)$ is not a constant. Suppose $f(x)=g(x)h(x)$ in $R[x]$ for nonunits $g$ and $h$. Then $\overline{f}(x)=\overline{g}(x)\cdot \overline{h}(x)$ in $(R/I)[x]$. Since $f$ is monic, both $g$ and $h$ are monic. Therefore, $\overline{g}$ and $\overline{h}$ are monic, and they are nonunits in $(R/I)[x]$, so $\overline{f}$ is reducible in $(R/I)[x]$.
+Now if $R$ is a UFD, and $f$ is primitive, then by [[Factorization#^ad087a|Gauss' lemma]], $g$ and $h$ are also primitive. Since $\deg \overline{f}=\deg f$, we have $\deg \overline{g}=\deg g$ and $\deg \overline{h}=\deg h$. Therefore, $\overline{g}$ and $\overline{h}$ are nonunits in $(R/I)[x]$, so $\overline{f}$ is reducible in $(R/I)[x]$. $\square$
 
 > [!proposition] Eisenstein's Criterion
 > Let $f(x)=a_{n}x^{n}+\cdots+a_{0}\in\Z[x]$. Suppose there is a prime $p$ such that:

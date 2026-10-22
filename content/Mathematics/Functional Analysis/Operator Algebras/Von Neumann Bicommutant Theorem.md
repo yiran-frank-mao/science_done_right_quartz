@@ -12,4 +12,6 @@
 > 
 
 
-
+> [!theorem] Bicommutant Theorem
+> A $\ast$-subalgebra $M$ of $B(\H)$ is a von Neumann algebra if and only if $M=M''$.
+> 
