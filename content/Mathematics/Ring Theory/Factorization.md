@@ -163,7 +163,7 @@ Let us make it formal:
 > 
 
 *Proof*  Suppose $R$ is an integral domain, and $I\triangleleft R$ is an ideal. We prove the contrapositive, and without loss of generality assume that $f(x)$ is not a constant. Suppose $f(x)=g(x)h(x)$ in $R[x]$ for nonunits $g$ and $h$. Then $\overline{f}(x)=\overline{g}(x)\cdot \overline{h}(x)$ in $(R/I)[x]$. Since $f$ is monic, both $g$ and $h$ are monic. Therefore, $\overline{g}$ and $\overline{h}$ are monic, and they are nonunits in $(R/I)[x]$, so $\overline{f}$ is reducible in $(R/I)[x]$.
-Now if $R$ is a UFD, and $f$ is primitive, then by [[Factorization#^ad087a|Gauss' lemma]], $g$ and $h$ are also primitive. Since $\deg \overline{f}=\deg f$, we have $\deg \overline{g}=\deg g$ and $\deg \overline{h}=\deg h$. Therefore, $\overline{g}$ and $\overline{h}$ are nonunits in $(R/I)[x]$, so $\overline{f}$ is reducible in $(R/I)[x]$. $\square$
+Now if $R$ is a UFD, and $f$ is primitive, then by [[Factorization#^ad087a|Gauss' lemma]], $g$
 
 > [!proposition] Eisenstein's Criterion
 > Let $f(x)=a_{n}x^{n}+\cdots+a_{0}\in\Z[x]$. Suppose there is a prime $p$ such that:
