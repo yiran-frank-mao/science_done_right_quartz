@@ -4,7 +4,7 @@ tags:
 ---
 
 > [!definition] Frobenius Algebra
-> A *Frobenius algebra* is a finite-dimensional $\newcommand{\K}{\mathbb{K}}\K$-algebra $A$ equipped with a linear functional $\varepsilon\colon A \to \K$ whose nullspace contains no nontrivial left ideals. This linear functional $\varepsilon$ is called the *Frobenius form*.
+> A *Frobenius algebra* is a finite-dimensional $\newcommand{\K}{\mathbb{K}}\K$-algebra $A$ equipped with a linear functional $\varepsilon\colon A \to \K$ whose kernel contains no nontrivial left ideals. This linear functional $\varepsilon$ is called the *Frobenius form*.
 > Alternatively, it is a finite-dimensional $\newcommand{\K}{\mathbb{K}}\K$-algebra equipped with an associative nondegenerate pairing $\beta\colon A \otimes A \to \K$, we call this pairing the *Frobenius pairing*.
 > Moreover, it can be defined as a finite-dimensional $\newcommand{\K}{\mathbb{K}}\K$-algebra $A$ equipped with left (or right) $A$-isomorphism to its dual $A^{*}$.
 
@@ -13,7 +13,7 @@ tags:
 
 > [!definition] Symmetric Frobenius Algebra
 > A Frobenius algebra $A$ is *symmetric* if one and hence all of the following equivalent conditions hold:
-> 1. The Frobenius form $\varepsilon\colon A \to \K$ is central. i.e., $\varepsilon(ab)=\varepsilon(ba)$;
+> 1. The Frobenius form $\varepsilon\colon A \to \K$ is central (i.e., tracial). That is, $\varepsilon(ab)=\varepsilon(ba)$;
 > 2. The Frobenius pairing $\beta$ is symmetric;
 > 3. The left $A$-isomorphism is also right $A$-linear;
 > 4. The right $A$-isomorphism is also left $A$-linear.

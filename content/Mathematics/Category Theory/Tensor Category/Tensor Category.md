@@ -11,5 +11,6 @@ A tensor category is, roughly, a category equipped with a tensor product that le
 [[Yang-Baxter Equation]]
 [[The Braid Category]]
 [[Tangles and Categories of Tangles]]
+[[Rigid and Pivotal Categories]]
 
 ## References

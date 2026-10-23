@@ -99,7 +99,7 @@ Now for any two disjoint compact sets $K_{1}$ and $K_{2}$, for any $x\in K_{1}$,
 > Suppose $\mathcal{A} = \{U_{\alpha}\}_{\alpha \in A}$ is an open cover of $X$. A *partition of unity* subordinate to the cover $\mathcal{A}$ is a collection of continuous functions $\{\rho_{\alpha}\colon X\to \R\}_{\alpha \in A}$ satisfying:
 > 
 > 1. For every $x \in X$ and every $\alpha \in A$, $0 \leq \rho_{\alpha}(x) \leq 1$;
-> 2. The support $\operatorname{supp}(\rho_{\alpha}) = \{x \in M : \rho_{\alpha}(x) \neq 0\}$ is contained in $U_{\alpha}$ for each $\alpha \in A$;
+> 2. The support $\operatorname{supp}(\rho_{\alpha}) = \{x \in X : \rho_{\alpha}(x) \neq 0\}$ is contained in $U_{\alpha}$ for each $\alpha \in A$;
 > 3. The set of supports $\{\operatorname{supp}(\rho_{\alpha}) : \alpha \in A\}$ is locally finite;
 > 4. For each $x \in X$, $\sum_{\alpha \in A} \rho_{\alpha}(x) = 1$.
 >$\quad$

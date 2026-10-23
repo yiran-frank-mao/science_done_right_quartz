@@ -20,7 +20,7 @@ Differential Geometry is a fascinating field of mathematics that studies the geo
 [[Smooth Functions and Maps]]
 [[Tangent Vectors and Spaces]]
 [[Vector Bundles]]
-[[Partitions of Unity]]
+[[Smooth Partitions of Unity]]
 [[Vector Fields and Lie Algebra]]
 [[Lie Groups]]
 [[Integral Curves and Flows]]
