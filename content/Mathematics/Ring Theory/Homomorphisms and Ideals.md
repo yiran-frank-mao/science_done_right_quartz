@@ -44,47 +44,46 @@
 > [!definition] Quotient Ring
 > Let $R$ be a ring and $I$ an ideal. Then, as an additive subgroup, $I$ is [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal]] in $R$ and we can form the quotient $$ R/I=\{ a+I \mid a\in R \} $$with addition $(a + I ) + (b + I ) = a + b + I$ , zero $I$ , and inverse $−(a + I ) = −a + I$. There is a unique way to upgrade this abelian group to a ring, called the *quotient ring*. Define $$ (a+I)\cdot(b+I):=ab+I. $$
 
-**Def** _Canonical Map_
-There is a unique ring structure on $R/I$ such that the map $π : R → R/I$ given by $a \mapsto a +I$ is a ring homomorphism. The kernel of $π$ is $I$.
-
-**e.g.** $\Z/n\Z \cong \Z_n$
-
 **Thrm** _Mapping Property of Quotients_
 
 Let $φ:R→S$ be a ring homomorphism with kernel $K$ and let $I$ be another ideal. Let $π:R→R/I$ be the canonical map. Then if $I ⊂K$,there exists a unique ring homomorphism $\bar{\varphi}:R/I →S$ such that $φ=\bar{\varphi}\circ \pi$.
 
-**Thrm** _The First Isomorphism Theorem_
+> [!theorem] First Isomorphism Theorem
+> Let $φ\colon R\to S$ be a ring homomorphism with kernel $K$. If $φ$ is surjective then $\bar{φ}:R/K →S$ is an isomorphism.
 
-Let $φ:R→S$ be a ring homomorphism with kernel $K$. If $φ$ is surjective then $\bar{φ}:R/K →S$ is an isomorphism.
+<u><b>e.g.</b></u>  $\R[x]/(x^2+1) \cong \mathbb{C}$.
 
-**e.g.** $\R[x]/(x^2+1) \cong \mathbb{C}$.
+> [!theorem] Correspondence Theorem
+> Let $φ \colon R → R^\prime$ be a surjective ring homomorphism with kernel $K$. There is a bijective correspondence:
+> $$ \begin{aligned}
+> 
+> \{\text{Ideals of } R \text{ containing } K\} &\longleftrightarrow\{\text{Ideals of } R^\prime\} \\
+> 
+> I &\shortmid\!\longrightarrow \varphi(I) \\
+> 
+> I^\prime &\longleftarrow\!\shortmid \varphi^{-1}(I^\prime)
+> 
+> \end{aligned} $$
+> 
+> If the ideal $I$ corresponds to the ideal $I^\prime$ then $R/I \cong R^\prime/I^\prime$.
 
-**Thrm** _The Correspondence Theorem_
-
-Let $φ : R → R^\prime$ be a surjective ring homomorphism with kernel $K$. There is a bijective correspondence:
-$$ \begin{aligned}
-
-\{\text{Ideals of } R \text{ containing } K\} &\longleftrightarrow\{\text{Ideals of } R^\prime\} \\
-
-I &\shortmid\!\longrightarrow \varphi(I) \\
-
-I^\prime &\longleftarrow\!\shortmid \varphi^{-1}(I^\prime)
-
-\end{aligned} $$
-
-If the ideal $I$ corresponds to the ideal $I^\prime$ then $R/I \cong R^\prime/I^\prime$.
-
-**Corollary** Let $R$ be a ring, suppose $I \triangleleft R$. Then the ideals of $R/I$ corresponds to ideals of $R$ containing $I$.
+> [!corollary]
+> Let $R$ be a ring, suppose $I \triangleleft R$. Then the ideals of $R/I$ corresponds to ideals of $R$ containing $I$.
 
 ## Chinese Remainder Theorem
 
 > [!definition] Product Ring
 > Given two rings $R_{1}$ and $R_{2}$, the product ring $R_{1}\times R_{2}$ is the ring with addition and multiplication being elementwise, defined as follows: $$(a,b)+(c,d)=(a+c,b+d),\quad (a,b)(c,d)=(ac,bd).$$
 
-> [!theorem] Chinese Remainder Theorem
-> Let $I, J \triangleleft R$ such that $I + J = R$. then $I J =I \cap J$ and $R/I J\cong R/I ×R/J$.  ^27e653
+> [!lemma]
+> Suppose, $I,J\triangleleft R$, then $R/(I\cap J)\cong R/I\times R/J$. ^2e52b1
 
-*Proof*  We first show that $IJ=I\cap J$. It is clear that $IJ\subseteq I\cap J$. Conversely, for all $a\in I\cap J$, note that since $R=I+J$, we have $1=x_{0}+y_{0}$ for some $x_{0}\in I,y_{0}\in J$. Then $a=x_{0}a + y_{0}a \in IJ$. Thus $I\cap J\subseteq IJ$.
+*Proof*  Define $\varphi\colon R \to R/I \times R/J$ by $\varphi(r) = (r + I, r + J)$. It is easy to check that $\varphi$ is a ring homomorphism (actually, it is the product of two quotient maps). The kernel of $\varphi$ is $I \cap J$, and the image is all of $R/I \times R/J$. By the first isomorphism theorem, we have $R/(I\cap J)\cong R/I\times R/J$. $\square$
+
+> [!theorem] Chinese Remainder Theorem
+> Let $I, J \triangleleft R$ such that $I + J = R$, then $I J =I \cap J$ and $R/I J\cong R/I ×R/J$.  ^27e653
+
+*Proof*  We first show that $IJ=I\cap J$. It is clear that $IJ\subseteq I\cap J$. Conversely, for all $a\in I\cap J$, note that since $R=I+J$, we have $1=x_{0}+y_{0}$ for some $x_{0}\in I,y_{0}\in J$. Then $a=x_{0}a + y_{0}a \in IJ$. Thus $I\cap J\subseteq IJ$. Therefore, combining [[Homomorphisms and Ideals#^2e52b1|the above lemma]], we have $R/IJ\cong R/I\times R/J$. $\square$
 
 > [!remark]
 > Given $I + J = R$, $IJ=I\cap J$ requires $R$ being a commutative unital ring, while $R/(I\cap J)\cong R/I\times R/J$ holds for any ring $R$.

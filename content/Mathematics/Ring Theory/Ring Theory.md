@@ -12,6 +12,7 @@ o are algebraic structures that generalize fields: multiplication need not be co
 [[Principle Ideal Domains]]
 [[Relations and Maximal Ideals]]
 [[Factorization]]
+[[Bézout Domain]]
 
 ### Fields
 [[Fields and Field Extensions]]

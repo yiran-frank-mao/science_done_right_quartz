@@ -3,6 +3,10 @@ created: 2025-02-16
 updated: 2025-02-16
 tags:
   - algebra
+  - euclidean-domain
+  - UFD
+  - unique-factorization-domain
+  - integral-domain
 completed: true
 ---
 ## Factoring and Euclidean Domain
@@ -76,9 +80,7 @@ $\quad$
 > An integral domain $R$ is a *unique factorization domain* if it has the following properties:
 > - Factoring terminates.
 > - The irreducible factorization of an element $a$ is unique, up to order and associates.
-> $\quad$
-
-^concept-592ec03e9ddd
+> $\quad$ ^concept-592ec03e9ddd
 
 <u><b>e.g.</b></u>  Every field is vacuously a unique factorization domain. $\Z[\sqrt{5}]$ is not a unique factorization domain, because $4=(\sqrt{5}-1)(\sqrt{5}+1)=2\cdot 2= (3-\sqrt{5})(3+\sqrt{5})$.
 
@@ -107,6 +109,8 @@ Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreduci
 > [!proposition]
 > A unique factorization domain is a principle ideal domain if and only if all nonzero [[Relations and Maximal Ideals#^da4561|prime ideals]] are [[Relations and Maximal Ideals#^ee0592|maximal]].
 > 
+
+## Primitive Polynomials
 
 > [!definition] Primitive Polynomial
 > Suppose $R$ is a unique factorization domain. $f\in R[x]$ is *primitive* if one (thus all) of the following equivalent conditions hold:
