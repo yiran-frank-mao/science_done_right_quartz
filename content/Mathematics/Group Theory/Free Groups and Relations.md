@@ -1,7 +1,7 @@
 ## Free Group
 
 >[!definition] Free Group
->Let $X$ be a subset of a [[Groups, Order and Subgroups#^6e0960|group]] $F$ . We say that $F$ is a free group with basis $X\subset F$ if it satisfies the following universal property: for every group $G$ and every function $f \colon X → G$ there exists a unique homomorphism $φ \colon F → G$ with $φ(x) = f (x)$ for every $x ∈ X$. 
+>Let $X$ be a subset of a [[Groups, Order and Subgroups#^6e0960|group]] $F$ . We say that $F$ is a free group with *basis* $X\subset F$ if it satisfies the following universal property: for every group $G$ and every function $f \colon X → G$ there exists a unique homomorphism $φ \colon F → G$ with $φ(x) = f (x)$ for every $x ∈ X$. 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/free_group.svg" style="width:20%;"/> ^f3b924
 
 In other words, it means that a homomorphism $\varphi\colon F \to G$ always exists, and is fully determined by its value on $X$. This enforces $F$ be really a "free" group without any extra relations imposed.

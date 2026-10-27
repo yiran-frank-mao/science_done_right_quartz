@@ -1,10 +1,8 @@
-**Fact** _Imposing Relations_
 We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2=\dots=a_n=0$ or ‘killing’ the elements $a_i$. Killing the elements $a_i$ in installments and in various orders, or in one strike lead to the same result. That is, we have following commutative diagram:
 
-<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/imposing_relations.svg" alt="imposing_relations" style="width:30%;">
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/imposing_relations.svg" alt="imposing_relations" style="width:25%;">
 
-> [!comment] Adjoining Elements
-> A primary tool for constructing new rings is to take a ring $R$ and a ‘free’ variable and create the polynomial ring, and then quotient by a polynomial. We show see this further in [[Fields Construction#Adjoining Roots|field extensions by adjoining roots of polynomials.]]
+A primary tool for constructing new rings is to take a ring $R$ and a ‘free’ variable and create the polynomial ring, and then quotient by a polynomial. We will see this further in [[Fields Construction#Adjoining Roots|field extensions by adjoining roots of polynomials.]]
 
 <u><b>e.g.</b></u>  The complex numbers are constructed from $\R$ by setting $\mathbb{C} := \R[x]/(x^2+1)$. In fact, we can define $\varphi : \mathbb{C} \to \R[x]/(x^2+1), a+bi \mapsto \overline{a+bx}$. Clearly it is surjective and injective. Since $$ \begin{align}
 \varphi(a+bi)\varphi(c+di)&=\overline{ac+(ad+bc)x+bdx^2} \\
@@ -20,7 +18,7 @@ We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2
 > Whenever we have a subring $R$ of a ring $S$ and an element $α ∈ S$ we denote by $R[α]$ the smallest subring of $S$ that contains $R$ and $α$.
 
 > [!proposition]
-> $\Phi:R[x] \to S, f \mapsto f(\alpha)$ defines an isomorphism $R[x]/\ker(\Phi)\cong R[\alpha]$.
+> $\Phi\colon R[x] \to S, f \mapsto f(\alpha)$ defines an isomorphism $R[x]/\ker(\Phi)\cong R[\alpha]$.
 
 ## Field of Fractions & Product Rings
 
