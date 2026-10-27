@@ -29,7 +29,7 @@ Group theory is the study of algebraic structures known as groups. Groups are fu
 | 1     | Trivial group $0=\{*\}$                                                                                                                                     |
 | 2     | $C_{2}$ (cyclic group of order $2$)                                                                                                                         |
 | 3     | $C_{3}$                                                                                                                                                     |
-| 4     | $C_{4}$,  $C_2\times C_2$                                                                                                                                   |
+| 4     | $C_{4}$,  $C_{2}\times C_{2}\cong D_{2}$                                                                                                                    |
 | 5     | $C_5$                                                                                                                                                       |
 | 6     | $C_{6}$, $S_{3}\cong D_{3}$                                                                                                                                 |
 | 7     | $C_{7}$                                                                                                                                                     |
