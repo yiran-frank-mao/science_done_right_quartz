@@ -6,15 +6,16 @@ completed: true
 ## Homomorphisms
 
 >[!definition] Group Homomorphism
->Let $G$ and $H$ be groups. A *group homomorphism* $\varphi\colon G \to H$ is a map that satisfies $\varphi (ab) = \varphi (a) \varphi (b)$ for all $a,b \in G$. ^homo
+>Let $G$ and $H$ be [[Mathematics/Group Theory/Groups, Order and Subgroups#^6e0960|groups]]. A *group homomorphism* $\varphi\colon G \to H$ is a map that satisfies $\varphi (ab) = \varphi (a) \varphi (b)$ for all $a,b \in G$. ^concept-99cd09958525
 
 >[!proposition] 
->If $\varphi\colon G \to H$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|group homomorphism]], then the identity of $G$ is mapped to the identity of $H$.
+> If $\varphi\colon G \to H$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|group homomorphism]], then the identity of $G$ is mapped to the identity of $H$. Moreover, if $x\in G$ is of finite order, then the order of $\varphi(x)$ divides the order of $x$.
 
 *Proof*  Let $e_G$ and $e_H$ be the identity elements of $G$ and $H$, respectively. Then we have $\varphi(e_G) = \varphi(e_G e_G) = \varphi(e_G)\varphi(e_G)$. Multiplying both sides by $\varphi(e_G)^{-1}$, we get $\varphi(e_G) = e_H$. $\square$
 
 >[!definition] Kernel & Image
->Let $\varphi : G \to H$ be a group homomorphism. The *kernel* and the *image* of $\varphi$ are defined by $$ \begin{aligned} \ker(\varphi)&=\{g\in G\mid \varphi(g)=e_{H}\}\subset G, \\ \operatorname{im}(\varphi)&=\{h\in H\mid\exists g\in G,\varphi(g)=h\}\subset H. \end{aligned}$$
+> Let $\varphi \colon G \to H$ be a [[Mathematics/Group Theory/Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|group homomorphism]]. The *kernel* and the *image* of $\varphi$ are defined by $$ \begin{aligned} \ker(\varphi)&=\{g\in G\mid \varphi(g)=e_{H}\}\subset G, \\ \operatorname{im}(\varphi)&=\{h\in H\mid\exists g\in G,\varphi(g)=h\}\subset H. \end{aligned}$$
+> It is clear that $\ker(\varphi)$ is a subgroup of $G$ and $\operatorname{im}(\varphi)$ is a subgroup of $H$.
 
 >[!proposition] 
 > A homomorphism $\varphi \colon G \to H$ is injective if and only if $\ker(\varphi) = \{e_G\}$_._
@@ -31,7 +32,7 @@ completed: true
 > A group is *simple* if there’s no non-trivial normal subgroups. ^normal
 
 <u><b>e.g.</b></u>  
-- Let $\varphi : G \to H$ be a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]], then $\ker(\varphi) \triangleleft G$. Fix some $x\in \ker(\varphi)$, then for all $g\in G$ we have $\varphi(g x g^{-1})=\varphi(g)\varphi(x)\varphi(g^{-1})=\varphi(g)\varphi(g)^{-1}=e$.
+- Let $\varphi : G \to H$ be a [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|homomorphism]], then $\ker(\varphi) \triangleleft G$. Fix some $x\in \ker(\varphi)$, then for all $g\in G$ we have $\varphi(g x g^{-1})=\varphi(g)\varphi(x)\varphi(g^{-1})=\varphi(g)\varphi(g)^{-1}=e$.
 - Every subgroup of an [[Groups, Order and Subgroups#^6d511a|abelian group]] is normal;
 - Finite simple abelian group is [[Cyclic Groups#^c52ddd|cyclic]] with a [[Division and Prime#^47f235|prime]] [[Groups, Order and Subgroups#^3bce31|order]].
 $\quad$

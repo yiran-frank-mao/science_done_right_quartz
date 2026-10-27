@@ -18,7 +18,7 @@ updated: 2024-10-28
 $\quad$
 
 > [!proposition]
-> A group action of $G$ on a set $X$ is the same as a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]] $G \to \operatorname{Sym}(X)$, where $\operatorname{Sym}(X)$ is the group of all bijections $X \to X$ under composition.
+> A group action of $G$ on a set $X$ is the same as a [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|homomorphism]] $G \to \operatorname{Sym}(X)$, where $\operatorname{Sym}(X)$ is the group of all bijections $X \to X$ under composition.
 
 *Proof*  Given an action $G\times X \to X$ defined, for every $g \in G$, a map $\rho_g : X \to X$ by $\rho_g(x) = g \cdot x$. Then $\rho_g$ is a bijection because $\rho_{g^{-1}}$ is its inverse. Therefore, we get a map $$ \rho \colon  G \to \operatorname{Sym}(X), \quad g\mapsto \rho_{g}.$$Now check that $\rho$ is a homomorphism. Indeed, $$ \rho(g)\rho(h) = \rho_g \circ \rho_h = \rho_{gh} = \rho(gh).$$Conversely, given such $\rho$, define $G\times X \to X$ by $(g,x) \mapsto \rho_g(x)$. This is a group action and the two constructions we defined are inverses to each other. $\square$
 

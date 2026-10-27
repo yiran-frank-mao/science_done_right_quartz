@@ -34,7 +34,7 @@
 > A permutation is an even permutation if the number of cycles of even length is even. And it is an odd permutation if the number of cycles of even length is odd. ^c116d4
 
 > [!proposition]
-> The sign map $\newcommand{\sgn}{\mathrm{sgn}}\sgn\colon S_n \to \{-1,1\}$ that sends an even permutation to $1$, an odd permutation to $-1$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|group homomorphism]]. We call $\sgn(\pi)$ the *parity* of $\pi$. ^8ed9de
+> The sign map $\newcommand{\sgn}{\mathrm{sgn}}\sgn\colon S_n \to \{-1,1\}$ that sends an even permutation to $1$, an odd permutation to $-1$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|group homomorphism]]. We call $\sgn(\pi)$ the *parity* of $\pi$. ^8ed9de
 
 *Proof*  It is easy to see this by counting the number of transpositions. Even permutation has even number of transpositions, and odd permutation has odd number of transpositions. Thus, the product of two even permutations is even, the product of two odd permutations is even, and the product of an even and an odd permutation is odd. $\square$
 

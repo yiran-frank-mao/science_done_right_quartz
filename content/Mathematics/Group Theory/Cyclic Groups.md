@@ -1,4 +1,3 @@
-
 > [!definition] Cyclic Group
 > A [[Equinumerous and Countability#^79eb6c|countable]] [[Groups, Order and Subgroups#^6e0960|group]] $G$ is *cyclic* if
 > $$ G=\langle a\rangle=\left\{\ldots, a^{-3}, a^{-2}, a^{-1}, e, a, a^2, a^3, \ldots\right\} $$

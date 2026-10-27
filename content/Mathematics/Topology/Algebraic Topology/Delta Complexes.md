@@ -32,7 +32,7 @@ Imagine two triangles, $U$ and $L$. We glue their corresponding edges to form a 
 > An element of $C_n^\Delta(X)$, called an *$n$-chain*, is a finite formal sum of $n$-simplices: $\sum n_i \Delta^{n}_{i}$, where $n_i \in \mathbb{Z}$ and $\Delta^{n}_{i}$ are $n$-simplices.
 
 > [!definition] Boundary Operator
-> We define a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]], the *boundary operator*, $d_{n}\colon C_n^\Delta(X) \to C_{n-1}^\Delta(X)$.
+> We define a [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|homomorphism]], the *boundary operator*, $d_{n}\colon C_n^\Delta(X) \to C_{n-1}^\Delta(X)$.
 > If we denote an $n$-simplex by its ordered vertices $[v_0, v_1, \dots, v_n]$, the boundary operator is defined by the alternating sum of its faces:
 > $$ d_n([v_0, \dots, v_n]) = \sum_{i=0}^n (-1)^i [v_0, \dots, \hat{v}_i, \dots, v_n] $$
 > where $[v_0, \dots, \hat{v}_i, \dots, v_n]$ is the $(n-1)$-face opposite the vertex $v_i$.

@@ -26,7 +26,7 @@ Case $c\neq0$. Notice that when $X=\begin{pmatrix}0&1\\1&0\end{pmatrix}$, $\lamb
 > $\mathrm{Möb}$ forms a group under function composite.
 
 > [!proposition]
-> Let $X_{1},X_{2} \in \mathrm{GL}_{2}(\C)$. Then $\lambda_{X_{1}}\circ\lambda_{X_{2}}=\lambda_{X_{1}X_{2}}$. Indeed $\lambda\colon \mathrm{GL}_{2}(\C)\twoheadrightarrow\mathrm{Möb}$ forms a surjective [[Homomorphisms, Normal Subgroup & Conjugation#^homo|group homomorphism]].
+> Let $X_{1},X_{2} \in \mathrm{GL}_{2}(\C)$. Then $\lambda_{X_{1}}\circ\lambda_{X_{2}}=\lambda_{X_{1}X_{2}}$. Indeed $\lambda\colon \mathrm{GL}_{2}(\C)\twoheadrightarrow\mathrm{Möb}$ forms a surjective [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|group homomorphism]].
 
 *Proof*  Suppose $X_{1}=\begin{pmatrix}a_{1}&b_{1}\\ c_{1}&d_{1}\end{pmatrix}$ and $X_{2}=\begin{pmatrix}a_{2}&b_{2}\\ c_{2}&d_{2}\end{pmatrix}$. Then $$(\lambda_{X_{1}}\circ\lambda_{X_{2}})(z)=\lambda_{X_{1}}(a_{2}z+b_{2})=\frac{a_{1}(a_{2}z+b_{2})+b_{1}}{c_{1}(a_{2}z+b_{2})+d_{1}}=\frac{(a_{1}a_{2}+b_{1})z+b_{1}d_{2}}{(c_{1}a_{2}+d_{1})z+c_{1}d_{2}}=\lambda_{X_{1}X_{2}}(z)$$$\square$
 

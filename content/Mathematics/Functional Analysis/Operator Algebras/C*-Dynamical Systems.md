@@ -37,7 +37,7 @@ A group action on a space $X$ induces a natural action on the C\*-algebra of con
 > This map $\alpha$ is a group homomorphism.
 
 > [!definition] C\*-Dynamical System
-> A *C\*-dynamical system* is a triple $(\mathcal{A}, G, \alpha)$, where $\mathcal{A}$ is a [[C*-Algebras#^e4fdc6|C*-algebra]], $G$ is a [[Groups, Order and Subgroups#^6e0960|group]], and $\alpha\colon G \to \text{Aut}(\mathcal{A})$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^homo|homomorphism]]. The homomorphism is often required to be continuous in an appropriate sense. ^c9bf4c
+> A *C\*-dynamical system* is a triple $(\mathcal{A}, G, \alpha)$, where $\mathcal{A}$ is a [[C*-Algebras#^e4fdc6|C*-algebra]], $G$ is a [[Groups, Order and Subgroups#^6e0960|group]], and $\alpha\colon G \to \text{Aut}(\mathcal{A})$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|homomorphism]]. The homomorphism is often required to be continuous in an appropriate sense. ^c9bf4c
 
 > [!proposition]
 > If $(C_0(X), G, \alpha)$ is a C\*-dynamical system, then there exists a continuous action of $G$ on $X$ that induces $\alpha$.
