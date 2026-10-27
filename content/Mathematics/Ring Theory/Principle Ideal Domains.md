@@ -46,5 +46,5 @@ Similarly for polynomials:
 
 Both theorems are in fact one theorem:
 
-> [!theorem] Unique Factorization in A PID
+> [!theorem] Unique Factorization in a PID
 > Every principle ideal domain is a unique factorization domain.

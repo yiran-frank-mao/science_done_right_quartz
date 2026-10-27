@@ -85,7 +85,7 @@ $\quad$
 <u><b>e.g.</b></u>  Every field is vacuously a unique factorization domain. $\Z[\sqrt{5}]$ is not a unique factorization domain, because $4=(\sqrt{5}-1)(\sqrt{5}+1)=2\cdot 2= (3-\sqrt{5})(3+\sqrt{5})$.
 
 > [!lemma]
-> Let $R$ be an integral domain, then the following conditions are equivalent:
+> Let $R$ be an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], then the following conditions are equivalent:
 > - Factoring terminates.
 > - $R$ does not contain an infinitely strictly increasing chain $(a_{1})\subsetneq(a_{2})\subsetneq(a_{3})\subsetneq\cdots$ of principle ideals.
 >$\quad$ ^505c39
@@ -101,10 +101,10 @@ Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreduci
 <u><b>e.g.</b></u>  Consider a non-example of the ring of continuous functions $\R\to\R$. One can factor $$|x|=|x|^{1/2}\cdot|x|^{1/2}=|x|^{1/4}\cdot|x|^{1/4}\cdot |x|^{1/4}\cdot|x|^{1/4}=\cdots $$
 
 > [!corollary]
-> Every principal ideal domain is a unique factorization domain.
+> Every [[Mathematics/Ring Theory/Principle Ideal Domains#^74559c|principal ideal domain]] is a [[Mathematics/Ring Theory/Factorization#^concept-592ec03e9ddd|unique factorization domain]].
 > 
 
-*Proof*  In a PID, irreducible and prime elements coincide, by [[Factorization#^94c6f6|the above theorem]], it remains to show the factorization terminates. By [[Factorization#^505c39|the lemma]], it suffices to show that any infinite chain of ideals $$(a_{1})\subset(a_{2})\subset(a_{3})\subset \cdots,$$has all tailing terms equal from some point. Note that $I=\cup_{i=1}^{\infty}(a_{i})$ is an ideal, hence, principle, say $I=(a)$. Then $a\in (a_{k})$ for some $k$, and so $(a)\subset (a_{k})$. Since $(a)$ is the union of all $(a_{i})$, we must have $$(a)\subset(a_{k})\subset(a_{k+1})\subset\cdots\subset(a),$$that is the tailing terms are all equal to $(a)$, starting from $k$. $\square$
+*Proof*  [[Relations and Maximal Ideals#^0ddaa4|In a PID, irreducible and prime elements coincide]]. By [[Factorization#^94c6f6|the above theorem]], it remains to show the factorization terminates. By [[Factorization#^505c39|the lemma]], it suffices to show that any infinite chain of ideals $$(a_{1})\subset(a_{2})\subset(a_{3})\subset \cdots,$$has all tailing terms equal from some point. Note that $I=\cup_{i=1}^{\infty}(a_{i})$ is an ideal, hence, principle, say $I=(a)$. Then $a\in (a_{k})$ for some $k$, and so $(a)\subset (a_{k})$. Since $(a)$ is the union of all $(a_{i})$, we must have $$(a)\subset(a_{k})\subset(a_{k+1})\subset\cdots\subset(a),$$that is the tailing terms are all equal to $(a)$, starting from $k$. $\square$
 
 > [!proposition]
 > A unique factorization domain is a principle ideal domain if and only if all nonzero [[Relations and Maximal Ideals#^da4561|prime ideals]] are [[Relations and Maximal Ideals#^ee0592|maximal]].
@@ -167,7 +167,7 @@ Let us make it formal:
 > 
 
 *Proof*  Suppose $R$ is an integral domain, and $I\triangleleft R$ is an ideal. We prove the contrapositive, and without loss of generality assume that $f(x)$ is not a constant. Suppose $f(x)=g(x)h(x)$ in $R[x]$ for nonunits $g$ and $h$. Then $\overline{f}(x)=\overline{g}(x)\cdot \overline{h}(x)$ in $(R/I)[x]$. Since $f$ is monic, both $g$ and $h$ are monic. Therefore, $\overline{g}$ and $\overline{h}$ are monic, and they are nonunits in $(R/I)[x]$, so $\overline{f}$ is reducible in $(R/I)[x]$.
-Now if $R$ is a UFD, and $f$ is primitive, then by [[Factorization#^ad087a|Gauss' lemma]], $g$
+Now if $R$ is a UFD, and $f$ is primitive, then by 
 
 > [!proposition] Eisenstein's Criterion
 > Let $f(x)=a_{n}x^{n}+\cdots+a_{0}\in\Z[x]$. Suppose there is a prime $p$ such that:

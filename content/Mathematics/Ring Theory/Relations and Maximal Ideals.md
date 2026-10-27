@@ -24,7 +24,6 @@ We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2
 
 ## Field of Fractions & Product Rings
 
-
 > [!theorem]
 > Suppose $R$ is an integral domain and $F$ is defined as above. Define addition and multiplication on $F$ by$$ a/b \cdot c/d = ac/bd, \quad a/b + c/d = (ad+bc)/bd $$Then $F$ is a field, denotes as $\text{Frac}(R)$. The map $R \to F$ given by $a \mapsto \frac{a}{1}$ is an injective ring homomorphism.
 
@@ -41,33 +40,34 @@ Let $R_1 , R_2$ be rings. Then $R_1 × R_2$, with coordinate-wise addition and m
 > Let $R$ be a ring. An ideal $P \triangleleft R$ is *prime* if $P \neq R$ and $ab \in P$ implies that either $a \in P$ or $b \in P$. ^da4561
 
 > [!theorem]
-> Let $R$ be a ring. $P \triangleleft R$ is prime if and only if $R/P$ is an integral domain.
+> Let $R$ be a commutative unital ring. $P \triangleleft R$ is prime if and only if $R/P$ is an integral domain.
 > 
+
+*Proof*  $P\triangleleft R$ is prime iff $a\notin P$, $b\notin P$ implies $ab\notin P$, iff nonzero $(a+P)$ and $(b+P)$ has multiplication $ab+P\neq P$. $\square$
 
 > [!definition] Maximal Ideal
 > Let $R$ be a ring. An ideal $M \triangleleft R$ is *maximal* if $M \neq R$ and there is no other ideal $I$ such that $M \subsetneq I \subsetneq R$. ^ee0592
 
-<u><b>e.g.</b></u> $M \triangleleft \Z$ is maximal iff $M =(p)=p\Z$ for a prime $p$. In general, we have the following proposition holds:
+<u><b>e.g.</b></u> $M \triangleleft \Z$ is maximal iff $M =(p)=p\Z$ for a prime $p$. In general, we have the following theorem holds:
+
+> [!theorem]
+> Let $I \triangleleft R$ be an ideal. Then $I$ is maximal iff $R/I$ is a [[Ring, Field and Integral Domain#^575174|field]].
+
+*Proof*  $R/I$ is a field iff 
+
+
+
+> [!corollary]
+> Every maximal ideal is prime. In a PID, conversely, every non-zero prime ideal is maximal. ^0ddaa4
+
+*Proof*  Every maximal ideal is prime is clear because every field is an integral domain. $\square$
 
 > [!proposition]
-> Let $R$ be a principle ideal domain, then $(a) \triangleleft R$ is maximal if and only if $a$ is irreducible.
+> Let $R$ be a principle ideal domain, then $(a) \triangleleft R$ is maximal if and only if $a$ is irreducible. ^85722a
 
 *Proof*  In a PID, we have that $(a)\subset(b)$ iff $b \mid a$. It follows that $(a)$ is maximal iff there is no proper divisor $b\mid a$, which means $a$ is irreducible. $\square$
-
 
 > [!corollary]
 > If $F$ is a field, then $M = (f (x)) \triangleleft F [x]$ is maximal iff $f (x)$ is irreducible.
 
 *Proof*  $F[x]$ is a PID, so $(f(x))$ is maximal iff $f(x)$ is irreducible. $\square$
-
-> [!theorem]
-> Let $I \triangleleft R$ be an ideal. Then $I$ is maximal iff $R/I$ is a [[Ring, Field and Integral Domain#^575174|field]].
-
-> [!corollary]
-> Every maximal ideal is prime. In a PID, conversely, every non-zero prime ideal is maximal.
-
-*Proof*  Every maximal ideal is prime is clear because every field is an integral domain.
-
-
-
-**Corollary** Let $f\in F[x]$ be an irreducible polynomial. Then $F[x]/(f(x))$ is a field and contains a root of $f$, namely the coset $\overline{x} = x + (f(x))$.
