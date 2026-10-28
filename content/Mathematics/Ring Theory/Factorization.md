@@ -106,6 +106,8 @@ Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreduci
 
 *Proof*  [[Relations and Maximal Ideals#^0ddaa4|In a PID, irreducible and prime elements coincide]]. By [[Factorization#^94c6f6|the above theorem]], it remains to show the factorization terminates. By [[Factorization#^505c39|the lemma]], it suffices to show that any infinite chain of ideals $$(a_{1})\subset(a_{2})\subset(a_{3})\subset \cdots,$$has all tailing terms equal from some point. Note that $I=\cup_{i=1}^{\infty}(a_{i})$ is an ideal, hence, principle, say $I=(a)$. Then $a\in (a_{k})$ for some $k$, and so $(a)\subset (a_{k})$. Since $(a)$ is the union of all $(a_{i})$, we must have $$(a)\subset(a_{k})\subset(a_{k+1})\subset\cdots\subset(a),$$that is the tailing terms are all equal to $(a)$, starting from $k$. $\square$
 
+<u><b>e.g.</b></u>  Let $F$ be a field. Every non-constant polynomial in $F[x]$ can be written uniquely (up to reordering) as $$ f=up_1^{e_1}\dots p_r^{e_r} $$for a unit $u\in F^{\times}$ and $r\in\N$, $p_i\in F[x]$ monic irreducible and $e_i\in \N$.
+
 > [!proposition]
 > A unique factorization domain is a principle ideal domain if and only if all nonzero [[Relations and Maximal Ideals#^da4561|prime ideals]] are [[Relations and Maximal Ideals#^ee0592|maximal]].
 > 

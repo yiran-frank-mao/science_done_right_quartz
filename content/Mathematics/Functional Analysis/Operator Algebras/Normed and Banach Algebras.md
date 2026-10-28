@@ -1,5 +1,5 @@
 > [!definition] Normed Algebra & Banach Algebra
-> Let $\newcommand{\A}{A}\A$ be an [[Noncommutative Rings#^2c3d07|algebra]] (over $\newcommand{\C}{\mathbb{C}}\C$) equipped with a submultiplicative norm, that is, $\|ab\|\leq \|a\| \|b\|$ for all $a,b\in A$, then $\A$ is called a *normed algebra*. 
+> Let $\newcommand{\A}{A}\A$ be an [[Associative Algebras#^2c3d07|algebra]] (over $\newcommand{\C}{\mathbb{C}}\C$) equipped with a submultiplicative norm, that is, $\|ab\|\leq \|a\| \|b\|$ for all $a,b\in A$, then $\A$ is called a *normed algebra*. 
 > If $\A$ admits a unit $1_{\A}$ such that $\|1_{\A}\|=1$, then it is called a *unital normed algebra*.
 > If it is also a [[Banach Spaces#^concept-06d04a8caa8e|Banach space]] (i.e. [[Complete Metric Space#^concept-08babb55cabd|complete]]), then it is called a *Banach algebra*. ^040470
 

@@ -3,7 +3,8 @@
 
 <u><b>e.g.</b></u>
 - Every field is a principal ideal domain. In fact, let $I\triangleleft F$ be an ideal, if $I$ is non-trivial, then it contains a non-zero element $a$. Since $F$ is a field, $a$ is a unit, and thus $I=F$. So any field only has two trivial ideals: $\{0\}$ and $F$;
-- Both $\newcommand{\Z}{\mathbb{Z}}\Z$ and the ring of polynomials $F[x]$ over a field $F$ are PIDs;
+- $\Z$ is a PID, we will prove this in the next proposition;
+- $F[x]$ is a PID for any field $F$;
 - $F[x,y]$ for some field $F$ is not a principal ideal domain. The ideal $I=(x,y)$ is not principle;
 - In $\Z[x]$, $(2,x)$ is not principle.
 $\quad$
@@ -15,11 +16,6 @@ $\quad$
 
 > [!remark]
 > Indeed, any Euclidean domain is a principle ideal domain. (see [[Factorization#^5f7518|proposition]].)
-
-> [!proposition]
-> $F[x]$ is a principal ideal domain for any field $F$.
-
-*Proof*  
 
 > [!algorithm] Euclidean Algorithm
 > The gcd of polynomials $f,g ∈ F[x]$, and the linear combination that gives it can be found by the following algorithm. Compute $$ g=q_1f+r_1,~f=q_2r_1+r_2,~\cdots,~r_{n-3}=q_{n-1}r_{n-2}+r_{n-1},~r_{n-2}=q_nr_{n-1}+r_n,~r_{n-1}=q_{n+1}r_n. $$Then up to a unit $r_n$ is the gcd and backward substitution gives the linear combination.

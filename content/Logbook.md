@@ -131,7 +131,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Lie Algebra Representations]], [[Coalgebra and Hopf Algebra]].
 
 ## 2 Sep 2025
-- Updates: [[Products of Objects]], [[Noncommutative Rings]], [[Coalgebra and Hopf Algebra]], [[Free Groups and Relations]].
+- Updates: [[Products of Objects]], [[Associative Algebras]], [[Coalgebra and Hopf Algebra]], [[Free Groups and Relations]].
 
 ## 1 Sep 2025
 -  Updates: [[Real Analysis]], [[Number Systems]].

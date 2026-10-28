@@ -7,5 +7,9 @@ In [[Factorization]], we talked about Euclidean domains and unique factorization
 <u><b>e.g.</b></u>  Clearly any [[Mathematics/Ring Theory/Principle Ideal Domains#^74559c|principal ideal domain]] is a Bézout domain.
 
 > [!proposition]
-> 
+> Let $R$ be a Bézout domain. Then the followings are equivalent:
+> - $R$ is a [[Mathematics/Ring Theory/Principle Ideal Domains#^74559c|principal ideal domain]];
+> - $R$ is a [[Mathematics/Ring Theory/Factorization#^concept-592ec03e9ddd|unique factorization domain]];
+> - $R$ is Noetherian;
+> - 
 > 

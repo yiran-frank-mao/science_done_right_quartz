@@ -20,12 +20,13 @@ o are algebraic structures that generalize fields: multiplication need not be co
 [[Finite Fields]]
 
 ### Noncommutative Rings and Algebras
-[[Noncommutative Rings]]
+[[Noetherian Rings]]
+[[Associative Algebras]]
 [[Division Algebras]]
 [[Grading and Filtration]]
 [[Coalgebra and Hopf Algebra]]
 
-### Modules
+### Modules and Commutative Algebra
 [[Modules]]
 [[Tensor Products of Modules]]
 [[Presentation of Finitely Generated Modules]]
