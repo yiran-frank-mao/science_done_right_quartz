@@ -4,7 +4,12 @@
 > [!proposition]
 > For every ring $R$ there is a unique homomorphism $\mathbb{Z} → R$.
 
-*Proof*  We must have $φ(1) = 1$; and then $φ(n) = 1+\dots+1$ ($n$ ones) for $n ∈ \mathbb{N}$; and $φ(−n) = −φ(n)$. It is easy to check that this is multiplicative as well.
+*Proof*  We must have $φ(1) = 1$; and then $φ(n) = 1+\dots+1$ ($n$ ones) for $n ∈ \mathbb{N}$; and $φ(−n) = −φ(n)$. It is easy to check that this is multiplicative as well. $\square$
+
+> [!definition] Characteristic
+> Let $\newcommand{\Z}{\mathbb{Z}}\psi\colon \Z\to R$ be the unique ring homomorphism from the integers to a ring $R$. Then the characteristic of $R$ is the smallest nonnegative integer $n$ such that $\ker\psi=n\Z$. 
+> i.e., $n$ is the smallest positive integer such that $n\cdot 1=0$ in $R$, or $n=0$ if no such integer exists. ^2bfbd8
+
 
 > [!proposition] Substitution Principle II
 > Let $φ : R → S$ be a ring homomorphism and $α ∈ R$. There is a unique ring homomorphism $Φ : R[x]\to S$ that agrees with $φ$ on constant polynomials, and that maps $x$ to $α$. More generally, given $α_1, \dots , α_n ∈ R$ there is a unique homomorphism $R[x_1,\dots,x_n]→S$ that agrees with $φ$ on constants and maps $x_k$ to $α_k$.

@@ -93,9 +93,7 @@ $\quad$
 In general, if a ring $R$ is not an integral domain, we can still attempt to construct a "field of fractions", this is called the [localisation](https://www.wikiwand.com/en/Localization_(commutative_algebra).
 
 > [!definition] Product Ring
-> Given two rings $R_{1}$ and $R_{2}$, the product ring $R_{1}\times R_{2}$ is the ring with addition and multiplication being elementwise, defined as follows: $$(a,b)+(c,d)=(a+c,b+d),\quad (a,b)(c,d)=(ac,bd).$$
-
-^concept-bf407c84e26e
+> Given two rings $R_{1}$ and $R_{2}$, the product ring $R_{1}\times R_{2}$ is the ring with addition and multiplication being elementwise, defined as follows: $$(a,b)+(c,d)=(a+c,b+d),\quad (a,b)(c,d)=(ac,bd).$$ ^concept-bf407c84e26e
 
 ## Ordered Field
 

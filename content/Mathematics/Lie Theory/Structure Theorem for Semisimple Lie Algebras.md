@@ -12,7 +12,7 @@ Thence, $[\mathfrak{a}, \mathfrak{g}]=\mathfrak{a}=\left[\mathfrak{a}, \bigoplus
 Hence there exists unique $i$ such that $\mathfrak{a}=\left[\mathfrak{a}, \mathfrak{a}_{i}\right]=\mathfrak{a}_{i}$ and our uniqueness proof is done. $\square$
 
 > [!corollary] 
-> If $\g=\bigoplus_{i=1}^{m} \mathfrak{a}_{i}$ over a field $F$ of [[Fields and Field Extensions#^2bfbd8|characteristic]] $0$ is semisimple, then 
+> If $\g=\bigoplus_{i=1}^{m} \mathfrak{a}_{i}$ over a field $F$ of [[Mathematics/Ring Theory/Homomorphisms and Ideals#^2bfbd8|characteristic]] $0$ is semisimple, then 
 > 1. $[\g,\g]=\g$
 > 2. All ideals and homomorphic images of $\g$ are semisimple.
 > 3. If $\mathfrak{b}\triangleleft \g$ then $\mathfrak{b}=\bigoplus_{k}\mathfrak{a}_{i_{k}}$.
@@ -24,7 +24,7 @@ Hence there exists unique $i$ such that $\mathfrak{a}=\left[\mathfrak{a}, \mathf
 By the structure theorem, we can deduce the following equivalent characterizations of semisimple Lie algebras by induction:
 
 > [!proposition]
-> Suppose $\g$ is a finite dimensional Lie algebra over a field of [[Fields and Field Extensions#^2bfbd8|characteristic]] $0$. The following are equivalent:
+> Suppose $\g$ is a finite dimensional Lie algebra over a field of [[Mathematics/Ring Theory/Homomorphisms and Ideals#^2bfbd8|characteristic]] $0$. The following are equivalent:
 > 1. $\g$ is semisimple.
 > 2. the Killing form is non-degenerate.
 > 3. $\g$ has no non-zero abelian ideals.

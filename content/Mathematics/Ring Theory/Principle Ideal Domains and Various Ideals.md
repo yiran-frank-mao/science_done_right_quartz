@@ -1,3 +1,12 @@
+In this section, we will see various kinds of ideals and their correspondence to the quotient ring. We spoil the upshot here:
+
+| Ideal $I$ | Quotient Ring $R/I$ |
+| --------- | ------------------- |
+| radical   | reduced             |
+| prime     | integral domain     |
+| maximal   | field               |
+
+
 > [!definition] Principal Ideal Domain
 > An [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ is called a *principal ideal domain* if every [[Homomorphisms and Ideals#^395472|ideal]] is [[Homomorphisms and Ideals#^027c69|principle]]. ^74559c
 
@@ -24,6 +33,8 @@ $\quad$
 > In an integral domain every [[Factorization#^d98fbf|prime]] is [[Factorization#^d98fbf|irreducible]].
 
 *Proof*  Suppose $p$ is a prime with $p=ab$. Then $p\mid ab$ implies $p\mid a$ or $p\mid b$. Without loss of generality, suppose $p\mid a$. By the equation, $a\mid p$ as well, so $a$ and $p$ are associates, thus $b$ is a unit. $\square$
+
+## Radical Ideals and Reduced Ring
 
 > [!definition] Nilpotent & Idempotent
 > Let $R$ be a ring. $x\in R$ is *nilpotent* if there is $n\in\N$ such that $x^n =0$. $x\in R$ is *idempotent* if $x^{2}=x$.

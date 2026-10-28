@@ -102,12 +102,8 @@ Now we generalize the idea of [[Fields and Field Extensions#^e3b5a6|the proposit
 
 *Proof*  Let $f(x)$ be the minimal polynomial of $\alpha$ over $F$. Then $F[\alpha]\cong F[x]/(f(x))$, so $\deg_{F}(F[\alpha])=\deg f(x)=n$. $\square$
 
-> [!definition] Characteristic
-> Let $\newcommand{\Z}{\mathbb{Z}}\psi\colon \Z\to R$ be the unique ring homomorphism from the integers to a ring $R$. Then the characteristic of $R$ is the smallest nonnegative integer $n$ such that $\ker\psi=n\Z$. 
-> i.e., $n$ is the smallest positive integer such that $n\cdot 1=0$ in $R$, or $n=0$ if no such integer exists. ^2bfbd8
-
 > [!proposition]
-> Assume that the field $F$ does not have characteristic $2$, that is, $1 + 1 \ne 0$ in $F$. Then any extension $K$ of degree $2$ over $F$ can be obtained by adjoining a square root: $K = F(\delta)$, where $\delta^2 = d$ is an element of $F$. Conversely, if $\delta$ is an element of a field extension of $F$, and if $\delta^2$ is in $F$ but $\delta$ is not in $F$, then $F(\delta)$ is a quadratic extension of $F$.
+> Assume that the field $F$ does not have [[Mathematics/Ring Theory/Homomorphisms and Ideals#^2bfbd8|characteristic]] $2$, that is, $1 + 1 \ne 0$ in $F$. Then any extension $K$ of degree $2$ over $F$ can be obtained by adjoining a square root: $K = F(\delta)$, where $\delta^2 = d$ is an element of $F$. Conversely, if $\delta$ is an element of a field extension of $F$, and if $\delta^2$ is in $F$ but $\delta$ is not in $F$, then $F(\delta)$ is a quadratic extension of $F$.
 
 > [!remark]+
 > However, it is not true that all cubic extensions can be obtained by adjoining a cube root.
@@ -115,6 +111,8 @@ Now we generalize the idea of [[Fields and Field Extensions#^e3b5a6|the proposit
 
 > [!theorem]
 > If $K\supset F$ is a field extension of $F$, and $\deg_{F} K<\infty$, then every element of $K$ is algebraic over $F$.
+
+^02e23e
 
 *Proof*  Assume there is a transcendental element $a\in K$. Then there holds $$F\subset F[a]\subseteq K.$$Note that $F[a]\cong F[x]$ has infinite degree, so $\deg_{F} K=\infty$, which is a contradiction. $\square$
 
