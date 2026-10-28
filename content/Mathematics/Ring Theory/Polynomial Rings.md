@@ -1,6 +1,7 @@
 ---
 created: 2023-11-04
 updated: 2026-10-28
+completed: true
 ---
 ## Polynomials
 
@@ -19,7 +20,8 @@ Let $R$ be a ring. $\newcommand{\[}{[\![}\newcommand{\]}{]\!]}R\[x\]$
 > The term $a_{n} x^{n}$ for $n = \deg(f)$ is called the *leading term* of $f$. The polynomial $f$ is called *monic* if the coefficient of the leading term is a [[Ring, Field and Integral Domain#^c4d0ce|unit]].
 
 > [!lemma]
-> For all $f,g\in R[x]$, $\deg(f g) \leq \deg(f )+\deg(g)$ with equality if and only if $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]].
+> For all $f,g\in R[x]$, $\deg(f g) \leq \deg(f)+\deg(g)$. In particular, $\deg(f g) = \deg(f)+\deg(g)$ if one of $f,g$ is monic.
+> Moreover, it is equality for all $f,g\in R[x]$ if and only if $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]]. ^296dad
 
 *Proof*  Suppose $f = \sum_{n=0}^{m} a_n x^n$ and $g = \sum_{n=0}^{k} b_n x^n$ with $a_m, b_k \neq 0$. Then the leading coefficient of $fg$ is $a_m b_k$, which is non-zero for all $f$ and $g$ if and only if $R$ is an integral domain. $\square$
 
@@ -38,7 +40,7 @@ Let $R$ be a ring. $\newcommand{\[}{[\![}\newcommand{\]}{]\!]}R\[x\]$
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/polynomial_ring_induced_homomorphism.svg" style="width:20%;"/>
 > More generally, given $α_1, \dots , α_n \in S$ there is a unique homomorphism $R[x_1,\dots,x_n]→S$ that agrees with $φ$ on constants and maps $x_k$ to $α_k$.
 
-*Proof*  This is immediate from the polynomial substitution principle. $\square$
+*Proof Idea*  It is easy to check that $\Phi$ is a homomorphism. In fact, after specifying that $\Phi(x)=\alpha$ and $\Phi(r)=\varphi(r)$ for all $r\in R$, $\Phi$ has been fully determined. $\square$
 
 > [!corollary] Evaluation Homomorphism
 > Suppose $R[x]$ is a polynomial ring. Then the evaluation map $\operatorname{ev}_{α} \colon R[x] \to R$ given by $f \mapsto f(α)$ for any $\alpha\in R$ is a ring homomorphism.
@@ -46,52 +48,24 @@ Let $R$ be a ring. $\newcommand{\[}{[\![}\newcommand{\]}{]\!]}R\[x\]$
 
 *Proof*  This is immediate from the above proposition by considering the identity map $\operatorname{id}\colon R\to R$. $\square$
 
-The consequence of the above proposition is that  More generally, given $\alpha_1,\dots,\alpha_n\in R$, there is a unique homomorphism $R[x_1,\dots,x_n]\to S$ that agrees with $\varphi$ on constants and maps $x_k$ to $\alpha_k$.
-
-We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2=\dots=a_n=0$ or ‘killing’ the elements $a_i$. Killing the elements $a_i$ in installments and in various orders, or in one strike lead to the same result. That is, we have following commutative diagram:
-
-<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/imposing_relations.svg" alt="imposing_relations" style="width:25%;">
-
-A primary tool for constructing new rings is to take a ring $R$ and a ‘free’ variable and create the polynomial ring, and then quotient by a polynomial. We will see this further in [[Fields Construction#Adjoining Roots|field extensions by adjoining roots of polynomials.]]
-
-<u><b>e.g.</b></u>  The complex numbers are constructed from $\R$ by setting $\mathbb{C} := \R[x]/(x^2+1)$. In fact, we can define $\varphi : \mathbb{C} \to \R[x]/(x^2+1), a+bi \mapsto \overline{a+bx}$. Clearly it is surjective and injective. Since $$ \begin{align}
-\varphi(a+bi)\varphi(c+di)&=\overline{ac+(ad+bc)x+bdx^2} \\
-&=\overline{(ad+bc)x-bd+ac} \\
-&=\varphi((ad+bc)i+(ac-bd)) \\
-&=\varphi((a+bi)(c+di)),
-\end{align} $$$\varphi$ is homomorphism, yielding a isomorphism. ^a4b259
-
-> [!proposition]
-> If $f$ in $R[x]$ has no root in $R[x]$ we can form the quotient $R[x]/\left(f (x)\right)$ and $\overline{x} = x +(f (x))$ is a root of $f$.
-
-> [!definition]
-> Whenever we have a subring $R$ of a ring $S$ and an element $α ∈ S$ we denote by $R[α]$ the smallest subring of $S$ that contains $R$ and $α$.
-
-> [!proposition]
-> $\Phi\colon R[x] \to S, f \mapsto f(\alpha)$ defines an isomorphism $R[x]/\ker(\Phi)\cong R[\alpha]$.
-
-
 ## Division with Remainder
 
-> [!theorem] Division Algorithm for Polynomials
-> Let $R$ be a commutative unital ring and $f,g \in R[x]$ with $f$ monic (i.e, the leading coefficient is a [[Ring, Field and Integral Domain#^c4d0ce|unit]]). Then there are uniquely determined polynomials $q,r \in R[x]$, such that $g = f \cdot q + r$ and such that $\deg(r) < \deg(f)$ or $r=0$. The polynomial $q$ is called the quotient and the polynomial $r$ is called the remainder.
+> [!theorem] Division with Remainder for Polynomials
+> Let $R$ be a commutative unital ring and $f,g \in R[x]$ with $f$ monic. Then there are uniquely determined polynomials $q,r \in R[x]$, such that $g = f \cdot q + r$ and such that $\deg(r) < \deg(f)$ or $r=0$. The polynomial $q$ is called the *quotient* and the polynomial $r$ is called the *remainder*. ^71da0e
 
-A function $f : R → R$ is called a polynomial function if there exists $p ∈ R[x]$ such that $f (α) = p(α)$ for every $α ∈ R$.
+*Proof by Example*  This process is usually called the *long division*. Consider $R=\Z/4$, $f(x)=3x^{2}+x+2$, $g(x)=2x^{3}+x^{2}+3x+1$. Then we have the following process: $$\begin{aligned} r_{1}(x):=&g(x)-2xf(x)=3x^{2}-x+1, \\ r_{2}(x):=&r_{1}(x)-f(x)=2x+3. \end{aligned}$$Therefore, $g(x)=(2x+1)f(x)+(2x+3)$. Note that requiring $f$ to be monic is crucial here because we need the leading coefficient to be invertible to find out the quotient (i.e., the $2x$ in the first line) at each step. This algorithm is guaranteed to terminate because the degree goes down by each step (ref. [[Polynomial Rings#^296dad|lemma]]). $\square$
 
 > [!corollary]
-> Let $g ∈ R[x]$ and $α ∈ R$. The remainder of division of $g(x)$ by $x − α$ is $g(α)$. It follows that $x − α$ divides $g(x)$ if and only if $g(α) = 0$.
+> Let $g \in R[x]$ and $\alpha \in R$. The remainder of division of $g$ by $x − \alpha$ is $g(\alpha)$. It follows that $x − \alpha$ divides $g(x)$ if and only if $g(\alpha) = 0$.
 
-*Proof*  We have unique $q,r \in R[x]$ such that $g(x) = (x-\alpha) q(x)+r(x)$ and $\deg(r) < \deg (f)=1$ or $r=0$. Hence $x − α$ divides $g(x)$ if and only if $g(α) = 0$. $\square$
+*Proof*  We have unique $q,r \in R[x]$ such that $g(x) = (x-\alpha) q(x)+r(x)$ and $\deg(r) < \deg (x-\alpha)=1$ or $r=0$, so $r$ is a constant. Let $x=\alpha$, we get $r=g(\alpha)$. Hence $x − α$ divides $g(x)$ if and only if $g(α) = 0$. $\square$
 
-**Corollary**  A polynomial in $F$ of degree $n$ over a field $F$ (more generally, a domain) has at most $n$ roots.
+> [!corollary]
+> A polynomial in $F$ of degree $n$ over a field $F$ (more generally, an integral domain) has at most $n$ roots.
 
 > [!definition] Multivariable Polynomials
-> For $x_1,\dots,x_n$ and $i = (i_1,\dots,i_n) ∈ \mathbb{N}^n$ we write $x^{i}=x_1^{i_1} \dots x_n^{i_n}$. The degree of $x^i$ is $i_1+ \dots + i_n$. The collection of all these is called the ring of polynomials in $n$ variables with coefficients in $R$ and denoted $R[x_1,\dots,x_n]$.
+> For $x_1,\dots,x_n$ and $i = (i_1,\dots,i_n) ∈ \mathbb{N}^n$ we write $x^{i}=x_1^{i_1} \dots x_n^{i_n}$. The degree of $x^i$ is $i_1+ \dots + i_n$. The collection of all these is called *the ring of polynomials in $n$ variables* with coefficients in $R$ and denoted $R[x_1,\dots,x_n]$.
 
 > [!proposition]
 > $$\frac{R[x,y]}{(f(x),g(y))}\cong\frac{(R[x]/(f(x)))[y]}{g(y)}$$
 > 
-
-**Prop** Every ideal in the polynomial ring $F[x]$ over a field $F$ is principal. A non-zero ideal in $F[x]$ is generated by the unique monic polynomial of lowest degree that it contains.
-
-**Proof**

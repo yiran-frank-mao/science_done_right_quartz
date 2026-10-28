@@ -15,7 +15,6 @@
 > [!proposition]
 > $R[x,y] \cong R[x][y]$.
 
-
 > [!definition] Kernel and Image
 > The *kernel* and *image* of a ring homomorphism $φ \colon R \to S$ are
 > $$\ker \varphi = \{ r\in R \mid \varphi(r)=0 \},\quad \operatorname{im}\varphi = \{s\in S \mid \exists r\in R, \varphi(r)=s \}.$$
@@ -57,27 +56,33 @@
 > [!definition] Quotient Ring
 > Let $R$ be a ring and $I$ an ideal. Then, as an additive subgroup, $I$ is [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal]] in $R$ and we can form the quotient $$ R/I=\{ a+I \mid a\in R \} $$with addition $(a + I ) + (b + I ) = a + b + I$ , zero $I$ , and inverse $−(a + I ) = −a + I$. There is a unique way to upgrade this abelian group to a ring, called the *quotient ring*. Define $$ (a+I)\cdot(b+I):=ab+I. $$
 
-**Thrm** _Mapping Property of Quotients_
+We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2=\dots=a_n=0$ or ‘killing’ the elements $a_i$. Killing the elements $a_i$ in installments and in various orders, or in one strike lead to the same result. That is, we have following commutative diagram:
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/imposing_relations.svg" alt="imposing_relations" style="width:25%;">
+A primary tool for constructing new rings is to take a ring $R$ and a ‘free’ variable and create the polynomial ring, and then quotient by a polynomial. We will see this further in [[Fields Construction#Adjoining Roots|field extensions by adjoining roots of polynomials.]]
 
-Let $φ:R→S$ be a ring homomorphism with kernel $K$ and let $I$ be another ideal. Let $π:R→R/I$ be the canonical map. Then if $I ⊂K$,there exists a unique ring homomorphism $\bar{\varphi}:R/I →S$ such that $φ=\bar{\varphi}\circ \pi$.
+<u><b>e.g.</b></u>  
+- If $f$ in $R[x]$ has no root in $R[x]$ we can form the quotient $R[x]/\left(f (x)\right)$ and $\overline{x} = x +(f (x))$ is a root of $f$.
+- The complex numbers are constructed from $\R$ by setting $\mathbb{C} := \R[x]/(x^2+1)$. In fact, we can define $\varphi : \mathbb{C} \to \R[x]/(x^2+1), a+bi \mapsto \overline{a+bx}$. Clearly it is surjective and injective. Since $$ \begin{align}
+\varphi(a+bi)\varphi(c+di)&=\overline{ac+(ad+bc)x+bdx^2} \\
+&=\overline{(ad+bc)x-bd+ac} \\
+&=\varphi((ad+bc)i+(ac-bd)) \\
+&=\varphi((a+bi)(c+di)),
+\end{align} $$$\varphi$ is homomorphism, yielding a isomorphism. ^a4b259
+$\quad$
+
+> [!proposition] Universal Property of Quotients
+> Let $\varphi\colon R\to S$ be a ring homomorphism with kernel $K$ and let $I$ be another ideal. Let $π\colon R\to R/I$ be the canonical quotient map. Then if $I \subset K$,there exists a unique ring homomorphism $\bar{\varphi}:R/I →S$ such that $φ=\bar{\varphi}\circ \pi$.
+> 
+
 
 > [!theorem] First Isomorphism Theorem
-> Let $φ\colon R\to S$ be a ring homomorphism with kernel $K$. If $φ$ is surjective then $\bar{φ}:R/K →S$ is an isomorphism.
+> Let $\varphi \colon R\to S$ be a ring homomorphism with kernel $K$. If $φ$ is surjective then $\bar{φ}\colon R/K →S$ is an isomorphism.
 
-<u><b>e.g.</b></u>  $\R[x]/(x^2+1) \cong \mathbb{C}$.
+<u><b>e.g.</b></u>  $\R[x]/(x^2+1) \cong \mathbb{C}$ can also be showed using the first isomorphism theorem.
 
 > [!theorem] Correspondence Theorem
 > Let $φ \colon R → R^\prime$ be a surjective ring homomorphism with kernel $K$. There is a bijective correspondence:
-> $$ \begin{aligned}
-> 
-> \{\text{Ideals of } R \text{ containing } K\} &\longleftrightarrow\{\text{Ideals of } R^\prime\} \\
-> 
-> I &\shortmid\!\longrightarrow \varphi(I) \\
-> 
-> I^\prime &\longleftarrow\!\shortmid \varphi^{-1}(I^\prime)
-> 
-> \end{aligned} $$
-> 
+> $$\begin{aligned}\{\text{Ideals of } R \text{ containing } K\} &\longleftrightarrow\{\text{Ideals of } R^\prime\} \\I &\shortmid\!\longrightarrow \varphi(I) \\I^\prime &\longleftarrow\!\shortmid \varphi^{-1}(I^\prime)\end{aligned} $$
 > If the ideal $I$ corresponds to the ideal $I^\prime$ then $R/I \cong R^\prime/I^\prime$.
 
 > [!corollary]

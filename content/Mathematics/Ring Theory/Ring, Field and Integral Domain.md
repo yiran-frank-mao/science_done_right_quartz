@@ -24,7 +24,8 @@ tags:
 $\quad$
 
 >[!definition] Subring
->A subset $S$ in a ring $R$ is called a *subring* if $S$ is closed under addition, subtraction, multiplication and contains $1$ (if $R$ is unital).
+> A subset $S$ in a ring $R$ is called a *subring* if $S$ is closed under addition, subtraction, multiplication and contains $1$ (if $R$ is unital).
+> Whenever we have a subring $R$ of a ring $S$ and an element $\alpha \in S$ we denote by $R[\alpha]$ the smallest subring of $S$ that contains $R$ and $\alpha$.
 
 <u><b>e.g.</b></u>
 - $\Z$ is a subring of $\Q$. However, $\Z$ has only itself as subring;

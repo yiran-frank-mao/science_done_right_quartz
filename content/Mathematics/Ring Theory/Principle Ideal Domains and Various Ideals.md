@@ -16,7 +16,7 @@ Before we proceed, we introduce the notion of *principal ideal domain*.
 <u><b>e.g.</b></u>
 - Every field is a principal ideal domain. In fact, let $I\triangleleft F$ be an ideal, if $I$ is non-trivial, then it contains a non-zero element $a$. Since $F$ is a field, $a$ is a unit, and thus $I=F$. So any field only has two trivial ideals: $\{0\}$ and $F$;
 - $\Z$ is a PID, we will prove this in the next proposition;
-- $F[x]$ is a PID for any field $F$;
+- $F[x]$ is a PID for any field $F$; ^1848b4
 - $F[x,y]$ for some field $F$ is not a principal ideal domain. The ideal $I=(x,y)$ is not principle;
 - In $\Z[x]$, $(2,x)$ is not principle.
 $\quad$
