@@ -8,7 +8,7 @@ Rings are algebraic structures that generalize fields: multiplication need not b
 ### Commutative Rings
 [[Ring, Field and Integral Domain]]
 [[Polynomial Rings]]
-[[Homomorphisms and Ideals]]
+[[Ring Homomorphisms and Ideals]]
 [[Principle Ideal Domains and Various Ideals]]
 [[Factorization]]
 [[Bézout Domain]]

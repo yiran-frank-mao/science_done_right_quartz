@@ -11,7 +11,7 @@ Before we proceed, we introduce the notion of *principal ideal domain*.
 ## Principle Ideal Domains
 
 > [!definition] Principal Ideal Domain
-> An [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ is called a *principal ideal domain* if every [[Homomorphisms and Ideals#^395472|ideal]] is [[Homomorphisms and Ideals#^027c69|principle]]. ^74559c
+> An [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ is called a *principal ideal domain* if every [[Ring Homomorphisms and Ideals#^395472|ideal]] is [[Ring Homomorphisms and Ideals#^027c69|principle]]. ^74559c
 
 <u><b>e.g.</b></u>
 - Every field is a principal ideal domain. In fact, let $I\triangleleft F$ be an ideal, if $I$ is non-trivial, then it contains a non-zero element $a$. Since $F$ is a field, $a$ is a unit, and thus $I=F$. So any field only has two trivial ideals: $\{0\}$ and $F$;

@@ -10,14 +10,20 @@
 > Let $\newcommand{\Z}{\mathbb{Z}}\psi\colon \Z\to R$ be the unique ring homomorphism from the integers to a ring $R$. Then the characteristic of $R$ is the smallest nonnegative integer $n$ such that $\ker\psi=n\Z$. 
 > i.e., $n$ is the smallest positive integer such that $n\cdot 1=0$ in $R$, or $n=0$ if no such integer exists. ^2bfbd8
 
+<u><b>e.g.</b></u>  The characteristic of $\Z$ is $0$, the characteristic of $\Z/n\Z$ is $n$.
 
-> [!proposition] Substitution Principle II
-> Let $φ : R → S$ be a ring homomorphism and $α ∈ R$. There is a unique ring homomorphism $Φ : R[x]\to S$ that agrees with $φ$ on constant polynomials, and that maps $x$ to $α$. More generally, given $α_1, \dots , α_n ∈ R$ there is a unique homomorphism $R[x_1,\dots,x_n]→S$ that agrees with $φ$ on constants and maps $x_k$ to $α_k$.
+> [!proposition]
+> $R[x,y] \cong R[x][y]$.
 
-**Prop**  $R[x,y] \cong R[x][y]$.
 
-**Def**  The kernel and image of a ring homomorphism $φ : R → S$ are$$\ker \varphi = \{ r\in R \mid \varphi(r)=0 \},\quad 
-\operatorname{im}\varphi = \{s\in S \mid \exists r\in R, \varphi(r)=s \}$$The image is a subring of $S$ because $φ(a) − φ(b) = φ(a − b)$, $φ(ab) = φ(a)φ(b)$, $1 = φ(1)$. The kernel is an additive subgroup of $R$.
+> [!definition] Kernel and Image
+> The *kernel* and *image* of a ring homomorphism $φ \colon R \to S$ are
+> $$\ker \varphi = \{ r\in R \mid \varphi(r)=0 \},\quad \operatorname{im}\varphi = \{s\in S \mid \exists r\in R, \varphi(r)=s \}.$$
+> 
+
+> [!remark]
+> The image is a subring of $S$ because $φ(a) − φ(b) = φ(a − b)$, $φ(ab) = φ(a)φ(b)$, $1 = φ(1)$. The kernel is an *ideal* of $R$, which is defined in the next section.
+> 
 
 ## Ideals
 
@@ -43,6 +49,8 @@
 
 > [!proposition]
 > If $I,J\triangleleft R$ are ideals so are $I\cap J$ and $IJ$.
+
+*Proof*  It is clear that $I\cap J$ is an ideal. For $IJ$, we have $0\in IJ$ since $0\in I,J$. If $x=\sum_{i=1}^n x_iy_i$ and $y=\sum_{j=1}^m u_jv_j$ are in $IJ$, then $x+y=\sum_{i=1}^n x_iy_i+\sum_{j=1}^m u_jv_j\in IJ$. If $r\in R$, then $rx=\sum_{i=1}^n (rx_i)y_i\in IJ$. $\square$
 
 ## Quotient rings
 
@@ -85,7 +93,7 @@ Let $φ:R→S$ be a ring homomorphism with kernel $K$ and let $I$ be another ide
 > [!theorem] Chinese Remainder Theorem
 > Let $I, J \triangleleft R$ such that $I + J = R$, then $I J =I \cap J$ and $R/I J\cong R/I ×R/J$.  ^27e653
 
-*Proof*  We first show that $IJ=I\cap J$. It is clear that $IJ\subseteq I\cap J$. Conversely, for all $a\in I\cap J$, note that since $R=I+J$, we have $1=x_{0}+y_{0}$ for some $x_{0}\in I,y_{0}\in J$. Then $a=x_{0}a + y_{0}a \in IJ$. Thus $I\cap J\subseteq IJ$. Therefore, combining [[Homomorphisms and Ideals#^2e52b1|the above lemma]], we have $R/IJ\cong R/I\times R/J$. $\square$
+*Proof*  We first show that $IJ=I\cap J$. It is clear that $IJ\subseteq I\cap J$. Conversely, for all $a\in I\cap J$, note that since $R=I+J$, we have $1=x_{0}+y_{0}$ for some $x_{0}\in I,y_{0}\in J$. Then $a=x_{0}a + y_{0}a \in IJ$. Thus $I\cap J\subseteq IJ$. Therefore, combining [[Ring Homomorphisms and Ideals#^2e52b1|the above lemma]], we have $R/IJ\cong R/I\times R/J$. $\square$
 
 > [!remark]
 > Given $I + J = R$, $IJ=I\cap J$ requires $R$ being a commutative unital ring, while $R/(I\cap J)\cong R/I\times R/J$ holds for any ring $R$.

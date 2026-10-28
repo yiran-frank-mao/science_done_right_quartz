@@ -1,7 +1,10 @@
 ---
-updated: 2025-02-16
+updated: 2026-10-28
 tags:
   - algebra
+  - ring
+  - field
+  - integral-domain
 ---
 ## Rings
 
@@ -32,7 +35,7 @@ $\quad$
 >An element of a ring $R$ is called a *unit* if it is invertible with respect to multiplication. The set of invertible elements is a [[Groups, Order and Subgroups#^6e0960|group]] called the the group of units in $R$ and denotes $R^{\times}$. ^c4d0ce
 
 > [!proposition]
-> For any (non-unital) ring $R$, $\Z\times R$ is a unital ring with multiplicative identity $(1,0)$ under the multiplication 
+> For any (non-unital) ring $R$, the set $\Z\times R$ is a unital ring with multiplicative identity $(1,0)$ under the multiplication 
 > $$ (m,r)(n,s):= (mn, m\cdot s + n \cdot r + rs), $$
 > where for any $k\in\Z$, $k\cdot x$ is a shorthand for $x+x+\cdots+x$ ($k$ times) if $k>0$, $0$ if $k=0$, and $-((-k)\cdot x)$ if $k<0$. ([[Modules#^a2dd74|any abelian group is a $\Z$-module]])
 
@@ -56,17 +59,15 @@ From the above proposition, we can see that any ring can be enlarged into a unit
 > [!definition] Field
 > A field is a [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|ring]] $F$ in which $1 \neq 0$ and every non-zero element is invertible, that is $F^× = F \backslash \{0\}$. ^575174
 
-<u><b>e.g.</b></u>  The rational numbers $\mathbb{Q}$ is a field.
+<u><b>e.g.</b></u>  
+- The rational numbers $\mathbb{Q}$ is a field;
+- $\mathbb{Z}/n$ is a field if and only if $n$ is a prime. To see this, suppose $n$ is prime, then every non-zero element $[a] \in \mathbb{Z}/n$ satisfies $a^{n-1}\equiv 1 \mod n$ by [[Division and Prime#^5214dc|Fermat's Little Theorem]]. Therefore $[a]^{-1} = [a]^{n-2}$. Conversely, if $n$ is not prime, then there exists $[a],[b] \in \mathbb{Z}_n$ such that $[a][b] = [n]=0$ but $a,b \neq 0$, so $\Z_{n}$ is not even an integral domain. ^9aa68f
+$\quad$
 
 > [!proposition]
 > Any field is an integral domain.
 
 *Proof*  Suppose $ab=0$, $a$ can be either $0$ or a unit, if it is not $0$, then $a^{-1}ab=b=0$. $\square$
-
-> [!proposition]
-> $\mathbb{Z}_n$ is a field if and only if $n$ is a prime. ^9aa68f
-
-*Proof*  Suppose $n$ is prime, then every non-zero element $[a] \in \mathbb{Z}_n$ satisfies $a^{n-1}\equiv 1 \mod n$ by [[Division and Prime#^5214dc|Fermat's Little Theorem]]. Therefore $[a]^{-1} = [a]^{n-2}$. Conversely, if $n$ is not prime, then there exists $[a],[b] \in \mathbb{Z}_n$ such that $[a][b] = [n]=0$ but $a,b \neq 0$, so $\Z_{n}$ is not even an integral domain. $\square$
 
 > [!proposition]
 > Every finite integral domain is a [[Ring, Field and Integral Domain#^575174|field]].
@@ -78,19 +79,19 @@ Given any integral domain, we can construct the smallest field containing it, ca
 
 > [!definition] The Field of Fractions
 > Suppose $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]]. Consider $R\times(R \backslash \{0\})=\{ (a,b)\mid a,b \in R, b\neq0 \}$ equip with the following relation: $$ (a_1,b_1)\sim(a_2,b_2) \quad \text{if} \quad a_1b_2=a_2b_1 $$
-> This is an [[Relations and Functions#^14741d|equivalence relation]]. Let $\newcommand{\frac}{\operatorname{Frac}}\frac(R)$ denote the quotient. We denote the [[Relations and Functions#^973688|equivalence classes]] by $a/b = [(a,b)]$.
+> This is an [[Relations and Functions#^14741d|equivalence relation]]. Let $\newcommand{\frac}{\operatorname{frac}}\frac(R)$ denote the quotient. We denote the [[Relations and Functions#^973688|equivalence classes]] by $a/b = [(a,b)]$.
 
 <u><b>e.g.</b></u> 
-- If $R=\Z$ then $\text{Frac}(R)=F =\mathbb{Q}$;
+- If $R=\Z$ then $\frac(R)=\mathbb{Q}$;
 - If $R=E[x]$, for a field $E$, then the field of fraction of $E[x]$, denoted $E(x)$, is called the *field of rational functions over $E$*: $$ E(x):= \{ f/g=[(f,g)] \mid f,g \in E[x], g\neq 0 \}. $$
 $\quad$
 
 > [!proposition] Universal Property of the Field of Fractions
-> $\frac(R)$ is the smallest field containing $R$. More precisely, for any field $F$ and any injective [[Homomorphisms and Ideals#^16be07|ring homomorphism]] $\phi\colon R \to F$, there exists a unique field homomorphism $\bar{\phi}\colon \frac(R) \to F$ such that the following diagram commute:
+> $\frac(R)$ is the smallest field containing $R$. More precisely, for any field $F$ and any injective [[Ring Homomorphisms and Ideals#^16be07|ring homomorphism]] $\phi\colon R \to F$, there exists a unique field homomorphism $\bar{\phi}\colon \frac(R) \to F$ such that the following diagram commute:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/universal_property_fraction_field.svg" style="width:28%;"/>
 > 
 
-*Proof*  
+*Proof Idea*  Define $\bar{\phi}(a/b) := \phi(a)\phi(b)^{-1}$, and check that it is well-defined and a homomorphism. $\square$
 
 In general, if a ring $R$ is not an integral domain, we can still attempt to construct a "field of fractions", this is called the [localisation](https://www.wikiwand.com/en/Localization_(commutative_algebra).
 

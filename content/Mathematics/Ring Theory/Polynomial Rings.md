@@ -10,32 +10,43 @@ Let $R$ be a ring. $\newcommand{\[}{[\![}\newcommand{\]}{]\!]}R\[x\]$
 > Let $R$ be a ring. The polynomial ring in one variable over $R$ is the set of sequences:$$\{ (a_n)_{n=0}^\infty \mid a_n \in R, \exists n_0\in \mathbb{N}, a_n=0 \text{ for all } n\geq n_0  \}$$Equivalently,$$ R[x] = \left\{ \sum_{n=0}^\infty a_n x^n \mid a_n \in R, \exists n_0\in \mathbb{N}, a_n=0 \text{ for all } n\geq n_0  \right\}$$with addition $(a_n)+(b_n)=(a_n+b_n)$ and multiplication $(a_n)\cdot(b_n)=(\sum_{k=0}^n a_kb_{n-k})$.
 
 > [!proposition]
-> $R[x]$ is a ring. The identity $1$ is the polynomial $(1+0x+0x^2+\dots)$.
+> $R[x]$ is a ring. The identity $1$ is the polynomial $(1+0x+0x^2+\cdots)$.
+
+*Proof*  This is straightforward. $\square$
 
 > [!definition] Degree and Leading Term
 > The *degree* of a polynomial $f = \sum_{n} a_{n} x^{n} \in R[x]$, denoted $\deg(f)$, is the largest $n$ with $a_n \neq 0$. The element zero does not have a degree.
-> The term $a_{n} x^{n}$ for $n = \deg(f)$ is called the *leading term* of $f$. The polynomial $f$ is called *monic* if the coefficient of the leading term is $1$.
+> The term $a_{n} x^{n}$ for $n = \deg(f)$ is called the *leading term* of $f$. The polynomial $f$ is called *monic* if the coefficient of the leading term is a [[Ring, Field and Integral Domain#^c4d0ce|unit]].
 
-> [!proposition]
+> [!lemma]
 > For all $f,g\in R[x]$, $\deg(f g) \leq \deg(f )+\deg(g)$ with equality if and only if $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]].
+
+*Proof*  Suppose $f = \sum_{n=0}^{m} a_n x^n$ and $g = \sum_{n=0}^{k} b_n x^n$ with $a_m, b_k \neq 0$. Then the leading coefficient of $fg$ is $a_m b_k$, which is non-zero for all $f$ and $g$ if and only if $R$ is an integral domain. $\square$
 
 > [!proposition]
 > If $R$ is an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], then $R[x]^{\times} = \{r+ 0x+0x^2+\dots \mid r\in R^{\times} \} \cong R^{\times}$, so $R[x]$ is also an integral domain. ^fc05c5
 
-*Proof*  It suffices to show that 
+*Proof*  Suppose $R$ is an integral domain. Then $\deg(fg)=\deg (f)+\deg(g)$ for all $f,g\in R[x]$. That is, the degree increases under multiplication, so the only way $fg=1$ or $fg=0$ is when both $f$ and $g$ are constants. So $R[x]^{\times} = \{r+ 0x+0x^2+\dots \mid r\in R^{\times} \} \cong R^{\times}$, and $R[x]$ is also an integral domain. $\square$
 
 > [!remark]- Nonconstant polynomials can be units if $R$ is not an integral domain
 > This not true if $R$ is not an integral domain. In $(\Z/4)[x]$, we have 
 > $$ (1+2x)(1-2x)=1-4x^{2}=1.  $$
 > 
 
-> [!proposition] Evaluation Homomorphism
+> [!proposition] Universal Property of Polynomial Rings (Substitution Principle)
+> Suppose $R,S$ are [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^concept-b822d04b4a4b|commutative unital rings]], and fix some $\alpha\in S$. If $\varphi\colon R\to S$ is a ring homomorphism, then there is a unique ring homomorphism $\Phi\colon R[x]\to S$ that agrees with $\varphi$ on $R$ and that maps $x$ to $\alpha$.
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/polynomial_ring_induced_homomorphism.svg" style="width:20%;"/>
+> More generally, given $α_1, \dots , α_n \in S$ there is a unique homomorphism $R[x_1,\dots,x_n]→S$ that agrees with $φ$ on constants and maps $x_k$ to $α_k$.
+
+*Proof*  This is immediate from the polynomial substitution principle. $\square$
+
+> [!corollary] Evaluation Homomorphism
 > Suppose $R[x]$ is a polynomial ring. Then the evaluation map $\operatorname{ev}_{α} \colon R[x] \to R$ given by $f \mapsto f(α)$ for any $\alpha\in R$ is a ring homomorphism.
 > 
 
-*Proof*  This is easy to check. $\square$
+*Proof*  This is immediate from the above proposition by considering the identity map $\operatorname{id}\colon R\to R$. $\square$
 
-The consequence of the above proposition is that if $\varphi\colon R\to S$ is a ring homomorphism, then there is a unique ring homomorphism $\Phi\colon R[x]\to S$ that agrees with $\varphi$ on constant polynomials and that maps $x$ to $\alpha$. More generally, given $\alpha_1,\dots,\alpha_n\in R$, there is a unique homomorphism $R[x_1,\dots,x_n]\to S$ that agrees with $\varphi$ on constants and maps $x_k$ to $\alpha_k$.
+The consequence of the above proposition is that  More generally, given $\alpha_1,\dots,\alpha_n\in R$, there is a unique homomorphism $R[x_1,\dots,x_n]\to S$ that agrees with $\varphi$ on constants and maps $x_k$ to $\alpha_k$.
 
 We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2=\dots=a_n=0$ or ‘killing’ the elements $a_i$. Killing the elements $a_i$ in installments and in various orders, or in one strike lead to the same result. That is, we have following commutative diagram:
 
@@ -58,7 +69,6 @@ A primary tool for constructing new rings is to take a ring $R$ and a ‘free’
 
 > [!proposition]
 > $\Phi\colon R[x] \to S, f \mapsto f(\alpha)$ defines an isomorphism $R[x]/\ker(\Phi)\cong R[\alpha]$.
-
 
 
 ## Division with Remainder

@@ -271,7 +271,7 @@ Updates: [[Constructions on Categories]].
 
 ## 16 Feb 2025
 - New page: [[Factorization]].
-- Updates: [[Complex Numbers]], [[Ring, Field and Integral Domain]], [[Homomorphisms and Ideals]].
+- Updates: [[Complex Numbers]], [[Ring, Field and Integral Domain]], [[Ring Homomorphisms and Ideals]].
 
 ## 9 Feb 2025
 - New page: [[Fractal Geometry]], [[The Exterior Measure]].

@@ -5,12 +5,12 @@ updated: 2026-10-27
 ## Size of Finite Fields
 
 > [!lemma]
-> The [[Mathematics/Ring Theory/Homomorphisms and Ideals#^2bfbd8|characteristic]] of any field is either zero or a prime.
+> The [[Ring Homomorphisms and Ideals#^2bfbd8|characteristic]] of any field is either zero or a prime.
 
 *Proof*  Assume a field $F$ has characteristic neither zero nor a prime, say $n$. Then $n\cdot 1_{F} = 0_{F}$, where $1_{F}$ is the multiplicative identity of $F$ and $0_{F}$ is the additive identity of $F$. Let $p$ be the smallest prime divisor of $n$ so that $n=pm$. Then, we have $0_{F}=(pm)\cdot 1_{F}=(p\cdot 1_{F})(m\cdot 1_{F})$. Note that $F$ has no nonzero zero divisor, so either $p\cdot 1_{F}=0_{F}$ or $m\cdot 1_{F}=0_{F}$, which contradicts the assumption that $n$ is the smallest integer making $n\cdot 1_{F}=0_{F}$. $\square$
 
 > [!lemma]
-> A finite field must have [[Mathematics/Ring Theory/Homomorphisms and Ideals#^2bfbd8|characteristic]] $p$ for some prime $p$ and its order is $p^{r}$ for some $r\in \N$.
+> A finite field must have [[Ring Homomorphisms and Ideals#^2bfbd8|characteristic]] $p$ for some prime $p$ and its order is $p^{r}$ for some $r\in \N$.
 > 
 
 *Proof*  Let $F$ be a finite field. The characteristic of a finite field cannot be zero, so it must be a prime $p$. Hence, $F$ contains the finite subfield $\newcommand{\F}{\mathbb{F}}\F_{p}$. Note that $F$ is finite, thus a finite-dimensional vector space over $\mathbb{F}_{p}$. Let $r$ be the dimension of $F$ as a vector space over $\mathbb{F}_{p}$. Then, the order of $F$ is $p^{r}$. $\square$

@@ -23,7 +23,7 @@ completed: true
 > Conformal equivalence is an [[Relations and Functions#^14741d|equivalence relation]] on the set of domains.
 
 > [!proposition]
-> If $f \colon D → G$ is a biholomorphism, the map $\Phi_{f}\colon H(G) \to H(D)$ given by $\Phi_{f}(g)=g\circ f$ is an [[Homomorphisms and Ideals#^16be07|isomorphism]] of [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|rings]].
+> If $f \colon D → G$ is a biholomorphism, the map $\Phi_{f}\colon H(G) \to H(D)$ given by $\Phi_{f}(g)=g\circ f$ is an [[Ring Homomorphisms and Ideals#^16be07|isomorphism]] of [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|rings]].
 
 *Proof*  To see that it is an isomorphism, we can check that $(\Phi_f)^{-1}=\Phi_{f^{-1}}$. For any arbitrary $h\in H(D)$, we have $$\Phi_{f^{-1}}(h)=h \circ f^{-1}, \quad \Phi_{f}(h\circ f^{-1})= h \circ f^{-1} \circ f = h$$Thus $\Phi_{f^{-1}}$ is the inverse of $\Phi_f$. $\square$
 

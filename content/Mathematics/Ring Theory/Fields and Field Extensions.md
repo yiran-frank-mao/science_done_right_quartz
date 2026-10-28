@@ -103,7 +103,7 @@ Now we generalize the idea of [[Fields and Field Extensions#^e3b5a6|the proposit
 *Proof*  Let $f(x)$ be the minimal polynomial of $\alpha$ over $F$. Then $F[\alpha]\cong F[x]/(f(x))$, so $\deg_{F}(F[\alpha])=\deg f(x)=n$. $\square$
 
 > [!proposition]
-> Assume that the field $F$ does not have [[Mathematics/Ring Theory/Homomorphisms and Ideals#^2bfbd8|characteristic]] $2$, that is, $1 + 1 \ne 0$ in $F$. Then any extension $K$ of degree $2$ over $F$ can be obtained by adjoining a square root: $K = F(\delta)$, where $\delta^2 = d$ is an element of $F$. Conversely, if $\delta$ is an element of a field extension of $F$, and if $\delta^2$ is in $F$ but $\delta$ is not in $F$, then $F(\delta)$ is a quadratic extension of $F$.
+> Assume that the field $F$ does not have [[Ring Homomorphisms and Ideals#^2bfbd8|characteristic]] $2$, that is, $1 + 1 \ne 0$ in $F$. Then any extension $K$ of degree $2$ over $F$ can be obtained by adjoining a square root: $K = F(\delta)$, where $\delta^2 = d$ is an element of $F$. Conversely, if $\delta$ is an element of a field extension of $F$, and if $\delta^2$ is in $F$ but $\delta$ is not in $F$, then $F(\delta)$ is a quadratic extension of $F$.
 
 > [!remark]+
 > However, it is not true that all cubic extensions can be obtained by adjoining a cube root.
