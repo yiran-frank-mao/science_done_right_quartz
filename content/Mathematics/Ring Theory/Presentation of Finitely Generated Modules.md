@@ -47,7 +47,7 @@ as $P$ and $Q$ are invertible, thus preserve the module.
 ## Structure Theorem
 
 > [!theorem] Structure of Finitely Generated Modules over PID
-> Let $R$ be a [[Principle Ideal Domains#^74559c|PID]] and $M$ a finitely generated $R$-module. There exist $k,r ∈\N_0$ and $d_1 \mid d_2 \mid\dots\mid d_k$ all non-zero in $R$ such that
+> Let $R$ be a [[Principle Ideal Domains and Various Ideals#^74559c|PID]] and $M$ a finitely generated $R$-module. There exist $k,r ∈\N_0$ and $d_1 \mid d_2 \mid\dots\mid d_k$ all non-zero in $R$ such that
 > $$ M \cong R/(d_1)⊕\dots⊕R/(d_k)⊕R^r $$
 > Moreover, $m, k$ and the ideals $(d_{1}) \supset \dots \supset (d_{k})$ are uniquely determined.
 

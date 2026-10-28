@@ -10,7 +10,7 @@
 $\quad$
 
 > [!proposition]
-> $\Z$ is a [[Principle Ideal Domains#^74559c|principal ideal domain]]. ^a3b745
+> $\Z$ is a [[Principle Ideal Domains and Various Ideals#^74559c|principal ideal domain]]. ^a3b745
 
 *Proof*  Suppose $I\triangleleft\Z$ is a non trivial ideal. There exists at least one positive integer in it. Pick the smallest positive integer $n\in I$. We claim $I=(n)$. For any $m\in I$, by the remainder theorem, we have $m=qn+r$ for some $q,r\in\Z$ with $0\leq r<n$. Since $n,m\in I$, it follows that $r=m-qn\in I$. As $n$ is the smallest positive integer in $I$, we must have $r=0$. Therefore $m=qn\in (n)$. $\square$  ^9b5851
 
@@ -29,18 +29,43 @@ $\quad$
 > Let $R$ be a ring. $x\in R$ is *nilpotent* if there is $n\in\N$ such that $x^n =0$. $x\in R$ is *idempotent* if $x^{2}=x$.
 
 > [!proposition]
-> If $x ∈ R$ is nilpotent then $1 + x$ is invertible.
+> If $x \in R$ is nilpotent then $1 + x$ is invertible.
 
-Recall the fundamental theorem of arithmetic:
 
-![[Division and Prime#^ff714c|theorem]]
+## Prime and Maximal Ideals
 
-Similarly for polynomials:
+> [!definition] Prime Ideal
+> Let $R$ be a ring. An ideal $P \triangleleft R$ is *prime* if $P \neq R$ and $ab \in P$ implies that either $a \in P$ or $b \in P$. ^da4561
 
 > [!theorem]
-> Let $F$ be a field. Every non-constant polynomial in $F[x]$ can be written uniquely (up to reordering) as $$ f=up_1^{e_1}\dots p_r^{e_r} $$for a unit $u\in F^{\times}$ and $r\in\N$, $p_i\in F[x]$ monic irreducible and $e_i\in \N$.
+> Let $R$ be a commutative unital ring. $P \triangleleft R$ is prime if and only if $R/P$ is an integral domain.
+> 
 
-Both theorems are in fact one theorem:
+*Proof*  $P\triangleleft R$ is prime iff $a\notin P$, $b\notin P$ implies $ab\notin P$, iff nonzero $(a+P)$ and $(b+P)$ has multiplication $ab+P\neq P$. $\square$
 
-> [!theorem] Unique Factorization in a PID
-> Every principle ideal domain is a unique factorization domain.
+> [!definition] Maximal Ideal
+> Let $R$ be a ring. An ideal $M \triangleleft R$ is *maximal* if $M \neq R$ and there is no other ideal $I$ such that $M \subsetneq I \subsetneq R$. ^ee0592
+
+<u><b>e.g.</b></u> $M \triangleleft \Z$ is maximal iff $M =(p)=p\Z$ for a prime $p$. In general, we have the following theorem holds:
+
+> [!theorem]
+> Let $I \triangleleft R$ be an ideal. Then $I$ is maximal iff $R/I$ is a [[Ring, Field and Integral Domain#^575174|field]].
+
+*Proof*  $R/I$ is a field iff 
+
+
+
+> [!corollary]
+> Every maximal ideal is prime. In a PID, conversely, every non-zero prime ideal is maximal. ^0ddaa4
+
+*Proof*  Every maximal ideal is prime is clear because every field is an integral domain. $\square$
+
+> [!proposition]
+> Let $R$ be a principle ideal domain, then $(a) \triangleleft R$ is maximal if and only if $a$ is irreducible. ^85722a
+
+*Proof*  In a PID, we have that $(a)\subset(b)$ iff $b \mid a$. It follows that $(a)$ is maximal iff there is no proper divisor $b\mid a$, which means $a$ is irreducible. $\square$
+
+> [!corollary]
+> If $F$ is a field, then $M = (f (x)) \triangleleft F [x]$ is maximal iff $f (x)$ is irreducible.
+
+*Proof*  $F[x]$ is a PID, so $(f(x))$ is maximal iff $f(x)$ is irreducible. $\square$

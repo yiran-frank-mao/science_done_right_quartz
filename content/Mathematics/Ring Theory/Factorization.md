@@ -24,7 +24,7 @@ We can extend the notion of factorization to rings (integral domains) other than
 >$\quad$ ^d98fbf
 
 > [!remark]-
-> $p$ is a prime is equivalent to saying that $(p)$ is a [[Mathematics/Ring Theory/Relations and Maximal Ideals#^da4561|prime ideal]].
+> $p$ is a prime is equivalent to saying that $(p)$ is a [[Principle Ideal Domains and Various Ideals#^da4561|prime ideal]].
 
 > [!proposition]
 > In any [[Ring, Field and Integral Domain#^domain|integral domain]], every prime element is irreducible.
@@ -44,15 +44,15 @@ We can extend the notion of factorization to rings (integral domains) other than
 
 <u><b>e.g.</b></u>  
 - $\Z$ is an Euclidean domain with size function be the absolute value.
-- A polynomial ring $F[x]$ over a field $F$ is an Euclidean domain with size function be the degree of the polynomial. But for a non field ring $R$, $\deg$ will not make $R[x]$ a Euclidean domain. A simple example is in $\Z[x]$, $2x+1$ cannot divide $x^{2}$ with remainder, because $2\not\mid 1$ in $\Z$. Indeed, $\Z[x]$ is not even a [[Principle Ideal Domains#^74559c|PID]].
+- A polynomial ring $F[x]$ over a field $F$ is an Euclidean domain with size function be the degree of the polynomial. But for a non field ring $R$, $\deg$ will not make $R[x]$ a Euclidean domain. A simple example is in $\Z[x]$, $2x+1$ cannot divide $x^{2}$ with remainder, because $2\not\mid 1$ in $\Z$. Indeed, $\Z[x]$ is not even a [[Principle Ideal Domains and Various Ideals#^74559c|PID]].
 - The ring of Gaussian integers ([[Complex Numbers#^a81924|complex numbers]] with both real and imaginary parts being integers) $\Z[i]$ is an Euclidean domain with size function being the [[Complex Numbers#^add791|complex norm]]. 
 - In fact, if $m^{2}+1<4$, then the complex norm will make $\Z[\sqrt{-m}]$ a Euclidean domain. This is because if we want to divide $a$ by $d$, we can look at the complex number $a/d$. If it is in $\Z[\sqrt{-m}]$, then we are done, and the remainder $r=0$. Otherwise, we can pick the nearest integer to $a/d$ in $\Z[\sqrt{-m}]\subset\C$ as $q$, and let their difference be $s\in\C$, then we have $a/d=q+s$, so $a=qd+sd$. Note that $\sigma(sd)=\sigma(s)\sigma(d)\leq \sigma(d)$, because by our assumption, $m^{2}+1<4$, so $\sigma(s)<1$. Hence $\sigma(sd)<\sigma(d)$, and we can take $r=sd$ as the remainder. Geometrically, the condition $m^2 + 1 < 4$ means that every point in the parallelogram (or rectangle) of side lengths $1$ and $\sqrt{m}$ in the complex plane is within distance less than $1$ from some vertex.
 $\quad$
 
 > [!proposition]
-> An Euclidean domain is a [[Principle Ideal Domains#^74559c|principal ideal domain]]. ^5f7518
+> An Euclidean domain is a [[Principle Ideal Domains and Various Ideals#^74559c|principal ideal domain]]. ^5f7518
 
-*Proof*  We mimic the proof that [$\Z$ is a principle ideal domain](Principle%20Ideal%20Domains#%5E9b5851) once again. Let $R$ be an Euclidean domain with size function $\sigma$. Let $I\triangleleft R$ be a non trivial ideal. Pick $n\in I$ such that $\sigma(n)$ is minimal. We claim $I=(n)$. For any $m\in I$, by the remainder theorem, we have $m=qn+r$ for some $q,r\in R$ with $\sigma(r)<\sigma(n)$. Since $n,m\in I$, it follows that $r=m-qn\in I$. As $\sigma(n)$ is minimal, we must have $r=0$. Therefore $m=qn\in (n)$. $\square$
+*Proof*  We mimic the proof that [$\Z$ is a principle ideal domain](Principle%20Ideal%20Domains%20and%20Various%20Ideals.md#^9b5851) once again. Let $R$ be an Euclidean domain with size function $\sigma$. Let $I\triangleleft R$ be a non trivial ideal. Pick $n\in I$ such that $\sigma(n)$ is minimal. We claim $I=(n)$. For any $m\in I$, by the remainder theorem, we have $m=qn+r$ for some $q,r\in R$ with $\sigma(r)<\sigma(n)$. Since $n,m\in I$, it follows that $r=m-qn\in I$. As $\sigma(n)$ is minimal, we must have $r=0$. Therefore $m=qn\in (n)$. $\square$
 
 > [!definition] Greatest Common Divisor & Relatively Prime
 > Let $a,b\in R$ be elements of an integral domain $R$. The *greatest common divisor* of $a$ and $b$ is an element $d\in R$ such that:
@@ -103,7 +103,7 @@ Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreduci
 <u><b>e.g.</b></u>  Consider a non-example of the ring of continuous functions $\R\to\R$. One can factor $$|x|=|x|^{1/2}\cdot|x|^{1/2}=|x|^{1/4}\cdot|x|^{1/4}\cdot |x|^{1/4}\cdot|x|^{1/4}=\cdots $$
 
 > [!corollary]
-> Every [[Mathematics/Ring Theory/Principle Ideal Domains#^74559c|principal ideal domain]] is a [[Mathematics/Ring Theory/Factorization#^concept-592ec03e9ddd|unique factorization domain]].
+> Every [[Principle Ideal Domains and Various Ideals#^74559c|principal ideal domain]] is a [[Mathematics/Ring Theory/Factorization#^concept-592ec03e9ddd|unique factorization domain]].
 > 
 
 *Proof*  [[Relations and Maximal Ideals#^0ddaa4|In a PID, irreducible and prime elements coincide]]. By [[Factorization#^94c6f6|the above theorem]], it remains to show the factorization terminates. By [[Factorization#^505c39|the lemma]], it suffices to show that any infinite chain of ideals $$(a_{1})\subset(a_{2})\subset(a_{3})\subset \cdots,$$has all tailing terms equal from some point. Note that $I=\cup_{i=1}^{\infty}(a_{i})$ is an ideal, hence, principle, say $I=(a)$. Then $a\in (a_{k})$ for some $k$, and so $(a)\subset (a_{k})$. Since $(a)$ is the union of all $(a_{i})$, we must have $$(a)\subset(a_{k})\subset(a_{k+1})\subset\cdots\subset(a),$$that is the tailing terms are all equal to $(a)$, starting from $k$. $\square$
@@ -111,7 +111,7 @@ Conversely, suppose $R$ is a unique factorization domain. Let $p$ be an irreduci
 <u><b>e.g.</b></u>  Let $F$ be a field. Every non-constant polynomial in $F[x]$ can be written uniquely (up to reordering) as $$ f=up_1^{e_1}\dots p_r^{e_r} $$for a unit $u\in F^{\times}$ and $r\in\N$, $p_i\in F[x]$ monic irreducible and $e_i\in \N$.
 
 > [!proposition]
-> A unique factorization domain is a principle ideal domain if and only if all nonzero [[Relations and Maximal Ideals#^da4561|prime ideals]] are [[Relations and Maximal Ideals#^ee0592|maximal]].
+> A unique factorization domain is a principle ideal domain if and only if all nonzero [[Principle Ideal Domains and Various Ideals#^da4561|prime ideals]] are [[Principle Ideal Domains and Various Ideals#^ee0592|maximal]].
 > 
 
 ## Primitive Polynomials

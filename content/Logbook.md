@@ -225,7 +225,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Ring, Field and Integral Domain]].
 
 ## 8 Apr 2025
-- Updates: [[Vector Bundles]], [[Lie Groups]], [[Differential Geometry]], [[Tangent Vectors and Spaces]], [[Principle Ideal Domains]], [[Relations and Maximal Ideals]].
+- Updates: [[Vector Bundles]], [[Lie Groups]], [[Differential Geometry]], [[Tangent Vectors and Spaces]], [[Principle Ideal Domains and Various Ideals]], [[Relations and Maximal Ideals]].
 
 ## 26 Mar 2025
 - Updates: [[Lebesgue Integration]], [[Lebesgue Measurability]].

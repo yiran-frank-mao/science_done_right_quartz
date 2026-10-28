@@ -9,8 +9,7 @@ o are algebraic structures that generalize fields: multiplication need not be co
 [[Ring, Field and Integral Domain]]
 [[Polynomial Rings]]
 [[Homomorphisms and Ideals]]
-[[Principle Ideal Domains]]
-[[Relations and Maximal Ideals]]
+[[Principle Ideal Domains and Various Ideals]]
 [[Factorization]]
 [[Bézout Domain]]
 

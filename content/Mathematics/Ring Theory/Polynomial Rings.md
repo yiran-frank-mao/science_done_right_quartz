@@ -35,6 +35,30 @@ Let $R$ be a ring. $\newcommand{\[}{[\![}\newcommand{\]}{]\!]}R\[x\]$
 
 The consequence of the above proposition is that if $\varphi\colon R\to S$ is a ring homomorphism, then there is a unique ring homomorphism $\Phi\colon R[x]\to S$ that agrees with $\varphi$ on constant polynomials and that maps $x$ to $\alpha$. More generally, given $\alpha_1,\dots,\alpha_n\in R$, there is a unique homomorphism $R[x_1,\dots,x_n]\to S$ that agrees with $\varphi$ on constants and maps $x_k$ to $\alpha_k$.
 
+We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2=\dots=a_n=0$ or ‘killing’ the elements $a_i$. Killing the elements $a_i$ in installments and in various orders, or in one strike lead to the same result. That is, we have following commutative diagram:
+
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/imposing_relations.svg" alt="imposing_relations" style="width:25%;">
+
+A primary tool for constructing new rings is to take a ring $R$ and a ‘free’ variable and create the polynomial ring, and then quotient by a polynomial. We will see this further in [[Fields Construction#Adjoining Roots|field extensions by adjoining roots of polynomials.]]
+
+<u><b>e.g.</b></u>  The complex numbers are constructed from $\R$ by setting $\mathbb{C} := \R[x]/(x^2+1)$. In fact, we can define $\varphi : \mathbb{C} \to \R[x]/(x^2+1), a+bi \mapsto \overline{a+bx}$. Clearly it is surjective and injective. Since $$ \begin{align}
+\varphi(a+bi)\varphi(c+di)&=\overline{ac+(ad+bc)x+bdx^2} \\
+&=\overline{(ad+bc)x-bd+ac} \\
+&=\varphi((ad+bc)i+(ac-bd)) \\
+&=\varphi((a+bi)(c+di)),
+\end{align} $$$\varphi$ is homomorphism, yielding a isomorphism. ^a4b259
+
+> [!proposition]
+> If $f$ in $R[x]$ has no root in $R[x]$ we can form the quotient $R[x]/\left(f (x)\right)$ and $\overline{x} = x +(f (x))$ is a root of $f$.
+
+> [!definition]
+> Whenever we have a subring $R$ of a ring $S$ and an element $α ∈ S$ we denote by $R[α]$ the smallest subring of $S$ that contains $R$ and $α$.
+
+> [!proposition]
+> $\Phi\colon R[x] \to S, f \mapsto f(\alpha)$ defines an isomorphism $R[x]/\ker(\Phi)\cong R[\alpha]$.
+
+
+
 ## Division with Remainder
 
 > [!theorem] Division Algorithm for Polynomials
