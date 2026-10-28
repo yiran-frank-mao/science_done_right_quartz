@@ -1,12 +1,12 @@
 In this section, we will see various kinds of ideals and their correspondence to the quotient ring. We spoil the upshot here:
 
-| Ideal $I$ | $\iff$ | Quotient Ring $R/I$                                                                  |
-| --------- | ------ | ------------------------------------------------------------------------------------ |
-| radical   | $\iff$ | reduced                                                                              |
-| prime     | $\iff$ | [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain\|integral domain]] |
-| maximal   | $\iff$ | [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^575174\|field]]           |
+| Ideal $I$                                                       | $\iff$ | Quotient Ring $R/I$                                                                  |
+| --------------------------------------------------------------- | ------ | ------------------------------------------------------------------------------------ |
+| radical                                                         | $\iff$ | reduced                                                                              |
+| [[Principle Ideal Domains and Various Ideals#^da4561\|prime]]   | $\iff$ | [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain\|integral domain]] |
+| [[Principle Ideal Domains and Various Ideals#^ee0592\|maximal]] | $\iff$ | [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^575174\|field]]           |
 
-Before we proceed, we introduce the notion of principal ideal domain.
+Before we proceed, we introduce the notion of *principal ideal domain*.
 
 ## Principle Ideal Domains
 
@@ -44,6 +44,12 @@ $\quad$
 
 > [!proposition]
 > If $x \in R$ is nilpotent then $1 + x$ is invertible.
+
+> [!definition] Radical Ideal
+>
+
+> [!definition] Reduced Ring
+> 
 
 
 ## Prime and Maximal Ideals
