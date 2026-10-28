@@ -71,7 +71,7 @@ $\square$
 This implies there exists a unique maximal solvable ideal in $\g$:
 
 > [!corollary] Radical of a Lie Algebra
-> For any Lie algebra $\g$, there exists a unique maximal solvable ideal in $\g$, called the *radical* of $\g$, denoted $\newcommand{\Rad}{\mathrm{Rad}}\Rad(\g)$. The quotient algebra $\g/\Rad(\g)$ is semi-simple.
+> For any Lie algebra $\g$, there exists a unique maximal solvable ideal in $\g$, called the *radical* of $\g$, denoted $\newcommand{\Rad}{\operatorname{rad}}\Rad(\g)$. The quotient algebra $\g/\Rad(\g)$ is semi-simple.
 
 ## Nilpotent Lie Algebras
 

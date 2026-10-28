@@ -46,7 +46,14 @@ $\quad$
 > If $x \in R$ is nilpotent then $1 + x$ is invertible.
 
 > [!definition] Radical Ideal
->
+> The *radical* $\newcommand{\rad}{\operatorname{rad}}\rad(I)$ of an ideal $I$ in a commutative ring is defined as 
+> $$\rad(I):=\{r\in R \mid r^{n}\in I \text{ for some }n\in \N \}.$$
+> If an ideal $I$ satisfies $\rad (I)=I$, then we call it a *radical ideal* or a *semisimple ideal*.
+
+> [!proposition]
+> The radical of an ideal is also an ideal.
+> 
+
 
 > [!definition] Reduced Ring
 > 
