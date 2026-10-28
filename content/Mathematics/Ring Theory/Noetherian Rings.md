@@ -4,5 +4,5 @@
 > 
 
 > [!remark]
-> For commutative rings, all three concepts coincide.
+> For commutative rings, the notions of left and right noetherian coincide.
 > 

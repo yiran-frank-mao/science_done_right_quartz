@@ -30,11 +30,6 @@ as $P$ and $Q$ are invertible, thus preserve the module.
 
 ## Noetherian Rings
 
-> [!definition] Noetherian Ring
-> A ring is called *noetherian* if every ideal is finitely generated.
-
-<u><b>e.g.</b></u>  Clearly, every [[Principle Ideal Domains#^74559c|PID]] is noetherian.
-
 > [!proposition]
 > Let $R$ be a ring, and $M\leq N$ be $R$-modules. Then if $M$ and $N/M$ are finitely generated so is $M$.
 > 

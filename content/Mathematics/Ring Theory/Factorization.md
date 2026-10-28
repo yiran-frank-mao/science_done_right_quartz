@@ -78,17 +78,19 @@ $\quad$
 
 > [!definition] Unique Factorization Domain
 > An integral domain $R$ is a *unique factorization domain* if it has the following properties:
-> - Factoring terminates.
-> - The irreducible factorization of an element $a$ is unique, up to order and associates.
-> $\quad$ ^concept-592ec03e9ddd
+> 1. Factoring terminates.
+> 2. The irreducible factorization of an element $a$ is unique, up to order and associates.
+> 
+> An integral domain that only satisfies (1) is called an *atomic domain*. ^concept-592ec03e9ddd
 
 <u><b>e.g.</b></u>  Every field is vacuously a unique factorization domain. $\Z[\sqrt{5}]$ is not a unique factorization domain, because $4=(\sqrt{5}-1)(\sqrt{5}+1)=2\cdot 2= (3-\sqrt{5})(3+\sqrt{5})$.
 
-> [!lemma]
+> [!lemma] Ascending Chain Condition on Principle Ideals
 > Let $R$ be an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], then the following conditions are equivalent:
 > - Factoring terminates.
 > - $R$ does not contain an infinitely strictly increasing chain $(a_{1})\subsetneq(a_{2})\subsetneq(a_{3})\subsetneq\cdots$ of principle ideals.
->$\quad$ ^505c39
+> 
+> The latter is called the *ascending chain condition on principle ideals (ACCP)*. ^505c39
 
 *Proof*  Observe that if $r$ factors to $r=st$ in $R$, where neither of $s$, $t$ are units, then $(r)\subsetneq (s)$, so the factorization terminates if and only if there is no infinite strictly increasing chain of principle ideals. $\square$
 
