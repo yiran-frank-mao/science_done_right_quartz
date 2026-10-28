@@ -166,12 +166,12 @@ By [[Factorization#^4f5a64|the corollary]], we can tell whether a polynomial is 
 Let us make it formal:
 
 > [!proposition]
-> Let $R$ be an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], $I\triangleleft R$ a proper ideal, and $f\in R[x]$ a monic polynomial. If the induced $\overline{f}$ is irreducible in $(R/I)[x]$, then $f$ is irreducible in $R[x]$.
+> Let $R$ be an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], $I\triangleleft R$ a proper prime ideal, and $f\in R[x]$ a monic polynomial. If the induced $\overline{f}$ is irreducible in $(R/I)[x]$, then $f$ is irreducible in $R[x]$.
 > Moreover, if $R$ is a UFD, monicity can be weakened: it suffices that $f$ is primitive and that $\deg \overline{f}=\deg f$.
 > 
 
 *Proof*  Suppose $R$ is an integral domain, and $I\triangleleft R$ is an ideal. We prove the contrapositive, and without loss of generality assume that $f(x)$ is not a constant. Suppose $f(x)=g(x)h(x)$ in $R[x]$ for nonunits $g$ and $h$. Then $\overline{f}(x)=\overline{g}(x)\cdot \overline{h}(x)$ in $(R/I)[x]$. Since $f$ is monic, both $g$ and $h$ are monic. Therefore, $\overline{g}$ and $\overline{h}$ are monic, and they are nonunits in $(R/I)[x]$, so $\overline{f}$ is reducible in $(R/I)[x]$.
-Now if $R$ is a UFD, and $f$ is primitive, then by 
+Now if $R$ is a UFD, and $f$ is primitive, then neither $g$ nor $h$ can be a nonunit constant polynomial. Therefore, $\deg g\geq 1$, $\deg h\geq 1$. Suppose the leading coefficient of $g$ and $h$ are $a$ and $b$ respectively. Then the leading coefficient of $f$ is $ab$. Since $\deg \overline{f}=\deg f$, $ab \notin I$, so both of $a$ and $b$ are not in $I$. Consequently, $\deg \overline{g}=\deg g$ and $\deg \overline{h}=\deg h$. In $(R/I)[x]$, we have $\overline{f}=\overline{g}\cdot\overline{h}$. Since $I$ is prime, $R/I$ is an integral domain, so every units in $(R/I)[x]$ are constants (ref. [[Polynomial Rings#^fc05c5|proposition]]). Therefore, $\overline{g}$ and $\overline{h}$ are nonunits in $(R/I)[x]$, and $\overline{f}$ is reducible in $(R/I)[x]$. $\square$
 
 > [!proposition] Eisenstein's Criterion
 > Let $f(x)=a_{n}x^{n}+\cdots+a_{0}\in\Z[x]$. Suppose there is a prime $p$ such that:

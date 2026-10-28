@@ -20,12 +20,14 @@ Let $R$ be a ring. $\newcommand{\[}{[\![}\newcommand{\]}{]\!]}R\[x\]$
 > For all $f,g\in R[x]$, $\deg(f g) \leq \deg(f )+\deg(g)$ with equality if and only if $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]].
 
 > [!proposition]
-> $R[x]^\times = \{r+ 0x+0x^2+\dots \mid r\in R^{\times} \} \cong R^{\times}.$
+> If $R$ is an [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain|integral domain]], then $R[x]^{\times} = \{r+ 0x+0x^2+\dots \mid r\in R^{\times} \} \cong R^{\times}$, so $R[x]$ is also an integral domain. ^fc05c5
 
-*Proof*  For any 
+*Proof*  It suffices to show that 
 
-> [!proposition]
-> If $R$ is an integral domain, then $R[x]$ is an integral domain.
+> [!remark]- Nonconstant polynomials can be units if $R$ is not an integral domain
+> This not true if $R$ is not an integral domain. In $(\Z/4)[x]$, we have 
+> $$ (1+2x)(1-2x)=1-4x^{2}=1.  $$
+> 
 
 > [!proposition] Evaluation Homomorphism
 > Suppose $R[x]$ is a polynomial ring. Then the evaluation map $\operatorname{ev}_{α} \colon R[x] \to R$ given by $f \mapsto f(α)$ for any $\alpha\in R$ is a ring homomorphism.

@@ -10,7 +10,7 @@ updated: 2026-10-27
 *Proof*  Assume a field $F$ has characteristic neither zero nor a prime, say $n$. Then $n\cdot 1_{F} = 0_{F}$, where $1_{F}$ is the multiplicative identity of $F$ and $0_{F}$ is the additive identity of $F$. Let $p$ be the smallest prime divisor of $n$ so that $n=pm$. Then, we have $0_{F}=(pm)\cdot 1_{F}=(p\cdot 1_{F})(m\cdot 1_{F})$. Note that $F$ has no nonzero zero divisor, so either $p\cdot 1_{F}=0_{F}$ or $m\cdot 1_{F}=0_{F}$, which contradicts the assumption that $n$ is the smallest integer making $n\cdot 1_{F}=0_{F}$. $\square$
 
 > [!lemma]
-> A finite field must have characteristic $p$ for some prime $p$ and its order is $p^{r}$ for some $r\in \N$.
+> A finite field must have [[Mathematics/Ring Theory/Homomorphisms and Ideals#^2bfbd8|characteristic]] $p$ for some prime $p$ and its order is $p^{r}$ for some $r\in \N$.
 > 
 
 *Proof*  Let $F$ be a finite field. The characteristic of a finite field cannot be zero, so it must be a prime $p$. Hence, $F$ contains the finite subfield $\newcommand{\F}{\mathbb{F}}\F_{p}$. Note that $F$ is finite, thus a finite-dimensional vector space over $\mathbb{F}_{p}$. Let $r$ be the dimension of $F$ as a vector space over $\mathbb{F}_{p}$. Then, the order of $F$ is $p^{r}$. $\square$
@@ -21,7 +21,7 @@ updated: 2026-10-27
 > Do not confuse the field $\newcommand{\F}{\mathbb{F}}\F_{4}$ with the ring $\Z/4\Z$, which isn’t a field. Indeed, $\Z/n\Z$ is a field if and only if $n$ is prime. (See [[Ring, Field and Integral Domain#^9aa68f|proposition]])
 > 
 
-## Properties of Finite Fields & The Frobenius Automorphism
+## The Frobenius Automorphism
 
 > [!definition] Frobenius Automorphism
 > The *Frobenius automorphism* of a field $F$ of characteristic $p$ is the map $\phi\colon F \to F$ defined by $\phi(x) = x^{p}$ for all $x \in F$.
@@ -48,3 +48,4 @@ Note that this is NOT a well-defined homomorphism for rings. But it is a well-de
 5. Based on (4), we can assume without loss of generality that $F\supset \F_{p}$ and $K\supset \F_{p}$ are field extensions of $\F_{p}$, and it suffices to show that $F$ is a subfield of $K$ iff $r\mid s$. If $F\subset K$ is a subfield, then by [[Fields and Field Extensions#^ff28a3|multiplicative property]], we have $[K:F][F:\F_{p}]=[K:\F_{p}]$, so $[k:F]r=s$, which means $r\mid s$. Conversely, if $r\mid s$, then we can write $s=tr$ for some integer $t$. For any element $a\in F$, $a$ is a root of $x^{p^{r}}-x$ in $F$, so it satisfies $a^{p^{s}}-a=a^{(p^{r})^{t}}-a=(a^{p^{r}})^{p^{r(t-1)}}-a=a^{p^{r(t-1)}}-a=a^{p^{r}}-a=0$, thus $a\in K$. Therefore, $F\subset K$.
 
 $\square$
+

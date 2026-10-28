@@ -24,7 +24,9 @@ $\quad$
 >A subset $S$ in a ring $R$ is called a *subring* if $S$ is closed under addition, subtraction, multiplication and contains $1$ (if $R$ is unital).
 
 <u><b>e.g.</b></u>
-- The trivial ring is **not** a subring of any other nontrivial rings, even though itself is a ring. The point is 
+- $\Z$ is a subring of $\Q$. However, $\Z$ has only itself as subring;
+- The trivial ring is **not** a subring of any other nontrivial rings, even though itself is a ring. A subring has to inherit the ring structure from the original ring, and the multiplicative identity $1$ must be preserved.
+$\quad$
 
 >[!definition] Unit
 >An element of a ring $R$ is called a *unit* if it is invertible with respect to multiplication. The set of invertible elements is a [[Groups, Order and Subgroups#^6e0960|group]] called the the group of units in $R$ and denotes $R^{\times}$. ^c4d0ce
