@@ -1,11 +1,14 @@
 In this section, we will see various kinds of ideals and their correspondence to the quotient ring. We spoil the upshot here:
 
-| Ideal $I$ | Quotient Ring $R/I$ |
-| --------- | ------------------- |
-| radical   | reduced             |
-| prime     | integral domain     |
-| maximal   | field               |
+| Ideal $I$ | $\iff$ | Quotient Ring $R/I$                                                                  |
+| --------- | ------ | ------------------------------------------------------------------------------------ |
+| radical   | $\iff$ | reduced                                                                              |
+| prime     | $\iff$ | [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^domain\|integral domain]] |
+| maximal   | $\iff$ | [[Mathematics/Ring Theory/Ring, Field and Integral Domain#^575174\|field]]           |
 
+Before we proceed, we introduce the notion of principal ideal domain.
+
+## Principle Ideal Domains
 
 > [!definition] Principal Ideal Domain
 > An [[Ring, Field and Integral Domain#^domain|integral domain]] $R$ is called a *principal ideal domain* if every [[Homomorphisms and Ideals#^395472|ideal]] is [[Homomorphisms and Ideals#^027c69|principle]]. ^74559c

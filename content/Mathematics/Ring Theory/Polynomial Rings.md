@@ -1,6 +1,6 @@
 ---
 created: 2023-11-04
-updated: 2024-09-26
+updated: 2026-10-28
 ---
 ## Polynomials
 
