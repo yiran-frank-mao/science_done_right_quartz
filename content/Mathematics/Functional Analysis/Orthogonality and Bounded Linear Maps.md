@@ -10,15 +10,16 @@
 > However, this is not true in general for infinite dimensional spaces. For example, in an infinite dimensional Hilbert space with basis $\{e_{i}\}_{i=1}^{\infty}$, the subspace $\newcommand{\span}{\mathrm{span}}\span\{e_{1},e_{2},\dots\}$, which is the space of all finite linear combinations of the basis vectors, is not closed. To see this, consider the sequence $f_{n}=\sum_{i=1}^{n}e_{i}$, which converges to $f=\sum_{i=1}^{\infty}e_{i}$, which is not in $\span\{e_{1},e_{2},\dots\}$.
 > 
 
-> [!lemma]
-> Suppose $\renewcommand{\S}{\mathcal{S}} \S\subset \H$ is a closed subspace of a Hilbert space $\H$, and $f\in \H$. Then
->  - There exists a unique element $g\in \S$ which is closest to $f$, in the sense that $\|f-g\|=\inf_{h\in \S}\|f-h\|$.
+> [!lemma] Best Approximation Lemma
+> Suppose $A \subset \H$ is a closed subspace of a Hilbert space $\H$, and $f\in \H$. Then
+>  - There exists a unique element $g\in A$ which is closest to $f$, in the sense that $\|f-g\|=\inf_{h\in \S}\|f-h\|$.
 >  - $f-g$ is perpendicular to $\S$. i.e. $\langle f-g,h\rangle=0$ for all $h\in \S$.
-> 
 > $\quad$
 
 > [!proposition]
-> If $\S$ is a closed subspace of a Hilbert space $\newcommand{\H}{\mathcal{H}}\H$, then $\H$ is a [[Direct Sum#^2700ee|direct sum]] of $\S$ and its orthogonal: $$\H=\S\oplus\S^{\perp}.$$
+> If $S$ is a closed subspace of a Hilbert space $\newcommand{\H}{\mathcal{H}}\H$, then $\H$ is a [[Direct Sum#^2700ee|direct sum]] of $S$ and its orthogonal: $\H=S\oplus S^{\perp}$. 
+
+
 
 > [!proposition]
 > Suppose $U\subset V$ is a subspace of an (possibly infinite dimensional) [[Inner Products#^f0c22c|inner product space]], then $U^{\perp}$ is always [[Open and Closed Sets in Metric Spaces#^e112b1|closed]], and $(U^{\perp})^{\perp}=\bar{U}$, where $\bar{U}$ denotes the [[Closure, Interior and Boundary#^cf4e59|closure]] of $U$.

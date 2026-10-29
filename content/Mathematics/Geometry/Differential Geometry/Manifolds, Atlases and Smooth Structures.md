@@ -3,6 +3,7 @@ created: 2024-01-08
 updated: 2024-10-20
 tags:
   - differential-geometry
+  - differential-topology
 ---
 A *manifold* itself is a purely topological object, but it is the most basic object in differential geometry. To do calculus on a manifold, we need to equip it with a *smooth structure,* which is given by an atlas of compatible charts. So the data of a *smooth manifold* is a manifold **together with** a smooth structure. We will discuss these concepts in detail in the following sections.
 
@@ -19,15 +20,15 @@ A *manifold* itself is a purely topological object, but it is the most basic obj
 e.g.  A topological space is locally Euclidean of dimension $0$ iff it is discrete.
 
 >[!definition] Manifold & Manifold with Boundary
-> An *$n$-dimensional manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]] locally Euclidean space of dimension $n$.
+> An *$n$-dimensional topological manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]] locally Euclidean space of dimension $n$.
 > A *manifold with boundary* is a Hausdorff and second-countable topological space $M$ such that each point has a neighbourhood homeomorphic to an open subset of the closed half-space $H^{n}=\{(x_{1},\dots,x_{n})\in \R^{n}: x_{n}\geq 0\}$. The *boundary* of $M$ is the set of points that correspond to points in $H^{n}$ with $x_{n}=0$.
 > A *closed manifold* is a [[Compactness of Topological Space#^da2511|compact]] manifold without boundary. ^3407e4
 
 Clearly, on a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
 
 >[!definition] Chart and Atlas
->A *chart* or *coordinate* for a manifold $M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $φ\colon U \to V$ where $U$ is open in $M$ and $V$ is open in $\R^n$. A collection of charts $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ is called an *atlas* for $M$ if $\cup_{\alpha\in I}U_{\alpha}=M$.
->A manifold equipped with an atlas is called a *topological manifold*. ^441ce2
+> A *chart* or *coordinate* for a manifold $M$ at some point $p\in M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $\varphi\colon U \to V$ where $U$ is an open neighbourhood of $p$ and $V$ is open in $\R^{n}$. We usually write it as a tuple $(U,\varphi)$.
+> A collection of charts $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ is called an *atlas* for $M$ if $\cup_{\alpha\in I}U_{\alpha}=M$. ^441ce2
 
 <b><u>e.g.</u></b>
 - The interval $[a,b]$ is a manifold with boundary. The inclusion $x\colon [a,b] \to \R$ serves as a chart, and $\{x\}$ is an atlas.
@@ -37,7 +38,7 @@ $\quad$
 ## Differentiable Manifolds
 
 > [!definition] Compatible Charts & Smooth Atlas
-> Two charts $\varphi$ and $\eta$ are *compatible* if $\varphi\circ \eta^{-1}$ is a diffeomorphism.
+> Two charts $(\varphi)$ and $\eta$ are *compatible* if $\varphi\circ \eta^{-1}$ is smooth.
 > Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *differentiable* or *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}$ and $\varphi_{\alpha}$ are compatible.
 > 
 
@@ -53,7 +54,7 @@ $\quad$
 > Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are compatible if and only if for every chart $\phi$ in $\mathcal{A}$ and $\eta$ in $\mathcal{B}$, both $\phi \circ \eta^{-1}$ and $\eta \circ \phi^{-1}$ are smooth.
 
 > [!definition] Smooth Manifold
-> A *$C^{k}$-structure* on a manifold $M$ is an [[Relations and Functions#^973688|equivalence class]] of differentiable atlases, where two atlases are deemed equivalent if they are *$C^{k}$-compatible.
+> A *$C^{k}$-structure* on a manifold $M$ is an [[Relations and Functions#^973688|equivalence class]] of differentiable atlases, where two atlases are deemed equivalent if they are *$C^{k}$-compatible*.
 > A *smooth manifold* is a manifold $M$ together with a smooth ($C^{\infty}$) structure on $M$. ^6ef2ef
 
 <u><b>e.g.</b></u>  

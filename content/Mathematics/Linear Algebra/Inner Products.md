@@ -37,8 +37,13 @@ We shall verify that the induced norm is indeed a norm. Since $\overline{\langle
 
 ## Adjoints
 
+> [!proposition]
+> For any projection $P$, we have $\|P\|_{\text{op}}=1$ unless $P=0$.
+> 
+
+
 > [!theorem]
-> A bounded linear map $P\colon V\to V$ on the inner product space $V$ is a projection if and only if $P\circ P=P$ and it is self-adjoint.
+> A bounded linear map $P\colon V\to V$ on the inner product space $V$ is a projection if and only if $P\circ P=P$ (i.e., idempotent) and it is self-adjoint.
 > 
 
 *Proof*  If $P$ is a projection, then clearly $P\circ P=P$, and for all $x,y\in V$, we have $$⟨P(x),y⟩=⟨P(x),P(y)\rangle=⟨x,P(y)\rangle,$$so $P$ is self-adjoint. Conversely, if $P$ is self-adjoint and $P\circ P=P$, then consider $\newcommand{\id}{\mathrm{id}}U:=\ker(\id -P)$, for which any element is preserved by $P$. We claim that $U^{\perp}=\ker P$.
