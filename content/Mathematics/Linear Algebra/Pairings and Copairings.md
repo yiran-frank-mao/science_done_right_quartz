@@ -1,6 +1,6 @@
 > [!definition] Pairing & Copairing
 > A *pairing* of two vector spaces $V$ and $W$ over a field $\newcommand{\K}{\mathbb{K}}\K$ is a linear map $\beta\colon V \otimes W \to \K$. It is sometimes convenient to adopt Dirac notation here and write $\beta(v\otimes w)=\braket{v|w}$.
-> *Copairing*, as its name suggests, is the dual notion of pairing. That is, a linear map $\gamma\colon \K \to V \otimes W$. It is sometimes convenient to write $\gamma(1)=\sum_{i} v_{i}\otimes w_{i}$.
+> *Copairing*, as its name suggests, is the dual notion of pairing. That is, a linear map $\gamma\colon \K \to V \otimes W$. It is sometimes convenient to write $\gamma(1)=\sum_{i} v_{i}\otimes w_{i}$. ^concept-3f75522a1827
 
 > [!definition] Nondegenerate Pairing
 > A pairing $\beta\colon V\otimes W \to \K$ is called *(left) non-degenerate in $V$* if there exists a copairing $\gamma\colon \K \to W\otimes V$ such that the following composition is the identity map:
@@ -17,7 +17,7 @@
 > If a pairing $\beta\colon V\otimes W \to \K$ is non-degenerate, then the two corresponding copairings uniquely agree.
 > 
 
-*Proof*  We denote the left copairing by $\gamma_{V}$, and the right copairing by $\gamma_{W}$. Then we have the following commutative diagram:
+*Proof*  We denote the left copairing by $\gamma_{V}$, and the right copairing by $\gamma_{W}$. Then we have the following commutative diagram: 
 
 > [!remark]+
 > This does not mean that left or right non-degeneracy implies the other. For example, let $\beta\colon \R \otimes \R^{2} \to \R$ that maps $z \otimes (x,y) \mapsto zx$, and define a copairing $\gamma\colon \R \to \R^{2} \otimes \R$ by $1 \mapsto (1,0)\otimes 1$. Then $\beta$ is left non-degenerate:
