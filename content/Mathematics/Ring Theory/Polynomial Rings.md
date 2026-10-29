@@ -5,8 +5,6 @@ completed: true
 ---
 ## Polynomials
 
-Let $R$ be a ring. $\newcommand{\[}{[\![}\newcommand{\]}{]\!]}R\[x\]$
-
 > [!definition] Polynomial Ring
 > Let $R$ be a ring. The polynomial ring in one variable over $R$ is the set of sequences:$$\{ (a_n)_{n=0}^\infty \mid a_n \in R, \exists n_0\in \mathbb{N}, a_n=0 \text{ for all } n\geq n_0  \}$$Equivalently,$$ R[x] = \left\{ \sum_{n=0}^\infty a_n x^n \mid a_n \in R, \exists n_0\in \mathbb{N}, a_n=0 \text{ for all } n\geq n_0  \right\}$$with addition $(a_n)+(b_n)=(a_n+b_n)$ and multiplication $(a_n)\cdot(b_n)=(\sum_{k=0}^n a_kb_{n-k})$.
 
@@ -61,7 +59,9 @@ Let $R$ be a ring. $\newcommand{\[}{[\![}\newcommand{\]}{]\!]}R\[x\]$
 *Proof*  We have unique $q,r \in R[x]$ such that $g(x) = (x-\alpha) q(x)+r(x)$ and $\deg(r) < \deg (x-\alpha)=1$ or $r=0$, so $r$ is a constant. Let $x=\alpha$, we get $r=g(\alpha)$. Hence $x − α$ divides $g(x)$ if and only if $g(α) = 0$. $\square$
 
 > [!corollary]
-> A polynomial in $F$ of degree $n$ over a field $F$ (more generally, an integral domain) has at most $n$ roots.
+> A polynomial in $R[x]$ of degree $n$ over a an integral domain $R$ has at most $n$ roots.
+
+*Proof*  Suppose $f$ has more than $n$ roots $α_1, \dots, α_{m}$ ($m>n$). Then $f$ is divisible by $(x-α_1)(x-α_2) \cdots (x-α_{m})$, which has degree $n+1$. This is impossible since $\deg(f) = n$. $\square$
 
 > [!definition] Multivariable Polynomials
 > For $x_1,\dots,x_n$ and $i = (i_1,\dots,i_n) ∈ \mathbb{N}^n$ we write $x^{i}=x_1^{i_1} \dots x_n^{i_n}$. The degree of $x^i$ is $i_1+ \dots + i_n$. The collection of all these is called *the ring of polynomials in $n$ variables* with coefficients in $R$ and denoted $R[x_1,\dots,x_n]$.

@@ -74,7 +74,6 @@ $\quad$
 > Let $\varphi\colon R\to S$ be a ring homomorphism with kernel $K$ and let $I$ be another ideal. Let $π\colon R\to R/I$ be the canonical quotient map. Then if $I \subset K$,there exists a unique ring homomorphism $\bar{\varphi}:R/I →S$ such that $φ=\bar{\varphi}\circ \pi$.
 > 
 
-
 > [!theorem] First Isomorphism Theorem
 > Let $\varphi \colon R\to S$ be a ring homomorphism with kernel $K$. If $φ$ is surjective then $\bar{φ}\colon R/K →S$ is an isomorphism.
 
