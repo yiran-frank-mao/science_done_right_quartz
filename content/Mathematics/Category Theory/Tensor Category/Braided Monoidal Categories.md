@@ -13,12 +13,10 @@
 
 > [!definition] Braided Commutative Monoid Object
 > A monoid object $(M,\mu,\eta)$ in a braided monoidal category is *braided commutative* if the following diagram commutes:
-> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braided_monoid.svg" style="width:35%;"/>
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/braided_monoid.svg" style="width:36%;"/>
 > 
 
 <u><b>e.g.</b></u>  
-
-> 
 
 
 | Category                                                                | Universal Property                                                              | Category Equivalence                                                                |

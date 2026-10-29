@@ -45,15 +45,9 @@ $\quad$
 
 > [!definition] Monoid Homomorphism
 > For any two monoid objects $M_{1}$ and $M_{2}$, a *monoid homomorphism* $f\colon M_{1}\to M_{2}$ is a morphism in the corresponding Monoidal category that is compatible with the monoid structure. That is, the following diagrams commute:
-> 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoid_object_homomorphism.svg" style="width:70%;"/>
 > 
 > 
-
-> [!proposition]
-> The 
-> 
-
 
 ## Enriched Categories
 
