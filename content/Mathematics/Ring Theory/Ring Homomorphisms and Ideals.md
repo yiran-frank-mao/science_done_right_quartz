@@ -2,7 +2,7 @@
 > A *ring homomorphism* is a map $\varphi \colon R \to S$ between [[Ring, Field and Integral Domain#^concept-b822d04b4a4b|rings]] which is compatible with addition, multiplication and maps the unit of $R$ to that of $S$ (if they are unital). A ring homomorphism which admits an inverse is an isomorphism. ^16be07
 
 > [!proposition]
-> For every ring $R$ there is a unique homomorphism $\mathbb{Z} → R$.
+> For every ring $R$ there is a unique homomorphism $\mathbb{Z} \to R$.
 
 *Proof*  We must have $φ(1) = 1$; and then $φ(n) = 1+\dots+1$ ($n$ ones) for $n ∈ \mathbb{N}$; and $φ(−n) = −φ(n)$. It is easy to check that this is multiplicative as well. $\square$
 

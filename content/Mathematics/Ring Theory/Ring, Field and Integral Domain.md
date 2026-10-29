@@ -102,7 +102,7 @@ In general, if a ring $R$ is not an integral domain, we can still attempt to con
 ## Ordered Field
 
 >[!definition] Ordered Field
->An ordered field is a field $F$ along with a subset $P$ of $F$, called the positive subset, with the following properties:
+>An *ordered field* is a field $F$ along with a subset $P$ of $F$, called the positive subset, with the following properties:
 >- if $a∈F$, then $a∈P$ or $a=0$ or $−a∈P$.
 >- if $a∈P$, then $−a\notin P$.
 >- if $a,b∈P$, then $a+b∈P$ and $ab∈P$.

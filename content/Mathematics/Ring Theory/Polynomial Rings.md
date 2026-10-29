@@ -68,4 +68,3 @@ completed: true
 
 > [!proposition]
 > $$\frac{R[x,y]}{(f(x),g(y))}\cong\frac{(R[x]/(f(x)))[y]}{g(y)}$$
-> 
