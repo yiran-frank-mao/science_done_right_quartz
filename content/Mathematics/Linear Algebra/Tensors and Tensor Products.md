@@ -13,6 +13,22 @@ Tensors and tensor products are multilinear generalizations of vectors and matri
 
 ## Tensor Product of Vector Spaces
 
+The *tensor product* of [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector spaces]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 >[!definition] Tensor Product of Vector Spaces
 > The *tensor product* of vector spaces $U$ and $V$ over the same field is a vector space $U \otimes V$ together with a bilinear map $f\colon U \times V\to U \otimes V$ such that for every vector space $W$ and bilinear map $g \colon U \times V \to W$ there exists a unique linear map $h \colon U \otimes V \to W$ such that $g = h \circ f$:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/tensor_product_universal_property.svg" alt="tensor_product_universal_property" style="width:23%;"/>

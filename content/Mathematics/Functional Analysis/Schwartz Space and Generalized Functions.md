@@ -5,8 +5,7 @@
 > $$ \|f\|_{\alpha,\beta} := \sup_{x\in \R^{n}}| x^{\alpha} (\partial^{\beta} f)(x) |, $$
 > where $x^{\alpha}=x_{1}^{\alpha_{1}}x_{2}^{\alpha_{2}}\cdots x_{n}^{\alpha_{n}}$ and $\partial^{\beta}=\frac{\partial^{\beta_{1}}}{\partial x_{1}^{\beta_{1}}}\frac{\partial^{\beta_{2}}}{\partial x_{2}^{\beta_{2}}} \cdots \frac{\partial^{\beta_{n}}}{\partial x_{n}^{\beta_{n}}}$.
 > The *Schwartz Space* $\newcommand{\S}{\mathcal{S}}\S(\R^{n})$ is then a space of rapidly decreasing functions: 
-> $$ \S(\R^{n}):=\{f\in C^{\infty}(\R^{n},\C) \mid \text{for all } \alpha,\beta\in\N^{n}, \|f\|_{\alpha,\beta}<\infty \}. $$
-> 
+> $$ \S(\R^{n}):=\{f\in C^{\infty}(\R^{n},\C) \mid \text{for all } \alpha,\beta\in\N^{n}, \|f\|_{\alpha,\beta}<\infty \}. $$ ^concept-6618bde03b08
 
 <u><b>e.g.</b></u>
 - In $\R^{2}$, the function $f(x,y)=(x^{\alpha_{1}} +y^{\alpha_{2}}) e^{-(x^{2}+y^{2})}$ is in $\S(\R^{2})$ for any multi-index $(\alpha_{1},\alpha_{2})\in \N^{2}$;
@@ -75,3 +74,8 @@ For $\varphi\in C^{\infty}_{c}(\R)$, we can define the distribution $\pv{\frac{1
 > [!proposition]
 > The principal value is the inverse distribution of the function $x\mapsto x$ and is almost the only distribution with this property:
 > 
+
+
+## References
+
+[Joel Feldman, Tempered Distributions](https://personal.math.ubc.ca/~feldman/m321/distributions.pdf)
