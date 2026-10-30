@@ -9,7 +9,7 @@ Operator algebras are self-adjoint (closed under taking Hermitian adjoints), top
 [[Minkowski Functionals and Seminorms]]
 [[The Hahn-Banach Theorem of Topological Vector Spaces]]
 [[The Weak Topology]]
-[[Generalized Functions]]
+[[Schwartz Space and Generalized Functions]]
 
 ### C\*-Algebras and Gelfand Theory
 [[Normed and Banach Algebras]]
