@@ -1,12 +1,12 @@
 ## Monoidal Categories
 
-> [!definition] Monoidal Category ^bc017c
+> [!definition] Monoidal Category
 > A *monoidal category* is a tuple $\newcommand{\one}{\mathds{1}}\newcommand{\obj}{\operatorname{obj}}(\mathsf{C},\otimes,\one,\alpha,\lambda,\rho)$ where 
 > - $\mathsf{C}$ is a [[Structure of Categories#^2f5c3a|category]];
 > - [[Functoriality#^653948|functor]] $\otimes\colon \mathsf{C}\times\mathsf{C}\to\mathsf{C}$ is called the *monoidal product*;
 > - $\one\in\obj \mathsf{C}$ is called the *monoidal unit*;
 > - $\alpha$ is a [[Functoriality#^b8c1fd|natural isomorphism]] called an *associator*: $$\alpha_{X,Y,Z}\colon (X\otimes Y)\otimes Z \cong X\otimes (Y\otimes Z)$$for all $\mathsf{C}$-objects $X,Y, Z$, called the *associativity isomorphism*;
-> - $\lambda$ and $\rho$ are also natural isomorphisms that $$\lambda\colon\mathbb{1}\otimes X \cong X,\quad \rho\colon X\otimes \mathbb{1}\cong X$$for all $\mathsf{C}$-objects $X$, called the *left unit isomorphism* and the *right unit isomorphism* respectively.
+> - $\lambda$ and $\rho$ are also natural isomorphisms that $$\lambda_{X}\colon\mathbb{1}\otimes X \cong X,\quad \rho_{X}\colon X\otimes \mathbb{1}\cong X$$for all $\mathsf{C}$-objects $X$, called the *left unit isomorphism* and the *right unit isomorphism* respectively.
 >
 > And the following axioms hold:
 > - Middle Unity Axiom: 
@@ -14,7 +14,7 @@
 > - Pentagon Axiom: 
 >   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/monoidal_cat_pentagon.svg" style="width:85%;"/>
 >
-> Moreover, a *strict monoidal category* is a monoidal category in which the components of $\alpha$, $\lambda$ and $\rho$ are all identity morphisms.
+> Moreover, a *strict monoidal category* is a monoidal category in which the components of $\alpha$, $\lambda$ and $\rho$ are all identity morphisms. ^bc017c
 
 > [!definition] Monoid Object
 > A *monoid object* in a monoidal category $(\mathsf{C},\otimes,\mathbb{1},\alpha,\lambda,\rho)$ is an object $M$ with two morphisms
