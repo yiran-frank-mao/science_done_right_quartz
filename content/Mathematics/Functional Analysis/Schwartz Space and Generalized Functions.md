@@ -1,23 +1,48 @@
 ## Schwartz Space
 
 > [!definition] Schwartz Space
-> For any smooth $\newcommand{\R}{\mathbb{R}}\newcommand{\C}{\mathbb{C}}\newcommand{\N}{\mathbb{N}}f\in C^{\infty}(\R^{n},\C)$, multi-indices $\alpha,\beta\in \N^{n}$, we define its *$\alpha,\beta$-Schwartz* norm as 
+> For any smooth $\newcommand{\R}{\mathbb{R}}\newcommand{\C}{\mathbb{C}}\newcommand{\N}{\mathbb{N}}f\in C^{\infty}(\R^{n},\C)$, multi-indices $\alpha,\beta\in \N^{n}$, we define its *$\alpha,\beta$-Schwartz* seminorm as 
 > $$ \|f\|_{\alpha,\beta} := \sup_{x\in \R^{n}}| x^{\alpha} (\partial^{\beta} f)(x) |, $$
-> where $x^{\alpha}=x_{1}^{\alpha_{1}}x_{2}^{\alpha_{2}}\cdots x_{n}^{\alpha_{n}}$ and $\partial^{\beta}=\frac{\partial^{\beta_{1}}}{\partial x_{1}}\frac{\partial^{\beta_{2}}}{\partial x_{2}} \cdots \frac{\partial^{\beta_{n}}}{\partial x_{n}}$
-> The *Schwartz Space* $\newcommand{\S}{\mathcal{S}}\S(\R^{n})$ is a space of rapidly rapidly decreasing functions: 
-> $$ \S(\R^{n}):=\{f\in C^{\infty}(\R^{n},\C) \mid \text{for all } \alpha,\beta\in\N^{n} \|f\|_{\alpha,\beta}<\infty \} $$ 
+> where $x^{\alpha}=x_{1}^{\alpha_{1}}x_{2}^{\alpha_{2}}\cdots x_{n}^{\alpha_{n}}$ and $\partial^{\beta}=\frac{\partial^{\beta_{1}}}{\partial x_{1}^{\beta_{1}}}\frac{\partial^{\beta_{2}}}{\partial x_{2}^{\beta_{2}}} \cdots \frac{\partial^{\beta_{n}}}{\partial x_{n}^{\beta_{n}}}$.
+> The *Schwartz Space* $\newcommand{\S}{\mathcal{S}}\S(\R^{n})$ is then a space of rapidly decreasing functions: 
+> $$ \S(\R^{n}):=\{f\in C^{\infty}(\R^{n},\C) \mid \text{for all } \alpha,\beta\in\N^{n}, \|f\|_{\alpha,\beta}<\infty \}. $$
+> 
 
+<u><b>e.g.</b></u>
+- In $\R^{2}$, the function $f(x,y)=(x^{\alpha_{1}} +y^{\alpha_{2}}) e^{-(x^{2}+y^{2})}$ is in $\S(\R^{2})$ for any multi-index $(\alpha_{1},\alpha_{2})\in \N^{2}$;
+- Any compactly supported smooth function is in $\mathcal{S}(\R^{n})$;
+$\quad$
 
+> [!proposition]
+> $\mathcal{S}(\R^{n})$ is a Fréchet space with the topology induced by the countable family of seminorms $\{\|\cdot\|_{\alpha,\beta}\}_{\alpha,\beta\in \N^{n}}$.
+> 
+
+> [!proposition]
+> For $1\leq p < \infty$, the Schwartz space $\S(\R^{n})$ is dense in $L^{p}(\R^{n})$.
+> 
 
 ## Distributions
+
+> [!definition] Tempered Distribution
+> A *tempered distribution* is a continuous linear functional on $\S(\R^{n})$. That is, the space of tempered distributions is the dual space $\S'(\R^{n})$ of $\S(\R^{n})$.
+
+Instead of focusing on pointwise values, distributions generalize functions by how it acts on smooth “test functions” via a continuous linear functional. Here are some motivating examples:
+
+<u><b>e.g.</b></u>
+- Let $f\colon\R\to \C$ be some integrable polynomially bounded function (i.e., there exists some polynomial $p(x)$ such that $|f(x)|\leq p(x)$ for all $x\in\R$). Then it induces a tempered distribution $\tilde{f}\colon \S(\R)\to \C$ by $$\newcommand{\dd}{\,\mathrm{d}}\tilde{f}(\varphi) = \int_{\R} f(x)\varphi(x)\dd x.$$The integral converges because every $\varphi \in \S(\R)$ decays faster at infinity than any polynomial.
+- The familiar Dirac delta from physics is not a classical function but is perfectly defined as a distribution $C^{\infty}_{c}(\R)\to \R$. It “picks out” the value of a test function at zero: $$\delta(\varphi)= \varphi(0).$$More generally, the shifted delta at point $a$ works similarly: $\delta_{a} (\varphi) = \varphi(a)$. In fact, many singular objects in physics (point sources, surface charges, impulsive forces) are rigorously modeled this way as distributions rather than classical functions.
+$\quad$
+
+> [!lemma] Continuity Test Lemma
+> 
+
 
 > [!definition] Distribution (Generalized Function)
 > A *distribution* or *generalized function* is a continuous (complex or real) linear functional on $C_{c}^{\infty}(U)$ for some open set $\newcommand{\R}{\mathbb{R}}U\subseteq \R^{n}$, where $C_{c}^{\infty}(U)$ is the space of all smooth functions with compact support in $U$, equipped with the usual LF-topology. The space of all distributions on $U$ is denoted by $\mathcal{D}'(U)$.
 
-Instead of focusing on pointwise values, distributions generalize functions by how it acts on smooth “test functions” via a continuous linear functional. The ordinary locally integrable functions can be embedded into the space of distributions by the mapping $$f\mapsto \left(\varphi\mapsto \int_{U} f(x)\varphi(x)\dd x\right),$$where $\dd x$ is the [[Volume Forms#^1e2b6e|volume form]] on $M$. In this way classical functions are identified with a subclass of distributions, often called *regular distributions*.
+ The ordinary locally integrable functions can be embedded into the space of distributions by the mapping $$f\mapsto \left(\varphi\mapsto \int_{U} f(x)\varphi(x)\dd x\right),$$where $\dd x$ is the [[Volume Forms#^1e2b6e|volume form]] on $M$. In this way classical functions are identified with a subclass of distributions, often called *regular distributions*.
 
-<u><b>e.g.</b></u>
-- **The Dirac Delta Distribution**: The familiar Dirac delta from physics is not a classical function but is perfectly defined as a distribution $C^{\infty}_{c}(\R)\to \R$. It “picks out” the value of a test function at zero: $$\delta(\varphi)= \varphi(0).$$More generally, the shifted delta at point $a$ works similarly: $\delta_{a} (\varphi) = \varphi(a)$. In fact, many singular objects in physics (point sources, surface charges, impulsive forces) are rigorously modeled this way as distributions rather than classical functions.
+
 $\quad$
 
 > [!definition] Smoothing Operator
