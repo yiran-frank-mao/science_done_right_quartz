@@ -1,5 +1,5 @@
 > [!definition] Pairing & Copairing
-> A *pairing* of two vector spaces $V$ and $W$ over a field $\newcommand{\K}{\mathbb{K}}\K$ is a linear map $\beta\colon V \otimes W \to \K$. It is sometimes convenient to adopt Dirac notation here and write $\beta(v\otimes w)=\braket{v|w}$.
+> A *pairing* of two [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector spaces]] $V$ and $W$ over a field $\newcommand{\K}{\mathbb{K}}\K$ is a linear map $\beta\colon V \otimes W \to \K$. It is sometimes convenient to adopt Dirac notation here and write $\beta(v\otimes w)=\braket{v|w}$.
 > *Copairing*, as its name suggests, is the dual notion of pairing. That is, a linear map $\gamma\colon \K \to V \otimes W$. It is sometimes convenient to write $\gamma(1)=\sum_{i} v_{i}\otimes w_{i}$. ^concept-3f75522a1827
 
 > [!definition] Nondegenerate Pairing
