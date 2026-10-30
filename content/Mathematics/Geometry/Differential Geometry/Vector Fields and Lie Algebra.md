@@ -9,7 +9,7 @@
 The space of vector fields has a rich structure:
 
 > [!proposition]
-> The space of vector fields $\mathfrak{X}(M)$ is a $\R$-[[Vector Spaces#^f4b63e|vector space]].
+> The space of vector fields $\mathfrak{X}(M)$ is a $\R$-[[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]].
 
 *Proof*  It suffices to check that the scaler multiplication is valid. Indeed, $$(cX)(p):=c\cdot X(p), \quad \text{for all } c\in\R,p\in M,$$where the dot denotes the scalar multiplication in $T_{p}(M)$. It is clear that this satisfies distributivity and the associativity. $\square$
 

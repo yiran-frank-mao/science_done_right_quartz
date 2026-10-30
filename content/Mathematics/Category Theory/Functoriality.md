@@ -15,7 +15,7 @@
 
 <u><b>e.g.</b></u>  
 - Every category $\mathsf{C}$ has an identity functor $1_{\mathsf{C}} \colon \mathsf{C} \to \mathsf{C}$. 
-- The mapping sends any [[Vector Spaces#^f4b63e|vector space]] $V$ to its [[Mathematics/Linear Algebra/Duality#^6c7627|dual space]] $V^{*}$, and any linear map $f \colon V \to W$ to its dual map (i.e. the pullback) $f^{*} \colon W^{*} \to V^{*}$ is a contravariant functor from the category of vector spaces to itself.
+- The mapping sends any [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$ to its [[Mathematics/Linear Algebra/Duality#^6c7627|dual space]] $V^{*}$, and any linear map $f \colon V \to W$ to its dual map (i.e. the pullback) $f^{*} \colon W^{*} \to V^{*}$ is a contravariant functor from the category of vector spaces to itself.
 - The functor that sends each finite set to its power set and each function to the corresponding function on the power sets is a contravariant functor.
 $\quad$
 

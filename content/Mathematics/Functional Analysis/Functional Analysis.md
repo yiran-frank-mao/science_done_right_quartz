@@ -1,6 +1,6 @@
 ## Introduction
 
-Functional Analysis is the study of [[Vector Spaces#^f4b63e|vector spaces]] endowed with limits (topologies or norms) and the linear operators acting on them, extending classical linear algebra and calculus into infinite-dimensional settings. It provides the language and tools (such as Banach and Hilbert spaces, continuous linear operators, and spectral theory) to formulate and solve problems in differential equations, [[Quantum Mechanics|quantum mechanics]], signal processing, and more.
+Functional Analysis is the study of [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector spaces]] endowed with limits (topologies or norms) and the linear operators acting on them, extending classical linear algebra and calculus into infinite-dimensional settings. It provides the language and tools (such as Banach and Hilbert spaces, continuous linear operators, and spectral theory) to formulate and solve problems in differential equations, [[Quantum Mechanics|quantum mechanics]], signal processing, and more.
 
 ## Contents
 

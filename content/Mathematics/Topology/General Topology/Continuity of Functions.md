@@ -89,7 +89,7 @@
 
 **Corollary**  The metrics induced by equivalent norms are topologically equivalent.
 
-**Lemma**  If $X$ is a [[Vector Spaces#^f4b63e|vector space]] and two norms $\|\cdot \|_1$ and $\|\cdot \|_2$ on $X$ induce topologically equivalent metrics then the norms are equivalent.
+**Lemma**  If $X$ is a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] and two norms $\|\cdot \|_1$ and $\|\cdot \|_2$ on $X$ induce topologically equivalent metrics then the norms are equivalent.
 
 ## Uniform Continuity
 

@@ -1,6 +1,6 @@
 > [!definition] Vertex Algebra
 > A *vertex algebra* is a collection of data:
-> 1. A [[Vector Spaces#^f4b63e|vector space]] $V$ (usually over $\newcommand{\C}{\mathbb{C}}\C$), called the *state space*.
+> 1. A [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$ (usually over $\newcommand{\C}{\mathbb{C}}\C$), called the *state space*.
 > 2. An element $\ket{0} \in V$, called the *vacuum vector*.
 > 3. An endomorphism $T\colon V \to V$, called the *translation operator*.
 > 4. A map $\newcommand{\(}{(\!(}\newcommand{\)}{)\!)} Y\colon V \otimes V \to  V\(z\)$, where $V\(z\)$ denotes the space of formal Laurent series in $z$ with coefficients in $V$. This map is called the *state-field correspondence*.

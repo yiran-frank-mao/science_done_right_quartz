@@ -6,7 +6,7 @@ tags:
 ## Symplectic Vector Space
 
 > [!definition] Symplectic Vector Space
-> A *symplectic vector space* is a finite dimensional real [[Vector Spaces#^f4b63e|vector space]] furnished with a [[Symplectic Structures#^b558c2}|symplectic form]], that is, a closed non-degenerate [[Exterior Forms#^794521|2-form]].
+> A *symplectic vector space* is a finite dimensional real [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] furnished with a [[Symplectic Structures#^b558c2}|symplectic form]], that is, a closed non-degenerate [[Exterior Forms#^794521|2-form]].
 
 > [!definition] Symplectic Complement
 > Let $(V,\omega)$ be a symplectic vector space. The symplectic complement of a subspace $W\subset V$ is the subspace $$W^{\omega}=\{v\in V\mid \omega(v,w)=0, \text{ for all } w\in W\}.$$
@@ -60,7 +60,7 @@ Because $\omega$ is non-degenerate, the map $\iota\colon L'\to L^{*}$ defined by
 ## Almost Complex Vector Spaces
 
 > [!definition] Almost Complex Structures on Vector Spaces
-> Let $V$ be a [[Vector Spaces#^f4b63e|vector space]], a complex structure on $V$ is a linear map $J\colon V\to V$ with $\newcommand{\id}{\operatorname{id}}J^{2}=-\id$. The pair $(V,J)$ is called an alomost complex vector space. ^8aa313
+> Let $V$ be a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]], a complex structure on $V$ is a linear map $J\colon V\to V$ with $\newcommand{\id}{\operatorname{id}}J^{2}=-\id$. The pair $(V,J)$ is called an alomost complex vector space. ^8aa313
 
 > [!definition] $\omega$-Compatible Complex Structures
 > Let $(V,\omega)$ be a symplectic vector space. A complex structure $J$ on $V$ is said to be compatible (with $\omega$, or $\omega$-compatible) if $\omega(Ju,Jv)=\omega(u,v)$ and $\omega(u,Ju)>0$ for all non-zero $u\in V$. ^7f1cd1

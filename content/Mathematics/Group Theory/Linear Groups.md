@@ -22,7 +22,7 @@ Claim that the set of all linear operators together with operation of ordinary m
 ## Projective Linear Group
 
 > [!definition] Projective Linear Group
-> The projective linear group $\newcommand{\PL}{\mathrm{PL}}$ on a [[Vector Spaces#^f4b63e|vector space]] $V$ is the quotient group $\PL(V):=\GL(V)/Z(V)$, where $Z(V)$ is the subgroup of all nonzero scalar transformations of $V$. These are quotiented out because they act trivially on the associated projective space $\mathrm{P}(V)$.
+> The projective linear group $\newcommand{\PL}{\mathrm{PL}}$ on a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$ is the quotient group $\PL(V):=\GL(V)/Z(V)$, where $Z(V)$ is the subgroup of all nonzero scalar transformations of $V$. These are quotiented out because they act trivially on the associated projective space $\mathrm{P}(V)$.
 >
 
 

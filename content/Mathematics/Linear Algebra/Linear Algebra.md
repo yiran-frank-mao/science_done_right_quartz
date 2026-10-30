@@ -16,7 +16,7 @@ Linear Algebra is a fundamental area of mathematics concerned with vectors, vect
 [[Matrix and Vector Calculus]]
 
 ### Abstract Linear Algebra
-[[Vector Spaces]]
+[[Mathematics/Linear Algebra/Vector Spaces]]
 [[Direct Sum]]
 [[Fundamental Theorem of Linear Maps]]
 [[Duality]]

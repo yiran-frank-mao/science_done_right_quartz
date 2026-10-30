@@ -6,7 +6,7 @@ updated: 2024-09-26
 >A *(real) vector bundle of rank $k$* over a base [[Topological Spaces#^concept-39ce12df888c|topological space]] $X$ (usually a [[Manifolds, Atlases and Smooth Structures#^6ef2ef|smooth manifold]]) consists of the following information: 
 >- [[Topological Spaces#^concept-39ce12df888c|topological spaces]] $X$ and $E$;
 >- a [[Continuous Maps on Topological Spaces#^33ee5a|continuous]] [[Relations and Functions#^042daf|surjection]] $\pi \colon E \to X$, called the bundle projection;
->- for every $x\in X$, the fiber $\pi^{-1}(\{x\})$ yields a finite-dimensional real [[Vector Spaces#^f4b63e|vector space]],
+>- for every $x\in X$, the fiber $\pi^{-1}(\{x\})$ yields a finite-dimensional real [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]],
 >
 > such that $\pi$ is *locally trivialisable*. That is, for every point $p\in X$, there is an [[Closure, Interior and Boundary#^eda962|open neighbourhood]] $U\subseteq X$ of $p$, a [[Number Systems#^b4eff7|natural number]] $k$, and a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $\newcommand{\R}{\mathbb{R}}\Phi \colon \pi^{-1}(U) \to U \times \R^{k}$ that for all $x\in U$, $\Phi\bigg|_{\pi^{-1}(\{x\})}$ is a linear isomorphism onto $\{x\}\times \R^{k}$.
 > In other words, the following diagram commutes: 

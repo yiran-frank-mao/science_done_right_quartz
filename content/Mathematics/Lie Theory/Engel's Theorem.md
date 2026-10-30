@@ -14,17 +14,17 @@
 A key lemma in the proof is another form of the theorem:
 
 > [!theorem] Engel's Theorem (Alternative Form)
-> Let $V$ be a non-zero finite-dimensional [[Vector Spaces#^f4b63e|vector space]]. If $\g \leq \mathfrak{gl}(V)$ is a Lie subalgebra consisting entirely of nilpotent endomorphisms, then there exists a non-zero vector $v \in V$ such that $x \cdot v = 0$ for all $x \in \g$. ^f3a13a
+> Let $V$ be a non-zero finite-dimensional [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]]. If $\g \leq \mathfrak{gl}(V)$ is a Lie subalgebra consisting entirely of nilpotent endomorphisms, then there exists a non-zero vector $v \in V$ such that $x \cdot v = 0$ for all $x \in \g$. ^f3a13a
 
 ## Lie's Theorem
 
 > [!definition] Full Flag
-> Let $V$ be a finite dimensional [[Vector Spaces#^f4b63e|vector space]] over a field $F$, and let $\newcommand{\dim}{\operatorname{dim}}n=\dim V$. A *full flag* in $V$ is a sequence of subspaces $$(0)=V_{0} \subsetneq V_{1} \subsetneq V_{2} \subsetneq \cdots \subsetneq V_{n}=V,$$ where $\dim V_{i}=i$.
+> Let $V$ be a finite dimensional [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] over a field $F$, and let $\newcommand{\dim}{\operatorname{dim}}n=\dim V$. A *full flag* in $V$ is a sequence of subspaces $$(0)=V_{0} \subsetneq V_{1} \subsetneq V_{2} \subsetneq \cdots \subsetneq V_{n}=V,$$ where $\dim V_{i}=i$.
 
 <u><b>e.g.</b></u>  If $V=F^{n}$ with a basis $\{e_{1}, e_{2}, \ldots, e_{n}\}$, then the standard full flag is given by $V_{i}=\mathrm{span}\{e_{1}, e_{2}, \ldots, e_{i}\}$ for $1 \leq i \leq n$.
 
 > [!theorem] Lie's Theorem
-> Let $\g$ be a [[Ideals, Simple and Semisimple Lie Algebras#^b49788|solvable]] Lie algebra over an [[Fields Construction#^5b9555|algebraically closed]] [[Ring, Field and Integral Domain#^575174|field]] $F$ of [[Ring Homomorphisms and Ideals#^2bfbd8|characteristic]] $0$. Let $V$ be a finite-dimensional [[Vector Spaces#^f4b63e|vector space]] over $F$. If $\varphi\colon \g \to \mathfrak{gl}(V)$ is a [[Lie Algebra Representations#^df3ff7|representation]], then there exists a non-zero vector $v \in V$ which is a common eigenvector for all $x \in \g$. ^d489ea
+> Let $\g$ be a [[Ideals, Simple and Semisimple Lie Algebras#^b49788|solvable]] Lie algebra over an [[Fields Construction#^5b9555|algebraically closed]] [[Ring, Field and Integral Domain#^575174|field]] $F$ of [[Ring Homomorphisms and Ideals#^2bfbd8|characteristic]] $0$. Let $V$ be a finite-dimensional [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] over $F$. If $\varphi\colon \g \to \mathfrak{gl}(V)$ is a [[Lie Algebra Representations#^df3ff7|representation]], then there exists a non-zero vector $v \in V$ which is a common eigenvector for all $x \in \g$. ^d489ea
 
 *Proof*  We proceed by induction on $\dim(\mathfrak{g})$. For the base case, if $\dim(\mathfrak{g})=1$, then $\mathfrak{g}=F a$ for $a \in \mathfrak{g l}(V)$. Since $F$ is algebraically closed, $a$ has at least one eigenvalue, and therefore at least one eigenvector in $V$. That is, there exists some nonzero $v \in V$ such that $a \cdot v=\lambda v$. It follows that $\mathfrak{g} \cdot v \subset F v$. Now, assume $\dim(\mathfrak{g})>1$, and assume the theorem holds for all Lie algebras $\mathfrak{h}$ such that $\dim(\mathfrak{h})<\dim(\mathfrak{g})$. The proof follows the following steps:
 1. Find an ideal $\mathfrak{h} \triangleleft \mathfrak{g}$ with $\operatorname{codim}(\mathfrak{h})=1$ (i.e. $\dim(\mathfrak{g} / \mathfrak{h})=1$ ).

@@ -2,10 +2,10 @@
 updated: 2025-09-03
 ---
 > [!definition] Dual Space & Covector
-> The dual space of a [[Vector Spaces#^f4b63e|vector space]] $V$, denoted as $V^{*}$, is the set of all linear maps from $V$ to the underlying field $F$. i.e. $V^{*} = \Hom(V,F)$. And elements of $V^{*}$ are called *covectors*, *dual vectors* or *linear functionals*. ^6c7627
+> The dual space of a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$, denoted as $V^{*}$, is the set of all linear maps from $V$ to the underlying field $F$. i.e. $V^{*} = \Hom(V,F)$. And elements of $V^{*}$ are called *covectors*, *dual vectors* or *linear functionals*. ^6c7627
 
 > [!proposition]
-> The dual space is a [[Vector Spaces#^f4b63e|vector space]].
+> The dual space is a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]].
 
 *Proof*  It is clear enough to show that both associativity, commutativity hold. We identify the constant function $v \mapsto 0$ as the additive identity. $\square$
 
@@ -15,7 +15,7 @@ updated: 2025-09-03
 *Proof*  
 
 > [!corollary]
-> For any [[Vector Spaces#^f4b63e|vector space]] $V$, $\dim V = \dim V^{*}$, and further $V^{*} \cong V$.
+> For any [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$, $\dim V = \dim V^{*}$, and further $V^{*} \cong V$.
 > 
 
 *Proof*  This a consequence of the above proposition, because $v_{i}\mapsto \varphi_{i}$ is a linear isomorphism. $\square$

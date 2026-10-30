@@ -1,5 +1,5 @@
 > [!definition] Sesquilinear Form
-> On a complex [[Vector Spaces#^f4b63e|vector space]] $V$, a *sesquilinear form* is a map $\varphi\colon V\times V\to \C$ that is linear in the first argument and antilinear in the second argument, i.e. for all $u,v,w,z\in V$ and $\alpha,\beta\in \C$, there holds $$\varphi(\alpha u + v, \beta w+z)=\alpha \overline{\beta} \varphi(u,w)+ \overline{\beta} \varphi(v,w) + \alpha \varphi(u, z) + \varphi(v,z).$$
+> On a complex [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$, a *sesquilinear form* is a map $\varphi\colon V\times V\to \C$ that is linear in the first argument and antilinear in the second argument, i.e. for all $u,v,w,z\in V$ and $\alpha,\beta\in \C$, there holds $$\varphi(\alpha u + v, \beta w+z)=\alpha \overline{\beta} \varphi(u,w)+ \overline{\beta} \varphi(v,w) + \alpha \varphi(u, z) + \varphi(v,z).$$
 > Thus it can also be viewed as a bilinear map $V \times \overline{V} \to \C$.
 
 > [!definition] Conjugate of a Sesquilinear Form

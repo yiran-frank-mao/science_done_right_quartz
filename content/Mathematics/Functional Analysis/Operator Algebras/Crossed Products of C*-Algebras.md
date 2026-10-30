@@ -1,7 +1,7 @@
 ## The Full Crossed Product Algebra
 
 > [!definition] The Algebra of Test Functions
-> Let $\newcommand{\A}{\mathcal{A}}\newcommand{\C}{\mathbb{C}}\newcommand{\Z}{\mathbb{Z}}\newcommand{\T}{S^{1}}(\A, G, \alpha)$ be a [[C*-Dynamical Systems#^c9bf4c|C*-dynamical system]]. We define the [[Vector Spaces#^f4b63e|vector space]] of $\A$-valued functions on $G$ with finite support as: $$C_c(G,\A) := \{h: G \to \A \mid h \text{ has finite support}\}$$
+> Let $\newcommand{\A}{\mathcal{A}}\newcommand{\C}{\mathbb{C}}\newcommand{\Z}{\mathbb{Z}}\newcommand{\T}{S^{1}}(\A, G, \alpha)$ be a [[C*-Dynamical Systems#^c9bf4c|C*-dynamical system]]. We define the [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] of $\A$-valued functions on $G$ with finite support as: $$C_c(G,\A) := \{h: G \to \A \mid h \text{ has finite support}\}$$
 > We equip $C_c(G,\A)$ with a convolution product and an involution, making it a $\ast$-algebra.
 > - **Convolution:** For $h, k \in C_c(G, \A)$, the product $h*k$ is defined as: $$(h*k)(t) = \sum_{s \in G} h(s) \alpha_s(k(s^{-1}t)) \quad \text{for } t \in G$$
 > - **Involution:** The involution $h^*$ is defined as: $$h^*(t) = \alpha_t(h(t^{-1})^*)$$

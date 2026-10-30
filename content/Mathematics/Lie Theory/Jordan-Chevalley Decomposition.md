@@ -1,7 +1,7 @@
 ## Decomposition
  
  > [!theorem] Jordan-Chevalley Decomposition
-> Let $V$ be a finite dimensional [[Vector Spaces#^f4b63e|vector space]] over an [[Fields Construction#^5b9555|algebraically closed]] [[Ring, Field and Integral Domain#^575174|field]] $F$. Let $\newcommand{\End}{\operatorname{End}}x \in \End(V)$. Then:
+> Let $V$ be a finite dimensional [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] over an [[Fields Construction#^5b9555|algebraically closed]] [[Ring, Field and Integral Domain#^575174|field]] $F$. Let $\newcommand{\End}{\operatorname{End}}x \in \End(V)$. Then:
 > 1. There exists a unique pair $x_{s}, x_{n} \in \operatorname{End}(V)$ such that:
 > 	- $x_{s}$ is semisimple (i.e., diagonalisable)
 > 	- $x_{n}$ is nilpotent

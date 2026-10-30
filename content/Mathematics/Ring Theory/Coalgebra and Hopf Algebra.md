@@ -4,7 +4,7 @@ updated: 2025-09-05
 ## Coalgebras, Bialgebras and Hopf Algebras
 
 > [!definition] Coalgebra
-> A *coalgebra* is just like a [[Associative Algebras#^2c3d07|unital algebra]], but with all the structure maps reversed. Precisely, a coalgebra $A$ is a [[Vector Spaces#^f4b63e|vector space]] over a [[Ring, Field and Integral Domain#^575174|field]] $F$, equipped with a comultiplication $\Delta\colon A\to A\otimes A$ and a counit $e\colon A \to F$, satisfying the following left/right co-unitality laws
+> A *coalgebra* is just like a [[Associative Algebras#^2c3d07|unital algebra]], but with all the structure maps reversed. Precisely, a coalgebra $A$ is a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] over a [[Ring, Field and Integral Domain#^575174|field]] $F$, equipped with a comultiplication $\Delta\colon A\to A\otimes A$ and a counit $e\colon A \to F$, satisfying the following left/right co-unitality laws
 > 
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/coalgebra_counitality.svg" alt="coalgebra_counitality" style="width:80%;"/>
 > 

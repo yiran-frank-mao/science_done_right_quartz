@@ -415,7 +415,7 @@ Updates: [[Constructions on Categories]].
 
 ## 31 July 2024
 - New page: [[Vector Bundles]].
-- Updates: [[Vector Spaces]], [[Tangent Vectors and Spaces]].
+- Updates: [[Mathematics/Linear Algebra/Vector Spaces]], [[Tangent Vectors and Spaces]].
 
 ## 28 July 2024
 - New page: [[Holomorphic and Conformal Maps]].
@@ -487,7 +487,7 @@ Updates: [[Constructions on Categories]].
 - New pages: [[Monoidal Categories]], [[Bicategories]], [[Single View Geometry]].
 
 ## 1 May 2024
-- Updates: [[Limit Points and Closure]], [[Vector Spaces]], [[Functoriality]], [[Homomorphisms, Normal Subgroup & Conjugation]].
+- Updates: [[Limit Points and Closure]], [[Mathematics/Linear Algebra/Vector Spaces]], [[Functoriality]], [[Homomorphisms, Normal Subgroup & Conjugation]].
 - New page: [[2-Categories]].
 
 ## 30 Apr 2024
@@ -581,7 +581,7 @@ Updates: [[Constructions on Categories]].
 
 ## 8 Mar 2024
 - New page: [[Inner Products]].
-- Update: [[Metric Spaces]], [[Normed Spaces]], [[Vector Spaces]].
+- Update: [[Metric Spaces]], [[Normed Spaces]], [[Mathematics/Linear Algebra/Vector Spaces]].
 - Remove definition of $L_p$ norm in [[Matrix and Vector Calculus]].
 
 ## 5 Mar 2024

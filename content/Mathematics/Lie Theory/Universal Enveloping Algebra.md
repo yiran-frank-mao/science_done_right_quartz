@@ -41,7 +41,7 @@ Now, every Lie algebra has a universal enveloping algebra, which is in particula
 
 > [!definition] Module over a Lie Algebra
 > Suppose $\g$ is a [[Lie Algebra#^5007ba|Lie algebra]] over a [[Ring, Field and Integral Domain#^575174|field]] $F$. A *module over $\g$* is a [[Modules#^697aa9|module]] over its universal enveloping algebra $U(\g)$. 
-> Almost equivalently, it is an $F$-[[Vector Spaces#^f4b63e|vector space]] $M$ together with a scalar multiplication $\g\times M\to M$, $(x,v)\mapsto x\cdot v$ satisfying:
+> Almost equivalently, it is an $F$-[[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $M$ together with a scalar multiplication $\g\times M\to M$, $(x,v)\mapsto x\cdot v$ satisfying:
 > - $(ax+by) \cdot v= a(x\cdot v) + b(y\cdot v)$;
 > - $x\cdot (av + bw) = a (x\cdot v) + b(x\cdot w)$;
 > - $[x,y]\cdot v = x\cdot (y\cdot v) - y\cdot (x\cdot v)$,
@@ -51,7 +51,7 @@ Now, every Lie algebra has a universal enveloping algebra, which is in particula
 To make the "almost equivalence" precise, given a module $M$ over $U(\g)$, we define the scalar multiplication of $\g$ on $M$ by restricting the action of $U(\g)$ to $\g \subseteq U(\g)$. Conversely, given a vector space $M$ with a scalar multiplication of $\g$ satisfying the above properties, we can uniquely extend this action to all of $U(\g)$ using the universal property, thereby making $M$ into a module over $U(\g)$.
 
 > [!remark]+ Modules over a Lie algebra are Exactly Representations
-> A representation of a [[Lie Algebra#^5007ba|Lie algebra]] $L$ is a homomorphism $\newcommand{\gl}{\mathfrak{gl}}\rho\colon L\to \gl (V)$ for some [[Vector Spaces#^f4b63e|vector space]] $V$. This is equivalent to giving $V$ the structure of a module over $L$ by defining $x\cdot v := \rho(x)(v)$ for $x\in L$ and $v\in V$. Therefore, we shall often use the terms "module over a Lie algebra" and "representation of a Lie algebra" interchangeably.
+> A representation of a [[Lie Algebra#^5007ba|Lie algebra]] $L$ is a homomorphism $\newcommand{\gl}{\mathfrak{gl}}\rho\colon L\to \gl (V)$ for some [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$. This is equivalent to giving $V$ the structure of a module over $L$ by defining $x\cdot v := \rho(x)(v)$ for $x\in L$ and $v\in V$. Therefore, we shall often use the terms "module over a Lie algebra" and "representation of a Lie algebra" interchangeably.
 
 ## The Hopf Algebra Structure
 

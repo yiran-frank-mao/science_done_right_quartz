@@ -15,7 +15,7 @@ completed: true
 > Suppose $X$ is a finite sample space and $V$ is a vector space over $\R$. The expected value of a random variable $v\colon X\to V$ is defined as $$\E_{\mu}[v]:=\sum_{x\in X} \mu(x)v(x)\in V$$Naturally, if fixing some $v\colon X\to V$, then $\E[v]\colon \Omega\to V$ forms a map from the space of probability measures to $V$.
 
 > [!definition] General Covariance
-> Suppose $v\colon X\to V$ and $w\colon X\to W$ are two [[Random Variable and Probability Space#^a0b9ff|random variables]], with $V$ and $W$ being [[Vector Spaces#^f4b63e|vector spaces]] with standard $\sigma$-algebra of Borel sets. Then the covariance of $v$ and $w$ with respect to some probability measure $\mu$ is defined as $$\cov_{\mu}[v,w]:=\E_{\mu}\left[(v-\E_{\mu}[v])\otimes(w-\E_{\mu}[w])\right]$$where $(v-\E_{\mu}[v])\colon X\to V$ satisfying $(v-\E_{\mu}[v])(x):=v(x)-\E_{\mu}[x]$.
+> Suppose $v\colon X\to V$ and $w\colon X\to W$ are two [[Random Variable and Probability Space#^a0b9ff|random variables]], with $V$ and $W$ being [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector spaces]] with standard $\sigma$-algebra of Borel sets. Then the covariance of $v$ and $w$ with respect to some probability measure $\mu$ is defined as $$\cov_{\mu}[v,w]:=\E_{\mu}\left[(v-\E_{\mu}[v])\otimes(w-\E_{\mu}[w])\right]$$where $(v-\E_{\mu}[v])\colon X\to V$ satisfying $(v-\E_{\mu}[v])(x):=v(x)-\E_{\mu}[x]$.
 > Correspondingly, the variance of $v$ is defined as $\var_{\mu}[v]:=\cov_{\mu}[v,v]$. This aligns with the definition of covariance in $\R^{n}$, where $\otimes$ will degenerate to the vector outer product.
 
 > [!remark]+

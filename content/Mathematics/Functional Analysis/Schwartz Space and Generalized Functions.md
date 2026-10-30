@@ -1,10 +1,10 @@
 ## Schwartz Space
 
 > [!definition] Schwartz Space
-> For any smooth $f\in C^{\infty}(\R^{n},\C)$, multi-indices $\alpha,\beta\in \N^{n}$, we define its *$\alpha,\beta$-Schwartz* norm as 
+> For any smooth $\newcommand{\R}{\mathbb{R}}\newcommand{\C}{\mathbb{C}}\newcommand{\N}{\mathbb{N}}f\in C^{\infty}(\R^{n},\C)$, multi-indices $\alpha,\beta\in \N^{n}$, we define its *$\alpha,\beta$-Schwartz* norm as 
 > $$ \|f\|_{\alpha,\beta} := \sup_{x\in \R^{n}}| x^{\alpha} (\partial^{\beta} f)(x) |, $$
 > where $x^{\alpha}=x_{1}^{\alpha_{1}}x_{2}^{\alpha_{2}}\cdots x_{n}^{\alpha_{n}}$ and $\partial^{\beta}=\frac{\partial^{\beta_{1}}}{\partial x_{1}}\frac{\partial^{\beta_{2}}}{\partial x_{2}} \cdots \frac{\partial^{\beta_{n}}}{\partial x_{n}}$
-> The *Schwartz Space* $\newcommand{\R}{\mathbb{R}}\newcommand{\S}{\mathcal{S}}\S(\R^{n})$ is a space of rapidly rapidly decreasing functions: 
+> The *Schwartz Space* $\newcommand{\S}{\mathcal{S}}\S(\R^{n})$ is a space of rapidly rapidly decreasing functions: 
 > $$ \S(\R^{n}):=\{f\in C^{\infty}(\R^{n},\C) \mid \text{for all } \alpha,\beta\in\N^{n} \|f\|_{\alpha,\beta}<\infty \} $$ 
 
 

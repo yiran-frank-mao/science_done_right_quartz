@@ -22,7 +22,7 @@ A series of experimental facts is at the basis of classical mechanics. These fac
 ## The Galilean Spacetime
 
 > [!definition] Affine Space
-> An $n$-dimensional *affine space* is a set $A$ equipped with an $n$-dimensional (real) [[Vector Spaces#^f4b63e|vector space]] $V$ and a [[Group Actions#^065d30|transitive]] and [[Group Actions#^fddea8|free action]] of the additive group of $V$ on $A$. The elements of the affine space $A$ are called *points*, the group action is called a *parallel displacement*. We shall denote such an affine space as $(A,V)$.
+> An $n$-dimensional *affine space* is a set $A$ equipped with an $n$-dimensional (real) [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$ and a [[Group Actions#^065d30|transitive]] and [[Group Actions#^fddea8|free action]] of the additive group of $V$ on $A$. The elements of the affine space $A$ are called *points*, the group action is called a *parallel displacement*. We shall denote such an affine space as $(A,V)$.
 > An *affine map* between affine spaces $(A,V)$ and $(B,W)$ is a function $f\colon A\to B$ together with a linear map $\varphi\colon V\to W$ such that $$f(v\cdot a) = \varphi(v) \cdot f(a)$$
 
 > [!remark]-

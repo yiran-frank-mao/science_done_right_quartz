@@ -80,15 +80,15 @@ Given any integral domain, we can construct the smallest field containing it, ca
 
 > [!definition] The Field of Fractions
 > Suppose $R$ is an [[Ring, Field and Integral Domain#^domain|integral domain]]. Consider $R\times(R \backslash \{0\})=\{ (a,b)\mid a,b \in R, b\neq0 \}$ equip with the following relation: $$ (a_1,b_1)\sim(a_2,b_2) \quad \text{if} \quad a_1b_2=a_2b_1 $$
-> This is an [[Relations and Functions#^14741d|equivalence relation]]. Let $\newcommand{\frac}{\operatorname{frac}}\frac(R)$ denote the quotient. We denote the [[Relations and Functions#^973688|equivalence classes]] by $a/b = [(a,b)]$.
+> This is an [[Relations and Functions#^14741d|equivalence relation]]. Let $\newcommand{\Frac}{\operatorname{frac}}\Frac(R)$ denote the quotient. We denote the [[Relations and Functions#^973688|equivalence classes]] by $a/b = [(a,b)]$.
 
 <u><b>e.g.</b></u> 
-- If $R=\Z$ then $\frac(R)=\mathbb{Q}$;
+- If $R=\Z$ then $\Frac(R)=\mathbb{Q}$;
 - If $R=E[x]$, for a field $E$, then the field of fraction of $E[x]$, denoted $E(x)$, is called the *field of rational functions over $E$*: $$ E(x):= \{ f/g=[(f,g)] \mid f,g \in E[x], g\neq 0 \}. $$
 $\quad$
 
 > [!proposition] Universal Property of the Field of Fractions
-> $\frac(R)$ is the smallest field containing $R$. More precisely, for any field $F$ and any injective [[Ring Homomorphisms and Ideals#^16be07|ring homomorphism]] $\phi\colon R \to F$, there exists a unique field homomorphism $\bar{\phi}\colon \frac(R) \to F$ such that the following diagram commute:
+> $\Frac(R)$ is the smallest field containing $R$. More precisely, for any field $F$ and any injective [[Ring Homomorphisms and Ideals#^16be07|ring homomorphism]] $\phi\colon R \to F$, there exists a unique field homomorphism $\bar{\phi}\colon \frac(R) \to F$ such that the following diagram commute:
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/universal_property_fraction_field.svg" style="width:28%;"/>
 > 
 
