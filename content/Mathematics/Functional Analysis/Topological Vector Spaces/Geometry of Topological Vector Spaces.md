@@ -71,7 +71,7 @@ Form the lemma, we immediately have
 ## Geometric Hahn-Banach Theorem
 
 > [!theorem] Hahn-Banach Separation Theorem
-> Let $X$ be a complex [[Mathematics/Functional Analysis/Topological Vector Spaces/Topological Vector Spaces#^dd5802|topological vector space]] and let $A, B \subset X$ be disjoint, nonempty, convex subsets. Then 
+> Let $X$ be a complex or real [[Mathematics/Functional Analysis/Topological Vector Spaces/Topological Vector Spaces#^dd5802|topological vector space]] and let $A, B \subset X$ be disjoint, nonempty, convex subsets. Then 
 > - If $A$ is open, there exist $\varphi \in X^{*}$ and $c\in \mathbb{R}$ such that $$\newcommand{\Rea}{\operatorname{Re}}\Rea \varphi(x) < c \le \Rea \varphi(y) \quad \forall x \in A, \forall y \in B.$$
 > - If $A$ is compact, $B$ is closed, and $X$ is locally convex, there exist $\varphi \in X^{*}$ and $c_{1}, c_{2} \in \mathbb{R}$ such that $$\Rea \varphi(x) < c_{1} < c_{2} < \Rea \varphi(y) \quad \forall x \in A \quad  \forall y \in B.$$
 > $\quad$
