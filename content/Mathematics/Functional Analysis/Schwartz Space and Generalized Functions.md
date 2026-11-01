@@ -9,37 +9,56 @@
 
 <u><b>e.g.</b></u>
 - In $\R^{2}$, the function $f(x,y)=(x^{\alpha_{1}} +y^{\alpha_{2}}) e^{-(x^{2}+y^{2})}$ is in $\S(\R^{2})$ for any multi-index $(\alpha_{1},\alpha_{2})\in \N^{2}$;
-- Any compactly supported smooth function is in $\mathcal{S}(\R^{n})$;
+- Any compactly supported smooth function is in $\mathcal{S}(\R^{n})$, see [[Schwartz Space and Generalized Functions#^802db0|the proposition]];
 $\quad$
 
 > [!proposition]
-> $\mathcal{S}(\R^{n})$ is a Fréchet space with the topology induced by the countable family of seminorms $\{\|\cdot\|_{\alpha,\beta}\}_{\alpha,\beta\in \N^{n}}$.
+> For every $\alpha,\beta\in \N^{n}$, $\|\cdot \|_{\alpha,\beta}$ is indeed a seminrom. Moreover, $\mathcal{S}(\R^{n})$ is a Fréchet space with the topology induced by the countable family of seminorms $\{\|\cdot\|_{\alpha,\beta}\}_{\alpha,\beta\in \N^{n}}$.
 > 
+
+> [!proposition]
+> Suppose $f\colon \R^{n}\to \C$ is Schwarz. For any $n>0$, there exists $c_{n}>0$ such that 
+> $$ |f(x)|\leq \frac{c_{n}}{(1+\|x\|)^{n}} \quad \text{for all } x\in \R^{n}. $$
+> In particular, there holds $C^{\infty}_{c}(\R^{n})\subsetneq \S(\R^{n}) \subsetneq C_{0}(\R^{n})$. ^802db0
+
 
 > [!proposition]
 > For $1\leq p < \infty$, the Schwartz space $\S(\R^{n})$ is dense in $L^{p}(\R^{n})$.
 > 
 
-## Distributions
+## Tempered Distributions
 
 > [!definition] Tempered Distribution
-> A *tempered distribution* is a continuous linear functional on $\S(\R^{n})$. That is, the space of tempered distributions is the dual space $\S'(\R^{n})$ of $\S(\R^{n})$.
+> A *tempered distribution* is a continuous linear functional on $\S(\R^{n})$. That is, the space of tempered distributions is the dual space $\S'(\R^{n})$ of $\S(\R^{n})$, which is automatically a complex vector space.
 
 Instead of focusing on pointwise values, distributions generalize functions by how it acts on smooth “test functions” via a continuous linear functional. Here are some motivating examples:
 
 <u><b>e.g.</b></u>
-- Let $f\colon\R\to \C$ be some integrable polynomially bounded function (i.e., there exists some polynomial $p(x)$ such that $|f(x)|\leq p(x)$ for all $x\in\R$). Then it induces a tempered distribution $\tilde{f}\colon \S(\R)\to \C$ by $$\newcommand{\dd}{\,\mathrm{d}}\tilde{f}(\varphi) = \int_{\R} f(x)\varphi(x)\dd x.$$The integral converges because every $\varphi \in \S(\R)$ decays faster at infinity than any polynomial.
-- The familiar Dirac delta from physics is not a classical function but is perfectly defined as a distribution $C^{\infty}_{c}(\R)\to \R$. It “picks out” the value of a test function at zero: $$\delta(\varphi)= \varphi(0).$$More generally, the shifted delta at point $a$ works similarly: $\delta_{a} (\varphi) = \varphi(a)$. In fact, many singular objects in physics (point sources, surface charges, impulsive forces) are rigorously modeled this way as distributions rather than classical functions.
+- Let $f\colon\R\to \C$ be some integrable polynomially bounded function (i.e., there exists some polynomial $p(x)$ such that $|f(x)|\leq p(x)$ for all $x\in\R$). Then it induces a tempered distribution $\tilde{f}\colon \S(\R)\to \C$ by $$\newcommand{\dd}{\,\mathrm{d}}\tilde{f}(\varphi) = \int_{\R} f(x)\varphi(x)\dd x.$$The integral converges because every $\varphi \in \S(\R)$ decays faster at infinity than any polynomial. In this way classical functions are identified with a subclass of distributions, often called *regular distributions*.
+- The familiar Dirac delta from physics is not a classical function but is perfectly defined as a distribution $\S(\R)\to \R$. It “picks out” the value of a test function at zero: $$\delta(\varphi)= \varphi(0).$$More generally, the shifted delta at point $a$ works similarly: $\delta_{a} (\varphi) = \varphi(a)$. In fact, many singular objects in physics (point sources, surface charges, impulsive forces) are rigorously modeled this way as distributions rather than classical functions. To show it is continuous, we need the following lemma:
 $\quad$
 
 > [!lemma] Continuity Test Lemma
+> A linear functional $f\colon \S(\R^{n})\to \C$ is continuous if and only if there exists a finite set $F\subset \N^{n}\times \N^{n}$ and a constant $c>0$ such that $$|f(\varphi)| \leq c \sum_{(\alpha,\beta)\in F} \|\varphi\|_{\alpha,\beta}$$for all $\varphi\in \S(\R^{n})$.
+
+Aside from addition and scalar multiplication, distributions can also be differentiated. As a motivating example, by integration by parts, we know that for $f\in \mathcal{S}(\R)$, we have $$\int_{\R} f'(x)\varphi(x)\dd x = \lim_{x\to \infty}f(x)\varphi(x)-\lim_{x\to -\infty}f(x)\varphi(x)  - \int_{\R} f(x)\varphi'(x)\dd x= - \int_{\R} f(x)\varphi'(x)\dd x$$for all $\varphi\in \S(\R)$. This motivates the following definition:
+
+> [!definition] Distributional Derivative
+> For any tempered distribution $f\in \S'(\R^{n})$, we define its *$\theta$th (distributional) derivative* $\partial^{\theta} f$ by $$\partial^{\theta} f(\varphi) := (-1)^{|\theta|} f(\partial^{\theta}\varphi),$$for all $\varphi \in \S(\R^{n})$ and multi-index $\theta\in \N^{n}$. 
 > 
 
+> [!remark] Distributional derivatives are also distributions
+> Note that $\|\partial^{\theta} \varphi\|_{\alpha,\beta} = \|\varphi\|_{\alpha, \beta+\theta}$, so $\partial^{\theta} \varphi \in \S(\R^{n})$ for all $\varphi\in \S(\R^{n})$, the distributional derivative is well-defined pointwise. It is also continuous because continuity of $f$ gives a finite set $F\subset \N^{n}\times\N^{n}$ and a constant $c>0$ such that $$|\partial^{\theta} f(\varphi)| = |(-1)^{|\theta|} f(\partial^{\theta}\varphi)| \leq c \sum_{(\alpha,\beta)\in F} \|\partial^{\theta}\varphi\|_{\alpha,\beta} = c \sum_{(\alpha,\beta)\in F} \|\varphi\|_{\alpha, \beta+\theta},$$for all $\varphi\in \S(\R^{n})$. So letting $E:=\{(\alpha,\beta) \mid (\alpha, \beta)\in F\}$ gives a desired finite set and makes $\partial^{\theta}f$ continuous.
+> 
+
+This is fantastic that $\S'(\R^{n})$ is closed under differentiation! This means that for many non-differentiable functions, we can still make sense of their derivatives in the distributional sense. Here is an example:
+
+<u><b>e.g.</b></u>  Consider the heavy-side unit function: $$ h(x)=\begin{cases}1 & x\geq 0,\\ 0 & x<0. \end{cases} $$It is obviously not differentiable at $0$, but if we view it as a tempered distribution $$\tilde{h}(\varphi)=\int^{\infty}_{-\infty}h(x)\varphi(x)\dd x=\int^{\infty}_{0} \varphi(x)\dd x,$$its distributional derivative will be the Dirac delta! $$\partial \tilde{h}(\varphi) = - \tilde{h}(\varphi') = -\int^{\infty}_{0}\varphi'(x)\dd x = \varphi(0) = \delta(\varphi).$$
+
+## Distributions
 
 > [!definition] Distribution (Generalized Function)
 > A *distribution* or *generalized function* is a continuous (complex or real) linear functional on $C_{c}^{\infty}(U)$ for some open set $\newcommand{\R}{\mathbb{R}}U\subseteq \R^{n}$, where $C_{c}^{\infty}(U)$ is the space of all smooth functions with compact support in $U$, equipped with the usual LF-topology. The space of all distributions on $U$ is denoted by $\mathcal{D}'(U)$.
-
- The ordinary locally integrable functions can be embedded into the space of distributions by the mapping $$f\mapsto \left(\varphi\mapsto \int_{U} f(x)\varphi(x)\dd x\right),$$where $\dd x$ is the [[Volume Forms#^1e2b6e|volume form]] on $M$. In this way classical functions are identified with a subclass of distributions, often called *regular distributions*.
 
 
 $\quad$

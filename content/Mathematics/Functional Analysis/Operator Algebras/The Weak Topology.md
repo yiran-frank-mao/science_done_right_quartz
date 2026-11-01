@@ -12,7 +12,7 @@
 > [!theorem] Alaoglu Theorem
 > Let $X$ be a topological vector space that is $T_{1}$, $V$ be a neighborhood of $0$ in $X$, define 
 > $$ K:=\{\varphi \in X^{*} \mid |\varphi(x)|\leq 1 \text{ for all } x\in V \}. $$
-> Then $K$ is compact in the weak\* topology on $X^{*}$.
+> Then $K$ is compact in the weak-$\ast$ topology on $X^{*}$.
 
 ### Applications of Alaoglu Theorem
 

@@ -117,7 +117,7 @@ On a smooth manifold, the exterior derivative extends the concept of the [[Tange
 > - $\d$ is local in the sense that if $\omega$ vanishes on a neighborhood of $p\in M$, $\d\omega$ vanishes on a neighborhood of  $p\in M$.
 >$\quad$ ^825b86
 
-<u><b>e.g.</b></u>  We can use the above properties to compute: $$\begin{aligned}&\,\d(x\d y\wedge \d z+ x\d x\wedge \d z)\\=&\,\d(x\d y \wedge\d z)+\d(x\d x\wedge\d z)\\=&\, \d(x\d y) \wedge \d z + \d(x\d x)\wedge\d z\\=&\, \d x \wedge\d y\wedge \d z \end{aligned}$$
+<u><b>e.g.</b></u>  We can use the above properties to compute: $$\begin{aligned}&\,\d(x\d y\wedge \d z+ x\d x\wedge \d z)\\=&\,\d(x\d y \wedge\d z)+\d(x\d x\wedge\d z)\\=&\, \d(x\d y) \wedge \d z + \d(x\d x)\wedge\d z\\=&\, \d x \wedge\d y\wedge \d z. \end{aligned}$$
 
 > [!proposition] Exterior Derivative Commutes with Pullback
 > For any smooth map $f\colon M\to N$, and a differential form $\omega$ on $N$, we have $$f^{*}(\d\omega)=\d(f^{*}\omega).$$ ^3f9e68
