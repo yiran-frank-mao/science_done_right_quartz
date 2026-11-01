@@ -60,9 +60,6 @@ This is fantastic that $\S'(\R^{n})$ is closed under differentiation! This means
 > [!definition] Distribution (Generalized Function)
 > A *distribution* or *generalized function* is a continuous (complex or real) linear functional on $C_{c}^{\infty}(U)$ for some open set $\newcommand{\R}{\mathbb{R}}U\subseteq \R^{n}$, where $C_{c}^{\infty}(U)$ is the space of all smooth functions with compact support in $U$, equipped with the usual LF-topology. The space of all distributions on $U$ is denoted by $\mathcal{D}'(U)$.
 
-
-$\quad$
-
 > [!definition] Smoothing Operator
 > A smoothing operator is a continuous linear map $A\colon \mathcal{D}'(U) \to C^{\infty}(U)$.
 

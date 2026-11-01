@@ -67,3 +67,13 @@ Form the lemma, we immediately have
 > 
 
 *Proof*  Suppose $I$ is some finite index set and $A$ is a bounded set. Then for any open neighbourhood $U$ of $0$, there exists a scalar $\lambda_{i}>0$ such that $A_{i}\subset tU$ for all $|t|\geq \lambda_{i}$. Let $\lambda=\max_{i\in I}\lambda_{i}$, then for all $|t|\geq \lambda$, we have $\bigcup_{i\in I} A_{i}\subset tU$. So $\bigcup_{i\in I} A_{i}$ is bounded. $\square$
+
+## Geometric Hahn-Banach Theorem
+
+> [!theorem] Hahn-Banach Separation Theorem
+> Let $X$ be a complex [[Mathematics/Functional Analysis/Topological Vector Spaces/Topological Vector Spaces#^dd5802|topological vector space]] and let $A, B \subset X$ be disjoint, nonempty, convex subsets. Then 
+> - If $A$ is open, there exist $\varphi \in X^{*}$ and $c\in \mathbb{R}$ such that $$\newcommand{\Rea}{\operatorname{Re}}\Rea \varphi(x) < c \le \Rea \varphi(y) \quad \forall x \in A, \forall y \in B.$$
+> - If $A$ is compact, $B$ is closed, and $X$ is locally convex, there exist $\varphi \in X^{*}$ and $c_{1}, c_{2} \in \mathbb{R}$ such that $$\Rea \varphi(x) < c_{1} < c_{2} < \Rea \varphi(y) \quad \forall x \in A \quad  \forall y \in B.$$
+> $\quad$
+
+
