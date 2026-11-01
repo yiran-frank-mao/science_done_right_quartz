@@ -45,7 +45,7 @@ Since every Cauchy sequence in $X^*$ converges to an element in $X^*$, the space
 > $\quad$
 
 > [!theorem] Hahn-Banach Theorem (Real Vector Spaces)
-> Let $X$ be a vector space over $\R$, $Y$ be a subspace of $X$. If $f\colon Y \to \R$ is a linear functional that is dominated by $p$ on $Y$, i.e., $f(y) \le p(y)$ for all $y\in Y$, then there exists a linear extension $g\colon X \to \R$ of $f$ that is also dominated by $p$. That is, $g|_{Y}=f$, and $f(x) \le p(x)$ for all $x\in X$. ^d7e9d9
+> Let $X$ be a vector space over $\R$, $Y$ be a subspace of $X$, $p\colon X\to\R$ is a sublinear functional. If $f\colon Y \to \R$ is a linear functional that is dominated by $p$ on $Y$, i.e., $f(y) \le p(y)$ for all $y\in Y$, then there exists a linear extension $g\colon X \to \R$ of $f$ that is also dominated by $p$. That is, $g|_{Y}=f$, and $f(x) \le p(x)$ for all $x\in X$. ^d7e9d9
 
 > [!remark]-
 > In the setup of the theorem:
