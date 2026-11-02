@@ -69,9 +69,10 @@ completed: true
 > Given a subset $B ⊂ Y$, its *inverse image* or *preimage* under $f$ is defined by$$f^{-1}(B)=\{x\in X:f(x)\in B\}.$$ ^8f2f00
 
 > [!proposition]
-> Let $f \colon X \to Y$ be a function. For any set $A⊂X$ and $B ⊂Y$ there hold$$A\subset f^{-1}(f(A)), \quad f(f^{-1}(B))\subset B$$
+> Let $f \colon X \to Y$ be a function. For any set $A⊂X$ and $B ⊂Y$ there hold$$A\subset f^{-1}(f(A)), \quad f(f^{-1}(B))\subset B.$$
+> Moreover, if $f$ is a surjection, then $f(f^{-1}(B))=B$; if $f$ is an injection, then $A=f^{-1}(f(A))$.
 
-*Proof*  For any $x\in A$, $f(x)\in f(A)$, thus $x\in f^{-1}(f(A))$. For any $y\in f(f^{-1}(B))$, $y=f(x)$ for some $x\in f^{-1}(B)$, thus $y=f(x)\in B$.  $\square$
+*Proof*  For any $x\in A$, $f(x)\in f(A)$, thus $x\in f^{-1}(f(A))$. For any $y\in f(f^{-1}(B))$, $y=f(x)$ for some $x\in f^{-1}(B)$, thus $y=f(x)\in B$. If $f$ is a surjection, for any $b\in B$, there is some $x\in X$ such that $f(x)=b$, so $x\in f^{-1}(B)$, and $f(x)\in f(f^{-1}(B))$. It is similar for the injection case. $\square$
 
 Though the equality does not hold in general, if it holds, we call them saturated:
 
