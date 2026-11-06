@@ -14,7 +14,7 @@ A *manifold* itself is a purely topological object, but it is the most basic obj
 > 
 
 > [!remark]
-> In the definition, 
+> In the definition, we can replace "homeomorphic to an open subset of $\R^{n}$" by either "homeomorphic to $\R^{n}$" or "homeomorphic to an open ball in $\R^{n}$" without changing the definition.
 > 
 
 e.g.  A topological space is locally Euclidean of dimension $0$ iff it is discrete.
@@ -38,8 +38,8 @@ $\quad$
 ## Differentiable Manifolds
 
 > [!definition] Compatible Charts & Smooth Atlas
-> Two charts $(\varphi)$ and $\eta$ are *compatible* if $\varphi\circ \eta^{-1}$ is smooth.
-> Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *differentiable* or *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}$ and $\varphi_{\alpha}$ are compatible.
+> Two charts $(\varphi, U)$ and $(\eta, V)$ are *compatible* if $\varphi\circ \eta^{-1} \colon U \cap V \to U\cap V$ is smooth.
+> Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}$ and $\varphi_{\alpha}$ are compatible.
 > 
 
 <u><b>e.g.</b></u>
@@ -57,15 +57,22 @@ $\quad$
 > A *$C^{k}$-structure* on a manifold $M$ is an [[Relations and Functions#^973688|equivalence class]] of differentiable atlases, where two atlases are deemed equivalent if they are *$C^{k}$-compatible*.
 > A *smooth manifold* is a manifold $M$ together with a smooth ($C^{\infty}$) structure on $M$. ^6ef2ef
 
+> [!remark]
+> Note that equivalence classes of smooth atlases are in one-to-one correspondence with maximal smooth atlases by picking the maximal atlas in each equivalence class. So we can also define a smooth structure by a maximal smooth atlas on $M$.
+> 
+
 <u><b>e.g.</b></u>  
-- A given manifold can carry many different atlases: For example, if $M=\R$ we can take two charts $\phi_{1}(x) = x$ and $\phi_{2}(x) = x^{3}$. Then both $\{\phi_{1}\}$ and $\{\phi_{2}\}$ are smooth atlases for $M$, they define different smooth atlases, while they are compatible.
+- On $\R^{n}$, the atlas $\mathcal{A}=\{(\id_{\R^{n}},\R^{n})\}$ is a smooth maximal atlas making $\R^{n}$ a smooth manifold.
+- 
 - The 4-manifold [$E_{8}$](https://en.wikipedia.org/wiki/E8_manifold) is a topological manifold, but not smooth.
 $\quad$
 
 In fact, dimension 4 is particularly special and exotic in the theory of smooth manifolds, there are smooth 4-manifolds which are [[Isometries and Homeomorphisms#^85034b|homeomorphic]] but not diffeomorphic. We have the following theorem:
 
 > [!theorem]
-> $\R^{n}$ for all $n\neq 4$ has a unique smooth structure. $\R^{4}$ has uncountably many smooth structures.
+> $\R^{n}$ for all $n\neq 4$ has a unique smooth structure up to diffeomorphism. $\R^{4}$ has uncountably many smooth structures.
+
+Although we haven't introduced the notion of a *diffeomorphism*, "up to diffeomorphism" is crucial here. In general, even on $\R$, the two smooth structures can be different. Let $M=(\R, \{\id_{\R}\})$
 
 ## Submanifolds
 

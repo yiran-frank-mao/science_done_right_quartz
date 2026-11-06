@@ -63,6 +63,3 @@ $\quad$
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/enriched_category_unity.svg" alt="enriched_category_unity" style="width:80%;"/>
 > commutes for all objects $W,X,Y,Z$ in $\mathsf{C}$.
 
-> [!definition] Preadditive Category
-> A *preadditive category* is a category enriched over the monoidal category of abelian groups. ^610215
-

@@ -2,7 +2,7 @@
 
 >[!definition] Initial and Terminal Objects
 > In a category $\mathsf{C}$, an object $0$ is *initial* or *coterminal* if there is a unique morphism $0\to C$ for all $C\in \mathsf{C}_{0}$. An object $1$ is *terminal* if there is a unique morphism $C\to 1$ for all $C\in \mathsf{C}_{0}$.
-> If an object is both initial and terminal, it is called a *zero object* or *null object*. A *pointed category* is one with a zero object. ^a7dd74
+> If an object is both initial and terminal, it is called a *zero object* or *null object*. A *pointed category* is one with a zero object, or more generally, isomorphic initial and terminal objects. ^a7dd74
 
 <u><b>e.g.</b></u>   
 - In $\mathsf{Set}$ the empty set $\emptyset$ is initial, and any singleton set $\{*\}$ is terminal. 
@@ -21,12 +21,34 @@ $\quad$
 >[!definition] Strict Initial Object
 >A strict initial object $I$ is one for which every morphism into $I$ is an isomorphism.
 
+## Pointed Category
+
+> [!definition] Zero Morphism
+> Suppose $\mathsf{C}$ is a pointed category with a zero object $0$ (up to isomorphism). For any objects $A,B\in\mathsf{C}_{0}$, we can define a zero morphism $0_{A,B}\colon A\to B$ as the composition $A\to 0 \to B$. ^concept-119c48c6824e
+
+> [!proposition]
+> In a pointed category, composition of a morphism with a zero morphism is always a zero morphism.
+> 
+
+*Proof*  The following diagram commutes:
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/composition_with_zero_morphism.svg" style="width:70%;"/>
+$\square$
+
+In a pointed category, we can define the notion of kernel and cokernel:
+
+> [!definition] Kernel & Cokernel
+> In a category with a zero object, a *kernel* of a morphism $f\colon A \to B$ is a morphism $k\colon K \to A$ that is an [[Mathematics/Category Theory/Equalizers and Coequalizers#^concept-a1eefc7bba8b|equalizer]] of $f$ and $0_{A,B}\colon A\to B$. That is, the following diagram commutes:
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/abelian_category_kernel.svg" style="width:40%;"/>
+> Dually, *cokernel* of $f$ is a morphism $c\colon B \to C$ that is a [[Mathematics/Category Theory/Equalizers and Coequalizers#^9b92cf|coequalizer]] of $f$ and $0_{A,B}\colon A\to B$.
+
+^74fe30
+
 ## Generalized Elements
 
-In a broad, non-technical sense, an “element” is a “component” or “basic part” of a more substantial whole. Ordinary or global elements of a set are simply the points of that set, and hence sufficiently capture this broad notion of “element” in $\mathbf{Set}$, since by definition sets are no more than collections of points. However, in general, knowing about the points of an object is insufficient to count as knowing its elements (construed broadly).
+In a broad, non-technical sense, an “element” is a “component” or “basic part” of a more substantial whole. Ordinary or global elements of a set are simply the points of that set, and hence sufficiently capture this broad notion of “element” in $\mathsf{Set}$, since by definition sets are no more than collections of points. However, in general, knowing about the points of an object is insufficient to count as knowing its elements (construed broadly).
 
 >[!definition] Global Element
->In any category $\mathbf{C}$ with a terminal object $1$, the morphisms $1\to A$ are called *global elements*, *points* or *constants* of $A$.
+>In any category $\mathsf{C}$ with a terminal object $1$, the morphisms $1\to A$ are called *global elements*, *points* or *constants* of $A$.
 
 >[!definition] Generalized Element
 >The morphism $x\colon X\to A\in\mor\mathbf{C}$ is called a *generalized element* or $X$-valued point of $A$, with stage of definition given by $X$.

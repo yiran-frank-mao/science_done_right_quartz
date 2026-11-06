@@ -49,7 +49,7 @@ $\quad$
 ## Equivalence of Categories
 
 >[!definition] Equivalent Categories
-> An *equivalence of categories* consists of a pair of functors $E\colon \mathsf{C}\to\mathsf{D}$ and $F\colon \mathsf{D}\to\mathsf{C}$ and a pair of natural isomorphisms $$\alpha\colon 1_\mathsf{C} \to F \circ E, \quad \beta\colon1_\mathsf{D}\to E\circ F$$
+> An *equivalence of categories* consists of a pair of functors $E\colon \mathsf{C}\to\mathsf{D}$ and $F\colon \mathsf{D}\to\mathsf{C}$ and a pair of natural isomorphisms $$\alpha\colon 1_\mathsf{C} \Rightarrow F \circ E, \quad \beta\colon1_\mathsf{D}\Rightarrow E\circ F$$
 > In this situation, the functor $F$ is called a *pseudo-inverse* of $E$. The categories $\mathsf{C}$ and $\mathsf{D}$ are then said to be *equivalent*, written $\mathsf{C} ≃ \mathsf{D}$.
 
 >[!proposition] 

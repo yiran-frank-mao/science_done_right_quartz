@@ -30,3 +30,4 @@
 > [!proposition]
 > Let $C_{n}$ be a cyclic group of order $n$. For each $m\mid n$, there exists a unique subgroup $H$ of $C_{n}$ of order $m$, and it is cyclic. Furthermore, the subgroups of $C_{n}$ are precisely the cyclic groups of order dividing $n$. ^937b31
 
+*Proof*  

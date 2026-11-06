@@ -34,7 +34,7 @@
 > A group $G$ is *solvable* if its derived series reaches the trivial group after finitely many steps. ^57e861
 
 <u><b>e.g.</b></u>  
-- The smallest non-solvable group is the [[Permutations and Symmetric Groups#^a33b58|alternating group]] $A_{5}$.
+- The smallest non-solvable group is the [[Permutations and Symmetric Groups#^a33b58|alternating group]] $A_{5}$, and [[Permutations and Symmetric Groups#^7661e7|any alternating group $A_{n}$ with $n\geq5$ is non-solvable]].
 - Any [[Groups, Order and Subgroups#^6d511a|abelian group]] is solvable.
 $\quad$
 
@@ -49,6 +49,8 @@ $\quad$
 > [!proposition]
 > A simple solvable group must be cyclic of a prime order. 
 > 
+
+^b7e01e
 
 *Proof*  Suppose $G$ is both simple and solvable. Then $[G,G]$ can be either trivial or the whole group. But $[G,G]$ can not be $G$ because $G$ is solvable, so it is trivial. This means $G$ is abelian. Finally, note that any finite simple abelian group is cyclic with a prime order. $\square$
 

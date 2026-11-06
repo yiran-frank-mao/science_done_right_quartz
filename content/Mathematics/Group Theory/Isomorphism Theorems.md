@@ -5,33 +5,34 @@
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/first_iso_thm.svg" alt="first_iso_thm" style="width:25%;"/>
 
 > [!theorem] First Isomorphism Theorem
-> Let $f \colon  G \to H$ be a [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|group homomorphism]]. Then $G/\ker(f) \cong \mathrm{im}(f )$. Specifically, the map $\varphi$ given by $$ \varphi:G/\ker(f)\to\operatorname{im}(f), \quad\varphi\left(g\operatorname{ker}(f)\right):=f(g) $$ is a group isomorphism. ^320c79
+> Let $f \colon  G \to H$ be a [[Homomorphisms, Normal Subgroup & Conjugation#^concept-99cd09958525|group homomorphism]]. Then $G/\ker(f) \cong \mathrm{im}(f )$. Specifically, the map $\varphi$ given by $$ \varphi\colon G/\ker(f)\to\operatorname{im}(f), \quad\varphi\left(g\operatorname{ker}(f)\right):=f(g) $$ is a group isomorphism. ^320c79
 
-*Proof*  Let $K=\ker(f)$. We saw $φ$ is well-defined. It is a homomorphism because
-$$ \varphi(g K)\varphi(h K)=f(g)f(h)=f(g h)=\varphi(g h K)=\varphi(g K\cdot h K). $$
-The map is clearly surjective as $f$ is surjective. Now compute its kernel:
-$$ gK \in \ker \varphi \iff \varphi(gK) = f(g)=e \iff g \in \ker(f)=K \iff gK=K $$
+*Proof*  Let $K=\ker(f)$. We saw $φ$ is well-defined. It is a homomorphism because $$ \varphi(g K)\varphi(h K)=f(g)f(h)=f(g h)=\varphi(g h K)=\varphi(g K\cdot h K). $$The map is clearly surjective as $f$ is surjective. Now compute its kernel: $$ gK \in \ker \varphi \iff \varphi(gK) = f(g)=e \iff g \in \ker(f)=K \iff gK=K, $$as desired.  $\square$
 
 ## Second Isomorphism Theorem
 
+> [!lemma]
+> Suppose $H,K\leq G$ are subgroups. If one of them is normal, then $HK$ is a subgroup of $G$. Moreover, if both are normal, then $HK$ is normal in $G$.
+> 
+
+
 > [!theorem] Second Isomorphism Theorem
-> Let $G$ be a group, $H ≤ G$ a subgroup and $N \triangleleft G$ a normal subgroup.Then $HN/N \cong H/H \cap N$.
+> Let $G$ be a group, $H \leq G$ a subgroup and $N \triangleleft G$ a normal subgroup. Then $H \cap N\triangleleft H$, and $HN/N \cong H/H \cap N$.
 
 *Proof*
 
 ## Third Isomorphism Theorem
 
-**Thrm**  <i><u>Third Isomorphism Theorem</u></i>
-Let $G$ be a group and $K, N \triangleleft G$ normal subgroups with $K \subset N$. Then $G/N \cong (G/K)/(N /K)$.
-**Proof**
+> [!theorem] Third Isomorphism Theorem
+> Let $G$ be a group and $K, N \triangleleft G$ normal subgroups with $K \subset N$. Then $G/N \cong (G/K)/(N /K)$.
+
+*Proof*  
 
 ## The Correspondence Theorem
 
 > [!theorem] Correspondence Theorem
 > Let $φ \colon G \to G^\prime$ be a [[Relations and Functions#^042daf|surjective]] group homomorphism with kernel $K$ . Then for every subgroup $H^\prime \leq G^\prime$ the inverse image $φ^{−1}(H^\prime)$ is a subgroup of $G$ containing $K$ . The map $H^\prime \mapsto H = φ^{−1}(H^\prime)$ sets up a bijection between the sets$$ \{\text{subgroups of }G \text{ containing }K\} \stackrel{1:1} {\longleftrightarrow}\{\text{subgroups of } G^{\prime}\}$$Under this correspondence $H/K \cong H^{\prime}$, and $H^\prime \triangleleft G^{\prime}$ if and only if $H \triangleleft G$. 
-> In particular, that subgroups in a quotient $G/K$ are always of the form $H/K$ for a subgroup $K ≤H ≤G$.
-
-^0f045a
+> In particular, that subgroups in a quotient $G/K$ are always of the form $H/K$ for a subgroup $K ≤H ≤G$. ^0f045a
 
 *Proof* See [1, Theorem 2.10.5] or [2, Theorem 2.7.2] or [3, Prop 2.76].
 For the "in particular" part, consider the quotient map $\pi\colon G \to G/K$, then any subgroup of $G/K$ is the image of a subgroup of $G$ containing $K$ under $\pi$, so is of the form $H/K$ for some $K ≤ H ≤ G$.

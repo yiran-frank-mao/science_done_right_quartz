@@ -1,16 +1,35 @@
 ## Permutations
 
 > [!definition] Permutation
-> A *permutation* is a bijective map $\alpha: \{1,…,n\} \rightarrow \{1,…,n\}$, denoted by:
+> A *permutation* is a bijective map $\alpha\colon \{1,…,n\} \rightarrow \{1,…,n\}$, denoted by:
 > $$ \alpha=\left(\begin{array}{ccccc}1 & 2 & 3 & \cdots & n \\\alpha(1) & \alpha(2) & \alpha(3) & \cdots & \alpha(n)\end{array}\right) $$
 > or using the cycle notation: if $i_1,i_2,…,i_r$ are distinct elements from $\{1,…,n\}$ and if $\alpha \in S_n$ fixes the other elements (if any) and if
 > $$ \alpha\left(i_1\right)=i_2, \alpha\left(i_2\right)=i_3, \ldots, \alpha\left(i_r\right)=i_1 $$
-> then $\alpha$ is called an *$r$-cycle* and denoted $(i_{1},i_{2} \dots i_{r})$. Any permutation can be written (non-uniquely) as a product of cycles. Crucially, permutations are composed from right to left. ^caba60
+> then $\alpha$ is called an *$r$-cycle* and denoted $(i_{1},i_{2} \dots i_{r})$. In particular, any cycle of a single element is the identity permutation. Crucially, permutations are composed from right to left. ^caba60
 
-> [!definition] Cycle Decomposition
-> The *cycle decomposition* of a permutation $\pi$ is the product of the disjoint cycles in which $\pi$ can be expressed.
+<u><b>e.g.</b></u>  One can check that $(1~2)(2~3)=(1~2~3)$.
 
-<b><u>e.g.</u></b> Consider the permutation $\rho = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ 5 & 6 & 1 & 7 & 3 & 2 & 4 \end{pmatrix}$, the cycle decomposition for $\rho$ is $\begin{pmatrix}1 & 5 & 3\end{pmatrix} \begin{pmatrix}2 & 6 \end{pmatrix} \begin{pmatrix}4 & 7 \end{pmatrix}$.
+> [!definition] Disjoint Cycles & Transposition
+> We say that two cycles are *disjoint* if they have no elements in common. 
+> A cycle of length $2$ is called a *transposition*. If, moreover, the transposition is of the form $(i~i+1)$, then it is called an *adjacent transposition*. ^f26004
+
+Every permutation is essentially a bijection on a finite set, so we can compose them and take inverses. For cycles, we simply write $(i_1 i_2 \cdots i_r)(j_1 j_{2} \cdots j_s)$ as the composition $(j_1 j_{2} \cdots j_s) \circ (i_1 i_2 \cdots i_r)$, which means that we apply the rightmost cycle first.
+
+> [!definition] Symmetric Group
+> The *symmetric group* $S_n$ consists of permutations of a set with $n$ letters $\{1,…,n\}$. In general, given a finite set $X$, we have the group of permutations on set $X$ to be:$$ \text{Sym}(X) = \{ f\colon X \to X \mid f \text{ is bijective} \}.$$ ^5b562f
+
+> [!proposition]
+> The followings hold for cycles:
+> 1. $(i_{1}~i_{2}~\cdots~i_{r})^{-1}=(i_{r}~i_{r-1}~\cdots~i_{1})$;
+> 2. If two cycles are disjoint, then they commute.
+> $\quad$
+
+*Proof*  (1) is clear by checking that $(i_{1}~i_{2}~\cdots~i_{r})(i_{r}~i_{r-1}~\cdots~i_{1})$ is the identity permutation. For (2), if two cycles are disjoint, then they do not affect each other's elements, hence they commute. $\square$
+
+> [!proposition] Cycle Decomposition
+> The *cycle decomposition* of a permutation $\pi$ is the product of the disjoint cycles in which $\pi$ can be expressed. Any permutation has a unique cycle decomposition (up to identity cycles).
+
+*Proof by Example*  We will demonstrate an example of finding the cycle decomposition of a permutation. This algorithm will stop because we are working in a finite set. Consider the permutation $\rho = \begin{pmatrix} 1 & 2 & 3 & 4 & 5 & 6 & 7 \\ 5 & 6 & 1 & 7 & 3 & 2 & 4 \end{pmatrix}$, we claim that the cycle decomposition for $\rho$ is $\begin{pmatrix}1 & 5 & 3\end{pmatrix} \begin{pmatrix}2 & 6 \end{pmatrix} \begin{pmatrix}4 & 7 \end{pmatrix}$. We can start with the first element $1$, we have $\rho(1) = 5$, $\rho(5) = 3$, and $\rho(3) = 1$. Thus we have a cycle $\begin{pmatrix}1 & 5 & 3\end{pmatrix}$. Next, we can take the next smallest element not in the previous cycle, which is $2$. We have $\rho(2) = 6$ and $\rho(6) = 2$. Thus we have a cycle $\begin{pmatrix}2 & 6 \end{pmatrix}$. Finally, we can take the next smallest element not in any previous cycles, which is $4$. We have $\rho(4) = 7$ and $\rho(7) = 4$. Thus we have a cycle $\begin{pmatrix}4 & 7 \end{pmatrix}$. Therefore, we have found the cycle decomposition of $\rho$ to be $\begin{pmatrix}1 & 5 & 3\end{pmatrix} \begin{pmatrix}2 & 6 \end{pmatrix} \begin{pmatrix}4 & 7 \end{pmatrix}$. Note that cycle decomposition is unique because we require the cycles to be disjoint. Indeed, if we have two different decompositions, then we can pick the cycle that contains the smallest element, and it must be the same in both decompositions. Eventually, we will have found that the two decompositions are the same. $\square$
 
 > [!proposition]
 > Suppose $\pi$ and $\rho$ are permutations then the cycle decomposition of the permutation $\pi\rho\pi^{−1}$ can be obtained from that of $\rho$ by replacing each $𝑖$ in the cycle decomposition of $\rho$ with $\pi(i)​$, that is $$\sigma(a_{i_1}\dots a_{i_k})\sigma^{−1}=(a_{\sigma(i_1)}\dots a_{\sigma(i_k)}).$$
@@ -19,16 +38,15 @@
 
 ## The Symmetric Group
 
-> [!definition] Symmetric Group
-> The *symmetric group* $S_n$ consists of permutations of a set with $n$ letters $\{1,…,n\}$. In general, given a finite set $X$, we have the group of permutations on set $X$ to be:$$ \text{Sym}(X) = \{ f\colon X \to X \mid f \text{ is bijective} \}.$$ ^5b562f
-
 > [!proposition]
 > The [[Groups, Order and Subgroups#^3bce31|order]] of $S_n$ is $n!$
 
 *Proof*  Clearly, there are $n!$ permutations of $n$ elements. $\square$
 
 > [!theorem]
-> The symmetric group $S_n$ is generated by adjacent transpositions: $$\left(1,2\right),\left(2,3\right),\ldots,\left(n-1,n\right)$$ ^013f0e
+> The symmetric group $S_n$ is generated by transpositions. In particular, it is generated by [[Permutations and Symmetric Groups#^f26004|adjacent transpositions]]. ^013f0e
+
+*Proof*  By the cycle decomposition, it suffices to only consider a single cycles. We shall approach this by induction on the length. In fact, we have $$(a_{1},a_{2},\cdots,a_{k+1})=(a_{2},\cdots, a_{k+1})(a_{1}, a_{k+1}).$$ $\square$ 
 
 > [!definition] Even Permutation & Odd Permutation
 > A permutation is an even permutation if the number of cycles of even length is even. And it is an odd permutation if the number of cycles of even length is odd. ^c116d4
@@ -41,7 +59,16 @@
 ## Alternating Group
 
 > [!definition] Alternating Group
-> The *alternating group* $A_{n}$ is the subgroup of $S_{n}$ consisting of all even permutations. In other words, it is the kernel of $\sgn$. ^a33b58
+> The *alternating group* $A_{n}$ is the [[Mathematics/Group Theory/Groups, Order and Subgroups#^1ccb07|subgroup]] of $S_{n}$ consisting of all even permutations. In other words, it is the kernel of $\sgn$. ^a33b58
+
+*Proof*  We shall see that 
 
 **Def**  <i><u>Permutation Matrices</u></i>
-Let $\alpha \in S_n$ be a permutation. The permutation matrix corresponding to $\alpha$ is the unique linear map $T_\alpha : \R^{n} \rightarrow \R^{n}$ which permutes the standard basis as follows: $$ T_\alpha(e_i) = e_{\alpha(i)} $$
+Let $\alpha \in S_n$ be a permutation. The permutation matrix corresponding to $\alpha$ is the unique linear map $T_\alpha \colon \R^{n} \rightarrow \R^{n}$ which permutes the standard basis as follows: $$ T_\alpha(e_i) = e_{\alpha(i)} $$
+
+> [!lemma]
+> For $n\geq 5$, $A_{n}$ is generated by length 3 cycles.
+
+> [!proposition] 
+> Alternating groups $A_{n}$ are simple for $n \geq 5$, so are not solvable by [[Abelianisation of Groups#^b7e01e|the proposition]]. ^7661e7
+
