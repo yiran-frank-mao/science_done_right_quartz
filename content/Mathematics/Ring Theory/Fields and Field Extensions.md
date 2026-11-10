@@ -86,7 +86,7 @@ Now we generalize the idea of [[Fields and Field Extensions#^e3b5a6|the proposit
 
 > [!definition] Degree of a Field Extension
 > Suppose $K\supset F$ is a field extension. Then the dimension of $K$, when regarded as an $F$-vector space, is called the *degree of the field extension*. This degree is denoted by $[K : F ]$ or $\deg_{F} K$.
->  A field extension $K/F$ is a *finite extension* if its degree is finite. Extensions of degree $2$ are quadratic extensions, those of degree $3$ are cubic extensions, and so on.
+> A field extension $K/F$ is a *finite extension* if its degree is finite. Extensions of degree $2$ are *quadratic extensions*, those of degree $3$ are *cubic extensions*, and so on. ^5dc4c8
 
 > [!lemma] 
 > The followings are true:

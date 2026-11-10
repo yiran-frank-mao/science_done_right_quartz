@@ -16,7 +16,7 @@
 Every permutation is essentially a bijection on a finite set, so we can compose them and take inverses. For cycles, we simply write $(i_1 i_2 \cdots i_r)(j_1 j_{2} \cdots j_s)$ as the composition $(j_1 j_{2} \cdots j_s) \circ (i_1 i_2 \cdots i_r)$, which means that we apply the rightmost cycle first.
 
 > [!definition] Symmetric Group
-> The *symmetric group* $S_n$ consists of permutations of a set with $n$ letters $\{1,…,n\}$. In general, given a finite set $X$, we have the group of permutations on set $X$ to be:$$ \text{Sym}(X) = \{ f\colon X \to X \mid f \text{ is bijective} \}.$$ ^5b562f
+> The *symmetric group* $S_{n}$ consists of permutations of a set with $n$ letters $\{1,\dots,n\}$. In general, given a finite set $X$, we have the group of permutations on set $X$ to be:$$ \text{Sym}(X) = \{ f\colon X \to X \mid f \text{ is bijective} \}.$$ ^5b562f
 
 > [!proposition]
 > The followings hold for cycles:
