@@ -51,6 +51,8 @@ By the triangle inequality: $$\|(s+t) \cdot 1 - (a+b)\| = \|(s \cdot 1 - a) + (t
 > [!definition] The Partial Order on $\A_{\text{sa}}$
 > Let $\A_{\text{sa}}$ be the set of self-adjoint elements in $\A$. For $a, b \in \A_{\text{sa}}$, we write $a \le b$ if $b-a \in \A^{+}$. This defines a [[Preorder, Partial Order and Posets#^fa7f22|partial order]] on $\A_{\text{sa}}$.
 
+^28c050
+
 ## Ideals and Quotient Algebras
 
 > [!theorem] Ideals and Quotients of C*-Algebras

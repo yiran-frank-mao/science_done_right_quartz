@@ -15,7 +15,7 @@ tags:
 <u><b>e.g.</b></u>  The [[Linear Groups#^2ce0d2|group of rotations]] in $\newcommand{\R}{\mathbb{R}}\R^{2}$, $\newcommand{\SO}{\mathrm{SO}}\SO(2)$, is a Lie group. Each element of $\mathrm{SO}(2)$ can be represented by some rotation angle $\theta\in S^{1}$, this gives a chart so that $\SO_{2}$ is a smooth manifold. And the multiplication operation corresponds to the addition of angles, which is smooth. In general, $$\SO(n)\subset \mathrm{O}(n)\subset \mathrm{SL}(n,\R) \subset \mathrm{GL}(n,\R)$$are all Lie groups.
 
 > [!proposition]
-> Let $G$ be a Lie group. Then the left multiplication by $g\in G$, $\ell_{g}\colon G\to G$, is a [[Smooth Functions and Maps#^39ce42|diffeomorphism]] of $G$ onto itself.
+> Let $G$ be a Lie group. Then the left multiplication by $g\in G$, $\ell_{g}\colon G\to G$, is a [[Smooth Maps#^39ce42|diffeomorphism]] of $G$ onto itself.
 > 
 
 > [!proposition]

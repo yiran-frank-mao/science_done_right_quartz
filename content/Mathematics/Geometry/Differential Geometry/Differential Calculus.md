@@ -5,7 +5,7 @@
 > A map $f\colon U \to \R^{n}$ where $U\subset \R^{n}$ is a local $C^{k}$ diffeomorphism about $x$ if there exists an open neighbourhood $V$ of $x$ such that $f|_{V}$ is a $C^{k}$ diffeomorphism onto its image. ^2d0ba0
 
 > [!remark]
-> If we do not specify $k$, it is infinitely times differentiable (smooth) by default. General definitions of diffeomorphism and local diffeomorphism are given [[Smooth Functions and Maps#^39ce42|here]].
+> If we do not specify $k$, it is infinitely times differentiable (smooth) by default. General definitions of diffeomorphism and local diffeomorphism are given [[Smooth Maps#^39ce42|here]].
 
 > [!theorem] Inverse Function Theorem
 > A $C^{k}$ map $f\colon U\to \R^{n}$ where $U\subset \R^{n}$ for which $\D_{x} f$ is invertible is a local $C^{k}$ diffeomorphism about $x$.

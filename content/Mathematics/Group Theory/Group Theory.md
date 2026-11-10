@@ -21,6 +21,7 @@ Group theory is the study of algebraic structures known as groups. Groups are fu
 [[Sylow’s Theorems]]
 [[Free Groups and Relations]]
 [[Group Cohomology]]
+[[Transitivity of Groups]]
 
 ### Some Concrete Groups
 

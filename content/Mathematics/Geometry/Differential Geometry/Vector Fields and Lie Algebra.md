@@ -21,7 +21,7 @@ The space of vector fields has a rich structure:
 ## Pullback Vector Fields
 
 > [!definition] Pullback Vector Field
-> Suppose $f\colon M\to N$ is a [[Smooth Functions and Maps#^39ce42|local diffeomorphism]]. The pullback of a vector field $X\in \mathfrak{X}(N)$ by $f$ is the [[Vector Bundles#^3c3b98|pullback section]] of the [[Tangent Vectors and Spaces#^e3492e|tangent bundle]]. That is $$(f^{*}X)(p):=(\d_{p}f)^{-1}(X(f(p)))$$
+> Suppose $f\colon M\to N$ is a [[Smooth Maps#^39ce42|local diffeomorphism]]. The pullback of a vector field $X\in \mathfrak{X}(N)$ by $f$ is the [[Vector Bundles#^3c3b98|pullback section]] of the [[Tangent Vectors and Spaces#^e3492e|tangent bundle]]. That is $$(f^{*}X)(p):=(\d_{p}f)^{-1}(X(f(p)))$$
 
 *Proof*  
 

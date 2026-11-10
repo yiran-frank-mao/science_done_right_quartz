@@ -23,8 +23,9 @@ updated: 2024-09-17
 > [!definition] Upper Bound
 > Let $X$ be a nonempty partially ordered set and $A ⊂ X$ is a totally ordered subset. An upper bound for $A⊂X$ is an element $z ∈X$ such that $x ≤z$ for all $x ∈A$. 
 
-**Def**  <i><u>Maximal Element</u></i>
-A maximal element in a partially ordered set $X$ is an element $x ∈X$ such that $y ≥x$ for some $y ∈X$ implies $y = x$.
+> [!definition] Maximal Element
+> A maximal element in a partially ordered set $X$ is an element $x ∈X$ such that $y ≥x$ for some $y ∈X$ implies $y = x$.
+
 
 > [!theorem] Zorn's Lemma
 > Let $X$ be a nonempty partially ordered set. If every totally ordered subset of $X$ has an upper bound in $X$, then $X$ has a maximal element. ^11e467
@@ -37,6 +38,11 @@ A maximal element in a partially ordered set $X$ is an element $x ∈X$ such tha
 > [!definition] Preorder
 > A *preorder* is a [[Relations and Functions#^759a11|homogeneous binary relation]] that is only [[Relations and Functions#^1bdc5e|reflexive]] and [[Relations and Functions#^1f742d|transitive]]. A set $X$ equipped with a preorder is called a *preordered set*. ^fa7f22
 > 
+
+> [!proposition] Equivalence Relation Induced by a Preorder
+> Suppose $(X,\lesssim)$ is a preordered set. Define a relation $\sim$ on $X$ by $x\sim y$ if and only if $x\lesssim y$ and $y\lesssim x$. Then $\sim$ is an [[Relations and Functions#^14741d|equivalence relation]] on $X$. Let $[x]$ denote the equivalence class of $x\in X$ under $\sim$. Then the quotient set $X/\sim$ is canonically equipped with a partial order $\leq$ defined by $[x]\leq [y]$ if and only if $x\lesssim y$. ^fa7f24
+> 
+
 
 > [!definition] Directed Set
 > A *directed set* is a preordered set $(X,\lesssim)$ such that for any $x,y∈X$, there exists $z\in X$ with $x\lesssim z$ and $y\lesssim z$. In other words, every finite subset has an upper bound. ^fa7f24

@@ -63,7 +63,6 @@ $\quad$
 
 <u><b>e.g.</b></u>  
 - On $\R^{n}$, the atlas $\mathcal{A}=\{(\id_{\R^{n}},\R^{n})\}$ is a smooth maximal atlas making $\R^{n}$ a smooth manifold.
-- 
 - The 4-manifold [$E_{8}$](https://en.wikipedia.org/wiki/E8_manifold) is a topological manifold, but not smooth.
 $\quad$
 
@@ -98,7 +97,7 @@ There are several equivalent ways to define submanifolds:
 > $\quad$
 
 > [!definition] Embedded Submanifold
-> Suppose $M$ is a smooth manifold with or without boundary. An *embedded (or regular) submanifold* of $M$ is a subset $S \subset M$ that is a manifold (without boundary) in the subspace topology, endowed with a smooth structure with respect to which the inclusion map $S\hookrightarrow M$ is a [[Smooth Functions and Maps#^9d6e60|smooth embedding]]. ^632f7d
+> Suppose $M$ is a smooth manifold with or without boundary. An *embedded (or regular) submanifold* of $M$ is a subset $S \subset M$ that is a manifold (without boundary) in the subspace topology, endowed with a smooth structure with respect to which the inclusion map $S\hookrightarrow M$ is a [[Smooth Maps#^9d6e60|smooth embedding]]. ^632f7d
 
 > [!lemma] Open Submanifold Lemma
 > An open subset of a manifold is a manifold of the same dimension.

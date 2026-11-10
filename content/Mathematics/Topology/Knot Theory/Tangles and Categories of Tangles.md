@@ -8,8 +8,8 @@ tags:
 ## Topological Definition of Tangles
 
 > [!definition] Tangle
-> A *tangle* $T_{m,n}$ with $m$ bottom endpoints and $n$ top endpoints is an embedding $$ \left(\bigsqcup_{i=1}^{\frac{m+n}{2}}I_{i}\right)\sqcup \left(\bigsqcup_{j=1}^{k} S^{1} \right)\hookrightarrow D^{2} \times [0,1] $$such that it forms a bijection between the boundary of $\bigsqcup_{i=1}^{\frac{m+n}{2}}I_{i}$ and the marked endpoints on bottom and top. 
-> ![tangle.svg|150](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/tangle.svg)
+> A *tangle* $T_{m,n}$ with $m$ bottom endpoints and $n$ top endpoints is a topological embedding $$ \left(\bigsqcup_{i=1}^{\frac{m+n}{2}}I_{i}\right)\sqcup \left(\bigsqcup_{j=1}^{k} S^{1} \right)\hookrightarrow D^{2} \times [0,1] $$such that it forms a bijection between the boundary of $\bigsqcup_{i=1}^{\frac{m+n}{2}}I_{i}$ and the marked endpoints on bottom and top. 
+> ![tangle.svg|150](https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/tangle.svg) ^concept-ee7b836f5bd6
 
 > [!definition] Stacking of Tangles
 > There are two ways to stack tangles. One is the *horizontal (side by side) stacking*, denoted by $\otimes$, and the other is the *vertical stacking (composition)*, denoted by $\circ$.

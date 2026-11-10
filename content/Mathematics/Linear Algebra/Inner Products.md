@@ -7,7 +7,7 @@ Inner products generalize the idea of the dot product in $\R^{n}$ to more genera
 >3. Sesquilinearity: for all $x,y,z ∈ X$ and $α,β,\lambda ∈ F$ there holds $$⟨αx +βy,z⟩ = α⟨x,z⟩+β⟨y,z⟩,\quad \langle u,\lambda v \rangle = \overline{\lambda}\langle u, v \rangle.$$
 > 4. Induced Norm: inner product induces a [[Normed Spaces#^concept-d7c3bfd21209|norm]] $\|x\|:=\sqrt{\langle x,x\rangle}$.
 > 
-> A [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] endowed with an inner product is called an *inner product space*. ^f0c22c
+> A [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] endowed with an inner product is called an *inner product space* or a *pre-Hilbert space*. ^f0c22c
 
 We shall verify that the induced norm is indeed a norm. Since $\overline{\langle x,x\rangle}=\langle x,x\rangle$, $\langle x,x\rangle$ is always real. So the norm is real as expected. The triangle inequality follows from the [[Inner Products#^aec3f8|Cauchy-Schwarz inequality]], which we will prove later. The homogeneity property follows from the linearity of the inner product. The positivity property follows from the definition of the inner product.
 
@@ -40,7 +40,6 @@ We shall verify that the induced norm is indeed a norm. Since $\overline{\langle
 > [!proposition]
 > For any projection $P$, we have $\|P\|_{\text{op}}=1$ unless $P=0$.
 > 
-
 
 > [!theorem]
 > A bounded linear map $P\colon V\to V$ on the inner product space $V$ is a projection if and only if $P\circ P=P$ (i.e., idempotent) and it is self-adjoint.

@@ -18,8 +18,8 @@ Tensors and tensor products are multilinear generalizations of vectors and matri
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/tensor_product_universal_property.svg" alt="tensor_product_universal_property" style="width:23%;"/>
 >The function $f$ usually stays anonymous and is written as $(a, b) \mapsto a \otimes b$. ^732917
 
-> [!remark]
-> This means, having a linear map 
+> [!remark]+
+> This means, the tensor product space makes bilinear maps linear.
 > 
 
 > [!theorem] Construction of Tensor Product of Vector Spaces
@@ -31,6 +31,8 @@ Tensors and tensor products are multilinear generalizations of vectors and matri
 
 >[!remark]+ Intuition of Tensor Products
 >Tensor products of vector spaces are to Cartesian products of sets as direct sums of vectors spaces are to disjoint unions of sets.
+
+<u><b>e.g.</b></u>  Any [[Inner Products#^f0c22c|real inner product]] is a bilinear map $\langle \cdot, \cdot \rangle \colon V \times V \to \R$, and thus can be represented as a linear map $\langle \cdot, \cdot \rangle \colon V\otimes V \to \R$.
 
 > [!proposition] 
 > A basis of $U\otimes V$ is given by the set of all pure tensor products of basis vectors of $U$ and $V$.

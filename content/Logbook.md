@@ -23,7 +23,7 @@ completed: true
 
 
 ## 5 Sep 2026
-- Updates: [[Banach Spaces]], [[Von Neumann Bicommutant Theorem]].
+- Updates: [[Banach Spaces]], [[von Neumann Bicommutant Theorem]].
 
 ## 19 Jul 2026
 - Updates: [[Topological Spaces]], [[Construction of Sets]]. 
@@ -426,7 +426,7 @@ Updates: [[Constructions on Categories]].
 - Updates: [[Tangent Vectors and Spaces]].
 
 ## 25 July 2024
-- New page: [[Lie Groups]], [[Smooth Functions and Maps]], [[Tangent Vectors and Spaces]], [[Riemannian Metrics]], [[Tensor Fields]], [[Tensors and Tensor Products]].
+- New page: [[Lie Groups]], [[Smooth Maps]], [[Tangent Vectors and Spaces]], [[Riemannian Metrics]], [[Tensor Fields]], [[Tensors and Tensor Products]].
 - Updates: [[Construction of Sets]].
 
 ## 22 July 2024

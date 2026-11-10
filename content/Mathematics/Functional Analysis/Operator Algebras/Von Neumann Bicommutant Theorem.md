@@ -7,9 +7,11 @@
 
 *Proof*  For any $T\in B'$, $T$ also commutes with all operators in $A$. $\square$
 
-> [!definition] Von Neumann Algebra
->  
+> [!definition] von Neumann Algebra
+> A von Neumann algebra $M$ on $\mathcal{H}$ is a ∗-subalgebra of $B(\mathcal{H})$ containing the identity and is closed in one (and hence all) of the (ultra)weak and (ultra)strong topologies.
 > 
+
+^concept-4a6a80d096e9
 
 
 > [!theorem] Bicommutant Theorem

@@ -14,7 +14,7 @@ updated: 2025-09-01
 $\quad$
 
 > [!definition] Symplectomorphism
-> A *symplectomorphism* is a [[Smooth Functions and Maps#^39ce42|diffeomorphism]] $f\colon M\to N$ between symplectic manifolds $(M,\omega_{M})$ and $(N,\omega_{N})$ such that $f^{*}\omega_{N}=\omega_{M}$. ^2dbbf4
+> A *symplectomorphism* is a [[Smooth Maps#^39ce42|diffeomorphism]] $f\colon M\to N$ between symplectic manifolds $(M,\omega_{M})$ and $(N,\omega_{N})$ such that $f^{*}\omega_{N}=\omega_{M}$. ^2dbbf4
 
 > [!proposition]
 > Given a diffeomorphism $f\colon M\to N$, there is a canonical diffeomorphism $F\colon T^{*}M\to T^{*}N$ such that $F^{*}\lambda_{N}=\lambda_{M}$, where $\lambda_{M}$ and $\lambda_{N}$ are the canonical 1-forms on $T^{*}M$ and $T^{*}N$ respectively. Thus $F$ is a symplectomorphism.

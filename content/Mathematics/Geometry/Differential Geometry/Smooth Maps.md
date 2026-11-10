@@ -1,14 +1,13 @@
 ## Smoothness
 
 >[!definition] Smooth Map
->Let $M$ be a smooth $n$-manifold with dimension $n$, an atlas $\mathcal{A}$ representing the differentiable structure on $M$. Let $N$ be another smooth $k$-manifold, and differentiable atlas $\mathcal{B}$. Let $f$ be a map from $M$ to $N$. Then $f$ is *smooth* if it is continuous, and for all $x\in M$, and every chart $\varphi\colon U\to V$ in $\mathcal{A}$ with $x\in U$ and $\eta\colon W\to Z$ in $\mathcal{B}$ with $f(x)\in W$, the map $\eta \circ F \circ \varphi^{-1}$ is smooth on $Z \subset \R^{k}$.
+>Let $M$ be a smooth $n$-manifold with dimension $n$, an atlas $\mathcal{A}$ representing the differentiable structure on $M$. Let $N$ be another smooth $k$-manifold, and differentiable atlas $\mathcal{B}$. Let $f$ be a map from $M$ to $N$. Then $f$ is *smooth* if it is continuous, and for all $x\in M$, and every chart $\varphi\colon U\to V$ in $\mathcal{A}$ with $x\in U$ and $\eta\colon W\to Z$ in $\mathcal{B}$ with $f(x)\in W$, the map $\eta \circ f \circ \varphi^{-1}$ is smooth on $\newcommand{\R}{\mathbb{R}}Z \subset \R^{k}$.
 > <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/smooth_maps_between_smooth_manifolds.svg" style="width:45%;"/>
 > The collection of all such smooth maps are denoted as $C^{\infty}(M,N)$, and we usually write $C^{\infty}(M)$ for $C^{\infty}(M,\R)$. ^4fb5f6
 
-> [!proposition]
-> Although the definition requires that the map $f\circ \varphi^{-1}$ is smooth for every chart $\varphi\colon U\to V$ in the atlas, it is enough to check the smoothness for a single chart around each point. Similar argument applies to check that a map between manifolds is smooth.
-
-*Proof*  If $\varphi\colon U\to V$ is a chart with $f\circ \varphi^{-1}$ smooth, and $\eta \colon W \to Z$ is another chart with $W$ overlapping $U$, then $f\circ \eta^{-1}=f\circ \varphi^{-1}\circ \varphi \circ \eta^{-1}$ is smooth at the overlapping region. $\square$
+> [!remark]
+> Although the definition requires that the map $\eta \circ f \circ \varphi^{-1}$ is smooth for every chart $\varphi\colon U\to V$ in the atlas, it is enough to check the smoothness for a single chart around each point, because our atlases are smooth, so transition maps are all smooth!
+> Moreover, to also check continuity in a streamlined way, we simply need to show that for each $x\in M$ there exists a chart $(U, \varphi)$ at $x$ and a chart $(V, ψ)$ at $f(x)$ such that $f (U) \subset V$ and $\psi \circ f \circ \varphi^{−1} \colon \varphi(U) \to \psi(V)$ is smooth.
 
 <u><b>e.g.</b></u>  
 - Every constant map is smooth;
@@ -25,12 +24,12 @@ $\quad$
 *Proof*  If $f$ is smooth, then $f_{i}\circ \varphi^{-1}$ is smooth for every chart $\varphi\colon U\to V$. Conversely, if each $f_{i}$ is smooth, then $f\circ \varphi^{-1}=(f_{1}\circ \varphi^{-1},f_{2}\circ \varphi^{-1},\dots, f_{n}\circ \varphi^{-1})$ is smooth. $\square$
 
 > [!proposition]
-> A map $g$ between differentiable manifolds $M$ and $N$ is smooth if and only if $f \circ g$ is a smooth function on $M$ whenever $f$ is a smooth function on $N$.
+> A map $g$ between smooth manifolds $M$ and $N$ is smooth if and only if $f \circ g$ is a smooth function on $M$ whenever $f$ is a smooth function on $N$.
 
 *Proof*  Clearly if $\chi$ is smooth, then $f\circ \chi$ is smooth. Conversely, if $f\circ \chi$ is smooth on $M$, then for every chart $\varphi\colon U\to V$ in the atlas of $M$, the composition $f\circ \chi \circ \varphi^{-1}$ is smooth on $V$. Hence $\chi$ is smooth by definition. $\square$
 
 > [!proposition]
-> 
+> A map $F\colon M\to N$ between smooth manifolds is smooth if and only if for every smooth function $f\colon N\to \R$, the precomposition $f\circ F$ is a smooth function on $M$. Equivalently, the pullback satisfies $F^{*}(C^{\infty}(N)) \subset C^{\infty}(M)$.
 > 
 
 

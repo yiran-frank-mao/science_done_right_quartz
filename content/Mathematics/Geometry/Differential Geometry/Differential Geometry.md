@@ -17,7 +17,7 @@ Differential Geometry is a fascinating field of mathematics that studies the geo
 ### Geometry of Manifolds
 [[Differential Calculus]]
 [[Manifolds, Atlases and Smooth Structures]]
-[[Smooth Functions and Maps]]
+[[Smooth Maps]]
 [[Tangent Vectors and Spaces]]
 [[Vector Bundles]]
 [[Smooth Partitions of Unity]]
