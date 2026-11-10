@@ -18,6 +18,8 @@ Functional Analysis is the study of [[Mathematics/Linear Algebra/Vector Spaces#^
 [[Stone's Theorem]]
 [[Nelson's Counterexample]]
 [[Nelson's Commutator Theorem]]
+
+[[Constructions on Hilbert Spaces]]
 ### Banach Spaces
 [[Banach Spaces]]
 [[The Baire Category Theorem]]

@@ -1,5 +1,5 @@
 
-**Postulate**  Given two quantum systems with state spaces given independently by Hilbert spaces $H$ and $K$, as a compound (joint) system their overall state space is $H \otimes K$, the [[Tensors and Tensor Products#^732917|tensor product]] of the two [[Hilbert Spaces#^ae0212|Hilbert spaces]].
+**Postulate**  Given two quantum systems with state spaces given independently by Hilbert spaces $H$ and $K$, as a compound (joint) system their overall state space is $H \otimes K$, the [[Tensors and Tensor Products#^732917|tensor product]] of the two [[Hilbert Spaces#^concept-309eb44da4da|Hilbert spaces]].
 
 >[!remark]
 >As a result, state spaces of quantum systems grow large very rapidly: a collection of n qubits will have a state space isomorphic to $\C^{2^{n}}$ , requiring $2^{n}$ complex numbers to specify its state vector exactly. In contrast, a classical system consisting of $n$ bits can have its state specified by a single binary number of length $n$.

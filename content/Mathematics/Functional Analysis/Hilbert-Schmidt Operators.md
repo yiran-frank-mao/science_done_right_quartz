@@ -3,7 +3,7 @@
 Hilbert-Schmidt operators are a special class of compact operators that play an important role in functional analysis and quantum mechanics. They can be thought of as infinite-dimensional analogues of matrices with finite Frobenius norm. ^2facfd
 
 > [!definition] Hilbert-Schmidt Operator
-> An operator $T$ on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}$ is called *Hilbert-Schmidt* if its *Hilbert-Schmidt norm*  $$\newcommand{\HS}{\text{HS}}\|T\|^{2}_{\HS} := \sum_{j}\|Te_{j}\|^{2}<\infty. $$  ^5bb53a
+> An operator $T$ on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\newcommand{\H}{\mathcal{H}}$ is called *Hilbert-Schmidt* if its *Hilbert-Schmidt norm*  $$\newcommand{\HS}{\text{HS}}\|T\|^{2}_{\HS} := \sum_{j}\|Te_{j}\|^{2}<\infty. $$  ^5bb53a
 
 e.g.
 - In $\R^{n}$, the Hilbert–Schmidt norm is identical to the [Frobenius norm](https://www.wikiwand.com/en/articles/Matrix_norm#Frobenius_norm "Matrix norm").
@@ -14,7 +14,7 @@ e.g.
 > 
 
 > [!proposition]
-> Suppose $\H$ is a complex Hilbert space. Then the space of all Hilbert-Schmidt operators, denoted $B_{\HS}(\H)$ or $S_{2}(\H)$, is an two-sided $*$-ideal in the [[Normed and Banach Algebras#^040470|Banach algebra]] $B(\H)$. Moreover, $B_{\HS}(\H)$ is isometrically isomorphic to the [[Hilbert Spaces#^ae0212|Hilbert space]] tensor product $\overline{\H} \otimes \H$, where $\overline{\H}$ is the conjugate Hilbert space of $\H$.
+> Suppose $\H$ is a complex Hilbert space. Then the space of all Hilbert-Schmidt operators, denoted $B_{\HS}(\H)$ or $S_{2}(\H)$, is an two-sided $*$-ideal in the [[Normed and Banach Algebras#^040470|Banach algebra]] $B(\H)$. Moreover, $B_{\HS}(\H)$ is isometrically isomorphic to the [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] tensor product $\overline{\H} \otimes \H$, where $\overline{\H}$ is the conjugate Hilbert space of $\H$.
 > This means for each Hilbert-Schmidt operator $T$, we can define a bilinear form $$\beta_{T}\colon \H \times \H \to \C,\quad (x,y) \mapsto \langle x, Ty \rangle_{\H}.$$
 > 
 

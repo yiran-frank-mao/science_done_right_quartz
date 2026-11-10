@@ -12,13 +12,13 @@ completed: true
 Let's establish the setting for our discussion.
 - We use the *normalized arc length measure* $\newcommand{\d}{\mathrm{d}}\d\mu(\theta) = \frac{\d\theta}{2\pi}$ for $z = e^{i\theta}$.
 - We denote the Lebesgue spaces as $L^p := L^p(S^{1}, \mu)$.
-- The functions $e_n(z) = z^n$ for $\newcommand{\Z}{\mathbb{Z}}n \in \Z$ form an orthonormal basis for the [[Hilbert Spaces#^ae0212|Hilbert space]] $L^2(S^{1})$.
+- The functions $e_n(z) = z^n$ for $\newcommand{\Z}{\mathbb{Z}}n \in \Z$ form an orthonormal basis for the [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $L^2(S^{1})$.
 $\quad$
 
 > [!definition] Hardy Space
 > The *Hardy space* $H^2$ is the subspace of $L^2(S^{1},\mu)$ consisting of functions whose negative Fourier coefficients vanish:
 > $$H^{2} = \left\{ f \in L^2(S^{1},\mu) : \hat{f}(n) = \langle f, e_n \rangle = 0 \text{ for all } n < 0 \right\}$$
-> $H^{2}$ is a closed subspace of $L^2(S^{1})$ and thus is a [[Hilbert Spaces#^ae0212|Hilbert space]] in its own right. The set $\{e_n\}_{n \ge 0}$ forms an orthonormal basis for $H^2$.
+> $H^{2}$ is a closed subspace of $L^2(S^{1})$ and thus is a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] in its own right. The set $\{e_n\}_{n \ge 0}$ forms an orthonormal basis for $H^2$.
 
 ## Multiplication and Toeplitz Operators
 

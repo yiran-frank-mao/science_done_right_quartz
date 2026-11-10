@@ -1,6 +1,6 @@
 
 > [!definition] Symmetric Operator
-> A densely defined operator on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\H$ is *symmetric* if for all $f,g\in D(T)$, we have $\langle Tf,g\rangle=\langle f,Tg\rangle$. That is, $D(T)\subset D(T^{*})$, and $T|_{D(T)}=T^{*}|_{D(T)}$.
+> A densely defined operator on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\H$ is *symmetric* if for all $f,g\in D(T)$, we have $\langle Tf,g\rangle=\langle f,Tg\rangle$. That is, $D(T)\subset D(T^{*})$, and $T|_{D(T)}=T^{*}|_{D(T)}$.
 
 > [!definition] Self-Adjoint Operator
 > A densely defined operator $T$ on $\H$ is *self-adjoint* if $T=T^{*}$. That is, $T$ is symmetric, and $D(T)=D(T^{*})$. ^450e4c
@@ -30,7 +30,7 @@
 ## Criterion for Self-Adjointness
 
 > [!theorem]
-> Let $T$ be a symmetric operator on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\H$, then the followings are equivalent:
+> Let $T$ be a symmetric operator on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\H$, then the followings are equivalent:
 > - $T$ is self-adjoint;
 > - $T$ is closed and $\ker (T^{*}\pm \hat{i})=\{0\}$;
 > - $\im (T\pm \hat{i})=\H$.

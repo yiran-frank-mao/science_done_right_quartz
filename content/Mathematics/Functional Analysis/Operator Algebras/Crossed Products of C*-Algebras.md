@@ -9,7 +9,7 @@
 > An element $h \in C_c(G,\A)$ can be formally written as a sum $h = \sum_{t \in G} h(t)\delta_t$, where $\delta_t$ is the function that is $1_\A$ at $t$ and $0$ elsewhere.
 
 > [!definition] Integrated Form of a Covariant Representation
-> Given a [[C*-Dynamical Systems#^ff0e48|covariant representation]] $(\pi, U)$ of $(\A, G, \alpha)$ on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\mathcal{H}$, we can define a map $\pi \times U\colon  C_c(G,\A) \to B(\mathcal{H})$ by: $$(\pi \times U)(h) = \sum_{t \in G} \pi(h(t))U_t \in B(\mathcal{H})$$
+> Given a [[C*-Dynamical Systems#^ff0e48|covariant representation]] $(\pi, U)$ of $(\A, G, \alpha)$ on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\mathcal{H}$, we can define a map $\pi \times U\colon  C_c(G,\A) \to B(\mathcal{H})$ by: $$(\pi \times U)(h) = \sum_{t \in G} \pi(h(t))U_t \in B(\mathcal{H})$$
 
 > [!proposition]
 > The map $\pi \times U$ is a $*$-representation of the algebra $C_c(G,\A)$.

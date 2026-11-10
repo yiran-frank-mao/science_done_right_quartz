@@ -12,7 +12,7 @@ completed: true
 ## Fredholm Operators
 
 > [!definition] Fredholm Operator
-> Let $\newcommand{\H}{\mathcal{H}}\H$ be a [[Hilbert Spaces#^ae0212|Hilbert space]]. A [[Orthogonality and Bounded Linear Maps#^f95b62|bounded linear operator]] $T\colon \H \to \H$ is said to be *Fredholm* if:
+> Let $\newcommand{\H}{\mathcal{H}}\H$ be a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]]. A [[Orthogonality and Bounded Linear Maps#^f95b62|bounded linear operator]] $T\colon \H \to \H$ is said to be *Fredholm* if:
 > 1.  $\operatorname{im}(T)$ is a closed subspace of $\H$.
 > 2.  $\ker(T) = \{x \in \H : Tx = 0\}$ is finite-dimensional.
 > 3.  $\operatorname{coker}(T) = \H / \operatorname{im}(T)$ is finite-dimensional.
@@ -46,7 +46,7 @@ Thus, $T$ is Fredholm.
 ## The Calkin Algebra
 
 > [!definition] Calkin Algebra
-> The set of all compact operators $K(\H)$ on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\H$ forms a closed, two-sided $*$-ideal in the [[C*-Algebras#^e4fdc6|C*-algebra]] of bounded operators $B(H)$. The quotient algebra $B(\H) / K(\H)$ is called the *Calkin algebra*. We denote the canonical quotient map by $\pi\colon B(\H) \to B(\H) / K(\H)$.
+> The set of all compact operators $K(\H)$ on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\H$ forms a closed, two-sided $*$-ideal in the [[C*-Algebras#^e4fdc6|C*-algebra]] of bounded operators $B(H)$. The quotient algebra $B(\H) / K(\H)$ is called the *Calkin algebra*. We denote the canonical quotient map by $\pi\colon B(\H) \to B(\H) / K(\H)$.
 
 > [!corollary]
 > An operator $T \in B(\H)$ is Fredholm if and only if its image $\pi(T)$ is invertible in the Calkin algebra $B(\H)/K(\H)$.

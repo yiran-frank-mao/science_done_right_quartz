@@ -78,7 +78,7 @@ completed: true
 - Updates: [[Knots and Links]].
 
 ## 19 Feb 2026
-- Updates: [[Heisenberg Algebra and Fock Models]], [[The Fock Space]], [[Symplectic Hilbert Spaces]], [[Compact Operators]].
+- Updates: [[Heisenberg Algebra and Fock Models]], [[Fock Spaces]], [[Symplectic Hilbert Spaces]], [[Compact Operators]].
 
 
 ## 18 Feb 2026

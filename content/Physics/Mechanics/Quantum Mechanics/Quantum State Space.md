@@ -4,7 +4,7 @@
 > Dirac notation, is a notation for linear algebra and linear operators on complex vector spaces together with their dual space both in the finite-dimensional and infinite-dimensional case. In quantum mechanics, Dirac notation is used ubiquitously to denote quantum states. 
 
 >[!definition] Bra and Ket
-> A ket is of the form $|v\rangle$, it denotes a vector $v$ in a [[Complex Numbers#^a81924|complex]] [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$, and physically it represents a state of some quantum system.
+> A ket is of the form $|v\rangle$, it denotes a vector $v$ in a [[Complex Numbers#^a81924|complex]] [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$, and physically it represents a state of some quantum system.
 > A bra is of the form $\langle f |$, it denotes a linear map $\newcommand{\C}{\mathbb{C}}\newcommand{\R}{\mathbb{R}}f\colon \H \to \C$. 
 > Letting the linear functional $\bra{f}$ act on a vector $\ket{v}$ is written as $\langle f|v\rangle \in \C$. ^9686b5
 
@@ -14,7 +14,7 @@
 ## Hilbert Space as Quantum State Space
 
 >[!definition] Quantum State Space
-> A quantum state space is a [[Complex Numbers#^a81924|complex]] [[Closure, Interior and Boundary#^acb78f|separable]] [[Hilbert Spaces#^ae0212|Hilbert space]] and eigenstates as axes that the state of system is represented by a column vector in this Hilbert space: $$|\Psi\rangle = \begin{pmatrix} c_{1} \\ c_{2}\\ c_{3} \\  \vdots \end{pmatrix}$$And the bra $\langle \Psi |$ is the Hermitian adjoint: $\langle \Psi |=\begin{pmatrix}c_{1}^{*}&c_{2}^{*}&c_{3}^{*}\dots\end{pmatrix}$. Thus it follows that $$\int_{-\infty}^{\infty}\Psi^{*}\Psi \dd z = \sum_{n}^{\infty}|c_{n}|^{2}=1$$Any operator then can be represented as a matrix: $$\hat A=\begin{pmatrix}A_{11}&A_{12}&A_{13}&\cdots\\A_{21}&A_{22}&A_{23}&\cdots\\A_{31}&A_{32}&A_{33}&\cdots\\\vdots&\vdots&\vdots&\ddots\end{pmatrix}$$ ^00f394
+> A quantum state space is a [[Complex Numbers#^a81924|complex]] [[Closure, Interior and Boundary#^acb78f|separable]] [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] and eigenstates as axes that the state of system is represented by a column vector in this Hilbert space: $$|\Psi\rangle = \begin{pmatrix} c_{1} \\ c_{2}\\ c_{3} \\  \vdots \end{pmatrix}$$And the bra $\langle \Psi |$ is the Hermitian adjoint: $\langle \Psi |=\begin{pmatrix}c_{1}^{*}&c_{2}^{*}&c_{3}^{*}\dots\end{pmatrix}$. Thus it follows that $$\int_{-\infty}^{\infty}\Psi^{*}\Psi \dd z = \sum_{n}^{\infty}|c_{n}|^{2}=1$$Any operator then can be represented as a matrix: $$\hat A=\begin{pmatrix}A_{11}&A_{12}&A_{13}&\cdots\\A_{21}&A_{22}&A_{23}&\cdots\\A_{31}&A_{32}&A_{33}&\cdots\\\vdots&\vdots&\vdots&\ddots\end{pmatrix}$$ ^00f394
 
 <u><b>e.g.</b></u>  For one degree of freedom this space can be taken to be the space of wave functions (complex-valued functions $\psi(q)$ of a position variable $q\in\R$) in [$L^{2}(\R)$](Hilbert%20Spaces#^ba55f5).
 

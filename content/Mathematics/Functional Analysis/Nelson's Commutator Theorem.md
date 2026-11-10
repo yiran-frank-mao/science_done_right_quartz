@@ -12,7 +12,7 @@ This note explore Nelson’s commutator theorem, which delivers sufficient condi
 ## Scales of Hilbert Spaces
 
 > [!definition] Scales of Hilbert Spaces
-> Let $H$ be a positive [[Symmetric and Self-Adjoint Operators#^450e4c|self-adjoint]] operator on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\newcommand{\L}{\mathscr{L}}\newcommand{\R}{\mathbb{R}}(\H,\langle\cdot,\cdot\rangle)$. For any $k \in \mathbb{R}$, we define the Hilbert space $(\H^{k},\langle\cdot,\cdot\rangle_{k})$ as the completion of the domain $D(H^{k/2})$ ($H^{k/2}$ is the operator obtained from [[The Spectral Theorem of Unbounded Operators#^bb27f4|functional calculus]]) with respect to the inner product:
+> Let $H$ be a positive [[Symmetric and Self-Adjoint Operators#^450e4c|self-adjoint]] operator on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\newcommand{\L}{\mathscr{L}}\newcommand{\R}{\mathbb{R}}(\H,\langle\cdot,\cdot\rangle)$. For any $k \in \mathbb{R}$, we define the Hilbert space $(\H^{k},\langle\cdot,\cdot\rangle_{k})$ as the completion of the domain $D(H^{k/2})$ ($H^{k/2}$ is the operator obtained from [[The Spectral Theorem of Unbounded Operators#^bb27f4|functional calculus]]) with respect to the inner product:
 > $$\langle f, g \rangle_k := \langle (I+H)^{k/2}f, (I+H)^{k/2}g \rangle.$$
 > These are called *scales* of $\H$ associated with $H$. We also define
 > $$\H^{\infty} := \bigcap_{k \in \R} \H^{k},\quad\H^{-\infty} := \bigcup_{k \in \R} \H^{k}.$$

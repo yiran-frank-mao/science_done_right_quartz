@@ -48,7 +48,7 @@ A group action on a space $X$ induces a natural action on the C\*-algebra of con
 ## Covariant Representations
 
 > [!definition] Covariant Representation
-> Let $(\mathcal{A}, G, \alpha)$ be a C\*-dynamical system. A *covariant representation* of $(\mathcal{A}, G, \alpha)$ on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$ is a pair $(\pi, U)$ where:
+> Let $(\mathcal{A}, G, \alpha)$ be a C\*-dynamical system. A *covariant representation* of $(\mathcal{A}, G, \alpha)$ on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$ is a pair $(\pi, U)$ where:
 > 1. $\pi\colon \mathcal{A} \to B(\H)$ is a $\ast$-representation of $\mathcal{A}$ on $\H$.
 > 2. $U\colon G \to U(\H)$ is a unitary representation of $G$ on $\H$.
 > 3. They satisfy the covariance condition: $\pi(\alpha_s(a)) = U_s \pi(a) U_s^*$ for all $a \in \mathcal{A}$ and $s \in G$.

@@ -27,7 +27,7 @@ Here, for any unital algebra $A$, we denote the set of invertible elements in $\
 
 <u><b>e.g.</b></u>
 - Suppose $\A=M_{n}(\C)$, the algebra of $n\times n$ complex matrices, then the spectrum of a matrix $B$ is the set of all eigenvalues of $B$.
-- $\Omega$ is a compact [[Hilbert Spaces#^ae0212|Hilbert space]], then the spectrum of $f\in C(\Omega)$, for which $C(\Omega)$ is the algebra of all continuous maps $\Omega\to \C$, is the range of $f$. 
+- $\Omega$ is a compact [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]], then the spectrum of $f\in C(\Omega)$, for which $C(\Omega)$ is the algebra of all continuous maps $\Omega\to \C$, is the range of $f$. 
 - Consider the algebra of polynomials $\C[z]$. The spectrum of $z$ is the whole $\C$.
 $\quad$
 

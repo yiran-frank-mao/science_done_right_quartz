@@ -1,12 +1,12 @@
 ## Exponential of Operators
 
 > [!definition] Exponential of a Self-adjoint Operator
-> Suppose $T$ is a [[Symmetric and Self-Adjoint Operators#^450e4c|self-adjoint]] operator on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$. If $T$ is bounded, we can simply define the exponential of $T$ as $$e^{T}=\sum_{n=0}^{\infty}\frac{T^{n}}{n!}.$$If $T$ is unbounded, we can define the exponential of $T$ using the [[The Spectral Theorem of Unbounded Operators#^bb27f4|spectral theorem]].
+> Suppose $T$ is a [[Symmetric and Self-Adjoint Operators#^450e4c|self-adjoint]] operator on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\newcommand{\H}{\mathcal{H}}\H$. If $T$ is bounded, we can simply define the exponential of $T$ as $$e^{T}=\sum_{n=0}^{\infty}\frac{T^{n}}{n!}.$$If $T$ is unbounded, we can define the exponential of $T$ using the [[The Spectral Theorem of Unbounded Operators#^bb27f4|spectral theorem]].
 
 *Proof*  We shall check it is well-defined when $T$ is bounded. Suppose $T\in B(\H)$, define $\{S_{k}\}_{k=0}^{\infty}\subset B(\H)$ as $S_{k}=\sum_{j=0}^{k} \frac{T^{j}}{j!}$. Then for any $n,m\geq N$, we have $$\|S_{n}-S_{m}\|_{\text{op}}\leq \sum_{j=n+1}^{m}\frac{\|T\|^{j}}{j!} \to 0,\quad \text{as } N\to 0,$$because the exponential series ([[Complete Metric Space#^179eeb|Cauchy]]) converges in $\newcommand{\R}{\mathbb{R}}\R$ (ref. [[Complete Metric Space#^ad57d2|theorem]]). Therefore, $\{S_{k}\}_{k=0}^{\infty}$ is also [[Complete Metric Space#^179eeb|Cauchy]], thus converges in the Banach space $B(\H)$. $\square$
 
 > [!proposition]
-> Let $T$ be a self-adjoint operator on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\H$. Define $U(t)=e^{it T}$, then
+> Let $T$ be a self-adjoint operator on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\H$. Define $U(t)=e^{it T}$, then
 > - For each $t\in\R$, $U(t)$ is [[Hilbert Spaces#^68e362|unitary]] and $U(t+s)=U(t)U(s)$;
 > - If $\varphi\in \H$, then $U(t)\varphi \to U(t_{0})\varphi$ as $t\to t_{0}$, i.e. $U(t)$ is strongly continuous;
 > - For $\psi\in D(T)$, $\frac{U(t)\psi-\psi}{t}\to iT\psi$ as $t\to 0$;
@@ -22,7 +22,7 @@
 Conversely, given a [[Groups, Order and Subgroups#^6e0960|group]] of unitary operators, can it be represented as the exponential? Stone's theorem answers this question:
 
 > [!theorem] Stone's Theorem
-> Let $U(t)$ be a strongly continuous one-parameter [[Hilbert Spaces#^68e362|unitary]] [[Groups, Order and Subgroups#^6e0960|group]] on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\H$. Then, there is a [[Symmetric and Self-Adjoint Operators#^450e4c|self-adjoint]] operator $\hat{H}$ on $\H$ so that $$U(t)=e^{it\hat{H}}$$ for all $t\in\R$. In this case, we call $\hat{H}$ the *infinitesimal generator* of the unitary group $U(t)$. 
+> Let $U(t)$ be a strongly continuous one-parameter [[Hilbert Spaces#^68e362|unitary]] [[Groups, Order and Subgroups#^6e0960|group]] on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\H$. Then, there is a [[Symmetric and Self-Adjoint Operators#^450e4c|self-adjoint]] operator $\hat{H}$ on $\H$ so that $$U(t)=e^{it\hat{H}}$$ for all $t\in\R$. In this case, we call $\hat{H}$ the *infinitesimal generator* of the unitary group $U(t)$. 
 > In other words, strongly continuous one-parameter unitary groups correspond one-to-one with (possibly unbounded) self-adjoint operators on $\H$. ^61f239
 
 > [!remark]+

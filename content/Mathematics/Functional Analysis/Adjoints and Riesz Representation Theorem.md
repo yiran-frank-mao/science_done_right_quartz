@@ -1,7 +1,7 @@
 ## Riesz Representation Theorem
 
 > [!definition] Linear Functional
-> A linear functional $\ell$ is a linear transformation from a [[Hilbert Spaces#^ae0212|Hilbert space]] to the underlying field of scalars.
+> A linear functional $\ell$ is a linear transformation from a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] to the underlying field of scalars.
 
 > [!theorem] Riesz Representation Theorem
 > Let $\ell$ be a continuous linear functional on a Hilbert space $\newcommand{\H}{\mathcal{H}}\H$. Then, there exists a unique $g\in\H$, such that $\ell(f)=\langle f, g\rangle$ for all $f\in \H$. Moreover, $\|\ell\|=\|g\|$.

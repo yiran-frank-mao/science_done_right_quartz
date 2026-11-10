@@ -56,7 +56,7 @@ The basic limit theorems also hold:
 > We define $L^{2}(X,\mu)$ to be the  equivalence classes of measurable functions for which $\int_{X}|f(x)|^{2}\dd\mu < \infty$. It posses an inner product: $$\langle f,g\rangle:=\int_{X} f\bar{g}\dd\mu,$$which induces a norm $$\|f\|_{L^{2}}=\left( \int_{X} |f(x)|^2 \dd\mu \right)^{1/2}.$$ ^e45bb9
 
 > [!proposition]
-> The space $L^{2}(X,\mu)$ is a (possibly non-separable) [[Hilbert Spaces#^ae0212|Hilbert space]].
+> The space $L^{2}(X,\mu)$ is a (possibly non-separable) [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]].
 > 
 
 > [!proposition]

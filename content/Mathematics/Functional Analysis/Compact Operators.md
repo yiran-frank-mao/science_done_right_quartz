@@ -28,10 +28,10 @@ $\quad$
 ## Spectral Theorem
 
 > [!lemma]
-> Suppose $T$ is a bounded self-adjoint linear operator on a [[Hilbert Spaces#^ae0212|Hilbert space]] $\H$. Then any eigenvalue of $T$ is real, and if $f_{1}$ and $f_{2}$ are eigenvectors corresponding to two distinct eigenvalues, then $f_{1}$ and $f_{2}$ are orthogonal.
+> Suppose $T$ is a bounded self-adjoint linear operator on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\H$. Then any eigenvalue of $T$ is real, and if $f_{1}$ and $f_{2}$ are eigenvectors corresponding to two distinct eigenvalues, then $f_{1}$ and $f_{2}$ are orthogonal.
 
 > [!theorem] Spectral Theorem of Compact Operators
-> Suppose $T$ is a compact self-adjoint operator on a separable [[Hilbert Spaces#^ae0212|Hilbert space]] $\H$. Then there exits an orthonormal basis $\{e_{i}\}_{i=1}^{\infty}$ of $\H$, that consists of eigenvectors of $T$. Moreover, if $$T e_{k}=\lambda_{k}e_{k},$$then $\lambda_{k}\in \R$ and $\lambda_{k}\to 0$ as $k\to \infty$. Conversely, every operator of the above form is compact and self-adjoint. The collection $\{\lambda_{k}\}$ is called the spectrum of $T$.
+> Suppose $T$ is a compact self-adjoint operator on a separable [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $\H$. Then there exits an orthonormal basis $\{e_{i}\}_{i=1}^{\infty}$ of $\H$, that consists of eigenvectors of $T$. Moreover, if $$T e_{k}=\lambda_{k}e_{k},$$then $\lambda_{k}\in \R$ and $\lambda_{k}\to 0$ as $k\to \infty$. Conversely, every operator of the above form is compact and self-adjoint. The collection $\{\lambda_{k}\}$ is called the spectrum of $T$.
  
 ## The Trace Class Operators
 

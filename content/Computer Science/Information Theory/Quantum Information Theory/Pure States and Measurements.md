@@ -6,4 +6,4 @@ A family of linear maps H fi i ̸= j, the following holds:
 H is orthogonal when for any (0.36)
 
 **Def**  <i><u>Projection-Valued Measure</u></i>
-A projection-valued measure (PVM) on a [[Hilbert Spaces#^ae0212|Hilbert space]] $H$ is a finite family of projections $\{p_{i}\colon H \to H: i\in I\}$ which are complete and orthogonal. A PVM is nondegenerate when Tr(pi) = 1 for all i.
+A projection-valued measure (PVM) on a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] $H$ is a finite family of projections $\{p_{i}\colon H \to H: i\in I\}$ which are complete and orthogonal. A PVM is nondegenerate when Tr(pi) = 1 for all i.
