@@ -14,13 +14,13 @@ Differential Geometry is a fascinating field of mathematics that studies the geo
 [[Regular Surfaces]]
 [[Geodesic and Geodesic Curvature]]
 
-### Geometry of Manifolds
+### Geometry of Manifolds ^a3043b
 [[Differential Calculus]]
 [[Manifolds, Atlases and Smooth Structures]]
+[[Smooth Partitions of Unity]]
 [[Smooth Maps]]
 [[Tangent Vectors and Spaces]]
 [[Vector Bundles]]
-[[Smooth Partitions of Unity]]
 [[Vector Fields and Lie Algebra]]
 [[Lie Groups]]
 [[Integral Curves and Flows]]
@@ -31,8 +31,12 @@ Differential Geometry is a fascinating field of mathematics that studies the geo
 [[Tensor Fields]]
 [[Connections]]
 
+### Riemannian Geometry
+
+
 ## More ...
 [[Hyperbolic Geometry]]
+[[Riemannian Geometry]]
 
 ## References and Useful Resources
 

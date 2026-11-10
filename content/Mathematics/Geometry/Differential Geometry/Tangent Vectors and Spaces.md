@@ -52,7 +52,7 @@ updated: 2025-05-03
 > [!theorem] Three Definitions of Tangent Space are Equivalent
 > There are isomorphisms between the three spaces $C_{x}M$, $T_{x}M$ and $D_{x}M$.
 
-*Proof*  We will only show $C_{p} M \cong D_{x}M$ here. Define $\Phi\colon C_{p}M \to D_{x}M$ by $$\newcommand{\d}{\mathrm{d}}\newcommand{\ddtz}{\frac{\d}{\d t}\bigg|_{t=0}}\Phi([\gamma])(f):=\ddtz f\circ \gamma.$$That is well-defined. For any $\gamma_{1} \sim \gamma_{2}$, pick a local chart $\varphi$ around $p$, then $$\ddtz f\circ \gamma_{1}=\ddtz (f\circ \varphi^{-1}) \circ (\varphi\circ \gamma_{1})=\nabla(f\circ \varphi^{-1})(\varphi(p)) \cdot (\varphi\circ \gamma_{1})'(0).$$Similarly, $\ddtz f\circ \gamma_{2}=\nabla(f\circ \varphi^{-1})(\varphi(p)) \cdot (\varphi\circ \gamma_{2})'(0)$. As $\gamma_{1} \sim \gamma_{2}$, $(\varphi\circ \gamma_{1})'(0)=(\varphi\circ \gamma_{2})'(0)$, so $$\ddtz f\circ \gamma_{1} = \ddtz f\circ \gamma_{2}.$$Now we check $\Phi([\gamma])$ is a derivation. Clearly, it is linear because derivative is linear. It remains checking the Leibniz rule: $$\begin{aligned}\Phi([\gamma])(fg)&= \ddtz fg \circ \gamma \\ &= \ddtz(f\circ \gamma)(g\circ \gamma)\\&= \left(\ddtz (f\circ \gamma) \right) (g\circ \gamma) + (f\circ \gamma) \left( \ddtz g\circ \gamma \right). \end{aligned}$$Hence $\Phi([\gamma])$ is a well-defined derivation.
+*Proof*  We will only show $C_{p} M \cong D_{p}M$ here. Define $\Phi\colon C_{p}M \to D_{p}M$ by $$\newcommand{\d}{\mathrm{d}}\newcommand{\ddtz}{\frac{\d}{\d t}\bigg|_{t=0}}\Phi([\gamma])(f):=\ddtz f\circ \gamma.$$That is well-defined. For any $\gamma_{1} \sim \gamma_{2}$, pick a local chart $\varphi$ around $p$, then $$\ddtz f\circ \gamma_{1}=\ddtz (f\circ \varphi^{-1}) \circ (\varphi\circ \gamma_{1})=\nabla(f\circ \varphi^{-1})(\varphi(p)) \cdot (\varphi\circ \gamma_{1})'(0).$$Similarly, $\ddtz f\circ \gamma_{2}=\nabla(f\circ \varphi^{-1})(\varphi(p)) \cdot (\varphi\circ \gamma_{2})'(0)$. As $\gamma_{1} \sim \gamma_{2}$, $(\varphi\circ \gamma_{1})'(0)=(\varphi\circ \gamma_{2})'(0)$, so $$\ddtz f\circ \gamma_{1} = \ddtz f\circ \gamma_{2}.$$Now we check $\Phi([\gamma])$ is a derivation. Clearly, it is linear because derivative is linear. It remains checking the Leibniz rule: $$\begin{aligned}\Phi([\gamma])(fg)&= \ddtz fg \circ \gamma \\ &= \ddtz(f\circ \gamma)(g\circ \gamma)\\&= \left(\ddtz (f\circ \gamma) \right) (g\circ \gamma) + (f\circ \gamma) \left( \ddtz g\circ \gamma \right). \end{aligned}$$Hence $\Phi([\gamma])$ is a well-defined derivation.
 Now we show injectivity. Suppose $\Phi([\gamma_{1}])=\Phi([\gamma_{2}])$. Then $$\ddtz f\circ \gamma_{1}=\ddtz f\circ \gamma_{2} \quad\text{for all } f.$$Suppose $\varphi$ is a chart around $p$. Let $\varphi^{i}$ be the $i$th coordinate of $\varphi$. Then $$\ddtz \varphi^{i}\circ \gamma_{1} = \ddtz \varphi^{i}\circ \gamma_{2} \quad \text{for all }i.$$Therefore, $\ddtz \varphi\circ \gamma_{1}=\ddtz \varphi\circ \gamma_{2}$. So $\gamma_{1} \sim \gamma_{2}$.
 Finally, we check surjectivity. Suppose $\chi \in D_{x}M$ is a derivation. Fix a chart $\varphi$ near $p$. Without loss of generality, assume that $\varphi(p)=0$. Define a curve $$\gamma(t)=\varphi^{-1}\left(t \cdot \chi(\varphi^{1}), t \cdot x\left(\varphi^{2}\right), \dots, t \cdot x\left(\varphi^{n}\right)\right).$$Note that $$\begin{aligned} \Phi([\gamma])(f)&= \ddtz f \cdot \varphi^{-1}\left(t \cdot \chi(\varphi^{1}), \dots\right) \\ &=\sum_{i=1}^{n} \frac{\partial\left(f \cdot \varphi^{-1}\right)}{\partial \varphi^{i}} \cdot \chi\left(\varphi^{i}\right). \end{aligned}$$$f \cdot \varphi^{-1}$ is a smooth function on a neighborhood of $0\in\R^{n}$. So we can apply Taylor's theorem with remainder to the function $s \mapsto\left(f \cdot \varphi^{-1}\right)(s \cdot y)$ for any fixed $y$ near $0$: $$\newcommand{\dd}{\,\mathrm{d}} \left(f \circ \varphi^{-1}\right)(y)=\left(f \circ \varphi^{-1}\right)(0)+\sum_{i=1}^{n} \frac{\partial\left(f \circ \varphi^{-1}\right)}{\partial \varphi^{i}} y^{i}+\int_{0}^{1} (1-s) \sum_{i,j=1}^{n} y^{i} y^{j} \frac{\partial^{2}\left(f \circ \varphi^{-1}\right)}{\partial \varphi^{i} \circ \varphi^{j}} \dd s.$$Suppose $\varphi^{-1}(y)=q \in M$ near base point $p$. Then the above equation becomes $$f(q)=f(p)+\sum_{i=1}^{n} \frac{\partial\left(f \circ \varphi^{-1}\right)}{\partial \varphi^{i}} \cdot \varphi^{i}(q)+\sum_{i,j=1}^{n} \varphi^{i}(q) \varphi^{j}(q) \int_{0}^{1} (1-s)\frac{\partial^{2}\left(f \circ \varphi^{-1}\right)}{\partial \varphi^{i}\partial \varphi^{j}} \dd s.$$This gives a linearized formula for $f$. Note that both $\varphi^{i}$ and $\varphi^{j}$ vanish at $p$, applying a derivation makes it zero, so $$\chi(f)=\chi\left(\sum_{i=1}^{n} \frac{\partial\left(f \circ \varphi^{-1}\right)}{\partial \varphi^{i}} \varphi^{i}\right)=\sum_{i=1}^{n} \frac{\partial\left(f \circ \varphi^{-1}\right)}{\partial \varphi^{i}} \chi\left(\varphi^{i}\right)=\Phi([\gamma])(f).$$as desired.  $\square$
 
@@ -69,20 +69,25 @@ Finally, we check surjectivity. Suppose $\chi \in D_{x}M$ is a derivation. Fix a
 
 *Proof*  Since we know the tangent space has dimension $n$, it suffices to check the linear independence of the above vectors. Suppose $\sum_{i=1}^{n}a_{i}\pddf{}{x^{i}}=0$. That is, for every smooth function $f$, we have $$\sum_{i=1}^{n}a_{i}\pddf{f}{x^{i}}(p)=\left. \sum_{i=1}^{n}a_{i}\pddf{(f\circ \varphi^{-1})}{x^{i}}\right|_{\varphi(p)} =  0.$$We can choose $f$ so that $f\circ\varphi^{-1}$ is the coordinate function $x^{j}$, and we get $$\sum_{i=1}^{n}a_{i}\delta_{i}^{j}=a_{j}=0.$$ Thus $a_{j}=0$ for all $j$, and the vectors are linearly independent. $\square$
 
-## Definition by Germs
-
-
-
 ## The Differential of a Smooth Function
 
 > [!definition] Differential
-> Let $f\colon M\to \R$ be a smooth function. Then we define the *differential* $\d_{x}f\colon T_{x}M\to\R$ of $f$ at point $x\in M$ to the linear function on $T_{x}M$ given by $$\(\d_{x}f\)(v):=v(f)$$ In general, the differential of a smooth map $F\colon M\to N$ between two manifolds at $x\in M$, written $\d_{x}F\colon T_{x}M\to T_{F(x)}N$ is defined as
+> The *differential* of a smooth map $F\colon M\to N$ between two manifolds at $x\in M$, written $\d_{x}F\colon T_{x}M\to T_{F(x)}N$, is defined as
 > 1. For the tangent curve definition, $\d_{x}F([\gamma])=[F\circ \gamma]$.
 > 2. For the chart definition, $\d_{x}F([\varphi,u])=[\psi, \d_{x}(\psi\circ F\circ \varphi^{-1})]$.
 > 3. For the derivation definition, $\d_{x}F(v)(f)=v(f\circ F)$.
-> $\quad$ ^c1b44c
+> 
+> We will usually use the derivation definition. ^c1b44c
 
 We shall check that the above is well-defined, and all three definitions are equivalent:
+
+> [!proposition] Properties of Differentials
+> Let $f\colon M\to \R$, $F\colon M\to N$, $G\colon N\to P$ be smooth maps. Then the following properties hold:
+> 1. $\d_{x}f\colon T_{x}M\to\R$ of $f$ at point $x\in M$ satisfies $\(\d_{x}f\)(v)=v(f)$;
+> 2. $\d_{x}F\colon T_{x}M\to T_{F(x)}M$ is linear;
+> 3. 
+> 
+
 
 ## Tangent Bundle
 

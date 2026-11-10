@@ -73,6 +73,8 @@ In fact, dimension 4 is particularly special and exotic in the theory of smooth 
 
 Although we haven't introduced the notion of a *diffeomorphism*, "up to diffeomorphism" is crucial here. In general, even on $\R$, the two smooth structures can be different. Let $M=(\R, \{\id_{\R}\})$
 
+## Constructions on Smooth Manifolds
+
 ## Submanifolds
 
 > [!definition] Submanifold of $\R^{n}$
