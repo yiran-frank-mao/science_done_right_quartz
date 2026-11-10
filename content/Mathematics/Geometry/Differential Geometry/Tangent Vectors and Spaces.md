@@ -35,12 +35,16 @@ updated: 2025-05-03
 > [!definition]
 > $$\mathcal{F}_{x}:=\left\{(U,f)\mid \text{open } U\supset\{x\}, f\colon U\to \R \text{ is smooth} \right\}$$
 
-
-## Definition by Smooth Functions
+## Definition by Derivations
 
 > [!definition] Derivation Space
-> Denote $C^\infty(p)$ as the set of real smooth functions whose domain includes some open neighborhood of $p$. A derivation $\chi$ at a point $p\in M$ is a map $\chi\colon C^{\infty}(p)\to \R$ satisfying for all $\alpha,\beta\in \R$ and $f,g\in C^\infty(p)$ the two conditions: $$\begin{aligned}\chi(\alpha f+\beta g)& = \alpha \chi_(f)+\beta \chi(g)\quad&\text{(linearity)}\\ \chi(fg)&=(\chi (f))g(p)+f(p)(\chi (g))\quad&\text{(Leibniz rule)}\end{aligned}$$
-> And we define $D_{x}M$ to be the set of all derivations at $p\in M$. ^f956d2
+> Denote $C^{\infty}(p)$ as the set of real smooth functions whose domain includes some open neighborhood of $p$. A *derivation* $\chi$ at a point $p\in M$ is a map $\chi\colon C^{\infty}(p)\to \R$ satisfying for all $\alpha,\beta\in \R$ and $f,g\in C^\infty(p)$ the two conditions: $$\begin{aligned}\chi(\alpha f+\beta g)& = \alpha \chi_(f)+\beta \chi(g)\quad&\text{(linearity)}\\ \chi(fg)&=(\chi (f))g(p)+f(p)(\chi (g))\quad&\text{(Leibniz rule)}\end{aligned}$$
+> And we denote $D_{x}M$ as the set of all derivations at $p\in M$. ^f956d2
+
+> [!remark]
+> In our definition, we can replace the domain of a derivation with $C^{\infty}(M)$. That is, derivations are local, in the sense that once $f,g\in C^{\infty}(M)$ agree on a neighborhood of $p$, then $\chi(f)=\chi(g)$. 
+> 
+
 
 > [!remark]+ Derivations are directional derivatives
 > The archetypal example of a derivation is the directional derivative of a function along a curve: Given a smooth path $\gamma\colon I\to M$ with $\gamma(0) = x$, we can define $$\chi(f)= \left. \frac{\d}{\d t} (f\circ \gamma) \right|_{t=0}$$ Indeed, all derivations are of this form.
@@ -64,6 +68,10 @@ Finally, we check surjectivity. Suppose $\chi \in D_{x}M$ is a derivation. Fix a
 > Now suppose the chart $\varphi=(x^{1},x^{2},\dots x^{n})$ around $p\in M$ is given. Then one can define an ordered basis for $T_{p}M$ as derivations: $$\{\frac{\partial}{\partial x^{1}},\frac{\partial}{\partial x^{2}},\dots,\frac{\partial}{\partial x^{n}}\}$$ where each partial derivative operator (at $p$) is defined as $$\pddf{f}{x^{i}}(p):= \left. \pddf{(f\circ \varphi^{-1})}{x^{i}} \right|_{\varphi(p)}.$$
 
 *Proof*  Since we know the tangent space has dimension $n$, it suffices to check the linear independence of the above vectors. Suppose $\sum_{i=1}^{n}a_{i}\pddf{}{x^{i}}=0$. That is, for every smooth function $f$, we have $$\sum_{i=1}^{n}a_{i}\pddf{f}{x^{i}}(p)=\left. \sum_{i=1}^{n}a_{i}\pddf{(f\circ \varphi^{-1})}{x^{i}}\right|_{\varphi(p)} =  0.$$We can choose $f$ so that $f\circ\varphi^{-1}$ is the coordinate function $x^{j}$, and we get $$\sum_{i=1}^{n}a_{i}\delta_{i}^{j}=a_{j}=0.$$ Thus $a_{j}=0$ for all $j$, and the vectors are linearly independent. $\square$
+
+## Definition by Germs
+
+
 
 ## The Differential of a Smooth Function
 

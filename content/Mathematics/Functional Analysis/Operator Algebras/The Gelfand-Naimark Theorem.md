@@ -46,7 +46,7 @@ $\square$
 ## States and the GNS Construction
 
 > [!definition] State
-> A *state* on a unital C\*-algebra $\mathcal{A}$ is a positive linear functional $\tau$ with norm 1. The set of all states on $\mathcal{A}$ is denoted by $S(\mathcal{A})$.
+> A *state* on a unital C\*-algebra $\mathcal{A}$ is a positive linear functional $\tau$ with norm $1$. The set of all states on $\mathcal{A}$ is denoted by $S(\mathcal{A})$.
 > By the previous lemmas, this is equivalent to $S(\mathcal{A}) = \{\tau \in \mathcal{A}^* \mid \tau(1) = 1 \text{ and } \|\tau\|=1 \}$.
 
 > [!lemma]

@@ -12,7 +12,6 @@ In this section, we develop bump functions and partitions of unity, which are to
 > [!theorem]  
 > Let $M$ be a manifold and $\mathcal{A}$ an open cover. Then there exists a smooth partition of unity subordinate to $\mathcal{A}$.
 
-First, we will develop the basic building blocks for the construction, which are smooth compactly supported functions on Euclidean space: 
 
 > [!lemma]  
 > If $0 < r_1 < r_2$, then there exists $H_{r_1, r_2} \in C^{\infty}(\mathbb{R}^n)$ such that  
