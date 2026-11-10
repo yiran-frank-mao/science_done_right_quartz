@@ -62,9 +62,6 @@ Indeed, the mapping $f\mapsto \{a_{n}(f)\}_{n\in \Z}$ makes $L^{2}(S^{1})$ [[Hil
 
 ## Pre-Hilbert Spaces
 
-> [!definition] Pre-Hilbert Space
-> A Pre-Hilbert space is a [[Number Systems#^5fea5c|real]] or [[Complex Numbers#^a81924|complex]] [[Inner Products#^f0c22c|inner product space]] that is not necessarily complete.
-
 > [!proposition] Every Pre-Hilbert Space Can be Completed
 > Suppose we are given a pre-Hilbert space $(\H_{0},\langle\cdot,\cdot\rangle_{0})$. Then there exists a unique (up to unitarily equivalence) Hilbert space $(\H,\langle\cdot,\cdot\rangle)$, such that $\H_{0}\subset\H$ is dense, and $\langle\cdot,\cdot\rangle_{0}$ is the restriction of $\langle\cdot,\cdot\rangle$ to $\H_{0}$.
 

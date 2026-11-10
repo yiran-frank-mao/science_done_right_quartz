@@ -6,6 +6,7 @@ Functional Analysis is the study of [[Mathematics/Linear Algebra/Vector Spaces#^
 
 ### Hilbert Spaces
 [[Hilbert Spaces]]
+[[Constructions on Hilbert Spaces]]
 #### Bounded Operators
 [[Orthogonality and Bounded Linear Maps]]
 [[Adjoints and Riesz Representation Theorem]]
@@ -18,8 +19,6 @@ Functional Analysis is the study of [[Mathematics/Linear Algebra/Vector Spaces#^
 [[Stone's Theorem]]
 [[Nelson's Counterexample]]
 [[Nelson's Commutator Theorem]]
-
-[[Constructions on Hilbert Spaces]]
 ### Banach Spaces
 [[Banach Spaces]]
 [[The Baire Category Theorem]]
@@ -29,4 +28,3 @@ Functional Analysis is the study of [[Mathematics/Linear Algebra/Vector Spaces#^
 [[Topological Vector Spaces]]
 [[Geometry of Topological Vector Spaces]]
 [[Schwartz Space and Generalized Functions]]
-
