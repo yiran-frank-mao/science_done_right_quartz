@@ -92,17 +92,17 @@ We shall check that the above is well-defined, and all three definitions are equ
 ## Tangent Bundle
 
 >[!definition] Tangent Bundle
->A tangent bundle is the [[Construction of Sets#^e08e6f|disjoint union]] of the tangent spaces of a manifold $M$: $$TM= \bigsqcup_{p}T_{p}M=\{(p,v):p\in M, v\in T_p(M)\}$$ ^e3492e
+>A tangent bundle is the [[Construction of Sets#^e08e6f|disjoint union]] of the tangent spaces of a manifold $M$: $$TM= \bigsqcup_{p}T_{p}M=\{(p,v):p\in M, v\in T_p(M)\}.$$ ^e3492e
 
-<u><b>e.g.</b></u>  Consider $\R^{n}$, take the global chart $\varphi=\operatorname{id}$. Then $$T\R^{n}=\bigsqcup_{x\in\R^{n}} T_{x}\R^{n} = \R^{n}\times \R^{n}$$
+<u><b>e.g.</b></u>  Consider $\R^{n}$, take the global chart $\varphi=\operatorname{id}$. Then $$T\R^{n}=\bigsqcup_{x\in\R^{n}} T_{x}\R^{n} = \R^{n}\times \R^{n}.$$
 
 > [!proposition] Smooth Structure on Tangent Bundle
-> Given a smooth $n$-manifold $M$, with an atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}\subset \R^{n} \}$. Then $TM$ has a canonical structure of dimension $2n$ with its atlas given by $$\tilde{\mathcal{A}}=\{\tilde{\varphi}_{\alpha}=\d \varphi_{\alpha}\colon TU_{\alpha}\to TV_{\alpha},(x,v)\mapsto (\varphi_{\alpha}(x),\d_{x}\varphi_{\alpha}(v))\}$$
+> Given a smooth $n$-manifold $M$, with an atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}\subset \R^{n} \}$. Then $TM$ has a canonical topology and smooth structure of dimension $2n$ with its atlas given by $$\tilde{\mathcal{A}}=\{\tilde{\varphi}_{\alpha}=\d \varphi_{\alpha}\colon TU_{\alpha}\to TV_{\alpha},(x,v)\mapsto (\varphi_{\alpha}(x),\d_{x}\varphi_{\alpha}(v))\}$$
 >
 
 *Proof*  The above construction gives a unique topology on $TM$ such that the projection $\pi\colon TM\to M$ is continuous. Now we check the coordinate change is diffeomorphism. Consider $$\tilde{\varphi}_{\alpha}\circ \tilde{\varphi}_{\beta}=\(\varphi_{\alpha}\circ\varphi_{\beta}^{-1},  \d_{x}\varphi_{\alpha}\circ \d_{x}\varphi_{\beta}^{-1}\),$$ is a composition of diffeomorphisms, thus a diffeomorphism. $\square$
 
-<u><b>e.g.</b></u>  $TS^{2}=\{(x,v) \in \R^{3} \times \R^{3} \mid \|x\|=1,  x\cdot v=0\}$ is a smooth submanifold of $\R^{6}$.
+<u><b>e.g.</b></u>  $T S^{2}=\{(x,v) \in \R^{3} \times \R^{3} \mid \|x\|=1,  x\cdot v=0\}$ is a smooth submanifold of $\R^{6}$.
 
 > [!proposition]
 > $TM$ is a [[Vector Bundles#^9cb683|vector bundle]] over $M$.

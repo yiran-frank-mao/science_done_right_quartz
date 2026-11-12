@@ -49,17 +49,19 @@ Tensors and tensor products are multilinear generalizations of vectors and matri
 ## Tensors as Multilinear Maps
 
 > [!theorem]
-> Suppose $U$ and $V$ are finite dimensional vector spaces. The tensor product space $U^{*}\otimes V$ of  [[Mathematics/Linear Algebra/Duality#^6c7627|dual space]] of $U$ and $V$ can be naturally identified with the space of linear maps $U\to V$. That is $$\Hom(U,V) \cong U^{*} \otimes V.$$
+> Suppose $U$ and $V$ are finite dimensional vector spaces. The tensor product space $U^{*}\otimes V$ of  [[Mathematics/Linear Algebra/Duality#^6c7627|dual space]] of $U$ and $V$ can be naturally identified with the space of linear maps $U\to V$. That is $$\Hom(U,V) \cong U^{*} \otimes V.$$ ^7bda13
 
-*Proof*  For any $\alpha\otimes v\in U^{*} \otimes V$, we can identify it with the linear map $\phi_{\alpha\otimes v} \colon U \to V$ given by $$\phi_{\alpha\otimes v}(u) = \alpha(u)v.$$ This gives a linear map $\phi \colon U^{*} \otimes V \to \Hom(U,V)$, and we can easily see that $\phi$ is an isomorphism. $\square$
+*Proof*  For any $\alpha\otimes v\in U^{*} \otimes V$, we can identify it with the linear map $\phi_{\alpha\otimes v} \colon U \to V$ given by $$\phi_{\alpha\otimes v}(u) = \alpha(u)v.$$ This extends to a linear map $\phi \colon U^{*} \otimes V \to \Hom(U,V)$. Note that if $\phi_{\sum_{i=1}^{n} \alpha_{i}\otimes v_{i}}$
 
 > [!remark]+ What does it mean by "naturally identified"?
-> This is a subtle but interesting point. It means that this isomorphism is "special" and "nice", so that it does not depend on the choice of basis. In fact, this is what covectors are all about. Covectors are designed to eliminate the need to fix a basis when working with dual spaces. By contrast, if the isomorphism _did_ depend on the choice of basis, it would be considered _non-canonical_, and we would typically only assert the existence of an isomorphism, without identifying a specific one.
+> This is a subtle but interesting point. It means that this isomorphism is "special" and "nice", so that it does not depend on the choice of basis. In fact, this is what covectors are all about. Covectors are designed to eliminate the need to fix a basis when working with dual spaces. By contrast, if the isomorphism **did** depend on the choice of basis, it would be considered **non-canonical**, and we would typically only assert the existence of an isomorphism, without identifying a specific one.
 
 > [!definition] Tensor
-> A tensor $\Phi$ of type $(r,s)$ over a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$ on the [[Ring, Field and Integral Domain#^575174|field]] $F$ is a multilinear map: $$\Phi \colon \underbrace{V^{*}\times\dots\times V^{*}}_{r}\times\underbrace{V\times\dots\times V}_{s}\to F$$where $V^*$ denotes the [[Duality#^6c7627|dual space]] of $V$, $r$ is called contravariant order and $s$ is called covariant order. ^efc3f2
+> A *tensor $\Phi$ of type $(r,s)$* over a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$ on the [[Ring, Field and Integral Domain#^575174|field]] $F$ is a multilinear map: $$\Phi \colon \underbrace{V^{*}\times\dots\times V^{*}}_{r}\times\underbrace{V\times\dots\times V}_{s}\to F$$where $V^*$ denotes the [[Duality#^6c7627|dual space]] of $V$, $r$ is called the *contravariant order* and $s$ is called the *covariant order*. ^efc3f2
 
-<u><b>e.g.</b></u>  A matrix $M\in\newcommand{\R}{\mathbb{R}}\R^{n\times n}$ naturally forms a $(1,1)$-tensor $(v,w^{\top})\mapsto w^{\top} M v$.
+<u><b>e.g.</b></u>  
+- From [[Tensors and Tensor Products#^7bda13|the theorem]],  vector can be 
+- A matrix $M\in\newcommand{\R}{\mathbb{R}}\R^{n\times n}$ naturally forms a $(1,1)$-tensor $(v,w^{\top})\mapsto w^{\top} M v$.
 
 > [!proposition]
 > Tensors of type $(r,s)$ over a [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] $V$ are exactly elements of the tensor space $$V^{r,s}:=V^{\otimes r}\otimes (V^{*})^{\otimes s}$$

@@ -13,9 +13,9 @@ Similar to the tangent space, the set of all covectors on $M$ forms a [[Vector B
 ## Tensor and Tensor Fields
 
 > [!definition] Tensor (Field) on Manifold
-> A tensor of type $(r,s)$ at $x\in M$ is a $(r,s)$-[[Tensors and Tensor Products#^efc3f2|tensor]] over $T_{x}M$.
-> A tensor field of type $(r,s)$ on $M$ is a smooth assignment of a tensor of type $(r,s)$ at each point $x\in M$.
-> Inherited from the terminology of tensors,  tensor fields of type $(0,r)$ is said to be covariant, and tensor fields of type $(s,0)$ is said to be contravariant.
+> A *tensor* of type $(r,s)$ at $x\in M$ is a $(r,s)$-[[Tensors and Tensor Products#^efc3f2|tensor]] over $T_{x}M$.
+> A *tensor field of type $(r,s)$* on $M$ is a smooth assignment of a tensor of type $(r,s)$ at each point $x\in M$.
+> Inherited from the terminology of tensors,  tensor fields of type $(0,r)$ is said to be *covariant*, and tensor fields of type $(s,0)$ is said to be *contravariant*.
 > The set of all tensors of type $(r,s)$ at $x$ forms a vector space, denoted $T_{x}^{r,s}(M)$, and the set of all tensors of type $(r,s)$ on $M$ forms a [[Vector Bundles#^9cb683|vector bundle]] over $M$, denoted $T^{r,s}(M)$. ^efc3f2
 
 > [!remark]+
