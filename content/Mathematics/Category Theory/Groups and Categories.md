@@ -37,7 +37,8 @@ $\quad$
 
 ## Groups as Categories
 
-**Prop**  A group is a category with one object, in which every arrow is an isomorphism.
+> [!proposition]
+> A group is a category with one object, in which every arrow is an isomorphism.
 
 **Def**  <i><u>Congruence</u></i>
 A congruence on a category $\mathbf{C}$ is an [[Relations and Functions#^14741d|equivalence relation]] $\sim$ on morphisms such that:

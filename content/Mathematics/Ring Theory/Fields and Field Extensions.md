@@ -15,8 +15,10 @@ Here are the three most important classes of fields:
 > A *function field* is an extension field of $\C(t)$ of rational functions in one variable.
 > 
 
-> [!definition] Isomorphism of Field Extensions
-> Let $K$ and $K'$ be extensions of the same field $F$. An isomorphism $\varphi\colon K \to K'$ that restricts to the identity on the subfield $F$ is called an *$F$-isomorphism*, or an *isomorphism of field extensions*. If there exists an $F$-isomorphism $\varphi\colon K \to K'$, $K$ and $K'$ are *isomorphic extension fields*. ^72b6c5
+> [!definition] Morphisms of Field Extensions
+> Let $K$ and $K'$ be extensions of the same field $F$. An *$F$-morphism* $\varphi\colon K \to K'$ is a [[Ring Homomorphisms and Ideals#^16be07|ring homomorphism]] that restricts to the identity on the subfield $F$. That is, the following diagram commutes:
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/morphism_of_field_extensions.svg" style="width:25%;"/>
+> If there exists an $F$-isomorphism $\varphi\colon K \to K'$, $K$ and $K'$ are called *isomorphic extension fields*. ^72b6c5
 
 ## Algebraic and Transcendental Elements
 
