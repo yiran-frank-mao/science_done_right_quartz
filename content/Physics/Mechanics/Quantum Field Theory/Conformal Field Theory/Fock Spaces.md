@@ -11,6 +11,11 @@
 > In other words, it is the full Fock space $\F(\H)$ modulo the anticommutation relations $x\otimes y = -y\otimes x$ for all $x,y\in \H$.
 > 
 
+> [!proposition] Pauli Exclusion Principle
+> No two identical fermions (particles with half-integer spins, like electrons, protons, and neutrons) can simultaneously occupy the same quantum state.
+> 
+
+
 ## Bosonic Fock Space
 
 > [!definition] Bosonic Fock Space
