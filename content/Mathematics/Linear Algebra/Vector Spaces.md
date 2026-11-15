@@ -22,7 +22,7 @@
 >- $c\cdot v=0 \implies c=0_{F} \text{ or } v=0_{V}$
 >$\quad$
 
-*Proof*  $0_{F}\cdot v=(0_{F}+0_{F})\cdot v=0_{F}\cdot v+0_{F}\cdot v$. It follows that $$0=0_{F}\cdot v+ (-0_{F}\cdot v)=0_{F}\cdot v$$$\square$
+*Proof*  $0_{F}\cdot v=(0_{F}+0_{F})\cdot v=0_{F}\cdot v+0_{F}\cdot v$. It follows that $$0=0_{F}\cdot v+ (-0_{F}\cdot v)=0_{F}\cdot v$$ $\square$
 
 >[!definition] Subspace
 >A subspace $W$ of a vector space $V$ is a subset $W\subseteq V$ which is also a vector space inherit the same operations as in $V$.
@@ -37,9 +37,20 @@
 ## Span and Linear Combinations
 
 >[!definition] Span
->The span of a set of vectors $S\subseteq V$ is the set of all finite linear combinations of vectors in $S$: $$\mathrm{span}(S)=\left\{\sum_{i=1}^{n} c_{i}v_{i} \mid n\in\N, v_{i}\in S, c_{i}\in F\right\}.$$^ce69a9
-
-^concept-4e452455341d
+> The *span* of a set of vectors $S\subseteq V$ is the set of all finite linear combinations of vectors in $S$: $$\operatorname{span}(S)=\left\{\sum_{i=1}^{n} c_{i}v_{i} \mid n\in\N, v_{i}\in S, c_{i}\in F\right\}.$$
+> We call a set of vectors *$S\subseteq V$ spans $V$* if $\operatorname{span}(S)=V$. ^concept-4e452455341d
 
 >[!proposition] 
 > The span of any nonempty set of vectors is a subspace.
+
+> [!definition] Linear Independence
+> A set of vectors $S\subseteq V$ is *linearly independent* if no vector in $S$ can be expressed as a linear combination of the others. If $S$ is not linearly independent, it is called *linearly dependent*.
+> 
+
+> [!proposition]
+> $S$ is linearly independent if the only solution to the equation $$\sum_{i=1}^{n} c_{i}v_{i} = 0$$for $v_{i}\in S$ and $c_{i}\in F$ is $c_{1}=c_{2}=\cdots=c_{n}=0$.
+> 
+
+> [!definition] Basis
+> A *basis* of a vector space $V$ is a set of vectors $B\subseteq V$ that is linearly independent and spans $V$. ^4baae2
+

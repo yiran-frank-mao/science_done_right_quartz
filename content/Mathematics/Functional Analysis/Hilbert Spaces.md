@@ -13,13 +13,19 @@ $\quad$
 
 ## Orthonormal Basis
 
+> [!definition] Orthonormal Basis of a Hilbert Space
+> An *orthonormal basis* of a Hilbert space $\H$ is a [[Mathematics/Functional Analysis/Operator Algebras/Bases In Topological Vector Spaces#^concept-993c30d7b93f|total basis]] such that the inner product of any two distinct basis vectors is zero, and the inner product of any basis vector with itself is one. ^concept-3f351bc470bd
+
+> [!warning]
+> This is not a [[Vector Spaces#^4baae2|basis]] in linear algebra. See [[Bases In Topological Vector Spaces]].
+
 > [!proposition] Bessel's Inequality
-> Let $\H$ be a [[Mathematics/Functional Analysis/Hilbert Spaces#^concept-309eb44da4da|Hilbert space]], and let $\{e_{k}\}_{k=1}^{\infty}$​ be an orthonormal set in $\H$. For any $f\in H$, there holds $$\sum_{k=1}^\infty|\langle f,e_k\rangle|^2\leq\|f\|^2.$$
+> Let $\H$ be a [[Mathematics/Functional Analysis/Hilbert Spaces#^concept-309eb44da4da|Hilbert space]], and let $\{e_{k}\}_{k=1}^{\infty}$​ be an orthonormal set in $\H$. For any $f\in \H$, there holds $$\sum_{k=1}^\infty|\langle f,e_k\rangle|^2\leq\|f\|^{2}.$$
 
 > [!proposition] Characterisation of Orthonormal Basis in Hilbert Space 
 > The following properties of a countable orthonormal set $\{e_{i}\}_{i\in I}$ in a Hilbert space $\H$ are equivalent:
 > - $\{e_{i}\}_{i\in I}$ forms a basis.
-> - The [[Mathematics/Linear Algebra/Vector Spaces#^ce69a9|span]] of $\{e_{i}\}_{i\in I}$ is [[Closure, Interior and Boundary#^b560bf|dense]] in $\H$.
+> - The [[Mathematics/Linear Algebra/Vector Spaces#^concept-4e452455341d|span]] of $\{e_{i}\}_{i\in I}$ is [[Closure, Interior and Boundary#^b560bf|dense]] in $\H$.
 > - If $f\in H$ and $\langle f,e_{i}\rangle=0$ for all $i\in I$, then $f=0$.
 > - If $f\in H$, and $S_{n}(f):=\sum_{i=1}^{n}\langle f, e_{i}\rangle e_{i}$, then $S_{n}(f)\to f$ as $n\to\infty$.
 > - For all $f\in H$, $\|f\|^{2}=\sum_{i=1}^{\infty}|\langle f, e_{i}\rangle|^{2}$. This is called the Parseval's identity
@@ -29,11 +35,11 @@ $\quad$
 *Proof*  The Parseval's identity is a direct result of the [[Inner Products#^3c5c75|Pythagorean theorem]].
 
 > [!theorem]
-> A Hilbert space has an orthonormal basis if and only if it is separable.
+> A [[Mathematics/Functional Analysis/Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] has an [[Mathematics/Functional Analysis/Hilbert Spaces#^concept-3f351bc470bd|orthonormal basis]] if and only if it is [[Mathematics/Topology/General Topology/Closure, Interior and Boundary#^acb78f|separable]].
 > 
 
-*Proof*  Suppose $\H$ is a separable Hilbert space and $\{f_{1},f_{2},\dots\}$ is a countable subset of $\H$ whose closure equals $\H$. We will inductively define an orthonormal basis $\{e_{i}\}_{i=1}^{\infty}$ such that $\span\{f_1,\ldots,f_n\}\subseteq\span\{e_1,\ldots,e_n\}$ for all $n\in\N$. This will imply that $\overline{\span\{e_{i}\}_{i=1}^{\infty}}=\H$, which will mean that $\{e_{i}\}_{i=1}^{\infty}$ is an orthonormal basis.
-Without loss of generality, assume that $f_{1}\neq 0$. First set $e_{1}:=f_{1}/\|f_{1}\|$. Then suppose for some $n\in\N$, $\{e_{1},\dots,e_{n}\}$ is an orthonormal set such that $\span\{f_1,\ldots,f_n\}\subseteq\span\{e_1,\ldots,e_n\}$. If $f_{k} \in\span\{e_{1}, \dots , e_{n}\}$ for every  $k \in\N$, then $\{e_{1},\dots,e_{n}\}$ is an orthonormal basis of $\H$ and  the process should be stopped. Otherwise, let $m$ be the smallest positive integer such that $$f_{m}\in\{e_{1},\dots,e_{n}\}.$$Define $e_{n+1}$ as follows: $$e_{n+1}=\frac{f_m-\langle f_m,e_1\rangle e_1-\cdots-\langle f_m,e_n\rangle e_n}{\|f_m-\langle f_m,e_1\rangle e_1-\cdots-\langle f_m,e_n\rangle e_n\|}.$$Clearly $\|e_{n+1}\|=1$, $\langle e_{n+1},e_{k}\rangle=0$ for all $k\leq n$, our choice of $f_{m}$ guarantees there is no division by $0$, and $$\mathrm{span}\{f_1,\ldots,f_{n+1}\}\subseteq\mathrm{span}\{e_1,\ldots,e_{n+1}\},$$completing the induction. $\square$
+*Proof*  Note that a if $\H$ has a countable ONB, then its span is also countable, so $\H$ is separable. We now prove the converse. Suppose $\H$ is separable and $\{f_{1},f_{2},\dots\}$ is a countable subset of $\H$ whose closure equals $\H$. We will inductively define an ONB $\{e_{i}\}_{i=1}^{\infty}$ such that $\span\{f_1,\ldots,f_n\}\subseteq\span\{e_1,\ldots,e_n\}$ for all $n\in\N$. This will imply that $\overline{\span\{e_{i}\}_{i=1}^{\infty}}=\H$, which will mean that $\{e_{i}\}_{i=1}^{\infty}$ is an ONB.
+Without loss of generality, assume that $f_{1}\neq 0$. First set $e_{1}:=f_{1}/\|f_{1}\|$. Then suppose for some $n\in\N$, $\{e_{1},\dots,e_{n}\}$ is an orthonormal set such that $\span\{f_1,\ldots,f_n\}\subseteq\span\{e_1,\ldots,e_n\}$. If $f_{k} \in\span\{e_{1}, \dots , e_{n}\}$ for every  $k \in\N$, then $\{e_{1},\dots,e_{n}\}$ is an orthonormal basis of $\H$ and the process should be stopped. Otherwise, let $m$ be the smallest positive integer such that $$f_{m}\notin\span\{e_{1},\dots,e_{n}\}.$$Define $e_{n+1}$ as follows: $$e_{n+1}:=\frac{f_m-\langle f_m,e_1\rangle e_1-\cdots-\langle f_m,e_n\rangle e_n}{\|f_m-\langle f_m,e_1\rangle e_1-\cdots-\langle f_m,e_n\rangle e_n\|}.$$Clearly $\|e_{n+1}\|=1$, $\langle e_{n+1},e_{k}\rangle=0$ for all $1\leq k\leq n$, our choice of $f_{m}$ guarantees there is no division by $0$, and $$\mathrm{span}\{f_1,\ldots,f_{n+1}\}\subseteq\mathrm{span}\{e_1,\ldots,e_{n+1}\},$$completing the induction. $\square$
 
 > [!remark]+ Same Gram-Schmidt Procedure in Linear Algebra
 > This is actually the same Gram-Schmidt procedure in linear algebra.
@@ -44,21 +50,27 @@ Without loss of generality, assume that $f_{1}\neq 0$. First set $e_{1}:=f_{1}/\
  
 Indeed, the mapping $f\mapsto \{a_{n}(f)\}_{n\in \Z}$ makes $L^{2}(S^{1})$ [[Hilbert Spaces#^68e362|(unitarily) "equivalent"]] to $\ell^{2}(\Z)$, we shall seriously define this equivalence, and prove this in the next section. (See [[Hilbert Spaces#^b796c6|the proposition]].)
 
-## Unitary Mappings
+## Unitary Operators
 
 > [!definition] Unitary Mapping
-> A mapping $U\colon \H_{1}\to \H_{2}$ between two Hilbert spaces is called *unitary* if it is a vector space isomorphism and preserves the inner product, i.e. $$\langle U(x),U(y)\rangle_{\H_{2}}=\langle x,y\rangle_{\H_{1}}$$for all $x,y\in \H_{1}$. We call two Hilbert spaces *unitarily equivalent* (i.e., isomorphic) if there exists a unitary mapping between them. ^68e362
+> A linear operator $U\colon \H_{1}\to \H_{2}$ between two Hilbert spaces is called *unitary* if it is a vector space isomorphism and preserves the inner product, i.e. $$\langle U(x),U(y)\rangle_{\H_{2}}=\langle x,y\rangle_{\H_{1}}$$for all $x,y\in \H_{1}$. Equivalently, $U$ is a surjective isometry.
+> We call two Hilbert spaces *unitarily equivalent (isomorphic)* if there exists a unitary operator between them. ^68e362
+
+> [!remark]
+> If $\dim\H_{1},\dim\H_{2} < \infty$, every isometry $U \colon \H_{1} \to \H_{2}$ is automatically unitary by dimension counting. If they are infinite dimensional, there always exist non-unitary isometries: for instance, on $\ell^2(\N)$, the *unilateral shift* $S(\xi_1, \xi_2, \cdots) = (0, \xi_1, \xi_2, \dots)$ satisfies $\langle S(\xi), S(\eta) \rangle = \langle \xi,\eta\rangle$, but $(1, 0, 0, \dots)$ is not in the image. 
+> However, by the *Wold-von Neumann Theorem*, every isometry on a Hilbert space decomposes into a direct sum of a unitary operator and copies of the unilateral shift, which we will see later.
+> 
 
 > [!theorem]
 > Any two separable Hilbert spaces are unitarily equivalent if and only if they have the same dimension.
 > 
 
-*Proof*
+*Proof* 
 
 > [!proposition]
 > $L^{2}(S^{1})$ is unitarily equivalent to $\ell^{2}(\Z)$ under the mapping $f\mapsto\{a_{n}(f)\}$, where $a_{n}(f)=\frac{1}{2\pi}\int_{\pi}^{\pi}f(x)e^{-inx}\dd x$. ^b796c6
 
-*Proof*
+*Proof*  
 
 ## Pre-Hilbert Spaces
 

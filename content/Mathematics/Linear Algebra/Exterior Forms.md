@@ -8,7 +8,7 @@
 - In particular, a $1$-form is exactly a covector in the [[Mathematics/Linear Algebra/Duality#^6c7627|dual space]] $V^{*}$. 
 - Suppose that we have chosen a linear coordinate system $(x^{1},x^{2},\dots,x^{n})$ on a vector space $V$, then each coordinate $x^{i}$ defines a $1$-form.
 - If a uniform force field $\mathbf{F}$ is given on $\R^{3}$, its work $A$ along the displacement $\mathbf{r}$ is a $1$-form acting on $\mathbf{r}$.
-- The oriented area of a parallelogram [[Mathematics/Linear Algebra/Vector Spaces#^ce69a9|spanned]] by two vectors $\mathbf{u}$ and $\mathbf{v}$ in $\R^{2}$ is given by the $2$-form $$S(\mathbf{u},\mathbf{v}) = \det( \begin{bmatrix}\mathbf{u} &\mathbf{v}\end{bmatrix} )$$
+- The oriented area of a parallelogram [[Mathematics/Linear Algebra/Vector Spaces#^concept-4e452455341d|spanned]] by two vectors $\mathbf{u}$ and $\mathbf{v}$ in $\R^{2}$ is given by the $2$-form $$S(\mathbf{u},\mathbf{v}) = \det( \begin{bmatrix}\mathbf{u} &\mathbf{v}\end{bmatrix} )$$
 $\quad$
 
 > [!corollary]
