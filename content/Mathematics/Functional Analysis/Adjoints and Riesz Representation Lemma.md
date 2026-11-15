@@ -1,12 +1,17 @@
-## Riesz Representation Theorem
+## Riesz Representation Lemma
 
-> [!definition] Linear Functional
-> A linear functional $\ell$ is a linear transformation from a [[Hilbert Spaces#^concept-309eb44da4da|Hilbert space]] to the underlying field of scalars.
-
-> [!theorem] Riesz Representation Theorem
-> Let $\ell$ be a continuous linear functional on a Hilbert space $\newcommand{\H}{\mathcal{H}}\H$. Then, there exists a unique $g\in\H$, such that $\ell(f)=\langle f, g\rangle$ for all $f\in \H$. Moreover, $\|\ell\|=\|g\|$.
+> [!theorem] Riesz (Representation) Lemma
+> Let $\ell$ be a continuous linear functional on a Hilbert space $\newcommand{\H}{\mathcal{H}}\H$. Then, there exists a unique $g\in\H$, such that $\ell(f)=\langle f, g\rangle$ for all $f\in \H$. Moreover, $\|\ell\|_{\text{op}}=\|g\|$.
 
 *Proof*  Consider the kernel of $\ell$, say $\newcommand{\S}{S}\S:=\ker \ell=\{f\in\H:\ell(f)=0\}$, which is a closed subspace of $\H$, so $\H=\S\oplus\S^{\bot}$. If $\S^{\bot}=\emptyset$, then $\ell=0$. Otherwise, pick some $h\in\S^{\bot}$ with $\|h\|=1$, and let $g:=\overline{\ell(h)}h$. Then if we let $u:=\ell(f)h-\ell(h)f$, observe that $u\in\S$ because $\ell(u)=\ell(f)\ell(h)-\ell(h)\ell(h)=0$, therefore, $$0=\langle u,h\rangle=\ell(f)\langle h,h\rangle - \langle f,\overline{\ell(h)}h\rangle=\ell(f)\langle h,h\rangle - \langle f,g\rangle,$$which shows that $\ell(f)=\langle f,g\rangle$. Moreover, if $g'\in\S^{\bot}$ is another element such that $\ell(f)=\langle f,g'\rangle$, then we have $$\ell(f)=\langle f,g\rangle=\langle f,g'\rangle,$$it follows that $\langle f,g-g'\rangle=0$ for all $f\in\H$, which implies that $g=g'$. $\square$
+
+Through Riesz lemma, we can identify $\H^{*}$ as $\overline{\H}$! Moreover, this means that the [[The Weak Topology#^59858f|weak topology]] on $\H$ can be characterised by the convergence: $x_{n}\xrightarrow{\text{weak}} x$ if $\langle x_{n}, \eta\rangle \to \langle x,\eta\rangle$ for all $\eta\in\H$. In fact, there is a even nicer characterisation of the weak topology on $\H$:
+
+> [!proposition]
+> The weak topology is precisely the initial topology induced by all finite-dimensional orthogonal projections.
+> 
+
+
 
 ## Adjoint
 

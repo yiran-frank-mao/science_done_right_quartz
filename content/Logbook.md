@@ -178,7 +178,7 @@ Updates: [[Constructions on Categories]].
 - New page: [[Stone's Theorem]].
 
 ## 29 July 2025
-- Updates: [[Adjoints and Riesz Representation Theorem]], [[The Argument Principle]].
+- Updates: [[Adjoints and Riesz Representation Lemma]], [[The Argument Principle]].
 - New page: [[The Exponential Map]].
 
 ## 28 July 2025
