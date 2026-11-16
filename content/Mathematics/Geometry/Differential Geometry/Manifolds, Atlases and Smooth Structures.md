@@ -62,9 +62,10 @@ $\quad$
 > 
 
 <u><b>e.g.</b></u>  
-- On $\R^{n}$, the atlas $\mathcal{A}=\{(\id_{\R^{n}},\R^{n})\}$ is a smooth maximal atlas making $\R^{n}$ a smooth manifold.
+- On $\R^{n}$, the atlas $\newcommand{\id}{\operatorname{id}}\mathcal{A}=\{(\id_{\R^{n}},\R^{n})\}$ is a smooth maximal atlas making $\R^{n}$ a smooth manifold.
 - The 4-manifold [$E_{8}$](https://en.wikipedia.org/wiki/E8_manifold) is a topological manifold, but not smooth.
-$\quad$
+- On $S^{n}\subset \R^{n+1}$, we can define an atlas of charts $(U_i^\pm, \varphi_i^\pm)$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$. This atlas is in fact smooth, which we can verify by computing the transition maps: $$\varphi_i^\pm \circ (\varphi_j^\pm)^{-1}(y_1, \ldots, y_n) = \left(y_1, \ldots, \widehat{y}_i, \ldots, \pm\sqrt{1 - |y|^2}, \ldots, y_n\right)$$ Since these transitions are smooth, the atlas determines a smooth structure.
+  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/smooth_structure_of_S^2.svg" style="width:60%;"/>
 
 In fact, dimension 4 is particularly special and exotic in the theory of smooth manifolds, there are smooth 4-manifolds which are [[Isometries and Homeomorphisms#^85034b|homeomorphic]] but not diffeomorphic. We have the following theorem:
 
