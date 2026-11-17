@@ -1,3 +1,0 @@
-**Def**  <i><u>Binomial Distribution</u></i>
-The binomial distribution with parameters $n$ and $p$ is the discrete probability distribution of the number of successes in a sequence of $n$ independent experiments:$$f(x)=\binom nk p^{k}(1-p)^{n-k}$$
-**Prop**  If $X \sim \text{Binomial}(n, p)$, $n$ being the total number of experiments and $p$ the probability of each experiment yielding a successful result, then the [[Probability Distributions#^2f930b|expected value]] of $X$ is $np$, and the variance is $np(1-p)$.

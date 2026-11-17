@@ -1,4 +1,0 @@
-**Def**  <i><u>Beta Distribution</u></i>
-The beta distribution is a family of continuous probability distributions defined on the interval $[0, 1]$, in terms of two positive parameters $\alpha$ and $\beta$:$$f(x)=\frac{\Gamma(\alpha+\beta)}{\Gamma(\alpha)\Gamma(\beta)}x^{\alpha-1}(1-x)^{\beta-1}=\frac1{\mathrm{Be}(\alpha,\beta)}x^{\alpha-1}(1-x)^{\beta-1}$$where $\Gamma$ is the gamma function, and $\mathrm{Be}$ is defined as beta function.
-
-**Prop**  The [[Probability Distributions#^2f930b|expected value]] of a Beta distribution random variable $X$ with two parameters $α$ and $β$ is a function of only the ratio $β/α$ of these parameters: $\E[X]=\frac\alpha{\alpha+\beta}$. And the variance is given by $\Var[X]=\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$.

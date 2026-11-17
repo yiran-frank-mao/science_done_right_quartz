@@ -1,4 +1,0 @@
-
-## Contents
-[[XGBoost]]
-[[Random Forest]]
