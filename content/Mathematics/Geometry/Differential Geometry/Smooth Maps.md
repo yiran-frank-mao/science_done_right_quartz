@@ -32,21 +32,30 @@ $\quad$
 > A map $F\colon M\to N$ between smooth manifolds is smooth if and only if for every smooth function $f\colon N\to \R$, the precomposition $f\circ F$ is a smooth function on $M$. Equivalently, the pullback satisfies $F^{*}(C^{\infty}(N)) \subset C^{\infty}(M)$.
 > 
 
-
-## Further Classification of Maps
+## Further Classification of Smooth Maps
 
 > [!definition] Diffeomorphism
 > A map $F\colon M \to N$ between smooth manifolds is a *diffeomorphism* if it is smooth, and has a smooth inverse. 
-> $F$ is a *local diffeomorphism* about $x\in M$ if for every $x\in M$ there is an open neighborhood $U$ of $x$ such that $F|_{U}$ is a diffeomorphism to an open subset of $N$. ^39ce42
+> $F$ is a *local diffeomorphism* about $x\in M$ if there is an open neighborhood $U$ of $x$ such that $F|_{U}$ is a diffeomorphism to an open subset of $N$. ^39ce42
 > 
 
+Just like in 
 
+> [!definition] Rank
+> Suppose $F\colon M\to N$ is a smooth map between smooth manifolds, and $x\in M$. The *rank* of $F$ at $x$, denoted $\operatorname{rank}_{x}(F)$, is the rank of the differential $\newcommand{\d}{\mathrm{d}}\d_{x} F \colon T_{x}M \to T_{F(x)}N$. If $\operatorname{rank}_{x}(F)$ is constant for all $x\in M$, we say that $F$ has *constant rank*.
 
-> [!definition] Immersion
-> $F\colon M\to N$ is an immersion if for every $x$ in $M$ there exist charts $\varphi\colon U\to V$ for $M$ and $\eta\colon W\to Z$ for $N$ with $x\in U$ and $F(x)\in Z$, such that the map $\eta \circ F \circ \varphi^{-1}$ has derivative which is injective at $\varphi(x)$.
+> [!definition] Immersion & Submersion
+> A smooth map $F\colon M\to N$ is an *immersion* if $\d_{x} F$ is [[Mathematics/Set Theory/Relations and Functions#^042daf|injective]] for all $x\in M$, and a *submersion* if $\d_{x} F$ is [[Mathematics/Set Theory/Relations and Functions#^042daf|surjective]] for all $x\in M$. Equivalently, $F$ is an immersion if $\operatorname{rank}_{x}(F)=\dim M$ for all $x\in M$, and a submersion if $\operatorname{rank}_{x}(F)=\dim N$ for all $x\in M$. ^9d6e60
 
-> [!definition] Submersion
-> $F$ is a submersion if for each $x ∈ M$ there are charts $φ$ and $η$ such that the derivative of $η \circ F \circ φ^{-1}$ at $φ(x)$ is surjective.
+> [!proposition]
+> If $F\colon M\to N$ has rank $k$ at $x\in M$, then there exist an open neighborhood $U$ of $x$ such  that $F|_{U}$ has rank at least $k$ for all $y\in U$.
+> 
+
+<u><b>e.g.</b></u>  
+- Canonical projections $\pi\colon M\times N\to M$ are submersions;
+- A smooth curve $\gamma\colon I\to M$ is an immersion if and only if it has no stationary points, i.e., $\gamma'(t)\neq 0$ for all $t\in I$;
+- Projection map 
+- Composition of immersions is an immersion, and composition of submersions is a submersion.
 
 > [!definition] Smooth Embedding
 > A smooth map $F\colon M \to N$ is an embedding if $F$ is a homeomorphism onto its image with the [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]], and for any charts $\varphi$ and $\eta$ for $M$ and $N$ respectively, $\eta\circ F\circ \varphi^{-1}$ has derivative of full rank. ^9d6e60

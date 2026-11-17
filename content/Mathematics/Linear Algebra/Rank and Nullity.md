@@ -24,7 +24,6 @@ We immediately have the following characterization of solutions to linear equati
 > The rank of a matrix $A$ is the dimension of $\row(A)$ or $\col(A)$.
 > The nullity of a matrix $A$ is the dimension of $\null(A)$.
 
-
 > [!theorem] 
 > For an $n\times n$ matrix $A\in M_{n}(F)$, the followings are equivalent:
 > 1. $A$ is invertible;
