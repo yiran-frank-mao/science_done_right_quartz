@@ -10,8 +10,10 @@
 > 
 
 <u><b>e.g.</b></u>
-- Consider $f(x)=x^{n}-1$ over $\Q$. Then the splitting field of $f$ is a [[Mathematics/Galois Theory/Kummer Extensions and Solvability#^concept-d862b90db143|pure extension]];
-- 
+- Consider $f(x)=x^{n}-1$ over $\newcommand{\Q}{\mathbb{Q}}\Q$. Then the splitting field of $f$ is a [[Mathematics/Galois Theory/Kummer Extensions and Solvability#^concept-d862b90db143|pure extension]];
+- Consider $f(x)=x^{3}-2$ over $\Q$. Then the splitting field of $f$ is a radical extension of $\Q$: $$\Q \subset \Q(\sqrt{-3})\subset \Q(\sqrt{-3},\sqrt[3]{2}).$$
+
+
 
 ## Kummer Theory
 

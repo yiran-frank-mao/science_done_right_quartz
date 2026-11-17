@@ -52,9 +52,18 @@
 ## Normal Extension and Separability
 
 > [!definition] Normal Extension
-> $K/F$ is a *normal extension* if every element of $K$ has its minimal polynomial over $F$ split completely in $K[x]$.
+> $K/F$ is a *normal extension* if every element of $K$ has its minimal polynomial over $F$ split completely in $K[x]$. Equivalently, $K/F$ is a normal extension if and only if every irreducible $f \in F[x]$ either has no roots in $K$ or splits completely in $K$.
 
-In other words, a normal extension never contains “only some” of the conjugates of an algebraic element. If it contains one conjugate, it contains the entire set.
+In other words, a normal extension never contains “only some” of the roots. If it contains one root, it contains the entire root set. The two definitions are equal because if $f\in F[x]$ is irreducible and has a root $\alpha\in K$, then $f$ is a scalar multiple of the minimal polynomial of $\alpha$ over $F$ by division with remainder.
+
+Though normal extensions can be infinite, we are more interested in the finite extensions, which turn out to be just splitting fields:
+
+> [!proposition]
+> A finite extension $K/F$ is normal if and only if $K$ is the splitting field of some polynomial $f\in F[x]$.
+> 
+
+*Proof*  It is clear by definition that if $K/F$ is normal,
+It is sufficient 
 
 > [!definition] Separable Extension
 > $K/F$ is *separable* if the [[Mathematics/Ring Theory/Fields and Field Extensions#^concept-3d7e2d2c8120|minimal polynomial]] of any element has no multiple roots. 
