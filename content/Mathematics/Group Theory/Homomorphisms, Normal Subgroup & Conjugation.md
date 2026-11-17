@@ -93,15 +93,16 @@ It is clear that $H_{G} \triangleleft G$. Now let $K\triangleleft G$ such that $
 
 <u><b>e.g.</b></u>  
 - Any two [[Cyclic Groups#^c52ddd|cyclic group]] of the same order are isomorphic.
-- Let $G$ be a [[Groups, Order and Subgroups#^6e0960|group]] and $g \in G$. The map$$ \gamma_{g}\colon G \to G, \quad a \mapsto gag^{-1},$$ called *conjugation by $g$*, is an isomorphism. We first check that $\gamma_g$ is a homomorphism:$$ \gamma_g(ab) = gabg^{-1} = ga(g^{-1}g)bg^{-1} = (gag^{-1})(gbg^{-1})=\gamma_g(a)\gamma_g(b) $$The map is injective because $\gamma_g(a) = e \implies gag^{-1}=e \implies ga=g \implies a=e$. And is surjective since for all $a \in G$, we have $\gamma_g(g^{-1}ag)=a$.
+- Let $G$ be a [[Groups, Order and Subgroups#^6e0960|group]] and $g \in G$. The map$$ \gamma_{g}\colon G \to G, \quad a \mapsto gag^{-1},$$ called *conjugation by $g$*, is an automorphism. We first check that $\gamma_g$ is a homomorphism:$$ \gamma_g(ab) = gabg^{-1} = ga(g^{-1}g)bg^{-1} = (gag^{-1})(gbg^{-1})=\gamma_g(a)\gamma_g(b) $$The map is injective because $\gamma_g(a) = e \implies gag^{-1}=e \implies ga=g \implies a=e$. And is surjective since for all $a \in G$, we have $\gamma_g(g^{-1}ag)=a$.
+- $\operatorname{Aut}(\mathbb{Z})\cong \mathbb{Z}/2$, that is, the only automorphisms on $\mathbb{Z}$ are the identity map and the negation map $n\mapsto -n$.
 $\quad$
 
 >[!theorem] Cayley’s Theorem
-> For every $g \in G$ define a map by left multiplication with $g$: $$\lambda_{g}:G\to G,\quad x\mapsto g x$$
+> For every $g \in G$ define a function by left multiplication with $g$: $$\lambda_{g}\colon G\to G,\quad x\mapsto g x$$
 > Then $\lambda_g \in \text{Sym}(G)$, $\lambda_{g^{-1}}$ is the inverse of $\lambda_g$.
 > Moreover, the map $\lambda \colon G \to \text{Sym}(G)$ given by $g \mapsto \lambda_g$ is an [[Relations and Functions#^042daf|injective]] group homomorphism. ^dcfefa
 
-*Proof*  Clearly $\lambda(x)\circ\lambda(y)=\lambda(xy)$. Set $\lambda(g)=\lambda_{g}=\text{id}$ where $\text{id}$ is the identity map from $G$ to $G$. Then for all $x\in G$, we have $gx=x$. It follows that $g=1$. Thus $\lambda$ is injective. $\square$
+*Proof*  Clearly $\lambda(x)\circ\lambda(y)=\lambda(xy)$. Set $\lambda(g)=\lambda_{g}=\operatorname{id}$ where $\text{id}$ is the identity map from $G$ to $G$. Then for all $x\in G$, we have $gx=x$. It follows that $g=1$. Thus $\lambda$ is injective. $\square$
 
 >[!corollary] 
 > Every finite group is isomorphic to a subgroup of a [[Permutations and Symmetric Groups#^5b562f|symmetric group]] $S_{n}$.
