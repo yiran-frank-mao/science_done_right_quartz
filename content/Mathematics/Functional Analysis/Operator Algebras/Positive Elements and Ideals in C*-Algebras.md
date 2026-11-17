@@ -1,9 +1,11 @@
 ## Positive Elements
 
 > [!definition] Positive Element
-> An element $a$ in a unital C\*-algebra $\newcommand{\A}{\mathcal{A}}\A$ is said to be *positive* if it is self-adjoint and its spectrum $\sigma(a)$ consists of non-negative real numbers, i.e., $\sigma(a) \subseteq [0, \infty)$. The set of all positive elements in $\A$ is denoted by $\A^{+}$.
+> An element $a$ in a unital C\*-algebra $\newcommand{\A}{\mathcal{A}}\A$ is said to be *positive* if it is [[C*-Algebras#^1e36a9|self-adjoint]] and its spectrum $\sigma(a)$ consists of non-negative real numbers, i.e., $\sigma(a) \subseteq [0, \infty)$. The set of all positive elements in $\A$ is denoted as $\A^{+}$.
 
-<u><b>e.g.</b></u>  Let $X$ be a locally compact [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] space. Then $f\in C_{0}(X)$ is positive if and only if either $f(x)\geq 0$ for all $x\in X$ (i.e. $\sigma(f)\subset \mathbb{R}_{+}$) or $f=\overline{g}g$ for some $g\in C_{0}(X)$.
+<u><b>e.g.</b></u>  
+- Let $X$ be a [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0adb622702af|locally compact]] [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] space. Then $f\in C_{0}(X)$ is positive if and only if either $f(x)\geq 0$ for all $x\in X$ (i.e. $\sigma(f)\subset \mathbb{R}_{+}$) or $f=\overline{g}g$ for some $g\in C_{0}(X)$.
+- Let $\newcommand{\H}{\mathcal{H}}B(\H)$ be the C\*-algebra of bounded linear operators on a complex Hilbert space $\H$. Then $T\in B(\H)$ is positive if and only if $\langle Tx,x\rangle \geq 0$ for all $x\in \H$. Note that this not true for real Hilbert spaces. For example, the operator $T$ on $\mathbb{R}^{2}$ defined by the matrix $\begin{pmatrix}0 &-1 \\ 1 & 0\end{pmatrix}$ is not self-adjoint, but $\langle T(x,y),(x,y)\rangle=0$ for all $(x,y)\in \mathbb{R}^{2}$.
 
 Our main goal in this section is to show that the set of positive elements is precisely the set of elements of the form $x^*x$ for some $x \in \A$.
 

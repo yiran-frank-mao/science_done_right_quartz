@@ -4,7 +4,7 @@ created: 2025-08-21
 tags:
   - c-star-algebra
 ---
-## C*-Algebras: Definitions and Examples
+## Definitions and Examples
 
 > [!definition] $\ast$-Algebra & $\ast$-Homomorphism
 > A *$\ast$-algebra* $\newcommand{\A}{\mathcal{A}}\A$ is an [[Associative Algebras#^2c3d07|algebra]] over $\newcommand{\C}{\mathbb{C}}\C$ equipped with an *involution* $\ast \colon \A \to \A$ such that $a^{**}=a$, $(ab)^{*}=b^{*}a^{*}$, $(a+b)^{*}=a^{*}+b^{*}$, $(\lambda a)^{*}=\bar{\lambda}a^{*}$ for all $a,b\in A$ and $\lambda\in \C$.
@@ -30,11 +30,11 @@ $\quad$
 
 > [!definition] Special Elements
 > Let $\mathcal{A}$ be a $*$-algebra. An element $a \in \mathcal{A}$ is called:
-> - *Self-adjoint* (or Hermitian) if $a = a^*$
-> - *Normal* if $a^*a = aa^*$
-> - A *projection* if $p = p^* = p^2$
+> - *Self-adjoint* (or *Hermitian*) if $a = a^*$
+> - *Normal* if $a^{*} a = aa^*$
+> - A *projection* if $a = a^{*} = a^{2}$
 >
-> If $\mathcal{A}$ is unital, an element $u \in \mathcal{A}$ is called:
+> If $\mathcal{A}$ is also unital, an element $u \in \mathcal{A}$ is called:
 > - *Unitary* if $u^*u = uu^* = 1_{\A}$
 > - An *isometry* if $u^*u = 1_{\A}$ 
 >  $\quad$ ^1e36a9
