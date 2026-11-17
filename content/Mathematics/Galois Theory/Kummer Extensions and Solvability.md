@@ -1,3 +1,18 @@
+## Radical Extensions
+
+> [!definition] Pure Extension & Radical Extension
+> A *pure extension* of a field $F$ of type $m$ is a field extension $F(\alpha)/F$ such that $\alpha^{m}\in F$.
+> A field extension $K/F$ is called a *radical extension* if there is a tower of intermediate fields $$F=K_{0}\subseteq K_{1} \subseteq \cdots \subseteq K_{n}=K $$
+> in which every $K_{i+1}/K_{i}$ is a pure extension. ^concept-d862b90db143
+
+> [!definition] Solvable Polynomials
+> Suppose $K$ is the splitting field of $f\in F[x]$. We say that $f$ is *solvable by radicals* if a radical extension is also an extension of $K$.
+> 
+
+<u><b>e.g.</b></u>
+- Consider $f(x)=x^{n}-1$ over $\Q$. Then the splitting field of $f$ is a [[Mathematics/Galois Theory/Kummer Extensions and Solvability#^concept-d862b90db143|pure extension]];
+- 
+
 ## Kummer Theory
 
 > [!theorem] Kummer Extensions

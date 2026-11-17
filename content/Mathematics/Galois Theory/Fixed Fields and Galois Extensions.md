@@ -17,6 +17,7 @@
 > Let $K\supset F$ be a finite field extension. If a polynomial $f\in F[x]$ is irreducible, then $\Gal(K/F)$ acts [[Group Actions#^065d30|transitively]] on its roots. 
 
 
+
 ## Fixed Fields
 
 > [!theorem] Fixed Field Theorem

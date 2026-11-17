@@ -9,7 +9,7 @@ updated: 2024-10-28
 > - $1 \cdot x = x$ for all $x \in X$, and
 > - $(gh) \cdot x = g \cdot (h \cdot x)$ for all $x \in X$ and $g,h \in G$
 >
-> A set $X$ equipped with an action of $G$ is called a *$G$-set*. ^4047e8
+> A set $X$ equipped with an action of $G$ is called a *$G$-set*, we denoted $G \curvearrowright X$. ^4047e8
 
 <b><u>e.g.</u></b>
 - $G$ (the group) acts on $G$ (the set) by left multiplication.
