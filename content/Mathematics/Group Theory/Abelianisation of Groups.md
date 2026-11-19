@@ -82,7 +82,7 @@ $\quad$
 
 > [!definition] Centre
 > The *center of a group $G$* is the set of elements that commute with every element of $G$. That is
-> $$ Z(G):=\{ z\in G \mid \forall g \in G,zg=gz \} $$ ^afc081
+> $$ Z(G):=\{ z\in G \mid \forall g \in G,zg=gz \}. $$ ^afc081
 
 > [!proposition]
 > The centre $Z(G)$ is a [[Homomorphisms, Normal Subgroup & Conjugation#^normal|normal subgroup]] of $G$.
