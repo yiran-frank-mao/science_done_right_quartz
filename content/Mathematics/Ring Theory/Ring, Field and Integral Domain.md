@@ -33,7 +33,7 @@ $\quad$
 $\quad$
 
 >[!definition] Unit
->An element of a ring $R$ is called a *unit* if it is invertible with respect to multiplication. The set of invertible elements is a [[Groups, Order and Subgroups#^6e0960|group]] called the the group of units in $R$ and denotes $R^{\times}$. ^c4d0ce
+>An element of a ring $R$ is called a *unit* if it is invertible with respect to multiplication. The set of invertible elements is a [[Groups, Order and Subgroups#^6e0960|group]] called the *the group of units in $R$* and denotes $R^{\times}$. ^c4d0ce
 
 > [!proposition]
 > For any (non-unital) ring $R$, the set $\Z\times R$ is a unital ring with multiplicative identity $(1,0)$ under the multiplication 

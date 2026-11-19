@@ -11,7 +11,7 @@ tags:
 > A *$\ast$-homomorphism* between $\ast$-algebras is an algebra homomorphism also preserving the involution. A [[Relations and Functions#^042daf|bijective]] $*$-homomorphism is called a *$\ast$-isomorphism*. ^1a6445
 
 > [!definition] Banach $\ast$-Algebra & C*-Algebra
-> A *Banach $\ast$-algebra* is a [[Normed and Banach Algebras#^040470|Banach algebra]] $\mathcal{A}$ that is also a $*$-algebra, with the involution $*$ such that $\|a^*\| = \|a\|$ for all $a \in \mathcal{A}$. If $\mathcal{A}$ is unital, we also require $\|1_{\A}\| = 1$.
+> A *Banach $\ast$-algebra* is a [[Normed and Banach Algebras#^040470|Banach algebra]] $\mathcal{A}$ that is also a $*$-algebra, with the involution $*\colon \mathcal{A}\to \mathcal{A}$ such that $\|a^*\| = \|a\|$ for all $a \in \mathcal{A}$. If $\mathcal{A}$ is unital, we also require $\|1_{\A}\| = 1$.
 >A *C\*-algebra* is a Banach $*$-algebra $\mathcal{A}$ that satisfies the *C\*-identity*:
 > $$ \|a^*a\| = \|a\|^2 \quad \text{for all } a \in \mathcal{A}.$$ ^e4fdc6
 

@@ -10,6 +10,7 @@ Functional Analysis is the study of [[Mathematics/Linear Algebra/Vector Spaces#^
 #### Bounded Operators
 [[Orthogonality and Bounded Linear Maps]]
 [[Adjoints and Riesz Representation Lemma]]
+[[Spectral]]
 [[Hilbert-Schmidt Operators]]
 [[Compact Operators]]
 #### Unbounded Operators
