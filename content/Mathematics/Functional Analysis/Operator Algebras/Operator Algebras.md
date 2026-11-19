@@ -1,0 +1,38 @@
+## Introduction
+
+Operator algebras are self-adjoint (closed under taking Hermitian adjoints), topologically closed algebras of bounded linear operators acting on Hilbert spaces, forming a central area of functional analysis that originated in the 1930s through the pioneering work of John von Neumann and Israel Gelfand. The field encompasses two principal classes: C\*-algebras, which are closed in the norm topology and abstractly axiomatized by conditions relating the norm, involution, and multiplication, and von Neumann algebras (originally called "rings of operators"), which are C\*-algebras additionally closed in the weak or strong operator topology and contain the identity operator. Operator algebras provide a powerful framework for studying arbitrary sets of operators simultaneously, generalizing spectral theory from single operators to operator systems, and they possess rich connections to diverse mathematical areas.
+
+## Contents
+### Topological Vector Spaces
+[[Topological Vector Spaces]]
+[[Geometry of Topological Vector Spaces]]
+[[Minkowski Functionals and Seminorms]]
+[[The Hahn-Banach Theorem of Topological Vector Spaces]]
+[[The Weak Topology]]
+[[Schwartz Space and Generalized Functions]]
+[[Bases In Topological Vector Spaces]]
+### C\*-Algebras and Gelfand Theory
+[[Normed and Banach Algebras]]
+[[Gelfand Representation]]
+[[C*-Algebras]]
+[[The Gelfand Theorem for Commutative C*-Algebras]]
+[[Positive Elements and Ideals in C*-Algebras]]
+[[The Gelfand-Naimark Theorem]]
+[[Toeplitz Operators]]
+[[Fredholm Operators]]
+### C\*-Dynamical Systems
+[[C*-Dynamical Systems]]
+[[Crossed Products of C*-Algebras]]
+[[C*-Dynamical Systems with Integer Actions]]
+### Von Neumann Algebras
+[[von Neumann Bicommutant Theorem]]
+[[Finite Dimensional von Neumann Algebras]]
+[[Projections in von Neumann Algebras]]
+[[Tomita-Takesaki Theory]]
+[[Murray-von Neumann Ordering]]
+[[Modular Theory of von Neumann Algebras]]
+[[Weights on von Neumann Algebras]]
+### Factors and Subfactors
+[[Factors and Type Classification]]
+[[Temperley–Lieb Algebra]]
+[[Planar Tangles and Planar Algebras]]

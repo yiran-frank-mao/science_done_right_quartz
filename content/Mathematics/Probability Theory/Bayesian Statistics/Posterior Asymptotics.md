@@ -1,0 +1,2 @@
+**Thrm**  <i><u>Asymptotic Properties of Posterior</u></i>
+Suppose $\theta$ is the parameter of our model, $\theta^{\star}$ is the true value of $\theta$, and $n$ is amounts of data. Then we have the following limits hold:$$\lim_{n\to\infty}\pr(\theta=\theta^{\star})=1,\quad\lim_{n\to\infty}\pi(\theta\mid X)=\mathcal{N}(\theta;\theta^{\star}, I_{n}(\theta^{\star})^{-1})$$where $I_{n}(\theta^\star)$ is the [[Fisher Information#^40ed31|fisher information]]. We call these consistency and asymptotic normality respectively.

@@ -1,0 +1,2 @@
+**Prop** [[Preorder, Partial Order and Posets#^fa7f22|Posets]] and [[Preorder, Partial Order and Posets#^893616|monotone functions]] form a category $\mathsf{Poset}$.
+**Proof**  Suppose $f\colon A\to B$ and $g\colon B\to C$ with posets $A$, $B$ and $C$ are monotone. Then we have the composition $g\circ f \colon A\to C$. For all $a, a^{\prime} \in A$, assume $a\leq_{A}a^{\prime}$, then $$(g\circ f )(a)=g(f(a))\leq_Cg(f(a^\prime))$$as $f(a)\leq_{B}f(a^{\prime})$. Thus $g\circ f$ is also monotone. ^b87e8b

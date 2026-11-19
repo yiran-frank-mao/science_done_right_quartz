@@ -1,0 +1,84 @@
+---
+created: 2023-12-11
+updated: 2024-09-26
+tags:
+  - topology
+  - metric-space
+  - basis-of-topologies
+---
+## Topology
+
+>[!definition] Topological Space
+> A *topology* $\mathcal{T}$ on a set $X$ is a collection of subsets of $X$, which we agree to call the *“open sets”*, such that 
+>1. $T$ and $\emptyset$ are open；
+>2. the [[Construction of Sets#^408460|intersection]] of finitely many open sets is open；
+>3. arbitrary [[Construction of Sets#^678b42|unions]] of open sets are open.
+>
+> The pair $(X , \mathcal{T})$ is called a *topological space*. ^concept-39ce12df888c
+
+<b><u>e.g.</u></b>  
+- The topology induced by a [[Metric Spaces#^concept-e26011bc6f0a|metric]]: in any metric space $(X,d)$ the collection of all open sets forms a topology.
+- A topology is said to be *discrete* if all subsets are open. It is *indiscrete* or *trivial* if the only open sets are $T$ and $\emptyset$.
+- Zariski Topology on $\R^{n}$: A set is open if it is $\R^n$, $\emptyset$, or its complement is the set of zeros of a polynomial with real coefficients.
+- A topology is *cofinite* if all open subsets are $T$, $\emptyset$, or the set whose complement is finite.
+- A topology is *cocountable* if all open subsets are $T$, $\emptyset$, or the set whose complement is [[Equinumerous and Countability#^79eb6c|countable]].
+$\quad$
+
+> [!definition] Closedness
+> In a [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $(X, \mathcal{T})$, a set $C$ is called *closed* if $X\setminus C$ is open. i.e. $T\setminus C\in \mathcal{T}$. ^0849a0
+
+>[!definition] Coarser and Finer
+>If $\mathcal{T}_1$ and $\mathcal{T}_2$ are two topologies on $T$ then we say that $\mathcal{T}_1$ is *coarser* than $\mathcal{T}_2$ if $\mathcal{T}_1\subset\mathcal{T}_2$, that is $\mathcal{T}_1$ contains fewer open sets than $\mathcal{T}_2$. In this situation, we also say that $\mathcal{T}_2$ is *finer* than $\mathcal{T}_1$. ^149286
+
+<u><b>e.g.</b></u>  Given a set $X$, the trivial topology is the coarsest/weakest topology on $X$ and the discrete topology is the finest/strongest topology on $X$.
+
+> [!proposition]
+> Suppose $\mathcal{T}_{1}$ and $\mathcal{T}_{2}$ are topologies on $X$. Then $\mathcal{T}_{1}$ is finer than $\mathcal{T}_{2}$ if and only if the identity map $\operatorname{id}\colon (X,\mathcal{T}_{1})\to (X,\mathcal{T}_{2})$ is continuous.
+> 
+
+>[!definition] Metrizable
+> Topologies need not come from metrics, but if there is, we say that $(T, \mathcal{T})$ is *metrizable*.
+
+<u><b>e.g.</b></u> 
+- Suppose that $X$ consists of more than one point. Then the trivial topology on $X$ is not metrizable.
+- Discrete topology on $X$ is metrizable by the discrete metric: $$d(x,y)=\begin{cases}0,&x=y,\\1,&x\neq y.\end{cases}$$
+- Cofinite topology on $X$ is metrizable iff $X$ is finite. In fact, assume the indiscrete topology on $T$ is induced by a metric $d$ on $T$. Let $x,y\in T$ with $x\neq y$. Then $d(x,y)=\epsilon>0$. The set $B\left(x,\frac{\epsilon}{2}\right)$ is an open subset of $(T,d)$. Since $x\in B\left(x, \frac{\epsilon}{2}\right)$, this set is not empty. And since $y\notin B\left(x, \frac{\epsilon}{2}\right)$ this set is not all of $T$. But $\emptyset$ and $T$ are the only open sets, yielding a contradiction.
+$\quad$
+
+## Bases and Sub-bases
+
+>[!definition] Basis of a Topology
+>A *basis* for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset\mathcal{T}$ such that every set in $\mathcal{T}$ is the union of some sets from $\mathcal{B}$. ^2fc468
+
+<u><b>e.g.</b></u>  Let $(X,d)$ be a [[Metric Spaces#^concept-e26011bc6f0a|metric space]]. Then $$\mathcal{B}=\{B_r(x):x\in X\mathrm{~and~}r>0\}$$ is a basis for the metric topology on $X$.
+
+> [!theorem] Characterization of Basis
+> Let $(X,\mathcal{T})$ be a topological space. Then $\mathcal{B}\subset \mathcal{T}$ is a basis for $\mathcal{T}$ iff for any $x\in X$ and any $U ∈ \mathcal{T}$ with $x ∈ U$ there is $B ∈ \mathcal{B}$ such that $x \in B ⊂ U$.
+
+*Proof*  Suppose $\mathcal{B}$ is a basis, then any open neighbourhood $U$ is a union of sets from $\mathcal{B}$, so must contain some $B\in \mathcal{B}$ containing $x$. Conversely, for any nonempty $U\in \mathcal{T}$, it is an open neighbourhood of each of its points, so by assumption for each $x\in U$ there is $B_{x}\in \mathcal{B}$ such that $x\in B_{x}\subset U$. Then $U=\bigcup_{x\in U}B_{x}$, which is a union of sets from $\mathcal{B}$. Therefore $\mathcal{B}$ is a basis. $\square$
+
+>[!corollary] 
+> Let $X$ be a set. Let $\mathcal{T}$ and $\mathcal{T}^{\prime}$ be two topologies on $X$ with bases $\mathcal{B}$ and $\mathcal{B}^{\prime}$ respectively. The followings are equivalent:
+>- $\mathcal{T} \subset \mathcal{T}^{\prime}$.
+>- For each $B\in \mathcal{B}$ and each $x\in B$ there is $B^{\prime}\in \mathcal{B}^{\prime}$ such that $x\in B^{\prime} \subset B$.
+>$\quad$
+>
+
+*Proof*  Suppose $\mathcal{T}\subset \mathcal{T}'$, since $\mathcal{B}'$ is a basis for $\mathcal{T}'$, for each $B\in\mathcal{B}$ and $x\in B$, note that $B$ is also in $\mathcal{T}'$, so there exists some $B'\in\mathcal{B}'$ such that $x\in B'\subset B$. Conversely, for any $U\in \mathcal{T}$, because $\mathcal{B}$ is a basis, we shall write $U=\cup_{i\in I} B_{i}$ for $B_{i}\in\mathcal{B}$. For each $B_{i}$ and each $x\in B_{i}$, there exists some $B^{\prime}_{x}\in \mathcal{B}^{\prime}$ such that $x\in B^{\prime}_{x}\subset B_{i}$. Therefore, we have $$U=\bigcup_{i\in I}B_{i}=\bigcup_{i\in I}\bigcup_{x\in B_{i}}B^{\prime}_{x},$$which is a union of sets from $\mathcal{B}^{\prime}$, hence $U\in \mathcal{T}^{\prime}$. $\square$
+
+> [!proposition]
+> A collection of sets cannot be basis for two distinct topologies.
+
+*Proof*  Suppose that $\mathcal{B}$ is a basis for both $\mathcal{T}$ and $\mathcal{T}^\prime$. Then every set in $\mathcal{T}^\prime$ is a union of sets in $\mathcal{B}$. Since $\mathcal{B}\subset \mathcal{T}$, every set in $\mathcal{T}^\prime$ is open in $(T, \mathcal{T})$, this implies that $\mathcal{T}^{\prime}\subset \mathcal{T}$. Similarly, we have $\mathcal{T}\subset\mathcal{T}^\prime$.
+
+> [!theorem]
+> Suppose $X$ is a set, then $\mathcal{B}\subset \mathcal{P}(X)$ is a basis for some topology $\mathcal{T}$ if and only if both of the following hold:
+> - $X$ is the union of some sets from $\mathcal{B}$;
+> - If $B_{1},B_{2}\in \mathcal{B}$ then $B_{1}\cap B_{2}$ is the union of some sets from $\mathcal{B}$.
+> 
+>  In this case, the topology $\mathcal{T}$ is the unique one generated by $\mathcal{B}$: $$\mathcal{T}=\left\{\bigcup_{\alpha\in A}B_{\alpha}\mid B_{\alpha}\in \mathcal{B}\right\}.$$
+
+*Proof*  If $\mathcal{B}$ is a basis, then it clearly has the above properties, we will prove the converse here. Let $\mathcal{T}=\left\{\bigcup_{\alpha\in A}B_{\alpha}\mid B_{\alpha}\in \mathcal{B}\right\}$. We first prove that it is a topology. Clearly, both $X$ and $\emptyset$ is in $\mathcal{T}$, and any union of sets in $\mathcal{T}$ is in $\mathcal{T}$. Now consider the intersection of two sets $U=\bigcup_{\alpha}B_{\alpha}$ and $V=\bigcup_{\beta}B_{\beta}$ in $\mathcal{T}$. Then $$U\cap V=\bigcup_{\alpha\in A}\bigcup_{\beta\in B}(B_{\alpha}\cap B_{\beta})$$Since each $B_{\alpha}\cap B_{\beta}$ is a union of sets from $\mathcal{B}$, we have that $U\cap V$ is a union of sets from $\mathcal{B}$, thus $U\cap V\in \mathcal{T}$. Therefore, $\mathcal{T}$ is a topology. Uniqueness is obvious.  $\square$
+
+>[!definition] Sub-basis
+>A *sub-basis* for a topology $\mathcal{T}$ on $T$ is a collection $\mathcal{B}\subset \mathcal{T}$ such that every set in $\mathcal{T}$ is a union of finite intersections of sets from $\mathcal{B}$. ^02668a

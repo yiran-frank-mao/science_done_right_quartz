@@ -1,0 +1,53 @@
+---
+created: 2023-10-22
+updated: 2024-10-07
+tags:
+  - algebra
+---
+## Introduction
+Group theory is the study of algebraic structures known as groups. Groups are fundamental in abstract algebra and are used in many areas of mathematics, including number theory, geometry, analysis, and mathematical physics. They are also used in various other fields, such as physics, chemistry, computer science, and cryptography.
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Cyclic_group.svg/1920px-Cyclic_group.svg.png" style="width:30%;">
+
+## Contents
+[[Groups, Order and Subgroups]]
+[[Cyclic Groups]]
+[[Cosets and Lagrange’s Theorem]]
+[[Homomorphisms, Normal Subgroup & Conjugation]]
+[[Quotients]]
+[[Isomorphism Theorems]]
+[[Abelianisation of Groups]]
+[[Group Actions]]
+[[Sylow’s Theorems]]
+[[Free Groups and Relations]]
+[[Group Cohomology]]
+[[Transitivity of Groups]]
+
+### Some Concrete Groups
+
+| Order | Groups up to isomorphism                                                                                                                                    |
+| ----- | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1     | Trivial group $0=\{*\}$                                                                                                                                     |
+| 2     | $C_{2}$ (cyclic group of order $2$)                                                                                                                         |
+| 3     | $C_{3}$                                                                                                                                                     |
+| 4     | $C_{4}$,  $C_{2}\times C_{2}\cong D_{2}$                                                                                                                    |
+| 5     | $C_5$                                                                                                                                                       |
+| 6     | $C_{6}$, $S_{3}\cong D_{3}$                                                                                                                                 |
+| 7     | $C_{7}$                                                                                                                                                     |
+| 8     | $C_8$, $C_4\times C_2$, $C_{2}\times C_{2}\times C_{2}$, $Q_{8}$ (quarternian group; dicyclic group), $D_{4}$ ([[Dihedral Groups#^0206e0\|dihedral group]]) |
+| 9     | $C_{9}$, $C_3\times C_3$                                                                                                                                    |
+| 10    | $C_{10}$, $D_5$                                                                                                                                             |
+| 11    | $C_{11}$                                                                                                                                                    |
+| 12    | $C_{12}$, $C_{6}\times C_{2}$, $A_4$ ([[Permutations and Symmetric Groups#^a33b58\|alternating group]]), $D_{6}$, $Q_{12}$ (dicyclic group)                 |
+
+For a more detailed classification of groups of small order, see [Groups of Small Order](https://groupprops.subwiki.org/wiki/List_of_groups_of_small_order).
+
+[[Klein Four Group]]
+[[Permutations and Symmetric Groups]]
+[[Dihedral Groups]]
+[[Linear Groups]]
+[[Quaternion Group]]
+[[Braids and Braid Groups]]
+
+## More ...
+[[Ring Theory]]

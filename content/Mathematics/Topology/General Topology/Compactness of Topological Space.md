@@ -1,0 +1,179 @@
+---
+created: 2024-01-06
+updated: 2025-05-19
+---
+>[!definition] Cover and Subcover
+>A *cover* of a set $A$ is collection $\mathcal{U}$ of sets whose union contains $A$: $$A\subset\bigcup_{U\in\mathcal{U}}U$$ A *subcover* of a cover $\mathcal{U}$ is a subset of $\mathcal{U}$ whose elements still cover $A$. A cover is *open* if all its elements are open. ^eb1952
+
+<b><u>e.g.</u></b> $\{(n, n + 3) \mid n \in \Z\}$ is an open cover of $\R$; $\{(2k, 2k + 3) \mid k \in \Z\}$ is a subcover.
+
+>[!definition] Compactness
+>A topological space $T$ is *compact* if every open cover of $T$ has a finite subcover. A subset $S$ of $T$ is compact if every open cover of $S$ by subsets of $T$ has a finite subcover. This is the same as $S$ being compact with the subspace topology. ^da2511
+
+<b><u>e.g.</u></b> 
+- $(0, 1)$ is not compact, $\{(0, a) \mid a ∈ (0, 1)\}$ is an open cover with no finite subcover; 
+- $\R$ is not compact, $\{(−\infty, a) : a ∈ \Z\}$ has no finite subcover;
+- $[0,1]^\mathbb{N}$ with the box topology is not compact. In fact, any discrete infinite space is not compact, since the cover of singletons has no finite subcover;
+- In any topological space $X$, a convergent sequence together with its limit is always compact.
+$\quad$
+
+> [!lemma]
+> If $T$ is a topological space and $S \subset T$ then $S$ is compact in the $T$ if and only if $S$ is compact in the [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]] on $S$.
+
+> [!theorem] Continuous Image of a Compact Set is Compact
+> Let $X$ and $Y$ be topological spaces. If $K\subseteq X$ is compact and $f \colon X → Y$ is [[Continuous Maps on Topological Spaces#^33ee5a|continuous]], then $f (K )$ is compact. ^1075ec
+
+> [!corollary] Extreme Value Theorem
+> Let $X$ be a compact topological space and $f \colon X \to \R$ continuous, where $\R$ is endowed with the standard topology. Then $f$ achieves its maximum and minimum value on $X$.
+> 
+
+> [!theorem] Heine–Borel Theorem
+> Any closed interval $[a,b]$ is a compact subset of $\R$. More generally, a subset of  $\R^{n}$ is compact if and only if, it is bounded and closed. ^6e5465
+
+*Proof*  
+
+>[!theorem] 
+> Let $X$ be a compact topological space and $K$ a closed [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace]] of $X$. Then $K$ is compact. ^f5bb06
+
+*Proof*  Let $K ⊂X$ be closed and let $\{U_{α}\}_{α∈\Lambda}$ be an open covering of $K$. Then $\{K^{c}\cup U_{α}\}_{α∈\Lambda}$ is an open covering of $X$. Since $X$ is compact, there exist $α_{1},\dots,α_{n} ∈ \Lambda$ such that $$X=K^{c}\bigcup\left(\bigcup_{i=1}^{n}U_{\alpha_i}\right)$$It follows that $K \subset \bigcup_{i=1}^{n}U_{\alpha_{i}}$, therefore $K$ is compact. $\square$
+
+> [!corollary]
+> Any intersection of a compact set with a closed set is compact. ^20b0cb
+
+*Proof*  Suppose $C$ is closed and $K$ is compact. Then $C\cap K$ is closed in $K$ (w.r.t [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]]), and hence compact by the previous theorem and lemma. $\square$
+
+> [!lemma] Tube Lemma
+> Let $X$ be any [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] and $Y$ be a [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact space]]. If $x\in X$ and $U \subset X \times Y$ is an open set containing $\{x\}\times Y$, then there is an open neighborhood $V ⊂X$ of $x$ so that $V \times Y \subset U$.
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/tube_lemma.svg" style="width:45%;"/>
+
+*Proof*  $U$ is an open neighborhood of any $(x,y)\in \{x\}\times Y$, so $U$ contains some $V_{(x,y)}\times W_{(x,y)}$ with $V_{(x,y)}$ an open neighborhood of $x$ in $X$ and $W_{(x,y)}$ an open neighborhood of $y$ in $Y$. Then $\{W_{(x,y)}\}_{y\in Y}$ forms an open cover of $Y$, since $Y$ is compact, we can take a finite subcover $\{W_{y_{1}},\dots,W_{y_{n}}\}$ of $Y$. Then $V=\bigcap_{i=1}^{n}V_{(x,y_{i})}$ is an open neighborhood of $x$ in $X$ and $$V\times Y=V\times\left(\bigcup_{i=1}^{n}W_{y_{i}}\right)=\bigcup_{i=1}^{n}\left(V\times W_{y_{i}}\right)\subset U.$$ $\square$
+
+> [!corollary]
+> Any finite [[Constructions on Topological Spaces#^e08e6f|disjoint union]], [[Constructions on Topological Spaces#^d57887|quotient]], or finite [[Constructions on Topological Spaces#^fbf303|product]] of [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact spaces]] is compact.
+
+*Proof*  Finite disjoint unions of compact spaces are compact since any open cover of the union is an open cover of each component; The quotient of a compact space is compact since [[Compactness of Topological Space#^1075ec|the continuous image of any compact space is compact]]; To show finite product of compact spaces is compact, it suffices to only consider the product of two compact spaces, say $X\times Y$. Suppose $\{U_{i}\}_{i\in I}$ is an open cover of $X\times Y$, then for any $x\in X$, there is a subcover $\{U_{i}\}_{i\in I_{x}}$ that covers $\{x\}\times Y$, which is compact. So we can pick a finite subcover, $\{U_{i}\}_{i\in J_{x}}$ where $J_{x}\subset I_{x}$ is a finite index set. By the tube lemma, we can enlarge $\{x\}\times Y$ to a tube $V_{x}\times Y$ that is also covered by $\{U_{i}\}_{i\in J_{x}}$. Now $\{V_{x}\}_{x\in X}$ is an open cover of $X$, so we can pick a finite subcover $\{V_{x_{i}}\}_{i=1}^{n}$, then $\{U_{i}\mid i\in \cup_{k=1}^{n} J_{x_{k}}\}$ is a finite subcover of $X\times Y$. $\square$
+
+## Tychonoff's Theorem
+
+We have just showed that any finite product of compact spaces is compact. However, this is true even for infinite products if we assume the axiom of choice. This is known as *Tychonoff's theorem*.
+
+> [!theorem] Tychonoff's Theorem
+> The product of any collection of compact topological spaces is compact with respect to the product topology.
+
+To prove this theorem, we need an alternative characterization of compactness in terms of closed sets:
+
+> [!definition] Finite Intersection Property
+> A collection of subsets of a set $X$ is said to have the *finite intersection property (FIP)* if the intersection of any finite subcollection is nonempty.
+> 
+
+> [!proposition]
+> A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact]] if and only if every collection of closed subsets of $X$ with the finite intersection property has a nonempty intersection.
+
+*Proof*  We prove that $X$ is compact iff any collection of closed sets with empty intersection has a finite subcollection with empty intersection. Note that if $\{U_{i}\}_{i\in I}$ is an open cover of $X$, then it has a finite subcover if and only if $\{U_{i}^{c}\}_{i\in I}$ has a finite subcollection with empty intersection. This finishes the proof. $\square$
+
+## Lindelöf Spaces
+
+There is a slightly weaker notion of compactness called Lindelöf spaces, which is defined as follows:
+
+> [!definition] Lindelöf Space
+> A topological space $X$ is called a *Lindelöf space* if every open cover of $X$ has a countable subcover. ^concept-871f5f6137af
+
+> [!proposition]
+> A [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]] space is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-871f5f6137af|Lindelöf]].
+> 
+
+*Proof*  Let $\mathcal{B}$ be a countable basis for the topology of $X$. Let $\mathcal{U}=\{U_{\alpha}\}_{\alpha\in \Lambda}$ be an open cover of $X$. For each $x \in X$, there exists $U_x \in \mathcal{U}$ such that $x \in U_x$. Since $\mathcal{B}$ is a basis, there exists $B_x \in \mathcal{B}$ such that $x \in B_x \subseteq U_x$. The collection $\{B_{x} : x \in X\}$ is an open cover of $X$ consisting of elements from the countable basis $\mathcal{B}$. Since $\mathcal{B}$ is countable, $\{B_{x} : x \in X\}$ is countable. Now, for each $B_x$, we can choose the corresponding $U_x \in \mathcal{U}$ such that $B_x \subseteq U_x$. The collection $\{U_x : x \in X\}$ is a countable subcollection of $\mathcal{U}$ that covers $X$. Therefore, $X$ is Lindelöf. $\square$ ^40d004
+
+> [!remark]
+> The proof above utilized countable axiom of choice.
+
+## Sequential and Limit Point Compactness
+
+> [!definition] Limit Point Compactness
+> A topological space $X$ is called *limit point compact* if every infinite subset of $X$ has a limit point in $X$. ^concept-c564d7124948
+
+> [!lemma]
+> Every [[Compactness of Topological Space#^da2511|compact]] space is limit point compact.
+
+*Proof*  Suppose $X$ is compact, and $A\subset X$ is infinite, and has no limit points. Then for each $x\in A$, there exists an open neighborhood $U_x$ of $x$ such that $U_{x}\cap A=\{x\}$, and for each $x\in X\setminus A$, there exists an open neighborhood $U_x$ of $x$ such that $U_{x}\cap A=\emptyset$. Then $\{U_{x}\}_{x\in X}$ is an open cover of $X$, but it does not have a finite subcover because every $U_{x}$ for $x\in A$ is needed to cover $A$. This contradicts the compactness of $X$. $\square$
+
+>[!definition] Sequential Compactness
+>Let $X$ be a topological space and $A\subset X$. We say that $A$ is *sequentially compact* if every sequence in $A$ has a subsequence converges to a point in $A$. ^concept-61051ddd6c98
+
+> [!lemma]
+> Suppose $X$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-c564d7124948|limit point compact]], [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-b7c77a3b39fa|first-countable]] and [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]], then $X$ is sequentially compact.
+> 
+
+*Proof*  Suppose $(x_{n})_{n=1}^{\infty}$ is a sequence in $X$. If $(x_{n})_{n=1}^{\infty}$ is eventually constant, then it converges to the constant value. Otherwise, it is an infinite set in $X$, and it has a limit point $x\in X$. Since $X$ is first-countable, we can pick a nested countable neighborhood basis at $x$, say, $N_{1}\supset N_{2} \supset \cdots$. Then we can define a convergent subsequence $(x_{{k_{n}}})_{n=1}^{\infty}$ recursively as follows: pick $x_{k_{1}}$ as the point in $N_{1}\cap (x_{n})_{n=1}^{\infty} \setminus \{x\}$; assume all $\{x_{k_{1}},\dots,x_{k_{n}}\}$ have been chosen, then by the [[Separation and Hausdorff Spaces#^98cd3e|super Hausdorff lemma]], there exists an open neighbourhood $W_{n}$ of $x$ not intersecting $\{x_{1},\dots,x_{k_{n}}\}$. As $N_{1}\supset N_{2} \supset \cdots$ is a neighborhood basis, $N_{m_{n}}\subset W_{n}$ for some $m_{n}$, then we pick $x_{k_{n+1}}$ as the point in $N_{m_{n}}\cap (x_{n})_{n=1}^{\infty} \setminus \{x\}$. Then by our construction, we have $x_{k_{n}}\to x$ as $n\to \infty$. $\square$
+
+> [!remark]-
+> Here, we utilized Hausdorffness to construct a subsequence (i.e., we need to ensure that the subindex $k_{n+1}>k_{n}$ for all $n$), and first-countability to ensure the subsequence converges.
+> 
+
+> [!lemma]
+> If $X$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-61051ddd6c98|sequentially compact]], and [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]], then $X$ is compact.
+> 
+
+*Proof*  Since $X$ is second-countable, it is Lindelöf, so it suffices to show that any countable open cover $\{U_{i}\}_{i\in\mathbb{N}}$ of $X$ admits a finite cover. For the sake of contradiction, suppose $X$ is not compact, then any finite subcollection does not cover the whole space, so we can pick $x_{i}\in X\setminus \bigcup_{j=1}^{i}U_{j}$ for each $i$, and $(x_{i})_{i=1}^{\infty}$ is a sequence in $X$, which has convergent subsequence, say, $x_{k_{i}} \to x$ as $i\to \infty$. Suppose $x\in U_{m}$ for some $m\in \mathbb{N}$, then there exists an integer $N$ such that $x_{k_{i}}\in U_{m}$ for all $i\geq N$. However, for sufficiently large $i$ such that $k_{i}>m$, we have $x_{k_{i}}\in X\setminus U_{m}$, which is a contradiction. $\square$
+
+In summary, the above lemmas tell us immediately that
+
+> [!theorem]
+> Compactness, limit point compactness, and sequential compactness are equivalent for metric spaces and second-countable Hausdorff spaces.
+> 
+
+## Local Compactness
+
+> [!definition] Precompactness
+> A subset $A$ of a topological space $X$ is *precompact* if its closure $\overline{A}$ is compact.
+> 
+
+> [!definition] Local Compactness
+> A topological space $X$ is *locally compact* if every point $x\in X$ has a compact neighbourhood. ^concept-0adb622702af
+
+> [!proposition]
+> Every [[Mathematics/Topology/General Topology/Compactness of Topological Space#^da2511|compact space]] is locally compact.
+> 
+
+*Proof*  This is clear because the whole space is a compact neighbourhood of every point. $\square$
+
+> [!proposition]
+> For a [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff space]], the followings are equivalent:
+> 1. $X$ is locally compact;
+> 2. Every point $x\in X$ has a precompact neighbourhood;
+> 3. $X$ has a basis of precompact open sets.
+> $\quad$
+
+*Proof*  3 $\Rightarrow$ 2 $\Rightarrow$ 1 is obvious. It remains to show 1 $\Rightarrow$ 3. Suppose $X$ is locally compact and Hausdorff, then for any $x\in X$ and an open neighborhood $U$ of $x$, note that $x$ has a compact neighborhood $K$, let $V:=U\cap K^{\circ}$. Then $V$ is an open neighborhood of $x$, and $\overline{V}=\overline{U\cap K^{\circ}}\subset \overline{U}\cap \overline{K^{\circ}}=\overline{U}\cap K$ is compact (ref. [[Compactness of Topological Space#^f5bb06|theorem]] and [[Compactness of Topological Space#^20b0cb|corollary]]), where the last equality holds because Hausdorffness implies that $K$ is closed. $\square$
+
+So every locally compact Hausdorff space has a basis of precompact open sets. It turns out that this is even stronger:
+
+> [!lemma]
+> Let $X$ be locally compact Hausdorff. Given any neighborhood $U$ of $x \in X$, there exists a precomact neighborhood $V$ of $x$ with $\overline{V} \subset U$.
+> 
+
+## Compactly Generated Spaces
+
+> [!definition] Proper Map & Compactly Generated Space
+> A continuous map $f\colon X \to Y$ of topological spaces is *proper* if the preiamge of every compact set is compact.
+> A topological space $X$ is *compactly generated* if 
+> $$A\subset X \text{ is closed} \iff A\cap K \text{ is closed in } K \text{ for all compact } K\subset X. $$ ^concept-f338be9bfa88
+
+<u><b>e.g.</b></u>  [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-b7c77a3b39fa|First countable]] spaces and [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0adb622702af|locally compact]] spaces are compactly generated. Note that $\Rightarrow$ is straightforward by definition of the [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]]. For each of the cases, we only need to show the converse. Suppose $X$ is first countable, and $A\cap K$ is closed in $K$ for every compact $K$. As $X$ is first countable, to show $A$ is closed in $X$, we show that any convergent sequence in $A$ has its limit in $A$. Note that any convergent sequence in $A$ together its limit $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$ is a compact set in $X$, so its intersection with $A$ is closed in $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$. But the only nonempty closed subset in $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$ is the whole $\{x_{n}\}_{n=1}^{\infty}\cup\{x\}$, it follows that $x\in A$, so $A$ is closed.
+Now suppose $X$ is locally compact, and $A\cap K$ is closed in $K$ for every compact $K$. For the sake of contradiction, assume $A$ is not closed in $X$ and $x$ is a limit point of $A$ that is not in $A$. Consider a compact neighbourhood $K$ of $x$, then $K\cap A$ is closed in $K$, say $K\cap A=C\cap K$ for some closed set $C\subset X$. Then $K^{\circ}\setminus C=K^{\circ} \setminus (K\cap A)$ is some open neighborhood containing $x$, but not any point in $a$, contradicting the fact that $x$ is a limit point.
+
+> [!lemma] Proper Closed Map Lemma
+> If $f \colon X \to Y$ is a proper map and $Y$ is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-f338be9bfa88|compactly generated]] [[Mathematics/Topology/General Topology/Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]], then $f$ is a [[Mathematics/Topology/General Topology/Continuous Maps on Topological Spaces#^cd295d|closed map]].
+> 
+
+*Proof*  For any closed set $C\subset X$, if $K ⊂Y$ is compact, then $C\cap f^{-1}(K)$ is compact, so $f (C \cap f^{−1}(K)) = f (C) \cap K$ is compact and therefore closed in $K$ (because $Y$ is Hausdorff). Since this holds for every compact $K$, we conclude $f(C)$ is closed by compact generation of $Y$. $\square$
+
+## Paracompactness
+
+> [!definition] Paracompact
+> 
+
+
+
+## References and Other Resources
+- [Morphocular, The Concept So Much of Modern Math is Built On](https://www.youtube.com/watch?v=td7Nz9ATyWY)

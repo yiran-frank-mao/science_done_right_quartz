@@ -1,0 +1,6 @@
+> [!definition] Boltzmann Machine
+> A Boltzmann machine is a [[Thermodynamic System#^f38770|thermodynamic system]] $(\{0,1\}^{N}, E, 1)$, which has $N$ binary units as its microstates, with each state is a vector $$\mathbf{s}=(s_{1},s_{2},\dots,s_{N}),\quad s_{i}\in\{0,1\}.$$
+> Its energy function is given by $$E(\mathbf{s})=-\sum_{1\leq i<j\leq N}w_{ij}s_{i}s_{j}-\sum_{i=1}^{N}\theta_{i}s_i,$$where $w_{ij}\in\R$ are called symmetric weights, and $\theta_{i}\in\R$ are biases.
+
+> [!definition] Restricted Boltzmann Machine
+> A restricted Boltzmann machine is a special case of a Boltzmann machine that imposes a bipartite structure on the units. It is represented as $(\{0,1\}^{N+M}, E, 1)$, where $N$ and $M$ denote the number of visible and hidden units, respectively. The parameters of $E$ satisfy the constraint $w_{ij} = 0$ for all $(i,j) \in \{1,2,\dots,N\}^{2} \cup \{N+1,N+2,\dots,M\}^{2}$, ensuring no intra-layer connections. We can explicitly write each state vector as  $$\mathbf{s}=(\mathbf{v},\mathbf{h})=(v_{1},v_{2},\dots v_{N}, h_{1},h_{2},\dots,h_{M}).$$Then energy function of can be written as$$E(\mathbf{v},\mathbf{h})=-\sum_{i,j}W_{ij}v_{i}h_{j}-\sum_{i}\theta_{i}v_{i}-\sum_{j}\eta_{j}h_{j},$$where $W_{ij}=w_{i(j+N)}\neq 0$, and $\theta_{i}$ and $\eta_{j}$ are the biases of visible and hidden units respectively.
