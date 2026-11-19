@@ -27,32 +27,46 @@
 
 **Prop**  <i><u>Universal Property of Abelianisation</u></i>
 
+
 > [!definition] Derived Series
 > The *derived series* of a [[Groups, Order and Subgroups#^6e0960|group]] $G$ is a series of normal groups by repeatedly taking commutator subgroup: 
 > $$G^{(0)}:=G,\quad G^{(1)}:=[G,G],\quad G^{(n+1)}:=[G^{(n)},G^{(n)}].$$
 > Thus $G\triangleright G^{(1)}\triangleright G^{(2)}\triangleright\cdots$. 
 > A group $G$ is *solvable* if its derived series reaches the trivial group after finitely many steps. ^57e861
 
-<u><b>e.g.</b></u>  
-- The smallest non-solvable group is the [[Permutations and Symmetric Groups#^a33b58|alternating group]] $A_{5}$, and [[Permutations and Symmetric Groups#^7661e7|any alternating group $A_{n}$ with $n\geq5$ is non-solvable]].
-- Any [[Groups, Order and Subgroups#^6d511a|abelian group]] is solvable.
-$\quad$
-
 > [!proposition] 
 > A [[Groups, Order and Subgroups#^6e0960|group]] $G$ is solvable iff there exists a finite sequence of normal subgroups:
 > $$\{e\}=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_k=G$$
 > such that each $G_{i}$ is normal in $G_{i+1}$, and each quotient $G_{i+1}/G_{i}$​ is [[Groups, Order and Subgroups#^6d511a|abelian]].
 
-> [!proposition]
-> If $G$ is solvable, any quotient of $G$ is solvable.
+*Proof*  It is clear that if $G$ is solvable, then 
+
+<u><b>e.g.</b></u>  
+- Any [[Groups, Order and Subgroups#^6d511a|abelian group]] is solvable.
+- The smallest non-solvable group is the [[Permutations and Symmetric Groups#^a33b58|alternating group]] $A_{5}$, and [[Permutations and Symmetric Groups#^7661e7|any alternating group $A_{n}$ with $n\geq5$ is non-solvable]].
+- $S_{4}$ is solvable: $0\triangleleft D_{4} \triangleleft A_{4} \triangleleft S_{4}$ (ref. ).
+$\quad$
 
 > [!proposition]
-> A simple solvable group must be cyclic of a prime order. 
-> 
-
-^b7e01e
+> A simple solvable group must be cyclic of a prime order.  ^b7e01e
 
 *Proof*  Suppose $G$ is both simple and solvable. Then $[G,G]$ can be either trivial or the whole group. But $[G,G]$ can not be $G$ because $G$ is solvable, so it is trivial. This means $G$ is abelian. Finally, note that any finite simple abelian group is cyclic with a prime order. $\square$
+
+> [!lemma]
+> Suppose $N$ is a normal subgroup of $G$. Then $[G,G]N/N=[G/N,G/N]$.
+
+*Proof*  First note that $N$ is normal
+
+> [!proposition]
+> If $G$ is solvable, any quotient of $G$ is solvable, and so do any subgroup of $G$.
+
+*Proof*  Suppose $N\triangleleft G$. We want to show that $G/N$ is also solvable. 
+
+> [!proposition]
+> Suppose $H\triangleleft G$ satisfies both $H$ and $G/H$ are solvable, then $G$ is solvable.
+> 
+
+*Proof*  
 
 > [!corollary]
 > Every nontrivial finite solvable group has a normal subgroup of prime index.
@@ -63,7 +77,6 @@ $\quad$
 > [!theorem] Feit–Thompson Theorem
 > Every finite group of odd order is [[Abelianisation of Groups#^57e861|solvable]].
 > 
-
 
 ## Centre
 
@@ -91,4 +104,7 @@ $\quad$
 > A [[Groups, Order and Subgroups#^6e0960|group]] $G$ is *nilpotent* if $C^{N}(G) = \{0\}$ for some $N\in\N$. ^f7e0b3
 > 
 
+> [!proposition] 
+> Every nilpotent group is solvable.
+> 
 

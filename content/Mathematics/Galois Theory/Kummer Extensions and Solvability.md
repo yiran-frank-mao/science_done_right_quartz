@@ -6,7 +6,7 @@
 > in which every $K_{i+1}/K_{i}$ is a pure extension. ^concept-d862b90db143
 
 > [!definition] Solvable Polynomials
-> Suppose $K$ is the splitting field of $f\in F[x]$. We say that $f$ is *solvable by radicals* if a radical extension is also an extension of $K$.
+> Suppose $K$ is the splitting field of $f\in F[x]$. We say that $f$ is *solvable (by radicals)* if a radical extension is also an extension of $K$.
 > 
 
 <u><b>e.g.</b></u>
@@ -19,6 +19,10 @@
 
 > [!theorem] Kummer Extensions
 > Let $F$ be a subfield of $\C$ that contains the $p$th root of unity $\zeta_{p}=e^{\frac{2\pi i}{p}}$, where $p$ is a prime number, and let $K/F$ be a Galois extension of degree $p$. Then $K$ is obtained by adjoining a $p$th root. In other words, $K$ is generated over $F$ by an element $\beta$, with $\beta^{p}$ in $F$.
+> 
+
+> [!proposition]
+> Suppose $f\in F[x]$ is solvable by radicals, then the Galois group of $f$ is a solvable group.
 > 
 
 

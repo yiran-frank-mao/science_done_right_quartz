@@ -56,6 +56,9 @@
 
 In other words, a normal extension never contains “only some” of the roots. If it contains one root, it contains the entire root set. The two definitions are equal because if $f\in F[x]$ is irreducible and has a root $\alpha\in K$, then $f$ is a scalar multiple of the minimal polynomial of $\alpha$ over $F$ by division with remainder.
 
+<u><b>e.g.</b></u>
+- Every quadratic extension $K/F$ is normal, because the minimal polynomial of any element in $K$ is quadratic, and a quadratic polynomial either has no roots or splits completely.
+
 Though normal extensions can be infinite, we are more interested in the finite extensions, which turn out to be just splitting fields:
 
 > [!proposition]
