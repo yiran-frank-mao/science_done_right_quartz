@@ -21,7 +21,7 @@ Suppose $M$ is a smooth manifold. If $\gamma\colon I\to M$ is a smooth curve, th
 Another good property of solutions to initial value problems is that they depend smoothly on the initial point:
 
 > [!proposition] Vector Fields Generate Local Flows
->  For any vector field $V\in\mathfrak{X}(M)$ and any $p\in M$, there exists a neighbourhood $U$ of $p$, such that if $\Phi\colon U\times I\to M$ satisfies $\Phi(x,t)$ is an integral curve of $V$ at $x\in U$, then $\Phi_{t}:=\Phi(-,t)$ is a [[Differential Calculus#^2d0ba0|local diffeomorphism]] for all $t$, and $$\Phi_{t}\circ \Phi_{s}=\Phi_{t+s},$$ whenever $t+s\in I$. ^58f6d4
+>  For any vector field $V\in\mathfrak{X}(M)$ and any $p\in M$, there exists a neighbourhood $U$ of $p$, such that if $\Phi\colon U\times I\to M$ satisfies $\Phi(x,t)$ is an integral curve of $V$ at $x\in U$, then $\Phi_{t}:=\Phi(-,t)$ is a [[Inverse Function Theorem#^2d0ba0|local diffeomorphism]] for all $t$, and $$\Phi_{t}\circ \Phi_{s}=\Phi_{t+s},$$ whenever $t+s\in I$. ^58f6d4
 
 ## Global Flows
 

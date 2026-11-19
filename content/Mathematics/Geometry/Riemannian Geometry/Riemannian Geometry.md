@@ -10,7 +10,7 @@ Riemannian geometry is the branch of differential geometry that studies smooth m
 [[The Levi-Civita Connection]]
 [[Riemannian Geodesics and Completeness]]
 [[Warped Products]]
-[[Conformal ]]
+[[Conformality]]
 
 ## More ...
 

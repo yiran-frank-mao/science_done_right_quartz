@@ -15,13 +15,15 @@ Differential Geometry is a fascinating field of mathematics that studies the geo
 [[Geodesic and Geodesic Curvature]]
 
 ### Geometry of Manifolds ^a3043b
-[[Differential Calculus]]
 [[Manifolds, Atlases and Smooth Structures]]
 [[Smooth Partitions of Unity]]
+[[Inverse Function Theorem]]
 [[Smooth Maps]]
 [[Tangent Vectors and Spaces]]
-[[Vector Bundles]]
+
 [[Vector Fields and Lie Algebra]]
+[[Vector Bundles]]
+
 [[Lie Groups]]
 [[Integral Curves and Flows]]
 [[Distributions and Foliations]]
@@ -32,7 +34,12 @@ Differential Geometry is a fascinating field of mathematics that studies the geo
 [[Connections]]
 
 ### Riemannian Geometry
-
+[[Riemannian Metrics]]
+[[Geodesics and Completeness]]
+[[Torsion and Curvature]]
+[[The Levi-Civita Connection]]
+[[Riemannian Geodesics and Completeness]]
+[[Warped Products]]
 
 ## More ...
 [[Hyperbolic Geometry]]
