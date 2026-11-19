@@ -11,6 +11,10 @@ completed: true
 > A subspace $\newcommand{\a}{\mathfrak{a}}\a$ of a [[Lie Algebra#^5007ba|Lie algebra]] $\newcommand{\g}{\mathfrak{g}}\g$ is an *ideal*, denoted $\a \triangleleft \g$, if $[\g, \a] \subseteq \a$. That is, for any $x \in \g$ and $y \in \a$, we have $[x, y] \in \a$.
 > If $\a\triangleleft\g$, then the quotient $\g/\a$ is well-defined, and $[x+\a,y+\a]:=[x,y]+\a$.
 
+> [!remark]
+> Any ideal $\a$ is a Lie subalgebra of $\g$, but not every Lie subalgebra is an ideal.
+> 
+
 <u><b>e.g.</b></u>
 1. For any homomorphism $\varphi\colon \g_1 \to \g_2$, the kernel $\ker(\varphi)$ is an ideal of $\g_1$.
 2. The [[Central Extensions of Lie Algebras#^e35973|center]] of $\g$, $Z(\g) = \{x \in \g \mid [x, y] = 0 \text{ for all } y \in \g\}$, is an ideal.

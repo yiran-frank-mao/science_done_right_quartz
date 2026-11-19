@@ -19,5 +19,7 @@ The concepts of isomorphism and Lie subalgebra are defined in a familiar way:
 > 
 
 > [!definition] Lie Subalgebra
-> A Lie subalgebra of a Lie algebra $L$ is a subspace $L' \subseteq L$ such that $[x,y] \in L'$ for all $x,y \in L'$.
+> A *Lie subalgebra* of a Lie algebra $L$ is a subspace $L' \subseteq L$ such that $[x,y] \in L'$ for all $x,y \in L'$.
+
+^concept-aa7826808de9
 

@@ -63,9 +63,7 @@ There exists a similar result for nilpotent Lie algebras:
 > 2. There exists a chain of ideals $$\mathfrak{g}=\mathfrak{a}_{1} \supset \mathfrak{a}_{2} \supset \cdots \supset \mathfrak{a}_{n}=(0)$$ such that $\mathfrak{a}_{i} / \mathfrak{a}_{i+1}$ is abelian.
 > 3. $[\mathfrak{g}, \mathfrak{g}]$ is [[Ideals, Simple and Semisimple Lie Algebras#^f7e0b3|nilpotent]].
 > 4. $\ad(\mathfrak{g}) \subset \operatorname{End}(\mathfrak{g})$ is solvable.
-> $\quad$
-
-^58b6d6
+> $\quad$ ^58b6d6
 
 *Proof*  $(1)\implies (2)$:
 Suppose $\g$ is soluble. Then there exists $n$ such that $D^{n}(\g)=(0)$. Let $\newcommand{\a}{\mathfrak{a}}\a_{j}=D^{j}(\g)$. Then we get a chain of ideals $$\g=\a{1} \supset \a{2} \supset \cdots \supset \a_{n}=(0),$$and each $\a_{i} / \a_{i+1}$ is abelian because by definition $\a_{i+1}=\left[\a_{i}, \a_{i}\right]$ is the commutator.

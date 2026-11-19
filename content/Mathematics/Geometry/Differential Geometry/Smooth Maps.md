@@ -54,6 +54,7 @@ $\quad$
 - A smooth curve $\gamma\colon I\to M$ is an immersion if and only if it has no stationary points, i.e., $\gamma'(t)\neq 0$ for all $t\in I$;
 - Projection map 
 - Composition of immersions is an immersion, and composition of submersions is a submersion.
+$\quad$
 
 > [!definition] Smooth Embedding
 > A smooth map $F\colon M \to N$ is an embedding if $F$ is a homeomorphism onto its image with the [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]], and for any charts $\varphi$ and $\eta$ for $M$ and $N$ respectively, $\eta\circ F\circ \varphi^{-1}$ has derivative of full rank. ^9d6e60
@@ -64,3 +65,5 @@ $\quad$
 
 > [!theorem] Regular Value Theorem
 > 
+
+## 

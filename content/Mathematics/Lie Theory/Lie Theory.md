@@ -35,8 +35,8 @@ Lie theory is the study of continuous symmetries through **Lie groups**—smooth
 [[Symplectic Group]]
 
 ### Other Concrete Infinite Dimensional Lie Algebras
-[[Diffeomorphisms of the Circle]]
+[[Witt Algebra and Virasoro Algebra]]
+
 
 ## Other Useful Resources
-
 [Vincent Bouchard, MAPH464 Lecture Notes](https://sites.ualberta.ca/~vbouchar/MAPH464/notes.html)
