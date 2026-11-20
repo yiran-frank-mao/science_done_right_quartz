@@ -57,7 +57,7 @@ $\quad$
 $\quad$
 
 > [!definition] Smooth Embedding
-> A smooth map $F\colon M \to N$ is an embedding if $F$ is a homeomorphism onto its image with the [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]], and for any charts $\varphi$ and $\eta$ for $M$ and $N$ respectively, $\eta\circ F\circ \varphi^{-1}$ has derivative of full rank. ^9d6e60
+> A smooth map $F\colon M \to N$ is an embedding if $F$ is a homeomorphism onto its image with the [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]], and for any charts $\varphi$ and $\eta$ for $M$ and $N$ respectively, $\eta\circ F\circ \varphi^{-1}$ has derivative of full rank. ^9d6e60
 
 > [!remark]
 > A smooth embedding is a topological embedding that is also an immersion.

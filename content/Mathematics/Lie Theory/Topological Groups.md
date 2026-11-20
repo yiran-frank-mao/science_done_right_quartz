@@ -16,7 +16,7 @@ completed: true
 - Nonzero complex numbers $\C^{\times}$ with multiplication is a topological group, $S^{1}\subset \C^{\times}$ is a topological subgroup with multiplication;
 - $n$-Torus $T^{n}=(S^{1})^{n}$ is a topological group with multiplication;
 - [[Linear Groups#^264ff5|General linear group]] $\mathrm{GL}_{n}(\R)$ is a topological group with matrix multiplication;
-- Any subgroup $A ≤ G$ of a topological group is a topological group with [[Mathematics/Topology/Algebraic Topology/Operations on Spaces#^a942da|subspace topology]];
+- Any subgroup $A ≤ G$ of a topological group is a topological group with [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^a942da|subspace topology]];
 - The (group) direct product $H \times G$ of topological groups is a topological group with [[Mathematics/Topology/General Topology/Constructions on Topological Spaces#^fbf303|product topology]].
 $\quad$
 
