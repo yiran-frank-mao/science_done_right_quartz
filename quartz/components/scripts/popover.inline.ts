@@ -96,11 +96,26 @@ async function mouseEnterHandler(
       const contents = await response.text()
       const html = p.parseFromString(contents, "text/html")
       normalizeRelativeURLs(html, targetUrl)
-      // prepend all IDs inside popovers to prevent duplicates
+      // Prefix IDs to avoid collisions with the main page.
+      const idMap = new Map<string, string>()
       html.querySelectorAll("[id]").forEach((el) => {
-        const targetID = `popover-internal-${el.id}`
-        el.id = targetID
+        const originalId = el.id
+        const newId = `popover-internal-${originalId}`
+        idMap.set(originalId, newId)
+        el.id = newId
       })
+
+      // Keep SVG glyph references pointing at their renamed definitions.
+      html.querySelectorAll("svg use").forEach((use) => {
+        for (const attr of ["href", "xlink:href"]) {
+          const ref = use.getAttribute(attr)
+          if (!ref?.startsWith("#")) continue
+
+          const newId = idMap.get(ref.slice(1))
+          if (newId) use.setAttribute(attr, `#${newId}`)
+        }
+      })
+
       const elts = [...html.getElementsByClassName("popover-hint")]
       if (elts.length === 0) return
 
