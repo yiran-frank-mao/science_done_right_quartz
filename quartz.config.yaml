@@ -41,6 +41,11 @@ configuration:
         tertiary: "#84a59d"
         highlight: rgba(143, 159, 169, 0.15)
         textHighlight: "#b3aa0288"
+  links:
+    markdownLinkResolution: shortest
+  contentIndex:
+    enableSiteMap: true
+    enableRSS: true
 plugins:
   - source: github:quartz-community/created-modified-date
     enabled: true
@@ -84,11 +89,6 @@ plugins:
     layout:
       position: right
       priority: 30
-  - source: github:quartz-community/crawl-links
-    enabled: true
-    options:
-      markdownLinkResolution: shortest
-    order: 60
   - source: github:quartz-community/description
     enabled: true
     order: 70
@@ -96,7 +96,17 @@ plugins:
     enabled: true
     options:
       renderEngine: "mathjax"
-      customMacros: { id: '\operatorname{id}', R: '\mathbb{R}', Q: '\mathbb{Q}', Z: '\mathbb{Z}', C: '\mathbb{C}', d: '\mathrm{d}', dd: '\,\d', pddf: ['\frac{\partial #1}{\partial #2}', 2] }
+      customMacros:
+        {
+          id: '\operatorname{id}',
+          R: '\mathbb{R}',
+          Q: '\mathbb{Q}',
+          Z: '\mathbb{Z}',
+          C: '\mathbb{C}',
+          d: '\mathrm{d}',
+          dd: '\,\d',
+          pddf: [ '\frac{\partial #1}{\partial #2}', 2 ]
+        }
       # mathJaxOptions:
       # loader:
       #   load: ['[tex]/newcommand', '[tex]/dsfont']
@@ -116,8 +126,6 @@ plugins:
   - source: github:quartz-community/roam
     enabled: false
     order: 92
-  - source: github:quartz-community/remove-draft
-    enabled: true
   - source: github:quartz-community/explicit-publish
     enabled: false
   - source: github:quartz-community/unlisted-pages
@@ -139,11 +147,6 @@ plugins:
       display: all
   - source: github:quartz-community/alias-redirects
     enabled: true
-  - source: github:quartz-community/content-index
-    enabled: true
-    options:
-      enableSiteMap: true
-      enableRSS: true
   - source: github:quartz-community/favicon
     enabled: true
   - source: github:quartz-community/og-image
@@ -260,8 +263,6 @@ plugins:
         - aliases
       excludedProperties: []
       hidePropertiesView: false
-      delimiters: ---
-      language: yaml
     order: 5
     layout:
       position: beforeBody
