@@ -17,7 +17,7 @@ updated: 2026-06-24
 > 
 
 >[!proposition] 
->Let $G$ be a group. Then
+>Let $G$ be a [[Mathematics/Group Theory/Groups, Order and Subgroups#^6e0960|group]]. Then
 >1. For any $a \in G$, the inverse is unique and denoted $a^{-1}$.
 >2. For any $a \in G$, $(a^{-1})^{-1} = a$.
 >3. $(ab)^{-1} = b^{-1}a^{-1}$.
@@ -51,7 +51,7 @@ $\square$
 > ^f826be
 
 > [!proposition] Laws of Exponents
-> Let $G$ be a group, let $a, b ∈ G$ , and let $m$ and $n$ be integers. Then
+> Let $G$ be a [[Mathematics/Group Theory/Groups, Order and Subgroups#^6e0960|group]], let $a, b ∈ G$ , and let $m$ and $n$ be integers. Then
 > 1. If $a$ and $b$ commute, then $(ab)^n = a^nb^n$.
 > 2. $a^ma^n=a^{m+n}$.
 > 3. $(a^n)^m = a^{mn}$.
