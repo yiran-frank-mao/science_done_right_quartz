@@ -142,7 +142,7 @@ In summary, the above lemmas tell us immediately that
 > 1. $X$ is locally compact;
 > 2. Every point $x\in X$ has a precompact neighbourhood;
 > 3. $X$ has a basis of precompact open sets.
-> $\quad$
+> $\quad$ ^99bdc9
 
 *Proof*  3 $\Rightarrow$ 2 $\Rightarrow$ 1 is obvious. It remains to show 1 $\Rightarrow$ 3. Suppose $X$ is locally compact and Hausdorff, then for any $x\in X$ and an open neighborhood $U$ of $x$, note that $x$ has a compact neighborhood $K$, let $V:=U\cap K^{\circ}$. Then $V$ is an open neighborhood of $x$, and $\overline{V}=\overline{U\cap K^{\circ}}\subset \overline{U}\cap \overline{K^{\circ}}=\overline{U}\cap K$ is compact (ref. [[Compactness of Topological Space#^f5bb06|theorem]] and [[Compactness of Topological Space#^20b0cb|corollary]]), where the last equality holds because Hausdorffness implies that $K$ is closed. $\square$
 
@@ -171,9 +171,27 @@ Now suppose $X$ is locally compact, and $A\cap K$ is closed in $K$ for every com
 ## Paracompactness
 
 > [!definition] Paracompact
+> A topological space $X$ is *paracompact* if every open cover of $X$ has an open locally finite refinement. Here, a *refinement* of a cover $\{A_{i}\}_{i\in I}$ is another cover $\{B_{j}\}_{j\in J}$ so that each $B_{j}\subset A_{i}$ for some $A_{i}$.  ^concept-0e2c3a1243de
+
+> [!proposition]
+> Compact spaces are paracompact.
 > 
 
+*Proof*  A finite open subcover is always a locally finite refinement of any open cover. $\square$
 
+> [!definition] Compact Exhaustion
+> A *compact exhaustion* of a topological space $X$ is a sequence of compact subsets $\{K_n\}_{n=1}^{\infty}$ such that $K_n \subseteq K_{n+1}^{\circ}$ for all $n$ and $\bigcup_{n=1}^{\infty} K_n = X$. ^concept-9b8f7c3e0c5e
+> 
+
+> [!proposition]
+> If $X$ is second countable and locally compact Hausdorff, then $X$ admits a compact exhaustion.
+> 
+
+> [!proposition]
+> If $X$ admits a compact exhaustion, then $X$ is paracompact. In particular, any second countable locally compact Hausdorff space is paracompact.
+> 
+
+^60e960
 
 ## References and Other Resources
 - [Morphocular, The Concept So Much of Modern Math is Built On](https://www.youtube.com/watch?v=td7Nz9ATyWY)

@@ -10,19 +10,43 @@ A *manifold* itself is a purely topological object, but it is the most basic obj
 ## Topological Manifolds
 
 > [!definition] Locally Euclidean Space
-> A topological space $X$ is said to be *locally Euclidean of dimension $n$* if each point $x\in X$ has an open neighbourhood that is homeomorphic to an open subset of $\newcommand{\R}{\mathbb{R}}\R^{n}$.
-> 
+> A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] $X$ is said to be *locally Euclidean of dimension $n$* if each point $x\in X$ has an open neighbourhood that is homeomorphic to an open subset of $\newcommand{\R}{\mathbb{R}}\R^{n}$. ^concept-ce681672e441
 
 > [!remark]
 > In the definition, we can replace "homeomorphic to an open subset of $\R^{n}$" by either "homeomorphic to $\R^{n}$" or "homeomorphic to an open ball in $\R^{n}$" without changing the definition.
 > 
 
-e.g.  A topological space is locally Euclidean of dimension $0$ iff it is discrete.
+<u><b>e.g.</b></u>  A [[Mathematics/Topology/General Topology/Topological Spaces#^concept-39ce12df888c|topological space]] is locally Euclidean of dimension $0$ iff it is discrete.
 
 >[!definition] Manifold & Manifold with Boundary
-> An *$n$-dimensional topological manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]] locally Euclidean space of dimension $n$.
-> A *manifold with boundary* is a Hausdorff and second-countable topological space $M$ such that each point has a neighbourhood homeomorphic to an open subset of the closed half-space $H^{n}=\{(x_{1},\dots,x_{n})\in \R^{n}: x_{n}\geq 0\}$. The *boundary* of $M$ is the set of points that correspond to points in $H^{n}$ with $x_{n}=0$.
+> An *$n$-dimensional topological manifold*, or *$n$-manifold* (without boundary) for short, is a [[Separation and Hausdorff Spaces#^f7bcc8|Hausdorff]] and [[Mathematics/Topology/General Topology/Countability Axioms and Nets#^concept-5144b7350d14|second-countable]] [[Mathematics/Geometry/Differential Geometry/Manifolds, Atlases and Smooth Structures#^concept-ce681672e441|locally Euclidean space]] of dimension $n$.
+> A *manifold with boundary* is a Hausdorff and second-countable topological space $M$ such that each point has a neighbourhood homeomorphic to an open subset of the closed half-space $H^{n}=\{(x_{1},\dots,x_{n})\in \R^{n}: x_{n}\geq 0\}$. The *interior* of $M$, denoted $\operatorname{int}(M)$, is defined as
+> $$ \operatorname{int}(M) := \{p \in M : p \text{ has an open neighbourhood homeomorphic to an open set in } \R^{n}\}. $$
+> The *boundary* of $M$, denoted $\partial M$, is $\partial M=M\setminus \operatorname{int}(M)$.
 > A *closed manifold* is a [[Compactness of Topological Space#^da2511|compact]] manifold without boundary. ^3407e4
+
+> [!remark]
+> Note that this notion of "interior" and "boundary" is totally different from the notion of [[Closure, Interior and Boundary#^871863|"interior"]] and [[Closure, Interior and Boundary#^d3c02b|"boundary"]] in general topology. In fact, as manifolds are topological spaces themselves, their boundaries are always empty in the sense of general topology.
+
+> [!lemma]
+> If $p\in H^{n}$, then no open neighbourhood of  $p$ is homeomorphic to an open set in $\R^{n}$.
+> 
+
+This lemma seems obvious, but it turns out to be nontrivial. We will need homotopy or homology to prove it. The following proposition is a direct consequence of this lemma:
+
+> [!proposition]
+> Let $M$ be an $n$-manifold with boundary. Then
+> - $\partial M$ is an $(n-1)$-manifold without boundary;
+> - $\operatorname{int}(M)$ is an $n$-manifold without boundary;
+> - $M$ is a manifold without boundary if and only if $\partial M=\emptyset$.
+
+<u><b>e.g.</b></u>  The closed unit ball in $\R^{2}$ is a 2-manifold with boundary $S^{1}$.
+
+> [!proposition]
+> Every manifold, with or without boundary, is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0adb622702af|locally compact]], [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0e2c3a1243de|paracompact]], and locally [[Mathematics/Topology/General Topology/Connectedness and Paths#^630354|path-connected]].
+> 
+
+*Proof*  It is locally path-connected because it is locally Euclidean. It is locally compact because it is second-countable and locally Euclidean, thus has a countable basis of precompact sets (ref. [[Compactness of Topological Space#^99bdc9|proposition]]). [[Compactness of Topological Space#^60e960|It is paracompact because it is locally compact, Hausdorff, and second-countable]]. $\square$
 
 Clearly, on a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
 

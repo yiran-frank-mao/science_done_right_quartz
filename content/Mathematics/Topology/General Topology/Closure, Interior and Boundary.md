@@ -30,6 +30,8 @@
 >[!definition] Boundary
 >The *boundary* $\partial H$ of a set $H\subset X$ is the set of all points $x$ with the property that every neighbourhood of $x$ meets both $H$ and its complement: $$ \partial H=\left\{x\in X\mid \text{ $U$ is open and $x\in U$ $\implies$  $U\cap H\neq \emptyset$ and $U\cap(T\setminus H)\neq\emptyset$}\right\}$$
 
+^d3c02b
+
 >[!theorem] 
 > Let $(X,τ)$ be a topological space and $A ⊂ X$. Then $\partial A =\bar{A} ∩\overline{A^{c}}$ and $\bar{A}=A\cup \partial A$.
 
