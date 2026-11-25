@@ -27,3 +27,14 @@ In fact, $\zeta_{17}+\zeta_{17}^4+\zeta_{17}^{13}+\zeta_{17}^{16}$ has minimal p
 > A number $x \in \C$ is constructible if and only if its Galois group (the Galois group of the splitting field of its minimal polynomial) has order $2^{m}$ for some $m$.
 > 
 
+## Kummer Theory
+
+> [!theorem] Kummer Extensions
+> Let $F$ be a subfield of $\C$ that contains the $p$th root of unity $\zeta_{p}=e^{\frac{2\pi i}{p}}$, where $p$ is a prime number, and let $K/F$ be a Galois extension of degree $p$. Then $K$ is obtained by adjoining a $p$th root. In other words, $K$ is generated over $F$ by an element $\beta$, with $\beta^{p}$ in $F$.
+> 
+
+> [!proposition]
+> Suppose $f\in F[x]$ is solvable by radicals, then the Galois group of $f$ is a solvable group.
+> 
+
+

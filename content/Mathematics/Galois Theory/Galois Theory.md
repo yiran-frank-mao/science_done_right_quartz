@@ -11,8 +11,8 @@ Galois theory is a branch of abstract algebra that studies the symmetries of alg
 [[Symmetric Polynomials and Splitting Fields]]
 [[Fixed Fields and Galois Extensions]]
 [[Cubic and Quartic Equations]]
-[[Roots of Unity]]
-[[Kummer Extensions and Solvability]]
+[[Kummer Extensions and Roots of Unity]]
+[[Radical Extensions and Solvability]]
 
 ## Other Resources
 
