@@ -24,7 +24,7 @@ A key lemma in the proof is another form of the theorem:
 <u><b>e.g.</b></u>  If $V=F^{n}$ with a basis $\{e_{1}, e_{2}, \ldots, e_{n}\}$, then the standard full flag is given by $V_{i}=\mathrm{span}\{e_{1}, e_{2}, \ldots, e_{i}\}$ for $1 \leq i \leq n$.
 
 > [!theorem] Lie's Theorem
-> Let $\g$ be a [[Ideals, Simple and Semisimple Lie Algebras#^b49788|solvable]] Lie algebra over an [[Fields Construction#^5b9555|algebraically closed]] [[Ring, Field and Integral Domain#^575174|field]] $F$ of [[Ring Homomorphisms and Ideals#^2bfbd8|characteristic]] $0$. Let $V$ be a finite-dimensional [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] over $F$. If $\varphi\colon \g \to \mathfrak{gl}(V)$ is a [[Lie Algebra Representations#^df3ff7|representation]], then there exists a non-zero vector $v \in V$ which is a common eigenvector for all $x \in \g$. ^d489ea
+> Let $\g$ be a [[Ideals, Simple and Semisimple Lie Algebras#^b49788|solvable]] Lie algebra over an [[Field Constructions#^5b9555|algebraically closed]] [[Ring, Field and Integral Domain#^575174|field]] $F$ of [[Ring Homomorphisms and Ideals#^2bfbd8|characteristic]] $0$. Let $V$ be a finite-dimensional [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] over $F$. If $\varphi\colon \g \to \mathfrak{gl}(V)$ is a [[Lie Algebra Representations#^df3ff7|representation]], then there exists a non-zero vector $v \in V$ which is a common eigenvector for all $x \in \g$. ^d489ea
 
 *Proof*  We proceed by induction on $\dim(\mathfrak{g})$. For the base case, if $\dim(\mathfrak{g})=1$, then $\mathfrak{g}=F a$ for $a \in \mathfrak{g l}(V)$. Since $F$ is algebraically closed, $a$ has at least one eigenvalue, and therefore at least one eigenvector in $V$. That is, there exists some nonzero $v \in V$ such that $a \cdot v=\lambda v$. It follows that $\mathfrak{g} \cdot v \subset F v$. Now, assume $\dim(\mathfrak{g})>1$, and assume the theorem holds for all Lie algebras $\mathfrak{h}$ such that $\dim(\mathfrak{h})<\dim(\mathfrak{g})$. The proof follows the following steps:
 1. Find an ideal $\mathfrak{h} \triangleleft \mathfrak{g}$ with $\operatorname{codim}(\mathfrak{h})=1$ (i.e. $\dim(\mathfrak{g} / \mathfrak{h})=1$ ).
@@ -43,7 +43,7 @@ Step 4. Since $\operatorname{codim}(\mathfrak{h})=1$, we have that $\mathfrak{g}
 $\quad$
 
 > [!corollary]
-> Let $\mathfrak{g} \subset \mathfrak{g l}(V)$ be a solvable Lie algebra, over an [[Fields Construction#^5b9555|algebraically closed]] field $F$ of characteristic $0$. Then, $\mathfrak{g}$ stabilises a full flag $\left(V_{i}\right)_{i=0}^{n}$, i.e., $\mathfrak{g} \cdot V_{i} \subset V_{i}$ for all $0 \leq i \leq n$. ^e9c4ad
+> Let $\mathfrak{g} \subset \mathfrak{g l}(V)$ be a solvable Lie algebra, over an [[Field Constructions#^5b9555|algebraically closed]] field $F$ of characteristic $0$. Then, $\mathfrak{g}$ stabilises a full flag $\left(V_{i}\right)_{i=0}^{n}$, i.e., $\mathfrak{g} \cdot V_{i} \subset V_{i}$ for all $0 \leq i \leq n$. ^e9c4ad
 
 *Proof*  We'll prove this inductively on the dimension $n$ of $V$. In the base case where $\dim V=$ 0 , then $(\{0\})$ is a full flag. Trivially, $\mathfrak{g} \cdot\{0\} \subset\{0\}$, so the statement is true for dimension $n=0$.
 Suppose that the statement were true over all vector spaces of dimension $n-1$. Then in $V$ of dimension $n$, from the above theorem we conclude that there exists some $v \in V$ such that $\mathfrak{g} \cdot v \subset F v$; that is, $\mathfrak{g} \cdot(F v) \subset F v$.
@@ -53,12 +53,12 @@ Defining $V_{0}=\{0\}$, then $\left(V_{i}\right)_{i=0}^{n}$ is a full flag that 
 There exists a similar result for nilpotent Lie algebras:
 
 > [!corollary]
-> Let $\mathfrak{g} \subset \mathfrak{g l}(V)$ be a nilpotent Lie algebra, over an [[Fields Construction#^5b9555|algebraically closed]] field $F$ of characteristic $0$. Then, $\mathfrak{g} \cdot V_{i} \subset V_{i-1}$ for all $0 \leq i \leq n$. ^121a6c
+> Let $\mathfrak{g} \subset \mathfrak{g l}(V)$ be a nilpotent Lie algebra, over an [[Field Constructions#^5b9555|algebraically closed]] field $F$ of characteristic $0$. Then, $\mathfrak{g} \cdot V_{i} \subset V_{i-1}$ for all $0 \leq i \leq n$. ^121a6c
 
 ## Characterizations of Solvable Lie Algebras
 
 > [!corollary]
-> Let $\mathfrak{g}$ be a Lie algebra over an [[Fields Construction#^5b9555|algebraically closed]] field $F$ of characteristic $0$. Then the following are equivalent:
+> Let $\mathfrak{g}$ be a Lie algebra over an [[Field Constructions#^5b9555|algebraically closed]] field $F$ of characteristic $0$. Then the following are equivalent:
 > 1. $\mathfrak{g}$ is solvable.
 > 2. There exists a chain of ideals $$\mathfrak{g}=\mathfrak{a}_{1} \supset \mathfrak{a}_{2} \supset \cdots \supset \mathfrak{a}_{n}=(0)$$ such that $\mathfrak{a}_{i} / \mathfrak{a}_{i+1}$ is abelian.
 > 3. $[\mathfrak{g}, \mathfrak{g}]$ is [[Ideals, Simple and Semisimple Lie Algebras#^f7e0b3|nilpotent]].

@@ -182,7 +182,7 @@ Updates: [[Constructions on Categories]].
 - New page: [[The Exponential Map]].
 
 ## 28 July 2025
-- Updates: [[The Fundamental Group]], [[Connectedness and Paths]], [[Fields Construction]], [[Finite Fields]],[[Fields Construction]].
+- Updates: [[The Fundamental Group]], [[Connectedness and Paths]], [[Field Constructions]], [[Finite Fields]],[[Field Constructions]].
 
 ## 27 July 2025
 - Updates: [[Connectedness and Paths]], [[Normed and Banach Algebras]], [[The Homotopy Invariance Theorem]].

@@ -89,7 +89,7 @@ Suppose that for all $x, y \in F$ with $y > 0_F$, there is an $n \in \mathbb{N}$
 
 ## Complex Numbers
 
-Although $\R$ is good enough, it is not quite sufficient, for example, it is not [[Fields Construction#^5b9555|algebraically closed]]. So complex numbers come into play. There are mainly two ways to construct complex numbers. The first one is to define them as pairs of real numbers (See [[Complex Numbers#^a81924|here]]), and the second one is to define them as equivalence classes of polynomials (See [[Relations and Maximal Ideals#^a4b259|here]]). The first one is more intuitive (geometric), while the second one is more algebraic.
+Although $\R$ is good enough, it is not quite sufficient, for example, it is not [[Field Constructions#^5b9555|algebraically closed]]. So complex numbers come into play. There are mainly two ways to construct complex numbers. The first one is to define them as pairs of real numbers (See [[Complex Numbers#^a81924|here]]), and the second one is to define them as equivalence classes of polynomials (See [[Relations and Maximal Ideals#^a4b259|here]]). The first one is more intuitive (geometric), while the second one is more algebraic.
 
 Following convention, we take the first as our definition:
 

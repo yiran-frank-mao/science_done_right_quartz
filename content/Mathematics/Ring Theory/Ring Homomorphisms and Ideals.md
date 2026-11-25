@@ -58,7 +58,7 @@
 
 We interpret the quotient $R/(a_1,\dots,a_n)$ as imposing the relations $a_1=a_2=\dots=a_n=0$ or ‘killing’ the elements $a_i$. Killing the elements $a_i$ in installments and in various orders, or in one strike lead to the same result. That is, we have following commutative diagram:
 <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/imposing_relations.svg" alt="imposing_relations" style="width:25%;">
-A primary tool for constructing new rings is to take a ring $R$ and a ‘free’ variable and create the polynomial ring, and then quotient by a polynomial. We will see this further in [[Fields Construction#Adjoining Roots|field extensions by adjoining roots of polynomials.]]
+A primary tool for constructing new rings is to take a ring $R$ and a ‘free’ variable and create the polynomial ring, and then quotient by a polynomial. We will see this further in [[Field Constructions#Adjoining Roots|field extensions by adjoining roots of polynomials.]]
 
 <u><b>e.g.</b></u>  
 - If $f$ in $R[x]$ has no root in $R[x]$ we can form the quotient $R[x]/\left(f (x)\right)$ and $\overline{x} = x +(f (x))$ is a root of $f$.

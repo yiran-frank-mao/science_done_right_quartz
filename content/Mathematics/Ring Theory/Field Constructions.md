@@ -12,12 +12,12 @@
 *Proof*  Since, the principle ideal $(f)$ in $F[x]$ is maximal if and only if $f$ is irreducible, we have that $K$ is a field. The residue $\bar{x}$ of $x$ in $K$ is the equivalence class of $x$ modulo $(f)$. By definition, $\bar{x}$ is a root of $f(x)$ in $K$. $\square$
 
 > [!definition] Complete Splitting
-> A polynomial $f(x)\in F[x]$ is said to be completely split over a field $F$ if it can be factored into linear factors in $F[x]$.
+> A polynomial $f(x)\in F[x]$ is said to *completely split* over a field $F$ if it can be factored into linear factors in $F[x]$.
 
 > [!proposition]
 > Let $F$ be a field, and let $f(x)$ be a monic polynomial in $F[x]$ of positive degree. There exists a field extension $K$ of $F$ such that $f(x)$ splits completely in $K$. ^e95416
 
-*Proof*  We use induction on the degree of $f(x)$. If $\deg(f) = 1$, then $f(x)$ is linear and has a root in $F$. Thus, we can take $K = F$. Now, suppose that the statement holds for all polynomials of degree less than $n$, and let $f(x)$ be a monic polynomial of degree $n$. By [[Fields Construction#^f0d7bc|the lemma]], there exists a field extension $F_{1}$ of $F$ such that $f(x)$ has a root $\alpha$ in $F_{1}$. Suppose that $f(x)$ can be factored as $f(x) = g(x)f_{1}(x)$, where $g(x)$ is a irreducible polynomial with $g(\alpha)=0$. By the induction hypothesis, there exists a field extension $F_{2}$ such that $g(x)$ splits completely in $F_{2}$, and a field extension $F_{3}$ of $F_{1}$ such that $f_{1}(x)$ splits completely in $F_{3}$. Then, the polynomial $f(x)$ splits completely in the field extension $F_{2}\cup F_{3}$. $\square$
+*Proof*  We use induction on the degree of $f(x)$. If $\deg(f) = 1$, then $f(x)$ is linear and has a root in $F$. Thus, we can take $K = F$. Now, suppose that the statement holds for all polynomials of degree less than $n$, and let $f(x)$ be a monic polynomial of degree $n$. By [[Field Constructions#^f0d7bc|the lemma]], there exists a field extension $F_{1}$ of $F$ such that $f(x)$ has a root $\alpha$ in $F_{1}$. Suppose that $f(x)$ can be factored as $f(x) = g(x)f_{1}(x)$, where $g(x)$ is a irreducible polynomial with $g(\alpha)=0$. By the induction hypothesis, there exists a field extension $F_{2}$ such that $g(x)$ splits completely in $F_{2}$, and a field extension $F_{3}$ of $F_{1}$ such that $f_{1}(x)$ splits completely in $F_{3}$. Then, the polynomial $f(x)$ splits completely in the field extension $F_{2}\cup F_{3}$. $\square$
 
 > [!theorem] 
 > Let $f$ and $g$ be polynomials with coefficients in a field $F$, with $f \ne 0$, and let $K$ be an extension field of $F$. Then the following statements hold:
@@ -30,11 +30,12 @@
 
 *Proof*  We prove each statement one by one:
 1. In $F[x]$, suppose we have $g=fq+r$, this is also true in $K[x]$ since $F\subset K$. Meanwhile, division with remainder is unique, so we have $g=fq+r$ in $K[x]$ as well. Thus, the statement holds. $\square$
-2. Directly follows from (1). $\square$
-3. Let $d$ and $d'$ be the (monic) greatest common divisor of $f$ and $g$ in $F[x]$ and $K[x]$ respectively. Then, by definition, $d\mid d'$. Note that there exist polynomials $a$ and $b$ in $F[x]$ such that $d = af + bg$, and $d'$ divides both $f$ and $g$ in $K[x]$. Thus, $d' \mid d$. So $d$ and $d'$ are [[Factorization#^d98fbf|associates]] in $K[x]$. Since $d$ is monic, we have $d = d'$. $\square$
-4. Suppose that $f$ and $g$ are not relatively prime in $F[x]$. Then, there exists a non-zero greatest common divisor $d$ such that $d\mid f$ and $d\mid g$. By [[Fields Construction#^f0d7bc|the lemma]], there exists a field extension in which $d$ has a root, this will also be a root of $f$ and $g$. Conversely, if $f$ and $g$ have a common root $\alpha$ in $K$, then $x-\alpha$ is a common divisor of $f$ and $g$ in $K[x]$, so the greatest common divisor of $f$ and $g$ is not a unit in $F[x]$. Thus, $f$ and $g$ are not relatively prime in $F[x]$. $\square$
-5. If $f$ is irreducible, its only monic divisors in $F [x]$ are $1$ and $f$. (4) tells us that the greatest common divisor of $f$ and g in $F[x]$ isn’t $1$. Therefore it is $f$. $\square$
-$\quad$
+2. Directly follows from (1).
+3. Let $d$ and $d'$ be the (monic) greatest common divisor of $f$ and $g$ in $F[x]$ and $K[x]$ respectively. Then, by definition, $d\mid d'$. Note that there exist polynomials $a$ and $b$ in $F[x]$ such that $d = af + bg$, and $d'$ divides both $f$ and $g$ in $K[x]$. Thus, $d' \mid d$. So $d$ and $d'$ are [[Factorization#^d98fbf|associates]] in $K[x]$. Since $d$ is monic, we have $d = d'$.
+4. Suppose that $f$ and $g$ are not relatively prime in $F[x]$. Then, there exists a non-zero greatest common divisor $d$ such that $d\mid f$ and $d\mid g$. By [[Field Constructions#^f0d7bc|the lemma]], there exists a field extension in which $d$ has a root, this will also be a root of $f$ and $g$. Conversely, if $f$ and $g$ have a common root $\alpha$ in $K$, then $x-\alpha$ is a common divisor of $f$ and $g$ in $K[x]$, so the greatest common divisor of $f$ and $g$ is not a unit in $F[x]$. Thus, $f$ and $g$ are not relatively prime in $F[x]$. 
+5. If $f$ is irreducible, its only monic divisors in $F [x]$ are $1$ and $f$. (4) tells us that the greatest common divisor of $f$ and g in $F[x]$ isn’t $1$. Therefore it is $f$.
+
+$\square$
 
 ## Multiple Roots of a Polynomial
 
@@ -75,7 +76,7 @@ $\quad$
 > Let $K$ be a finite extension of a field $F$ of characteristic $0$. Then $K$ contains a primitive element $\alpha$ such that $K=F(\alpha)$. In other words, $K$ is a simple extension of $F$.
 > 
 
-*Proof*  Since $K$ is a finite extension, $K$ is generated by a finite set. In particular, a basis $\{\alpha_{1},\dots,\alpha_{k}\}$ will generate $K$ over $F$, say $K=F[\alpha_{1},\dots,\alpha_{k}]$. We apply induction on $k$. There is nothing to prove when $k=1$. For any $k>1$, assume the theorem holds for $k-1$, that is the extension field $L=F[\alpha_{1},\dots,\alpha_{k-1}]$. So $L$ is generated by a primitive element $\beta$, $L=F[\beta]$. Now, we have $K=F[\alpha_{1},\dots,\alpha_{k-1},\alpha_{k}]=F[\beta,\alpha_{k}]$. By [[Fields Construction#^f0d7bb|the lemma]], there exists a primitive element $\gamma$ such that $K=F[\gamma]$. Thus, the theorem holds. $\square$
+*Proof*  Since $K$ is a finite extension, $K$ is generated by a finite set. In particular, a basis $\{\alpha_{1},\dots,\alpha_{k}\}$ will generate $K$ over $F$, say $K=F[\alpha_{1},\dots,\alpha_{k}]$. We apply induction on $k$. There is nothing to prove when $k=1$. For any $k>1$, assume the theorem holds for $k-1$, that is the extension field $L=F[\alpha_{1},\dots,\alpha_{k-1}]$. So $L$ is generated by a primitive element $\beta$, $L=F[\beta]$. Now, we have $K=F[\alpha_{1},\dots,\alpha_{k-1},\alpha_{k}]=F[\beta,\alpha_{k}]$. By [[Field Constructions#^f0d7bb|the lemma]], there exists a primitive element $\gamma$ such that $K=F[\gamma]$. Thus, the theorem holds. $\square$
 
 ## The Fundamental Theorem of Algebra
 

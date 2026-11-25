@@ -1,7 +1,7 @@
 ## Decomposition
  
  > [!theorem] Jordan-Chevalley Decomposition
-> Let $V$ be a finite dimensional [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] over an [[Fields Construction#^5b9555|algebraically closed]] [[Ring, Field and Integral Domain#^575174|field]] $F$. Let $\newcommand{\End}{\operatorname{End}}x \in \End(V)$. Then:
+> Let $V$ be a finite dimensional [[Mathematics/Linear Algebra/Vector Spaces#^f4b63e|vector space]] over an [[Field Constructions#^5b9555|algebraically closed]] [[Ring, Field and Integral Domain#^575174|field]] $F$. Let $\newcommand{\End}{\operatorname{End}}x \in \End(V)$. Then:
 > 1. There exists a unique pair $x_{s}, x_{n} \in \operatorname{End}(V)$ such that:
 > 	- $x_{s}$ is semisimple (i.e., diagonalisable)
 > 	- $x_{n}$ is nilpotent
@@ -30,7 +30,7 @@ Finally, we must also show that $x_{s}$ and $x_{n}$ are unique. Suppose that $x=
 The above decomposition can be pulled back to any semisimple Lie algebras through the adjoint representation:
 
 > [!theorem] Abstract Jordan-Chevalley Decomposition
-> Let $\newcommand{\g}{\mathfrak{g}}\g$ be a [[Ideals, Simple and Semisimple Lie Algebras#^476cc0|semisimple]] Lie algebra over an [[Fields Construction#^5b9555|algebraically closed]] field. For $x \in \mathfrak{g}$ let $\operatorname{ad}_{x}=S+N$ be the Jordan decomposition of $\operatorname{ad}_{x}$ in $\operatorname{End}(\mathfrak{g})$. Then, there exist unique $s, n \in \mathfrak{g}$ such that $\operatorname{ad}_{s}=S$ and $\operatorname{ad}_{n}=N$. The decomposition $x=s+n$ in $\mathfrak{g}$ is called the *abstract Jordan-Chevalley decomposition*. ^245420
+> Let $\newcommand{\g}{\mathfrak{g}}\g$ be a [[Ideals, Simple and Semisimple Lie Algebras#^476cc0|semisimple]] Lie algebra over an [[Field Constructions#^5b9555|algebraically closed]] field. For $x \in \mathfrak{g}$ let $\operatorname{ad}_{x}=S+N$ be the Jordan decomposition of $\operatorname{ad}_{x}$ in $\operatorname{End}(\mathfrak{g})$. Then, there exist unique $s, n \in \mathfrak{g}$ such that $\operatorname{ad}_{s}=S$ and $\operatorname{ad}_{n}=N$. The decomposition $x=s+n$ in $\mathfrak{g}$ is called the *abstract Jordan-Chevalley decomposition*. ^245420
 
 > [!theorem]
 > For semisimple Lie algebras, the Jordan–Chevalley decomposition is preserved by all finite-dimensional representations. That is, if $\g$ is semisimple and $x \in \g$ is ad-semisimple, then $\rho(x) ∈ \End(V)$ is semisimple in any finite dimensional representation $(\rho,V)$ of $\g$. ^cd64a6

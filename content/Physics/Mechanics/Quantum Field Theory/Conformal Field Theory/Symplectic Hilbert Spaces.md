@@ -2,7 +2,7 @@
 
 In the finite-dimensional setting, a vector space admits a symplectic structure only if its dimension is even. For a separable Hilbert space, dimension can no longer be the relevant criterion. Instead, one constructs a symplectic Hilbert space from a compatible complex structure. This section draws heavily on [[Symplectic Hilbert Spaces#^b29f2c|Sec. 2, Ner90]]. However, Neretin's definition of a symplectic Hilbert space is not entirely clear, so we streamline it here:
 
-> [!definition] Symplectic Hilbert Space  
+> [!definition] Symplectic Hilbert Space
 > A *symplectic Hilbert space* is a real separable Hilbert space $\newcommand{\H}{\mathcal{H}}\H_{\R}$ with a compatible [[Almost Complex Structures#^5f4098|complex structure]] $J$. That is, a bounded linear operator $J\in B(\H_\R)$ such that 
 > $$J^{2}=-\id,\qquad J^*=-J,$$
 > where $J^{*}$ is the adjoint of $J$ with respect to the inner product $\langle\cdot,\cdot\rangle$.

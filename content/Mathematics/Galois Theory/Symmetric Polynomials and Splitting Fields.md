@@ -1,5 +1,14 @@
 > The more symmetric $\alpha$ is, the closer it is to the base field $F$.
 
+> [!definition] Symmetric Polynomials
+> A polynomial $f(x_{1},x_{2},\dots,x_{n})\in R[x_{1},\dots x_{n}]$ for some unital commutative ring $R$ is *symmetric* if it is unchanged when permuting the variables. That is, $f(x_{\sigma(1)},x_{\sigma(2)},\dots,x_{\sigma(n)})=f(x_{1},x_{2},\dots,x_{n})$ for all $\sigma\in S_{n}$.
+> 
+
+<u><b>e.g.</b></u>
+- $x_{1}^{3}+x_{2}^{3}-235$, $x_{1}x_{2}x_{3}-2x_{1}x_{2}-2x_{1}x_{3}-2x_{2}x_{3}$ are symmetric;
+- $x_{1}-x_{2}$, $x_{1}^4x_{2}^2+x_{3}^4x_{4}^2$ are not symmetric.
+$\quad$
+
 > [!theorem] Symmetric Functions Theorem
 > Every symmetric polynomial $f(x_{1},x_{2},\dots,x_{n})\in R[x_{1},\dots x_{n}]$ with coefficients in a ring $R$ can be written in a unique way as a polynomial in the elementary symmetric polynomials. ^fc4c03
 
@@ -13,7 +22,7 @@
 ## Splitting Fields
 
 > [!definition] Splitting Field
-> 
+> A *splitting field* of a polynomial $f\in F[x]$ is a field extension $K$ of $F$ such that no proper subfields of $K$ can make $f$ split completely.
 > 
 
 > [!proposition]
