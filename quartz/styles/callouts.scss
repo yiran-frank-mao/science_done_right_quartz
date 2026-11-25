@@ -2,6 +2,8 @@
 @use "sass:color";
 
 .callout {
+  margin: 1rem 0;
+  transition: border-color 0.2s ease;
   border: 1px solid var(--border);
   background-color: var(--bg, color-mix(in srgb, var(--color) 10%, transparent));
   border-radius: 5px;
@@ -157,6 +159,9 @@
     --callout-icon: var(--callout-icon-fold);
   }
 
+  // The title's text sits in .callout-title-inner, as in Obsidian; obsidian-flavored-markdown
+  // before 2.3.1 wrapped it in a <p>
+  & > .callout-title-inner,
   & > .callout-title-inner > p {
     color: var(--color);
     margin: 0;
@@ -181,6 +186,8 @@
 
   .callout-title-inner {
     font-weight: $semiBoldWeight;
+    // the line height the title had as a <p>
+    line-height: 1.6rem;
   }
 }
 
