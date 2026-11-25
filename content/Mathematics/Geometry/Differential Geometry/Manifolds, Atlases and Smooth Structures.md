@@ -1,6 +1,6 @@
 ---
 created: 2024-01-08
-updated: 2024-10-20
+updated: 2026-11-25
 tags:
   - differential-geometry
   - differential-topology
@@ -40,15 +40,17 @@ This lemma seems obvious, but it turns out to be nontrivial. We will need homoto
 > - $\operatorname{int}(M)$ is an $n$-manifold without boundary;
 > - $M$ is a manifold without boundary if and only if $\partial M=\emptyset$.
 
-<u><b>e.g.</b></u>  The closed unit ball in $\R^{2}$ is a 2-manifold with boundary $S^{1}$.
-
 > [!proposition]
-> Every manifold, with or without boundary, is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0adb622702af|locally compact]], [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0e2c3a1243de|paracompact]], and locally [[Mathematics/Topology/General Topology/Connectedness and Paths#^630354|path-connected]].
+> Every manifold, with or without boundary, is [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0adb622702af|locally compact]], [[Mathematics/Topology/General Topology/Compactness of Topological Space#^concept-0e2c3a1243de|paracompact]], and [[Mathematics/Topology/General Topology/Connectedness and Paths#^ba4f32|locally path-connected]].
 > 
 
 *Proof*  It is locally path-connected because it is locally Euclidean. It is locally compact because it is second-countable and locally Euclidean, thus has a countable basis of precompact sets (ref. [[Compactness of Topological Space#^99bdc9|proposition]]). [[Compactness of Topological Space#^60e960|It is paracompact because it is locally compact, Hausdorff, and second-countable]]. $\square$
 
-Clearly, on a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
+<u><b>e.g.</b></u>  
+- The closed unit ball in $\R^{2}$ is a 2-manifold with boundary $S^{1}$;
+- Recall that if $f \colon X \to Y$ is a continuous map of topological spaces, then $x \mapsto (x, f(x))$ defines a topological embedding $ϕ \colon X \to X \times Y$, giving a homeomorphism from $X$ onto the graph of $f$. Let $U ⊂\R^{n}$ be open and $f \colon U \to \R^{k}$ continuous. Then the graph $\Gamma( f ) ⊂\R^{n+k}$ is always a manifold homeomorphic to $U$; More generally, for any continuous map $f \colon M \to N$ of manifolds, we will see that $Γ( f ) ⊂M ×N$ is a (sub)manifold homeomorphic to $M$.
+
+On a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
 
 >[!definition] Chart and Atlas
 > A *chart* or *coordinate* for a manifold $M$ at some point $p\in M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $\varphi\colon U \to V$ where $U$ is an open neighbourhood of $p$ and $V$ is open in $\R^{n}$. We usually write it as a tuple $(U,\varphi)$.
@@ -56,7 +58,9 @@ Clearly, on a manifold, there might be different collections of homeomorphisms t
 
 <b><u>e.g.</u></b>
 - The interval $[a,b]$ is a manifold with boundary. The inclusion $x\colon [a,b] \to \R$ serves as a chart, and $\{x\}$ is an atlas.
-- The sphere $S^{n}=\{ x\in \R^{n+1}:\|x \| =1\}$ is a closed subset of Euclidean space, thus the topological requirements are satisfied. Define the following two maps: $$\varphi_{+}\colon S^{n}\setminus \{ N \}\to\R^{n}, \quad \varphi_{-}\colon S^{n}\setminus \{ S \} \to \R^{n}$$as follows: We write $x\in \R^{n+1}$ as $(y,z)$ where $y\in \R^{n}$ and $z\in \R$, we take $\varphi_{+}(y,z)=\frac{y}{1-z}$ and $\varphi_{-}(y,z)=\frac{y}{1+z}$. Then we have 
+- The sphere $S^{n}=\{ x\in \R^{n+1}:\|x \| =1\}$ is a closed subset of Euclidean space, thus the topological requirements are satisfied. For $1\leq i\leq n+1$, define charts $(U_{i}^{\pm}, \varphi_{i}^{\pm})$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$
+- 
+- Define the following two maps: $$\varphi_{+}\colon S^{n}\setminus \{ N \}\to\R^{n}, \quad \varphi_{-}\colon S^{n}\setminus \{ S \} \to \R^{n}$$as follows: We write $x\in \R^{n+1}$ as $(y,z)$ where $y\in \R^{n}$ and $z\in \R$, we take $\varphi_{+}(y,z)=\frac{y}{1-z}$ and $\varphi_{-}(y,z)=\frac{y}{1+z}$. Then we have 
 $\quad$
 
 ## Differentiable Manifolds
@@ -88,7 +92,7 @@ $\quad$
 <u><b>e.g.</b></u>  
 - On $\R^{n}$, the atlas $\newcommand{\id}{\operatorname{id}}\mathcal{A}=\{(\id_{\R^{n}},\R^{n})\}$ is a smooth maximal atlas making $\R^{n}$ a smooth manifold.
 - The 4-manifold [$E_{8}$](https://en.wikipedia.org/wiki/E8_manifold) is a topological manifold, but not smooth.
-- On $S^{n}\subset \R^{n+1}$, we can define an atlas of charts $(U_i^\pm, \varphi_i^\pm)$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$. This atlas is in fact smooth, which we can verify by computing the transition maps: $$\varphi_i^\pm \circ (\varphi_j^\pm)^{-1}(y_1, \ldots, y_n) = \left(y_1, \ldots, \widehat{y}_i, \ldots, \pm\sqrt{1 - |y|^2}, \ldots, y_n\right)$$ Since these transitions are smooth, the atlas determines a smooth structure.
+- On $S^{n}\subset \R^{n+1}$, we can define an atlas of charts $(U_{i}^{\pm}, \varphi_{i}^{\pm})$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$. This atlas is in fact smooth, which we can verify by computing the transition maps: $$\varphi_i^\pm \circ (\varphi_j^\pm)^{-1}(y_1, \ldots, y_n) = \left(y_1, \ldots, \widehat{y}_i, \ldots, \pm\sqrt{1 - |y|^2}, \ldots, y_n\right)$$ Since these transitions are smooth, the atlas determines a smooth structure.
   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/smooth_structure_of_S^2.svg" style="width:60%;"/>
 
 In fact, dimension 4 is particularly special and exotic in the theory of smooth manifolds, there are smooth 4-manifolds which are [[Isometries and Homeomorphisms#^85034b|homeomorphic]] but not diffeomorphic. We have the following theorem:

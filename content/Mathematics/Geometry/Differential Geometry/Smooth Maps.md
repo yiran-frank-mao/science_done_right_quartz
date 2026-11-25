@@ -32,12 +32,14 @@ $\quad$
 > A map $F\colon M\to N$ between smooth manifolds is smooth if and only if for every smooth function $f\colon N\to \R$, the precomposition $f\circ F$ is a smooth function on $M$. Equivalently, the pullback satisfies $F^{*}(C^{\infty}(N)) \subset C^{\infty}(M)$.
 > 
 
-## Further Classification of Smooth Maps
-
 > [!definition] Diffeomorphism
 > A map $F\colon M \to N$ between smooth manifolds is a *diffeomorphism* if it is smooth, and has a smooth inverse. 
 > $F$ is a *local diffeomorphism* about $x\in M$ if there is an open neighborhood $U$ of $x$ such that $F|_{U}$ is a diffeomorphism to an open subset of $N$. ^39ce42
 > 
+
+## Further Classification of Smooth Maps
+
+In calculus and real analysis, a large amount of information of a smooth function is included in its derivative. Similarly, we can classify smooth maps between smooth manifolds through their differentials.
 
 > [!definition] Rank
 > Suppose $F\colon M\to N$ is a smooth map between smooth manifolds, and $x\in M$. The *rank* of $F$ at $x$, denoted $\operatorname{rank}_{x}(F)$, is the rank of the differential $\newcommand{\d}{\mathrm{d}}\d_{x} F \colon T_{x}M \to T_{F(x)}N$. If $\operatorname{rank}_{x}(F)$ is constant for all $x\in M$, we say that $F$ has *constant rank*.

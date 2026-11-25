@@ -188,10 +188,7 @@ Now suppose $X$ is locally compact, and $A\cap K$ is closed in $K$ for every com
 > 
 
 > [!proposition]
-> If $X$ admits a compact exhaustion, then $X$ is paracompact. In particular, any second countable locally compact Hausdorff space is paracompact.
-> 
-
-^60e960
+> If $X$ admits a compact exhaustion, then $X$ is paracompact. In particular, any second countable locally compact Hausdorff space is paracompact. ^60e960
 
 ## References and Other Resources
 - [Morphocular, The Concept So Much of Modern Math is Built On](https://www.youtube.com/watch?v=td7Nz9ATyWY)
