@@ -1,6 +1,6 @@
 ---
 created: 2022-07-03
-updated: 2024-10-19
+updated: 2026-11-24
 completed: true
 title: Homepage
 ---
@@ -9,14 +9,11 @@ This project is continuously evolving and may continue to evolve indefinitely, w
 ## 🔥 Recent Updates
 
 [[The Semigroup of Annuli]]
-[[The Symplectic Hilbert Space]]
-[[Physics/Mechanics/Quantum Field Theory/Conformal Field Theory]]
-[[Physics/Mechanics/Quantum Field Theory/Topological Quantum Field Theory/Topological Quantum Field Theory]]
+[[Symplectic Hilbert Space]]
+[[Conformal Field Theory]]
+[[Topological Quantum Field Theory]]
 
 ## Contents
-- [[Mathematics|📐 Mathematics]]
-	- Mathematics is the spark that ignites physics' equations.
-- [[Physics|🔬 Physics]]
-	- Physics is the lens that reveals computer science' foundations.
-- [[Computer Science|🖥️ Computer Science]]
-	- Computer science is the code that transforms abstract thought into civilization's creations.
+- [[Mathematics|📐 Mathematics]] is the spark that ignites [[Physics|physics']] equations;
+- [[Physics|🔬 Physics]] is the lens that reveals [[Computer Science|computer science']] foundations;
+- [[Computer Science|🖥️ Computer Science]] is the code that transforms abstract thought into civilization's creations.
