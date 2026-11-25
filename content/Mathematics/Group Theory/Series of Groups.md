@@ -1,4 +1,13 @@
-Recall from the abelianisation section that we defined a derived series for groups.
+Recall from the [[Abelianisation of Groups|abelianisation section]] that we defined a [[Abelianisation of Groups#^57e861|derived series for groups]]:
+
+![[Abelianisation of Groups#^57e861]]
+
+Now in this page, we introduce other series of groups, which are also important in the study of group theory.
+
+> [!definition] Normal Series
+> 
+> 
+
 
 ## Composition Series
 
