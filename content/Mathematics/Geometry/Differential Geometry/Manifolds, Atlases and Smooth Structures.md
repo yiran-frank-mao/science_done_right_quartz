@@ -54,7 +54,7 @@ Now we see some examples of manifolds and constructions of new manifolds from ol
 - Recall that if $f \colon X \to Y$ is a continuous map of topological spaces, then $x \mapsto (x, f(x))$ defines a topological embedding $\phi \colon X \to X \times Y$, giving a homeomorphism from $X$ onto the graph of $f$. Let $U ⊂\R^{n}$ be open and $f \colon U \to \R^{k}$ continuous. Then the graph $\Gamma( f ) ⊂\R^{n+k}$ is always a manifold homeomorphic to $U$; More generally, for any continuous map $f \colon M \to N$ of manifolds, we will see that $Γ( f ) ⊂M ×N$ is a (sub)manifold homeomorphic to $M$;
 - If $M_{1}, \cdots , M_{k}$ are manifolds of dimensions $n_{1},\cdots, n_{k}$, then [[Constructions on Topological Spaces#^fbf303|the product]] $M_{1} \times \cdots \times M_{k}$ is a manifold of dimension $n_{1} +\cdots + n_{k}$. This is because the product of homeomorphisms is a homeomorphism. A concrete example is the torus $T^{2}=S^{1}\times S^{1}$, which is a 2-manifold;
 - Similar to [[Constructions on Topological Spaces#^b43761|attaching topological spaces]], we can glue two manifolds with boundary along homeomorphic boundary components to get a new manifold without boundary. Concretely, given a homeomorphism $f\colon \partial N \to \partial M$, since $\partial N$ is closed in $N$, we can form the attaching space $M\cup_{f}N$. With this setup, $M\cup_{f}N$ is a manifold (without boundary). Moreover, there are topological embeddings $\varphi \colon M \hookrightarrow M\cup_{f} N$ and $\eta \colon N \hookrightarrow M \cup_{f} N$ whose images are closed and satisfy: $\varphi(M) \cup \eta(N) = M\cup_{f} N$ and $\varphi(M) ∩\eta(N) = \varphi(\partial M) = \eta(\partial N)$.
-  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/gluing_manifolds_along_boundary.svg" style="width:60%;"/>
+  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/gluing_manifolds_along_boundary.svg" style="width:55%;"/>
 - A special case of gluing two manifolds along the boundary is the *double* of a manifold with boundary $M$, which is the manifold $D(M) = M \cup_{\text{id}} M$ obtained by gluing two copies of $M$ along the identity map on $\partial M$. For example, the double of the closed unit disk in $\R^{n}$ is homeomorphic to $S^{n}$.
 
 ## Differentiable Manifolds
@@ -67,25 +67,20 @@ Note that [[Manifolds, Atlases and Smooth Structures#^concept-ce681672e441|local
 
 <b><u>e.g.</u></b>
 - The interval $[a,b]$ is a manifold with boundary. The inclusion $x\colon [a,b] \to \R$ serves as a chart, and $\{x\}$ is an atlas.
-- The sphere $S^{n}=\{ x\in \R^{n+1}:\|x \| =1\}$ is a closed subset of Euclidean space, thus the topological requirements are satisfied. For $1\leq i\leq n+1$, define charts $(U_{i}^{\pm}, \varphi_{i}^{\pm})$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$
-- 
+- The sphere $S^{n}=\{ x\in \R^{n+1}:\|x \| =1\}$ is a closed subset of Euclidean space, thus the topological requirements are satisfied. For $1\leq i\leq n+1$, define charts $(U_{i}^{\pm}, \varphi_{i}^{\pm})$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$.
 - Define the following two maps: $$\varphi_{+}\colon S^{n}\setminus \{ N \}\to\R^{n}, \quad \varphi_{-}\colon S^{n}\setminus \{ S \} \to \R^{n}$$as follows: We write $x\in \R^{n+1}$ as $(y,z)$ where $y\in \R^{n}$ and $z\in \R$, we take $\varphi_{+}(y,z)=\frac{y}{1-z}$ and $\varphi_{-}(y,z)=\frac{y}{1+z}$. Then we have 
 
 
-> [!remark]
+> [!warning] 
 > Again, an atlas is an extra structure on a (topological) manifold! 
 > 
 
 A manifold can have many different atlases, this is against our spirit of geometry. One of the main goals of differential geometry is to study the geometrical properties that are independent of the choice of atlas^[a side note: this is also a spirit of physics. We won't like physics laws to be dependent on the coordinates we choose.]. So we need a definition that is independent of the coordinates used!
 
 > [!definition] Compatible Charts & Smooth Atlas
-> Two charts $(\varphi, U)$ and $(\eta, V)$ are *compatible* if $\varphi\circ \eta^{-1} \colon U \cap V \to U\cap V$ is smooth.
-> Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *smooth* if for every $\alpha$ and $\beta$ in $I$, the map $\varphi_{\beta}$ and $\varphi_{\alpha}$ are compatible.
+> Two charts $(\varphi, U)$ and $(\eta, V)$ are *compatible* if the *transition map* $\varphi\circ \eta^{-1} \colon U \cap V \to U\cap V$ is smooth.
+> Let $M$ be an $n$-dimensional manifold. An atlas $\mathcal{A}=\{\varphi_{\alpha}\colon U_{\alpha}\to V_{\alpha}|\alpha\in I\}$ for $M$ is *smooth* if for every charts in $\mathcal{A}$ are compatible with each other.
 > 
-
-<u><b>e.g.</b></u>
-- Consider the set $M=\R$ with the usual topology. $\mathcal{A}=\{ x\mapsto x\colon\R\to \R\}$ and $\mathcal{B}=\{ x \mapsto x^{3} \colon \R \to \R \}$ are both differentiable atlases. They are not compatible since the union $\{ x\mapsto x, x\mapsto x^{3} \}$ is not differentiable.
-$\quad$
 
 > [!definition] Compatible Atlases & Maximal Atlas
 > Two differentiable atlases $\mathcal{A}$ and $\mathcal{B}$ are *compatible* if their union is also a differentiable atlas.
@@ -103,19 +98,21 @@ $\quad$
 > 
 
 <u><b>e.g.</b></u>  
-- On $\R^{n}$, the atlas $\newcommand{\id}{\operatorname{id}}\mathcal{A}=\{(\id_{\R^{n}},\R^{n})\}$ is a smooth maximal atlas making $\R^{n}$ a smooth manifold.
-- The 4-manifold [$E_{8}$](https://en.wikipedia.org/wiki/E8_manifold) is a topological manifold, but not smooth.
-- On $S^{n}\subset \R^{n+1}$, we can define an atlas of charts $(U_{i}^{\pm}, \varphi_{i}^{\pm})$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$. This atlas is in fact smooth, which we can verify by computing the transition maps: $$\varphi_i^\pm \circ (\varphi_j^\pm)^{-1}(y_1, \ldots, y_n) = \left(y_1, \ldots, \widehat{y}_i, \ldots, \pm\sqrt{1 - |y|^2}, \ldots, y_n\right)$$ Since these transitions are smooth, the atlas determines a smooth structure.
+- We have seen that a $0$-manifold $M$ is just a countable discrete space. Each point $p \in M$ has a unique chart $\varphi_{p} \colon \{p\}\to \R^{0}=\{*\}$. The collection of such charts is smooth and maximal, so each $0$-manifold has a unique smooth structure;
+- On $\R^{n}$, the atlas $\newcommand{\id}{\operatorname{id}}\mathcal{A}=\{(\id_{\R^{n}},\R^{n})\}$ is a smooth (non-maximal) atlas making $\R^{n}$ a smooth manifold;
+- Consider the set $M=\R$ with the usual topology. $\mathcal{A}=\{ x\mapsto x\colon\R\to \R\}$ and $\mathcal{B}=\{ x \mapsto x^{3} \colon \R \to \R \}$ are both differentiable atlases. They are not compatible because $x\mapsto \sqrt[3]{x}$ is not smooth (its derivative is $1/3 x^{-2/3}$, which blows up at $0$).
+- Let $M$ be a smooth $n$–manifold with a maximal atlas $\mathcal{A}$. For any open subset $U\subset M$, we can define an atlas on $U$ by $\mathcal{A}_{U} := \{(\varphi, V) \in \mathcal{A} \mid V \subset U\}$. It’s easy to see this gives a maximal smooth atlas on $U$. Thus every open subset of $M$ naturally inherits a smooth structure, making it a open submanfold of $M$. ^2794bb
+- The 4-manifold [$E_{8}$](https://en.wikipedia.org/wiki/E8_manifold) is a topological manifold, but not smooth (i.e., there is no smooth structure).
+- On $S^{n}\subset \R^{n+1}$, we can define an atlas of charts $(U_{i}^{\pm}, \varphi_{i}^{\pm})$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$. This atlas is in fact smooth, which we can verify by computing the transition maps: $$\varphi_i^\pm \circ (\varphi_j^\pm)^{-1}(y_1, \ldots, y_n) = \left(y_1, \ldots, \widehat{y}_i, \ldots, \pm\sqrt{1 - |y|^2}, \ldots, y_n\right)$$ Since these transitions are smooth, the atlas determines a smooth structure. This is the *standard smooth structure* on $S^{n}$.
   <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/smooth_structure_of_S^2.svg" style="width:60%;"/>
+- The real projective space $\newcommand{\RP}{\mathbb{R}\text{P}}\RP^{n}$ is a smooth $n$-manifold with the smooth structure determined by the atlas $\{(U_{i}, \varphi_{i})\}_{i=0}^{n}$ where $$ U_{i}=\{[x] \in \RP^{n} \mid x\in\R^{n}, x_{i}\neq 0\},\qquad \varphi_{i}([x])=\left( \frac{x_{0}}{x_{i}}, \cdots, \widehat{\frac{x_{i}}{x_{i}}},\cdots, \frac{x_{n}}{x_{i}} \right). $$We can verify by computing the transition maps that this atlas is smooth: for $j\leq i$, $$\varphi
+  _{j}\circ \varphi_{i}^{-1} ([y]) = \left(\frac{y_{1}}{y_{j}}, \cdots, \widehat{\frac{y_{j}}{y_{j}}},\cdots, \frac{y_{i-1}}{y_j},\frac{1}{y_{j},}\frac{y_{i+1}}{y_j},\cdots, \frac{y_n}{y_j} \right). $$
+- If $M_{1}, \cdots, M_{k}$ are smooth manifolds, then their product $M_{1} \times \cdots \times M_{k}$ is a smooth manifold with the product smooth structure. This is because transition maps of the product of charts are the product of the transition maps of the charts, and the product of smooth maps is smooth. Thus the torus $T^{2}=S^{1}\times S^{1}$ is a smooth 2-manifold.
 
-In fact, dimension 4 is particularly special and exotic in the theory of smooth manifolds, there are smooth 4-manifolds which are [[Isometries and Homeomorphisms#^85034b|homeomorphic]] but not diffeomorphic. We have the following theorem:
+Dimension 4 is particularly special and exotic in the theory of smooth manifolds, there are smooth 4-manifolds which are [[Isometries and Homeomorphisms#^85034b|homeomorphic]] but not diffeomorphic. We have the following theorem:
 
 > [!theorem]
 > $\R^{n}$ for all $n\neq 4$ has a unique smooth structure up to diffeomorphism. $\R^{4}$ has uncountably many smooth structures.
-
-Although we haven't introduced the notion of a *diffeomorphism*, "up to diffeomorphism" is crucial here. In general, even on $\R$, the two smooth structures can be different. Let $M=(\R, \{\id_{\R}\})$
-
-## Constructions on Smooth Manifolds
 
 ## Submanifolds
 

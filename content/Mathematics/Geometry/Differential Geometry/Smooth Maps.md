@@ -16,7 +16,12 @@
 - The composition of smooth maps is smooth;
 - The inclusion map $S^{n}\hookrightarrow \R^{n+1}$ is smooth. We can take 
 - The quotient map $\pi\colon \newcommand{\P}{\mathbb{P}}\R^{n+1}\setminus \{0\}\to\R\P^{n}$ is smooth. Note that $\R\P^{n}\cong S^{n}/(-x\sim x)$
-$\quad$
+
+> [!lemma] Gluing Lemma for Smooth Maps (Smoothness is Local)
+> Let $f\colon M\to N$ be a function between smooth manifolds. Then $f$ is smooth iff each $p\in M$ has an open neighbourhood $U_{p}$ such that $f|_{U_{p}}$ is smooth^[Note that we have shown that [[Manifolds, Atlases and Smooth Structures#^2794bb|any open subset of a smoot manifold is a smooth submanifold]].].
+> 
+
+*Proof*  The "only if" part is clear. 
 
 > [!proposition]
 > A map $f\colon M\to \R^{n}$ is smooth if and only if each component function $f_{i}$ is smooth.
