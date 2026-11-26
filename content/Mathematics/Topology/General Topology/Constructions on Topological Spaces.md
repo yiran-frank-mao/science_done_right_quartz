@@ -119,7 +119,7 @@ Note that quotient spaces do **not** behave well with respect to most topologica
 > [!definition] Attaching Space
 > Let $A$ be a closed subspace of $Y$ and $f \colon A \to X$ a continuous map. The *attaching space* formed by *attaching $Y$ to $X$ along $f$*  is the quotient
 > $$ X\cup_{f}Y:= (X \sqcup Y)/\sim \quad \text{ where } a\sim f(a) \text{ for all } a\in A.$$
-> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/attaching_space.svg" style="width:72%;"/>
+> <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/attaching_space.svg" style="width:72%;"/> ^b43761
 
 > [!remark]
 > If $A=\emptyset$, this is just the disjoint union $X\sqcup Y$.

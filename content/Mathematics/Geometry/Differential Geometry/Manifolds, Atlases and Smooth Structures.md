@@ -36,6 +36,7 @@ This lemma seems obvious, but it turns out to be nontrivial. We will need homoto
 
 > [!proposition]
 > Let $M$ be an $n$-manifold with boundary. Then
+> - $\partial M\subset M$ is closed;
 > - $\partial M$ is an $(n-1)$-manifold without boundary;
 > - $\operatorname{int}(M)$ is an $n$-manifold without boundary;
 > - $M$ is a manifold without boundary if and only if $\partial M=\emptyset$.
@@ -46,11 +47,19 @@ This lemma seems obvious, but it turns out to be nontrivial. We will need homoto
 
 *Proof*  It is locally path-connected because it is locally Euclidean. It is locally compact because it is second-countable and locally Euclidean, thus has a countable basis of precompact sets (ref. [[Compactness of Topological Space#^99bdc9|proposition]]). [[Compactness of Topological Space#^60e960|It is paracompact because it is locally compact, Hausdorff, and second-countable]]. $\square$
 
+Now we see some examples of manifolds and constructions of new manifolds from old ones:
+
 <u><b>e.g.</b></u>  
 - The closed unit ball in $\R^{2}$ is a 2-manifold with boundary $S^{1}$;
-- Recall that if $f \colon X \to Y$ is a continuous map of topological spaces, then $x \mapsto (x, f(x))$ defines a topological embedding $ϕ \colon X \to X \times Y$, giving a homeomorphism from $X$ onto the graph of $f$. Let $U ⊂\R^{n}$ be open and $f \colon U \to \R^{k}$ continuous. Then the graph $\Gamma( f ) ⊂\R^{n+k}$ is always a manifold homeomorphic to $U$; More generally, for any continuous map $f \colon M \to N$ of manifolds, we will see that $Γ( f ) ⊂M ×N$ is a (sub)manifold homeomorphic to $M$.
+- Recall that if $f \colon X \to Y$ is a continuous map of topological spaces, then $x \mapsto (x, f(x))$ defines a topological embedding $\phi \colon X \to X \times Y$, giving a homeomorphism from $X$ onto the graph of $f$. Let $U ⊂\R^{n}$ be open and $f \colon U \to \R^{k}$ continuous. Then the graph $\Gamma( f ) ⊂\R^{n+k}$ is always a manifold homeomorphic to $U$; More generally, for any continuous map $f \colon M \to N$ of manifolds, we will see that $Γ( f ) ⊂M ×N$ is a (sub)manifold homeomorphic to $M$;
+- If $M_{1}, \cdots , M_{k}$ are manifolds of dimensions $n_{1},\cdots, n_{k}$, then [[Constructions on Topological Spaces#^fbf303|the product]] $M_{1} \times \cdots \times M_{k}$ is a manifold of dimension $n_{1} +\cdots + n_{k}$. This is because the product of homeomorphisms is a homeomorphism. A concrete example is the torus $T^{2}=S^{1}\times S^{1}$, which is a 2-manifold;
+- Similar to [[Constructions on Topological Spaces#^b43761|attaching topological spaces]], we can glue two manifolds with boundary along homeomorphic boundary components to get a new manifold without boundary. Concretely, given a homeomorphism $f\colon \partial N \to \partial M$, since $\partial N$ is closed in $N$, we can form the attaching space $M\cup_{f}N$. With this setup, $M\cup_{f}N$ is a manifold (without boundary). Moreover, there are topological embeddings $\varphi \colon M \hookrightarrow M\cup_{f} N$ and $\eta \colon N \hookrightarrow M \cup_{f} N$ whose images are closed and satisfy: $\varphi(M) \cup \eta(N) = M\cup_{f} N$ and $\varphi(M) ∩\eta(N) = \varphi(\partial M) = \eta(\partial N)$.
+  <img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/gluing_manifolds_along_boundary.svg" style="width:60%;"/>
+- A special case of gluing two manifolds along the boundary is the *double* of a manifold with boundary $M$, which is the manifold $D(M) = M \cup_{\text{id}} M$ obtained by gluing two copies of $M$ along the identity map on $\partial M$. For example, the double of the closed unit disk in $\R^{n}$ is homeomorphic to $S^{n}$.
 
-On a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
+## Differentiable Manifolds
+
+Note that [[Manifolds, Atlases and Smooth Structures#^concept-ce681672e441|local Euclideanness]] only requires existence of neighbourhoods that look like $\R^{n}$, and on a manifold, there might be different collections of homeomorphisms that makes it locally Euclidean. So we introduce:
 
 >[!definition] Chart and Atlas
 > A *chart* or *coordinate* for a manifold $M$ at some point $p\in M$ is a [[Isometries and Homeomorphisms#^85034b|homeomorphism]] $\varphi\colon U \to V$ where $U$ is an open neighbourhood of $p$ and $V$ is open in $\R^{n}$. We usually write it as a tuple $(U,\varphi)$.
@@ -61,9 +70,13 @@ On a manifold, there might be different collections of homeomorphisms that makes
 - The sphere $S^{n}=\{ x\in \R^{n+1}:\|x \| =1\}$ is a closed subset of Euclidean space, thus the topological requirements are satisfied. For $1\leq i\leq n+1$, define charts $(U_{i}^{\pm}, \varphi_{i}^{\pm})$, where $U_{i}^{\pm} = \{x \in S^{n} \mid \pm x_i > 0\}$ and $\varphi_i^\pm(x_0, \ldots, x_n) = (x_0, \ldots, \widehat{x}_i, \ldots, x_n)$
 - 
 - Define the following two maps: $$\varphi_{+}\colon S^{n}\setminus \{ N \}\to\R^{n}, \quad \varphi_{-}\colon S^{n}\setminus \{ S \} \to \R^{n}$$as follows: We write $x\in \R^{n+1}$ as $(y,z)$ where $y\in \R^{n}$ and $z\in \R$, we take $\varphi_{+}(y,z)=\frac{y}{1-z}$ and $\varphi_{-}(y,z)=\frac{y}{1+z}$. Then we have 
-$\quad$
 
-## Differentiable Manifolds
+
+> [!remark]
+> Again, an atlas is an extra structure on a (topological) manifold! 
+> 
+
+A manifold can have many different atlases, this is against our spirit of geometry. One of the main goals of differential geometry is to study the geometrical properties that are independent of the choice of atlas^[a side note: this is also a spirit of physics. We won't like physics laws to be dependent on the coordinates we choose.]. So we need a definition that is independent of the coordinates used!
 
 > [!definition] Compatible Charts & Smooth Atlas
 > Two charts $(\varphi, U)$ and $(\eta, V)$ are *compatible* if $\varphi\circ \eta^{-1} \colon U \cap V \to U\cap V$ is smooth.
