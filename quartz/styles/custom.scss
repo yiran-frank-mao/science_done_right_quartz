@@ -12,7 +12,15 @@ article {
   font-size: 1.125rem; // 18px if 1rem = 16px
 }
 
-section[data-footnotes] > h2#footnote-label,
+// hide footnote heading
 .footnotes > h2 {
+  display: none;
+}
+.footnotes {
+  font-family: var(--bodyFont);
+  font-size: 0.875rem;
+  line-height: 1.3;
+}
+.footnotes > hr {
   display: none;
 }
