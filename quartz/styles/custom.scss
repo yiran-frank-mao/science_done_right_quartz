@@ -11,3 +11,19 @@ article img {
 article {
   font-size: 1.125rem; // 18px if 1rem = 16px
 }
+
+.page article > h1 {
+  font-size: 2rem;
+}
+
+article h2 {
+  font-size: 1.6rem;
+}
+
+article h3 {
+  font-size: 1.3rem;
+}
+
+article h4 {
+  font-size: 1.1rem;
+}

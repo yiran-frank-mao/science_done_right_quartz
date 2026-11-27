@@ -124,8 +124,8 @@
     "github-flavored-markdown": {
       "source": "github:quartz-community/github-flavored-markdown",
       "resolved": "https://github.com/quartz-community/github-flavored-markdown.git",
-      "commit": "3eabbaa252ce175665ab3f62e1af25948a83e8b6",
-      "installedAt": "2026-05-28T02:07:10.839Z"
+      "commit": "79944549b3ffffb2bbf3b45e7cf0edcabd6c0bc4",
+      "installedAt": "2026-11-27T17:23:24.278Z"
     },
     "graph": {
       "source": "github:quartz-community/graph",
@@ -154,8 +154,8 @@
     "obsidian-flavored-markdown": {
       "source": "github:quartz-community/obsidian-flavored-markdown",
       "resolved": "https://github.com/quartz-community/obsidian-flavored-markdown.git",
-      "commit": "7f61d4bcf7537d056528f6cecaf5c35b39f74fe8",
-      "installedAt": "2026-05-28T02:07:10.883Z"
+      "commit": "7f2f75d32b096ca41582a503b41f5dbd2a8177c2",
+      "installedAt": "2026-11-27T17:23:24.381Z"
     },
     "obsidian-plugin-excalidraw": {
       "source": "github:quartz-community/obsidian-plugin-excalidraw",
