@@ -32,7 +32,7 @@ $\quad$
 > 
 
 > [!definition] Frame of a Vector Bundle
-> Let $E$ be a vector bundle on a smooth manifold $M$. A local frame over an open subset $U\subset M$, is a set of $k$ smooth sections $\{s_{1},s_{2},\dots,s_{k}\}$ of $E$ such that for every $x\in U$, the vectors $\{s_{1}(x),s_{2}(x),\dots,s_{k}(x)\}$ form a basis of the fiber $E_{x}$. ^9cb683
+> Let $E$ be a vector bundle on a smooth manifold $M$. A local frame over an open subset $U\subset M$, is a set of $k$ smooth sections $\{s_{1},s_{2},\dots,s_{k}\}$ of $E$ such that for every $x\in U$, the vectors $\{s_{1}(x),s_{2}(x),\dots,s_{k}(x)\}$ form a basis of the fiber $E_{x}$.
 >
 
 > [!remark]

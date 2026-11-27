@@ -5,7 +5,7 @@ updated: 2024-09-24
 ## Introduction
 Differential Geometry is a fascinating field of mathematics that studies the geometry of smooth shapes and spaces, known as smooth manifolds. It combines techniques from differential calculus, integral calculus, linear algebra, and multilinear algebra to explore these structures.
 
-<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/differential_geometry.svg" alt="differential_geometry" style="width:28%;"/>
+<img src="https://raw.githubusercontent.com/yiran-frank-mao/image_repo/master/Obsidian/smooth_maps_between_smooth_manifolds.svg" alt="differential_geometry" style="width:32%;"/>
 
 ## Contents
 

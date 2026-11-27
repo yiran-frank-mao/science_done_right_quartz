@@ -94,9 +94,13 @@ Now we generalize the idea of [[Fields and Field Extensions#^e3b5a6|the proposit
 > The followings are true:
 > - A field extension $K/F$ has degree $1$ if and only if $F = K$.  
 > - An element $\alpha$ of a field extension $K$ has degree $1$ over $F$ if and only if $\alpha$ is an element of $F$.
-> $\quad$
+> - If $K/F$ is a finite extension, then we can write $K=F(\alpha_{1},\dots,\alpha_{n})$ for some $\alpha_{1},\dots,\alpha_{n}\in K$.
+> - If $K/F$ is a finite extension, then every element of $K$ is algebraic over $F$.
+>   ^02e23e
 
-*Proof*  If $[K:F]=1$, then the set $\{1\}$ is a basis of $K$ over $F$, so $K=F$. If $\alpha\in K$ has degree $1$ over $F$, then its minimal polynomial must be $x-\alpha$, so $\alpha\in F$, and vice versa. $\square$
+*Proof*  If $[K:F]=1$, then the set $\{1\}$ is a basis of $K$ over $F$, so $K=F$. If $\alpha\in K$ has degree $1$ over $F$, then its minimal polynomial must be $x-\alpha$, so $\alpha\in F$, and vice versa. 
+For a finite extension $K/F$, we can choose a basis $\{\alpha_{1}, \alpha_{2},\cdots, \alpha_{n}\}$, then $K=F(\alpha_{1},\alpha_{2},\cdots,\alpha_{n})$. 
+For the last one, assume there is a transcendental element $a\in K$. Then there holds $F\subset F[a]\subseteq K$. Note that $F[a]\cong F[x]$ has infinite degree, so $\deg_{F} K=\infty$, which is a contradiction. $\square$
 
 > [!proposition]
 > $F\subset K$ are fields. Suppose $\alpha\in K$ is algebraic over $F$. Then $\deg_{F}(F(\alpha))=n$ if and only if the minimal polynomial of $\alpha$ is of degree $n$. 
@@ -110,17 +114,13 @@ Now we generalize the idea of [[Fields and Field Extensions#^e3b5a6|the proposit
 > However, it is not true that all cubic extensions can be obtained by adjoining a cube root.
 > 
 
-> [!theorem]
-> If $K\supset F$ is a field extension of $F$, and $\deg_{F} K<\infty$, then every element of $K$ is algebraic over $F$. ^02e23e
-
-*Proof*  Assume there is a transcendental element $a\in K$. Then there holds $$F\subset F[a]\subseteq K.$$Note that $F[a]\cong F[x]$ has infinite degree, so $\deg_{F} K=\infty$, which is a contradiction. $\square$
 
 > [!theorem] Multiplicative Property of the Degree
 > Suppose $F \subset K \subset A$, where $F$, $K$ are fields and $A$ is a ring. Then $$\deg_{F}A=\deg_{K}A \cdot \deg_{F} K.$$ ^ff28a3
 
 *Proof*  Suppose $\{a_{1},a_{2},\dots,a_{n}\}$ and $\{b_{1},b_{2},\dots,b_{m}\}$ are bases of $A$ over $K$ and $K$ over $F$ respectively. Then $\{a_{i}b_{j}:1\leq i\leq n, 1\leq j\leq m\}$ is a basis of $A$ over $F$. $\square$
 
-One takeaway from the above theorem is that $\deg_{K}A$ has to divide $\deg_{F}A$. So we have the following corollaries:**
+One takeaway from the above theorem is that $\deg_{K}A$ has to divide $\deg_{F}A$. So we have the following corollaries:
 
 > [!corollary]
 > Let $K$ be an extension field of $F$ of prime degree $p$. If an element $\alpha$ of $K$ is not in $F$, then $\alpha$ has degree $p$ over $F$ and $K = F(\alpha)$.

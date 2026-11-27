@@ -1,3 +1,5 @@
+We have seen that field extensions can be characterized by the polynomial ring modulo the minimal polynomial of an element. In this section, we will study intermediate fields, that is, a consecutive field extension $L\supset K \supset F$. The main result of this section is the main theorem of Galois theory, which gives a one-to-one correspondence between the intermediate fields and the subgroups of the *Galois group*.
+
 ## Field Extension Automorphisms
 
 > [!definition] Galois Group
@@ -50,7 +52,9 @@ Though normal extensions can be infinite, we are more interested in the finite e
 > A finite extension $K/F$ is normal if and only if $K$ is the splitting field of some polynomial $f\in F[x]$.
 > 
 
-*Proof*  It is clear by definition that if $K/F$ is normal,
+*Proof*  Since $K/F$ is finite, we can write $K=F(\alpha_{1},\dots,\alpha_{n})$ for some $\alpha_{1},\dots,\alpha_{n}\in K$. Let $f_{i}\in F[x]$ be the minimal polynomial of $\alpha_{i}$ over $F$, and let $f=f_{1}f_{2}\cdots f_{n}$. Then $K$ is the splitting field of $f$. Conversely, if $K$ is the splitting field of a polynomial $f\in F[x]$, then every irreducible factor of $f$ has all its roots in $K$, so every element of $K$ has its minimal polynomial split completely in $K[x]$. $\square$
+
+It is clear by definition that if $K/F$ is normal, it is the splitting field of 
 It is sufficient 
 
 > [!definition] Separable Extension

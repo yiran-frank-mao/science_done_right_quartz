@@ -5,7 +5,7 @@ tags:
   - differential-geometry
   - differential-topology
 ---
-A *manifold* itself is a purely topological object, but it is the most basic object in differential geometry. To do calculus on a manifold, we need to equip it with a *smooth structure,* which is given by an atlas of compatible charts. So the data of a *smooth manifold* is a manifold **together with** a smooth structure. We will discuss these concepts in detail in the following sections.
+A *manifold* itself is a purely topological object, but it is the most basic object in differential geometry. To do calculus on a manifold, we need to equip it with a *smooth structure,* which is given by an atlas of compatible charts. So the data of a *smooth manifold* is a manifold together with a smooth structure. We will discuss these concepts in detail in the following sections.
 
 ## Topological Manifolds
 
