@@ -34,7 +34,7 @@ We have seen that field extensions can be characterized by the polynomial ring m
 > [!definition] Intermediate Field
 > If $K$ is a field extension of $F$, an *intermediate field* $L$ is a field such that $F\subset L\subset K$. An intermediate field is *proper* if $L\neq F$ and $L\neq K$.
 
-## Normal Extension and Separability
+## Normal Extension and Splitting Fields
 
 Now we want to characterize Galois extensions. At the end, we will show that Galois extensions are precisely field extensions that are both *normal* and *separable*, and finally we will prove the main theorem of Galois theory, which gives a one-to-one correspondence between the intermediate fields and the subgroups of the Galois group.
 
@@ -49,13 +49,11 @@ In other words, a normal extension never contains “only some” of the roots. 
 Though normal extensions can be infinite, we are more interested in the finite extensions, which turn out to be just splitting fields:
 
 > [!proposition]
-> A finite extension $K/F$ is normal if and only if $K$ is the splitting field of some polynomial $f\in F[x]$.
+> A field extension $K/F$ is finite and normal if and only if $K$ is the splitting field of some polynomial $f\in F[x]$.
 > 
 
-*Proof*  Since $K/F$ is finite, we can write $K=F(\alpha_{1},\dots,\alpha_{n})$ for some $\alpha_{1},\dots,\alpha_{n}\in K$. Let $f_{i}\in F[x]$ be the minimal polynomial of $\alpha_{i}$ over $F$, and let $f=f_{1}f_{2}\cdots f_{n}$. Then $K$ is the splitting field of $f$. Conversely, if $K$ is the splitting field of a polynomial $f\in F[x]$, then every irreducible factor of $f$ has all its roots in $K$, so every element of $K$ has its minimal polynomial split completely in $K[x]$. $\square$
-
-It is clear by definition that if $K/F$ is normal, it is the splitting field of 
-It is sufficient 
+*Proof*  Since $K/F$ is finite, we can write $K=F(\alpha_{1},\dots,\alpha_{n})$ for some $\alpha_{1},\dots,\alpha_{n}\in K$. Let $f_{i}\in F[x]$ be the [[Mathematics/Ring Theory/Fields and Field Extensions#^concept-3d7e2d2c8120|minimal polynomial]] of $\alpha_{i}$ over $F$, and let $f=f_{1}f_{2}\cdots f_{n}$. Then since $K/F$ is normal, $f$ splits completely in $K$; $K$ is also the smallest field that contains all the roots of $f$ so it is the [[Mathematics/Galois Theory/Symmetric Polynomials and Splitting Fields#^concept-12eecb935785|splitting field]] of $f$.
+Conversely, suppose $K$ is the splitting field of some polynomial $f\in F[x]$. It is clear that $K/F$ is finite. Let $\alpha$ be a root of 
 
 > [!definition] Separable Extension
 > $K/F$ is *separable* if the [[Mathematics/Ring Theory/Fields and Field Extensions#^concept-3d7e2d2c8120|minimal polynomial]] of any element has no multiple roots. 
